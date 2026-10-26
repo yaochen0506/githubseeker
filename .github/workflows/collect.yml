@@ -170,7 +170,8 @@ jobs:
 
   deploy:
     needs: site-check
-    if: needs.site-check.outputs.needs_deploy == 'true'
+    # 推送觸發時 collect／persist 會跳過；不加 always() 的話，跳過會沿著依賴鏈傳下來，部署也被跳過
+    if: always() && !cancelled() && needs.site-check.result == 'success' && needs.site-check.outputs.needs_deploy == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
