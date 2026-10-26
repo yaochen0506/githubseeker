@@ -174,6 +174,10 @@ def test_runner_parses_claude_output(monkeypatch):
     def fake(stdout, code=0):
         return lambda *a, **k: subprocess.CompletedProcess(a[0], code, stdout=stdout, stderr="")
 
+    # Claude Code 的檢查器不認得 draft 2020-12 的 $schema 宣告
+    schema_arg = json.loads(runner.schema)
+    assert "$schema" not in schema_arg and schema_arg["required"]
+
     ok = json.dumps({"is_error": False, "subtype": "success", "structured_output": GOOD, "total_cost_usd": 0.01,
                      "usage": {"input_tokens": 10, "cache_read_input_tokens": 5, "output_tokens": 7}})
     monkeypatch.setattr(subprocess, "run", fake(ok))

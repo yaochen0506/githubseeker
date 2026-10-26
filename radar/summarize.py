@@ -92,7 +92,10 @@ class ClaudeCodeRunner:
         self.cfg = cfg
         self.binary = binary
         self.system_prompt = PROMPT_PATH.read_text(encoding="utf-8")
-        self.schema = json.dumps(store.read_json(store.SCHEMA_DIR / "summary.schema.json"), ensure_ascii=False)
+        # Claude Code 的檢查器不認得 draft 2020-12 的 $schema 宣告，傳給它時拿掉；欄位規則本身相容
+        schema = store.read_json(store.SCHEMA_DIR / "summary.schema.json")
+        self.schema = json.dumps({k: v for k, v in schema.items() if k not in ("$schema", "$id", "title")},
+                                 ensure_ascii=False)
 
     def __call__(self, document, feedback=None):
         prompt = "請依照系統指示，摘要下面這個專案，並以指定的 JSON 格式回答。"
@@ -113,7 +116,7 @@ class ClaudeCodeRunner:
         try:
             data = json.loads(proc.stdout)
         except ValueError:
-            return None, {}, f"無法解析 claude 的輸出（結束代碼 {proc.returncode}）"
+            return None, {}, f"無法解析 claude 的輸出（結束代碼 {proc.returncode}）：{proc.stderr.strip()[:200]}"
         usage = data.get("usage") or {}
         info = {
             "input_tokens": sum(usage.get(k) or 0 for k in
