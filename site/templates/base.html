@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://opengraph.githubassets.com; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{% block title %}{{ site.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.tagline }}{% endblock %}">
+<link rel="canonical" href="{{ page_url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:locale" content="zh_TW">
+{% set og_edition = edition if (edition is defined and edition) else latest %}
+{% if og_edition and og_edition.main %}
+<meta property="og:image" content="{{ og_edition.main[0].og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+{% endif %}
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ root }}feed.xml">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+<script src="{{ root }}static/app.js" defer></script>
+</head>
+<body data-generated-at="{{ latest.generated_at if latest else '' }}" data-stale-hours="{{ stale_hours }}">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ root }}">{{ site.name }}</a>
+    <nav aria-label="主選單">
+      <a href="{{ root }}archive/">歷史精選</a>
+      <a href="{{ root }}about/">說明</a>
+      <a href="{{ root }}feed.xml">RSS</a>
+    </nav>
+  </div>
+</header>
+<p class="stale" id="stale-banner" hidden>資料已超過 {{ stale_hours }} 小時沒有更新，可能停更中。</p>
+<main id="main" class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>本網站與 GitHub 官方無關。入選只代表近期熱門，不代表安全或推薦安裝。</p>
+    <p>資料來源：GitHub Trending 頁面與 GitHub API。本站整理的精選清單與入選理由採 <a href="{{ site.content_license_url }}" rel="license">{{ site.content_license }}</a> 授權；專案名稱、描述與預覽圖的權利屬於各專案作者與 GitHub。</p>
+    <p><a href="{{ site.repo_url }}">網站原始碼</a>（MIT 授權）</p>
+  </div>
+</footer>
+</body>
+</html>

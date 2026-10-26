@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{% if edition and not is_home %}{{ edition.edition_id }} 精選｜{% endif %}{{ site.name }}{% endblock %}
+{% block description %}{% if edition and edition.main %}{{ edition.edition_id }} 的 GitHub 熱門專案精選：{% for p in edition.main[:3] %}{{ p.full_name }}{% if not loop.last %}、{% endif %}{% endfor %} 等{% else %}{{ site.tagline }}{% endif %}{% endblock %}
+{% block content %}
+{% if not edition %}
+<section class="intro">
+  <h1>{{ site.name }}</h1>
+  <p class="lead">第一份精選還在準備中，請稍後再來看看。</p>
+</section>
+{% else %}
+<section class="intro">
+  <h1>{% if is_home %}今日精選{% else %}{{ edition.edition_id }} 精選{% endif %}</h1>
+  <p class="meta">{{ edition.edition_id }}｜產生於 {{ edition.generated_text }}</p>
+  {% if edition.status == "degraded" %}
+  <p class="warn">這一天的資料不完整：{{ edition.failed_boards|join("、") }}抓取失敗，精選只依據其餘來源。</p>
+  {% endif %}
+  {% if is_home %}
+  <p class="lead">{{ site.tagline }}。中文摘要即將加入，目前先顯示專案作者寫的英文原文描述。</p>
+  {% endif %}
+</section>
+
+<section aria-labelledby="h-main">
+  <h2 id="h-main">主榜</h2>
+  <p class="hint">依 GitHub Trending 上的新增星數排序，<a href="{{ root }}about/#how">選法說明</a>。</p>
+  {% for p in edition.main %}
+  {% include "card.html" %}
+  {% else %}
+  <p class="empty">這一天沒有符合條件的專案。</p>
+  {% endfor %}
+</section>
+
+{% if edition.discovery %}
+<section aria-labelledby="h-discovery">
+  <h2 id="h-discovery">新發現</h2>
+  <p class="hint">建立不到 {{ score.discovery_max_age_days }} 天、還沒上 GitHub Trending 的新專案。</p>
+  {% for p in edition.discovery %}
+  {% include "card.html" %}
+  {% endfor %}
+</section>
+{% endif %}
+
+<p class="more"><a href="{{ root }}archive/">看所有歷史精選 →</a></p>
+{% endif %}
+{% endblock %}

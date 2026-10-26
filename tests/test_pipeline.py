@@ -127,6 +127,22 @@ def test_search_fallback_when_budget_runs_out(tmp_path, started):
     assert doc["unresolved"][0]["reason"] == "budget_exhausted"
 
 
+def test_search_candidates_ranked_by_daily_average_across_queries(tmp_path, started):
+    cfg = config(search=[{"id": "new-30d", "created_within_days": 30, "min_stars": 50}])
+    cfg["tracking"]["search_top"] = 1
+    old_big = {**repo_json(30, "s/old", stars=5000), "created_at": "2026-10-01T00:00:00Z"}   # 每天 200
+    new_fast = {**repo_json(31, "s/new", stars=1000), "created_at": "2026-10-24T00:00:00Z"}  # 每天 500
+    routes = {
+        DAILY_URL: FakeResponse(200, text=page_html(row_html("a/one", 1))),
+        WEEKLY_URL: FakeResponse(200, text=page_html(row_html("a/one", 1, "1 stars this week"))),
+        SEARCH_URL: FakeResponse(200, search_json(old_big, new_fast)),
+        api("/repositories/1"): FakeResponse(200, repo_json(1, "a/one")),
+        api("/repositories/31"): FakeResponse(200, new_fast),
+    }
+    doc, _, _ = run(tmp_path, routes, started, cfg=cfg)
+    assert sorted(o["repo_id"] for o in doc["observations"]) == [1, 31]
+
+
 def test_skips_when_complete_run_exists_today(tmp_path, started):
     existing = {"runs/2026/10/26/20261026T021700-1.1.json": {"complete": True}}
     doc, out_dir, session = run(tmp_path, {}, started, data_files=existing)

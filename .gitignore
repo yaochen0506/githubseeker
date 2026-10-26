@@ -5,3 +5,4 @@ out/
 data/
 # 規劃文件含個人資訊，只留在本機
 docs/
+.claude/

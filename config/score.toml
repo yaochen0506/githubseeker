@@ -1,0 +1,30 @@
+# 每日精選的選法（稽核報告 §5）。修改任何數值都要同步更新 score_version；舊的精選不會重算。
+score_version = "b1"
+
+# 資格：最近幾天內有更新程式
+active_within_days = 90
+
+# 主榜分數 = 100 × (weight_abs × 絕對成長 + weight_rel × 相對成長)
+abs_full_at = 1000      # 每天 +1000 星以上，絕對成長算滿分
+rel_full_at = 0.10      # 每天成長 10% 以上，相對成長算滿分
+rel_base_floor = 200    # 相對成長的分母至少 200 星，避免小專案的比例被放大
+weight_abs = 0.75
+weight_rel = 0.25
+
+# 名額：候選不足就少發，不湊數
+max_main = 7
+max_discovery = 3
+
+# 新發現：建立不到幾天、至少幾星、沒有上 Trending
+# 稽核報告建議 30 天；實測 30 天會選到上個月爆紅、現在已退燒的專案（「建立以來平均」反映不了近況），
+# 所以在 D 階段有實際觀測成長之前先用 7 天
+discovery_max_age_days = 7
+discovery_min_stars = 50
+
+# 過去幾天入選過的專案不再入選
+cooldown_days = 7
+
+# 收集不完整時，只在這個排程（當天最後一次觸發）或手動執行時發布降級版
+last_schedule = "17 10 * * *"
+# 降級版的最低門檻：至少 1 頁 Trending 成功，或 Search 成功且候選至少這麼多
+degraded_min_search_candidates = 10

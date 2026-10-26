@@ -1,8 +1,11 @@
-"""A 階段流程：收集 Trending 與 Search、補齊專案資料、觀測追蹤名單，寫出 run 檔。
+"""每日流程：收集（A 階段）→ 產生每日精選（B 階段）；另有建置網站與部署檢查的指令。
 
 用法：
   python -m radar collect --data-dir data --out-dir out [--force] [--max-rest N]
   python -m radar validate out
+  python -m radar build-site --data-dir data --out-dir site_out
+  python -m radar site-check --data-dir data     # 線上網站是否需要重新部署
+  python -m radar site-verify --data-dir data    # 部署後確認線上已是最新版
 
 collect 只讀 data-dir（資料分支的內容），新產生的檔案全部寫到 out-dir，
 由 workflow 的另一個 job 驗證後再提交到資料分支。
@@ -21,15 +24,20 @@ from pathlib import Path
 
 import requests
 
-from . import sources, store
+from . import editorial, rank, site, sources, store
 from .sources import ApiError, BudgetExhausted, GitHubApi, NotFound, RateLimited
 
 ROOT = Path(__file__).resolve().parent.parent
+CONFIG_DIR = ROOT / "config"
 
 
 def load_config(path):
     raw = Path(path).read_bytes()
     return tomllib.loads(raw.decode("utf-8")), hashlib.sha256(raw).hexdigest()
+
+
+def load_toml(name):
+    return tomllib.loads((CONFIG_DIR / name).read_text(encoding="utf-8"))
 
 
 def trigger_info(started, event, schedule):
@@ -153,9 +161,16 @@ class Collector:
             hit["repo_id"] = resolved[key] or hit["repo_id"]
         trending_ids = {v for v in resolved.values() if v}
 
-        # 2. Search 找到的新專案：排除已在 Trending 的，取前幾名
+        # 2. Search 找到的新專案：排除已在 Trending 的，依「建立以來平均每天幾星」取前幾名，
+        #    兩組查詢（30 天、7 天）放在一起比，剛冒出來的專案才不會被較舊的大專案擠掉
+        today = date.fromisoformat(business_date)
+
+        def lifetime_avg(item):
+            created = date.fromisoformat(item["created_at"][:10])
+            return item["stargazers_count"] / max((today - created).days, 1)
+
         search_new, picked = [], set(trending_ids)
-        for item in search_items:
+        for item in sorted(search_items, key=lambda i: (-lifetime_avg(i), i["id"])):
             if len(search_new) >= self.config["tracking"]["search_top"]:
                 break
             if item["id"] not in picked:
@@ -253,6 +268,75 @@ def collect(config, config_sha, data_dir, out_dir, api, session, started, trigge
     return run_doc
 
 
+def build_edition(run, past_editions, score_cfg, boards, status, generated_at):
+    main, discovery, excluded, counts = rank.select(run, past_editions, score_cfg)
+    picks = []
+    for slot, group in (("main", main), ("discovery", discovery)):
+        for position, cand in enumerate(group, 1):
+            obs = cand["obs"]
+            picks.append({
+                "slot": slot, "position": position,
+                "repo_id": obs["repo_id"], "full_name": obs["full_name"],
+                "html_url": f"https://github.com/{obs['full_name']}",
+                "description": obs["description"], "language": obs["language"], "topics": obs["topics"],
+                "license_spdx": obs["license_spdx"], "created_at": obs["created_at"], "pushed_at": obs["pushed_at"],
+                "stars": obs["stars"], "forks": obs["forks"],
+                "metric_method": cand["metric_method"], "growth_per_day": round(cand["growth_per_day"], 2),
+                "score": cand["score"], "score_breakdown": cand["score_breakdown"],
+                "trending_hits": cand["trending_hits"],
+                "reasons": editorial.reasons(cand, boards, run["business_date"]),
+                "notes": editorial.notes(obs, run["business_date"]),
+                "repeat_of": None,
+            })
+    return {
+        "schema_version": "1",
+        "score_version": score_cfg["score_version"],
+        "edition_id": run["business_date"],
+        "business_date": run["business_date"],
+        "generated_at": store.iso(generated_at),
+        "run_id": run["run_id"],
+        "status": status,
+        "coverage": {"sources_ok": [s["source_id"] for s in run["sources"] if s["status"] == "ok"],
+                     "sources_failed": [s["source_id"] for s in run["sources"] if s["status"] != "ok"]},
+        "picks": picks,
+        "cooldown_excluded": excluded,
+        "candidate_counts": counts,
+    }
+
+
+def meets_minimum(run, score_cfg):
+    """降級版的最低門檻：至少 1 頁 Trending 成功，或 Search 成功且候選夠多。"""
+    if any(s["kind"] == "trending" and s["status"] == "ok" for s in run["sources"]):
+        return True
+    search_ok = {s["source_id"] for s in run["sources"] if s["kind"] == "search" and s["status"] == "ok"}
+    found = {h["repo_id"] for h in run["source_hits"] if h["source_id"] in search_ok}
+    return bool(search_ok) and len(found) >= score_cfg["degraded_min_search_candidates"]
+
+
+def maybe_build_edition(data_dir, out_dir, business_date, new_run, trigger, score_cfg, boards, now=store.now_taipei):
+    """當天還沒有精選時，視情況產生一份。已存在就不動（精選提交後不再修改）。"""
+    if (Path(data_dir) / store.edition_path(business_date)).exists():
+        return None
+    runs = store.load_runs(data_dir, business_date) + ([new_run] if new_run else [])
+    if not runs:
+        return None
+    complete = [r for r in runs if r["complete"]]
+    if complete:
+        run, status = max(complete, key=lambda r: r["started_at"]), "normal"
+    else:
+        # 不完整時先等下一次觸發；當天最後一次觸發（或手動執行）才發布降級版
+        last_chance = trigger["schedule"] == score_cfg["last_schedule"] or trigger["event"] == "workflow_dispatch"
+        run = max(runs, key=lambda r: r["started_at"])
+        if not (last_chance and meets_minimum(run, score_cfg)):
+            return None
+        status = "degraded"
+    past = [e for e in store.load_editions(data_dir) if e["business_date"] < business_date]
+    edition = build_edition(run, past, score_cfg, boards, status, now())
+    store.validate(edition, "edition")
+    store.write_json(Path(out_dir) / store.edition_path(business_date), edition)
+    return edition
+
+
 def _code_version():
     if os.environ.get("GITHUB_SHA"):
         return os.environ["GITHUB_SHA"]
@@ -274,14 +358,19 @@ def _set_output(**values):
 def main(argv=None):
     parser = argparse.ArgumentParser(prog="radar")
     sub = parser.add_subparsers(dest="command", required=True)
-    p_collect = sub.add_parser("collect", help="收集一次資料")
+    p_collect = sub.add_parser("collect", help="收集一次資料，並視情況產生當天的精選")
     p_collect.add_argument("--data-dir", required=True, help="資料分支的本機目錄（只讀）")
     p_collect.add_argument("--out-dir", required=True, help="新產生檔案的輸出目錄（必須是空的）")
-    p_collect.add_argument("--config", default=str(ROOT / "config" / "radar.toml"))
+    p_collect.add_argument("--config", default=str(CONFIG_DIR / "radar.toml"))
     p_collect.add_argument("--force", action="store_true", help="今天已有完整紀錄也重新收集")
     p_collect.add_argument("--max-rest", type=int, help="覆寫每次執行的 REST 請求上限")
     p_validate = sub.add_parser("validate", help="驗證產物目錄")
     p_validate.add_argument("dir")
+    p_build = sub.add_parser("build-site", help="從資料分支重建網站")
+    p_build.add_argument("--data-dir", required=True)
+    p_build.add_argument("--out-dir", required=True)
+    for name in ("site-check", "site-verify"):
+        sub.add_parser(name).add_argument("--data-dir", required=True)
     args = parser.parse_args(argv)
 
     if hasattr(sys.stdout, "reconfigure"):
@@ -291,7 +380,16 @@ def main(argv=None):
         count = store.validate_tree(args.dir)
         print(f"驗證通過：{count} 個檔案")
         return 0
+    if args.command == "build-site":
+        count = site.build_site(args.data_dir, args.out_dir, load_toml("site.toml"), load_toml("score.toml"), _code_version())
+        print(f"網站建置完成：{count} 個頁面")
+        return 0
+    if args.command in ("site-check", "site-verify"):
+        return _site_status(args.command, args.data_dir)
+    return _collect(args, parser)
 
+
+def _collect(args, parser):
     out_dir = Path(args.out_dir)
     if out_dir.exists() and any(out_dir.iterdir()):
         parser.error(f"輸出目錄不是空的：{out_dir}")
@@ -312,18 +410,50 @@ def main(argv=None):
                     max_wait=config["max_rate_wait_seconds"])
     run_doc = collect(config, config_sha, args.data_dir, out_dir, api, session, started, trigger,
                       _code_version(), run_suffix, force=force)
+    messages = []
     if run_doc is None:
-        print(f"{started.date()} 已有完整的收集紀錄，這次不重複執行")
-        _set_output(changed="false")
-        return 0
+        print(f"{started.date()} 已有完整的收集紀錄，這次不重複收集")
+    else:
+        ok = sum(s["status"] == "ok" for s in run_doc["sources"])
+        print(f"run {run_doc['run_id']}：來源成功 {ok}/{len(run_doc['sources'])}，"
+              f"命中 {len(run_doc['source_hits'])} 筆，觀測 {len(run_doc['observations'])} 個專案，"
+              f"未解析 {len(run_doc['unresolved'])} 個，完整：{run_doc['complete']}")
+        for s in run_doc["sources"]:
+            if s["status"] != "ok":
+                print(f"::warning::來源 {s['source_id']} 失敗：{s['error']}")
+        print(f"API 用量：{run_doc['api_usage']}")
+        messages.append(f"run {run_doc['run_id']}")
 
-    ok = sum(s["status"] == "ok" for s in run_doc["sources"])
-    print(f"run {run_doc['run_id']}：來源成功 {ok}/{len(run_doc['sources'])}，"
-          f"命中 {len(run_doc['source_hits'])} 筆，觀測 {len(run_doc['observations'])} 個專案，"
-          f"未解析 {len(run_doc['unresolved'])} 個，完整：{run_doc['complete']}")
-    for s in run_doc["sources"]:
-        if s["status"] != "ok":
-            print(f"::warning::來源 {s['source_id']} 失敗：{s['error']}")
-    print(f"API 用量：{run_doc['api_usage']}")
-    _set_output(changed="true", run_id=run_doc["run_id"], complete=str(run_doc["complete"]).lower())
+    edition = maybe_build_edition(args.data_dir, out_dir, started.date().isoformat(), run_doc, trigger,
+                                  load_toml("score.toml"), load_toml("site.toml")["boards"])
+    if edition is None:
+        print("這次沒有產生新的精選（今天已有精選，或資料還不完整、等下一次觸發）")
+    else:
+        main_count = sum(p["slot"] == "main" for p in edition["picks"])
+        print(f"產生 {edition['edition_id']} 精選（{edition['status']}）：主榜 {main_count} 個、"
+              f"新發現 {len(edition['picks']) - main_count} 個，因 7 天內入選過而排除 {len(edition['cooldown_excluded'])} 個")
+        messages.append(f"edition {edition['edition_id']}")
+
+    _set_output(changed=str(bool(messages)).lower(), message="data: " + ", ".join(messages))
     return 0
+
+
+def _site_status(command, data_dir):
+    site_cfg = load_toml("site.toml")
+    expected = site.site_marker(store.load_editions(data_dir), _code_version())
+    session = requests.Session()
+    if command == "site-check":
+        live = site.live_marker(session, site_cfg["base_url"])
+        deploy = site.needs_deploy(live, expected)
+        print(f"線上：{live}；預期：{expected}；需要部署：{deploy}")
+        _set_output(needs_deploy=str(deploy).lower())
+        return 0
+    for attempt in range(1, 6):
+        live = site.live_marker(session, site_cfg["base_url"])
+        if not site.needs_deploy(live, expected):
+            print(f"線上網站已是最新版：{live}")
+            return 0
+        print(f"第 {attempt} 次檢查：線上 {live}，預期 {expected}")
+        time.sleep(20)
+    print("::error::部署後線上網站仍不是最新版，下一次觸發會再試")
+    return 1

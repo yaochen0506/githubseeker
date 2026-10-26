@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}說明｜{{ site.name }}{% endblock %}
+{% block description %}{{ site.name }}怎麼運作、怎麼挑選專案，以及常見名詞的白話解釋{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>說明</h1>
+  <p class="lead">{{ site.name }}每天整理 GitHub 上正在變熱門的開源專案，目標是讓不寫程式的人也能看懂：這個專案做什麼、適合誰、怎麼開始用。</p>
+</section>
+
+<section class="prose" id="how">
+  <h2>每天怎麼選</h2>
+  <ol>
+    <li><strong>收集</strong>：每天抓 GitHub Trending 的 8 個榜單（全站、Python、TypeScript、中文專案，各有日榜與週榜），再用 GitHub API 搜尋最近 30 天、7 天內新建立的熱門專案。</li>
+    <li><strong>資格</strong>：最近 {{ score.active_within_days }} 天內有更新、沒有封存、不是 fork 的專案才列入。</li>
+    <li><strong>主榜（最多 {{ score.max_main }} 個）</strong>：每個專案取一個「每天新增星數」：有上日榜就用「今日 +N 星」，只上週榜就用「本週 +N 星 ÷ 7」。分數由新增星數多寡（占 75%）和相對成長幅度（占 25%）組成，大專案和小專案都有機會。</li>
+    <li><strong>新發現（最多 {{ score.max_discovery }} 個）</strong>：建立不到 {{ score.discovery_max_age_days }} 天、至少 {{ score.discovery_min_stars }} 星、還沒上 Trending 的專案，依「建立以來平均每天幾星」排序。</li>
+    <li><strong>不重複</strong>：過去 {{ score.cooldown_days }} 天入選過的專案，不會再進每日精選。</li>
+    <li>候選不夠時就少發，不湊數。入選理由全部由上面的數字組成，不靠 AI 猜測專案為什麼紅。</li>
+  </ol>
+</section>
+
+<section class="prose" id="update">
+  <h2>什麼時候更新</h2>
+  <p>每天由 GitHub Actions 自動執行。GitHub 的排程經常延遲數小時，所以不保證固定時刻，每份精選都標示實際產生時間。某些榜單抓取失敗時，會標示「資料不完整」；全部失敗時，網站會維持前一天的內容。</p>
+  <p>想每天自動收到精選，可以用任何 RSS 閱讀器訂閱：<a href="{{ root }}feed.xml">{{ site.base_url }}feed.xml</a></p>
+</section>
+
+<section class="prose" id="glossary">
+  <h2>名詞小辭典</h2>
+  <dl class="glossary">
+    <dt id="g-repo">儲存庫（Repository）</dt>
+    <dd>放一個專案所有檔案與修改紀錄的地方。本站介紹的每個「專案」就是一個儲存庫。</dd>
+    <dt id="g-star">星數（Star）</dt>
+    <dd>GitHub 使用者對專案按的「收藏／讚」。星數增加得快，代表最近很多人注意到它，但不代表品質或安全性。</dd>
+    <dt id="g-trending">GitHub Trending</dt>
+    <dd>GitHub 官方的熱門榜，依一段期間內新增的星數排名。<strong>日榜</strong>看今天，<strong>週榜</strong>看本週。</dd>
+    <dt id="g-fork">Fork</dt>
+    <dd>把別人的專案複製一份到自己帳號下修改。本站不收錄 fork，只介紹原始專案。</dd>
+    <dt id="g-license">授權（License）</dt>
+    <dd>作者允許別人怎麼使用、修改、轉載這個專案。常見的 MIT、Apache-2.0 允許自由使用；<strong>未標示授權</strong>時，法律上預設保留所有權利，使用前要特別小心。</dd>
+    <dt id="g-topics">主題標籤（Topics）</dt>
+    <dd>作者自己替專案加的關鍵字，例如 ai、python。</dd>
+    <dt id="g-archived">封存（Archived）</dt>
+    <dd>作者已經停止維護、設為唯讀的專案。本站不收錄。</dd>
+    <dt id="g-readme">README</dt>
+    <dd>專案首頁的說明文件，通常寫著用途、安裝與使用方式。</dd>
+    <dt id="g-open-source">開源（Open Source）</dt>
+    <dd>公開原始碼、允許別人查看與參與的軟體。開源不等於免費商用，仍要看授權。</dd>
+  </dl>
+</section>
+
+<section class="prose" id="disclaimer">
+  <h2>聲明</h2>
+  <ul>
+    <li>本網站與 GitHub 官方無關。</li>
+    <li>入選只代表近期熱門，<strong>不代表安全或推薦安裝</strong>。GitHub 上也有假星數或夾帶惡意程式的專案，下載、安裝或執行任何程式前，請先確認來源與授權。</li>
+    <li>專案的預覽圖由 GitHub 提供，載入時會連線到 GitHub 的伺服器。</li>
+    <li>本站整理的精選清單與入選理由採 <a href="{{ site.content_license_url }}" rel="license">{{ site.content_license }}</a> 授權，轉載請註明出處；專案名稱、描述與預覽圖的權利屬於各專案作者與 GitHub。網站原始碼採 MIT 授權，放在 <a href="{{ site.repo_url }}">GitHub</a>。</li>
+  </ul>
+</section>
+{% endblock %}

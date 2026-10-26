@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}歷史精選｜{{ site.name }}{% endblock %}
+{% block description %}{{ site.name }}的每日精選紀錄{% endblock %}
+{% block content %}
+<section class="intro">
+  <h1>歷史精選</h1>
+  <p class="lead">每一天的精選都保留原樣，不會因為之後改了選法而重算。</p>
+</section>
+{% if editions %}
+<ol class="archive">
+  {% for e in editions %}
+  <li>
+    <a href="{{ root }}{{ e.url_path }}">{{ e.edition_id }}</a>
+    <span class="count">{{ e.main|length }} 個主榜{% if e.discovery %}＋{{ e.discovery|length }} 個新發現{% endif %}{% if e.status == "degraded" %}（資料不完整）{% endif %}</span>
+    {% if e.main %}<span class="names">{% for p in e.main[:3] %}{{ p.full_name }}{% if not loop.last %}、{% endif %}{% endfor %}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="empty">還沒有任何精選。</p>
+{% endif %}
+{% endblock %}

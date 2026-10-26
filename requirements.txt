@@ -1,7 +1,9 @@
 requests==2.34.2
 beautifulsoup4==4.15.0
 jsonschema==4.26.0
-# 以下為上面三個套件的相依套件，固定版本以便重現
+Jinja2==3.1.6
+# 以下為上面四個套件的相依套件，固定版本以便重現
+MarkupSafe==3.0.4
 attrs==26.1.0
 certifi==2026.10.23
 charset-normalizer==3.5.2

@@ -1,0 +1,107 @@
+/* 手機優先：預設就是窄螢幕版面，寬螢幕只放寬內容區 */
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #59636e;
+  --line: #d8dee4;
+  --accent: #0b6bcb;
+  --warn-bg: #fff4d6;
+  --warn-text: #6b4a00;
+  --note-bg: #fbeee8;
+  --note-text: #7a2e12;
+  --chip: #eef1f4;
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --surface: #171b21;
+    --text: #e6e9ed;
+    --muted: #9aa4af;
+    --line: #2c333b;
+    --accent: #6cb6ff;
+    --warn-bg: #3a2f10;
+    --warn-text: #f3d68a;
+    --note-bg: #3a2119;
+    --note-text: #f2b8a2;
+    --chip: #232a32;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+a { color: var(--accent); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 8px; background: var(--surface); padding: 8px; z-index: 10; }
+
+.site-header { background: var(--surface); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding-top: 12px; padding-bottom: 12px; }
+.brand { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+.site-header nav { display: flex; gap: 16px; font-size: 0.95rem; }
+
+.stale { margin: 0; padding: 10px 16px; background: var(--warn-bg); color: var(--warn-text); text-align: center; }
+
+.intro { padding: 24px 0 8px; }
+.intro h1 { margin: 0 0 4px; font-size: 1.6rem; line-height: 1.3; }
+.meta { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.lead { color: var(--muted); }
+.warn { padding: 10px 12px; border-radius: 8px; background: var(--warn-bg); color: var(--warn-text); }
+
+h2 { margin: 28px 0 4px; font-size: 1.25rem; }
+.hint { margin: 0 0 12px; color: var(--muted); font-size: 0.9rem; }
+.empty { color: var(--muted); }
+.more { margin: 24px 0; }
+
+.card { margin: 0 0 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.card .og { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; background: var(--chip); }
+.card-body { padding: 14px 16px 16px; }
+.card h3 { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.4; display: flex; gap: 8px; align-items: baseline; }
+.pos { flex: none; display: inline-grid; place-items: center; min-width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--chip); color: var(--muted); font-size: 0.8rem; }
+
+.reasons { margin: 0 0 8px; padding-left: 1.2em; }
+.desc { margin: 0 0 10px; color: var(--muted); }
+.badge { display: inline-block; margin-right: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 4px; font-size: 0.75rem; }
+
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 12px; margin: 0 0 10px; font-size: 0.9rem; }
+.facts div { display: flex; gap: 6px; }
+.facts dt { color: var(--muted); }
+.facts dt a { color: inherit; }
+.facts dd { margin: 0; }
+
+.notes { margin: 0 0 10px; padding: 8px 12px 8px 1.6em; border-radius: 8px; background: var(--note-bg); color: var(--note-text); font-size: 0.9rem; }
+
+.topics { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.topics span { padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--muted); font-size: 0.8rem; }
+
+.archive { list-style: none; margin: 0; padding: 0; }
+.archive li { padding: 12px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+.archive a { font-weight: 600; }
+.archive .count, .archive .names { color: var(--muted); font-size: 0.9rem; }
+
+.prose h2 { margin-top: 32px; }
+.glossary dt { margin-top: 12px; font-weight: 700; }
+.glossary dd { margin: 2px 0 0; }
+
+.site-footer { margin-top: 40px; padding: 20px 0 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+
+@media (min-width: 640px) {
+  .facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .intro h1 { font-size: 1.9rem; }
+}

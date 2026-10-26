@@ -1,0 +1,31 @@
+<article class="card" id="repo-{{ p.repo_id }}">
+  <img class="og" src="{{ p.og_image }}" alt="" loading="lazy" referrerpolicy="no-referrer" width="1200" height="600">
+  <div class="card-body">
+    <h3><span class="pos">{{ p.position }}</span><a href="{{ p.html_url }}" rel="noopener">{{ p.full_name }}</a></h3>
+    <ul class="reasons">
+      {% for r in p.reasons %}
+      <li>{{ r }}</li>
+      {% endfor %}
+    </ul>
+    {% if p.description %}
+    <p class="desc"><span class="badge">原文</span>{{ p.description }}</p>
+    {% endif %}
+    <dl class="facts">
+      <div><dt><a href="{{ root }}about/#g-star">星數</a></dt><dd>{{ p.stars|num }}</dd></div>
+      <div><dt>程式語言</dt><dd>{{ p.language or "未標示" }}</dd></div>
+      <div><dt>建立日期</dt><dd>{{ p.created_date or "不明" }}</dd></div>
+      <div><dt>最近更新</dt><dd>{{ p.pushed_date or "不明" }}</dd></div>
+      <div><dt><a href="{{ root }}about/#g-license">授權</a></dt><dd>{{ p.license_spdx or "未標示" }}</dd></div>
+    </dl>
+    {% if p.notes %}
+    <ul class="notes">
+      {% for n in p.notes %}
+      <li>{{ n }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if p.topics_shown %}
+    <p class="topics" aria-label="GitHub 主題標籤">{% for t in p.topics_shown %}<span>{{ t }}</span>{% endfor %}</p>
+    {% endif %}
+  </div>
+</article>

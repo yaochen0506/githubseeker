@@ -1,0 +1,21 @@
+name = "GitHub 熱門專案雷達"
+tagline = "每天整理 GitHub 上正在變熱門的開源專案"
+base_url = "https://yaochen0506.github.io/githubseeker/"
+repo_url = "https://github.com/yaochen0506/githubseeker"
+content_license = "CC BY 4.0"
+content_license_url = "https://creativecommons.org/licenses/by/4.0/deed.zh-hant"
+# RSS 保留最近幾天的精選
+rss_days = 30
+# 超過幾小時沒有新精選，就在頁面上方顯示停更提示
+stale_hours = 48
+
+# 榜單在網站上的名稱
+[boards]
+all-daily = "全站日榜"
+all-weekly = "全站週榜"
+python-daily = "Python 日榜"
+python-weekly = "Python 週榜"
+typescript-daily = "TypeScript 日榜"
+typescript-weekly = "TypeScript 週榜"
+zh-daily = "中文專案日榜"
+zh-weekly = "中文專案週榜"

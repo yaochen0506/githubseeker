@@ -2,6 +2,7 @@
 
 資料分支 radar-data 的版面：
   runs/YYYY/MM/DD/<run_id>.json   每次執行一檔，寫入後不再修改
+  editions/YYYY/MM/DD.json         每日精選，寫入後不再修改
   state/tracking.json              追蹤名單，每次執行重寫
   status.json                      最近一次執行的狀態摘要
 """
@@ -20,6 +21,7 @@ SCHEMA_DIR = Path(__file__).resolve().parent.parent / "schema"
 # 寫入資料分支時只接受這幾種路徑（防止產物夾帶其他檔案）
 ALLOWED_PATHS = {
     re.compile(r"^runs/\d{4}/\d{2}/\d{2}/\d{8}T\d{6}-[A-Za-z0-9.-]+\.json$"): "run",
+    re.compile(r"^editions/\d{4}/\d{2}/\d{2}\.json$"): "edition",
     re.compile(r"^state/tracking\.json$"): "tracking",
     re.compile(r"^status\.json$"): "status",
 }
@@ -36,6 +38,22 @@ def iso(dt):
 def run_path(business_date, run_id):
     y, m, d = business_date.split("-")
     return Path("runs") / y / m / d / f"{run_id}.json"
+
+
+def edition_path(business_date):
+    y, m, d = business_date.split("-")
+    return Path("editions") / y / m / f"{d}.json"
+
+
+def load_runs(data_dir, business_date):
+    day_dir = Path(data_dir) / run_path(business_date, "x").parent
+    return [read_json(p) for p in sorted(day_dir.glob("*.json"))] if day_dir.is_dir() else []
+
+
+def load_editions(data_dir):
+    """所有每日精選，依日期由舊到新。"""
+    paths = sorted((Path(data_dir) / "editions").glob("[0-9][0-9][0-9][0-9]/[0-9][0-9]/[0-9][0-9].json"))
+    return [read_json(p) for p in paths]
 
 
 def read_json(path, default=None):
@@ -78,16 +96,7 @@ def validate_tree(root):
 
 def complete_run_exists(data_dir, business_date):
     """今天（台北日期）是否已經有一份完整成功的 run 檔。"""
-    day_dir = Path(data_dir) / run_path(business_date, "x").parent
-    if not day_dir.is_dir():
-        return False
-    for path in day_dir.glob("*.json"):
-        try:
-            if read_json(path).get("complete") is True:
-                return True
-        except (ValueError, OSError):
-            continue
-    return False
+    return any(run.get("complete") is True for run in load_runs(data_dir, business_date))
 
 
 def load_tracking(data_dir):

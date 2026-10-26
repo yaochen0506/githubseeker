@@ -1,7 +1,7 @@
-name: 每日收集
+name: 每日收集與發布
 
 # 排程器實測常延遲 3.5～9 小時，所以一天設 3 個觸發；
-# 當天已有完整紀錄時，後面的觸發會直接結束（冪等）。
+# 當天已有完整紀錄與精選時，後面的觸發只做部署檢查（冪等）。
 on:
   schedule:
     - cron: "17 2 * * *"
@@ -16,6 +16,19 @@ on:
         description: "今天已有完整紀錄也重新收集"
         type: boolean
         default: false
+      skip_deploy:
+        description: "只提交資料、不部署網站（演練恢復流程用）"
+        type: boolean
+        default: false
+  # 網站程式或範本有改動時，只重新部署，不收集
+  push:
+    branches: [main]
+    paths:
+      - "radar/**"
+      - "site/**"
+      - "config/site.toml"
+      - "requirements.txt"
+      - ".github/workflows/collect.yml"
 
 permissions: {}
 
@@ -26,13 +39,14 @@ concurrency:
 jobs:
   collect:
     # 這個 job 處理外部網頁與 API 資料，只給讀取權限
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:
       contents: read
     outputs:
       changed: ${{ steps.collect.outputs.changed }}
-      run_id: ${{ steps.collect.outputs.run_id }}
+      message: ${{ steps.collect.outputs.message }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -55,7 +69,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 收集
+      - name: 收集並產生精選
         id: collect
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -71,7 +85,7 @@ jobs:
           retention-days: 7
 
   persist:
-    # 只執行我們自己的程式：驗證產物後提交到資料分支
+    # 只執行我們自己的程式：驗證產物後提交到資料分支。提交成功，精選就是正式版
     needs: collect
     if: needs.collect.outputs.changed == 'true'
     runs-on: ubuntu-latest
@@ -99,7 +113,7 @@ jobs:
 
       - name: 提交到資料分支
         env:
-          RUN_ID: ${{ needs.collect.outputs.run_id }}
+          COMMIT_MESSAGE: ${{ needs.collect.outputs.message }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -112,13 +126,95 @@ jobs:
           cp -r out/. data/
           cd data
           git add -A
-          git commit --quiet -m "data: ${RUN_ID}"
+          git commit --quiet -m "${COMMIT_MESSAGE}"
           for attempt in 1 2 3; do
             git push --quiet origin radar-data && exit 0
             echo "推送失敗，第 ${attempt} 次重試"
             git pull --quiet --rebase origin radar-data
           done
           exit 1
+
+  site-check:
+    # 線上網站的「精選版本＋程式版本」和資料分支、main 不一致，才需要部署
+    needs: [collect, persist]
+    if: always() && !cancelled() && needs.collect.result != 'failure' && needs.persist.result != 'failure' && inputs.skip_deploy != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      needs_deploy: ${{ steps.check.outputs.needs_deploy }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 取出資料分支（唯讀）
+        run: |
+          if git ls-remote --exit-code --heads origin radar-data > /dev/null; then
+            git clone --quiet --depth 1 --branch radar-data "https://github.com/${GITHUB_REPOSITORY}.git" data
+          else
+            mkdir data
+          fi
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - id: check
+        run: python -m radar site-check --data-dir data
+
+  deploy:
+    needs: site-check
+    if: needs.site-check.outputs.needs_deploy == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 取出資料分支（唯讀）
+        run: |
+          if git ls-remote --exit-code --heads origin radar-data > /dev/null; then
+            git clone --quiet --depth 1 --branch radar-data "https://github.com/${GITHUB_REPOSITORY}.git" data
+          else
+            mkdir data
+          fi
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - name: 從資料分支重建網站
+        run: python -m radar build-site --data-dir data --out-dir _site
+
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+      - name: 確認線上已是最新版
+        run: python -m radar site-verify --data-dir data
 
   heartbeat:
     # 公開儲存庫 60 天沒有活動，排程會被停用；主分支超過 25 天沒有提交就補一個心跳提交
