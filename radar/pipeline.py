@@ -4,6 +4,7 @@
   python -m radar collect --data-dir data --out-dir out [--force] [--max-rest N]
   python -m radar edition --data-dir data --out-dir out     # 產生當天精選＋中文摘要（寫進同一個 out）
   python -m radar validate out
+  python -m radar summary-test                    # 只測試摘要權杖能不能用，不動任何資料
   python -m radar build-site --data-dir data --out-dir site_out
   python -m radar site-check --data-dir data     # 線上網站是否需要重新部署
   python -m radar site-verify --data-dir data    # 部署後確認線上已是最新版
@@ -377,6 +378,7 @@ def main(argv=None):
     p_edition = sub.add_parser("edition", help="產生當天的精選與中文摘要")
     p_edition.add_argument("--data-dir", required=True)
     p_edition.add_argument("--out-dir", required=True, help="和 collect 共用的輸出目錄")
+    sub.add_parser("summary-test", help="用範例專案測試一次摘要（確認權杖有效）")
     p_validate = sub.add_parser("validate", help="驗證產物目錄")
     p_validate.add_argument("dir")
     p_build = sub.add_parser("build-site", help="從資料分支重建網站")
@@ -401,6 +403,8 @@ def main(argv=None):
         return _site_status(args.command, args.data_dir)
     if args.command == "edition":
         return _edition(args)
+    if args.command == "summary-test":
+        return _summary_test()
     return _collect(args, parser)
 
 
@@ -477,6 +481,28 @@ def _edition(args):
         parts.append(f"{sum(f.startswith('summaries/') for f in files)} summaries")
     _set_output(changed=str(bool(files)).lower(), message="data: " + ", ".join(parts),
                 summary_alert=str(alert).lower())
+    return 0
+
+
+def _summary_test():
+    cfg = load_toml("summary.toml")
+    ok, reason = summarize.availability(cfg)
+    if not ok:
+        print(f"::error::無法測試摘要：{reason}")
+        return 1
+    sample = {"full_name": "example/csv2xlsx", "description": "Convert CSV files to Excel workbooks.",
+              "language": "Python", "topics": ["csv", "excel"], "license_spdx": "MIT"}
+    readme = "Install with pip install csv2xlsx, then run csv2xlsx input.csv to create input.xlsx."
+    content, info, error = summarize.ClaudeCodeRunner(cfg)(summarize.build_document(sample, readme))
+    if error:
+        hint = f"；{summarize.AUTH_MESSAGE}" if summarize.AUTH_ERROR_RE.search(error) else ""
+        print(f"::error::摘要測試失敗（模型 {cfg['model']}）：{error}{hint}")
+        return 1
+    issues = summarize.check(content, cfg)
+    print(f"摘要測試成功（模型 {cfg['model']}，輸入 {info['input_tokens']}／輸出 {info['output_tokens']} tokens）")
+    print(f"一句話：{content['one_liner']}")
+    if issues:
+        print(f"::warning::輸出檢查有問題：{issues}")
     return 0
 
 
