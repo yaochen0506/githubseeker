@@ -4,6 +4,7 @@
   python -m radar collect --data-dir data --out-dir out [--force] [--max-rest N]
   python -m radar edition --data-dir data --out-dir out     # 產生當天精選＋中文摘要（寫進同一個 out）
   python -m radar validate out
+  python -m radar release-notes --data-dir data --out-file notes.md   # 最新精選的版本發布內容
   python -m radar summary-test                    # 只測試摘要權杖能不能用，不動任何資料
   python -m radar build-site --data-dir data --out-dir site_out
   python -m radar site-check --data-dir data     # 線上網站是否需要重新部署
@@ -379,6 +380,9 @@ def main(argv=None):
     p_edition.add_argument("--data-dir", required=True)
     p_edition.add_argument("--out-dir", required=True, help="和 collect 共用的輸出目錄")
     sub.add_parser("summary-test", help="用範例專案測試一次摘要（確認權杖有效）")
+    p_notes = sub.add_parser("release-notes", help="產生最新精選的版本發布內容（Email 通知用）")
+    p_notes.add_argument("--data-dir", required=True)
+    p_notes.add_argument("--out-file", required=True)
     p_validate = sub.add_parser("validate", help="驗證產物目錄")
     p_validate.add_argument("dir")
     p_build = sub.add_parser("build-site", help="從資料分支重建網站")
@@ -405,6 +409,17 @@ def main(argv=None):
         return _edition(args)
     if args.command == "summary-test":
         return _summary_test()
+    if args.command == "release-notes":
+        editions = store.load_editions(args.data_dir)
+        if not editions:
+            print("還沒有任何精選，不建立版本發布")
+            _set_output(tag="")
+            return 0
+        title, body = site.release_notes(editions[-1], load_toml("site.toml"))
+        Path(args.out_file).write_text(body, encoding="utf-8")
+        print(body)
+        _set_output(tag=f"edition-{editions[-1]['edition_id']}", title=title)
+        return 0
     return _collect(args, parser)
 
 

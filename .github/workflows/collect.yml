@@ -238,6 +238,53 @@ jobs:
       - name: 確認線上已是最新版
         run: python -m radar site-verify --data-dir data
 
+  notify:
+    # 最新精選已在網站上線、但還沒建立版本發布時建立一筆；GitHub 會寄 Email 給關注這個儲存庫的人。
+    # 每次觸發都會檢查，已建立過就跳過，所以部署延後成功時也會補寄
+    needs: [site-check, deploy]
+    if: always() && !cancelled() && needs.site-check.result == 'success' && needs.deploy.result != 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 取出資料分支（唯讀）
+        run: |
+          if git ls-remote --exit-code --heads origin radar-data > /dev/null; then
+            git clone --quiet --depth 1 --branch radar-data "https://github.com/${GITHUB_REPOSITORY}.git" data
+          else
+            mkdir data
+          fi
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      - id: notes
+        run: python -m radar release-notes --data-dir data --out-file notes.md
+
+      - name: 建立版本發布（寄出 Email 通知）
+        if: steps.notes.outputs.tag != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.notes.outputs.tag }}
+          TITLE: ${{ steps.notes.outputs.title }}
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            echo "$TAG 已經建立過，不重複通知"
+            exit 0
+          fi
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --target radar-data \
+            --title "$TITLE" --notes-file notes.md --latest
+
   summary-test:
     if: github.event_name == 'workflow_dispatch' && inputs.summary_test == true
     runs-on: ubuntu-latest

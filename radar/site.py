@@ -3,6 +3,7 @@
 網站是資料分支的純函數產物：同一份資料、同一版程式，產生的內容完全相同（建置時間除外）。
 """
 
+import re
 import shutil
 import time
 import xml.etree.ElementTree as ET
@@ -116,6 +117,33 @@ def build_sitemap(editions, site_cfg):
         if lastmod:
             ET.SubElement(url, "lastmod").text = lastmod
     return ET.tostring(urlset, encoding="utf-8", xml_declaration=True)
+
+
+def _md(text):
+    """跳脫 Markdown 特殊字元，避免專案資料影響版面或變成連結。"""
+    return re.sub(r"([\\`*_{}\[\]()<>#+!|~])", r"\\\1", text)
+
+
+def release_notes(edition, site_cfg):
+    """每日精選的版本發布內容（GitHub 會把它寄給關注儲存庫的人）。回傳 (標題, Markdown 內文)。"""
+    page = site_cfg["base_url"] + edition_url_path(edition["edition_id"])
+    lines = [f"**{edition['edition_id']} GitHub 熱門專案精選**｜[在網站上看完整精選]({page})", ""]
+    if edition["status"] == "degraded":
+        lines += ["這一天部分榜單抓取失敗，精選只依據其餘來源。", ""]
+    for slot, heading in (("main", "主榜"), ("discovery", "新發現")):
+        picks = [p for p in edition["picks"] if p["slot"] == slot]
+        if not picks:
+            continue
+        lines += [f"### {heading}", ""]
+        for p in picks:
+            summary = p.get("summary") or {}
+            text = summary["content"]["one_liner"] if summary.get("status") == "done" else p["reasons"][0]
+            lines.append(f"{p['position']}. **[{p['full_name']}]({p['html_url']})**：{_md(text)}")
+        lines.append("")
+    if not edition["picks"]:
+        lines += ["這一天沒有符合條件的專案。", ""]
+    lines.append("入選只代表近期熱門，不代表安全或推薦安裝。")
+    return f"{edition['edition_id']} 精選", "\n".join(lines) + "\n"
 
 
 def site_marker(editions, code_version):

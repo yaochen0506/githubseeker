@@ -122,6 +122,21 @@ def test_needs_deploy_compares_edition_and_code():
     assert not site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v2"}, expected)
 
 
+def test_release_notes_list_picks_and_escape_markdown():
+    edition = {"edition_id": "2026-10-28", "status": "normal", "picks": [
+        {"slot": "main", "position": 1, "full_name": "o/r1", "html_url": "https://github.com/o/r1",
+         "reasons": ["GitHub Trending 顯示今日 +500 星（全站日榜第 1 名）"],
+         "summary": {"status": "done", "content": {"one_liner": "把 [連結](x) 變成 *粗體* 的工具"}}},
+        {"slot": "discovery", "position": 1, "full_name": "o/r2", "html_url": "https://github.com/o/r2",
+         "reasons": ["建立 3 天，已有 900 星"], "summary": {"status": "failed", "content": None}},
+    ]}
+    title, body = site.release_notes(edition, SITE)
+    assert title == "2026-10-28 精選"
+    assert "https://yaochen0506.github.io/githubseeker/archive/2026/10/28/" in body
+    assert r"1. **[o/r1](https://github.com/o/r1)**：把 \[連結\]\(x\) 變成 \*粗體\* 的工具" in body
+    assert "### 新發現" in body and "建立 3 天，已有 900 星" in body
+
+
 def test_validate_tree_accepts_edition(tmp_path):
     ed, _, out = build(tmp_path, [run_doc()])
     assert store.validate_tree(out) == 1
