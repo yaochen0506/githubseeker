@@ -1,11 +1,11 @@
 {
  "schema_version": "1",
- "updated_at": "2026-10-26T23:16:27+08:00",
- "business_date": "2026-10-26",
- "last_run_id": "20261026T231518-40347447595.1",
+ "updated_at": "2026-10-27T00:10:43+08:00",
+ "business_date": "2026-10-27",
+ "last_run_id": "20261027T000932-40356346114.1",
  "last_run_complete": true,
- "last_complete_run_id": "20261026T231518-40347447595.1",
- "last_complete_at": "2026-10-26T23:16:27+08:00",
+ "last_complete_run_id": "20261027T000932-40356346114.1",
+ "last_complete_at": "2026-10-27T00:10:43+08:00",
  "sources": [
   {
    "source_id": "all-daily",
@@ -46,7 +46,7 @@
   {
    "source_id": "zh-daily",
    "status": "ok",
-   "rows": 21,
+   "rows": 22,
    "error": null
   },
   {
@@ -69,10 +69,10 @@
   }
  ],
  "counts": {
-  "source_hits": 336,
-  "observations": 126,
+  "source_hits": 337,
+  "observations": 136,
   "unresolved": 0,
-  "tracking": 126
+  "tracking": 136
  },
  "api_usage": {
   "search": {
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 126,
+   "requests": 136,
    "limit": 5000,
-   "remaining_first": 4999,
-   "remaining_last": 4874,
-   "used_by_headers": 126
+   "remaining_first": 4865,
+   "remaining_last": 4730,
+   "used_by_headers": 136
   }
  }
 }

@@ -1,0 +1,644 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-27",
+ "business_date": "2026-10-27",
+ "generated_at": "2026-10-27T00:10:46+08:00",
+ "run_id": "20261027T000932-40356346114.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1332461149,
+   "full_name": "nightly-labs/openbot",
+   "html_url": "https://github.com/nightly-labs/openbot",
+   "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+   "language": "TypeScript",
+   "topics": [
+    "ai-agents",
+    "bun",
+    "codex",
+    "electron",
+    "local-first",
+    "macos",
+    "solidjs",
+    "typescript"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-08-12T21:32:03Z",
+   "pushed_at": "2026-10-26T16:10:03Z",
+   "stars": 1241,
+   "forks": 167,
+   "metric_method": "trending_daily",
+   "growth_per_day": 312.0,
+   "score": 87.4,
+   "score_breakdown": {
+    "s_abs": 0.8317,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 9,
+     "period": "daily",
+     "period_stars": 312
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 312
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +312 星（全站日榜第 9 名）",
+    "也在 TypeScript 日榜第 3 名"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "19f611bc1ece8dfbc85c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1333652151,
+   "full_name": "PC2005-cloud/dsh-pet",
+   "html_url": "https://github.com/PC2005-cloud/dsh-pet",
+   "description": "DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+   "language": "TypeScript",
+   "topics": [
+    "deepseek-harness",
+    "desktop-pet",
+    "dsh",
+    "dsh-plugin"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-08-14T00:38:45Z",
+   "pushed_at": "2026-10-25T06:41:20Z",
+   "stars": 4297,
+   "forks": 329,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 326.14,
+   "score": 83.4,
+   "score_breakdown": {
+    "s_abs": 0.8381,
+    "s_rel": 0.8213
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 14,
+     "period": "weekly",
+     "period_stars": 2283
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +2,283 星（TypeScript 週榜第 14 名），平均每天約 +326 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "9c839d9c3a5832adaaef",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1206390571,
+   "full_name": "debpalash/VoiceStudio",
+   "html_url": "https://github.com/debpalash/VoiceStudio",
+   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "audiobook",
+    "cuda",
+    "dubbing",
+    "elevenlabs-alternative",
+    "huggingface",
+    "local-first",
+    "mlx",
+    "omnivoice-studio",
+    "speech-to-text",
+    "text-to-speech",
+    "transcription",
+    "translate",
+    "tts",
+    "voice-ai",
+    "voice-cloning",
+    "voice-generation",
+    "voicestudio",
+    "workflow"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2026-04-09T21:40:26Z",
+   "pushed_at": "2026-10-26T15:32:55Z",
+   "stars": 88402,
+   "forks": 9750,
+   "metric_method": "trending_daily",
+   "growth_per_day": 2292.0,
+   "score": 81.7,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.2662
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 2292
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 2292
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +2,292 星（全站日榜第 11 名）",
+    "也在 Python 日榜第 4 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "3e248db7b63f3e67d891",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1097346685,
+   "full_name": "pbakaus/impeccable",
+   "html_url": "https://github.com/pbakaus/impeccable",
+   "description": "The design language that makes your AI harness better at design.",
+   "language": "Rust",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2025-11-16T01:52:04Z",
+   "pushed_at": "2026-10-26T16:09:35Z",
+   "stars": 88735,
+   "forks": 5292,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1551.0,
+   "score": 79.4,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.1779
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 1551
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,551 星（全站日榜第 6 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "5b56a42e0bb843b0771c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1183888342,
+   "full_name": "stablyai/orca",
+   "html_url": "https://github.com/stablyai/orca",
+   "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+   "language": "TypeScript",
+   "topics": [
+    "ade",
+    "agent-ide",
+    "ai-agents",
+    "automation",
+    "bot",
+    "claude-code",
+    "codex",
+    "ghostty",
+    "grok-bot",
+    "hermes-agent",
+    "mobile-app",
+    "muse",
+    "openclaw",
+    "opencode",
+    "orchestration",
+    "pi",
+    "runtime",
+    "terminal",
+    "worktrees",
+    "yc-backed"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-17T03:28:57Z",
+   "pushed_at": "2026-10-26T16:08:33Z",
+   "stars": 106737,
+   "forks": 6734,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 1374.57,
+   "score": 78.3,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.1305
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 5,
+     "period": "weekly",
+     "period_stars": 9622
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 3,
+     "period": "weekly",
+     "period_stars": 9622
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +9,622 星（全站週榜第 5 名），平均每天約 +1,375 星",
+    "也在 TypeScript 週榜第 3 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "767552b267723948b92d",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 909213664,
+   "full_name": "TauricResearch/TradingAgents",
+   "html_url": "https://github.com/TauricResearch/TradingAgents",
+   "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "finance",
+    "llm",
+    "multiagent",
+    "trading"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2024-12-28T03:31:08Z",
+   "pushed_at": "2026-10-16T21:38:46Z",
+   "stars": 115594,
+   "forks": 22218,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1376.0,
+   "score": 78.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.1205
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 2,
+     "period": "daily",
+     "period_stars": 1376
+    },
+    {
+     "source_id": "all-weekly",
+     "rank": 10,
+     "period": "weekly",
+     "period_stars": 2461
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1376
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 3,
+     "period": "weekly",
+     "period_stars": 2461
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,376 星（全站日榜第 2 名）",
+    "也在 Python 日榜第 1 名、Python 週榜第 3 名、全站週榜第 10 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "fe5932337a0fb315c75b",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1200597263,
+   "full_name": "Graphify-Labs/graphify",
+   "html_url": "https://github.com/Graphify-Labs/graphify",
+   "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+   "language": "Python",
+   "topics": [
+    "ai-agents",
+    "antigravity",
+    "ast",
+    "claude-code",
+    "code-analysis",
+    "code-search",
+    "codex",
+    "cursor",
+    "developer-tools",
+    "gemini",
+    "graphify",
+    "graphrag",
+    "knowledge-graph",
+    "leiden",
+    "llm",
+    "mcp",
+    "openclaw",
+    "rag",
+    "skills",
+    "tree-sitter"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-04-03T15:49:07Z",
+   "pushed_at": "2026-10-26T15:18:22Z",
+   "stars": 135894,
+   "forks": 12962,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 986.14,
+   "score": 76.7,
+   "score_breakdown": {
+    "s_abs": 0.998,
+    "s_rel": 0.0731
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 6,
+     "period": "weekly",
+     "period_stars": 6903
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 2,
+     "period": "weekly",
+     "period_stars": 6903
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +6,903 星（全站週榜第 6 名），平均每天約 +986 星",
+    "也在 Python 週榜第 2 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "0c8bb85d9d11243716b9",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：Failed to authenticate. API Error: 401 Invalid bearer token"
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1431545439,
+   "full_name": "JustAResearcher/gpu-unlock-ada",
+   "html_url": "https://github.com/JustAResearcher/gpu-unlock-ada",
+   "description": "GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generated locally",
+   "language": "C",
+   "topics": [],
+   "license_spdx": "GPL-2.0",
+   "created_at": "2026-10-23T21:00:53Z",
+   "pushed_at": "2026-10-26T04:24:46Z",
+   "stars": 3665,
+   "forks": 490,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 916.25,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 4 天，已有 3,665 星，建立以來平均每天 +916 星"
+   ],
+   "notes": [
+    "建立僅 4 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "c025341cb64d64c931e3",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": "超過預算（呼叫次數或時間上限）"
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "repo_id": 1432980411,
+   "full_name": "designfuchen/word-atlas",
+   "html_url": "https://github.com/designfuchen/word-atlas",
+   "description": "词光 · Word Atlas — Illustrated IELTS vocabulary with 7,298 words, UK/US audio and FSRS review. Open-source app + CC BY 4.0 dataset.",
+   "language": "TypeScript",
+   "topics": [
+    "chinese",
+    "dataset",
+    "english-learning",
+    "flashcards",
+    "fsrs",
+    "ielts",
+    "language-learning",
+    "pwa",
+    "react",
+    "spaced-repetition",
+    "vocabulary",
+    "webgl"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-10-25T08:27:22Z",
+   "pushed_at": "2026-10-26T13:47:33Z",
+   "stars": 1490,
+   "forks": 381,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 745.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,490 星，建立以來平均每天 +745 星"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認",
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "8bbff6ee7005a4288f93",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 0,
+    "error": "超過預算（呼叫次數或時間上限）"
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "repo_id": 1431851693,
+   "full_name": "rddmwmddr/android-ad-cleaner",
+   "html_url": "https://github.com/rddmwmddr/android-ad-cleaner",
+   "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+   "language": "Python",
+   "topics": [
+    "adb",
+    "ai-agent",
+    "android",
+    "coloros",
+    "debloat",
+    "hyperos",
+    "magicos",
+    "originos"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-24T05:35:47Z",
+   "pushed_at": "2026-10-25T16:46:03Z",
+   "stars": 1730,
+   "forks": 142,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 576.67,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 3 天，已有 1,730 星，建立以來平均每天 +577 星"
+   ],
+   "notes": [
+    "建立僅 3 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e7a496cd9191e821ed18",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 0,
+    "error": "超過預算（呼叫次數或時間上限）"
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  1152014594,
+  1206425593,
+  1222917575,
+  1273427276,
+  1293238217,
+  1309102418,
+  1315850547,
+  1426780056
+ ],
+ "candidate_counts": {
+  "main": 87,
+  "discovery": 5
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 10,
+  "done": 0,
+  "failed": 10,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 15,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0
+ }
+}
