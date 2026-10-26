@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "status.schema.json",
+  "title": "最近一次收集的狀態摘要",
+  "type": "object",
+  "required": ["schema_version", "updated_at", "business_date", "last_run_id", "last_run_complete", "last_complete_run_id", "last_complete_at", "sources", "counts", "api_usage"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1"},
+    "updated_at": {"type": "string"},
+    "business_date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "last_run_id": {"type": "string"},
+    "last_run_complete": {"type": "boolean"},
+    "last_complete_run_id": {"type": ["string", "null"]},
+    "last_complete_at": {"type": ["string", "null"]},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "status", "rows", "error"],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {"type": "string"},
+          "status": {"enum": ["ok", "failed"]},
+          "rows": {"type": "integer", "minimum": 0},
+          "error": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "required": ["source_hits", "observations", "unresolved", "tracking"],
+      "additionalProperties": false,
+      "properties": {
+        "source_hits": {"type": "integer", "minimum": 0},
+        "observations": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "tracking": {"type": "integer", "minimum": 0}
+      }
+    },
+    "api_usage": {"type": "object"}
+  }
+}

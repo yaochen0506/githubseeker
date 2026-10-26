@@ -1,0 +1,75 @@
+# 繁體中文 GitHub 熱門專案雷達：A 階段（每日收集）設定
+
+# 如實標示身分，不偽裝成瀏覽器（稽核報告 C-05）
+user_agent = "githubseeker-radar/0.1 (+https://github.com/yaochen0506/githubseeker)"
+
+# Trending 回 200 但少於這個列數，視為來源失敗（版型可能改變），不當成空榜
+min_rows = 5
+# 兩次抓取 Trending 頁面之間的間隔秒數
+page_delay_seconds = 2
+# 每次執行最多呼叫幾次 GitHub REST API（GITHUB_TOKEN 上限是每小時 1,000 次）
+max_rest_requests = 450
+# 遇到限流時最多等幾秒；超過就放棄剩下的請求，留給下一次觸發
+max_rate_wait_seconds = 90
+
+# 每天抓 8 頁：全站、Python、TypeScript、中文專案 × 日榜、週榜
+[[trending]]
+id = "all-daily"
+path = "/trending"
+period = "daily"
+
+[[trending]]
+id = "all-weekly"
+path = "/trending"
+period = "weekly"
+
+[[trending]]
+id = "python-daily"
+path = "/trending/python"
+period = "daily"
+
+[[trending]]
+id = "python-weekly"
+path = "/trending/python"
+period = "weekly"
+
+[[trending]]
+id = "typescript-daily"
+path = "/trending/typescript"
+period = "daily"
+
+[[trending]]
+id = "typescript-weekly"
+path = "/trending/typescript"
+period = "weekly"
+
+[[trending]]
+id = "zh-daily"
+path = "/trending"
+period = "daily"
+spoken_language = "zh"
+
+[[trending]]
+id = "zh-weekly"
+path = "/trending"
+period = "weekly"
+spoken_language = "zh"
+
+# Search 只取第 1 頁、每頁 100 筆（稽核報告 §5.5）
+[[search]]
+id = "new-30d"
+created_within_days = 30
+min_stars = 50
+
+[[search]]
+id = "new-7d"
+created_within_days = 7
+min_stars = 20
+
+[tracking]
+# 追蹤名單上限；超過時淘汰最久沒在任何來源出現的專案
+max_size = 200
+# 超過幾天沒在任何來源出現就移出追蹤名單
+max_age_days = 14
+# Search 結果中，排除已在 Trending 的專案後，取前幾名加入追蹤
+search_top = 25
