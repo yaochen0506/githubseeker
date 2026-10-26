@@ -1,0 +1,372 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-26",
+ "business_date": "2026-10-26",
+ "generated_at": "2026-10-26T23:39:14+08:00",
+ "run_id": "20261026T231518-40347447595.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1309102418,
+   "full_name": "makecindy/cindy",
+   "html_url": "https://github.com/makecindy/cindy",
+   "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+   "language": "TypeScript",
+   "topics": [
+    "agent",
+    "ai-agent",
+    "ai-assistant",
+    "android",
+    "claude-code",
+    "codex",
+    "electron",
+    "ios",
+    "llm",
+    "macos",
+    "react-native",
+    "typescript",
+    "windows"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-07-22T17:49:34Z",
+   "pushed_at": "2026-10-26T15:13:23Z",
+   "stars": 5932,
+   "forks": 744,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1268.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 1268
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 2,
+     "period": "daily",
+     "period_stars": 1268
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 6,
+     "period": "weekly",
+     "period_stars": 1514
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,268 星（全站日榜第 4 名）",
+    "也在 TypeScript 日榜第 2 名、TypeScript 週榜第 6 名"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1293238217,
+   "full_name": "JetBrains/thinkrail",
+   "html_url": "https://github.com/JetBrains/thinkrail",
+   "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+   "language": "TypeScript",
+   "topics": [
+    "agent",
+    "agent-skills",
+    "agentic-ai",
+    "agentic-workflow",
+    "ai-coding",
+    "ai-tools",
+    "pi-agent",
+    "pi-agent-extension",
+    "spec-driven",
+    "spec-driven-coding",
+    "spec-driven-development",
+    "vibe-coding",
+    "vibecoding"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-07-08T07:40:43Z",
+   "pushed_at": "2026-10-26T15:13:49Z",
+   "stars": 2446,
+   "forks": 135,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1156.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 1156
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1156
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,156 星（全站日榜第 3 名）",
+    "也在 TypeScript 日榜第 1 名"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1152014594,
+   "full_name": "AgriciDaniel/claude-seo",
+   "html_url": "https://github.com/AgriciDaniel/claude-seo",
+   "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "ai-seo",
+    "claude-code",
+    "claude-code-skill",
+    "marketing-automation",
+    "open-source",
+    "seo"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-07T08:17:38Z",
+   "pushed_at": "2026-10-22T16:47:40Z",
+   "stars": 21841,
+   "forks": 3008,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1539.0,
+   "score": 94.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.7581
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 13,
+     "period": "weekly",
+     "period_stars": 2492
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 10,
+     "period": "daily",
+     "period_stars": 1539
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 5,
+     "period": "weekly",
+     "period_stars": 2492
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,539 星（Python 日榜第 10 名）",
+    "也在 Python 週榜第 5 名、全站週榜第 13 名"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1222917575,
+   "full_name": "Nutlope/hallmark",
+   "html_url": "https://github.com/Nutlope/hallmark",
+   "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+   "language": "CSS",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-04-27T20:47:10Z",
+   "pushed_at": "2026-10-22T17:20:32Z",
+   "stars": 35467,
+   "forks": 1849,
+   "metric_method": "trending_daily",
+   "growth_per_day": 2235.0,
+   "score": 91.8,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.6725
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 2235
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +2,235 星（全站日榜第 1 名）"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1315850547,
+   "full_name": "pollen-robotics/microduck",
+   "html_url": "https://github.com/pollen-robotics/microduck",
+   "description": "A Tiny biped duck robot 🦆",
+   "language": "Rust",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-07-29T07:52:16Z",
+   "pushed_at": "2026-10-26T11:29:24Z",
+   "stars": 12213,
+   "forks": 1530,
+   "metric_method": "trending_daily",
+   "growth_per_day": 844.0,
+   "score": 91.7,
+   "score_breakdown": {
+    "s_abs": 0.9755,
+    "s_rel": 0.7424
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 8,
+     "period": "daily",
+     "period_stars": 844
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +844 星（全站日榜第 8 名）"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1273427276,
+   "full_name": "cloudflare/security-audit-skill",
+   "html_url": "https://github.com/cloudflare/security-audit-skill",
+   "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "language": "JavaScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-06-18T14:08:44Z",
+   "pushed_at": "2026-09-14T19:29:02Z",
+   "stars": 48042,
+   "forks": 2997,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 2153.14,
+   "score": 86.7,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.4692
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 1,
+     "period": "weekly",
+     "period_stars": 15072
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +15,072 星（全站週榜第 1 名），平均每天約 +2,153 星"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1206425593,
+   "full_name": "higgsfield-ai/skills",
+   "html_url": "https://github.com/higgsfield-ai/skills",
+   "description": null,
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-04-09T22:49:04Z",
+   "pushed_at": "2026-09-26T16:44:01Z",
+   "stars": 1657,
+   "forks": 320,
+   "metric_method": "trending_daily",
+   "growth_per_day": 253.0,
+   "score": 85.1,
+   "score_breakdown": {
+    "s_abs": 0.8015,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 253
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +253 星（Python 日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1426780056,
+   "full_name": "pengchujin/aerial-tv",
+   "html_url": "https://github.com/pengchujin/aerial-tv",
+   "description": "给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+   "language": "Kotlin",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-20T09:13:06Z",
+   "pushed_at": "2026-10-26T14:44:41Z",
+   "stars": 5938,
+   "forks": 500,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 989.67,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 6 天，已有 5,938 星，建立以來平均每天 +990 星"
+   ],
+   "notes": [
+    "建立僅 6 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null
+  }
+ ],
+ "cooldown_excluded": [],
+ "candidate_counts": {
+  "main": 93,
+  "discovery": 1
+ }
+}
