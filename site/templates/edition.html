@@ -15,7 +15,10 @@
   <p class="warn">這一天的資料不完整：{{ edition.failed_boards|join("、") }}抓取失敗，精選只依據其餘來源。</p>
   {% endif %}
   {% if is_home %}
-  <p class="lead">{{ site.tagline }}。中文摘要即將加入，目前先顯示專案作者寫的英文原文描述。</p>
+  <p class="lead">{{ site.tagline }}。{% if edition.summaries_enabled %}中文摘要由 AI 依據專案說明自動產生，可能有誤。{% else %}中文摘要即將加入，目前先顯示專案作者寫的英文原文描述。{% endif %}</p>
+  {% endif %}
+  {% if edition.summary_failed_count %}
+  <p class="warn">摘要未完成 {{ edition.summary_failed_count }} 項，這些專案先顯示英文原文描述。</p>
   {% endif %}
 </section>
 

@@ -13,6 +13,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from jsonschema import Draft202012Validator
+from referencing import Registry, Resource
 
 # 台灣沒有日光節約時間，用固定 +08:00 即可，不必依賴系統時區資料庫
 TAIPEI = timezone(timedelta(hours=8), "Asia/Taipei")
@@ -22,6 +23,7 @@ SCHEMA_DIR = Path(__file__).resolve().parent.parent / "schema"
 ALLOWED_PATHS = {
     re.compile(r"^runs/\d{4}/\d{2}/\d{2}/\d{8}T\d{6}-[A-Za-z0-9.-]+\.json$"): "run",
     re.compile(r"^editions/\d{4}/\d{2}/\d{2}\.json$"): "edition",
+    re.compile(r"^summaries/\d+/[0-9a-f]{20}\.json$"): "summary_cache",
     re.compile(r"^state/tracking\.json$"): "tracking",
     re.compile(r"^status\.json$"): "status",
 }
@@ -69,10 +71,21 @@ def write_json(path, doc):
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def _schema_registry():
+    """讓 schema 之間可以用 $ref 互相引用（例如精選引用摘要格式）。"""
+    docs = [read_json(p) for p in sorted(SCHEMA_DIR.glob("*.schema.json"))]
+    return Registry().with_resources((d["$id"], Resource.from_contents(d)) for d in docs)
+
+
+def schema_errors(doc, kind):
+    schema = read_json(SCHEMA_DIR / f"{kind}.schema.json")
+    validator = Draft202012Validator(schema, registry=_schema_registry())
+    return sorted(validator.iter_errors(doc), key=lambda e: list(e.path))
+
+
 def validate(doc, kind):
     """不符合 schema 就丟出例外，避免壞資料進到資料分支。"""
-    schema = read_json(SCHEMA_DIR / f"{kind}.schema.json")
-    errors = sorted(Draft202012Validator(schema).iter_errors(doc), key=lambda e: list(e.path))
+    errors = schema_errors(doc, kind)
     if errors:
         first = errors[0]
         where = "/".join(str(p) for p in first.path) or "(root)"

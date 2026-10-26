@@ -41,12 +41,16 @@ jobs:
     # 這個 job 處理外部網頁與 API 資料，只給讀取權限
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     permissions:
       contents: read
+    env:
+      # 只傳「有沒有設定權杖」，權杖本身只在寫摘要那一步提供
+      HAS_CLAUDE_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
     outputs:
-      changed: ${{ steps.collect.outputs.changed }}
-      message: ${{ steps.collect.outputs.message }}
+      changed: ${{ steps.edition.outputs.changed }}
+      message: ${{ steps.edition.outputs.message }}
+      summary_alert: ${{ steps.edition.outputs.summary_alert }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -69,15 +73,28 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: 收集並產生精選
-        id: collect
+      - name: 收集
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RADAR_SCHEDULE: ${{ github.event.schedule }}
           RADAR_FORCE: ${{ inputs.force }}
         run: python -m radar collect --data-dir data --out-dir out
 
-      - if: steps.collect.outputs.changed == 'true'
+      - name: 安裝 Claude Code（寫摘要用，固定版本）
+        if: env.HAS_CLAUDE_TOKEN == 'true'
+        run: npm install --global @anthropic-ai/claude-code@2.1.308
+
+      - name: 產生精選與中文摘要
+        id: edition
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RADAR_SCHEDULE: ${{ github.event.schedule }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          DISABLE_AUTOUPDATER: "1"
+          CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
+        run: python -m radar edition --data-dir data --out-dir out
+
+      - if: steps.edition.outputs.changed == 'true'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: radar-out
@@ -216,6 +233,18 @@ jobs:
 
       - name: 確認線上已是最新版
         run: python -m radar site-verify --data-dir data
+
+  summary-alert:
+    # 摘要成功率過低時讓 workflow 標示失敗，GitHub 會寄信通知（資料與網站照常發布）
+    needs: [collect, deploy]
+    if: always() && needs.collect.outputs.summary_alert == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - run: |
+          echo "::error::今天的中文摘要成功率過低。請查看 collect job「產生精選與中文摘要」的紀錄；常見原因是權杖過期（一年效期）或訂閱額度用完。"
+          exit 1
 
   heartbeat:
     # 公開儲存庫 60 天沒有活動，排程會被停用；主分支超過 25 天沒有提交就補一個心跳提交

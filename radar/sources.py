@@ -146,13 +146,18 @@ class GitHubApi:
         if token:
             self.headers["Authorization"] = f"Bearer {token}"
 
-    def get(self, path, params=None):
+    def get_text(self, path):
+        """取得原始文字內容（例如 README），不經 JSON 解析。"""
+        return self.get(path, raw=True)
+
+    def get(self, path, params=None, raw=False):
+        headers = {**self.headers, "Accept": "application/vnd.github.raw+json"} if raw else self.headers
         for attempt in range(3):
             if self.requests >= self.max_requests:
                 raise BudgetExhausted(f"{self.requests} requests")
             self.requests += 1
             try:
-                resp = self.session.get(API_ROOT + path, params=params, headers=self.headers, timeout=20)
+                resp = self.session.get(API_ROOT + path, params=params, headers=headers, timeout=20)
             except requests.RequestException as exc:
                 if attempt == 2:
                     raise ApiError(f"network: {exc.__class__.__name__}") from exc
@@ -161,7 +166,7 @@ class GitHubApi:
             self._track(resp)
 
             if resp.status_code == 200:
-                return resp.json()
+                return resp.text if raw else resp.json()
             if resp.status_code in (404, 410, 451):
                 raise NotFound(f"http_{resp.status_code}")
             wait = self._rate_limit_wait(resp)

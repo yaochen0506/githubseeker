@@ -2,13 +2,39 @@
   <img class="og" src="{{ p.og_image }}" alt="" loading="lazy" referrerpolicy="no-referrer" width="1200" height="600">
   <div class="card-body">
     <h3><span class="pos">{{ p.position }}</span><a href="{{ p.html_url }}" rel="noopener">{{ p.full_name }}</a></h3>
-    <ul class="reasons">
+    {% if p.summary_done %}
+    {% set s = p.summary.content %}
+    <p class="one-liner">{{ s.one_liner }}</p>
+    {% endif %}
+    <ul class="reasons" aria-label="入選理由">
       {% for r in p.reasons %}
       <li>{{ r }}</li>
       {% endfor %}
     </ul>
+    {% if p.summary_done %}
+    <dl class="summary">
+      <dt>主要功能</dt>
+      <dd><ul>{% for f in s.features %}<li>{{ f }}</li>{% endfor %}</ul></dd>
+      <dt>適合誰</dt>
+      <dd>{{ s.audience }}</dd>
+      <dt>可以怎麼用</dt>
+      <dd><ul>{% for u in s.use_cases %}<li>{{ u }}</li>{% endfor %}</ul></dd>
+      <dt>使用門檻</dt>
+      <dd><span class="barrier barrier-{{ s.barrier }}">{{ p.barrier_label }}</span>{{ s.barrier_note }}</dd>
+      <dt>限制</dt>
+      <dd>{{ s.limitations }}</dd>
+    </dl>
+    <p class="ai-note">AI 摘要：依據專案{% if p.summary.has_readme %}的 README {% endif %}自動產生，可能有誤，請以專案頁為準。</p>
+    {% if p.description %}
+    <details class="orig"><summary>英文原文描述</summary><p>{{ p.description }}</p></details>
+    {% endif %}
+    {% else %}
     {% if p.description %}
     <p class="desc"><span class="badge">原文</span>{{ p.description }}</p>
+    {% endif %}
+    {% if p.summary_failed %}
+    <p class="ai-note">中文摘要這次沒有完成，先顯示作者寫的原文描述。</p>
+    {% endif %}
     {% endif %}
     <dl class="facts">
       <div><dt><a href="{{ root }}about/#g-star">星數</a></dt><dd>{{ p.stars|num }}</dd></div>

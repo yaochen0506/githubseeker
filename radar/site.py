@@ -14,6 +14,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoes
 
 from . import store
 from .rank import to_date
+from .summarize import BARRIER_LABELS
 
 SITE_DIR = Path(__file__).resolve().parent.parent / "site"
 ATOM_NS = "http://www.w3.org/2005/Atom"
@@ -46,6 +47,9 @@ def _pick_view(pick):
         "pushed_date": pushed.isoformat() if pushed else None,
         "og_image": f"https://opengraph.githubassets.com/1/{pick['full_name']}",
         "topics_shown": pick["topics"][:5],
+        "summary_done": (pick.get("summary") or {}).get("status") == "done",
+        "summary_failed": (pick.get("summary") or {}).get("status") == "failed",
+        "barrier_label": BARRIER_LABELS.get(((pick.get("summary") or {}).get("content") or {}).get("barrier"), ""),
     }
 
 
@@ -57,6 +61,8 @@ def _edition_view(edition, boards):
         "main": [p for p in picks if p["slot"] == "main"],
         "discovery": [p for p in picks if p["slot"] == "discovery"],
         "failed_boards": [boards.get(s, s) for s in edition["coverage"]["sources_failed"]],
+        "summaries_enabled": (edition.get("summary_stats") or {}).get("enabled", False),
+        "summary_failed_count": sum(p["summary_failed"] for p in picks),
         "url_path": edition_url_path(edition["edition_id"]),
     }
 
@@ -85,7 +91,13 @@ def build_feed(editions, site_cfg):
                 ET.SubElement(item, "link").text = f"{base}{edition_url_path(edition['edition_id'])}#repo-{pick['repo_id']}"
                 ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = f"radar:{edition['edition_id']}:{pick['repo_id']}"
                 ET.SubElement(item, "pubDate").text = pub
-                lines = list(pick["reasons"])
+                summary = pick.get("summary") or {}
+                lines = []
+                if summary.get("status") == "done":
+                    c = summary["content"]
+                    lines += [c["one_liner"], "主要功能：" + "；".join(c["features"]),
+                              f"使用門檻：{BARRIER_LABELS[c['barrier']]}，{c['barrier_note']}", "（AI 摘要，可能有誤）"]
+                lines += pick["reasons"]
                 if pick["description"]:
                     lines.append(f"原文描述：{pick['description']}")
                 lines += pick["notes"] + [pick["html_url"]]

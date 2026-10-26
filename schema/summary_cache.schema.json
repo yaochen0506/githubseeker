@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "summary_cache.schema.json",
+  "title": "摘要快取：同一份輸入、同一版指示與模型只產生一次（只新增、不修改）",
+  "type": "object",
+  "required": ["schema_version", "cache_key", "repo_id", "full_name", "created_at", "model", "prompt_version", "input_sha256", "has_readme", "readme_chars", "content"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1"},
+    "cache_key": {"type": "string", "pattern": "^[0-9a-f]{20}$"},
+    "repo_id": {"type": "integer", "minimum": 1},
+    "full_name": {"type": "string"},
+    "created_at": {"type": "string"},
+    "model": {"type": "string"},
+    "prompt_version": {"type": "string"},
+    "input_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "has_readme": {"type": "boolean"},
+    "readme_chars": {"type": "integer", "minimum": 0},
+    "content": {"$ref": "summary.schema.json"}
+  }
+}

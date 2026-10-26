@@ -2,6 +2,7 @@
 
 用法：
   python -m radar collect --data-dir data --out-dir out [--force] [--max-rest N]
+  python -m radar edition --data-dir data --out-dir out     # 產生當天精選＋中文摘要（寫進同一個 out）
   python -m radar validate out
   python -m radar build-site --data-dir data --out-dir site_out
   python -m radar site-check --data-dir data     # 線上網站是否需要重新部署
@@ -24,7 +25,7 @@ from pathlib import Path
 
 import requests
 
-from . import editorial, rank, site, sources, store
+from . import editorial, rank, site, sources, store, summarize
 from .sources import ApiError, BudgetExhausted, GitHubApi, NotFound, RateLimited
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -313,11 +314,18 @@ def meets_minimum(run, score_cfg):
     return bool(search_ok) and len(found) >= score_cfg["degraded_min_search_candidates"]
 
 
-def maybe_build_edition(data_dir, out_dir, business_date, new_run, trigger, score_cfg, boards, now=store.now_taipei):
-    """當天還沒有精選時，視情況產生一份。已存在就不動（精選提交後不再修改）。"""
+def maybe_build_edition(data_dir, out_dir, business_date, new_runs, trigger, score_cfg, boards, now=store.now_taipei,
+                        summarizer=None):
+    """當天還沒有精選時，視情況產生一份。已存在就不動（精選提交後不再修改）。
+
+    new_runs：這次執行剛產生、還沒提交的 run（單一份、清單或 None）。
+    summarizer：替精選加上中文摘要的函式（C 階段）；None 代表不寫摘要。
+    """
     if (Path(data_dir) / store.edition_path(business_date)).exists():
         return None
-    runs = store.load_runs(data_dir, business_date) + ([new_run] if new_run else [])
+    if isinstance(new_runs, dict):
+        new_runs = [new_runs]
+    runs = store.load_runs(data_dir, business_date) + list(new_runs or [])
     if not runs:
         return None
     complete = [r for r in runs if r["complete"]]
@@ -332,6 +340,8 @@ def maybe_build_edition(data_dir, out_dir, business_date, new_run, trigger, scor
         status = "degraded"
     past = [e for e in store.load_editions(data_dir) if e["business_date"] < business_date]
     edition = build_edition(run, past, score_cfg, boards, status, now())
+    if summarizer:
+        summarizer(edition)
     store.validate(edition, "edition")
     store.write_json(Path(out_dir) / store.edition_path(business_date), edition)
     return edition
@@ -364,6 +374,9 @@ def main(argv=None):
     p_collect.add_argument("--config", default=str(CONFIG_DIR / "radar.toml"))
     p_collect.add_argument("--force", action="store_true", help="今天已有完整紀錄也重新收集")
     p_collect.add_argument("--max-rest", type=int, help="覆寫每次執行的 REST 請求上限")
+    p_edition = sub.add_parser("edition", help="產生當天的精選與中文摘要")
+    p_edition.add_argument("--data-dir", required=True)
+    p_edition.add_argument("--out-dir", required=True, help="和 collect 共用的輸出目錄")
     p_validate = sub.add_parser("validate", help="驗證產物目錄")
     p_validate.add_argument("dir")
     p_build = sub.add_parser("build-site", help="從資料分支重建網站")
@@ -386,6 +399,8 @@ def main(argv=None):
         return 0
     if args.command in ("site-check", "site-verify"):
         return _site_status(args.command, args.data_dir)
+    if args.command == "edition":
+        return _edition(args)
     return _collect(args, parser)
 
 
@@ -410,31 +425,58 @@ def _collect(args, parser):
                     max_wait=config["max_rate_wait_seconds"])
     run_doc = collect(config, config_sha, args.data_dir, out_dir, api, session, started, trigger,
                       _code_version(), run_suffix, force=force)
-    messages = []
     if run_doc is None:
         print(f"{started.date()} 已有完整的收集紀錄，這次不重複收集")
-    else:
-        ok = sum(s["status"] == "ok" for s in run_doc["sources"])
-        print(f"run {run_doc['run_id']}：來源成功 {ok}/{len(run_doc['sources'])}，"
-              f"命中 {len(run_doc['source_hits'])} 筆，觀測 {len(run_doc['observations'])} 個專案，"
-              f"未解析 {len(run_doc['unresolved'])} 個，完整：{run_doc['complete']}")
-        for s in run_doc["sources"]:
-            if s["status"] != "ok":
-                print(f"::warning::來源 {s['source_id']} 失敗：{s['error']}")
-        print(f"API 用量：{run_doc['api_usage']}")
-        messages.append(f"run {run_doc['run_id']}")
+        return 0
+    ok = sum(s["status"] == "ok" for s in run_doc["sources"])
+    print(f"run {run_doc['run_id']}：來源成功 {ok}/{len(run_doc['sources'])}，"
+          f"命中 {len(run_doc['source_hits'])} 筆，觀測 {len(run_doc['observations'])} 個專案，"
+          f"未解析 {len(run_doc['unresolved'])} 個，完整：{run_doc['complete']}")
+    for s in run_doc["sources"]:
+        if s["status"] != "ok":
+            print(f"::warning::來源 {s['source_id']} 失敗：{s['error']}")
+    print(f"API 用量：{run_doc['api_usage']}")
+    return 0
 
-    edition = maybe_build_edition(args.data_dir, out_dir, started.date().isoformat(), run_doc, trigger,
-                                  load_toml("score.toml"), load_toml("site.toml")["boards"])
+
+def _edition(args):
+    started = store.now_taipei()
+    business_date = started.date().isoformat()
+    trigger = trigger_info(started, os.environ.get("GITHUB_EVENT_NAME", "local"), os.environ.get("RADAR_SCHEDULE"))
+    out_dir = Path(args.out_dir)
+    config, _ = load_config(CONFIG_DIR / "radar.toml")
+    summary_cfg = load_toml("summary.toml")
+    api = GitHubApi(requests.Session(), token=os.environ.get("GITHUB_TOKEN"),
+                    max_requests=config["max_rest_requests"], max_wait=config["max_rate_wait_seconds"])
+    stats = {}
+
+    def summarizer(edition):
+        stats.update(summarize.summarize_edition(edition, api, args.data_dir, out_dir, summary_cfg))
+
+    edition = maybe_build_edition(args.data_dir, out_dir, business_date, store.load_runs(out_dir, business_date),
+                                  trigger, load_toml("score.toml"), load_toml("site.toml")["boards"],
+                                  summarizer=summarizer)
     if edition is None:
         print("這次沒有產生新的精選（今天已有精選，或資料還不完整、等下一次觸發）")
     else:
         main_count = sum(p["slot"] == "main" for p in edition["picks"])
         print(f"產生 {edition['edition_id']} 精選（{edition['status']}）：主榜 {main_count} 個、"
               f"新發現 {len(edition['picks']) - main_count} 個，因 7 天內入選過而排除 {len(edition['cooldown_excluded'])} 個")
-        messages.append(f"edition {edition['edition_id']}")
+        print(f"摘要：{stats}")
+        for pick in edition["picks"]:
+            if pick["summary"]["status"] == "failed":
+                print(f"::warning::{pick['full_name']} 摘要失敗：{pick['summary']['error']}")
 
-    _set_output(changed=str(bool(messages)).lower(), message="data: " + ", ".join(messages))
+    alert = bool(stats) and summarize.needs_alert(stats, summary_cfg)
+    if alert:
+        print(f"::warning::摘要成功率過低：{stats}")
+    files = [p.relative_to(out_dir).as_posix() for p in out_dir.rglob("*") if p.is_file()] if out_dir.exists() else []
+    parts = [f"run {Path(f).stem}" for f in files if f.startswith("runs/")]
+    parts += [f"edition {business_date}" for f in files if f.startswith("editions/")]
+    if any(f.startswith("summaries/") for f in files):
+        parts.append(f"{sum(f.startswith('summaries/') for f in files)} summaries")
+    _set_output(changed=str(bool(files)).lower(), message="data: " + ", ".join(parts),
+                summary_alert=str(alert).lower())
     return 0
 
 

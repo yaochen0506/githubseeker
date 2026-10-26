@@ -28,6 +28,9 @@
     --note-text: #f2b8a2;
     --chip: #232a32;
   }
+  .barrier-online { background: #173a22; color: #9fe0b2; }
+  .barrier-install { background: #3a2f10; color: #f3d68a; }
+  .barrier-code { background: #3d1d18; color: #f4ada3; }
 }
 
 * { box-sizing: border-box; }
@@ -75,7 +78,19 @@ h2 { margin: 28px 0 4px; font-size: 1.25rem; }
 .card h3 { margin: 0 0 8px; font-size: 1.1rem; line-height: 1.4; display: flex; gap: 8px; align-items: baseline; }
 .pos { flex: none; display: inline-grid; place-items: center; min-width: 1.6em; height: 1.6em; border-radius: 50%; background: var(--chip); color: var(--muted); font-size: 0.8rem; }
 
-.reasons { margin: 0 0 8px; padding-left: 1.2em; }
+.one-liner { margin: 0 0 10px; font-size: 1.05rem; font-weight: 600; }
+.reasons { margin: 0 0 8px; padding-left: 1.2em; color: var(--muted); font-size: 0.95rem; }
+.summary { margin: 0 0 8px; }
+.summary dt { margin-top: 8px; font-weight: 700; font-size: 0.9rem; }
+.summary dd { margin: 2px 0 0; }
+.summary ul { margin: 0; padding-left: 1.2em; }
+.barrier { display: inline-block; margin-right: 6px; padding: 0 8px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; }
+.barrier-online { background: #dff3e4; color: #1a6b34; }
+.barrier-install { background: #fff1d6; color: #7a5200; }
+.barrier-code { background: #fde4e1; color: #8a2417; }
+.ai-note { margin: 4px 0 10px; color: var(--muted); font-size: 0.8rem; }
+.orig { margin: 0 0 10px; color: var(--muted); font-size: 0.9rem; }
+.orig summary { cursor: pointer; }
 .desc { margin: 0 0 10px; color: var(--muted); }
 .badge { display: inline-block; margin-right: 6px; padding: 0 6px; border: 1px solid var(--line); border-radius: 4px; font-size: 0.75rem; }
 
