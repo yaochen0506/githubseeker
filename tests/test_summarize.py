@@ -133,6 +133,16 @@ def test_all_failures_are_visible_and_alert(tmp_path):
     store.validate(ed, "edition")
 
 
+def test_invalid_token_stops_immediately(tmp_path):
+    ed = edition(pick(1), pick(2), pick(3))
+    runner = FakeRunner("success：Failed to authenticate. API Error: 401 Invalid bearer token")
+    stats, _ = run(tmp_path, ed, {"o/r1": "a", "o/r2": "b", "o/r3": "c"}, runner)
+    assert len(runner.calls) == 1  # 第一次就停，不再浪費呼叫
+    assert all("權杖無效" in p["summary"]["error"] for p in ed["picks"])
+    assert stats["failed"] == 3 and "setup-token" in stats["reason"] and summarize.needs_alert(stats, CFG)
+    store.validate(ed, "edition")
+
+
 def test_budget_limits_calls(tmp_path):
     cfg = {**CFG, "max_calls_per_run": 1}
     ed = edition(pick(1), pick(2))

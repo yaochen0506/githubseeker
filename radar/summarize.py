@@ -21,6 +21,8 @@ from .sources import ApiError, BudgetExhausted, NotFound, RateLimited
 ROOT = Path(__file__).resolve().parent.parent
 PROMPT_PATH = ROOT / "config" / "summary_prompt.md"
 URL_RE = re.compile(r"https?://|www\.|\b[a-z0-9-]+\.(?:com|io|org|net|dev|ai|app)\b", re.I)
+AUTH_ERROR_RE = re.compile(r"401|403|authenticat|bearer token|oauth|not logged in|login expired", re.I)
+AUTH_MESSAGE = "Claude 權杖無效或已過期，請重新執行 claude setup-token 並更新 GitHub Secret"
 BARRIER_LABELS = {"online": "免安裝（線上可用）", "install": "需要下載安裝", "code": "需要寫程式"}
 
 
@@ -163,6 +165,7 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
         runner = ClaudeCodeRunner(cfg)
 
     deadline = clock() + cfg["total_timeout_seconds"]
+    auth_failed = False
     for pick in edition["picks"]:
         raw = fetch_readme(api, pick["full_name"])
         readme = clean_readme(raw, cfg["readme_max_chars"]) if raw else ""
@@ -185,6 +188,11 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
 
         stats["attempted"] += 1
         content, feedback, error, attempts = None, None, None, 0
+        if auth_failed:
+            # 權杖已被拒絕，後面的專案不必再試
+            pick["summary"] = _record("failed", cfg, key, has_readme=bool(readme), error=AUTH_MESSAGE)
+            stats["failed"] += 1
+            continue
         for _ in range(cfg["max_attempts_per_repo"]):
             if stats["calls"] >= cfg["max_calls_per_run"] or clock() > deadline:
                 error = "超過預算（呼叫次數或時間上限）"
@@ -196,6 +204,9 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
             stats["output_tokens"] += info.get("output_tokens", 0)
             stats["cost_usd"] = round(stats["cost_usd"] + info.get("cost_usd", 0), 6)
             if error:
+                if AUTH_ERROR_RE.search(error):
+                    auth_failed, error = True, f"{AUTH_MESSAGE}（{error[:120]}）"
+                    break
                 feedback = None
                 continue
             issues = check(result, cfg)
@@ -218,6 +229,8 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
         pick["summary"] = _record("done", cfg, key, has_readme=bool(readme), content=content, attempts=attempts)
         stats["done"] += 1
 
+    if auth_failed:
+        stats["reason"] = AUTH_MESSAGE
     edition["summary_stats"] = stats
     return stats
 
