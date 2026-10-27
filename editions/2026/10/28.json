@@ -1,0 +1,756 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-28",
+ "business_date": "2026-10-28",
+ "generated_at": "2026-10-28T06:16:59+08:00",
+ "run_id": "20261028T061540-40593406639.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1315788496,
+   "full_name": "elayadesign/ai-design-skills",
+   "html_url": "https://github.com/elayadesign/ai-design-skills",
+   "description": null,
+   "language": null,
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-07-29T06:43:16Z",
+   "pushed_at": "2026-10-27T16:02:10Z",
+   "stars": 9175,
+   "forks": 660,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1395.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1395
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,395 星（全站日榜第 1 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "842d445439100ac7b751",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "不可以包含網址或網域名稱"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1273646780,
+   "full_name": "togg53192-cmd/jailbreaks",
+   "html_url": "https://github.com/togg53192-cmd/jailbreaks",
+   "description": "LIST OF ALL MY JAILBREAKS",
+   "language": null,
+   "topics": [],
+   "license_spdx": null,
+   "created_at": "2026-06-18T18:21:25Z",
+   "pushed_at": "2026-10-25T15:21:20Z",
+   "stars": 5418,
+   "forks": 813,
+   "metric_method": "trending_daily",
+   "growth_per_day": 890.0,
+   "score": 98.7,
+   "score_breakdown": {
+    "s_abs": 0.9832,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 890
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +890 星（全站日榜第 11 名）"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "收集各家 AI 模型「越獄」提示詞的清單，試圖讓模型繞過原本的行為規範",
+     "features": [
+      "31 份提示詞，涵蓋 Claude、Gemini 等 25 個以上模型",
+      "包含系統提示詞、AGENTS.md 與 Ollama Modelfile",
+      "作者表示每個檔案都是完整、可直接貼上的版本"
+     ],
+     "audience": "研究 AI 安全、提示詞注入（prompt injection）防護的研究人員與開發者",
+     "use_cases": [
+      "研究人員觀察角色設定與指令衝突如何影響模型行為",
+      "開發者可能用來測試自家 AI 系統抵抗提示詞注入的能力"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要懂 API 系統提示詞、AGENTS.md 或 Ollama 等開發工具的設定方式",
+     "limitations": "僅限研究與教育用途；使用可能違反模型服務條款。作者表示效果依模型版本而定，更新後可能失效",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "6b376f5634316ac2fdf9",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1187630119,
+   "full_name": "NVIDIA/SkillSpector",
+   "html_url": "https://github.com/NVIDIA/SkillSpector",
+   "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+   "language": "Python",
+   "topics": [
+    "agent-security",
+    "agent-skills",
+    "agentic-ai",
+    "ai-security",
+    "claude-code",
+    "mcp",
+    "prompt-injection",
+    "security-scanner",
+    "security-tools",
+    "security-workflow",
+    "supply-chain-security"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-03-21T00:28:43Z",
+   "pushed_at": "2026-10-27T17:51:03Z",
+   "stars": 22723,
+   "forks": 1970,
+   "metric_method": "trending_daily",
+   "growth_per_day": 932.0,
+   "score": 84.9,
+   "score_breakdown": {
+    "s_abs": 0.9898,
+    "s_rel": 0.4277
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 932
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +932 星（Python 日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在安裝 AI 代理技能（skills）之前，先掃描裡面有沒有安全風險",
+     "features": [
+      "涵蓋 17 類共 71 種漏洞模式，含提示注入與資料外洩",
+      "先做靜態分析，可再選用 LLM 做語意評估",
+      "給出 0-100 風險分數，可輸出 JSON、SARIF 等報告"
+     ],
+     "audience": "使用 Claude Code、Codex、MCP 等 AI 代理工具的開發者與資安人員",
+     "use_cases": [
+      "安裝別人分享的 Claude Code 技能前，先檢查有沒有惡意內容",
+      "一次批次掃描整個資料夾裡的多個技能",
+      "比較 MCP Registry 前後兩次快照，找出新增或變動的伺服器"
+     ],
+     "barrier": "code",
+     "barrier_note": "要用命令列，透過 Python 或 Docker 安裝；LLM 分析還需要 API 金鑰",
+     "limitations": "下載與壓縮檔上限 100 MiB，單一檔案只分析 1 MB；排除檔案會讓報告無法判定為安全；codex_cli 已停用",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "963f3a00e0f2b7d5d0ba",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1124219907,
+   "full_name": "HKUDS/DeepTutor",
+   "html_url": "https://github.com/HKUDS/DeepTutor",
+   "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+   "language": "Python",
+   "topics": [
+    "ai-agents",
+    "ai-tutor",
+    "clawbot",
+    "cli-tool",
+    "deepresearch",
+    "interactive-learning",
+    "learning",
+    "multi-agent-systems",
+    "rag"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2025-12-28T15:35:54Z",
+   "pushed_at": "2026-10-27T18:37:55Z",
+   "stars": 45739,
+   "forks": 5739,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1587.0,
+   "score": 84.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.3594
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 9,
+     "period": "daily",
+     "period_stars": 1587
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1587
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,587 星（全站日榜第 9 名）",
+    "也在 Python 日榜第 1 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 AI 打造個人化家教，結合知識庫、測驗與學習路徑陪你長期學習",
+     "features": [
+      "上傳文件建立知識庫，閱讀時逐頁引用來源",
+      "自動出題、題庫練習與引導式學習路徑",
+      "深度研究、視覺化動畫與多種聊天平台串接"
+     ],
+     "audience": "想用 AI 輔助自學的學生與終身學習者，以及願意自行架設的教學或技術人員",
+     "use_cases": [
+      "把 PDF、EPUB 教材匯入後，邊讀邊向 AI 提問並查看引用頁面",
+      "依學習路徑每日練習題目，追蹤自己的掌握程度",
+      "看 YouTube 影片學習，或產生整本學習用的電子書"
+     ],
+     "barrier": "code",
+     "barrier_note": "需以 Python 或 Docker 自行安裝部署，並設定 AI 模型服務的 API 金鑰",
+     "limitations": "README 未說明明確限制；版本更新頻繁，v1.6.3 曾有前後端不相容的重大改版",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e019707e99cc5933087f",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 664013991,
+   "full_name": "gitroomhq/postiz-app",
+   "html_url": "https://github.com/gitroomhq/postiz-app",
+   "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+   "language": "TypeScript",
+   "topics": [
+    "nextjs",
+    "open-source",
+    "open-source-social-media-scheduling-tool",
+    "oss",
+    "postiz-cloud",
+    "postiz-hosted",
+    "redis",
+    "scheduling-tool",
+    "social-media-scheduling-tool",
+    "typescript"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2023-07-08T17:24:22Z",
+   "pushed_at": "2026-10-24T18:27:21Z",
+   "stars": 39277,
+   "forks": 7503,
+   "metric_method": "trending_daily",
+   "growth_per_day": 953.0,
+   "score": 80.7,
+   "score_breakdown": {
+    "s_abs": 0.993,
+    "s_rel": 0.2487
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 953
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 953
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 19,
+     "period": "weekly",
+     "period_stars": 1433
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +953 星（全站日榜第 7 名）",
+    "也在 TypeScript 日榜第 3 名、TypeScript 週榜第 19 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "b88f482ca2b0fc36920a",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "不可以包含網址或網域名稱"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1165277268,
+   "full_name": "Panniantong/Agent-Reach",
+   "html_url": "https://github.com/Panniantong/Agent-Reach",
+   "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+   "language": "Python",
+   "topics": [
+    "agent-infrastructure",
+    "ai-agent",
+    "ai-search",
+    "automation",
+    "bilibili",
+    "claude-code",
+    "cli",
+    "cursor",
+    "free-api",
+    "llm-tools",
+    "mcp",
+    "python",
+    "reddit-scraper",
+    "twitter-scraper",
+    "web-scraper",
+    "xiaohongshu",
+    "youtube-transcript"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-24T02:10:24Z",
+   "pushed_at": "2026-10-25T04:37:26Z",
+   "stars": 104871,
+   "forks": 9299,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1623.0,
+   "score": 78.9,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.1572
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 1623
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,623 星（Python 日榜第 4 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI Agent 能讀取、搜尋 YouTube、Reddit、小紅書等平台內容的工具",
+     "features": [
+      "搜尋與讀取 B站、YouTube、GitHub、Reddit 等平台",
+      "抓取影片字幕，或把影片、Podcast 轉成文字",
+      "用口語指令新增、移除平台或升級工具"
+     ],
+     "audience": "使用 Claude Code、Codex 等 CLI AI Agent，想讓 AI 查社群與中文平台資料的人",
+     "use_cases": [
+      "讓 AI 讀取 YouTube 或 B站影片字幕並整理內容",
+      "在小紅書、Reddit 搜尋貼文與留言做資料蒐集",
+      "查詢雪球股票行情或 LinkedIn 職缺詳情"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要已在使用能執行命令的 CLI AI Agent，部分平台要登入，語音轉文字需 Groq 或 OpenAI Key",
+     "limitations": "只能讀取不能發文；Twitter 等實驗平台可能隨時失效；建議用分身帳號；PyPI 上的同名套件不是本專案",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "82c5fbfe3114062d9a44",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1177402105,
+   "full_name": "heygen-com/hyperframes",
+   "html_url": "https://github.com/heygen-com/hyperframes",
+   "description": "Write HTML. Render video. Built for agents.",
+   "language": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "animation",
+    "claude-code",
+    "ffmpeg",
+    "framework",
+    "gsap",
+    "html",
+    "html-to-video",
+    "mcp",
+    "motion-graphics",
+    "puppeteer",
+    "rendering",
+    "typescript",
+    "video-editor"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-03-10T01:51:06Z",
+   "pushed_at": "2026-10-27T22:15:39Z",
+   "stars": 73884,
+   "forks": 6701,
+   "metric_method": "trending_daily",
+   "growth_per_day": 965.0,
+   "score": 77.9,
+   "score_breakdown": {
+    "s_abs": 0.9948,
+    "s_rel": 0.1323
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 13,
+     "period": "daily",
+     "period_stars": 965
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 5,
+     "period": "weekly",
+     "period_stars": 5540
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +965 星（TypeScript 日榜第 13 名）",
+    "也在 TypeScript 週榜第 5 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 HTML 寫畫面和動畫，轉成 MP4 影片的開源框架，可以搭配 AI 助手使用",
+     "features": [
+      "把 HTML、CSS 動畫和媒體轉成 MP4 影片",
+      "提供 AI 助手技能，用一句話請 AI 做影片",
+      "約 450 個現成轉場、字幕、圖表等元件"
+     ],
+     "audience": "會寫網頁的開發者，以及用 Claude Code、Cursor 這類 AI 程式助手做影片的人",
+     "use_cases": [
+      "製作產品發表或新功能介紹影片",
+      "做有動態字幕、疊加圖層和音樂的社群短影片",
+      "把文件、PDF 或網站導覽轉成說明影片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要安裝 Node.js 22 以上版本和 FFmpeg，並使用命令列或 AI 程式助手",
+     "limitations": "需要 Node.js 22 以上版本和 FFmpeg；Studio 仍在開發中；slideshow 技能產出的是簡報，不是 MP4",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "7d7c4a0dbff2e8fa0c12",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1433377156,
+   "full_name": "unclebob/ub-mode",
+   "html_url": "https://github.com/unclebob/ub-mode",
+   "description": null,
+   "language": null,
+   "topics": [],
+   "license_spdx": null,
+   "created_at": "2026-10-25T16:04:09Z",
+   "pushed_at": "2026-10-25T16:07:59Z",
+   "stars": 2118,
+   "forks": 100,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 706.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 3 天，已有 2,118 星，建立以來平均每天 +706 星"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許",
+    "建立僅 3 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 寫程式助理照嚴謹軟體工程原則寫碼的技能檔",
+     "features": [
+      "要求 AI 先求能動、再求正確，遵守 TDD 等原則",
+      "搭配品質檢查工具，例如 CRAP 指標與突變測試",
+      "可用 UML 檢視器看元件、覆蓋率與相依方向"
+     ],
+     "audience": "使用 Claude、Cursor、Grok 等 AI 助理寫程式的軟體開發者",
+     "use_cases": [
+      "請 AI 助理撰寫或修改程式碼時，套用測試驅動開發等紀律",
+      "用突變測試找出測試沒抓到的程式碼漏洞",
+      "可能用於團隊統一 AI 產出程式碼的品質標準"
+     ],
+     "barrier": "code",
+     "barrier_note": "需把 SKILL.md 放進 AI 助理的技能資料夾，並在寫程式時用 /ub-mode 叫用",
+     "limitations": "README 未說明",
+     "based_on": [
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1a72e60b6f09ab34fd42",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "repo_id": 1433904617,
+   "full_name": "andyhuo520/digital-human-koubo",
+   "html_url": "https://github.com/andyhuo520/digital-human-koubo",
+   "description": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator-grade packaging components. Agent skill for Claude Code / Codex / OpenClaw / WorkBuddy …",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-26T04:34:09Z",
+   "pushed_at": "2026-10-26T11:52:14Z",
+   "stars": 1055,
+   "forks": 254,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 527.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,055 星，建立以來平均每天 +528 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用一張照片加一句話，讓 AI 助理自動做出 AI 數位人口播影片",
+     "features": [
+      "一張照片建立固定的數位人主播並對嘴說話",
+      "5 種剪輯風格與 48 種包裝元件",
+      "自動校對字幕、統一聲音，生成前先報價"
+     ],
+     "audience": "想用 AI 主播製作帶貨、教學、解說影片的創作者與小商家，需熟悉 AI 助理工具",
+     "use_cases": [
+      "製作 9:16 直播帶貨廣告，附價格動畫與字幕",
+      "做產品推薦或步驟教學的口播影片",
+      "用多國語言、多位主播製作展示影片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需 Claude Code 等 AI 助理、Renoise 帳號，並用命令列安裝 ffmpeg 等工具",
+     "limitations": "生成需消耗 Renoise 點數；「文字在主播後方」效果僅支援 macOS；換聲音會有約 100 ms 對嘴落差；只能用自己或已獲授權的照片與聲音",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e53c6b3b2fb3ee04584f",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "repo_id": 1431830406,
+   "full_name": "t3dotgg/tstack",
+   "html_url": "https://github.com/t3dotgg/tstack",
+   "description": "The agent skills I use every day. Works with Claude Code and Codex.",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-24T05:00:20Z",
+   "pushed_at": "2026-10-27T08:27:19Z",
+   "stars": 1979,
+   "forks": 116,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 494.75,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 4 天，已有 1,979 星，建立以來平均每天 +495 星"
+   ],
+   "notes": [
+    "建立僅 4 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "作者每天在用的 AI 程式助理技能包，幫你自動處理 GitHub PR",
+     "features": [
+      "一句「full send」就能從驗證、審查一路跑到合併 PR",
+      "讓不同廠商的三個模型互相審查程式碼，直到意見一致",
+      "接手別人的 PR，盯 CI 結果並修正問題"
+     ],
+     "audience": "使用 Claude Code 或 Codex 寫程式、常在 GitHub 上處理 PR 的軟體開發者",
+     "use_cases": [
+      "改完程式後，讓 AI 自動開 PR、通過 CI 並合併",
+      "接手同事沒做完的分支或 PR，同時保留原作者的貢獻紀錄",
+      "把放了很久的舊 PR 重新整理，再判斷還要不要保留"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Claude Code 或 Codex、已登入的 GitHub CLI 和 python3，也要會用命令列",
+     "limitations": "部分技能要搭配其他技能一起安裝；council 和 sol-loop 需要能呼叫其他廠商模型的環境",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "b363ed546fd9d88ca34c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  909213664,
+  1097346685,
+  1152014594,
+  1183888342,
+  1200597263,
+  1206390571,
+  1206425593,
+  1222917575,
+  1273427276,
+  1293238217,
+  1309102418,
+  1332461149,
+  1431545439,
+  1431851693,
+  1432980411
+ ],
+ "candidate_counts": {
+  "main": 74,
+  "discovery": 3
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 10,
+  "done": 8,
+  "failed": 2,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 12,
+  "input_tokens": 68383,
+  "output_tokens": 7162,
+  "cost_usd": 0.488465
+ }
+}

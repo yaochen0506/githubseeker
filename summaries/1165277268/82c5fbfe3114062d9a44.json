@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "82c5fbfe3114062d9a44",
+ "repo_id": 1165277268,
+ "full_name": "Panniantong/Agent-Reach",
+ "created_at": "2026-10-28T06:17:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e68e4763e3e65fa716768d7332b88a3b2e32d7ee3966a887ec3d0ee62228d565",
+ "has_readme": true,
+ "readme_chars": 4846,
+ "content": {
+  "one_liner": "讓 AI Agent 能讀取、搜尋 YouTube、Reddit、小紅書等平台內容的工具",
+  "features": [
+   "搜尋與讀取 B站、YouTube、GitHub、Reddit 等平台",
+   "抓取影片字幕，或把影片、Podcast 轉成文字",
+   "用口語指令新增、移除平台或升級工具"
+  ],
+  "audience": "使用 Claude Code、Codex 等 CLI AI Agent，想讓 AI 查社群與中文平台資料的人",
+  "use_cases": [
+   "讓 AI 讀取 YouTube 或 B站影片字幕並整理內容",
+   "在小紅書、Reddit 搜尋貼文與留言做資料蒐集",
+   "查詢雪球股票行情或 LinkedIn 職缺詳情"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要已在使用能執行命令的 CLI AI Agent，部分平台要登入，語音轉文字需 Groq 或 OpenAI Key",
+  "limitations": "只能讀取不能發文；Twitter 等實驗平台可能隨時失效；建議用分身帳號；PyPI 上的同名套件不是本專案",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

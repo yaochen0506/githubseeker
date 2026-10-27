@@ -1,34 +1,34 @@
 {
  "schema_version": "1",
- "updated_at": "2026-10-27T00:10:43+08:00",
- "business_date": "2026-10-27",
- "last_run_id": "20261027T000932-40356346114.1",
+ "updated_at": "2026-10-28T06:16:54+08:00",
+ "business_date": "2026-10-28",
+ "last_run_id": "20261028T061540-40593406639.1",
  "last_run_complete": true,
- "last_complete_run_id": "20261027T000932-40356346114.1",
- "last_complete_at": "2026-10-27T00:10:43+08:00",
+ "last_complete_run_id": "20261028T061540-40593406639.1",
+ "last_complete_at": "2026-10-28T06:16:54+08:00",
  "sources": [
   {
    "source_id": "all-daily",
    "status": "ok",
-   "rows": 14,
+   "rows": 11,
    "error": null
   },
   {
    "source_id": "all-weekly",
    "status": "ok",
-   "rows": 15,
+   "rows": 13,
    "error": null
   },
   {
    "source_id": "python-daily",
    "status": "ok",
-   "rows": 16,
+   "rows": 15,
    "error": null
   },
   {
    "source_id": "python-weekly",
    "status": "ok",
-   "rows": 14,
+   "rows": 12,
    "error": null
   },
   {
@@ -40,19 +40,19 @@
   {
    "source_id": "typescript-weekly",
    "status": "ok",
-   "rows": 18,
+   "rows": 20,
    "error": null
   },
   {
    "source_id": "zh-daily",
    "status": "ok",
-   "rows": 22,
+   "rows": 20,
    "error": null
   },
   {
    "source_id": "zh-weekly",
    "status": "ok",
-   "rows": 20,
+   "rows": 22,
    "error": null
   },
   {
@@ -69,10 +69,10 @@
   }
  ],
  "counts": {
-  "source_hits": 337,
-  "observations": 136,
+  "source_hits": 331,
+  "observations": 171,
   "unresolved": 0,
-  "tracking": 136
+  "tracking": 171
  },
  "api_usage": {
   "search": {
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 136,
+   "requests": 171,
    "limit": 5000,
-   "remaining_first": 4865,
-   "remaining_last": 4730,
-   "used_by_headers": 136
+   "remaining_first": 4999,
+   "remaining_last": 4829,
+   "used_by_headers": 171
   }
  }
 }

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e019707e99cc5933087f",
+ "repo_id": 1124219907,
+ "full_name": "HKUDS/DeepTutor",
+ "created_at": "2026-10-28T06:17:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "edeacf442c1ffed0fa68319a95ee0b3c1d25bc7b95c44238e9ff3521a65f8f2b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 AI 打造個人化家教，結合知識庫、測驗與學習路徑陪你長期學習",
+  "features": [
+   "上傳文件建立知識庫，閱讀時逐頁引用來源",
+   "自動出題、題庫練習與引導式學習路徑",
+   "深度研究、視覺化動畫與多種聊天平台串接"
+  ],
+  "audience": "想用 AI 輔助自學的學生與終身學習者，以及願意自行架設的教學或技術人員",
+  "use_cases": [
+   "把 PDF、EPUB 教材匯入後，邊讀邊向 AI 提問並查看引用頁面",
+   "依學習路徑每日練習題目，追蹤自己的掌握程度",
+   "看 YouTube 影片學習，或產生整本學習用的電子書"
+  ],
+  "barrier": "code",
+  "barrier_note": "需以 Python 或 Docker 自行安裝部署，並設定 AI 模型服務的 API 金鑰",
+  "limitations": "README 未說明明確限制；版本更新頻繁，v1.6.3 曾有前後端不相容的重大改版",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

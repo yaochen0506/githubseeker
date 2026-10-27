@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "b363ed546fd9d88ca34c",
+ "repo_id": 1431830406,
+ "full_name": "t3dotgg/tstack",
+ "created_at": "2026-10-28T06:18:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a838174899af5e0ce83f4cc35033eef1b91f2d86fc8cb1f80df565f823aac3ff",
+ "has_readme": true,
+ "readme_chars": 2039,
+ "content": {
+  "one_liner": "作者每天在用的 AI 程式助理技能包，幫你自動處理 GitHub PR",
+  "features": [
+   "一句「full send」就能從驗證、審查一路跑到合併 PR",
+   "讓不同廠商的三個模型互相審查程式碼，直到意見一致",
+   "接手別人的 PR，盯 CI 結果並修正問題"
+  ],
+  "audience": "使用 Claude Code 或 Codex 寫程式、常在 GitHub 上處理 PR 的軟體開發者",
+  "use_cases": [
+   "改完程式後，讓 AI 自動開 PR、通過 CI 並合併",
+   "接手同事沒做完的分支或 PR，同時保留原作者的貢獻紀錄",
+   "把放了很久的舊 PR 重新整理，再判斷還要不要保留"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Claude Code 或 Codex、已登入的 GitHub CLI 和 python3，也要會用命令列",
+  "limitations": "部分技能要搭配其他技能一起安裝；council 和 sol-loop 需要能呼叫其他廠商模型的環境",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

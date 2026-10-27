@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "963f3a00e0f2b7d5d0ba",
+ "repo_id": 1187630119,
+ "full_name": "NVIDIA/SkillSpector",
+ "created_at": "2026-10-28T06:17:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "20724d6a84931f21ad8384ee47f85a0b5e8d7d7b8b1fa4ac922821239427a9b4",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在安裝 AI 代理技能（skills）之前，先掃描裡面有沒有安全風險",
+  "features": [
+   "涵蓋 17 類共 71 種漏洞模式，含提示注入與資料外洩",
+   "先做靜態分析，可再選用 LLM 做語意評估",
+   "給出 0-100 風險分數，可輸出 JSON、SARIF 等報告"
+  ],
+  "audience": "使用 Claude Code、Codex、MCP 等 AI 代理工具的開發者與資安人員",
+  "use_cases": [
+   "安裝別人分享的 Claude Code 技能前，先檢查有沒有惡意內容",
+   "一次批次掃描整個資料夾裡的多個技能",
+   "比較 MCP Registry 前後兩次快照，找出新增或變動的伺服器"
+  ],
+  "barrier": "code",
+  "barrier_note": "要用命令列，透過 Python 或 Docker 安裝；LLM 分析還需要 API 金鑰",
+  "limitations": "下載與壓縮檔上限 100 MiB，單一檔案只分析 1 MB；排除檔案會讓報告無法判定為安全；codex_cli 已停用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7d7c4a0dbff2e8fa0c12",
+ "repo_id": 1177402105,
+ "full_name": "heygen-com/hyperframes",
+ "created_at": "2026-10-28T06:17:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f7f9059b78abbf2dc53fb6d727f60de4320788d5cea45d49f5497f9b3c824b4e",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 HTML 寫畫面和動畫，轉成 MP4 影片的開源框架，可以搭配 AI 助手使用",
+  "features": [
+   "把 HTML、CSS 動畫和媒體轉成 MP4 影片",
+   "提供 AI 助手技能，用一句話請 AI 做影片",
+   "約 450 個現成轉場、字幕、圖表等元件"
+  ],
+  "audience": "會寫網頁的開發者，以及用 Claude Code、Cursor 這類 AI 程式助手做影片的人",
+  "use_cases": [
+   "製作產品發表或新功能介紹影片",
+   "做有動態字幕、疊加圖層和音樂的社群短影片",
+   "把文件、PDF 或網站導覽轉成說明影片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Node.js 22 以上版本和 FFmpeg，並使用命令列或 AI 程式助手",
+  "limitations": "需要 Node.js 22 以上版本和 FFmpeg；Studio 仍在開發中；slideshow 技能產出的是簡報，不是 MP4",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
