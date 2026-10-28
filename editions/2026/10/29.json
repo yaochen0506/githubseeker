@@ -1,0 +1,797 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-29",
+ "business_date": "2026-10-29",
+ "generated_at": "2026-10-29T06:38:40+08:00",
+ "run_id": "20261029T063719-40781350037.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 523325759,
+   "full_name": "hmjz100/LinkSwift",
+   "html_url": "https://github.com/hmjz100/LinkSwift",
+   "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+   "language": "JavaScript",
+   "topics": [
+    "123pan",
+    "aliyun-drive",
+    "aliyunpan",
+    "aria2",
+    "baidu",
+    "baidu-netdisk",
+    "baidunetdisk",
+    "baidupan",
+    "baiduyun",
+    "guangya-netdisk",
+    "motrix",
+    "quark-netdisk",
+    "tampermonkey",
+    "tampermonkey-script",
+    "tampermonkey-userscript",
+    "tianyi-netdisk",
+    "uc-netdisk",
+    "userscript",
+    "xunlei-netdisk",
+    "yidong-netdisk"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2022-08-10T11:59:44Z",
+   "pushed_at": "2026-10-27T15:14:58Z",
+   "stars": 34407,
+   "forks": 2432,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1380.0,
+   "score": 85.4,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.4178
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 1380
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,380 星（全站日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在瀏覽器裡取得百度網盤、阿里雲盤等多家網盤檔案直接下載連結的使用者腳本",
+     "features": [
+      "支援百度、阿里、夸克、123 雲盤等九家網盤",
+      "取得檔案直鏈並美化網盤介面",
+      "可搭配 Aria2、Motrix 等多種下載器"
+     ],
+     "audience": "常用中國網盤下載檔案，但不方便或不想安裝官方客戶端的使用者",
+     "use_cases": [
+      "不安裝百度網盤客戶端，直接在網頁取得下載連結",
+      "把網盤檔案連結交給 Aria2 或 Motrix 等下載器下載",
+      "在夸克、天翼等多個網盤間用同一套工具下載檔案"
+     ],
+     "barrier": "install",
+     "barrier_note": "需先在瀏覽器安裝 Tampermonkey 等腳本管理擴充功能，再安裝此腳本",
+     "limitations": "作者表示連結取自網盤公開 API，不保證也不提供破解限速；金絲雀版可能不穩定，部分來源更新較慢",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "46bbf3f1f80896043987",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1226205410,
+   "full_name": "Renhuai123/ziwei-doushu",
+   "html_url": "https://github.com/Renhuai123/ziwei-doushu",
+   "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+   "language": "TypeScript",
+   "topics": [
+    "bazi",
+    "chinese-astrology",
+    "divination",
+    "fortune-telling",
+    "nextjs",
+    "open-source",
+    "purple-star-astrology",
+    "typescript",
+    "zi-wei-dou-shu",
+    "ziwei-doushu"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-05-01T05:09:59Z",
+   "pushed_at": "2026-10-27T12:59:28Z",
+   "stars": 8960,
+   "forks": 1791,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 465.57,
+   "score": 80.4,
+   "score_breakdown": {
+    "s_abs": 0.8895,
+    "s_rel": 0.5481
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 10,
+     "period": "weekly",
+     "period_stars": 3259
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +3,259 星（TypeScript 週榜第 10 名），平均每天約 +466 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "依照倪海厦《天纪》體系排紫微斗數命盤的開源引擎，附解讀資料集",
+     "features": [
+      "排盤引擎：真太陽時校正、四化飛星、格局判定",
+      "開放下載 67.5 萬張命盤的 13 維解讀資料集",
+      "收錄古籍原文與倪師《天紀》原話 1848 條"
+     ],
+     "audience": "想自己做紫微斗數 App 或網站的開發者、命理研究者、要找 AI 訓練資料的人",
+     "use_cases": [
+      "以開源引擎為基礎，開發自己的紫微斗數排盤產品",
+      "把解讀資料集拿來微調 AI 模型或當作 RAG 檢索來源",
+      "研究紫微斗數古籍與倪師教學原話"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要用命令列下載並執行 Next.js 專案；資料集解壓縮要用 zstd 工具",
+     "limitations": "開源版沒有斷語庫和 AI 解讀，Demo 介面只畫得出命盤；六親分析僅供參考；倪師原話不可商用",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "682092cf935f41dcde24",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1073224795,
+   "full_name": "obra/superpowers",
+   "html_url": "https://github.com/obra/superpowers",
+   "description": "An agentic skills framework & software development methodology that works.",
+   "language": "Shell",
+   "topics": [
+    "ai",
+    "brainstorming",
+    "coding",
+    "obra",
+    "sdlc",
+    "skills",
+    "subagent-driven-development",
+    "superpowers"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-10-09T19:45:18Z",
+   "pushed_at": "2026-10-23T03:48:57Z",
+   "stars": 307386,
+   "forks": 27345,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1096.0,
+   "score": 75.9,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.0358
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 1096
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,096 星（全站日榜第 3 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "給 AI 寫程式助理用的技能包，讓它照固定流程規劃、測試、開發軟體",
+     "features": [
+      "動手前先腦力激盪，釐清需求並寫成設計文件",
+      "把工作拆成小任務，交給子代理逐一完成並審查",
+      "強制先寫測試的 TDD 流程與程式碼審查"
+     ],
+     "audience": "使用 Claude Code、Codex、Cursor、Gemini CLI 等 AI 寫程式工具的軟體開發者",
+     "use_cases": [
+      "讓 AI 助理先問清楚需求、產出設計，再開始寫程式",
+      "照核准的計畫讓 AI 自動開發好幾個小時",
+      "工作階段出問題時，請 AI 診斷原因並整理錯誤回報"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要先有 AI 寫程式工具，從外掛市集或命令列安裝，而且要懂軟體開發",
+     "limitations": "每種工具要各自安裝；Hermes 長時間對話可能讓技能失效；視覺輔助功能預設會從作者網站載入 logo，並回傳版本號",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "6005bf9122e0c8d4eb48",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1106846196,
+   "full_name": "expo/skills",
+   "html_url": "https://github.com/expo/skills",
+   "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+   "language": "Shell",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2025-11-30T03:57:18Z",
+   "pushed_at": "2026-10-28T20:08:40Z",
+   "stars": 3542,
+   "forks": 224,
+   "metric_method": "trending_daily",
+   "growth_per_day": 216.0,
+   "score": 74.6,
+   "score_breakdown": {
+    "s_abs": 0.7787,
+    "s_rel": 0.6494
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 12,
+     "period": "daily",
+     "period_stars": 216
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +216 星（全站日榜第 12 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Expo 官方出的 AI 助理技能包，幫 AI 協助開發、部署和升級 Expo App",
+     "features": [
+      "涵蓋導覽、動畫、原生 UI、資料抓取等開發技能",
+      "支援 EAS 建置、上架、OTA 更新與 CI/CD",
+      "可裝在 Claude Code、Codex、Cursor 等工具"
+     ],
+     "audience": "用 Expo 或 React Native 開發 iOS／Android App，並搭配 AI 寫程式工具的開發者",
+     "use_cases": [
+      "請 AI 做出有分頁、彈出視窗和動畫的 Expo Router 畫面",
+      "請 AI 幫忙把 App 升級到最新版 Expo SDK",
+      "把現有的 Next.js 或 Vite 網頁 App 搬成原生 App"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會用命令列安裝，也要搭配 Claude Code、Cursor 等 AI 寫程式工具",
+     "limitations": "EAS 相關技能會用到付費服務；實驗性技能的內容可能變動或下架；正式依據仍以 Expo 官方文件與 CLI 為準",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "c14b182888eaea94d23a",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1217040185,
+   "full_name": "tashfeenahmed/freellmapi",
+   "html_url": "https://github.com/tashfeenahmed/freellmapi",
+   "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-04-21T13:38:59Z",
+   "pushed_at": "2026-10-28T09:37:25Z",
+   "stars": 43328,
+   "forks": 5864,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 653.57,
+   "score": 74.2,
+   "score_breakdown": {
+    "s_abs": 0.9385,
+    "s_rel": 0.1532
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 13,
+     "period": "weekly",
+     "period_stars": 4575
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +4,575 星（TypeScript 週榜第 13 名），平均每天約 +654 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把 34 家 AI 服務的免費額度整合成一個 OpenAI 相容 API，自動挑選模型",
+     "features": [
+      "整合多家免費 LLM，統一一個 /v1 端點",
+      "遇到流量限制自動切換到下一家服務",
+      "API 金鑰加密儲存，附管理儀表板"
+     ],
+     "audience": "想免費試用多種 AI 模型的開發者，以及使用 Claude Code、Cursor 等程式助理的使用者",
+     "use_cases": [
+      "讓 Claude Code、Codex CLI 等程式助理改用免費模型",
+      "個人實驗時集中管理多家 AI 服務的金鑰與用量",
+      "透過同一個 API 產生圖片、語音或影片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需自行申請各家 API 金鑰，用 Docker 或桌面版安裝，再設定到程式或工具中",
+     "limitations": "僅供個人實驗、單一使用者設計；免費版模型目錄每月更新，新模型晚 30 天，即時更新需付費",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "9daae0d083243e703ef5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1273138090,
+   "full_name": "baidu/Unlimited-OCR",
+   "html_url": "https://github.com/baidu/Unlimited-OCR",
+   "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-06-18T08:40:15Z",
+   "pushed_at": "2026-10-28T11:16:14Z",
+   "stars": 29507,
+   "forks": 3138,
+   "metric_method": "trending_daily",
+   "growth_per_day": 504.0,
+   "score": 71.9,
+   "score_breakdown": {
+    "s_abs": 0.901,
+    "s_rel": 0.1738
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 504
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +504 星（Python 日榜第 5 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "百度推出的 OCR 模型，能一次把上百頁的長文件轉成文字",
+     "features": [
+      "一次處理整份多頁文件，可利用跨頁上下文",
+      "作者表示文件再長，記憶體與速度仍幾乎不變",
+      "支援 Transformers 與 SGLang 推論"
+     ],
+     "audience": "需要大量解析長篇文件的 AI 研究人員與開發者，以及有 GPU 運算資源的團隊",
+     "use_cases": [
+      "把整本書的頁面圖片一次轉成 Markdown 文字",
+      "將多頁 PDF 轉成圖片後批次解析內容",
+      "架設相容 OpenAI 格式的 API 文件辨識服務"
+     ],
+     "barrier": "code",
+     "barrier_note": "需會用 Python 與命令列，作者測試時使用 NVIDIA A800-80GB 等級 GPU",
+     "limitations": "需搭配特定版本的套件與客製 SGLang；記憶體參數要調整，頁面分段窗格較小時會影響跨頁合併",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "6897a41ad2fab656490d",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 997737944,
+   "full_name": "ruvnet/RuView",
+   "html_url": "https://github.com/ruvnet/RuView",
+   "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+   "language": "Rust",
+   "topics": [
+    "awesome",
+    "claude",
+    "densepose",
+    "esp32",
+    "firmware",
+    "home-assistant",
+    "home-automation",
+    "iot",
+    "monitoring",
+    "networking",
+    "npm",
+    "pose-estimation",
+    "react",
+    "rf",
+    "self-learning",
+    "skills",
+    "spatial-intelligence",
+    "typescript",
+    "wifi",
+    "wifi-security"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-06-07T04:32:30Z",
+   "pushed_at": "2026-10-28T18:14:24Z",
+   "stars": 100975,
+   "forks": 13158,
+   "metric_method": "trending_daily",
+   "growth_per_day": 596.0,
+   "score": 70.9,
+   "score_breakdown": {
+    "s_abs": 0.9252,
+    "s_rel": 0.0594
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 13,
+     "period": "daily",
+     "period_stars": 596
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +596 星（全站日榜第 13 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用一般 WiFi 訊號偵測有沒有人、呼吸心跳和動作，完全不用攝影機",
+     "features": [
+      "隔牆偵測人員存在、人數與進出",
+      "非接觸量測呼吸與心跳，可做睡眠監測",
+      "整合 Home Assistant、Apple Home 等智慧家庭"
+     ],
+     "audience": "有硬體動手能力的智慧家庭玩家、物聯網開發者與無線感測研究人員",
+     "use_cases": [
+      "在家中偵測房間有沒有人，觸發 Home Assistant 自動化",
+      "夜間監測長者呼吸、跌倒或長時間沒有活動",
+      "研究人員用 WiFi CSI 資料訓練姿勢辨識模型"
+     ],
+     "barrier": "code",
+     "barrier_note": "需購買 ESP32-S3 等硬體、燒錄韌體，並會用命令列、Docker 或 Python",
+     "limitations": "完整功能需支援 CSI 的硬體，一般筆電只能粗略偵測；作者表示姿勢模型仍是初版，生命徵象數據未經驗證",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e620d4085218dbb5a3e0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1435695423,
+   "full_name": "anhao/ai-pose-gallery-zh",
+   "html_url": "https://github.com/anhao/ai-pose-gallery-zh",
+   "description": "中文版 AI 姿势参考图库 · 1439 组 / 2878 张图片 / 完整汉化 · 零依赖静态画廊",
+   "language": "HTML",
+   "topics": [
+    "ai-art",
+    "chinese",
+    "cloudflare-pages",
+    "gallery",
+    "i18n",
+    "pose",
+    "reference-images",
+    "static-site"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-10-27T12:24:37Z",
+   "pushed_at": "2026-10-27T14:32:23Z",
+   "stars": 1832,
+   "forks": 472,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 916.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,832 星，建立以來平均每天 +916 星"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認",
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把日文 AI 人體姿勢參考圖庫翻成中文，做成可以瀏覽和下載的網頁畫廊",
+     "features": [
+      "收錄 1439 筆記錄，含縮圖與原圖共 2878 張",
+      "可依分類、5 種視角篩選，也能用關鍵字搜尋",
+      "燈箱檢視多角度圖片，可直接下載 PNG 原圖"
+     ],
+     "audience": "需要人體姿勢參考的 AI 繪圖、3D、攝影創作者，以及想學習架設靜態網站的人",
+     "use_cases": [
+      "AI 繪圖或畫畫前，找不同角度的人體姿勢當參考",
+      "3D 建模或攝影時，參考站姿、坐姿等動作分類",
+      "把整套畫廊部署到 Cloudflare Pages 架成自己的網站"
+     ],
+     "barrier": "online",
+     "barrier_note": "有線上展示網頁可以直接瀏覽；要自己架站或在本機預覽，就得用命令列與 Cloudflare 帳號",
+     "limitations": "含成人向內容，未成年人請勿瀏覽；圖片著作權屬原作者ギア，MIT 授權不涵蓋圖片與資料",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e0f185cb2ce6271690c0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "repo_id": 1433297111,
+   "full_name": "interplains/Zero-Breach-Toolkit",
+   "html_url": "https://github.com/interplains/Zero-Breach-Toolkit",
+   "description": "Free, open-source, offline checks for traces of known mercenary spyware. Works on Windows, macOS and Linux, Android phones and iPhone backups.",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-10-25T14:41:34Z",
+   "pushed_at": "2026-10-28T19:18:47Z",
+   "stars": 2670,
+   "forks": 294,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 667.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 4 天，已有 2,670 星，建立以來平均每天 +668 星"
+   ],
+   "notes": [
+    "建立僅 4 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費離線工具，檢查電腦、Android 手機和 iPhone 備份裡有沒有已知間諜軟體的痕跡",
+     "features": [
+      "比對 Pegasus、Predator 等已知間諜軟體指標",
+      "只讀取資料，作者表示掃描時不連網",
+      "報告會列出證據強度和沒辦法檢查的地方"
+     ],
+     "audience": "擔心被間諜軟體鎖定的記者、社運人士、人權工作者，以及想自己檢查裝置的一般人",
+     "use_cases": [
+      "檢查 Windows 或 Mac 的瀏覽紀錄和下載檔案有沒有可疑痕跡",
+      "用 USB 連接 Android 手機，收集資料後掃描",
+      "掃描加密的 iPhone 本機備份，找已知的間諜軟體指標"
+     ],
+     "barrier": "install",
+     "barrier_note": "要先安裝 Python 並下載專案，透過選單操作；Mac 版要在終端機貼上一行指令",
+     "limitations": "掃描結果乾淨不代表裝置安全；有比對到也不等於已經中毒。電腦掃描沒辦法判斷手機有沒有被感染",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f68791d0a25bc3f186cb",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "repo_id": 1436598075,
+   "full_name": "smithjohn78390/tongjiang-lab",
+   "html_url": "https://github.com/smithjohn78390/tongjiang-lab",
+   "description": "Free interactive 3D science lessons for high school · 铜匠实验室 · https://lab.tongjiang.app",
+   "language": "HTML",
+   "topics": [
+    "3d",
+    "biology",
+    "chemistry",
+    "education",
+    "geography",
+    "high-school",
+    "interactive",
+    "open-educational-resources",
+    "physics",
+    "threejs",
+    "webgl"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-10-28T04:29:29Z",
+   "pushed_at": "2026-10-28T11:35:35Z",
+   "stars": 462,
+   "forks": 132,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 462.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 1 天，已有 462 星，建立以來平均每天 +462 星"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認",
+    "建立僅 1 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費的高中理化、生物、地理互動 3D 課程，打開網頁就能上課",
+     "features": [
+      "目前有 54 堂課，涵蓋物理、化學、生物、地理",
+      "每堂課是單一 HTML 檔，可離線開啟",
+      "3D 場景搭配控制面板與逐步教學流程"
+     ],
+     "audience": "高中自然科與地理老師、高中生，以及想用 3D 動畫理解科學概念的人",
+     "use_cases": [
+      "老師用投影機或電子白板，照步驟帶學生看實驗",
+      "學生在線上操作 3D 模型，例如酸鹼滴定、光電效應",
+      "把課程嵌入自己的網頁或教材中使用"
+     ],
+     "barrier": "online",
+     "barrier_note": "線上直接開啟，或下載 HTML 檔用 Chrome、Edge 開啟即可",
+     "limitations": "介面目前只有中文；內容依照中國高中課綱與人教版教材；授權限非商業使用",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "2b73729fe65587c7f080",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  664013991,
+  909213664,
+  1097346685,
+  1124219907,
+  1152014594,
+  1177402105,
+  1183888342,
+  1187630119,
+  1200597263,
+  1206390571,
+  1206425593,
+  1222917575,
+  1273427276,
+  1273646780,
+  1293238217,
+  1309102418,
+  1315788496,
+  1332461149,
+  1431545439,
+  1431830406,
+  1431851693,
+  1432980411,
+  1433377156,
+  1433904617
+ ],
+ "candidate_counts": {
+  "main": 71,
+  "discovery": 3
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 10,
+  "done": 10,
+  "failed": 0,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 11,
+  "input_tokens": 71607,
+  "output_tokens": 6131,
+  "cost_usd": 0.562628
+ }
+}

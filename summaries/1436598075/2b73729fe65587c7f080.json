@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2b73729fe65587c7f080",
+ "repo_id": 1436598075,
+ "full_name": "smithjohn78390/tongjiang-lab",
+ "created_at": "2026-10-29T06:39:51+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "90d777a40a9a7b6185673859048058bc28de9c6c113d733bb97082b212e38b5c",
+ "has_readme": true,
+ "readme_chars": 7795,
+ "content": {
+  "one_liner": "免費的高中理化、生物、地理互動 3D 課程，打開網頁就能上課",
+  "features": [
+   "目前有 54 堂課，涵蓋物理、化學、生物、地理",
+   "每堂課是單一 HTML 檔，可離線開啟",
+   "3D 場景搭配控制面板與逐步教學流程"
+  ],
+  "audience": "高中自然科與地理老師、高中生，以及想用 3D 動畫理解科學概念的人",
+  "use_cases": [
+   "老師用投影機或電子白板，照步驟帶學生看實驗",
+   "學生在線上操作 3D 模型，例如酸鹼滴定、光電效應",
+   "把課程嵌入自己的網頁或教材中使用"
+  ],
+  "barrier": "online",
+  "barrier_note": "線上直接開啟，或下載 HTML 檔用 Chrome、Edge 開啟即可",
+  "limitations": "介面目前只有中文；內容依照中國高中課綱與人教版教材；授權限非商業使用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

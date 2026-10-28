@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "9daae0d083243e703ef5",
+ "repo_id": 1217040185,
+ "full_name": "tashfeenahmed/freellmapi",
+ "created_at": "2026-10-29T06:39:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a2ab315bdac5f17a960754902345e1fb6efbab903c2be4af4deff9b39f976cb8",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把 34 家 AI 服務的免費額度整合成一個 OpenAI 相容 API，自動挑選模型",
+  "features": [
+   "整合多家免費 LLM，統一一個 /v1 端點",
+   "遇到流量限制自動切換到下一家服務",
+   "API 金鑰加密儲存，附管理儀表板"
+  ],
+  "audience": "想免費試用多種 AI 模型的開發者，以及使用 Claude Code、Cursor 等程式助理的使用者",
+  "use_cases": [
+   "讓 Claude Code、Codex CLI 等程式助理改用免費模型",
+   "個人實驗時集中管理多家 AI 服務的金鑰與用量",
+   "透過同一個 API 產生圖片、語音或影片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自行申請各家 API 金鑰，用 Docker 或桌面版安裝，再設定到程式或工具中",
+  "limitations": "僅供個人實驗、單一使用者設計；免費版模型目錄每月更新，新模型晚 30 天，即時更新需付費",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

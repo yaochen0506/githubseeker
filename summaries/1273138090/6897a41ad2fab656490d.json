@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6897a41ad2fab656490d",
+ "repo_id": 1273138090,
+ "full_name": "baidu/Unlimited-OCR",
+ "created_at": "2026-10-29T06:39:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "824990e4e7a7dddb4722b7a687b0a1c3d9e7394a20c76d28ef3dbd48bbd4bf6d",
+ "has_readme": true,
+ "readme_chars": 4953,
+ "content": {
+  "one_liner": "百度推出的 OCR 模型，能一次把上百頁的長文件轉成文字",
+  "features": [
+   "一次處理整份多頁文件，可利用跨頁上下文",
+   "作者表示文件再長，記憶體與速度仍幾乎不變",
+   "支援 Transformers 與 SGLang 推論"
+  ],
+  "audience": "需要大量解析長篇文件的 AI 研究人員與開發者，以及有 GPU 運算資源的團隊",
+  "use_cases": [
+   "把整本書的頁面圖片一次轉成 Markdown 文字",
+   "將多頁 PDF 轉成圖片後批次解析內容",
+   "架設相容 OpenAI 格式的 API 文件辨識服務"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會用 Python 與命令列，作者測試時使用 NVIDIA A800-80GB 等級 GPU",
+  "limitations": "需搭配特定版本的套件與客製 SGLang；記憶體參數要調整，頁面分段窗格較小時會影響跨頁合併",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

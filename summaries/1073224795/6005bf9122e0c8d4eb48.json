@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6005bf9122e0c8d4eb48",
+ "repo_id": 1073224795,
+ "full_name": "obra/superpowers",
+ "created_at": "2026-10-29T06:38:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2b03957e0641e594eb7c1874082c7f5d36c154118e9e925b3265617a2732d64e",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 AI 寫程式助理用的技能包，讓它照固定流程規劃、測試、開發軟體",
+  "features": [
+   "動手前先腦力激盪，釐清需求並寫成設計文件",
+   "把工作拆成小任務，交給子代理逐一完成並審查",
+   "強制先寫測試的 TDD 流程與程式碼審查"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor、Gemini CLI 等 AI 寫程式工具的軟體開發者",
+  "use_cases": [
+   "讓 AI 助理先問清楚需求、產出設計，再開始寫程式",
+   "照核准的計畫讓 AI 自動開發好幾個小時",
+   "工作階段出問題時，請 AI 診斷原因並整理錯誤回報"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要先有 AI 寫程式工具，從外掛市集或命令列安裝，而且要懂軟體開發",
+  "limitations": "每種工具要各自安裝；Hermes 長時間對話可能讓技能失效；視覺輔助功能預設會從作者網站載入 logo，並回傳版本號",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

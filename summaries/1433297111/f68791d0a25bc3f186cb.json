@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "f68791d0a25bc3f186cb",
+ "repo_id": 1433297111,
+ "full_name": "interplains/Zero-Breach-Toolkit",
+ "created_at": "2026-10-29T06:39:44+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2ec01852ea1a34b5bf9d3907ba712e4b94dce5f03838859ef9a63e3944b40eab",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費離線工具，檢查電腦、Android 手機和 iPhone 備份裡有沒有已知間諜軟體的痕跡",
+  "features": [
+   "比對 Pegasus、Predator 等已知間諜軟體指標",
+   "只讀取資料，作者表示掃描時不連網",
+   "報告會列出證據強度和沒辦法檢查的地方"
+  ],
+  "audience": "擔心被間諜軟體鎖定的記者、社運人士、人權工作者，以及想自己檢查裝置的一般人",
+  "use_cases": [
+   "檢查 Windows 或 Mac 的瀏覽紀錄和下載檔案有沒有可疑痕跡",
+   "用 USB 連接 Android 手機，收集資料後掃描",
+   "掃描加密的 iPhone 本機備份，找已知的間諜軟體指標"
+  ],
+  "barrier": "install",
+  "barrier_note": "要先安裝 Python 並下載專案，透過選單操作；Mac 版要在終端機貼上一行指令",
+  "limitations": "掃描結果乾淨不代表裝置安全；有比對到也不等於已經中毒。電腦掃描沒辦法判斷手機有沒有被感染",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "c14b182888eaea94d23a",
+ "repo_id": 1106846196,
+ "full_name": "expo/skills",
+ "created_at": "2026-10-29T06:39:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cc7820d9b35d8d85d5c6400edbdd57b5ebc1651da82fc46ca6cd495381e8279f",
+ "has_readme": true,
+ "readme_chars": 7471,
+ "content": {
+  "one_liner": "Expo 官方出的 AI 助理技能包，幫 AI 協助開發、部署和升級 Expo App",
+  "features": [
+   "涵蓋導覽、動畫、原生 UI、資料抓取等開發技能",
+   "支援 EAS 建置、上架、OTA 更新與 CI/CD",
+   "可裝在 Claude Code、Codex、Cursor 等工具"
+  ],
+  "audience": "用 Expo 或 React Native 開發 iOS／Android App，並搭配 AI 寫程式工具的開發者",
+  "use_cases": [
+   "請 AI 做出有分頁、彈出視窗和動畫的 Expo Router 畫面",
+   "請 AI 幫忙把 App 升級到最新版 Expo SDK",
+   "把現有的 Next.js 或 Vite 網頁 App 搬成原生 App"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會用命令列安裝，也要搭配 Claude Code、Cursor 等 AI 寫程式工具",
+  "limitations": "EAS 相關技能會用到付費服務；實驗性技能的內容可能變動或下架；正式依據仍以 Expo 官方文件與 CLI 為準",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}
