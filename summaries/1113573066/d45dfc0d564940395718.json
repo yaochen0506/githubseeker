@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d45dfc0d564940395718",
+ "repo_id": 1113573066,
+ "full_name": "hugohe3/ppt-master",
+ "created_at": "2026-10-30T06:49:07+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "99240689bf7dc18edf4a628a175721429be77042152321ea1e88ee94d7766949",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 把文件或主題變成可以直接編輯的原生 PowerPoint 簡報",
+  "features": [
+   "產生原生圖形、圖表、表格與母片",
+   "可套用自己的 .pptx 範本或填入新內容",
+   "加入轉場、動畫與講者備忘稿旁白"
+  ],
+  "audience": "常要做簡報、想用 AI 省下排版時間，又希望之後能在 PowerPoint 繼續修改的人",
+  "use_cases": [
+   "把 PDF 或 Word 文件交給 AI，轉成可編輯的簡報",
+   "用公司自己的簡報範本產生財報等簡報",
+   "替做好的簡報加上動畫與語音旁白"
+  ],
+  "barrier": "code",
+  "barrier_note": "要安裝 Python、下載專案並用指令安裝套件，還要準備 Claude Code 這類 AI 工具與模型帳號",
+  "limitations": "作者表示品質取決於模型，沒辦法一次就產出完美簡報，還要自己修；不支援 SmartArt；需要付 AI 模型使用費",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

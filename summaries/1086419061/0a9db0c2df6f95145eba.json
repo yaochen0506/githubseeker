@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0a9db0c2df6f95145eba",
+ "repo_id": 1086419061,
+ "full_name": "vectorize-io/hindsight",
+ "created_at": "2026-10-30T06:48:44+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b33725c5ae4c20d5b70c6ab6985c28cf4d2289a2ba4e1732705883a71e49217d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 代理人有長期記憶，還能從過去經驗中學習的記憶系統",
+  "features": [
+   "用 retain、recall、reflect 三種操作存取與分析記憶",
+   "依使用者或專案分開的記憶庫，彼此隔離",
+   "支援 25 種以上 LLM、MCP 與 60 多種整合"
+  ],
+  "audience": "開發 AI 聊天機器人、AI 代理人的工程師，以及使用 Claude Code 等程式助理的開發者",
+  "use_cases": [
+   "讓客服或聊天機器人記住每位使用者的偏好與對話紀錄",
+   "讓 Claude Code、Cursor 等程式助理記住專案架構與慣例",
+   "讓業務或專案管理 AI 回顧記憶，分析風險或成效"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Docker、pip 或 Kubernetes 架設伺服器並寫程式串接；也有付費 Cloud 版可選",
+  "limitations": "Intel Mac 要改裝 slim 版；作者表示用在 n8n 這類簡單工作流程可能大材小用。作者自稱準確度領先",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

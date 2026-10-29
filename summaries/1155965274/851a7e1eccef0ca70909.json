@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "851a7e1eccef0ca70909",
+ "repo_id": 1155965274,
+ "full_name": "Donchitos/Claude-Code-Game-Studios",
+ "created_at": "2026-10-30T06:49:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "075bd2bc33b537f343298c9d795a57f7437a79303a8753b0173649b7b64a291d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把 Claude Code 變成一間虛擬遊戲工作室，用多個 AI 角色分工協助開發遊戲",
+  "features": [
+   "49 個分工明確的 AI 代理，比照工作室層級",
+   "74 個斜線指令，涵蓋企劃、開發、測試到發行",
+   "支援 Godot、Unity、Unreal Engine 5"
+  ],
+  "audience": "用 Claude Code 開發遊戲的獨立開發者或小團隊，需要具備程式基礎",
+  "use_cases": [
+   "從零開始用 /brainstorm 發想遊戲點子並寫成企劃",
+   "替遊戲專案拆解開發任務、排定衝刺計畫並追蹤進度",
+   "對程式碼與設計文件進行審查、QA 測試與發行檢查"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Git、Claude Code、Python 3、Bash，並在命令列操作",
+  "limitations": "不是全自動系統，每一步都要使用者決定；作者實測文件較多的模式不一定做出更好的遊戲；缺少 Python 時設定會退回預設值",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

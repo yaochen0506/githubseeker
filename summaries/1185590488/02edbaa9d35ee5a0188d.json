@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "02edbaa9d35ee5a0188d",
+ "repo_id": 1185590488,
+ "full_name": "rohitg00/ai-engineering-from-scratch",
+ "created_at": "2026-10-30T06:49:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "37495098cfcc49890dd362d08d6a5d8df372d6ad47400a131ff33ba38a64399b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費開源的 AI 工程課程，從零動手實作模型、檢索系統與 AI agent",
+  "features": [
+   "542 堂課、20 個階段，支援多種程式語言",
+   "可在網站閱讀，或讓 coding agent 當 AI 家教",
+   "3 個實作專案，附參考解答與評分工具"
+  ],
+  "audience": "已經會寫程式、想深入了解 AI 運作原理並自己動手實作的學習者",
+  "use_cases": [
+   "從基礎數學、機器學習一路學到 LLM 應用與 agent 開發",
+   "專攻 MCP 或 Agent Skills 等主題的短期學習路線",
+   "用分級測驗找出起點，產生個人化學習計畫"
+  ],
+  "barrier": "code",
+  "barrier_note": "網站可直接閱讀，但實作需會寫程式並使用命令列、Python 等環境",
+  "limitations": "先備條件是會寫程式；完整課程預估約 200～306 小時",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

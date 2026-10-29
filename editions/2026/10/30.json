@@ -1,0 +1,711 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-30",
+ "business_date": "2026-10-30",
+ "generated_at": "2026-10-30T06:48:30+08:00",
+ "run_id": "20261030T064710-40968453318.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1331261687,
+   "full_name": "milind-soni/OpenMausBot",
+   "html_url": "https://github.com/milind-soni/OpenMausBot",
+   "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+   "language": "TypeScript",
+   "topics": [
+    "ai-agents",
+    "claude-code",
+    "codex",
+    "computer-use",
+    "docker",
+    "electron",
+    "expo",
+    "grok",
+    "grok-bot",
+    "grok-bot-alternative",
+    "self-hosted",
+    "typescript"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-08-11T18:58:55Z",
+   "pushed_at": "2026-10-29T22:43:06Z",
+   "stars": 7412,
+   "forks": 1104,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1190.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 1190
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 2,
+     "period": "daily",
+     "period_stars": 1190
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,190 星（全站日榜第 5 名）",
+    "也在 TypeScript 日榜第 2 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在聊天 App 裡組一支 AI 機器人團隊，每個機器人都有自己的模型和電腦",
+     "features": [
+      "每個機器人可各自選用 Claude、Codex 或 Grok 模型",
+      "機器人可操作雲端桌面、本機 VM 或你的電腦",
+      "高風險動作先跳出卡片，由使用者允許或拒絕"
+     ],
+     "audience": "已有 Claude、ChatGPT 或 Grok 訂閱，想讓多個 AI 代理幫忙處理工作的進階使用者",
+     "use_cases": [
+      "串接 Gmail、Slack、Notion 等 App，讓機器人代為處理工作",
+      "把工作、個人、各專案分在不同頻道，各自管理機器人",
+      "用語音通話聽機器人回報進度並口頭核准動作"
+     ],
+     "barrier": "code",
+     "barrier_note": "有 macOS、Windows、Ubuntu 安裝檔，但需先在電腦安裝並登入 claude、codex 等命令列工具",
+     "limitations": "Ubuntu Wayland 暫不支援控制本機；本機控制需手動開啟；與任何加密貨幣無關，也非 xAI 等公司官方產品",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f2d4fbf1ac2f5f0a8cef",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1086419061,
+   "full_name": "vectorize-io/hindsight",
+   "html_url": "https://github.com/vectorize-io/hindsight",
+   "description": "Hindsight: Agent Memory That Learns",
+   "language": "Python",
+   "topics": [
+    "agentic-ai",
+    "agents",
+    "ai-memory",
+    "memory"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-10-30T11:49:48Z",
+   "pushed_at": "2026-10-29T18:52:58Z",
+   "stars": 56183,
+   "forks": 6729,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1352.0,
+   "score": 81.2,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.2466
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 1352
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,352 星（Python 日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 代理人有長期記憶，還能從過去經驗中學習的記憶系統",
+     "features": [
+      "用 retain、recall、reflect 三種操作存取與分析記憶",
+      "依使用者或專案分開的記憶庫，彼此隔離",
+      "支援 25 種以上 LLM、MCP 與 60 多種整合"
+     ],
+     "audience": "開發 AI 聊天機器人、AI 代理人的工程師，以及使用 Claude Code 等程式助理的開發者",
+     "use_cases": [
+      "讓客服或聊天機器人記住每位使用者的偏好與對話紀錄",
+      "讓 Claude Code、Cursor 等程式助理記住專案架構與慣例",
+      "讓業務或專案管理 AI 回顧記憶，分析風險或成效"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用 Docker、pip 或 Kubernetes 架設伺服器並寫程式串接；也有付費 Cloud 版可選",
+     "limitations": "Intel Mac 要改裝 slim 版；作者表示用在 n8n 這類簡單工作流程可能大材小用。作者自稱準確度領先",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "0a9db0c2df6f95145eba",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1258301311,
+   "full_name": "rlaope/oh-my-hermes",
+   "html_url": "https://github.com/rlaope/oh-my-hermes",
+   "description": "⚚ The coding harness with Hermes Agent wired into IDE.",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "ai-agent",
+    "ai-tools",
+    "claude-code",
+    "codex",
+    "hermes-agent",
+    "hermes-skill",
+    "skills"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-06-03T13:00:34Z",
+   "pushed_at": "2026-10-29T20:39:16Z",
+   "stars": 4792,
+   "forks": 374,
+   "metric_method": "trending_daily",
+   "growth_per_day": 327.0,
+   "score": 81.2,
+   "score_breakdown": {
+    "s_abs": 0.8385,
+    "s_rel": 0.7324
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 8,
+     "period": "daily",
+     "period_stars": 327
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +327 星（Python 日榜第 8 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "替 Hermes Agent 加上一層調度工具，自動挑選技能與模型、平行執行寫程式任務",
+     "features": [
+      "依任務類別替每條工作線自動選模型",
+      "把目標拆成小節點平行執行並另行驗證",
+      "內建上百個專家技能與長期專案記憶"
+     ],
+     "audience": "已在使用 Hermes Agent、Claude Code 或 Codex 等 AI 寫程式工具的軟體開發者",
+     "use_cases": [
+      "用 ulw-plan 先規劃有風險的程式修改，再用 ulw-work 平行執行",
+      "用 dag-ulw 把大型開發工作拆成多個節點同時進行",
+      "用 ulw-qa 以各種刁鑽情境測試程式並修正問題"
+     ],
+     "barrier": "code",
+     "barrier_note": "需先有 Hermes Agent，並用命令列安裝 omh 後執行 omh setup",
+     "limitations": "LSP 功能預設關閉需手動開啟；作者表示與單獨使用 Hermes 的比較測試尚未公布實測結果",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "826cb044d8f477affd33",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1226971975,
+   "full_name": "beenuar/AiSOC",
+   "html_url": "https://github.com/beenuar/AiSOC",
+   "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+   "language": "Python",
+   "topics": [
+    "agentic-ai",
+    "ai-security",
+    "alert-triage",
+    "blue-team",
+    "cybersecurity",
+    "detection-engineering",
+    "incident-response",
+    "langgraph",
+    "llm-agents",
+    "mcp",
+    "mitre-attack",
+    "model-context-protocol",
+    "purple-team",
+    "security-operations",
+    "self-hosted",
+    "siem",
+    "soar",
+    "soc",
+    "threat-detection",
+    "threat-intelligence"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-05-02T03:30:19Z",
+   "pushed_at": "2026-10-29T22:11:42Z",
+   "stars": 5133,
+   "forks": 540,
+   "metric_method": "trending_daily",
+   "growth_per_day": 318.0,
+   "score": 79.1,
+   "score_breakdown": {
+    "s_abs": 0.8345,
+    "s_rel": 0.6604
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 318
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +318 星（Python 日榜第 6 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "開源、可自架的 AI 資安監控中心，自動彙整警報並由 AI 協助研判",
+     "features": [
+      "彙整多種資安工具的警報並以規則偵測威脅",
+      "AI agent 研判警報，每步推理都記錄可稽核",
+      "內建本機模型與 MCP server，不需 API 金鑰"
+     ],
+     "audience": "企業資安團隊、SOC 分析師、藍隊與偵測工程人員",
+     "use_cases": [
+      "串接 Splunk、CrowdStrike、AWS 等來源，集中處理資安警報",
+      "讓 AI 初步研判警報，再由人員核准後續回應動作",
+      "把既有 Splunk SPL 等偵測規則轉換後沿用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用命令列操作 Docker Compose，電腦至少要有 8 GB 記憶體、20 GB 硬碟空間",
+     "limitations": "內建的是小型本機模型，作者表示不是頂尖模型；從未測試過雲端模型服務；第一次執行要下載約 2 GB",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "64d4eb573c26efe0f231",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1113573066,
+   "full_name": "hugohe3/ppt-master",
+   "html_url": "https://github.com/hugohe3/ppt-master",
+   "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+   "language": "Python",
+   "topics": [
+    "ai-agent",
+    "aippt",
+    "office",
+    "powerpoint",
+    "powerpoint-generation",
+    "ppt",
+    "pptx",
+    "presentation",
+    "slide",
+    "slides"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-12-10T06:54:33Z",
+   "pushed_at": "2026-10-29T13:58:25Z",
+   "stars": 70809,
+   "forks": 5526,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 711.43,
+   "score": 73.8,
+   "score_breakdown": {
+    "s_abs": 0.9508,
+    "s_rel": 0.1015
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 7,
+     "period": "weekly",
+     "period_stars": 4980
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 3,
+     "period": "weekly",
+     "period_stars": 4980
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +4,980 星（全站週榜第 7 名），平均每天約 +711 星",
+    "也在 Python 週榜第 3 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 把文件或主題變成可以直接編輯的原生 PowerPoint 簡報",
+     "features": [
+      "產生原生圖形、圖表、表格與母片",
+      "可套用自己的 .pptx 範本或填入新內容",
+      "加入轉場、動畫與講者備忘稿旁白"
+     ],
+     "audience": "常要做簡報、想用 AI 省下排版時間，又希望之後能在 PowerPoint 繼續修改的人",
+     "use_cases": [
+      "把 PDF 或 Word 文件交給 AI，轉成可編輯的簡報",
+      "用公司自己的簡報範本產生財報等簡報",
+      "替做好的簡報加上動畫與語音旁白"
+     ],
+     "barrier": "code",
+     "barrier_note": "要安裝 Python、下載專案並用指令安裝套件，還要準備 Claude Code 這類 AI 工具與模型帳號",
+     "limitations": "作者表示品質取決於模型，沒辦法一次就產出完美簡報，還要自己修；不支援 SmartArt；需要付 AI 模型使用費",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "d45dfc0d564940395718",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1155965274,
+   "full_name": "Donchitos/Claude-Code-Game-Studios",
+   "html_url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+   "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+   "language": "Shell",
+   "topics": [
+    "ai-agents",
+    "ai-assisted-development",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "game-design",
+    "game-development",
+    "gamedev",
+    "godot",
+    "indie-game-dev",
+    "unity",
+    "unreal-engine"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-12T05:21:38Z",
+   "pushed_at": "2026-10-19T02:43:42Z",
+   "stars": 29092,
+   "forks": 4034,
+   "metric_method": "trending_daily",
+   "growth_per_day": 538.0,
+   "score": 73.0,
+   "score_breakdown": {
+    "s_abs": 0.9104,
+    "s_rel": 0.1884
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 538
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +538 星（全站日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把 Claude Code 變成一間虛擬遊戲工作室，用多個 AI 角色分工協助開發遊戲",
+     "features": [
+      "49 個分工明確的 AI 代理，比照工作室層級",
+      "74 個斜線指令，涵蓋企劃、開發、測試到發行",
+      "支援 Godot、Unity、Unreal Engine 5"
+     ],
+     "audience": "用 Claude Code 開發遊戲的獨立開發者或小團隊，需要具備程式基礎",
+     "use_cases": [
+      "從零開始用 /brainstorm 發想遊戲點子並寫成企劃",
+      "替遊戲專案拆解開發任務、排定衝刺計畫並追蹤進度",
+      "對程式碼與設計文件進行審查、QA 測試與發行檢查"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝 Git、Claude Code、Python 3、Bash，並在命令列操作",
+     "limitations": "不是全自動系統，每一步都要使用者決定；作者實測文件較多的模式不一定做出更好的遊戲；缺少 Python 時設定會退回預設值",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "851a7e1eccef0ca70909",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1185590488,
+   "full_name": "rohitg00/ai-engineering-from-scratch",
+   "html_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+   "language": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "ai-engineering",
+    "computer-vision",
+    "course",
+    "deep-learning",
+    "dsh",
+    "from-scratch",
+    "generative-ai",
+    "llm",
+    "machine-learning",
+    "mcp",
+    "python",
+    "rea",
+    "reinforcement-learning",
+    "rust",
+    "transformers",
+    "tutorial",
+    "typescript"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-18T18:38:02Z",
+   "pushed_at": "2026-10-29T15:07:57Z",
+   "stars": 75586,
+   "forks": 13302,
+   "metric_method": "trending_daily",
+   "growth_per_day": 607.0,
+   "score": 71.6,
+   "score_breakdown": {
+    "s_abs": 0.9278,
+    "s_rel": 0.081
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 607
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +607 星（Python 日榜第 3 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的 AI 工程課程，從零動手實作模型、檢索系統與 AI agent",
+     "features": [
+      "542 堂課、20 個階段，支援多種程式語言",
+      "可在網站閱讀，或讓 coding agent 當 AI 家教",
+      "3 個實作專案，附參考解答與評分工具"
+     ],
+     "audience": "已經會寫程式、想深入了解 AI 運作原理並自己動手實作的學習者",
+     "use_cases": [
+      "從基礎數學、機器學習一路學到 LLM 應用與 agent 開發",
+      "專攻 MCP 或 Agent Skills 等主題的短期學習路線",
+      "用分級測驗找出起點，產生個人化學習計畫"
+     ],
+     "barrier": "code",
+     "barrier_note": "網站可直接閱讀，但實作需會寫程式並使用命令列、Python 等環境",
+     "limitations": "先備條件是會寫程式；完整課程預估約 200～306 小時",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "02edbaa9d35ee5a0188d",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1438394948,
+   "full_name": "valentderah/totk-pc-recomp",
+   "html_url": "https://github.com/valentderah/totk-pc-recomp",
+   "description": "Static recompilation of The Legend of Zelda: Tears of the Kingdom to native Windows x86-64, with a Vulkan renderer. Game files not included.",
+   "language": "C",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-29T12:32:46Z",
+   "pushed_at": "2026-10-29T15:05:56Z",
+   "stars": 436,
+   "forks": 13,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 436.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 1 天，已有 436 星，建立以來平均每天 +436 星"
+   ],
+   "notes": [
+    "建立僅 1 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把 Switch 遊戲《薩爾達傳說 王國之淚》轉成能在 Windows 直接執行的版本",
+     "features": [
+      "原生程式碼執行，不是模擬器，使用 Vulkan 繪圖",
+      "支援自訂解析度、AMD FSR 1，預設 60 fps",
+      "支援鍵盤、滑鼠、手把，可重新設定按鍵與體感"
+     ],
+     "audience": "擁有 Switch 主機與正版《王國之淚》、想在 Windows 電腦上遊玩的玩家",
+     "use_cases": [
+      "用自己主機備份的遊戲檔，在 Windows 電腦上玩《王國之淚》",
+      "以更高解析度或更高畫面更新率（實驗性）遊玩",
+      "在 1.2.1 與 1.4.3 版本之間沿用存檔"
+     ],
+     "barrier": "install",
+     "barrier_note": "需 Windows 10 以上、支援 AVX2 的 CPU 與 Vulkan 1.3 顯示卡，並自備從主機取出的遊戲檔",
+     "limitations": "尚在早期開發，仍會有畫面錯誤與當機；不含遊戲檔，作者不提供取得方式；安裝時需約 36 GiB 空間",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "cbdddadedc676106bed1",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  664013991,
+  909213664,
+  1073224795,
+  1097346685,
+  1124219907,
+  1152014594,
+  1177402105,
+  1183888342,
+  1187630119,
+  1200597263,
+  1206390571,
+  1206425593,
+  1217040185,
+  1226205410,
+  1273138090,
+  1273427276,
+  1273646780,
+  1293238217,
+  1309102418,
+  1315788496,
+  1332461149,
+  1431545439,
+  1431830406,
+  1431851693,
+  1432980411,
+  1433297111,
+  1433377156,
+  1433904617,
+  1435695423,
+  1436598075
+ ],
+ "candidate_counts": {
+  "main": 72,
+  "discovery": 1
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 8,
+  "done": 8,
+  "failed": 0,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 8,
+  "input_tokens": 66920,
+  "output_tokens": 5862,
+  "cost_usd": 0.450529
+ }
+}
