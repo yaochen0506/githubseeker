@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "195082f8ed8e6e77782b",
+ "repo_id": 1438540053,
+ "full_name": "wangzan101/Mika",
+ "created_at": "2026-10-31T06:25:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7b072028fc20652b7572d0186e2d38fff73522b030d46bec23348e2a695d5232",
+ "has_readme": true,
+ "readme_chars": 9385,
+ "content": {
+  "one_liner": "Android 手機上的 AI 助理，用一句話交代，它就在背景替你操作 App 和網頁",
+  "features": [
+   "在隱藏的背景螢幕操作任何 App，不占用你的畫面",
+   "內建瀏覽器，可登入網站、點擊輸入、下載上傳",
+   "定時與條件任務、記憶偏好，付款前預設先詢問"
+  ],
+  "audience": "想讓 AI 代辦手機瑣事的 Android 使用者，需自備 AI 模型 API Key 或 ChatGPT 帳號",
+  "use_cases": [
+   "總結 WeChat 群組今天聊了什麼，或整理某位小紅書博主的內容",
+   "在 Amazon 找符合條件的商品加進購物車，停在結帳前",
+   "設定每天早上看天氣，下雨才通知你"
+  ],
+  "barrier": "install",
+  "barrier_note": "需安裝 APK、開啟開發者選項配對無線偵錯，並填入模型 API Key",
+  "limitations": "公開測試版，主要只在 Android 14 測過；執行任務需 Android 13 以上；自動操作第三方 App 可能違反條款而被封號",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

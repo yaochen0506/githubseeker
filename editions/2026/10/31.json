@@ -1,0 +1,825 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-10-31",
+ "business_date": "2026-10-31",
+ "generated_at": "2026-10-31T06:24:31+08:00",
+ "run_id": "20261031T062311-41137758011.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1336502227,
+   "full_name": "CopilotKit/OpenBot",
+   "html_url": "https://github.com/CopilotKit/OpenBot",
+   "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+   "language": "TypeScript",
+   "topics": [
+    "ag-ui",
+    "agent-governance",
+    "ai-agents",
+    "browser-automation",
+    "copilotkit",
+    "generative-ui",
+    "mcp"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-08-17T00:44:59Z",
+   "pushed_at": "2026-10-30T22:06:51Z",
+   "stars": 8734,
+   "forks": 1103,
+   "metric_method": "trending_daily",
+   "growth_per_day": 707.0,
+   "score": 93.3,
+   "score_breakdown": {
+    "s_abs": 0.9499,
+    "s_rel": 0.8808
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 707
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 707
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 14,
+     "period": "weekly",
+     "period_stars": 1472
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +707 星（全站日榜第 4 名）",
+    "也在 TypeScript 日榜第 3 名、TypeScript 週榜第 14 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "可以架在自家公司的 AI 同事平台，每個 AI 都有自己的瀏覽器和檔案",
+     "features": [
+      "每個 Bot 有獨立瀏覽器、檔案與 shell 環境",
+      "所有動作先經規則審核，事後留下紀錄",
+      "支援任何 AG-UI agent 與 MCP 工具"
+     ],
+     "audience": "想在自家基礎設施部署 AI 助理的企業與開發團隊",
+     "use_cases": [
+      "讓 Bot 開網頁查資料、填表單，並在後台查看稽核紀錄",
+      "依政策審核報帳、整理會議待辦或撰寫版本說明",
+      "在 Slack 或 Microsoft Teams 與 Bot 延續對話"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Docker、Bun、命令列操作、CopilotKit 授權與模型 API 金鑰",
+     "limitations": "仍是 Beta 版，可能有錯誤；屬於範本而非現成產品，沒有雲端版本，需自行複製修改",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "76c220c5462b7797ae91",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1153130349,
+   "full_name": "pingdotgg/t3code",
+   "html_url": "https://github.com/pingdotgg/t3code",
+   "description": null,
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-08T23:46:22Z",
+   "pushed_at": "2026-10-30T22:20:26Z",
+   "stars": 32673,
+   "forks": 8644,
+   "metric_method": "trending_daily",
+   "growth_per_day": 920.0,
+   "score": 81.3,
+   "score_breakdown": {
+    "s_abs": 0.9879,
+    "s_rel": 0.2897
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 9,
+     "period": "daily",
+     "period_stars": 920
+    },
+    {
+     "source_id": "all-weekly",
+     "rank": 9,
+     "period": "weekly",
+     "period_stars": 2142
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 920
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 1,
+     "period": "weekly",
+     "period_stars": 2142
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +920 星（全站日榜第 9 名）",
+    "也在 TypeScript 日榜第 5 名、TypeScript 週榜第 1 名、全站週榜第 9 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用手機、網頁或桌面 App 遠端操控電腦上 AI 程式設計助理的工具",
+     "features": [
+      "統一操控 Claude Code、Codex、Cursor 等 AI 代理",
+      "提供 iOS、Android、網頁與桌面版介面",
+      "支援從手機或其他電腦遠端存取"
+     ],
+     "audience": "已在用 Claude Code、Codex 等 AI 程式設計工具的開發者",
+     "use_cases": [
+      "在手機上查看並操控電腦裡正在執行的 AI 代理",
+      "在同一個介面切換使用不同 AI 程式設計服務",
+      "讓服務在背景常駐，隨時從其他裝置連線"
+     ],
+     "barrier": "code",
+     "barrier_note": "需先用命令列安裝並登入至少一個 AI 代理工具，例如 Codex 或 Claude Code",
+     "limitations": "專案還在非常早期，作者提醒會有 bug；目前大致不接受外部貢獻，也還沒有文件網站",
+     "based_on": [
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "132f05e1aee4a525bfa0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1179388779,
+   "full_name": "ethanplusai/harvey",
+   "html_url": "https://github.com/ethanplusai/harvey",
+   "description": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+   "language": "Python",
+   "topics": [
+    "ai-agent",
+    "autonomous-agent",
+    "claude",
+    "cold-email",
+    "prospecting",
+    "python",
+    "sales-automation"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-12T01:24:50Z",
+   "pushed_at": "2026-10-27T09:27:08Z",
+   "stars": 3462,
+   "forks": 705,
+   "metric_method": "trending_daily",
+   "growth_per_day": 248.0,
+   "score": 79.2,
+   "score_breakdown": {
+    "s_abs": 0.7986,
+    "s_rel": 0.7716
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 248
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +248 星（Python 日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 Claude 或 ChatGPT 訂閱自動找潛在客戶、寄開發信、回信並約會議的 AI 業務助理",
+     "features": [
+      "從地圖與搜尋資料找出潛在商家並收集 29 種訊號",
+      "依每家公司特點撰寫並寄送開發信、處理回覆",
+      "本機儀表板審核草稿，未經確認不會寄出"
+     ],
+     "audience": "想向小型在地商家推銷服務的業務、接案者或小公司老闆，且有 Claude 或 ChatGPT 訂閱",
+     "use_cases": [
+      "找出沒有網站或搜尋排名落後的在地店家，寄出客製化開發信",
+      "依「正在徵人」「正在投廣告」等條件篩選名單並發起行銷活動",
+      "自動閱讀潛在客戶回信，把對話推進到約定會議"
+     ],
+     "barrier": "code",
+     "barrier_note": "需 Python 3.11 以上、命令列操作、Claude Code 或 Codex CLI 登入，以及專用寄信信箱",
+     "limitations": "需另備信箱並做暖機服務；預設 OpenStreetMap 資料對無店面行業涵蓋少；Docker 版僅支援 Linux；須自行確認服務條款與用量限制",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "952e0cb039f8ef167e13",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1048065319,
+   "full_name": "thedotmack/claude-mem",
+   "html_url": "https://github.com/thedotmack/claude-mem",
+   "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+   "language": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "ai-memory",
+    "anthropic",
+    "artificial-intelligence",
+    "chromadb",
+    "claude",
+    "claude-agent-sdk",
+    "claude-agents",
+    "claude-code",
+    "claude-code-plugin",
+    "claude-skills",
+    "embeddings",
+    "long-term-memory",
+    "mem0",
+    "memory-engine",
+    "openmemory",
+    "rag",
+    "sqlite",
+    "supermemory"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2025-08-31T20:50:03Z",
+   "pushed_at": "2026-10-30T19:01:44Z",
+   "stars": 106113,
+   "forks": 9346,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1145.0,
+   "score": 77.7,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.1091
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1145
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 1,
+     "period": "daily",
+     "period_stars": 1145
+    },
+    {
+     "source_id": "typescript-weekly",
+     "rank": 17,
+     "period": "weekly",
+     "period_stars": 2989
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,145 星（全站日榜第 1 名）",
+    "也在 TypeScript 日榜第 1 名、TypeScript 週榜第 17 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "幫 Claude Code 等 AI 程式助理記住過去工作內容，下次對話自動帶入",
+     "features": [
+      "自動記錄 AI 助理的操作並用 AI 壓縮成摘要",
+      "用自然語言搜尋過去的專案紀錄",
+      "提供網頁檢視介面，可選擇與團隊分享"
+     ],
+     "audience": "常用 Claude Code、Codex、Gemini、OpenCode 等 AI 程式助理的開發者",
+     "use_cases": [
+      "重開 Claude Code 後，讓 AI 接續上次的專案進度",
+      "查詢之前修過哪些 bug 或做過哪些決策",
+      "團隊成員可能透過 TeamBrain 共享工作紀錄"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Node.js 20 以上，並用命令列安裝到 Claude Code 等 AI 助理工具",
+     "limitations": "npm 全域安裝只裝函式庫，不會設定外掛；預設託管記憶服務有 30 天試用，到期後改用自己的 Anthropic 方案",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "fa2365d77c953d187a0f",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1136590548,
+   "full_name": "affaan-m/ECC",
+   "html_url": "https://github.com/affaan-m/ECC",
+   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+   "language": "JavaScript",
+   "topics": [
+    "ai-agents",
+    "anthropic",
+    "claude",
+    "claude-code",
+    "developer-tools",
+    "llm",
+    "mcp",
+    "productivity"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-01-18T00:51:51Z",
+   "pushed_at": "2026-10-30T03:06:42Z",
+   "stars": 293359,
+   "forks": 43408,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 942.0,
+   "score": 75.2,
+   "score_breakdown": {
+    "s_abs": 0.9914,
+    "s_rel": 0.0322
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 11,
+     "period": "weekly",
+     "period_stars": 6594
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +6,594 星（全站週榜第 11 名），平均每天約 +942 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "替 Claude Code 等 AI 寫程式助手加上一整套規劃、測試、記憶與安全檢查的工作流程",
+     "features": [
+      "內含 71 個 agents、314 個 skills 與指令",
+      "記憶、持續學習與 hooks 規範 agent 行為",
+      "AgentShield 掃描提示詞、MCP 設定與機密"
+     ],
+     "audience": "使用 Claude Code、Codex、Cursor 等 AI 寫程式工具的軟體開發者",
+     "use_cases": [
+      "讓 AI agent 先規劃再寫程式，並用測試驗證修改",
+      "用 AgentShield 檢查 agent 設定檔、權限與機密外洩風險",
+      "在 Claude Code、Codex、Kimi Code 一次設定同一套工作流程"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝 Node.js 18 以上、Git 與 Claude Code 2.1 以上，並用命令列執行安裝",
+     "limitations": "只從官方管道安裝，避免惡意版本；同一工具不要重複安裝；Cursor 等工具僅有功能受限的支援；私有 repo 的 Pro 版要付費",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "d74eb8aa41dcc52e1b58",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 598667202,
+   "full_name": "lightpanda-io/browser",
+   "html_url": "https://github.com/lightpanda-io/browser",
+   "description": "Lightpanda: the headless browser designed for AI and automation",
+   "language": "Zig",
+   "topics": [
+    "browser",
+    "browser-automation",
+    "cdp",
+    "headless",
+    "lightpanda",
+    "playwright",
+    "puppeteer",
+    "zig"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2023-02-07T15:19:34Z",
+   "pushed_at": "2026-10-30T19:45:19Z",
+   "stars": 38294,
+   "forks": 1867,
+   "metric_method": "trending_daily",
+   "growth_per_day": 652.0,
+   "score": 74.7,
+   "score_breakdown": {
+    "s_abs": 0.9382,
+    "s_rel": 0.1732
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 15,
+     "period": "daily",
+     "period_stars": 652
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +652 星（全站日榜第 15 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "從零打造、沒有畫面的輕量瀏覽器，專門給 AI 代理和自動化程式操作網頁",
+     "features": [
+      "支援 CDP 與 Puppeteer、Playwright 等自動化工具",
+      "內建 AI 代理模式，可用英文指令操作網頁",
+      "可把網頁轉成 Markdown、PDF 或結構化資料"
+     ],
+     "audience": "需要大量自動抓取網頁或開發 AI 代理的工程師與開發團隊",
+     "use_cases": [
+      "讓 AI 代理透過 MCP 瀏覽網頁、填表單、擷取資料",
+      "在伺服器上大量執行網頁自動化，取代 Headless Chrome",
+      "把網頁內容轉成 Markdown 供 AI 模型閱讀"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要使用命令列，並搭配 Puppeteer 等程式或 MCP 設定；Windows 要透過 WSL",
+     "limitations": "沒有原生 Windows 和 Android 版本；預設會傳送使用資料，可以關閉。作者表示比 Chromium 輕 16 倍、快 9 倍",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e5d044bbfe262339e45e",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1148788086,
+   "full_name": "mattpocock/skills",
+   "html_url": "https://github.com/mattpocock/skills",
+   "description": "Skills for Real Engineers. Straight from my .agents directory.",
+   "language": "Shell",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-03T11:15:53Z",
+   "pushed_at": "2026-10-30T14:00:30Z",
+   "stars": 307415,
+   "forks": 25868,
+   "metric_method": "trending_daily",
+   "growth_per_day": 889.0,
+   "score": 74.4,
+   "score_breakdown": {
+    "s_abs": 0.983,
+    "s_rel": 0.029
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 8,
+     "period": "daily",
+     "period_stars": 889
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +889 星（全站日榜第 8 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "一組給 AI 寫程式助理用的技能指令，幫工程師更有紀律地開發軟體",
+     "features": [
+      "/grill-me 讓 AI 反覆追問，先釐清需求",
+      "/tdd、/diagnosing-bugs 引導測試與除錯",
+      "協助拆解規格、開票、程式碼審查與架構改善"
+     ],
+     "audience": "使用 Claude Code、Codex 等 AI 程式助理的軟體工程師",
+     "use_cases": [
+      "動手改程式前，讓 AI 先詢問細節以確認雙方理解一致",
+      "建立專案術語表，讓 AI 回答更精簡、命名更一致",
+      "定期掃描程式碼，找出可改善的架構設計"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要已安裝 AI 程式助理，並用命令列安裝外掛或執行 npx 指令",
+     "limitations": "外掛與 skills.sh 只能擇一安裝，否則技能會重複；部分安裝方式需手動更新；架構掃描只提出建議，不會自動整理舊程式碼",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "dcbb3a17927dd973b670",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1438540053,
+   "full_name": "wangzan101/Mika",
+   "html_url": "https://github.com/wangzan101/Mika",
+   "description": "Mika — 你手机上的私人 AI 助理，替你操作 App、上网、把事办成。An on-device AI agent for Android that operates apps and the web to get things done for you.",
+   "language": "Kotlin",
+   "topics": [
+    "accessibility",
+    "ai-agent",
+    "android",
+    "automation",
+    "jetpack-compose",
+    "kotlin",
+    "llm",
+    "mobile-agent"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-10-29T14:34:07Z",
+   "pushed_at": "2026-10-30T21:23:42Z",
+   "stars": 1152,
+   "forks": 190,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 576.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,152 星，建立以來平均每天 +576 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Android 手機上的 AI 助理，用一句話交代，它就在背景替你操作 App 和網頁",
+     "features": [
+      "在隱藏的背景螢幕操作任何 App，不占用你的畫面",
+      "內建瀏覽器，可登入網站、點擊輸入、下載上傳",
+      "定時與條件任務、記憶偏好，付款前預設先詢問"
+     ],
+     "audience": "想讓 AI 代辦手機瑣事的 Android 使用者，需自備 AI 模型 API Key 或 ChatGPT 帳號",
+     "use_cases": [
+      "總結 WeChat 群組今天聊了什麼，或整理某位小紅書博主的內容",
+      "在 Amazon 找符合條件的商品加進購物車，停在結帳前",
+      "設定每天早上看天氣，下雨才通知你"
+     ],
+     "barrier": "install",
+     "barrier_note": "需安裝 APK、開啟開發者選項配對無線偵錯，並填入模型 API Key",
+     "limitations": "公開測試版，主要只在 Android 14 測過；執行任務需 Android 13 以上；自動操作第三方 App 可能違反條款而被封號",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "195082f8ed8e6e77782b",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "repo_id": 1438018242,
+   "full_name": "paipiange/nvzhuang",
+   "html_url": "https://github.com/paipiange/nvzhuang",
+   "description": "1407 张 AI 女装参考图集与虚拟试穿网站，支持中英检索、OpenAI Images / Gemini / 豆包及自定义 Base URL、API Key、模型。https://github.com/paipiange/nvzhuang",
+   "language": "Go",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-29T06:08:00Z",
+   "pushed_at": "2026-10-30T13:20:29Z",
+   "stars": 1145,
+   "forks": 355,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 572.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,145 星，建立以來平均每天 +572 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "收錄 1407 張 AI 生成女裝參考圖的網站，也能用 AI 虛擬試穿",
+     "features": [
+      "8 大分類圖庫，支援中英文關鍵字搜尋",
+      "上傳人像照片，用 AI 把選中的服裝換上身",
+      "可自訂 API Key、Base URL 與模型"
+     ],
+     "audience": "需要服裝設計參考的創作者、電商或設計人員，以及想試玩 AI 換裝的人",
+     "use_cases": [
+      "瀏覽並下載 AI 服裝圖，當作設計或創作參考",
+      "上傳自拍照，虛擬試穿圖庫裡的服裝",
+      "從服裝圖一鍵用淘寶以圖搜尋現實中的同款"
+     ],
+     "barrier": "code",
+     "barrier_note": "瀏覽圖庫開網頁就能用；AI 換裝要自己架後端並準備模型 API Key",
+     "limitations": "AI 換裝會消耗第三方模型額度；圖片都是 AI 生成，不是真實商品；原尺寸 PNG 沒有放在 repo 裡",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "258886d7233b51cb7a58",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "repo_id": 1438623288,
+   "full_name": "heydamir/unslop",
+   "html_url": "https://github.com/heydamir/unslop",
+   "description": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+   "language": "JavaScript",
+   "topics": [],
+   "license_spdx": "CC-BY-4.0",
+   "created_at": "2026-10-29T15:41:21Z",
+   "pushed_at": "2026-10-29T16:17:15Z",
+   "stars": 1069,
+   "forks": 51,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 534.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,069 星，建立以來平均每天 +534 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 Claude 把一看就像 AI 生成的網頁介面，改成有設計感的畫面",
+     "features": [
+      "先找出紫色漸層、表情符號標籤等 AI 感問題",
+      "依產品定調風格，逐步修間距、配色、字體等",
+      "可產生不到 10 秒的改版前後短影片"
+     ],
+     "audience": "用 AI 快速做出網站或 App、想讓畫面更有設計感的開發者與創作者",
+     "use_cases": [
+      "把 AI 做出的 landing page 改得更有質感",
+      "整理儀表板或 App 畫面的間距、配色與文案",
+      "產生介面改版的短影片，用來發到社群"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要使用 Claude Code，並把 skill 複製到指定資料夾；做影片還要 Playwright 與 ffmpeg",
+     "limitations": "產生圖片需要串接付費圖片服務，每次付費生成前會先詢問；影片功能需要 Playwright 與 ffmpeg",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "d672276f5fdb354dfbac",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  664013991,
+  909213664,
+  1073224795,
+  1086419061,
+  1097346685,
+  1106846196,
+  1124219907,
+  1152014594,
+  1177402105,
+  1187630119,
+  1206390571,
+  1206425593,
+  1217040185,
+  1226205410,
+  1273427276,
+  1273646780,
+  1293238217,
+  1309102418,
+  1331261687,
+  1332461149,
+  1431830406,
+  1431851693,
+  1432980411,
+  1433297111,
+  1433377156,
+  1433904617,
+  1435695423,
+  1436598075,
+  1438394948
+ ],
+ "candidate_counts": {
+  "main": 65,
+  "discovery": 5
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 10,
+  "done": 10,
+  "failed": 0,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 10,
+  "input_tokens": 72233,
+  "output_tokens": 6090,
+  "cost_usd": 0.530968
+ }
+}

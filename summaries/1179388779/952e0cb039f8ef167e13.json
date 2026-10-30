@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "952e0cb039f8ef167e13",
+ "repo_id": 1179388779,
+ "full_name": "ethanplusai/harvey",
+ "created_at": "2026-10-31T06:24:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d97ca4df41e76f9643e07413ed584952db7f78974eddfa6a7e6f8141e695c93d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Claude 或 ChatGPT 訂閱自動找潛在客戶、寄開發信、回信並約會議的 AI 業務助理",
+  "features": [
+   "從地圖與搜尋資料找出潛在商家並收集 29 種訊號",
+   "依每家公司特點撰寫並寄送開發信、處理回覆",
+   "本機儀表板審核草稿，未經確認不會寄出"
+  ],
+  "audience": "想向小型在地商家推銷服務的業務、接案者或小公司老闆，且有 Claude 或 ChatGPT 訂閱",
+  "use_cases": [
+   "找出沒有網站或搜尋排名落後的在地店家，寄出客製化開發信",
+   "依「正在徵人」「正在投廣告」等條件篩選名單並發起行銷活動",
+   "自動閱讀潛在客戶回信，把對話推進到約定會議"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 Python 3.11 以上、命令列操作、Claude Code 或 Codex CLI 登入，以及專用寄信信箱",
+  "limitations": "需另備信箱並做暖機服務；預設 OpenStreetMap 資料對無店面行業涵蓋少；Docker 版僅支援 Linux；須自行確認服務條款與用量限制",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

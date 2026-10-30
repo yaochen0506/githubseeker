@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "dcbb3a17927dd973b670",
+ "repo_id": 1148788086,
+ "full_name": "mattpocock/skills",
+ "created_at": "2026-10-31T06:25:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "36c9868beba4dda0e4bef5c0abbd8163d30fd268fb059d6460fc5325f481b860",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "一組給 AI 寫程式助理用的技能指令，幫工程師更有紀律地開發軟體",
+  "features": [
+   "/grill-me 讓 AI 反覆追問，先釐清需求",
+   "/tdd、/diagnosing-bugs 引導測試與除錯",
+   "協助拆解規格、開票、程式碼審查與架構改善"
+  ],
+  "audience": "使用 Claude Code、Codex 等 AI 程式助理的軟體工程師",
+  "use_cases": [
+   "動手改程式前，讓 AI 先詢問細節以確認雙方理解一致",
+   "建立專案術語表，讓 AI 回答更精簡、命名更一致",
+   "定期掃描程式碼，找出可改善的架構設計"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要已安裝 AI 程式助理，並用命令列安裝外掛或執行 npx 指令",
+  "limitations": "外掛與 skills.sh 只能擇一安裝，否則技能會重複；部分安裝方式需手動更新；架構掃描只提出建議，不會自動整理舊程式碼",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

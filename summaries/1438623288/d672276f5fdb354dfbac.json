@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d672276f5fdb354dfbac",
+ "repo_id": 1438623288,
+ "full_name": "heydamir/unslop",
+ "created_at": "2026-10-31T06:25:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0cc716e17132b6989be1e7764debffa1b7ad1cd868a80c68ec9dd686ce1810f4",
+ "has_readme": true,
+ "readme_chars": 2305,
+ "content": {
+  "one_liner": "讓 Claude 把一看就像 AI 生成的網頁介面，改成有設計感的畫面",
+  "features": [
+   "先找出紫色漸層、表情符號標籤等 AI 感問題",
+   "依產品定調風格，逐步修間距、配色、字體等",
+   "可產生不到 10 秒的改版前後短影片"
+  ],
+  "audience": "用 AI 快速做出網站或 App、想讓畫面更有設計感的開發者與創作者",
+  "use_cases": [
+   "把 AI 做出的 landing page 改得更有質感",
+   "整理儀表板或 App 畫面的間距、配色與文案",
+   "產生介面改版的短影片，用來發到社群"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用 Claude Code，並把 skill 複製到指定資料夾；做影片還要 Playwright 與 ffmpeg",
+  "limitations": "產生圖片需要串接付費圖片服務，每次付費生成前會先詢問；影片功能需要 Playwright 與 ffmpeg",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

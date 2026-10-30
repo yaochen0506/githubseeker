@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "fa2365d77c953d187a0f",
+ "repo_id": 1048065319,
+ "full_name": "thedotmack/claude-mem",
+ "created_at": "2026-10-31T06:24:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "50385fd1a8222ac9edc8d6feb25c2bf69ff07547a2dbfca9060aceec07ed53cb",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "幫 Claude Code 等 AI 程式助理記住過去工作內容，下次對話自動帶入",
+  "features": [
+   "自動記錄 AI 助理的操作並用 AI 壓縮成摘要",
+   "用自然語言搜尋過去的專案紀錄",
+   "提供網頁檢視介面，可選擇與團隊分享"
+  ],
+  "audience": "常用 Claude Code、Codex、Gemini、OpenCode 等 AI 程式助理的開發者",
+  "use_cases": [
+   "重開 Claude Code 後，讓 AI 接續上次的專案進度",
+   "查詢之前修過哪些 bug 或做過哪些決策",
+   "團隊成員可能透過 TeamBrain 共享工作紀錄"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js 20 以上，並用命令列安裝到 Claude Code 等 AI 助理工具",
+  "limitations": "npm 全域安裝只裝函式庫，不會設定外掛；預設託管記憶服務有 30 天試用，到期後改用自己的 Anthropic 方案",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

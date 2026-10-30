@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e5d044bbfe262339e45e",
+ "repo_id": 598667202,
+ "full_name": "lightpanda-io/browser",
+ "created_at": "2026-10-31T06:25:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e9ae54b7795f29a09d0adf351d0a53af45ad30894f94ba17e4391070c7907932",
+ "has_readme": true,
+ "readme_chars": 10869,
+ "content": {
+  "one_liner": "從零打造、沒有畫面的輕量瀏覽器，專門給 AI 代理和自動化程式操作網頁",
+  "features": [
+   "支援 CDP 與 Puppeteer、Playwright 等自動化工具",
+   "內建 AI 代理模式，可用英文指令操作網頁",
+   "可把網頁轉成 Markdown、PDF 或結構化資料"
+  ],
+  "audience": "需要大量自動抓取網頁或開發 AI 代理的工程師與開發團隊",
+  "use_cases": [
+   "讓 AI 代理透過 MCP 瀏覽網頁、填表單、擷取資料",
+   "在伺服器上大量執行網頁自動化，取代 Headless Chrome",
+   "把網頁內容轉成 Markdown 供 AI 模型閱讀"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列，並搭配 Puppeteer 等程式或 MCP 設定；Windows 要透過 WSL",
+  "limitations": "沒有原生 Windows 和 Android 版本；預設會傳送使用資料，可以關閉。作者表示比 Chromium 輕 16 倍、快 9 倍",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
