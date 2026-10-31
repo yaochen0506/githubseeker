@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1dfae6cdd37e7c294555",
+ "repo_id": 1267485499,
+ "full_name": "vorssaint/vorssaint-utils",
+ "created_at": "2026-11-01T05:39:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8267205a2a5d3c756ce495863424f7398978d882a46c4252f1a657e3d6cb2d5c",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把音量混音、系統監控、視窗管理等多種 Mac 小工具整合在選單列的免費軟體",
+  "features": [
+   "可個別調整每個 App 的音量與輸出裝置",
+   "系統監控、視窗切換排列與剪貼簿歷史",
+   "截圖錄影、App 解除安裝與清理工具"
+  ],
+  "audience": "想用免費工具取代多款付費 Mac 小工具的 Apple Silicon Mac 使用者",
+  "use_cases": [
+   "通話用耳機，同時讓音樂從喇叭播放",
+   "查看 CPU、溫度與電池狀態，過熱時收到通知",
+   "移除 App 時一併檢查並清掉相關快取與設定檔"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載磁碟映像檔拖進應用程式資料夾即可，部分功能需授權系統權限",
+  "limitations": "僅支援 Apple Silicon 與 macOS 14 以上；風扇控制為測試版；麥克風靜音功能並不等於隱私鎖",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

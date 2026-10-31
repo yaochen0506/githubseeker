@@ -1,0 +1,825 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-11-01",
+ "business_date": "2026-11-01",
+ "generated_at": "2026-11-01T05:38:35+08:00",
+ "run_id": "20261101T053719-41244432559.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1224575142,
+   "full_name": "Orkas-AI/Orkas",
+   "html_url": "https://github.com/Orkas-AI/Orkas",
+   "description": "Orkas is an open-source (MIT), local-first AI team for your desktop: a Commander turns your goal into to-dos and coordinates 16 built-in specialist agents plus Claude Code, Codex, OpenCode, OpenClaw and Hermes, with projects, scheduled automations and connectors. Free app for macOS & Windows; built-in models or your own keys.",
+   "language": "JavaScript",
+   "topics": [
+    "agent-collaboration",
+    "agent-harness",
+    "agent-orchestration",
+    "agent-team",
+    "agent-workflow",
+    "ai-assistant",
+    "ai-automation",
+    "ai-employee",
+    "ai-productivity",
+    "ai-team",
+    "ai-workflow",
+    "autonomous-agents",
+    "claude-code-gui",
+    "claude-cowork",
+    "desktop-agent",
+    "local-first",
+    "multi-agent",
+    "multi-agent-system",
+    "self-evolving-agents",
+    "task-automation"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-04-29T12:19:08Z",
+   "pushed_at": "2026-10-31T03:36:24Z",
+   "stars": 6087,
+   "forks": 367,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1118.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 1118
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,118 星（全站日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在電腦上用的 AI 團隊 App，交代目標後由指揮官分工，讓多個 AI 助手一起完成工作",
+     "features": [
+      "內建 16 個專業 AI 助手，能做影片、報告、簡報等",
+      "專案、待辦清單與排程自動化，讓工作持續進行",
+      "可串接 Gmail、Notion、Shopify 等服務"
+     ],
+     "audience": "想用 AI 處理行銷內容、研究報告、電商營運或文書工作的個人、小團隊與電商賣家",
+     "use_cases": [
+      "每週自動產出銷售簡報與競品檢查",
+      "把市場研究做成報告、簡報和宣傳影片",
+      "用自己的產品素材仿照參考影片的節奏做短影片"
+     ],
+     "barrier": "online",
+     "barrier_note": "下載 macOS 或 Windows 版 App 並登入，內建 500 點免費額度，不用 API Key",
+     "limitations": "共享專案、雲端同步、網頁 App 發布只有官方 App 有；影片仿作不支援貼社群連結下載，也不保證逐格還原",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e5e4245c4406956011fe",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1339256252,
+   "full_name": "YuJunZhiXue/dsh-purge",
+   "html_url": "https://github.com/YuJunZhiXue/dsh-purge",
+   "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+   "language": "JavaScript",
+   "topics": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "dsh-plugins",
+    "harness-jailbreak",
+    "jailbreak",
+    "llm-jailbreak"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-08-19T07:41:12Z",
+   "pushed_at": "2026-10-31T17:33:31Z",
+   "stars": 14544,
+   "forks": 3362,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 952.14,
+   "score": 92.0,
+   "score_breakdown": {
+    "s_abs": 0.9929,
+    "s_rel": 0.7005
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 14,
+     "period": "weekly",
+     "period_stars": 6665
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +6,665 星（全站週榜第 14 名），平均每天約 +952 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "替本機已安裝的 DeepSeek Harness 加裝破甲插件，可逐一替換各模型提示詞",
+     "features": [
+      "提供 dsh-purge 面板，可套用、還原、移除修補並編輯提示詞",
+      "Drill 頁面在本機實驗環境進行資產與環境評估",
+      "可調整預設提示詞、權限政策與工具限制"
+     ],
+     "audience": "在自己電腦上做紅隊研究與模型穩健性評估、且會用命令列的技術人員",
+     "use_cases": [
+      "評估 DeepSeek Harness 預設政策是否過於嚴格",
+      "區分模型拒答與主機層阻擋兩種情況",
+      "可能用於本機實驗環境的資安研究測試"
+     ],
+     "barrier": "code",
+     "barrier_note": "需事先安裝官方 DSH 0.2.1-rc.2，並用 pnpm 或 dsh 命令列安裝套用",
+     "limitations": "作者表示僅限本機實驗網段（loopback、RFC1918），禁止遊戲外掛，此版不含技能庫與知識庫，且禁用於未授權或違法用途",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "3eeb57f55a1e4457a690",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 1061953414,
+   "full_name": "anthropics/skills",
+   "html_url": "https://github.com/anthropics/skills",
+   "description": "Public repository for Agent Skills",
+   "language": "Python",
+   "topics": [
+    "agent-skills"
+   ],
+   "license_spdx": null,
+   "created_at": "2025-09-22T15:53:31Z",
+   "pushed_at": "2026-10-28T19:20:39Z",
+   "stars": 185828,
+   "forks": 21938,
+   "metric_method": "trending_daily",
+   "growth_per_day": 756.0,
+   "score": 73.0,
+   "score_breakdown": {
+    "s_abs": 0.9596,
+    "s_rel": 0.0408
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 12,
+     "period": "weekly",
+     "period_stars": 1888
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 756
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 3,
+     "period": "weekly",
+     "period_stars": 1888
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +756 星（Python 日榜第 4 名）",
+    "也在 Python 週榜第 3 名、全站週榜第 12 名"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "7a7caa4fc28ad3c59d0a",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "不可以包含網址或網域名稱"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 1162099055,
+   "full_name": "Leonxlnx/taste-skill",
+   "html_url": "https://github.com/Leonxlnx/taste-skill",
+   "description": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
+   "language": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "anti-slop",
+    "claude-code",
+    "codex",
+    "cursor",
+    "design-system",
+    "frontend",
+    "landing-page",
+    "ui-design",
+    "web-design"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-02-19T21:44:05Z",
+   "pushed_at": "2026-10-31T07:59:58Z",
+   "stars": 106972,
+   "forks": 7238,
+   "metric_method": "trending_weekly_avg",
+   "growth_per_day": 673.14,
+   "score": 72.3,
+   "score_breakdown": {
+    "s_abs": 0.9428,
+    "s_rel": 0.0633
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-weekly",
+     "rank": 9,
+     "period": "weekly",
+     "period_stars": 4712
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示本週 +4,712 星（全站週榜第 9 名），平均每天約 +673 星"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 寫程式助理設計出有風格的網站與 App 畫面，不再是千篇一律的頁面",
+     "features": [
+      "從 20 種設計方向中挑選美術風格",
+      "自動找開放授權的真實照片並標註來源",
+      "在真實瀏覽器檢查成果並自動修正"
+     ],
+     "audience": "使用 Claude Code、Codex、Cursor 等 AI 工具做網頁的開發者與設計工程師",
+     "use_cases": [
+      "用一段需求說明讓 AI 做出品牌形象的形象網站",
+      "製作儀表板、後台管理或設定畫面",
+      "先在瀏覽器檢查現有頁面，再進行改版"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用命令列安裝，並具備 Node 22 以上、Chrome/Edge/Chromium 及 AI 程式助理",
+     "limitations": "一次建置約需 30～45 分鐘與數十萬 token；找圖片需連網，照片建議換成自己的素材",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "d1594366ddfe9afaaba5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1301657572,
+   "full_name": "superdesigndev/treg",
+   "html_url": "https://github.com/superdesigndev/treg",
+   "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+   "language": "Python",
+   "topics": [
+    "agents",
+    "api-keys",
+    "cli",
+    "credentials",
+    "developer-tools",
+    "dsh-plugin",
+    "mcp",
+    "proxy",
+    "python",
+    "registry",
+    "secrets"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-07-15T13:38:07Z",
+   "pushed_at": "2026-10-31T20:35:11Z",
+   "stars": 6849,
+   "forks": 596,
+   "metric_method": "trending_daily",
+   "growth_per_day": 276.0,
+   "score": 71.6,
+   "score_breakdown": {
+    "s_abs": 0.814,
+    "s_rel": 0.4199
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 276
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +276 星（Python 日榜第 11 名）"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI agent 用一組 token 呼叫上千種付費工具 API，按次計費，不用自己註冊",
+     "features": [
+      "收錄 SEO、社群、名單查詢、爬蟲、影像生成等工具目錄",
+      "團隊共用金鑰、CLI 與 skill，金鑰留在伺服器端",
+      "支援 Claude Code 外掛、MCP 與現成工作流程 skill"
+     ],
+     "audience": "使用 AI agent 做行銷、招募、資料查詢的開發者與技術團隊",
+     "use_cases": [
+      "讓 agent 查詢反向連結或關鍵字排名，不必訂閱 Semrush 等服務",
+      "把 LinkedIn 職缺轉成排序好的候選人名單",
+      "團隊成員的 agent 共用公司 API 金鑰，不用把金鑰交給每個人"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要使用命令列或 AI agent 工具，並註冊 treg 帳號、預付儲值",
+     "limitations": "使用 treg 自己的金鑰要扣預付餘額，沒公開價格的端點會拒絕服務；CLI 預設會匿名回傳使用統計，可以關閉",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "34fe04f12dda5d3081e3",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1267485499,
+   "full_name": "vorssaint/vorssaint-utils",
+   "html_url": "https://github.com/vorssaint/vorssaint-utils",
+   "description": "Free and open-source macOS menu bar toolkit.",
+   "language": "Swift",
+   "topics": [
+    "alt-tab",
+    "app-uninstaller",
+    "appkit",
+    "finder",
+    "free",
+    "keep-awake",
+    "mac-os",
+    "menu-bar",
+    "menubar",
+    "open-source",
+    "swift",
+    "swift-ui",
+    "system-monitor",
+    "uninstaller",
+    "volume-mixer",
+    "window-switcher"
+   ],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2026-06-12T15:25:43Z",
+   "pushed_at": "2026-10-30T02:38:26Z",
+   "stars": 31842,
+   "forks": 1533,
+   "metric_method": "trending_daily",
+   "growth_per_day": 499.0,
+   "score": 71.4,
+   "score_breakdown": {
+    "s_abs": 0.8995,
+    "s_rel": 0.1592
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 14,
+     "period": "daily",
+     "period_stars": 499
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +499 星（全站日榜第 14 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把音量混音、系統監控、視窗管理等多種 Mac 小工具整合在選單列的免費軟體",
+     "features": [
+      "可個別調整每個 App 的音量與輸出裝置",
+      "系統監控、視窗切換排列與剪貼簿歷史",
+      "截圖錄影、App 解除安裝與清理工具"
+     ],
+     "audience": "想用免費工具取代多款付費 Mac 小工具的 Apple Silicon Mac 使用者",
+     "use_cases": [
+      "通話用耳機，同時讓音樂從喇叭播放",
+      "查看 CPU、溫度與電池狀態，過熱時收到通知",
+      "移除 App 時一併檢查並清掉相關快取與設定檔"
+     ],
+     "barrier": "install",
+     "barrier_note": "下載磁碟映像檔拖進應用程式資料夾即可，部分功能需授權系統權限",
+     "limitations": "僅支援 Apple Silicon 與 macOS 14 以上；風扇控制為測試版；麥克風靜音功能並不等於隱私鎖",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1dfae6cdd37e7c294555",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 1195360525,
+   "full_name": "calesthio/OpenMontage",
+   "html_url": "https://github.com/calesthio/OpenMontage",
+   "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "agentic-ai",
+    "ai",
+    "claude",
+    "copilot",
+    "cursor",
+    "elevenlabs",
+    "ffmpeg",
+    "flux",
+    "image-generation",
+    "open-source",
+    "openai",
+    "python",
+    "remotion",
+    "stable-diffusion",
+    "text-to-speech",
+    "text-to-video",
+    "video-generation",
+    "video-production"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2026-03-29T15:23:22Z",
+   "pushed_at": "2026-10-28T21:46:02Z",
+   "stars": 73926,
+   "forks": 9689,
+   "metric_method": "trending_daily",
+   "growth_per_day": 564.0,
+   "score": 70.7,
+   "score_breakdown": {
+    "s_abs": 0.9172,
+    "s_rel": 0.0769
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 564
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +564 星（Python 日榜第 5 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 程式助理變成影片製作工作室，用白話描述就能產出完整影片",
+     "features": [
+      "自動完成研究、腳本、旁白、素材生成、剪輯與合成",
+      "可分析參考影片，提出不同企劃與費用估算",
+      "本機分鏡看板，生成前可逐場審核畫面"
+     ],
+     "audience": "想用 AI 製作解說、紀錄或宣傳影片，且熟悉 AI 程式助理的創作者與開發者",
+     "use_cases": [
+      "參考喜歡的短影音節奏，改做成自己主題的解說影片",
+      "用免費公開影像素材剪出紀錄片風格的蒙太奇影片",
+      "設定付費圖像或影片服務後，製作動畫短片或產品影片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝 Python、FFmpeg、Node.js，並透過 AI 程式助理操作",
+     "limitations": "不用付費 API 金鑰也能做基本影片；AI 影像或影片生成需另外設定付費服務，本機免費影片生成需要 GPU",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "08eb9a220ff8a387c5f0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1440705679,
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "html_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "description": "Towards a More Autonomous Agent System",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-31T09:32:46Z",
+   "pushed_at": "2026-10-31T12:05:51Z",
+   "stars": 2003,
+   "forks": 169,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 2003.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 1 天，已有 2,003 星，建立以來平均每天 +2,003 星"
+   ],
+   "notes": [
+    "建立僅 1 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "會主動接 GitHub 工作的程式設計 AI 助理，幫團隊處理任務並開 PR",
+     "features": [
+      "監聽 GitHub 與選用的飛書（Feishu）請求",
+      "每項工作有獨立工作階段，完成後回覆並可開 PR",
+      "網頁面板列出需要人處理的事項"
+     ],
+     "audience": "想讓 AI 代理協助維護單一 GitHub 專案的開發團隊與研究者",
+     "use_cases": [
+      "團隊成員在 GitHub 上請代理處理任務，由它開 pull request 回覆",
+      "在飛書對話中交辦工作給代理",
+      "透過網頁面板查看哪些事需要人介入"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 DeepSeek Harness、GitHub 設定與命令列操作，設定步驟多",
+     "limitations": "研究原型，並非 DeepSeek 官方產品，不適合正式上線；可能有 bug，文章中部分設計尚未實作",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1986f73cbdeafaf1fd66",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "repo_id": 1439372976,
+   "full_name": "patch-gg/pixelfx",
+   "html_url": "https://github.com/patch-gg/pixelfx",
+   "description": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+   "language": "JavaScript",
+   "topics": [
+    "agent-skills",
+    "animation",
+    "canvas",
+    "claude-code-plugin",
+    "gamedev",
+    "pixel-art",
+    "sprite-sheet",
+    "vfx"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-30T06:43:25Z",
+   "pushed_at": "2026-10-31T08:44:14Z",
+   "stars": 1326,
+   "forks": 156,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 663.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,326 星，建立以來平均每天 +663 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "兩百多種像素風特效程式庫，可以直接用在遊戲裡，也能匯出成圖片",
+     "features": [
+      "火焰、爆炸、魔法、天氣、UI 等 20 多類像素特效",
+      "匯出 sprite sheet，給 Godot、Unity 等引擎使用",
+      "附 Claude Code skill，可以請 AI 做新特效"
+     ],
+     "audience": "獨立遊戲開發者、做像素風遊戲的程式設計師，以及會用 Claude Code 的創作者",
+     "use_cases": [
+      "在網頁遊戲（Phaser、PixiJS 等）加入攻擊、受擊特效",
+      "把特效匯出成透明 PNG 圖片，放進 Godot 或 Unity 遊戲",
+      "改換配色，例如讓火焰變成藍色"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Node.js、npm 與命令列操作，要放進遊戲還得會寫 JavaScript",
+     "limitations": "畫在角色身上的特效使用內建假人，換成自己的角色要重新產生；gallery 內的 Patch Pixel 字型不在 MIT 授權範圍內",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "5c083b437163c3af2cdf",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "repo_id": 1439430391,
+   "full_name": "kevinraymond/florilegium",
+   "html_url": "https://github.com/kevinraymond/florilegium",
+   "description": "Procedurally generated Delft-blue floral page margins for LuaLaTeX, drawn in Lua",
+   "language": "Lua",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-10-30T07:49:05Z",
+   "pushed_at": "2026-10-31T15:30:14Z",
+   "stars": 1131,
+   "forks": 28,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 565.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 2 天，已有 1,131 星，建立以來平均每天 +566 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 Lua 程式即時畫出台夫特藍花草頁邊裝飾的 LuaLaTeX 套件",
+     "features": [
+      "每頁自動長出不同的花草，會填滿文字留下的空白",
+      "可換墨色、幾何或數學主題，並調整密度與濃淡",
+      "可輸出 SVG 或 Typst 設定，也有瀏覽器試玩版"
+     ],
+     "audience": "使用 LaTeX 或 Typst 排版、想為文件加上手繪風花草裝飾的人",
+     "use_cases": [
+      "為 LaTeX 文件加上每頁不同的花草頁邊與裝飾首字",
+      "在瀏覽器產生花草頁面，下載成 SVG 當作頁面背景",
+      "在章節標題旁或段落開頭放上一朵花或葉子裝飾"
+     ],
+     "barrier": "code",
+     "barrier_note": "主要用法需會 LuaLaTeX 或 Lua；瀏覽器試玩版可直接產生 SVG",
+     "limitations": "季節效果需編譯兩次；手動配置版本僅針對 A4 調整；命令列輸出的數學主題不含方程式與符號",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "a08c4f0cd4fb79933cbe",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  598667202,
+  664013991,
+  909213664,
+  1048065319,
+  1073224795,
+  1097346685,
+  1124219907,
+  1136590548,
+  1148788086,
+  1152014594,
+  1153130349,
+  1155965274,
+  1177402105,
+  1179388779,
+  1183888342,
+  1187630119,
+  1200597263,
+  1206390571,
+  1206425593,
+  1217040185,
+  1222917575,
+  1226205410,
+  1273427276,
+  1293238217,
+  1309102418,
+  1331261687,
+  1332461149,
+  1336502227,
+  1432980411,
+  1433297111,
+  1433377156,
+  1433904617,
+  1435695423,
+  1436598075,
+  1438018242,
+  1438394948,
+  1438540053,
+  1438623288
+ ],
+ "candidate_counts": {
+  "main": 57,
+  "discovery": 4
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 10,
+  "done": 9,
+  "failed": 1,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 12,
+  "input_tokens": 80934,
+  "output_tokens": 7826,
+  "cost_usd": 0.586725
+ }
+}

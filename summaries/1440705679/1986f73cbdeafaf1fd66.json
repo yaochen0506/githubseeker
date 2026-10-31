@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1986f73cbdeafaf1fd66",
+ "repo_id": 1440705679,
+ "full_name": "deepseek-ai/dsh-superagent-prototype",
+ "created_at": "2026-11-01T05:39:51+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b164d865bc236ff495c9a66b8ddaea85d15ff5b91feaa7138b9a3c89ce526259",
+ "has_readme": true,
+ "readme_chars": 2257,
+ "content": {
+  "one_liner": "會主動接 GitHub 工作的程式設計 AI 助理，幫團隊處理任務並開 PR",
+  "features": [
+   "監聽 GitHub 與選用的飛書（Feishu）請求",
+   "每項工作有獨立工作階段，完成後回覆並可開 PR",
+   "網頁面板列出需要人處理的事項"
+  ],
+  "audience": "想讓 AI 代理協助維護單一 GitHub 專案的開發團隊與研究者",
+  "use_cases": [
+   "團隊成員在 GitHub 上請代理處理任務，由它開 pull request 回覆",
+   "在飛書對話中交辦工作給代理",
+   "透過網頁面板查看哪些事需要人介入"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 DeepSeek Harness、GitHub 設定與命令列操作，設定步驟多",
+  "limitations": "研究原型，並非 DeepSeek 官方產品，不適合正式上線；可能有 bug，文章中部分設計尚未實作",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

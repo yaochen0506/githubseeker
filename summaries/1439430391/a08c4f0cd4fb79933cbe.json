@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "a08c4f0cd4fb79933cbe",
+ "repo_id": 1439430391,
+ "full_name": "kevinraymond/florilegium",
+ "created_at": "2026-11-01T05:40:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3d5101e5b15129fffbf1b855266257cbf58d83a99b38d0419bf090e41666c330",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Lua 程式即時畫出台夫特藍花草頁邊裝飾的 LuaLaTeX 套件",
+  "features": [
+   "每頁自動長出不同的花草，會填滿文字留下的空白",
+   "可換墨色、幾何或數學主題，並調整密度與濃淡",
+   "可輸出 SVG 或 Typst 設定，也有瀏覽器試玩版"
+  ],
+  "audience": "使用 LaTeX 或 Typst 排版、想為文件加上手繪風花草裝飾的人",
+  "use_cases": [
+   "為 LaTeX 文件加上每頁不同的花草頁邊與裝飾首字",
+   "在瀏覽器產生花草頁面，下載成 SVG 當作頁面背景",
+   "在章節標題旁或段落開頭放上一朵花或葉子裝飾"
+  ],
+  "barrier": "code",
+  "barrier_note": "主要用法需會 LuaLaTeX 或 Lua；瀏覽器試玩版可直接產生 SVG",
+  "limitations": "季節效果需編譯兩次；手動配置版本僅針對 A4 調整；命令列輸出的數學主題不含方程式與符號",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

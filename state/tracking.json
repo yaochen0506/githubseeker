@@ -1,36 +1,702 @@
 {
  "schema_version": "1",
- "updated_at": "2026-10-31T06:24:26+08:00",
+ "updated_at": "2026-11-01T05:38:30+08:00",
  "repos": [
+  {
+   "repo_id": 1440705679,
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1439372976,
+   "full_name": "patch-gg/pixelfx",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1339256252,
+   "full_name": "YuJunZhiXue/dsh-purge",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1267485499,
+   "full_name": "vorssaint/vorssaint-utils",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1224575142,
+   "full_name": "Orkas-AI/Orkas",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1223939135,
+   "full_name": "melgarafael/DeskcommCRM",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1219400421,
+   "full_name": "0x0funky/agent-sprite-forge",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1195360525,
+   "full_name": "calesthio/OpenMontage",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1178737655,
+   "full_name": "THU-MAIC/OpenMAIC",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1170821064,
+   "full_name": "paperclipai/paperclip",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1063641074,
+   "full_name": "a2ui-project/a2ui",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1006104934,
+   "full_name": "CodeWithCJ/SparkyFitness",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 695864515,
+   "full_name": "hacksider/Deep-Live-Cam",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 662766482,
+   "full_name": "The-PR-Agent/pr-agent",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 571581970,
+   "full_name": "aoaostar/legado",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 513701178,
+   "full_name": "gdy666/lucky",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 458648791,
+   "full_name": "paperless-ngx/paperless-ngx",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 212639071,
+   "full_name": "bregman-arie/devops-exercises",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 162200234,
+   "full_name": "OpenCTI-Platform/opencti",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 140516736,
+   "full_name": "OI-wiki/OI-wiki",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 104337773,
+   "full_name": "1c7/chinese-independent-developer",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01"
+  },
   {
    "repo_id": 1439430391,
    "full_name": "kevinraymond/florilegium",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
+   "last_seen": "2026-11-01"
   },
   {
    "repo_id": 1438623288,
    "full_name": "heydamir/unslop",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
+   "last_seen": "2026-11-01"
   },
   {
    "repo_id": 1438540053,
    "full_name": "wangzan101/Mika",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
+   "last_seen": "2026-11-01"
   },
   {
    "repo_id": 1438018242,
    "full_name": "paipiange/nvzhuang",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
+   "last_seen": "2026-11-01"
   },
   {
    "repo_id": 1432967563,
    "full_name": "ccch1mneyyy/dsh-Go",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1201656210,
+   "full_name": "MemPalace/mempalace",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1179388779,
+   "full_name": "ethanplusai/harvey",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1148788086,
+   "full_name": "mattpocock/skills",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1061953414,
+   "full_name": "anthropics/skills",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1007827531,
+   "full_name": "Crosstalk-Solutions/project-nomad",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 642497346,
+   "full_name": "langfuse/langfuse",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 598667202,
+   "full_name": "lightpanda-io/browser",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1438394948,
+   "full_name": "valentderah/totk-pc-recomp",
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1336502227,
+   "full_name": "CopilotKit/OpenBot",
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1331261687,
+   "full_name": "milind-soni/OpenMausBot",
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1155965274,
+   "full_name": "Donchitos/Claude-Code-Game-Studios",
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 141734943,
+   "full_name": "sngyai/Sequoia-X",
+   "first_seen": "2026-10-30",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1435695423,
+   "full_name": "anhao/ai-pose-gallery-zh",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1433297111,
+   "full_name": "interplains/Zero-Breach-Toolkit",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1296300799,
+   "full_name": "jakubkrehel/skills",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1162099055,
+   "full_name": "Leonxlnx/taste-skill",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1130809465,
+   "full_name": "Yeachan-Heo/oh-my-claudecode",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1042367133,
+   "full_name": "github/spec-kit",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 558188628,
+   "full_name": "higress-group/higress",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 549007739,
+   "full_name": "JoeanAmier/TikTokDownloader",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 404414397,
+   "full_name": "soybeanjs/soybean-admin",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 48576134,
+   "full_name": "xifangczy/cat-catch",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 45363955,
+   "full_name": "lionsoul2014/ip2region",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1433377156,
+   "full_name": "unclebob/ub-mode",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1301657572,
+   "full_name": "superdesigndev/treg",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1124219907,
+   "full_name": "HKUDS/DeepTutor",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1073224795,
+   "full_name": "obra/superpowers",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 577623124,
+   "full_name": "LorisYounger/VPet",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 539888500,
+   "full_name": "Infrasys-AI/AISystem",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 347404990,
+   "full_name": "whyour/qinglong",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 291485614,
+   "full_name": "XIU2/CloudflareSpeedTest",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 274495425,
+   "full_name": "remotion-dev/remotion",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 85541218,
+   "full_name": "ascoders/weekly",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 24993138,
+   "full_name": "google/brotli",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1432980411,
+   "full_name": "designfuchen/word-atlas",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1431851693,
+   "full_name": "rddmwmddr/android-ad-cleaner",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1431545439,
+   "full_name": "JustAResearcher/gpu-unlock-ada",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1423689866,
+   "full_name": "ly05010419/MacNativeGames",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1416502082,
+   "full_name": "seedds/nxnative",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1426780056,
+   "full_name": "pengchujin/aerial-tv",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1423892373,
+   "full_name": "Zagitta/gpu-unlock",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1423101235,
+   "full_name": "Gathin23/cleanyourtv",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1421825221,
+   "full_name": "deepseek-ai/DeepInfer",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1410124849,
+   "full_name": "wheresryan22/anatomy",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1409246014,
+   "full_name": "tangency-labs/solidcraft",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1408489772,
+   "full_name": "storytold/wordcraft",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1407951147,
+   "full_name": "google-research/harness2",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1407950271,
+   "full_name": "openai/math",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1332461149,
+   "full_name": "nightly-labs/openbot",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1316443307,
+   "full_name": "microsoft/skill-recorder",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1309102418,
+   "full_name": "makecindy/cindy",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1293238217,
+   "full_name": "JetBrains/thinkrail",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1273427276,
+   "full_name": "cloudflare/security-audit-skill",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1226205410,
+   "full_name": "Renhuai123/ziwei-doushu",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1222917575,
+   "full_name": "Nutlope/hallmark",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1219009070,
+   "full_name": "aws/agent-toolkit-for-aws",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1217040185,
+   "full_name": "tashfeenahmed/freellmapi",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1206425593,
+   "full_name": "higgsfield-ai/skills",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1206390571,
+   "full_name": "debpalash/VoiceStudio",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1200597263,
+   "full_name": "Graphify-Labs/graphify",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1187630119,
+   "full_name": "NVIDIA/SkillSpector",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1183888342,
+   "full_name": "stablyai/orca",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1177402105,
+   "full_name": "heygen-com/hyperframes",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1153130349,
+   "full_name": "pingdotgg/t3code",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1152014594,
+   "full_name": "AgriciDaniel/claude-seo",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1142983825,
+   "full_name": "multica-ai/andrej-karpathy-skills",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1140828898,
+   "full_name": "anthropics/knowledge-work-plugins",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1136590548,
+   "full_name": "affaan-m/ECC",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1097346685,
+   "full_name": "pbakaus/impeccable",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1079560616,
+   "full_name": "anthropics/sandbox-runtime",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 1048065319,
+   "full_name": "thedotmack/claude-mem",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 995029641,
+   "full_name": "ruvnet/ruflo",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 975734319,
+   "full_name": "anomalyco/opencode",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 968197216,
+   "full_name": "google-gemini/gemini-cli",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 909213664,
+   "full_name": "TauricResearch/TradingAgents",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 664013991,
+   "full_name": "gitroomhq/postiz-app",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 577116112,
+   "full_name": "PlexPt/awesome-chatgpt-prompts-zh",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 576247474,
+   "full_name": "vastsa/FileCodeBox",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 575865240,
+   "full_name": "AstrBotDevs/AstrBot",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 575321313,
+   "full_name": "langbot-app/LangBot",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 561730219,
+   "full_name": "krahets/hello-algo",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 529623205,
+   "full_name": "fmz200/wool_scripts",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 522158088,
+   "full_name": "zhayujie/CowAgent",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 435427730,
+   "full_name": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 384520418,
+   "full_name": "MaaAssistantArknights/MaaAssistantArknights",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 311241324,
+   "full_name": "xiaojieonly/Ehviewer_CN_SXJ",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 243950408,
+   "full_name": "Anduin2017/HowToCook",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 152870372,
+   "full_name": "ruanyf/weekly",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 126178683,
+   "full_name": "halo-dev/halo",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
+  },
+  {
+   "repo_id": 58028038,
+   "full_name": "521xueweihan/HelloGitHub",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-11-01"
   },
   {
    "repo_id": 1315292801,
@@ -41,24 +707,6 @@
   {
    "repo_id": 1303258850,
    "full_name": "kirodotdev/KiroCrew",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1201656210,
-   "full_name": "MemPalace/mempalace",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1179388779,
-   "full_name": "ethanplusai/harvey",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1148788086,
-   "full_name": "mattpocock/skills",
    "first_seen": "2026-10-31",
    "last_seen": "2026-10-31"
   },
@@ -75,12 +723,6 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 1061953414,
-   "full_name": "anthropics/skills",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 1027384981,
    "full_name": "langchain-ai/deepagents",
    "first_seen": "2026-10-31",
@@ -89,24 +731,6 @@
   {
    "repo_id": 1008713177,
    "full_name": "QwenLM/qwen-code",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1007827531,
-   "full_name": "Crosstalk-Solutions/project-nomad",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 642497346,
-   "full_name": "langfuse/langfuse",
-   "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 598667202,
-   "full_name": "lightpanda-io/browser",
    "first_seen": "2026-10-31",
    "last_seen": "2026-10-31"
   },
@@ -141,24 +765,6 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 1438394948,
-   "full_name": "valentderah/totk-pc-recomp",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1336502227,
-   "full_name": "CopilotKit/OpenBot",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1331261687,
-   "full_name": "milind-soni/OpenMausBot",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 1136666433,
    "full_name": "blader/humanizer",
    "first_seen": "2026-10-30",
@@ -174,36 +780,6 @@
    "repo_id": 876286167,
    "full_name": "lfnovo/open-notebook",
    "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 141734943,
-   "full_name": "sngyai/Sequoia-X",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1435695423,
-   "full_name": "anhao/ai-pose-gallery-zh",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1433297111,
-   "full_name": "interplains/Zero-Breach-Toolkit",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1296300799,
-   "full_name": "jakubkrehel/skills",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1162099055,
-   "full_name": "Leonxlnx/taste-skill",
-   "first_seen": "2026-10-29",
    "last_seen": "2026-10-31"
   },
   {
@@ -225,26 +801,8 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 558188628,
-   "full_name": "higress-group/higress",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 549007739,
-   "full_name": "JoeanAmier/TikTokDownloader",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 512334495,
    "full_name": "firerpa/lamda",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 404414397,
-   "full_name": "soybeanjs/soybean-admin",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-31"
   },
@@ -255,68 +813,8 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 48576134,
-   "full_name": "xifangczy/cat-catch",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 45363955,
-   "full_name": "lionsoul2014/ip2region",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1433377156,
-   "full_name": "unclebob/ub-mode",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 1273646780,
    "full_name": "togg53192-cmd/jailbreaks",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1124219907,
-   "full_name": "HKUDS/DeepTutor",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1073224795,
-   "full_name": "obra/superpowers",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 577623124,
-   "full_name": "LorisYounger/VPet",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 539888500,
-   "full_name": "Infrasys-AI/AISystem",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 347404990,
-   "full_name": "whyour/qinglong",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 291485614,
-   "full_name": "XIU2/CloudflareSpeedTest",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 274495425,
-   "full_name": "remotion-dev/remotion",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-31"
   },
@@ -333,36 +831,6 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 85541218,
-   "full_name": "ascoders/weekly",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 24993138,
-   "full_name": "google/brotli",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1432980411,
-   "full_name": "designfuchen/word-atlas",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1431851693,
-   "full_name": "rddmwmddr/android-ad-cleaner",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1431545439,
-   "full_name": "JustAResearcher/gpu-unlock-ada",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 1426080579,
    "full_name": "simbasjungles/free-my-tv",
    "first_seen": "2026-10-27",
@@ -375,182 +843,8 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 1423689866,
-   "full_name": "ly05010419/MacNativeGames",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1416502082,
-   "full_name": "seedds/nxnative",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1426780056,
-   "full_name": "pengchujin/aerial-tv",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1423892373,
-   "full_name": "Zagitta/gpu-unlock",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1423101235,
-   "full_name": "Gathin23/cleanyourtv",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1421825221,
-   "full_name": "deepseek-ai/DeepInfer",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1410124849,
-   "full_name": "wheresryan22/anatomy",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1409246014,
-   "full_name": "tangency-labs/solidcraft",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1408489772,
-   "full_name": "storytold/wordcraft",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1407951147,
-   "full_name": "google-research/harness2",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1407950271,
-   "full_name": "openai/math",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1332461149,
-   "full_name": "nightly-labs/openbot",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1316443307,
-   "full_name": "microsoft/skill-recorder",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1309102418,
-   "full_name": "makecindy/cindy",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1293238217,
-   "full_name": "JetBrains/thinkrail",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1273427276,
-   "full_name": "cloudflare/security-audit-skill",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1226205410,
-   "full_name": "Renhuai123/ziwei-doushu",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1219009070,
-   "full_name": "aws/agent-toolkit-for-aws",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1217040185,
-   "full_name": "tashfeenahmed/freellmapi",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1206425593,
-   "full_name": "higgsfield-ai/skills",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1206390571,
-   "full_name": "debpalash/VoiceStudio",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1187630119,
-   "full_name": "NVIDIA/SkillSpector",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1177402105,
-   "full_name": "heygen-com/hyperframes",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 1172273835,
    "full_name": "SnailSploit/Claude-Red",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1153130349,
-   "full_name": "pingdotgg/t3code",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1152014594,
-   "full_name": "AgriciDaniel/claude-seo",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1142983825,
-   "full_name": "multica-ai/andrej-karpathy-skills",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1140828898,
-   "full_name": "anthropics/knowledge-work-plugins",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1136590548,
-   "full_name": "affaan-m/ECC",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1097346685,
-   "full_name": "pbakaus/impeccable",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-31"
   },
@@ -561,50 +855,8 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 1079560616,
-   "full_name": "anthropics/sandbox-runtime",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 1048065319,
-   "full_name": "thedotmack/claude-mem",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 995029641,
-   "full_name": "ruvnet/ruflo",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 975734319,
-   "full_name": "anomalyco/opencode",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 968197216,
-   "full_name": "google-gemini/gemini-cli",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 909213664,
-   "full_name": "TauricResearch/TradingAgents",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 740303686,
    "full_name": "sgl-project/sglang",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 664013991,
-   "full_name": "gitroomhq/postiz-app",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-31"
   },
@@ -615,86 +867,14 @@
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 577116112,
-   "full_name": "PlexPt/awesome-chatgpt-prompts-zh",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 575865240,
-   "full_name": "AstrBotDevs/AstrBot",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 575321313,
-   "full_name": "langbot-app/LangBot",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 566931318,
    "full_name": "fanmingming/live",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-31"
   },
   {
-   "repo_id": 561730219,
-   "full_name": "krahets/hello-algo",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 522158088,
-   "full_name": "zhayujie/CowAgent",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 435427730,
-   "full_name": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 384520418,
-   "full_name": "MaaAssistantArknights/MaaAssistantArknights",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 311241324,
-   "full_name": "xiaojieonly/Ehviewer_CN_SXJ",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
    "repo_id": 244694886,
    "full_name": "ccfos/nightingale",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 243950408,
-   "full_name": "Anduin2017/HowToCook",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 152870372,
-   "full_name": "ruanyf/weekly",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 126178683,
-   "full_name": "halo-dev/halo",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-31"
-  },
-  {
-   "repo_id": 58028038,
-   "full_name": "521xueweihan/HelloGitHub",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-31"
   },
@@ -719,12 +899,6 @@
   {
    "repo_id": 1165324947,
    "full_name": "agentscope-ai/QwenPaw",
-   "first_seen": "2026-10-30",
-   "last_seen": "2026-10-30"
-  },
-  {
-   "repo_id": 1155965274,
-   "full_name": "Donchitos/Claude-Code-Game-Studios",
    "first_seen": "2026-10-30",
    "last_seen": "2026-10-30"
   },
@@ -807,12 +981,6 @@
    "last_seen": "2026-10-30"
   },
   {
-   "repo_id": 1042367133,
-   "full_name": "github/spec-kit",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-30"
-  },
-  {
    "repo_id": 1315788496,
    "full_name": "elayadesign/ai-design-skills",
    "first_seen": "2026-10-28",
@@ -861,18 +1029,6 @@
    "last_seen": "2026-10-30"
   },
   {
-   "repo_id": 1200597263,
-   "full_name": "Graphify-Labs/graphify",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-30"
-  },
-  {
-   "repo_id": 1183888342,
-   "full_name": "stablyai/orca",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-30"
-  },
-  {
    "repo_id": 1158096951,
    "full_name": "refactoringhq/tolaria",
    "first_seen": "2026-10-26",
@@ -891,12 +1047,6 @@
    "last_seen": "2026-10-30"
   },
   {
-   "repo_id": 576247474,
-   "full_name": "vastsa/FileCodeBox",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-30"
-  },
-  {
    "repo_id": 543049787,
    "full_name": "gaotianliuyun/gao",
    "first_seen": "2026-10-26",
@@ -905,12 +1055,6 @@
   {
    "repo_id": 542386106,
    "full_name": "HIllya51/LunaTranslator",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-30"
-  },
-  {
-   "repo_id": 529623205,
-   "full_name": "fmz200/wool_scripts",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-30"
   },
@@ -947,12 +1091,6 @@
   {
    "repo_id": 1196897920,
    "full_name": "shitagaki-lab/see-through",
-   "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29"
-  },
-  {
-   "repo_id": 1130809465,
-   "full_name": "Yeachan-Heo/oh-my-claudecode",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29"
   },
@@ -1023,12 +1161,6 @@
    "last_seen": "2026-10-29"
   },
   {
-   "repo_id": 1222917575,
-   "full_name": "Nutlope/hallmark",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-29"
-  },
-  {
    "repo_id": 1168753718,
    "full_name": "every-app/open-seo",
    "first_seen": "2026-10-26",
@@ -1069,138 +1201,6 @@
    "full_name": "fastapi/fastapi",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-29"
-  },
-  {
-   "repo_id": 1321591039,
-   "full_name": "Raktim94/nodedr-restaurant-pos",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1302446279,
-   "full_name": "pablostanley/yoinks",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1301657572,
-   "full_name": "superdesigndev/treg",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1285974683,
-   "full_name": "HKUDS/AutoSwarm",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1242967652,
-   "full_name": "basketikun/infinite-canvas",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1238120057,
-   "full_name": "ayghri/i-have-adhd",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1222953295,
-   "full_name": "NVIDIA/auto-ontology",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1166606658,
-   "full_name": "video-db/call.md",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1140229822,
-   "full_name": "cursor/plugins",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1123956658,
-   "full_name": "backnotprop/plannotator",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 764024387,
-   "full_name": "galaxy-s10/billd-desk",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 430540203,
-   "full_name": "XayahSuSuSu/Android-DataBackup",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 378069880,
-   "full_name": "hanxinhao000/ZeroTermux",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 266417772,
-   "full_name": "SimplifyJobs/Summer2027-Internships",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 257485422,
-   "full_name": "vitejs/vite",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 189621607,
-   "full_name": "github/docs",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 101138315,
-   "full_name": "d2l-ai/d2l-zh",
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1433904617,
-   "full_name": "andyhuo520/digital-human-koubo",
-   "first_seen": "2026-10-27",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1398097510,
-   "full_name": "storytold/vectorcraft",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1305663861,
-   "full_name": "Vincentwei1021/video-shotcraft",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1246148135,
-   "full_name": "akitaonrails/ai-memory",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28"
-  },
-  {
-   "repo_id": 1183263320,
-   "full_name": "android/skills",
-   "first_seen": "2026-10-26",
-   "last_seen": "2026-10-28"
   }
  ]
 }

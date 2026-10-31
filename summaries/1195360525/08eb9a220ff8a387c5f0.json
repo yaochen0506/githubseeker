@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "08eb9a220ff8a387c5f0",
+ "repo_id": 1195360525,
+ "full_name": "calesthio/OpenMontage",
+ "created_at": "2026-11-01T05:39:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0dbcdfdb1da879445a413504b0de47fedffc31d7397977910e8ee1f8e520b203",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 程式助理變成影片製作工作室，用白話描述就能產出完整影片",
+  "features": [
+   "自動完成研究、腳本、旁白、素材生成、剪輯與合成",
+   "可分析參考影片，提出不同企劃與費用估算",
+   "本機分鏡看板，生成前可逐場審核畫面"
+  ],
+  "audience": "想用 AI 製作解說、紀錄或宣傳影片，且熟悉 AI 程式助理的創作者與開發者",
+  "use_cases": [
+   "參考喜歡的短影音節奏，改做成自己主題的解說影片",
+   "用免費公開影像素材剪出紀錄片風格的蒙太奇影片",
+   "設定付費圖像或影片服務後，製作動畫短片或產品影片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python、FFmpeg、Node.js，並透過 AI 程式助理操作",
+  "limitations": "不用付費 API 金鑰也能做基本影片；AI 影像或影片生成需另外設定付費服務，本機免費影片生成需要 GPU",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

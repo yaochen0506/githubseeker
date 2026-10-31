@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d1594366ddfe9afaaba5",
+ "repo_id": 1162099055,
+ "full_name": "Leonxlnx/taste-skill",
+ "created_at": "2026-11-01T05:39:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a170a17ffe54ae8b2c951089e0128d9ccc13bea535f355a01c8eacddaa0f3d30",
+ "has_readme": true,
+ "readme_chars": 5138,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理設計出有風格的網站與 App 畫面，不再是千篇一律的頁面",
+  "features": [
+   "從 20 種設計方向中挑選美術風格",
+   "自動找開放授權的真實照片並標註來源",
+   "在真實瀏覽器檢查成果並自動修正"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor 等 AI 工具做網頁的開發者與設計工程師",
+  "use_cases": [
+   "用一段需求說明讓 AI 做出品牌形象的形象網站",
+   "製作儀表板、後台管理或設定畫面",
+   "先在瀏覽器檢查現有頁面，再進行改版"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝，並具備 Node 22 以上、Chrome/Edge/Chromium 及 AI 程式助理",
+  "limitations": "一次建置約需 30～45 分鐘與數十萬 token；找圖片需連網，照片建議換成自己的素材",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

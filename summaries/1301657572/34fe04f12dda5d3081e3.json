@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "34fe04f12dda5d3081e3",
+ "repo_id": 1301657572,
+ "full_name": "superdesigndev/treg",
+ "created_at": "2026-11-01T05:39:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8d722f6e0ef6207a4b2bd792854ba32c0a823d22134c31066cc4ea85de73c8ea",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI agent 用一組 token 呼叫上千種付費工具 API，按次計費，不用自己註冊",
+  "features": [
+   "收錄 SEO、社群、名單查詢、爬蟲、影像生成等工具目錄",
+   "團隊共用金鑰、CLI 與 skill，金鑰留在伺服器端",
+   "支援 Claude Code 外掛、MCP 與現成工作流程 skill"
+  ],
+  "audience": "使用 AI agent 做行銷、招募、資料查詢的開發者與技術團隊",
+  "use_cases": [
+   "讓 agent 查詢反向連結或關鍵字排名，不必訂閱 Semrush 等服務",
+   "把 LinkedIn 職缺轉成排序好的候選人名單",
+   "團隊成員的 agent 共用公司 API 金鑰，不用把金鑰交給每個人"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列或 AI agent 工具，並註冊 treg 帳號、預付儲值",
+  "limitations": "使用 treg 自己的金鑰要扣預付餘額，沒公開價格的端點會拒絕服務；CLI 預設會匿名回傳使用統計，可以關閉",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
