@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4c29f6c4eae3d5f04e8c",
+ "repo_id": 1331882604,
+ "full_name": "scenario-labs/skills",
+ "created_at": "2026-11-02T06:06:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "679e1d96acfd7d0a1764245c52d1b73876b9e62e6560384051177430bc8f60eb",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 Claude Code 等 AI 助理透過 Scenario 產生圖片、影片、音訊與 3D 素材的技能包",
+  "features": [
+   "生成與編輯圖片、影片、音樂、音效和 3D 模型",
+   "維持角色、產品與品牌風格一致，可訓練自訂模型",
+   "專家技能可操作 Blender、Maya、Unity 等軟體"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex 等 AI 助理的遊戲開發者、美術、影片與行銷內容創作者",
+  "use_cases": [
+   "製作遊戲角色圖、動畫圖組、貼圖與天空盒",
+   "用產品照片製作產品攝影圖與影片廣告",
+   "把歌曲做成音樂影片，或替影片加上字幕"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列 npx 安裝，並連接 Scenario MCP（需要 Scenario 帳號或 API key）",
+  "limitations": "專家技能需電腦已安裝對應軟體；預設安裝最新版，可指定 commit 使用經審查版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

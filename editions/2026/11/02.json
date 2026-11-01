@@ -1,0 +1,718 @@
+{
+ "schema_version": "1",
+ "score_version": "b1",
+ "edition_id": "2026-11-02",
+ "business_date": "2026-11-02",
+ "generated_at": "2026-11-02T06:05:25+08:00",
+ "run_id": "20261102T060400-41355183360.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "repo_id": 1304469751,
+   "full_name": "anomalyco/hex",
+   "html_url": "https://github.com/anomalyco/hex",
+   "description": "Local voice dictation for mac, windows and linux",
+   "language": "Rust",
+   "topics": [
+    "dictation",
+    "linux",
+    "local-first",
+    "macos",
+    "rust",
+    "speech-recognition",
+    "speech-to-text",
+    "voice-control"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-07-17T23:48:56Z",
+   "pushed_at": "2026-11-01T22:01:26Z",
+   "stars": 3166,
+   "forks": 187,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1329.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 12,
+     "period": "daily",
+     "period_stars": 1329
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,329 星（全站日榜第 12 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在電腦上按住快速鍵說話，就能把語音轉成文字並自動貼上",
+     "features": [
+      "按住快速鍵說話，放開後自動轉成文字貼上",
+      "在本機完成語音辨識，作者表示資料不會外傳",
+      "支援 macOS、Windows 與 Linux"
+     ],
+     "audience": "想用說話代替打字、重視隱私的 Mac、Windows、Linux 使用者",
+     "use_cases": [
+      "在任何軟體裡用語音輸入文字，例如寫信或聊天",
+      "不想把錄音上傳雲端時，在本機做語音轉文字",
+      "打字不方便時，可能用來口述筆記或文件"
+     ],
+     "barrier": "online",
+     "barrier_note": "下載對應系統的安裝檔即可使用，第一次執行需下載語音模型",
+     "limitations": "macOS 版只支援 Apple silicon；首次執行需下載語音模型；實驗功能放在 Labs；不接受 pull request",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ddea401cc859f029692f",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "repo_id": 1222527844,
+   "full_name": "ifixai-ai/iFixAi",
+   "html_url": "https://github.com/ifixai-ai/iFixAi",
+   "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+   "language": "Python",
+   "topics": [
+    "agent-evaluation",
+    "ai",
+    "ai-alignment",
+    "ai-evaluation",
+    "ai-governance",
+    "ai-safety",
+    "cli",
+    "diagnostic-tool",
+    "eu-ai-act",
+    "hallucination-detection",
+    "iso-42001",
+    "llm-evaluation",
+    "llm-security",
+    "nist-ai-rmf",
+    "owasp-llm",
+    "prompt-injection",
+    "python",
+    "responsible-ai",
+    "risk-assessment",
+    "risk-management"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-04-27T13:02:34Z",
+   "pushed_at": "2026-10-30T18:50:42Z",
+   "stars": 42449,
+   "forks": 1774,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1654.0,
+   "score": 85.1,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 0.4054
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 1654
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,654 星（Python 日榜第 6 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "模擬真實業務情境測試 AI Agent，檢查它有沒有越權、說謊或亂做事",
+     "features": [
+      "模擬企業日常請求，由另一個模型當評審逐題評分",
+      "預設 10 項檢查，可擴充到 61 項，給出 A 到 F 等級",
+      "產出 JSON 與 Markdown 報告，附上問答證據"
+     ],
+     "audience": "開發或部署 AI Agent 的工程師、團隊，以及關心 AI 治理與風險的人",
+     "use_cases": [
+      "上線前檢查客服 Agent 會不會把一位使用者的資料給另一位",
+      "測試 Agent 能不能抵擋 prompt injection 或被說服取得更多權限",
+      "在 CI 流程中用分數門檻擋下不合格的 Agent 版本"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Python 3.10 以上、使用命令列，正式稽核還要有評審模型的 API 金鑰",
+     "limitations": "測試請求是真的發出，作者建議用測試環境；評審呼叫會產生費用；評審須來自與 Agent 不同的供應商",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "424c3f6960a5f515f7a9",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "repo_id": 872119017,
+   "full_name": "D4Vinci/Scrapling",
+   "html_url": "https://github.com/D4Vinci/Scrapling",
+   "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+   "language": "Python",
+   "topics": [
+    "ai",
+    "ai-scraping",
+    "automation",
+    "crawler",
+    "crawling",
+    "crawling-python",
+    "data",
+    "data-extraction",
+    "mcp",
+    "mcp-server",
+    "playwright",
+    "python",
+    "scraping",
+    "selectors",
+    "stealth",
+    "web-scraper",
+    "web-scraping",
+    "web-scraping-python",
+    "webscraping",
+    "xpath"
+   ],
+   "license_spdx": "BSD-3-Clause",
+   "created_at": "2024-10-13T20:29:53Z",
+   "pushed_at": "2026-11-01T18:00:03Z",
+   "stars": 91719,
+   "forks": 9655,
+   "metric_method": "trending_daily",
+   "growth_per_day": 844.0,
+   "score": 75.5,
+   "score_breakdown": {
+    "s_abs": 0.9755,
+    "s_rel": 0.0929
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 844
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +844 星（Python 日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 Python 抓取網頁資料的框架，從單一頁面到整個網站都能爬",
+     "features": [
+      "一般請求與隱身瀏覽器，可處理 JavaScript 網頁",
+      "同時爬多個網頁、輪替 Proxy、可暫停後續爬",
+      "提供 MCP 伺服器，讓 AI 助理代為抓取資料"
+     ],
+     "audience": "需要大量收集網頁資料的 Python 開發者、資料分析人員與 AI 應用開發者",
+     "use_cases": [
+      "把整個網站轉成乾淨的 Markdown 文件，給 AI 使用",
+      "抓取公開 Shopify 商店的商品清單並匯出成 CSV 或 JSON",
+      "讓 Claude 等 AI 助理透過 MCP 瀏覽網頁並擷取資料"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Python 環境，主要靠寫程式或下命令列操作，也提供 Docker 映像檔",
+     "limitations": "README 未明確說明限制；Robots.txt 規則預設不遵守，要另外開啟；網路請求紀錄有數量上限，只保存文字內容",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "c00f3111ce62449e4d41",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "repo_id": 876064934,
+   "full_name": "patchy631/ai-engineering-hub",
+   "html_url": "https://github.com/patchy631/ai-engineering-hub",
+   "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+   "language": "Jupyter Notebook",
+   "topics": [
+    "agents",
+    "ai",
+    "llms",
+    "machine-learning",
+    "mcp",
+    "rag"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2024-10-21T10:43:24Z",
+   "pushed_at": "2026-11-01T04:39:16Z",
+   "stars": 40161,
+   "forks": 6478,
+   "metric_method": "trending_daily",
+   "growth_per_day": 573.0,
+   "score": 72.6,
+   "score_breakdown": {
+    "s_abs": 0.9195,
+    "s_rel": 0.1447
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 15,
+     "period": "daily",
+     "period_stars": 573
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +573 星（全站日榜第 15 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "收錄 90 多個 AI 實作範例的教學庫，涵蓋 LLM、RAG 與 AI 代理",
+     "features": [
+      "依初、中、高級分類的 93+ 個 AI 專案範例",
+      "涵蓋 OCR、聊天介面、RAG、語音、MCP 等主題",
+      "包含模型比較、微調與正式上線系統範例"
+     ],
+     "audience": "想學習或實作 AI 應用的開發者、工程師與研究人員，從初學到進階都有",
+     "use_cases": [
+      "照著範例在自己電腦上做本機 OCR 或類 ChatGPT 聊天介面",
+      "建立能和文件、影片或程式碼對話的 RAG 系統",
+      "參考多代理範例打造自動寫書、股票分析等工作流程"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會 Python 與命令列，部分專案還需本機模型或各家 AI 服務帳號",
+     "limitations": "README 未說明",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "29ff3947bb544b47a6b0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "repo_id": 1170821064,
+   "full_name": "paperclipai/paperclip",
+   "html_url": "https://github.com/paperclipai/paperclip",
+   "description": "The open-source app everyone uses to manage agents at work",
+   "language": "TypeScript",
+   "topics": [
+    "acpx",
+    "agent-orchestration",
+    "agent-skills",
+    "agentic-ai",
+    "ai-agents",
+    "ai-engineering",
+    "ai-governance",
+    "ai-tools",
+    "autonomous-agents",
+    "claude",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "hermes",
+    "llm",
+    "mcp",
+    "multi-agent",
+    "openclaw",
+    "project-management",
+    "workflow-automation"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-02T15:01:51Z",
+   "pushed_at": "2026-11-01T20:34:57Z",
+   "stars": 109888,
+   "forks": 18217,
+   "metric_method": "trending_daily",
+   "growth_per_day": 505.0,
+   "score": 68.7,
+   "score_breakdown": {
+    "s_abs": 0.9013,
+    "s_rel": 0.0462
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 505
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +505 星（TypeScript 日榜第 6 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用一個控制台管理一整隊 AI agent，像經營公司一樣分派任務、追蹤成本",
+     "features": [
+      "支援 Claude Code、Codex、OpenClaw 等多種 agent",
+      "組織圖、任務單、審核關卡與權限管理",
+      "預算追蹤、超額警示與自動暫停"
+     ],
+     "audience": "同時操作多個 AI agent 的開發者、團隊主管與 IT 平台人員",
+     "use_cases": [
+      "整理同時開著的多個 Claude Code 工作，改用任務單統一追蹤",
+      "排程固定執行客服、社群、報表等例行工作",
+      "設定 agent 預算，避免失控迴圈耗盡 token 費用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要自行架設 Node.js 伺服器並串接各家 agent，雲端版目前只開放候補登記",
+     "limitations": "Agent Chat 與聊天/電子郵件連接器仍在實驗階段；預算停止依據已記錄的花費，可能會有延遲",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "734d8050a54073374bef",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "repo_id": 1331882604,
+   "full_name": "scenario-labs/skills",
+   "html_url": "https://github.com/scenario-labs/skills",
+   "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+   "language": "Python",
+   "topics": [
+    "3d-models",
+    "agent-skills",
+    "ai-agents",
+    "ai-art",
+    "blender",
+    "claude-code",
+    "claude-skills",
+    "codex",
+    "game-assets",
+    "game-development",
+    "generative-ai",
+    "image-generation",
+    "maya",
+    "mcp",
+    "model-context-protocol",
+    "skills-sh",
+    "unity",
+    "unreal-engine",
+    "video-generation",
+    "zbrush"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-08-12T10:08:49Z",
+   "pushed_at": "2026-11-01T12:57:57Z",
+   "stars": 1448,
+   "forks": 179,
+   "metric_method": "trending_daily",
+   "growth_per_day": 98.0,
+   "score": 68.0,
+   "score_breakdown": {
+    "s_abs": 0.6651,
+    "s_rel": 0.7259
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 98
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +98 星（Python 日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 Claude Code 等 AI 助理透過 Scenario 產生圖片、影片、音訊與 3D 素材的技能包",
+     "features": [
+      "生成與編輯圖片、影片、音樂、音效和 3D 模型",
+      "維持角色、產品與品牌風格一致，可訓練自訂模型",
+      "專家技能可操作 Blender、Maya、Unity 等軟體"
+     ],
+     "audience": "使用 Claude Code、Cursor、Codex 等 AI 助理的遊戲開發者、美術、影片與行銷內容創作者",
+     "use_cases": [
+      "製作遊戲角色圖、動畫圖組、貼圖與天空盒",
+      "用產品照片製作產品攝影圖與影片廣告",
+      "把歌曲做成音樂影片，或替影片加上字幕"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用命令列 npx 安裝，並連接 Scenario MCP（需要 Scenario 帳號或 API key）",
+     "limitations": "專家技能需電腦已安裝對應軟體；預設安裝最新版，可指定 commit 使用經審查版本",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "4c29f6c4eae3d5f04e8c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "repo_id": 931888694,
+   "full_name": "cjpais/Handy",
+   "html_url": "https://github.com/cjpais/Handy",
+   "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+   "language": "Rust",
+   "topics": [
+    "accessibility",
+    "cross-platform",
+    "speech-to-text",
+    "tauri-v2"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-02-13T02:42:29Z",
+   "pushed_at": "2026-10-27T09:23:19Z",
+   "stars": 36461,
+   "forks": 3447,
+   "metric_method": "trending_daily",
+   "growth_per_day": 383.0,
+   "score": 67.3,
+   "score_breakdown": {
+    "s_abs": 0.8613,
+    "s_rel": 0.1062
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 383
+    }
+   ],
+   "reasons": [
+    "GitHub Trending 顯示今日 +383 星（全站日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的離線語音轉文字桌面軟體，按快捷鍵說話就能把字打進任何輸入框",
+     "features": [
+      "按住或切換快捷鍵錄音，自動貼上轉錄文字",
+      "在本機用 Whisper 或 Parakeet V3 模型轉錄",
+      "支援 Windows、macOS、Linux"
+     ],
+     "audience": "想用說話取代打字、重視隱私不想把語音上傳雲端的人，以及需要輔助工具的使用者",
+     "use_cases": [
+      "寫信或聊天時用語音口述，文字直接出現在輸入框",
+      "不想把錄音傳到雲端時，在自己電腦上離線轉錄",
+      "macOS 使用者可透過 Raycast 控制錄音與查看轉錄紀錄"
+     ],
+     "barrier": "install",
+     "barrier_note": "下載安裝檔安裝，並開啟麥克風與輔助使用權限；Linux 可能還要另外安裝套件",
+     "limitations": "Linux 的 Wayland 支援有限，需要額外工具；macOS 的 fn 快捷鍵只能用在 Apple 鍵盤；可能出現貼上舊剪貼簿內容的問題",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "12defcc38cd39cf991de",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "repo_id": 1437774066,
+   "full_name": "Djihads80/Eglantine",
+   "html_url": "https://github.com/Djihads80/Eglantine",
+   "description": "VERY experimental Nintendo Switch 2 emulator",
+   "language": "C++",
+   "topics": [],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2026-10-29T00:25:18Z",
+   "pushed_at": "2026-11-01T21:55:08Z",
+   "stars": 1934,
+   "forks": 232,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 483.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "reasons": [
+    "建立 4 天，已有 1,934 星，建立以來平均每天 +484 星"
+   ],
+   "notes": [
+    "建立僅 4 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在電腦上模擬 Nintendo Switch 2、執行 Switch 2 遊戲的免費開源軟體",
+     "features": [
+      "以 Eden、Yuzu、Sudachi 為基礎開發的 Switch 2 模擬器",
+      "提供 Windows、Linux、macOS 版本",
+      "附使用手冊與建置指南"
+     ],
+     "audience": "想在電腦上試玩 Switch 2 遊戲的玩家，以及有興趣參與模擬器開發的 C++ 開發者",
+     "use_cases": [
+      "在電腦上執行 Mario Kart World，作者表示依硬體與設定可達不錯到全速",
+      "試玩 Splatoon Raiders，作者表示效能不穩定",
+      "開發者可加入開發、送出 pull request"
+     ],
+     "barrier": "install",
+     "barrier_note": "可下載現成版本安裝設定，不必寫程式；自行建置則需開發環境",
+     "limitations": "作者標明為非常實驗性；支援遊戲清單尚未公布；效能依電腦規格與設定而異",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "53f04aede38020259698",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  598667202,
+  664013991,
+  909213664,
+  1048065319,
+  1061953414,
+  1073224795,
+  1097346685,
+  1124219907,
+  1136590548,
+  1152014594,
+  1153130349,
+  1155965274,
+  1162099055,
+  1177402105,
+  1179388779,
+  1187630119,
+  1195360525,
+  1200597263,
+  1206425593,
+  1217040185,
+  1222917575,
+  1226205410,
+  1226971975,
+  1273427276,
+  1273646780,
+  1293238217,
+  1309102418,
+  1331261687,
+  1332461149,
+  1336502227,
+  1339256252,
+  1435695423,
+  1436598075,
+  1438018242,
+  1438394948,
+  1438540053,
+  1438623288,
+  1439372976,
+  1439430391,
+  1440705679
+ ],
+ "candidate_counts": {
+  "main": 66,
+  "discovery": 1
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 8,
+  "done": 8,
+  "failed": 0,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 8,
+  "input_tokens": 43166,
+  "output_tokens": 4361,
+  "cost_usd": 0.339552
+ }
+}

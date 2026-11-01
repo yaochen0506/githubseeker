@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "12defcc38cd39cf991de",
+ "repo_id": 931888694,
+ "full_name": "cjpais/Handy",
+ "created_at": "2026-11-02T06:06:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "32c8a27f74bb613d0621f4bd3b949b336c4ca6f5f012f29815c7f567f5d26001",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費開源的離線語音轉文字桌面軟體，按快捷鍵說話就能把字打進任何輸入框",
+  "features": [
+   "按住或切換快捷鍵錄音，自動貼上轉錄文字",
+   "在本機用 Whisper 或 Parakeet V3 模型轉錄",
+   "支援 Windows、macOS、Linux"
+  ],
+  "audience": "想用說話取代打字、重視隱私不想把語音上傳雲端的人，以及需要輔助工具的使用者",
+  "use_cases": [
+   "寫信或聊天時用語音口述，文字直接出現在輸入框",
+   "不想把錄音傳到雲端時，在自己電腦上離線轉錄",
+   "macOS 使用者可透過 Raycast 控制錄音與查看轉錄紀錄"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載安裝檔安裝，並開啟麥克風與輔助使用權限；Linux 可能還要另外安裝套件",
+  "limitations": "Linux 的 Wayland 支援有限，需要額外工具；macOS 的 fn 快捷鍵只能用在 Apple 鍵盤；可能出現貼上舊剪貼簿內容的問題",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c00f3111ce62449e4d41",
+ "repo_id": 872119017,
+ "full_name": "D4Vinci/Scrapling",
+ "created_at": "2026-11-02T06:05:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7057d30b4061f7ac5bd2d49d29758b25cafa987925bf7caf39a4589466ea442b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Python 抓取網頁資料的框架，從單一頁面到整個網站都能爬",
+  "features": [
+   "一般請求與隱身瀏覽器，可處理 JavaScript 網頁",
+   "同時爬多個網頁、輪替 Proxy、可暫停後續爬",
+   "提供 MCP 伺服器，讓 AI 助理代為抓取資料"
+  ],
+  "audience": "需要大量收集網頁資料的 Python 開發者、資料分析人員與 AI 應用開發者",
+  "use_cases": [
+   "把整個網站轉成乾淨的 Markdown 文件，給 AI 使用",
+   "抓取公開 Shopify 商店的商品清單並匯出成 CSV 或 JSON",
+   "讓 Claude 等 AI 助理透過 MCP 瀏覽網頁並擷取資料"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 環境，主要靠寫程式或下命令列操作，也提供 Docker 映像檔",
+  "limitations": "README 未明確說明限制；Robots.txt 規則預設不遵守，要另外開啟；網路請求紀錄有數量上限，只保存文字內容",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
