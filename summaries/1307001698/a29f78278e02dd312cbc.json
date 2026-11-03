@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a29f78278e02dd312cbc",
+ "repo_id": 1307001698,
+ "full_name": "FlashML-org/FreeToken",
+ "created_at": "2026-11-03T09:01:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5d0815472a81a0473b4935170db390eced247502297f52af9f344818a2addb46",
+ "has_readme": true,
+ "readme_chars": 2556,
+ "content": {
+  "one_liner": "讓你用自己的電腦在本機執行超大型 MoE AI 語言模型的推論引擎",
+  "features": [
+   "CPU 與 GPU 協同運算，在一般電腦上跑大型 MoE 模型",
+   "支援 DeepSeek、Qwen、GLM 等開源模型",
+   "提供相容 OpenAI 與 Anthropic 的 API"
+  ],
+  "audience": "有 NVIDIA 顯示卡、想在自己電腦離線使用大型開源 AI 模型的進階使用者與開發者",
+  "use_cases": [
+   "在電競電腦上本機執行 DeepSeek-V4-Flash 等大型模型並聊天",
+   "接上 Claude Code、Codex 等寫程式代理工具，改用本機模型",
+   "研究人員測試在消費級硬體上部署 MoE 模型的效能"
+  ],
+  "barrier": "install",
+  "barrier_note": "有 Windows／Linux 桌面 App 可安裝使用，但需要 NVIDIA RTX 30 系列以上的顯示卡",
+  "limitations": "原生支援的硬體為 NVIDIA RTX 30、40、50 系列 GPU；作者表示可在電競電腦上跑 290B 以上模型，速度尚未經證實",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

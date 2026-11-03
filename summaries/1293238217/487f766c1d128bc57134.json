@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "487f766c1d128bc57134",
+ "repo_id": 1293238217,
+ "full_name": "JetBrains/thinkrail",
+ "created_at": "2026-11-03T09:01:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "74e82400dd480782ffc37a47b24c46157cb2cf13f912017fa443271ba9cfab64",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "JetBrains 推出的輕量 AI 寫程式 IDE，圍繞 pi 代理人打造",
+  "features": [
+   "用 git worktree 隔離工作區，讓多個代理人同時作業",
+   "以 SPEC.md 規格圖保存專案知識給代理人使用",
+   "支援 MCP 伺服器、自訂模型與多家 AI 供應商"
+  ],
+  "audience": "想用 AI 代理人協助寫程式、熟悉 git 的軟體開發者",
+  "use_cases": [
+   "讓 AI 代理人在獨立分支上修改程式碼，再合併或開 PR",
+   "連接公司內部 LLM 或本機 Ollama 模型來寫程式",
+   "用規格文件記錄專案意圖，讓代理人跨對話延續脈絡"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝桌面版或 CLI、git，並連接 AI 模型供應商；操作上需懂 git 與程式開發",
+  "limitations": "Linux 版本未簽章，需 Ubuntu 24.04 以上；macOS CLI 尚未公證；會傳送基本使用統計與錯誤報告",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "9c9c21dbfbeaf178d24f",
+ "repo_id": 1222917575,
+ "full_name": "Nutlope/hallmark",
+ "created_at": "2026-11-03T09:01:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7ec914924c667fc6be13d059f5356f53d68ecf681f8be3b5bb6bbc0e52e25c76",
+ "has_readme": true,
+ "readme_chars": 5740,
+ "content": {
+  "one_liner": "讓 AI 寫程式工具做出的網頁不像 AI 生成的設計技能包",
+  "features": [
+   "50 種設計主題，也能依需求客製頁面",
+   "在瀏覽器中檢查常見「AI 感」設計破綻",
+   "重新設計或稽核既有網頁，保留內容與功能"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor、OpenCode 等 AI 工具做網頁的開發者與設計者",
+  "use_cases": [
+   "用 AI 建立預約頁、商店或電子報等網頁",
+   "把現有網頁重新設計，同時保留連結與表單",
+   "稽核網頁的對比、手機版面等問題並產出報告"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝，要 Node 18 以上，並搭配 AI 寫程式工具使用",
+  "limitations": "瀏覽器檢查與截圖需另裝 puppeteer-core 與 Chrome；照片來自 Wikimedia Commons，各有授權",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

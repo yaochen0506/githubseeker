@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6d07da07850e87e5a55f",
+ "repo_id": 1273427276,
+ "full_name": "cloudflare/security-audit-skill",
+ "created_at": "2026-11-03T09:01:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "872ed56e195415e43bb39504bbd6a20d8e636248a85fb6e8e1210673b19e1aed",
+ "has_readme": true,
+ "readme_chars": 6506,
+ "content": {
+  "one_liner": "讓 AI 程式助理變成資安稽核員，分六個階段找出程式碼漏洞並產出報告",
+  "features": [
+   "偵察、獵捕、驗證到報告的六階段稽核流程",
+   "由不同 agent 獨立驗證每個疑似漏洞",
+   "產出結構化 JSON 結果與 Markdown 報告"
+  ],
+  "audience": "需要檢查程式碼安全性的開發者、資安人員，以及使用 AI 程式助理的團隊",
+  "use_cases": [
+   "請 AI 程式助理對自己的程式碼庫做完整資安稽核",
+   "針對特定資安問題取得 AI 的檢查建議",
+   "多次執行稽核，逐步補足先前沒涵蓋的範圍"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過命令列安裝，搭配支援子 agent 的 AI 程式助理與 Node.js",
+  "limitations": "需要隔離網路的沙箱才能執行目標程式碼，否則只標為待驗證；作者表示單次執行約只找到一半漏洞",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

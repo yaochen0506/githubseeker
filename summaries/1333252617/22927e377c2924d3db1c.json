@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "22927e377c2924d3db1c",
+ "repo_id": 1333252617,
+ "full_name": "CNCKitchen/ScanRuler",
+ "created_at": "2026-11-03T09:01:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b3001a908ab2b35b10dda29de2c65dd645a9b7fba98d30ddb1bd7a853bcba8ff",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在瀏覽器裡把 3D 掃描檔和原始設計比對、量測尺寸的免安裝工具",
+  "features": [
+   "對掃描擬合球、圓柱、平面並標註距離角度與 GD&T",
+   "與 CAD 模型比對偏差、分析壁厚並以顏色標示",
+   "將掃描逆向建模成 STEP 實體，並清理與簡化網格"
+  ],
+  "audience": "做 3D 掃描、3D 列印或機械零件品管的人，以及需要逆向建模的設計者",
+  "use_cases": [
+   "檢查 3D 列印或加工零件和 CAD 設計差多少",
+   "用平台掃描器掃平面零件，量尺寸並匯出 DXF",
+   "把損壞零件的掃描建模成 STEP，再做替換件"
+  ],
+  "barrier": "online",
+  "barrier_note": "打開網頁就能用，不用安裝；要串接 AI 代理才需要 Node.js 22 以上",
+  "limitations": "檔案預設只在本機處理，但連接 AI 代理後資料會傳給模型供應商；平台掃描圖要先校正比例",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "3e456a2196b595efe5a0",
+ "repo_id": 1442356805,
+ "full_name": "AssassinCreator/steam-stash-value-report-card",
+ "created_at": "2026-11-03T09:02:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b01c747cb6568629cda920fb63a1a85ccc833b5398c14133ea48ff3847ed1ed9",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在終端機估算 Steam 帳號與遊戲庫存的價值，並產生可分享的圖卡",
+  "features": [
+   "比較 Steam 與多個現金交易平台的價格與手續費",
+   "產生成績單、收據、庫存圖等多種圖卡",
+   "標示無報價、難賣出與價格異常的物品"
+  ],
+  "audience": "持有 CS2、Dota 2、TF2、Rust 等遊戲飾品，想了解庫存價值的 Steam 玩家",
+  "use_cases": [
+   "查詢自己 CS2 或 Dota 2 庫存目前大概值多少錢",
+   "比較各交易平台扣掉手續費後能拿回多少",
+   "比較不同時間或兩個帳號的庫存價值差異"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在 Windows 終端機輸入指令操作，也可用 Python 3.11 以上版本安裝，不需要帳號",
+  "limitations": "只支援 Windows；伺服器或雲端 IP 容易被 Steam 限制連線；執行檔尚未簽章；手續費數字可能不是最新",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
