@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "af70842c73ecd9a0c978",
+ "repo_id": 58028038,
+ "full_name": "521xueweihan/HelloGitHub",
+ "created_at": "2026-11-04T07:30:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fd909d8571398714769453f8adcd62473d767b29561685c865fa90262b3d8563",
+ "has_readme": true,
+ "readme_chars": 978,
+ "content": {
+  "one_liner": "每月整理介紹 GitHub 上有趣、適合新手入門的開源專案月刊",
+  "features": [
+   "每月 28 號以月刊形式更新發布",
+   "收錄有趣入門專案、開源書籍與實戰專案",
+   "提供中文、英文、日文版本說明"
+  ],
+  "audience": "想認識開源世界的初學者、學生，以及想找有趣工具或學習資源的人",
+  "use_cases": [
+   "每月閱讀新一期月刊，發掘有趣的開源專案",
+   "尋找適合入門學習的開源書籍或實戰專案",
+   "推薦或自薦自己的專案給月刊收錄"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在網頁上閱讀各期月刊就可以，不用安裝任何東西",
+  "limitations": "內容主要以簡體中文撰寫；作品採署名-非商業性使用-禁止演繹 4.0 授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

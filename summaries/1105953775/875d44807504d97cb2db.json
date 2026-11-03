@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "875d44807504d97cb2db",
+ "repo_id": 1105953775,
+ "full_name": "chthollyphile/folia-major",
+ "created_at": "2026-11-04T07:30:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c98cde3bb64663d8144f5825fcb6ec3a8ffbfc8e3b98c75eb1231ab8a03f0629",
+ "has_readme": true,
+ "readme_chars": 4429,
+ "content": {
+  "one_liner": "主打全螢幕華麗歌詞動畫的音樂播放器，支援本機音樂與多個線上平台",
+  "features": [
+   "多種全螢幕歌詞動畫主題，可調整參數",
+   "支援網易雲、QQ 音樂、酷狗、Navidrome 與本機音樂",
+   "AI 依歌曲情緒產生配色主題，可自動比對歌詞"
+  ],
+  "audience": "喜歡沉浸式聽歌體驗、重視歌詞視覺效果的音樂愛好者，以及有自架 Navidrome 的使用者",
+  "use_cases": [
+   "在電腦上播放本機音樂，並自動抓取線上歌詞與封面",
+   "連接 Navidrome 音樂伺服器，以全螢幕動態歌詞聽歌",
+   "部署 Web 版後在手機加到主畫面當 PWA 使用"
+  ],
+  "barrier": "install",
+  "barrier_note": "桌面版下載 Windows／macOS／Linux 安裝檔即可用；Web 版要自行部署到 Vercel 等平台",
+  "limitations": "作者表示專案在 AI 大量協助下開發，可能有小問題；僅供個人學習與非營利使用；模組系統為實驗性功能，只有桌面版有",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

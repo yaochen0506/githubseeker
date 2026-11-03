@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "efb849dd00b5c01a4fa5",
+ "repo_id": 1249703818,
+ "full_name": "hieunc229/mailflare",
+ "created_at": "2026-11-04T07:31:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d7b621be7ea0922401ee87f7d823db14628db185dbe79de41935c87ddd07ddca",
+ "has_readme": true,
+ "readme_chars": 3740,
+ "content": {
+  "one_liner": "可以自己架設的 Google Workspace 替代方案，提供自訂網域信箱、行事曆和雲端硬碟",
+  "features": [
+   "自訂網域信箱，支援個人或共用信箱與收信規則",
+   "行事曆、公開預約連結與檔案雲端硬碟",
+   "內建 AI 助理可搜尋信件、草擬回覆，支援 MCP"
+  ],
+  "audience": "想用自己的網域收發信、不想依賴 Google Workspace 的小團隊、工作者或技術人員",
+  "use_cases": [
+   "小公司用自己的網域建立員工信箱與共用信箱",
+   "分享公開連結，讓客戶在行事曆上預約空檔",
+   "從 Gmail Takeout 或 IMAP 匯入舊信件，搬家到自架系統"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Cloudflare 帳號、網域與 API token，或自己用 Docker 架設伺服器",
+  "limitations": "部署時應用程式名稱須保留 mailflare；用 Cloudflare 寄信需每月 5 美元付費方案；Amazon SES 新帳號有沙盒限制",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

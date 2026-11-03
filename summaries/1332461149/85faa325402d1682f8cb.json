@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "85faa325402d1682f8cb",
+ "repo_id": 1332461149,
+ "full_name": "nightly-labs/openbot",
+ "created_at": "2026-11-04T07:27:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fd5c1c4b737ea269e58d14b7ff9b9ff97d154c39555b3adcb5eb3cc99c99bca3",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在桌面上同時管理多個 AI 助理，讓它們各自工作又能互相協作的 App",
+  "features": [
+   "每個 AI 助理有獨立工作區、對話與任務佇列",
+   "AI 助理之間可互傳訊息、檔案並分工合作",
+   "內建瀏覽器，AI 助理可開啟並操作網頁"
+  ],
+  "audience": "已在使用 Codex、Claude Code 等 AI 程式助理，想同時管理多個助理的開發者與進階使用者",
+  "use_cases": [
+   "同時讓 Codex、Claude、Grok 等多個 AI 助理處理不同任務",
+   "把任務排進佇列，交給 AI 助理依序執行並可暫停或取消",
+   "在 VPS 或家用伺服器上常駐執行，再用桌面或 iPhone App 連線使用"
+  ],
+  "barrier": "install",
+  "barrier_note": "可下載 macOS、Windows、Linux 安裝檔，但需要各 AI 服務的帳號或 API 金鑰並完成設定",
+  "limitations": "目前是開發預覽版，AI 助理有完整權限，可以讀寫檔案、執行指令，不會逐一確認；建議先備份。不是開源的自由軟體。",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

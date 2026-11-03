@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "632dd5625f932a1a63c7",
+ "repo_id": 1042367133,
+ "full_name": "github/spec-kit",
+ "created_at": "2026-11-04T07:28:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c4c35d1c14048853fb431806f93db1016cc5820af1d695dedc1287bdbd124ae5",
+ "has_readme": true,
+ "readme_chars": 7352,
+ "content": {
+  "one_liner": "替 AI 寫程式助理提供固定流程與範本，引導它照規格開發、修 bug 或評估點子",
+  "features": [
+   "規格驅動開發：從規格一路到計畫、任務與程式碼",
+   "內附修 bug 與點子評估的擴充流程",
+   "可用 preset、擴充與工作流程自訂團隊流程"
+  ],
+  "audience": "使用 GitHub Copilot 等 AI 寫程式助理的開發者與軟體團隊",
+  "use_cases": [
+   "先寫好功能規格，再讓 AI 助理照規格規劃並實作",
+   "讓 AI 助理找出 bug 原因、修好並記錄驗證結果",
+   "收集證據，判斷一個點子要繼續做、補充說明還是放棄"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上、uv 與支援的 AI 寫程式助理，並使用命令列操作",
+  "limitations": "社群目錄中的元件沒有經過審查，安裝或執行前應先檢查原始碼；每個步驟要逐一檢視結果再繼續",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

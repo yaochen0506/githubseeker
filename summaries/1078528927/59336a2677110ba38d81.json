@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "59336a2677110ba38d81",
+ "repo_id": 1078528927,
+ "full_name": "max-sixty/worktrunk",
+ "created_at": "2026-11-04T07:27:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "434462a4e9c117a9aed2d6cf7865db84ffd6afbe892889bb87b2436db1edc1ba",
+ "has_readme": true,
+ "readme_chars": 5098,
+ "content": {
+  "one_liner": "用命令列管理 Git worktree，方便同時讓多個 AI 代理各自工作",
+  "features": [
+   "用分支名稱就能建立、切換、清除 worktree",
+   "支援 hooks 自動化與 LLM 產生 commit 訊息",
+   "共用建置快取，並顯示各分支 CI 狀態"
+  ],
+  "audience": "會用 Git 的軟體開發者，特別是同時跑多個 Claude Code、Codex 等 AI 代理的人",
+  "use_cases": [
+   "同時開好幾個 worktree，在每個裡面各自啟動 Claude 處理不同任務",
+   "一個指令完成 squash、rebase、合併並清除分支",
+   "直接切換到某個 PR 的分支查看或修改"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過 Homebrew、Cargo 等安裝，並熟悉 Git 與命令列操作",
+  "limitations": "共用建置快取只支援 APFS、btrfs、XFS；Windows 上 wt 與 Windows Terminal 指令衝突，改用 git-wt",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

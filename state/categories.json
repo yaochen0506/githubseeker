@@ -1,0 +1,1237 @@
+{
+ "schema_version": "1",
+ "prompt_version": "e1",
+ "updated_at": "2026-11-04T07:27:20+08:00",
+ "repos": {
+  "17578592": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "bleachbit/bleachbit",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "24993138": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "google/brotli",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "42920477": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "layui/layui",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "45363955": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "lionsoul2014/ip2region",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "48576134": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "xifangczy/cat-catch",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "54346799": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "public-apis/public-apis",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "58028038": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "521xueweihan/HelloGitHub",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "62712899": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "AdguardTeam/AdGuardHome",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "81598961": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "python/cpython",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "100084330": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "jeequan/jeepay",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "102578345": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "coolsnowwolf/lede",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "104337773": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "1c7/chinese-independent-developer",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "126178683": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "halo-dev/halo",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "140516736": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "OI-wiki/OI-wiki",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "145693916": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "kornia/kornia",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "152870372": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "ruanyf/weekly",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "157846876": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "motiondivision/motion",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "162200234": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "OpenCTI-Platform/opencti",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "200722670": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "NVIDIA-NeMo/Speech",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "243787823": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "ProletRevDicta/Prolet",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "243950408": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Anduin2017/HowToCook",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "274495425": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "remotion-dev/remotion",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "291485614": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "XIU2/CloudflareSpeedTest",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "302375024": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "YSGStudyHards/DotNetGuide",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "310659501": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "qjfoidnh/BaiduPCS-Go",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "311241324": {
+   "category": "excluded",
+   "exclude_reason": "adult",
+   "full_name": "xiaojieonly/Ehviewer_CN_SXJ",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "319167362": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "mealie-recipes/mealie",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "330355479": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "xfangfang/wiliwili",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "347404990": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "whyour/qinglong",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "384520418": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "MaaAssistantArknights/MaaAssistantArknights",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "404414397": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "soybeanjs/soybean-admin",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "410480975": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "notionnext-org/NotionNext",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "425387994": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Evil0ctal/Douyin_TikTok_Download_API",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "430540203": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "XayahSuSuSu/Android-DataBackup",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "432476753": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "lizhipay/acg-faka",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "435427730": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "455229168": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "immich-app/immich",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "458648791": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "paperless-ngx/paperless-ngx",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "470730648": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "hyprwm/Hyprland",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "475553026": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "ghostty-org/ghostty",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "496221318": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "nilaoda/N_m3u8DL-RE",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "513701178": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "gdy666/lucky",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "519577891": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "upscayl/upscayl",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "522158088": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "zhayujie/CowAgent",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "527600676": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "maotoumao/MusicFree",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "529623205": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "fmz200/wool_scripts",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "542386106": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "HIllya51/LunaTranslator",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "549007739": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "JoeanAmier/TikTokDownloader",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "558188628": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "higress-group/higress",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "561730219": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "krahets/hello-algo",
+   "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "568797613": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "MuiseDestiny/zotero-style",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "571581970": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "aoaostar/legado",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "575321313": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "langbot-app/LangBot",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "575865240": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "AstrBotDevs/AstrBot",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "576247474": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "vastsa/FileCodeBox",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "577623124": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "LorisYounger/VPet",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "585860664": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "github/copilot-cli",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "598667202": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "lightpanda-io/browser",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "600596928": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "LibreChat-AI/LibreChat",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "642497346": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "langfuse/langfuse",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "651517185": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "NanmiCoder/MediaCrawler",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "662766482": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "The-PR-Agent/pr-agent",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "664013991": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "gitroomhq/postiz-app",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "695864515": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "hacksider/Deep-Live-Cam",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "696211939": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "TheNetsky/Microsoft-Rewards-Script",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "784181462": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ItzCrazyKns/Vane",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "812975380": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "agent0ai/agent-zero",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "872119017": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "D4Vinci/Scrapling",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "876064934": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "patchy631/ai-engineering-hub",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "876286167": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "lfnovo/open-notebook",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "909213664": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "TauricResearch/TradingAgents",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "931888694": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "cjpais/Handy",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "937253475": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "anthropics/claude-code",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "953683578": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "oraios/serena",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "968197216": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google-gemini/gemini-cli",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "975734319": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "anomalyco/opencode",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "995029641": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ruvnet/ruflo",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1006104934": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "CodeWithCJ/SparkyFitness",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1007827531": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Crosstalk-Solutions/project-nomad",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1008713177": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "QwenLM/qwen-code",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1020672081": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Usagi-org/ai-goofish-monitor",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1027384981": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "langchain-ai/deepagents",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1032459340": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Fission-AI/OpenSpec",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1042367133": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "github/spec-kit",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1048065319": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "thedotmack/claude-mem",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1061041576": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "p-e-w/heretic",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1061953414": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "anthropics/skills",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1063641074": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "a2ui-project/a2ui",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1065059442": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "KeygraphHQ/shannon",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1073224021": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "EveryInc/compound-engineering-plugin",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1073224795": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "obra/superpowers",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1075431749": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "karpathy/nanochat",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1078528927": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "max-sixty/worktrunk",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1079560616": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "anthropics/sandbox-runtime",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1086419061": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vectorize-io/hindsight",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1097346685": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "pbakaus/impeccable",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1103012935": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "openclaw/openclaw",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1105953775": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "chthollyphile/folia-major",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1106846196": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "expo/skills",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1124219907": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "HKUDS/DeepTutor",
+   "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1130564872": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "koala73/worldmonitor",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1130809465": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Yeachan-Heo/oh-my-claudecode",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1134543109": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vercel-labs/skills",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1136590548": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "affaan-m/ECC",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1136666433": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "blader/humanizer",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1140828898": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "anthropics/knowledge-work-plugins",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1140843380": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mvanhorn/last30days-skill",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1148788086": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mattpocock/skills",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1152014594": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "AgriciDaniel/claude-seo",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1153130349": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "pingdotgg/t3code",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1155965274": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Donchitos/Claude-Code-Game-Studios",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1157102282": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "cheaper-inference/OmniRoute",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1160497244": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "floci-io/floci",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1161958643": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vercel-labs/agent-desktop",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1162099055": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Leonxlnx/taste-skill",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1162516847": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "MakazhanAlpamys/Soup",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1164477708": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mksglu/context-mode",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1170821064": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "paperclipai/paperclip",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1177402105": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "heygen-com/hyperframes",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1178737655": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "THU-MAIC/OpenMAIC",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1179388779": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ethanplusai/harvey",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1180745961": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "JCodesMore/ai-website-cloner-template",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1183888342": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "stablyai/orca",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1184397362": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mattpocock/sandcastle",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1187630119": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "NVIDIA/SkillSpector",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1195360525": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "calesthio/OpenMontage",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1198124295": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mvschwarz/openrig",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1199643986": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "datadrivenconstruction/OpenConstructionERP",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1200597263": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Graphify-Labs/graphify",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1201656210": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "MemPalace/mempalace",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1206357666": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "jordan-gibbs/hyperresearch",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1206390571": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "debpalash/VoiceStudio",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1206425593": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "higgsfield-ai/skills",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1217040185": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "tashfeenahmed/freellmapi",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1219009070": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "aws/agent-toolkit-for-aws",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1219400421": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "0x0funky/agent-sprite-forge",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1219596233": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Yuan1z0825/nature-skills",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1222527844": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "ifixai-ai/iFixAi",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1222917575": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Nutlope/hallmark",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1223939135": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "melgarafael/DeskcommCRM",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1224575142": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Orkas-AI/Orkas",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1226205410": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Renhuai123/ziwei-doushu",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1226971975": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "beenuar/AiSOC",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1249703818": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "hieunc229/mailflare",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1267485499": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "vorssaint/vorssaint-utils",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1270584305": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "eneskirca/nodeterm",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1273015953": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "shy3130/tick-stock-panel",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1273427276": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "cloudflare/security-audit-skill",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1273646780": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "togg53192-cmd/jailbreaks",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1275465781": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "derv82/wifit3",
+   "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1286080397": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "JustVugg/colibri",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1293238217": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "JetBrains/thinkrail",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1296300799": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "jakubkrehel/skills",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1301657572": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "superdesigndev/treg",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1303258850": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "kirodotdev/KiroCrew",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1304469751": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "anomalyco/hex",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1305663861": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Vincentwei1021/video-shotcraft",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1307001698": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "FlashML-org/FreeToken",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1307568662": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "AminBlg/SimpleEnglish",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1309102418": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "makecindy/cindy",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1309331155": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "vercel-labs/scriptc",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1310374568": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "spotify/portal-ai-plugins",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1315292801": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "ErTasselli/OpenTerminal",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1316443307": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "microsoft/skill-recorder",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1331135699": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "guillaumemeyer/watermarks-remover",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1331261687": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "milind-soni/OpenMausBot",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1331882604": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "scenario-labs/skills",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1332461149": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "nightly-labs/openbot",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1333252617": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "CNCKitchen/ScanRuler",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1334325657": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "liguobao/ds-harness-remote",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1336502227": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "CopilotKit/OpenBot",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1339256252": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "HunYiSage/dsh-purge",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1342943152": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "kgoedecke/doop",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1356077516": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "kajisho5/ffmpeg-skill",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1407950271": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "openai/math",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1407951147": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "google-research/harness2",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1408489772": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "storytold/wordcraft",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1409246014": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "tangency-labs/solidcraft",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1410124849": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "wheresryan22/anatomy",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1416502082": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "seedds/nxnative",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1421825221": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "deepseek-ai/DeepInfer",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1423101235": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Gathin23/cleanyourtv",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1423689866": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ly05010419/MacNativeGames",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1423892373": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "Zagitta/gpu-unlock",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1426780056": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "pengchujin/aerial-tv",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1431545439": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "JustAResearcher/gpu-unlock-ada",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1431851693": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "rddmwmddr/android-ad-cleaner",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1432967563": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1432980411": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "designfuchen/word-atlas",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1433297111": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "interplains/Zero-Breach-Toolkit",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1433377156": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "unclebob/ub-mode",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1435695423": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "anhao/ai-pose-gallery-zh",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1437774066": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Djihads80/Eglantine",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438018242": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "paipiange/nvzhuang",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438326535": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "BryceYuuu/RUN",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438394948": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "valentderah/totk-pc-recomp",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438540053": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "wangzan101/Mika",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438623288": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "heydamir/unslop",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1439372976": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "patch-gg/pixelfx",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1439430391": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "kevinraymond/florilegium",
+   "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1440705679": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "classified_at": "2026-11-04T07:27:20+08:00"
+  },
+  "1440956372": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "storytold/craft-anything",
+   "classified_at": "2026-11-04T07:27:20+08:00"
+  },
+  "1441272552": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Verlintas/NOIR",
+   "classified_at": "2026-11-04T07:27:20+08:00"
+  },
+  "1441517767": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "caru-ini/stack-diagram",
+   "classified_at": "2026-11-04T07:27:20+08:00"
+  },
+  "1442356805": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "AssassinCreator/steam-stash-value-report-card",
+   "classified_at": "2026-11-04T07:27:20+08:00"
+  }
+ }
+}

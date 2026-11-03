@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6d4fffafd8301320cf2f",
+ "repo_id": 1286080397,
+ "full_name": "JustVugg/colibri",
+ "created_at": "2026-11-04T07:29:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0e63daa5176a419becae5dfa47f9ea1ad9f24b0b9edd2f7c3eb1d478b0b56c00",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓一般電腦也能在本機執行超大型 MoE 開源 AI 模型的推論引擎",
+  "features": [
+   "常用專家放 GPU/RAM，其餘從硬碟即時讀取",
+   "安裝程式自動偵測硬體並推薦合適模型",
+   "提供瀏覽器儀表板、聊天介面與 MCP 伺服器"
+  ],
+  "audience": "想在自己電腦離線執行大型開源語言模型、不想依賴雲端服務的進階使用者與研究者",
+  "use_cases": [
+   "在本機與 Qwen、DeepSeek、GLM 等開源模型聊天",
+   "用 Qwen-Image-2.1 在本機由文字產生圖片",
+   "讓其他 App 或 AI 助理透過本機服務呼叫模型"
+  ],
+  "barrier": "install",
+  "barrier_note": "需 8 GB RAM、22 GB 硬碟；Windows 雙擊即可，Linux/macOS 要下指令",
+  "limitations": "大型模型速度受硬碟影響，可能每秒不到 1 個 token；部分模型需手動轉換；Qwen-Image-2.1 限非商業使用",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

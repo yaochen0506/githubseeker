@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "3272d79d2ab4bc4a9fef",
+ "repo_id": 455229168,
+ "full_name": "immich-app/immich",
+ "created_at": "2026-11-04T07:31:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8f32c0bd7a51d69a891653ffc6d7ef3396fa5e778119c1ae3ec7238c9867010e",
+ "has_readme": true,
+ "readme_chars": 2173,
+ "content": {
+  "one_liner": "架在自己伺服器上的照片和影片管理系統，可當 Google Photos 的替代方案",
+  "features": [
+   "手機 App 自動備份照片與影片",
+   "依人臉、物件、EXIF 資料與 CLIP 搜尋",
+   "相簿共享、地圖檢視、回憶功能"
+  ],
+  "audience": "想自己保管照片、不想依賴雲端相簿服務，而且有能力架設伺服器的個人或家庭",
+  "use_cases": [
+   "用手機 App 把照片影片自動備份到自家伺服器",
+   "家人之間用多使用者帳號與共享相簿分享照片",
+   "用人臉辨識或地圖找出舊照片"
+  ],
+  "barrier": "code",
+  "barrier_note": "要自己架設伺服器並照安裝指南設定，手機 App 必須連到這台伺服器才能使用",
+  "limitations": "README 提醒珍貴的照片影片一定要遵守 3-2-1 備份原則；部分功能只有手機版或網頁版才有",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

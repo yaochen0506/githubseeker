@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8ce43f5188900a601cc0",
+ "repo_id": 1334325657,
+ "full_name": "liguobao/ds-harness-remote",
+ "created_at": "2026-11-04T07:27:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "360388dc63c11b0e2d223902d8ceecbf9f8b3f7bbd245f42703d5d01644dd71b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓你用手機、電腦或瀏覽器，遠端使用家中或公司電腦上的 DeepSeek Harness 工作區",
+  "features": [
+   "支援 Web、Android、iOS 測試版與桌面外掛連線",
+   "作者表示採端對端加密，主機不需公開 IP",
+   "可遠端瀏覽檔案、開終端機，並接 Codex 等工具"
+  ],
+  "audience": "已在電腦上用 DeepSeek Harness、Codex、Cursor 等 AI 程式工具，想在外面操作的人",
+  "use_cases": [
+   "出門時用手機繼續操作公司電腦上的 Harness 對話",
+   "在另一台電腦開啟主機上的工作區、切換模型",
+   "遠端查看工作區檔案或使用終端機"
+  ],
+  "barrier": "install",
+  "barrier_note": "需先在電腦安裝 DeepSeek Harness 和這個外掛，並登入帳號；註冊帳號需要邀請碼",
+  "limitations": "iOS 版尚未公開發行；自架伺服器沒有完整 Web 功能；部分 ACP 整合還在實驗階段，Claude 不支援圖片輸入",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

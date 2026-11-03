@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a34b394020766d1a0a1a",
+ "repo_id": 1183888342,
+ "full_name": "stablyai/orca",
+ "created_at": "2026-11-04T07:28:40+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1f02c3a77f40d7fe14439a68cdf4490e9758802d7eaec115a4534714a1e061b4",
+ "has_readme": true,
+ "readme_chars": 4327,
+ "content": {
+  "one_liner": "同時管理多個 AI 寫程式助理的桌面軟體，手機也能遠端查看進度",
+  "features": [
+   "讓多個 AI 助理在各自的 git worktree 平行作業",
+   "手機 App 接收完成通知並遠端下指令",
+   "內建終端機、程式碼編輯器與 diff 註解審查"
+  ],
+  "audience": "已在使用 Claude Code、Codex 等命令列 AI 寫程式工具的開發者",
+  "use_cases": [
+   "把同一個需求丟給五個 AI 助理，比較結果後合併最好的版本",
+   "外出時用手機查看 AI 助理是否完成工作並補充指示",
+   "在遠端主機透過 SSH 執行 AI 助理並編輯檔案"
+  ],
+  "barrier": "code",
+  "barrier_note": "雖可下載桌面版，但需要會用 git 與命令列，並自備 AI 工具訂閱帳號",
+  "limitations": "README 提到會蒐集匿名使用資料，可選擇關閉；需自備各 AI 工具的訂閱",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

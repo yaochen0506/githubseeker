@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0224f8eb0b7719b73bf3",
+ "repo_id": 1061041576,
+ "full_name": "p-e-w/heretic",
+ "created_at": "2026-11-04T07:29:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7b4a307688a73404cbda59089e375c4f02165d9a501e83cd05db456130086755",
+ "has_readme": true,
+ "readme_chars": 11325,
+ "content": {
+  "one_liner": "不用重新訓練，就能修改 AI 語言模型的行為，例如移除拒答限制",
+  "features": [
+   "預設移除模型審查、減少拒絕回答",
+   "可設定減少空洞廢話、幽默或討好語氣",
+   "可存檔、上傳 Hugging Face 或直接對話測試"
+  ],
+  "audience": "在自己電腦上跑開源 AI 模型、會用命令列的玩家、研究者與開發者",
+  "use_cases": [
+   "移除開源模型的拒答限制，再上傳到 Hugging Face 分享",
+   "降低模型討好使用者的傾向，再用標準測驗評估",
+   "依照公開的重現資訊，在本機重建別人做好的模型"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.10 以上、PyTorch 2.6 以上，並具備 GPU 等硬體，用命令列操作",
+  "limitations": "1.x 版設定檔不相容 2.x；作者表示 RTX 3090 處理 4B 模型約需 30-40 分鐘；4-bit 量化會稍降準確度",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

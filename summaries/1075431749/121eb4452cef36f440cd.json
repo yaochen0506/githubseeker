@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "121eb4452cef36f440cd",
+ "repo_id": 1075431749,
+ "full_name": "karpathy/nanochat",
+ "created_at": "2026-11-04T07:29:24+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0208fbbd75c12a7f25c168850f23032d96d25e9b09f43ba0184d3e10dc17e5d0",
+ "has_readme": true,
+ "readme_chars": 11482,
+ "content": {
+  "one_liner": "用精簡的 Python 程式碼，從頭訓練一個能聊天的小型語言模型",
+  "features": [
+   "涵蓋斷詞、預訓練、微調、評估到推論的完整流程",
+   "只要調整模型層數，其他參數自動計算",
+   "訓練完可在命令列直接和模型對話"
+  ],
+  "audience": "想親手了解大型語言模型怎麼訓練的開發者、研究人員與學生",
+  "use_cases": [
+   "租用 8 張 H100 GPU 約 2 小時，訓練出 GPT-2 等級模型並和它聊天",
+   "研究人員修改程式碼後跑小模型，比較訓練效果",
+   "在 CPU 或 Apple Silicon 上跑縮小版模型體驗流程"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列操作，並租用或擁有高階 GPU 機器",
+  "limitations": "GPU 記憶體低於 80GB 要調參數；CPU/MPS 版效果差；作者表示模型能力像幼稚園小孩，會出現幻覺",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

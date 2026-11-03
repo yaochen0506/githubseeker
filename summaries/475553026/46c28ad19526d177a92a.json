@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "46c28ad19526d177a92a",
+ "repo_id": 475553026,
+ "full_name": "ghostty-org/ghostty",
+ "created_at": "2026-11-04T07:30:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cf92fd8d176c72cd7081e0ef75463540488a8e0bdc225822d1d0599e0bf83b40",
+ "has_readme": true,
+ "readme_chars": 9007,
+ "content": {
+  "one_liner": "一款速度快、功能多、支援 macOS 與 Linux 的終端機軟體",
+  "features": [
+   "支援多視窗、分頁與分割畫面",
+   "用 GPU 加速畫面，介面依各平台原生設計",
+   "提供 libghostty 函式庫，可嵌入其他程式"
+  ],
+  "audience": "常用命令列的工程師、系統管理員，以及想在自己 App 內嵌終端機的開發者",
+  "use_cases": [
+   "取代 Terminal.app 或 iTerm 等內建終端機，作為日常命令列工具",
+   "在同一個視窗用分頁、分割畫面同時執行多個程式",
+   "開發者用 libghostty 把終端機功能嵌入自己的應用程式"
+  ],
+  "barrier": "code",
+  "barrier_note": "有現成程式可下載，但終端機本身要會用命令列，嵌入函式庫則要會寫 C 或 Zig",
+  "limitations": "libghostty 的 API 還在變動、尚未正式標版本；當機報告可能含敏感資料；作者表示效能接近 Alacritty",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

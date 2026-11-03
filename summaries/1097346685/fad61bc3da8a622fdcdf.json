@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "fad61bc3da8a622fdcdf",
+ "repo_id": 1097346685,
+ "full_name": "pbakaus/impeccable",
+ "created_at": "2026-11-04T07:27:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6436603ca19735cc5b7b14e384b5a3ad3ab81daab71fd52084ce17d19f2805af",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 AI 寫程式助理用的設計指令集，讓網頁介面更精緻、少點 AI 套版感",
+  "features": [
+   "24 個設計指令，如 bolder、polish、critique",
+   "62 條固定規則偵測 AI 套版設計，不需 API key",
+   "Live 模式可在瀏覽器點選元素切換設計版本"
+  ],
+  "audience": "用 Claude Code、Cursor、Codex 等 AI 助理做網頁介面的開發者與設計師",
+  "use_cases": [
+   "請 AI 助理把現有的價格方案卡片設計得更大膽",
+   "上線前檢查網頁的無障礙、效能與響應式問題",
+   "在 CI 或終端機掃描程式碼，找出 AI 常見的套版設計"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列安裝，並搭配 Claude Code 等 AI 寫程式工具使用",
+  "limitations": "Live 模式只能用在本機專案；部分情況會關閉權限檢查執行 agent，hook 不受模型核准限制，需自行檢查",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

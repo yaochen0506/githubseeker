@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "54738e900017ef9016eb",
+ "repo_id": 1441272552,
+ "full_name": "Verlintas/NOIR",
+ "created_at": "2026-11-04T07:28:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "980c6270052b14161483899d9f1c75a45cc8995d704f2862b39829ed5c9e1ced",
+ "has_readme": true,
+ "readme_chars": 5010,
+ "content": {
+  "one_liner": "在電腦上用 adb 檢查 Android 手機 App 的權限與資料流向",
+  "features": [
+   "列出 App 權限與上報網址，並計算風險分數",
+   "推估哪類資料可能流向哪些網域",
+   "產生處置建議，每條動作都附回滾指令"
+  ],
+  "audience": "在意隱私、想檢查自己 Android 手機的使用者，以及有授權的安全研究人員",
+  "use_cases": [
+   "檢查自己手機上哪些 App 有網路加敏感權限",
+   "關閉預裝 App 的部分權限，需要時再還原",
+   "匯出追蹤網域清單，用來設定 DNS 阻擋"
+  ],
+  "barrier": "code",
+  "barrier_note": "雖然有點兩下就能啟動的版本，但要在終端機裡操作，手機也得開啟 USB 偵錯",
+  "limitations": "只支援 Android，不支援 iOS；只提供靜態證據，無法證明真的傳過資料；只能用在自己或有授權的裝置",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

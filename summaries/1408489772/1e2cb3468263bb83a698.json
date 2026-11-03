@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1e2cb3468263bb83a698",
+ "repo_id": 1408489772,
+ "full_name": "storytold/wordcraft",
+ "created_at": "2026-11-04T07:29:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8f8577380a41ab1bb6b1e891fe2223a33da5df2dc0b4baf7d434e1774c67f10b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Rust 從頭打造、操作方式類似 Microsoft Word 的開源文書處理軟體",
+  "features": [
+   "可開啟與儲存 .docx，也能匯出 PDF",
+   "支援追蹤修訂、註解、目錄、引文與合併列印",
+   "可在 macOS、Windows、Linux 與瀏覽器使用"
+  ],
+  "audience": "想找免費 Word 替代品的一般使用者、學生與文字工作者，以及想讓 AI 代理操作文件的開發者",
+  "use_cases": [
+   "撰寫報告或論文，插入目錄、註腳與 APA 等格式的引文",
+   "用 CSV 資料做合併列印，產生信件、信封或標籤",
+   "開發者透過 MCP 伺服器讓 AI 代理自動編輯文件"
+  ],
+  "barrier": "online",
+  "barrier_note": "可從 GitHub 下載現成的安裝檔或免安裝版，自行從原始碼建置才需要 Rust 環境",
+  "limitations": "目前為 alpha 版，作者估計約 60% 可用於實際工作；圖表、SmartArt 保留與分頁準確度仍待改進，也還不支援原生列印",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

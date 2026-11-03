@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "40a99305b5215b0dd1f4",
+ "repo_id": 1432980411,
+ "full_name": "designfuchen/word-atlas",
+ "created_at": "2026-11-04T07:30:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d3f4d47fd69ef2ded992949c86fd51aa29671aeab1a24fdb63e60b368d466d3a",
+ "has_readme": true,
+ "readme_chars": 2581,
+ "content": {
+  "one_liner": "用插畫、英美發音和間隔複習幫你背 7,298 個雅思單字的 App",
+  "features": [
+   "每個單字配插畫、中英釋義、例句與英美音朗讀",
+   "FSRS 間隔複習，依學習紀錄安排複習時間",
+   "19 個話題組成可旋轉的詞彙星圖顯示進度"
+  ],
+  "audience": "準備雅思或想加強英文單字的中文使用者，以及想取用開放詞庫的開發者",
+  "use_cases": [
+   "每天依計畫看圖、聽發音背雅思單字並做拼寫練習",
+   "把開放詞庫匯入 Anki 牌組或自己的學習工具",
+   "免註冊在自己的裝置上背單字，可離線複習"
+  ],
+  "barrier": "online",
+  "barrier_note": "有線上網站與 iOS 測試版可直接用，免帳號；自行架設需 Node.js 20+",
+  "limitations": "內容由生成式 AI 與 ElevenLabs 產生，尚未逐條人工審校，可能有錯；非官方雅思詞表；介面為簡體中文",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

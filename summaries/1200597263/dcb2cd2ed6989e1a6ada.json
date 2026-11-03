@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "dcb2cd2ed6989e1a6ada",
+ "repo_id": 1200597263,
+ "full_name": "Graphify-Labs/graphify",
+ "created_at": "2026-11-04T07:28:56+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "17ebaa89019d8c752985117cea7215252dab28dfdbd85e5b1d0205bf00b1b527",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把整個程式專案連同文件、PDF 轉成可查詢的知識圖譜，給 AI 程式助手使用",
+  "features": [
+   "用 tree-sitter 在本機解析約 40 種語言的程式碼",
+   "每條關聯都會標示是直接讀到的還是推論出來的",
+   "可以提問、追查兩個東西的關聯路徑、解釋概念"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex、Gemini CLI 等 AI 程式助手的軟體開發者",
+  "use_cases": [
+   "讓 AI 助手查詢知識圖譜，不必逐一搜尋檔案來理解大型程式專案",
+   "找出專案中連結最多的核心概念，並把專案分成幾個子系統",
+   "把設計文件、PDF 和程式碼整合在同一張圖裡查詢"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.10 以上、uv 或 pipx，並用命令列安裝，再搭配 AI 程式助手使用",
+  "limitations": "文件、PDF、影像和影片需要呼叫 AI 模型或 API 金鑰處理；官方套件名稱是 graphifyy，其他同名套件與官方無關",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

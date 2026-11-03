@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f5e03676a77f818a9e8a",
+ "repo_id": 1342943152,
+ "full_name": "kgoedecke/doop",
+ "created_at": "2026-11-04T07:30:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ac326e3e6103213e63fb92fe99aff91e4def011d4ea28bb1a438c2d32f7eb195",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的多人設計畫布，人和 AI 代理可以同時在上面即時做設計",
+  "features": [
+   "內建 MCP 伺服器，Claude Code 等 AI 可直接編輯畫布",
+   "即時游標、留言、復原等多人協作功能",
+   "可點擊原型、頁面管理，匯出 PNG、PDF"
+  ],
+  "audience": "想讓 AI 代理協助做介面設計的設計師、產品團隊與開發者",
+  "use_cases": [
+   "連上 Claude Code 或 Codex，看 AI 在畫布上即時畫出網頁設計",
+   "在留言中 @doop 請內建代理產生設計草稿",
+   "匯入網站或 GitHub repo，整理出設計系統與風格指南"
+  ],
+  "barrier": "code",
+  "barrier_note": "自架需用 Docker 或 bun 指令；另有官方託管版可直接用網頁",
+  "limitations": "Figma、Canva、PSD 匯入匯出只有 Doop Cloud 才有，不包含在開源版；內建代理需自行連接模型帳號或 API 金鑰",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

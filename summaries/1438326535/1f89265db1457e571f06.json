@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1f89265db1457e571f06",
+ "repo_id": 1438326535,
+ "full_name": "BryceYuuu/RUN",
+ "created_at": "2026-11-04T07:28:21+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d0430a8652ea03df574cf2495c1a2554b486458ed9ae825537f14dcbb7ae897c",
+ "has_readme": true,
+ "readme_chars": 6293,
+ "content": {
+  "one_liner": "整理歐洲 36 國及其他主要地區移居路線的中文海外移居手冊",
+  "features": [
+   "依數位遊民、技術工作、創業、投資等分類比較路線",
+   "各國生活成本、稅率、永居與入籍年限資料",
+   "提供文件準備指南與可用 Excel 開啟的路線資料表"
+  ],
+  "audience": "考慮移居海外、想比較各國簽證與居留路線的人，內容主要以中國大陸護照申請人為角度",
+  "use_cases": [
+   "依收入來源與目標，比較適合自己的歐洲居留路線",
+   "查詢各國最新移民政策變化，例如英國永居新規",
+   "用 Excel 開啟路線資料表，橫向比較門檻與條件"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在 GitHub 網頁閱讀手冊即可，不需安裝；參與修改內容才需執行 Python 腳本",
+  "limitations": "僅供參考，不構成法律或移民建議；政策變動頻繁，須以官方為準；歐洲以外地區查核較淺；以簡體中文撰寫",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}
