@@ -25,6 +25,7 @@ ALLOWED_PATHS = {
     re.compile(r"^editions/\d{4}/\d{2}/\d{2}\.json$"): "edition",
     re.compile(r"^summaries/\d+/[0-9a-f]{20}\.json$"): "summary_cache",
     re.compile(r"^state/tracking\.json$"): "tracking",
+    re.compile(r"^state/categories\.json$"): "categories",
     re.compile(r"^status\.json$"): "status",
 }
 
@@ -50,6 +51,14 @@ def edition_path(business_date):
 def load_runs(data_dir, business_date):
     day_dir = Path(data_dir) / run_path(business_date, "x").parent
     return [read_json(p) for p in sorted(day_dir.glob("*.json"))] if day_dir.is_dir() else []
+
+
+def recent_runs(data_dir, business_date, days, extra_runs=()):
+    """近幾天的 run（含這次剛產生、還沒提交的），依時間排序、不重複。"""
+    today = date.fromisoformat(business_date)
+    runs = [r for n in range(days, -1, -1) for r in load_runs(data_dir, (today - timedelta(days=n)).isoformat())]
+    unique = {r["run_id"]: r for r in list(runs) + list(extra_runs)}
+    return sorted(unique.values(), key=lambda r: r["started_at"])
 
 
 def load_editions(data_dir):

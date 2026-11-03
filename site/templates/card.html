@@ -1,7 +1,7 @@
 <article class="card" id="repo-{{ p.repo_id }}">
   <img class="og" src="{{ p.og_image }}" alt="" loading="lazy" referrerpolicy="no-referrer" width="1200" height="600">
   <div class="card-body">
-    <h3><span class="pos">{{ p.position }}</span><a href="{{ p.html_url }}" rel="noopener">{{ p.full_name }}</a></h3>
+    <h3><span class="pos">{{ p.position }}</span><a href="{{ p.html_url }}" rel="noopener">{{ p.full_name }}</a>{% if p.repeat_of %}<span class="repeat">再次推薦</span>{% endif %}{% if p.category_name and p.slot != "category" %}<span class="cat-tag">{{ p.category_name }}</span>{% endif %}</h3>
     {% if p.summary_done %}
     {% set s = p.summary.content %}
     <p class="one-liner">{{ s.one_liner }}</p>

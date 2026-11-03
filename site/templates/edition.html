@@ -17,6 +17,12 @@
   {% if is_home %}
   <p class="lead">{{ site.tagline }}。{% if edition.summaries_enabled %}中文摘要由 AI 依據專案說明自動產生，可能有誤。{% else %}中文摘要即將加入，目前先顯示專案作者寫的英文原文描述。{% endif %}</p>
   {% endif %}
+  {% if edition.categories %}
+  <nav class="cat-nav" aria-label="分類榜單">
+    <a href="#h-main">今日精選</a>
+    {% for c in edition.categories %}<a href="#cat-{{ c.id }}">{{ c.name }}</a>{% endfor %}
+  </nav>
+  {% endif %}
   {% if edition.summary_failed_count %}
   <p class="warn">摘要未完成 {{ edition.summary_failed_count }} 項，這些專案先顯示英文原文描述。</p>
   {% endif %}
@@ -24,7 +30,7 @@
 
 <section aria-labelledby="h-main">
   <h2 id="h-main">主榜</h2>
-  <p class="hint">依 GitHub Trending 上的新增星數排序，<a href="{{ root }}about/#how">選法說明</a>。</p>
+  <p class="hint">依每天新增星數排序（優先用本站實際觀測的數字），<a href="{{ root }}about/#how">選法說明</a>。</p>
   {% for p in edition.main %}
   {% include "card.html" %}
   {% else %}
@@ -38,6 +44,22 @@
   <p class="hint">建立不到 {{ score.discovery_max_age_days }} 天、還沒上 GitHub Trending 的新專案。</p>
   {% for p in edition.discovery %}
   {% include "card.html" %}
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if edition.categories %}
+<section aria-labelledby="h-categories">
+  <h2 id="h-categories">分類榜單</h2>
+  <p class="hint">依分類列出今天成長最快的專案，和上面的精選不重複，<a href="{{ root }}about/#categories">分類說明</a>。</p>
+  {% for c in edition.categories %}
+  <section class="cat-section" id="cat-{{ c.id }}" aria-labelledby="h-cat-{{ c.id }}">
+    <h3 class="cat-title" id="h-cat-{{ c.id }}">{{ c.name }}</h3>
+    <p class="hint">{{ c.desc }}</p>
+    {% for p in c.picks %}
+    {% include "card.html" %}
+    {% endfor %}
+  </section>
   {% endfor %}
 </section>
 {% endif %}

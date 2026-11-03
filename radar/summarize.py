@@ -89,19 +89,21 @@ def check(content, cfg):
 # ---------- 呼叫 Claude Code ----------
 
 class ClaudeCodeRunner:
-    """用 `claude -p` 產生一份摘要。回傳 (摘要或 None, 用量, 錯誤訊息或 None)。"""
+    """用 `claude -p` 跑一次結構化輸出。回傳 (結果或 None, 用量, 錯誤訊息或 None)。摘要與分類共用。"""
 
-    def __init__(self, cfg, binary="claude"):
+    def __init__(self, cfg, binary="claude", system_prompt=None, schema=None,
+                 instruction="請依照系統指示，摘要下面這個專案，並以指定的 JSON 格式回答。"):
         self.cfg = cfg
         self.binary = binary
-        self.system_prompt = PROMPT_PATH.read_text(encoding="utf-8")
+        self.instruction = instruction
+        self.system_prompt = system_prompt or PROMPT_PATH.read_text(encoding="utf-8")
         # Claude Code 的檢查器不認得 draft 2020-12 的 $schema 宣告，傳給它時拿掉；欄位規則本身相容
-        schema = store.read_json(store.SCHEMA_DIR / "summary.schema.json")
+        schema = schema or store.read_json(store.SCHEMA_DIR / "summary.schema.json")
         self.schema = json.dumps({k: v for k, v in schema.items() if k not in ("$schema", "$id", "title")},
                                  ensure_ascii=False)
 
     def __call__(self, document, feedback=None):
-        prompt = "請依照系統指示，摘要下面這個專案，並以指定的 JSON 格式回答。"
+        prompt = self.instruction
         if feedback:
             prompt += f"\n\n你上一次的回答有以下問題，請修正後重新回答：{feedback}"
         cmd = [self.binary, "-p", prompt,

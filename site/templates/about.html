@@ -12,11 +12,27 @@
   <ol>
     <li><strong>收集</strong>：每天抓 GitHub Trending 的 8 個榜單（全站、Python、TypeScript、中文專案，各有日榜與週榜），再用 GitHub API 搜尋最近 30 天、7 天內新建立的熱門專案。</li>
     <li><strong>資格</strong>：最近 {{ score.active_within_days }} 天內有更新、沒有封存、不是 fork 的專案才列入。</li>
-    <li><strong>主榜（最多 {{ score.max_main }} 個）</strong>：每個專案取一個「每天新增星數」：有上日榜就用「今日 +N 星」，只上週榜就用「本週 +N 星 ÷ 7」。分數由新增星數多寡（占 75%）和相對成長幅度（占 25%）組成，大專案和小專案都有機會。</li>
-    <li><strong>新發現（最多 {{ score.max_discovery }} 個）</strong>：建立不到 {{ score.discovery_max_age_days }} 天、至少 {{ score.discovery_min_stars }} 星、還沒上 Trending 的專案，依「建立以來平均每天幾星」排序。</li>
-    <li><strong>不重複</strong>：過去 {{ score.cooldown_days }} 天入選過的專案，不會再進每日精選。</li>
+    <li><strong>每天新增星數</strong>：本站每天記錄約 200 個專案的星數。和 {{ score.observed_min_hours }}～{{ score.observed_max_hours }} 小時前的紀錄比較，就能算出<strong>實際觀測</strong>到的每天新增星數；第一次出現、還沒有紀錄可比的專案，才改用 GitHub Trending 顯示的「今日 +N 星」（只上週榜就用「本週 +N 星 ÷ 7」）。</li>
+    <li><strong>主榜（最多 {{ score.max_main }} 個）</strong>：分數由每天新增星數多寡（占 75%）和相對成長幅度（占 25%）組成，大專案和小專案都有機會。今天沒上 Trending、但實際觀測仍在成長的專案也會入選。</li>
+    <li><strong>新發現（最多 {{ score.max_discovery }} 個）</strong>：建立不到 {{ score.discovery_max_age_days }} 天、至少 {{ score.discovery_min_stars }} 星、還沒上 Trending 的專案，依實際觀測到的每天新增星數排序；剛建立、還沒有紀錄的專案（{{ score.discovery_new_max_age_days }} 天內）依「建立以來平均每天幾星」排序。</li>
+    <li><strong>不重複</strong>：過去 {{ score.cooldown_days }} 天入選過的專案，不會再進每日精選。例外是<strong>成長爆發</strong>：和上次入選比較同一種數字，這次每天新增星數達上次的 {{ score.repeat_growth_multiple }} 倍以上、且上次入選後又增加 {{ score.repeat_min_new_stars }} 星以上，會標示「再次推薦」。</li>
     <li>候選不夠時就少發，不湊數。入選理由全部由上面的數字組成，不靠 AI 猜測專案為什麼紅。</li>
   </ol>
+</section>
+
+<section class="prose" id="categories">
+  <h2>分類榜單</h2>
+  <p>除了今日精選，每天也依分類列出成長最快的專案，讓 AI 以外的好專案也看得到。每個分類每天最多 3 個，和精選不重複；候選不夠時就少發。分類由 AI（Anthropic 的 Claude）依專案名稱、描述與主題標籤判斷，可能有誤。</p>
+  <ul>
+    <li><strong>AI 助理與代理</strong>：AI 助理、寫程式的 AI、MCP、技能包、自動化代理。</li>
+    <li><strong>AI 模型與技術</strong>：模型、推論與訓練、機器學習框架。</li>
+    <li><strong>實用工具與 App</strong>：一般人也能直接使用的軟體，例如系統清理、擋廣告、檔案轉換、筆記、食譜。</li>
+    <li><strong>有趣應用與創意</strong>：遊戲、影音、繪圖設計、機器人與硬體 DIY。</li>
+    <li><strong>開發者工具</strong>：給寫程式的人用的框架、函式庫、命令列工具。</li>
+    <li><strong>學習資源與清單</strong>：教學、指南、Awesome 清單、知識庫。</li>
+    <li><strong>資安與網路</strong>：資安工具、網路、伺服器、自架服務。</li>
+  </ul>
+  <p>成人內容、盜版或破解工具、遊戲作弊外掛不收錄。成長速度遠超過上 GitHub Trending 的門檻、卻多次都沒出現在 Trending 的專案，GitHub 可能刻意排除，本站也先不推薦。</p>
 </section>
 
 <section class="prose" id="summary">

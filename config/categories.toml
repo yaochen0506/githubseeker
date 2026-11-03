@@ -1,0 +1,48 @@
+# 分類榜單（E1）。改了分類定義要同步更新 prompt_version，所有專案會重新分類。
+prompt_version = "e1"
+# 每個分類每天最多幾個（候選不足就少發）
+per_category = 3
+# 每次送給 Claude 分類的專案數，以及每天最多呼叫幾次（第一天要分類約 200 個，之後每天只分新出現的）
+batch_size = 50
+max_calls_per_run = 6
+
+[[categories]]
+id = "ai-agents"
+name = "AI 助理與代理"
+desc = "AI 助理、寫程式的 AI、MCP 伺服器、技能包、自動化代理、AI 工作流程"
+
+[[categories]]
+id = "ai-models"
+name = "AI 模型與技術"
+desc = "模型本身、推論與訓練、機器學習框架、AI 研究程式"
+
+[[categories]]
+id = "everyday-tools"
+name = "實用工具與 App"
+desc = "一般人也能直接使用的軟體或 App：系統清理、擋廣告、檔案轉換、下載、筆記、記帳、食譜、瀏覽器擴充功能"
+
+[[categories]]
+id = "fun-creative"
+name = "有趣應用與創意"
+desc = "遊戲、影音、繪圖設計、動畫、音樂、機器人與硬體 DIY、各種好玩的專案"
+
+[[categories]]
+id = "dev-tools"
+name = "開發者工具"
+desc = "給寫程式的人用的：程式框架、函式庫、命令列工具、程式語言、編輯器、測試與部署工具"
+
+[[categories]]
+id = "learning"
+name = "學習資源與清單"
+desc = "教學、指南、課程、書籍、Awesome 清單、面試題庫、知識庫"
+
+[[categories]]
+id = "security-network"
+name = "資安與網路"
+desc = "資安工具、滲透測試、網路與代理、伺服器、自架服務、系統管理"
+
+# 不收錄：分類時標出來，不會出現在任何榜單上
+[exclude_reasons]
+adult = "成人內容"
+piracy = "盜版或破解"
+cheat = "遊戲作弊外掛"

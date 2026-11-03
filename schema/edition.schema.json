@@ -70,7 +70,7 @@
     },
     "picks": {
       "type": "array",
-      "maxItems": 20,
+      "maxItems": 40,
       "items": {
         "$ref": "#/$defs/pick"
       }
@@ -172,6 +172,24 @@
           "description": "依 API 價格換算的參考值；使用訂閱權杖時不會實際扣款"
         }
       }
+    },
+    "suspicious_excluded": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "D 階段：成長遠超過上 Trending 門檻、卻從沒上過 Trending 而先不推薦的專案（選填）"
+    },
+    "content_excluded": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "description": "E1：分類時標為不收錄（成人、盜版破解、作弊外掛）的專案（選填）"
+    },
+    "classification_stats": {
+      "type": "object",
+      "description": "E1：這次分類的統計（選填）"
     }
   },
   "$defs": {
@@ -205,7 +223,8 @@
         "slot": {
           "enum": [
             "main",
-            "discovery"
+            "discovery",
+            "category"
           ]
         },
         "position": {
@@ -271,6 +290,7 @@
         },
         "metric_method": {
           "enum": [
+            "observed",
             "trending_daily",
             "trending_weekly_avg",
             "lifetime_avg"
@@ -438,6 +458,50 @@
               ]
             }
           }
+        },
+        "observed": {
+          "description": "D 階段：實際觀測成長的明細（選填；方法不是 observed 時為 null）",
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "delta",
+                "hours",
+                "base_at"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "delta": {
+                  "type": "integer",
+                  "description": "有號差值，可以是負數"
+                },
+                "hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "base_at": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        },
+        "repeat_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "D 階段：7 天內再次推薦的原因（選填）"
+        },
+        "category": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E1：分類代碼（選填；分類失敗或 E1 之前為 null）"
         }
       }
     }

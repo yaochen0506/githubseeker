@@ -1,5 +1,5 @@
 # 每日精選的選法（稽核報告 §5）。修改任何數值都要同步更新 score_version；舊的精選不會重算。
-score_version = "b1"
+score_version = "d1"
 
 # 資格：最近幾天內有更新程式
 active_within_days = 90
@@ -15,14 +15,27 @@ weight_rel = 0.25
 max_main = 7
 max_discovery = 3
 
-# 新發現：建立不到幾天、至少幾星、沒有上 Trending
-# 稽核報告建議 30 天；實測 30 天會選到上個月爆紅、現在已退燒的專案（「建立以來平均」反映不了近況），
-# 所以在 D 階段有實際觀測成長之前先用 7 天
-discovery_max_age_days = 7
+# 新發現：建立不到幾天、至少幾星、沒有上 Trending；有實際觀測就依觀測成長排序
+discovery_max_age_days = 30
 discovery_min_stars = 50
+# 還沒有觀測紀錄（第一次出現）的專案只收建立幾天內的，用「建立以來平均」排序
+# （「建立以來平均」反映不了近況，太舊的專案會選到已退燒的）
+discovery_new_max_age_days = 7
+
+# 實際觀測成長：和多久以前的觀測比較（太近會放大誤差，太久就不準）
+observed_min_hours = 12
+observed_max_hours = 96
+
+# 疑似異常：成長超過「上 Trending 門檻」的幾倍、被追蹤幾次以上，卻一次都沒上過 Trending，就先不推薦
+# （GitHub 不公開 Trending 的篩選方式；這類專案可能被刻意排除，對非工程師讀者風險較高）
+suspicious_growth_multiple = 3
+suspicious_min_runs = 3
 
 # 過去幾天入選過的專案不再入選
 cooldown_days = 7
+# 例外（再次推薦）：同一類數字、這次每天成長是上次的幾倍以上、上次入選後又增加幾星以上
+repeat_growth_multiple = 2
+repeat_min_new_stars = 100
 
 # 收集不完整時，只在這個排程（當天最後一次觸發）或手動執行時發布降級版
 last_schedule = "17 10 * * *"

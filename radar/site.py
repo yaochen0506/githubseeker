@@ -39,11 +39,16 @@ def edition_url_path(edition_id):
     return f"archive/{y}/{m}/{d}/"
 
 
-def _pick_view(pick):
+def _category_names(cat_cfg):
+    return {c["id"]: c["name"] for c in (cat_cfg or {}).get("categories", [])}
+
+
+def _pick_view(pick, names):
     """把精選整理成範本好用的形式（換算都在這裡做，範本不寫邏輯）。用日期而不是「幾天前」，歷史頁才不會過期。"""
     created, pushed = to_date(pick["created_at"]), to_date(pick["pushed_at"])
     return {
         **pick,
+        "category_name": names.get(pick.get("category")),
         "created_date": created.isoformat() if created else None,
         "pushed_date": pushed.isoformat() if pushed else None,
         "og_image": f"https://opengraph.githubassets.com/1/{pick['full_name']}",
@@ -54,13 +59,17 @@ def _pick_view(pick):
     }
 
 
-def _edition_view(edition, boards):
-    picks = [_pick_view(p) for p in edition["picks"]]
+def _edition_view(edition, boards, cat_cfg):
+    names = _category_names(cat_cfg)
+    picks = [_pick_view(p, names) for p in edition["picks"]]
+    categories = [{**c, "picks": [p for p in picks if p["slot"] == "category" and p["category"] == c["id"]]}
+                  for c in (cat_cfg or {}).get("categories", [])]
     return {
         **edition,
         "generated_text": _taipei_text(edition["generated_at"]),
         "main": [p for p in picks if p["slot"] == "main"],
         "discovery": [p for p in picks if p["slot"] == "discovery"],
+        "categories": [c for c in categories if c["picks"]],
         "failed_boards": [boards.get(s, s) for s in edition["coverage"]["sources_failed"]],
         "summaries_enabled": (edition.get("summary_stats") or {}).get("enabled", False),
         "summary_failed_count": sum(p["summary_failed"] for p in picks),
@@ -68,7 +77,15 @@ def _edition_view(edition, boards):
     }
 
 
-def build_feed(editions, site_cfg):
+def _label(pick, names):
+    if pick["slot"] == "discovery":
+        return "【新發現】"
+    if pick["slot"] == "category":
+        return f"【{names.get(pick['category'], '分類榜')}】"
+    return ""
+
+
+def build_feed(editions, site_cfg, cat_cfg=None):
     """RSS 2.0。識別碼與發布時間都來自已提交的精選，重新部署也不會改變。"""
     base = site_cfg["base_url"]
     rss = ET.Element("rss", {"version": "2.0"})
@@ -78,6 +95,7 @@ def build_feed(editions, site_cfg):
         ET.SubElement(channel, tag).text = text
     ET.SubElement(channel, f"{{{ATOM_NS}}}link", {"href": base + "feed.xml", "rel": "self", "type": "application/rss+xml"})
     if editions:
+        names = _category_names(cat_cfg)
         latest = date.fromisoformat(editions[-1]["business_date"])
         cutoff = latest - timedelta(days=site_cfg["rss_days"] - 1)
         ET.SubElement(channel, "lastBuildDate").text = format_datetime(datetime.fromisoformat(editions[-1]["generated_at"]))
@@ -87,8 +105,7 @@ def build_feed(editions, site_cfg):
             pub = format_datetime(datetime.fromisoformat(edition["generated_at"]))
             for pick in edition["picks"]:
                 item = ET.SubElement(channel, "item")
-                label = "【新發現】" if pick["slot"] == "discovery" else ""
-                ET.SubElement(item, "title").text = f"{label}{pick['full_name']}：{pick['reasons'][0]}"
+                ET.SubElement(item, "title").text = f"{_label(pick, names)}{pick['full_name']}：{pick['reasons'][0]}"
                 ET.SubElement(item, "link").text = f"{base}{edition_url_path(edition['edition_id'])}#repo-{pick['repo_id']}"
                 ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = f"radar:{edition['edition_id']}:{pick['repo_id']}"
                 ET.SubElement(item, "pubDate").text = pub
@@ -124,14 +141,18 @@ def _md(text):
     return re.sub(r"([\\`*_{}\[\]()<>#+!|~])", r"\\\1", text)
 
 
-def release_notes(edition, site_cfg):
+def release_notes(edition, site_cfg, cat_cfg=None):
     """每日精選的版本發布內容（GitHub 會把它寄給關注儲存庫的人）。回傳 (標題, Markdown 內文)。"""
     page = site_cfg["base_url"] + edition_url_path(edition["edition_id"])
     lines = [f"**{edition['edition_id']} GitHub 熱門專案精選**｜[在網站上看完整精選]({page})", ""]
     if edition["status"] == "degraded":
         lines += ["這一天部分榜單抓取失敗，精選只依據其餘來源。", ""]
-    for slot, heading in (("main", "主榜"), ("discovery", "新發現")):
-        picks = [p for p in edition["picks"] if p["slot"] == slot]
+    groups = [("主榜", [p for p in edition["picks"] if p["slot"] == "main"]),
+              ("新發現", [p for p in edition["picks"] if p["slot"] == "discovery"])]
+    groups += [(f"分類榜｜{c['name']}", [p for p in edition["picks"]
+                                       if p["slot"] == "category" and p.get("category") == c["id"]])
+               for c in (cat_cfg or {}).get("categories", [])]
+    for heading, picks in groups:
         if not picks:
             continue
         lines += [f"### {heading}", ""]
@@ -154,13 +175,13 @@ def site_marker(editions, code_version):
             "code_version": code_version}
 
 
-def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version):
+def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version, cat_cfg=None):
     out = Path(out_dir)
     if out.exists() and any(out.iterdir()):
         raise ValueError(f"輸出目錄不是空的：{out}")
     editions = store.load_editions(data_dir)
     boards = site_cfg["boards"]
-    views = [_edition_view(e, boards) for e in editions]
+    views = [_edition_view(e, boards, cat_cfg) for e in editions]
     latest = views[-1] if views else None
     env = _env()
 
@@ -182,7 +203,7 @@ def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version):
         path.write_text(env.get_template(template).render(**page), encoding="utf-8")
 
     shutil.copytree(SITE_DIR / "static", out / "static")
-    (out / "feed.xml").write_bytes(build_feed(editions, site_cfg))
+    (out / "feed.xml").write_bytes(build_feed(editions, site_cfg, cat_cfg))
     (out / "sitemap.xml").write_bytes(build_sitemap(editions, site_cfg))
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {site_cfg['base_url']}sitemap.xml\n",
                                     encoding="utf-8")

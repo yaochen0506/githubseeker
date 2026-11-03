@@ -27,7 +27,7 @@ from pathlib import Path
 
 import requests
 
-from . import editorial, rank, site, sources, store, summarize
+from . import classify, editorial, rank, site, sources, store, summarize
 from .sources import ApiError, BudgetExhausted, GitHubApi, NotFound, RateLimited
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -271,31 +271,46 @@ def collect(config, config_sha, data_dir, out_dir, api, session, started, trigge
     return run_doc
 
 
-def build_edition(run, past_editions, score_cfg, boards, status, generated_at):
-    main, discovery, excluded, counts = rank.select(run, past_editions, score_cfg)
-    picks = []
-    for slot, group in (("main", main), ("discovery", discovery)):
-        for position, cand in enumerate(group, 1):
-            obs = cand["obs"]
-            picks.append({
-                "slot": slot, "position": position,
-                "repo_id": obs["repo_id"], "full_name": obs["full_name"],
-                "html_url": f"https://github.com/{obs['full_name']}",
-                "description": obs["description"], "language": obs["language"], "topics": obs["topics"],
-                "license_spdx": obs["license_spdx"], "created_at": obs["created_at"], "pushed_at": obs["pushed_at"],
-                "stars": obs["stars"], "forks": obs["forks"],
-                "metric_method": cand["metric_method"], "growth_per_day": round(cand["growth_per_day"], 2),
-                "score": cand["score"], "score_breakdown": cand["score_breakdown"],
-                "trending_hits": cand["trending_hits"],
-                "reasons": editorial.reasons(cand, boards, run["business_date"]),
-                "notes": editorial.notes(obs, run["business_date"]),
-                "repeat_of": None,
-            })
+def _pick(cand, slot, position, boards, business_date):
+    obs = cand["obs"]
+    return {
+        "slot": slot, "position": position, "category": cand["category"],
+        "repo_id": obs["repo_id"], "full_name": obs["full_name"],
+        "html_url": f"https://github.com/{obs['full_name']}",
+        "description": obs["description"], "language": obs["language"], "topics": obs["topics"],
+        "license_spdx": obs["license_spdx"], "created_at": obs["created_at"], "pushed_at": obs["pushed_at"],
+        "stars": obs["stars"], "forks": obs["forks"],
+        "metric_method": cand["metric_method"], "growth_per_day": round(cand["growth_per_day"], 2),
+        "score": cand["score"], "score_breakdown": cand["score_breakdown"],
+        "trending_hits": cand["trending_hits"],
+        "observed": ({k: cand["observed"][k] for k in ("delta", "hours", "base_at")}
+                     if cand["metric_method"] == "observed" else None),
+        "reasons": editorial.reasons(cand, boards, business_date),
+        "notes": editorial.notes(obs, business_date),
+        "repeat_of": cand["repeat_of"],
+        "repeat_reason": cand["repeat_reason"],
+    }
+
+
+def build_edition(run, past_editions, score_cfg, boards, status, generated_at, history=None, seen=None,
+                  categories=None, cat_cfg=None):
+    main_pool, discovery_pool, excluded, suspicious, blocked = rank.candidates(
+        run, past_editions, score_cfg, history, seen, categories)
+    main, discovery = main_pool[:score_cfg["max_main"]], discovery_pool[:score_cfg["max_discovery"]]
+    day = run["business_date"]
+    picks = [_pick(c, "main", i, boards, day) for i, c in enumerate(main, 1)]
+    picks += [_pick(c, "discovery", i, boards, day) for i, c in enumerate(discovery, 1)]
+    if categories and cat_cfg:
+        used = [c["obs"]["repo_id"] for c in main + discovery]
+        cat_ids = [c["id"] for c in cat_cfg["categories"]]
+        for cat, board in rank.category_boards(main_pool, discovery_pool, used, cat_ids,
+                                               cat_cfg["per_category"]).items():
+            picks += [_pick(c, "category", i, boards, day) for i, c in enumerate(board, 1)]
     return {
         "schema_version": "1",
         "score_version": score_cfg["score_version"],
-        "edition_id": run["business_date"],
-        "business_date": run["business_date"],
+        "edition_id": day,
+        "business_date": day,
         "generated_at": store.iso(generated_at),
         "run_id": run["run_id"],
         "status": status,
@@ -303,7 +318,9 @@ def build_edition(run, past_editions, score_cfg, boards, status, generated_at):
                      "sources_failed": [s["source_id"] for s in run["sources"] if s["status"] != "ok"]},
         "picks": picks,
         "cooldown_excluded": excluded,
-        "candidate_counts": counts,
+        "suspicious_excluded": suspicious,
+        "content_excluded": blocked,
+        "candidate_counts": {"main": len(main_pool), "discovery": len(discovery_pool)},
     }
 
 
@@ -317,11 +334,12 @@ def meets_minimum(run, score_cfg):
 
 
 def maybe_build_edition(data_dir, out_dir, business_date, new_runs, trigger, score_cfg, boards, now=store.now_taipei,
-                        summarizer=None):
+                        summarizer=None, classifier=None, cat_cfg=None):
     """當天還沒有精選時，視情況產生一份。已存在就不動（精選提交後不再修改）。
 
     new_runs：這次執行剛產生、還沒提交的 run（單一份、清單或 None）。
     summarizer：替精選加上中文摘要的函式（C 階段）；None 代表不寫摘要。
+    classifier：把候選分類的函式（E1），回傳 repo_id → 分類；None 代表沒有分類榜。
     """
     if (Path(data_dir) / store.edition_path(business_date)).exists():
         return None
@@ -341,7 +359,10 @@ def maybe_build_edition(data_dir, out_dir, business_date, new_runs, trigger, sco
             return None
         status = "degraded"
     past = [e for e in store.load_editions(data_dir) if e["business_date"] < business_date]
-    edition = build_edition(run, past, score_cfg, boards, status, now())
+    recent = store.recent_runs(data_dir, business_date, score_cfg["observed_max_hours"] // 24 + 1, runs)
+    categories = classifier(run) if classifier else None
+    edition = build_edition(run, past, score_cfg, boards, status, now(), rank.build_history(recent),
+                            rank.seen_counts(recent, run["run_id"]), categories, cat_cfg)
     if summarizer:
         summarizer(edition)
     store.validate(edition, "edition")
@@ -400,7 +421,8 @@ def main(argv=None):
         print(f"驗證通過：{count} 個檔案")
         return 0
     if args.command == "build-site":
-        count = site.build_site(args.data_dir, args.out_dir, load_toml("site.toml"), load_toml("score.toml"), _code_version())
+        count = site.build_site(args.data_dir, args.out_dir, load_toml("site.toml"), load_toml("score.toml"), _code_version(),
+                                load_toml("categories.toml"))
         print(f"網站建置完成：{count} 個頁面")
         return 0
     if args.command in ("site-check", "site-verify"):
@@ -415,7 +437,7 @@ def main(argv=None):
             print("還沒有任何精選，不建立版本發布")
             _set_output(tag="")
             return 0
-        title, body = site.release_notes(editions[-1], load_toml("site.toml"))
+        title, body = site.release_notes(editions[-1], load_toml("site.toml"), load_toml("categories.toml"))
         Path(args.out_file).write_text(body, encoding="utf-8")
         print(body)
         _set_output(tag=f"edition-{editions[-1]['edition_id']}", title=title)
@@ -467,20 +489,31 @@ def _edition(args):
     summary_cfg = load_toml("summary.toml")
     api = GitHubApi(requests.Session(), token=os.environ.get("GITHUB_TOKEN"),
                     max_requests=config["max_rest_requests"], max_wait=config["max_rate_wait_seconds"])
-    stats = {}
+    score_cfg, cat_cfg = load_toml("score.toml"), load_toml("categories.toml")
+    stats, class_stats = {}, {}
+
+    def classifier(run):
+        eligible = [o for o in run["observations"]
+                    if rank.eligible(o, date.fromisoformat(run["business_date"]), score_cfg)]
+        categories, info = classify.classify(eligible, args.data_dir, out_dir, cat_cfg, summary_cfg)
+        class_stats.update(info)
+        return categories
 
     def summarizer(edition):
+        edition["classification_stats"] = class_stats
         stats.update(summarize.summarize_edition(edition, api, args.data_dir, out_dir, summary_cfg))
 
     edition = maybe_build_edition(args.data_dir, out_dir, business_date, store.load_runs(out_dir, business_date),
-                                  trigger, load_toml("score.toml"), load_toml("site.toml")["boards"],
-                                  summarizer=summarizer)
+                                  trigger, score_cfg, load_toml("site.toml")["boards"],
+                                  summarizer=summarizer, classifier=classifier, cat_cfg=cat_cfg)
     if edition is None:
         print("這次沒有產生新的精選（今天已有精選，或資料還不完整、等下一次觸發）")
     else:
         main_count = sum(p["slot"] == "main" for p in edition["picks"])
         print(f"產生 {edition['edition_id']} 精選（{edition['status']}）：主榜 {main_count} 個、"
               f"新發現 {len(edition['picks']) - main_count} 個，因 7 天內入選過而排除 {len(edition['cooldown_excluded'])} 個")
+        print(f"分類：{class_stats}")
+        print(f"疑似異常先不推薦 {len(edition['suspicious_excluded'])} 個、不收錄 {len(edition['content_excluded'])} 個")
         print(f"摘要：{stats}")
         for pick in edition["picks"]:
             if pick["summary"]["status"] == "failed":
@@ -492,6 +525,8 @@ def _edition(args):
     files = [p.relative_to(out_dir).as_posix() for p in out_dir.rglob("*") if p.is_file()] if out_dir.exists() else []
     parts = [f"run {Path(f).stem}" for f in files if f.startswith("runs/")]
     parts += [f"edition {business_date}" for f in files if f.startswith("editions/")]
+    if "state/categories.json" in files:
+        parts.append(f"{class_stats.get('classified', 0)} categorized")
     if any(f.startswith("summaries/") for f in files):
         parts.append(f"{sum(f.startswith('summaries/') for f in files)} summaries")
     _set_output(changed=str(bool(files)).lower(), message="data: " + ", ".join(parts),
@@ -518,6 +553,25 @@ def _summary_test():
     print(f"一句話：{content['one_liner']}")
     if issues:
         print(f"::warning::輸出檢查有問題：{issues}")
+
+    # 分類也測一次（不寫入任何資料）
+    cat_cfg = load_toml("categories.toml")
+    samples = [{"repo_id": 1, "full_name": "Anduin2017/HowToCook", "language": "Dockerfile", "topics": ["cooking"],
+                "description": "Programmer's guide about how to cook at home."},
+               {"repo_id": 2, "full_name": "AdguardTeam/AdGuardHome", "language": "Go", "topics": ["adblock", "dns"],
+                "description": "Network-wide ads & trackers blocking DNS server"},
+               {"repo_id": 3, "full_name": "example/agent-kit", "language": "TypeScript", "topics": ["mcp", "agents"],
+                "description": "Build AI coding agents with MCP tools"}]
+    runner = summarize.ClaudeCodeRunner(
+        cfg, system_prompt=classify.system_prompt(cat_cfg), schema=classify.output_schema(cat_cfg),
+        instruction="請依照系統指示，替下面每個專案分類，並以指定的 JSON 格式回答。")
+    result, _, error = runner(classify.build_document(samples), None)
+    if error:
+        print(f"::error::分類測試失敗：{error}")
+        return 1
+    names = {c["id"]: c["name"] for c in cat_cfg["categories"]}
+    for item in result["items"]:
+        print(f"分類：{samples[item['repo_id'] - 1]['full_name']} → {names.get(item['category'], item['category'])}")
     return 0
 
 

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "categories.schema.json",
+  "title": "分類結果快取：專案編號 → 分類（已分類過的專案不再重分）",
+  "type": "object",
+  "required": ["schema_version", "prompt_version", "updated_at", "repos"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1"},
+    "prompt_version": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "repos": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[0-9]+$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["category", "exclude_reason", "full_name", "classified_at"],
+        "additionalProperties": false,
+        "properties": {
+          "category": {"type": "string"},
+          "exclude_reason": {"type": ["string", "null"]},
+          "full_name": {"type": "string"},
+          "classified_at": {"type": "string"}
+        }
+      }
+    }
+  }
+}

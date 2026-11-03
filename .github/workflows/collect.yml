@@ -21,7 +21,7 @@ on:
         type: boolean
         default: false
       summary_test:
-        description: "只測試摘要權杖能不能用（不收集、不改資料）"
+        description: "只測試摘要與分類能不能用（不收集、不改資料）"
         type: boolean
         default: false
   # 網站程式或範本有改動時，只重新部署，不收集
@@ -45,7 +45,7 @@ jobs:
     # 這個 job 處理外部網頁與 API 資料，只給讀取權限
     if: github.event_name != 'push' && inputs.summary_test != true
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     permissions:
       contents: read
     env:

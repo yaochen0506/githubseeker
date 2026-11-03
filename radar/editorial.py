@@ -14,30 +14,54 @@ def _place(hit, boards):
     return f"{boards.get(hit['source_id'], hit['source_id'])}第 {hit['rank']} 名"
 
 
+def _also_on(hits, boards, exclude=None):
+    others = sorted((h for h in hits if h is not exclude), key=lambda h: (h["period"] != "daily", h["rank"]))
+    if not others:
+        return None
+    listed = "、".join(_place(h, boards) for h in others[:3])
+    more = f" 等 {len(others)} 個榜單" if len(others) > 3 else ""
+    space = " " if listed[0].isascii() else ""  # 中文接英文時加半形空格
+    return f"也在{space}{listed}{more}"
+
+
+def _observed_text(observed, growth):
+    hours, delta = observed["hours"], observed["delta"]
+    change = f"增加 +{delta:,} 星" if delta >= 0 else f"減少 {-delta:,} 星"
+    text = f"實際觀測：過去 {hours:.0f} 小時{change}"
+    if abs(hours - 24) > 3:
+        text += f"，換算每天約 +{growth:,.0f} 星"
+    return text
+
+
 def reasons(candidate, boards, business_date):
-    obs = candidate["obs"]
-    if candidate["metric_method"] == "lifetime_avg":
+    obs, method, hits = candidate["obs"], candidate["metric_method"], candidate["trending_hits"]
+    if method == "lifetime_avg":
         age = age_days(obs["created_at"], business_date)
-        return [f"建立 {age} 天，已有 {obs['stars']:,} 星，建立以來平均每天 +{candidate['growth_per_day']:,.0f} 星"]
-
-    period = "daily" if candidate["metric_method"] == "trending_daily" else "weekly"
-    preferred = "all-daily" if period == "daily" else "all-weekly"
-    leads = sorted((h for h in candidate["trending_hits"] if h["period"] == period and h["period_stars"] is not None),
-                   key=lambda h: (h["source_id"] != preferred, h["rank"]))
-    lead = leads[0]
-    if period == "daily":
-        text = [f"GitHub Trending 顯示今日 +{lead['period_stars']:,} 星（{_place(lead, boards)}）"]
+        text = [f"建立 {age} 天，已有 {obs['stars']:,} 星，建立以來平均每天 +{candidate['growth_per_day']:,.0f} 星"]
+    elif method == "observed":
+        text = [_observed_text(candidate["observed"], candidate["growth_per_day"])]
+        also = _also_on(hits, boards)
+        if also:
+            text.append(also)
+        elif candidate["score"] is not None:
+            text.append("今天不在 GitHub Trending 榜上，但持續成長")
+        else:
+            text.append(f"建立 {age_days(obs['created_at'], business_date)} 天，還沒上 GitHub Trending")
     else:
-        text = [f"GitHub Trending 顯示本週 +{lead['period_stars']:,} 星（{_place(lead, boards)}），"
-                f"平均每天約 +{candidate['growth_per_day']:,.0f} 星"]
-
-    others = sorted((h for h in candidate["trending_hits"] if h is not lead),
-                    key=lambda h: (h["period"] != "daily", h["rank"]))
-    if others:
-        listed = "、".join(_place(h, boards) for h in others[:3])
-        more = f" 等 {len(others)} 個榜單" if len(others) > 3 else ""
-        space = " " if listed[0].isascii() else ""  # 中文接英文時加半形空格
-        text.append(f"也在{space}{listed}{more}")
+        period = "daily" if method == "trending_daily" else "weekly"
+        preferred = "all-daily" if period == "daily" else "all-weekly"
+        lead = sorted((h for h in hits if h["period"] == period and h["period_stars"] is not None),
+                      key=lambda h: (h["source_id"] != preferred, h["rank"]))[0]
+        if period == "daily":
+            text = [f"GitHub Trending 顯示今日 +{lead['period_stars']:,} 星（{_place(lead, boards)}）"]
+        else:
+            text = [f"GitHub Trending 顯示本週 +{lead['period_stars']:,} 星（{_place(lead, boards)}），"
+                    f"平均每天約 +{candidate['growth_per_day']:,.0f} 星"]
+        also = _also_on(hits, boards, exclude=lead)
+        if also:
+            text.append(also)
+    if candidate.get("repeat_reason"):
+        text.append(candidate["repeat_reason"])
     return text
 
 

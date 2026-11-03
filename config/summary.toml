@@ -5,10 +5,10 @@ model = "claude-opus-5-5"
 effort = "low"
 
 # 預算
-max_calls_per_run = 15       # 每天最多呼叫幾次（精選一天只產生一次）
+max_calls_per_run = 40       # 每天最多呼叫幾次（精選一天只產生一次；含分類榜約 30 個專案）
 max_attempts_per_repo = 2    # 每個專案最多試幾次（第 2 次會附上前一次的問題）
 call_timeout_seconds = 180
-total_timeout_seconds = 600
+total_timeout_seconds = 1500
 readme_max_chars = 12000
 
 # 成功率低於這個比例，workflow 會發出失敗通知
