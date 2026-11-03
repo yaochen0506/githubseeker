@@ -20,7 +20,8 @@ from .sources import ApiError, BudgetExhausted, NotFound, RateLimited
 
 ROOT = Path(__file__).resolve().parent.parent
 PROMPT_PATH = ROOT / "config" / "summary_prompt.md"
-URL_RE = re.compile(r"https?://|www\.|\b[a-z0-9-]+\.(?:com|io|org|net|dev|ai|app)\b", re.I)
+# 只擋真正的連結；Claude.ai、Character.ai 這類產品名會被裸網域規則誤判，所以不檢查（網站本來就不會把文字變成連結）
+URL_RE = re.compile(r"https?://|www\.", re.I)
 AUTH_ERROR_RE = re.compile(r"401|403|authenticat|bearer token|oauth|not logged in|login expired", re.I)
 AUTH_MESSAGE = "Claude 權杖無效或已過期，請重新執行 claude setup-token 並更新 GitHub Secret"
 BARRIER_LABELS = {"online": "免安裝（線上可用）", "install": "需要下載安裝", "code": "需要寫程式"}

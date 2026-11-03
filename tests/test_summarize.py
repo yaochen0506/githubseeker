@@ -84,7 +84,8 @@ def test_clean_readme_strips_code_images_html_and_urls():
 
 def test_check_finds_urls_simplified_and_mainland_terms():
     assert summarize.check(GOOD, CFG) == []
-    bad = {**GOOD, "one_liner": "这个工具支持視頻轉檔，詳見 github.com", "features": ["x" * 41]}
+    assert summarize.check({**GOOD, "one_liner": "支援 Claude.ai 與 Character.ai 的工具"}, CFG) == []
+    bad = {**GOOD, "one_liner": "这个工具支持視頻轉檔，詳見 https://x.io", "features": ["x" * 41]}
     issues = summarize.check(bad, CFG)
     assert any("網址" in i for i in issues)
     assert any("簡體字" in i and "这" in i for i in issues)
