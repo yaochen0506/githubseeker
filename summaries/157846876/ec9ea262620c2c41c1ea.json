@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ec9ea262620c2c41c1ea",
+ "repo_id": 157846876,
+ "full_name": "motiondivision/motion",
+ "created_at": "2026-11-05T07:46:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cdc51541de2712db25f837cd2a06235f7d28d087428de44cfbca0f72af4bde6f",
+ "has_readme": true,
+ "readme_chars": 3188,
+ "content": {
+  "one_liner": "讓網頁開發者替 React、JavaScript 和 Vue 網站加上流暢動畫的開源函式庫",
+  "features": [
+   "支援手勢、彈簧效果、版面轉場與捲動動畫",
+   "作者表示可達 120fps 並用 GPU 加速",
+   "提供 450 多個官方範例，部分附教學"
+  ],
+  "audience": "使用 React、JavaScript 或 Vue 製作網站的前端工程師與網頁設計開發者",
+  "use_cases": [
+   "替網站按鈕、選單加上手勢互動與彈簧動畫",
+   "製作隨頁面捲動而變化的視覺效果",
+   "讓 Claude Code、Cursor 等 AI 工具透過 MCP 查詢 Motion 文件"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 React、JavaScript 或 Vue 程式，並用套件管理工具安裝",
+  "limitations": "原名 Framer Motion，需改從 motion/react 匯入；部分範例、進階 API 與 AI 工具屬付費的 Motion+",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

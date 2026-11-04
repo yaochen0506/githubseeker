@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2eaf76fb82f3c4c43d8d",
+ "repo_id": 1136666433,
+ "full_name": "blader/humanizer",
+ "created_at": "2026-11-05T07:44:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "535ecbccaa55467696b0dc66f49ed90b0f498d62e2a9c5673a3573a519d9bf8d",
+ "has_readme": true,
+ "readme_chars": 11822,
+ "content": {
+  "one_liner": "把 AI 寫的文字改得像真人寫的，同時不改變原本的意思",
+  "features": [
+   "依據 Wikipedia 指南檢查 26 種 AI 寫作痕跡",
+   "提供範例文字，就能模仿你的寫作語氣",
+   "改寫檔案時只動文字，不動程式碼與資料"
+  ],
+  "audience": "常用 Claude、Codex 等 AI 助理寫文章，想讓文字讀起來更自然的人",
+  "use_cases": [
+   "把 AI 寫的產品公告改得簡潔自然",
+   "把 AI 風格的遊記改寫成像個人的經驗分享",
+   "依自己的文字範例，把草稿改成自己的語氣"
+  ],
+  "barrier": "install",
+  "barrier_note": "Claude Desktop 可上傳 ZIP 安裝成 skill；其他 agent 需用命令列安裝",
+  "limitations": "目的不是躲過 AI 偵測器，作者表示大部分輸出仍會被偵測器標記；Claude Code 外掛需 2.1.142 以上版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

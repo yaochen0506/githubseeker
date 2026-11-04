@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "17f7a50efd8dea04a73c",
+ "repo_id": 1222953295,
+ "full_name": "NVIDIA/auto-ontology",
+ "created_at": "2026-11-05T07:42:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cbcb58bb8f7ff3c21fa998dd9308b60887c2f8a2a07681b3069099140477af26",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "替企業資料庫建立「業務語意地圖」，讓 AI 用白話問答時查得更準",
+  "features": [
+   "從資料庫中繼資料自動產生本體與知識圖譜",
+   "自然語言轉 SQL 查詢，回答會附上 SQL 與推導步驟",
+   "透過 MCP、CLI、API 與網頁介面提供給 AI 代理"
+  ],
+  "audience": "企業資料工程師、資料分析團隊，以及開發 AI 代理的工程師",
+  "use_cases": [
+   "用白話問營收等指標，取得答案和對應的 SQL 以便核對",
+   "統一不同系統裡不一致的指標定義，再由人工認證",
+   "讓 Cursor、Claude Desktop 透過 MCP 查詢公司資料"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Docker、uv、命令列操作，還要有 NVIDIA API 金鑰並連接資料庫",
+  "limitations": "連接埠 3001、3002 要放在私有網路，因為擷取服務本身沒有驗證；目前不接受外部貢獻",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

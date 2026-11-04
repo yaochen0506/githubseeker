@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "818a8df6fc1ef795b474",
+ "repo_id": 1187630119,
+ "full_name": "NVIDIA/SkillSpector",
+ "created_at": "2026-11-05T07:47:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "776e8fa3a91ee0ad366e335a0fc596843b1736f9c85ea35ebc780756b660b743",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在安裝 AI 代理技能前，先掃描檢查有沒有安全風險的工具",
+  "features": [
+   "檢查 17 類共 71 種弱點模式，例如提示注入",
+   "靜態分析，可選擇再加上 LLM 語意評估",
+   "給出 0～100 風險分數與建議，可輸出多種報告"
+  ],
+  "audience": "使用 Claude Code、Codex、MCP 等 AI 代理工具的開發者與資安人員",
+  "use_cases": [
+   "安裝 Claude Code 或 MCP 技能前，先確認是否安全",
+   "在 CI 流程中自動掃描技能，有風險時擋下",
+   "一次批次掃描整個資料夾裡的多個技能"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過命令列安裝 Python 套件或使用 Docker 執行；LLM 分析需要 API 金鑰",
+  "limitations": "下載與壓縮檔上限 100 MiB，單檔分析上限 1 MB；遞迴掃描預設最多 32 個技能；批次掃描的 LLM 支援仍有限",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

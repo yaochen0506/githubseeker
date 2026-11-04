@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5faf100bec00c8495e6e",
+ "repo_id": 770153867,
+ "full_name": "harry0703/MoneyPrinterTurbo",
+ "created_at": "2026-11-05T07:43:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0e13ff6bd1322f8e3695516cfc26d3193d1671de7403cf8d68c25a90a8b96202",
+ "has_readme": true,
+ "readme_chars": 11204,
+ "content": {
+  "one_liner": "輸入主題或關鍵字，AI 自動產生腳本、配音、字幕並剪成短影片",
+  "features": [
+   "自動產生腳本、配音、素材、字幕、配樂並剪輯",
+   "支援多種 AI 模型與免費素材庫及 AI 生成影片",
+   "可批次產生，並自動上傳到 TikTok、YouTube 等"
+  ],
+  "audience": "想大量製作短影片的自媒體經營者、行銷人員，以及想串接自動化流程的開發者",
+  "use_cases": [
+   "輸入一個主題，快速做出直式短影片發布到 TikTok 或 Reels",
+   "一次批次產生多支不同主題的知識型短影片",
+   "開發者可能透過 API 把影片產生接入自己的自動化流程"
+  ],
+  "barrier": "install",
+  "barrier_note": "Windows 有一鍵啟動包，其他方式需 Python 3.11 或 Docker，多數 AI 服務要 API Key",
+  "limitations": "Windows 路徑不可含中文、空格；Whisper 字幕需下載約 3 GB 模型；內建配樂來自 YouTube 可能有版權疑慮",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

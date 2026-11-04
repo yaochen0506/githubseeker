@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "74d76a383bf3001ca966",
+ "repo_id": 1443985070,
+ "full_name": "KKKKhazix/agent-autoloop",
+ "created_at": "2026-11-05T07:43:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c4dc80f9161f870e08ddecdfd012173ea35e1c0eb27d610c9c995645e74cf597",
+ "has_readme": true,
+ "readme_chars": 6709,
+ "content": {
+  "one_liner": "讓 Claude Code、Codex 等命令行 Agent 在背景自動接任務，拿不準時才發卡片問你",
+  "features": [
+   "用規則檔設定什麼事件交給哪個 Agent 處理",
+   "透過飛書、Slack、Discord 或桌面通知請你決定",
+   "附每日早報、Issue 跟進、網站巡檢等模板"
+  ],
+  "audience": "已經在用 Claude Code、Codex 等命令行 Agent，想讓它自動處理例行工作的開發者",
+  "use_cases": [
+   "每天早上自動整理本機筆記和 Git 提交，寫成早報",
+   "GitHub 有新 Issue 時，讓 Agent 在本機改程式碼後通知你查看",
+   "線上報錯時讓 Agent 排查，需要重啟服務時先發卡片問你"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在 macOS 或 Linux 安裝 Node 24、Git、curl，並用命令列和 JSON 設定規則",
+  "limitations": "目前不支援 Windows；部分 Webhook 與 Agent 接入方式作者表示尚未實際測試；高頻使用建議改用 API Key",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

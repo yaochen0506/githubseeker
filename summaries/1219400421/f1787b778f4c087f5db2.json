@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f1787b778f4c087f5db2",
+ "repo_id": 1219400421,
+ "full_name": "0x0funky/agent-sprite-forge",
+ "created_at": "2026-11-05T07:45:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b19025982f687c1f5b68c41424c87c04dc356b18430e8781c3954cee3e7bf83b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 AI 代理從一張角色圖產生整套 2D 遊戲角色動畫、地圖與 GIF",
+  "features": [
+   "先產生一張角色主圖，再為每個動作生成影片轉成動畫",
+   "自動去背、挑選循環、調整節奏並可輸出像素風",
+   "匯出 Godot、Aseprite、網頁遊戲可用的檔案"
+  ],
+  "audience": "獨立遊戲開發者、像素美術創作者，以及會使用 Claude Code、Codex 或 Grok 的人",
+  "use_cases": [
+   "為遊戲角色製作跑步、攻擊、待機等整套動畫",
+   "產生透明背景 PNG 影格與動態 GIF",
+   "產生可匯入 Tiled、Godot、LDtk 的地圖"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝技能、Python 與 ffmpeg，並有 Codex／Grok 帳號或 API 金鑰",
+  "limitations": "使用 API 可能產生費用且預設無上限；作者表示數值檢查看不出武器變化等問題，需人工檢視",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

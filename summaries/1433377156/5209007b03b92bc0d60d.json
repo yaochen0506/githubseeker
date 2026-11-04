@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "5209007b03b92bc0d60d",
+ "repo_id": 1433377156,
+ "full_name": "unclebob/ub-mode",
+ "created_at": "2026-11-05T07:46:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "49ae9f2a8934702574e645c29d757e07000088d41e8914ad336c1a0d6127eb33",
+ "has_readme": true,
+ "readme_chars": 1246,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理遵守嚴謹軟體工程原則的技能設定檔",
+  "features": [
+   "要求 AI 先求能動、再求正確，例如 TDD 與修正根本原因",
+   "搭配品質檢查工具，例如 CRAP 指標與突變測試",
+   "可搭配工具視覺化元件、覆蓋率與相依方向"
+  ],
+  "audience": "使用 Claude、Cursor、Grok 等 AI 寫程式助理的軟體開發者",
+  "use_cases": [
+   "讓 AI 助理寫或修改程式碼時遵守測試驅動開發等原則",
+   "用突變測試找出測試沒抓到的程式碼問題",
+   "可能用於團隊統一 AI 產生程式碼的品質標準"
+  ],
+  "barrier": "code",
+  "barrier_note": "需將 SKILL.md 複製到 AI 助理的技能資料夾，並在寫程式時以 /ub-mode 呼叫",
+  "limitations": "README 未說明",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

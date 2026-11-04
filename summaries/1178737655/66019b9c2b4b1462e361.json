@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "66019b9c2b4b1462e361",
+ "repo_id": 1178737655,
+ "full_name": "THU-MAIC/OpenMAIC",
+ "created_at": "2026-11-05T07:46:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "06d561ddc79fa5cce5ef8d9c2beb018dcff8c9b8295409bb9cface6967ddd0db",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "輸入主題或上傳文件，AI 自動產生有 AI 老師和同學的互動課堂",
+  "features": [
+   "一鍵產生投影片、測驗、互動模擬等完整課程",
+   "AI 老師與同學會講解、在白板畫圖並即時討論",
+   "可匯出 PPTX、離線 HTML 檔或課堂 ZIP"
+  ],
+  "audience": "想快速製作教材的老師、自學者，以及能自行架設伺服器的教育單位或開發者",
+  "use_cases": [
+   "把一份文件或一個主題變成可互動的線上課程",
+   "透過專案式學習，在 AI 導師引導下動手完成程式專案",
+   "從 Slack、Telegram 等通訊軟體或 IDE 直接產生課堂"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝 Node.js、pnpm、PostgreSQL 或 Docker，並準備 AI 模型的 API 金鑰",
+  "limitations": "需 PostgreSQL 與長時間運作的伺服器；Docker 預設單一使用者，對外開放前須設定存取碼；部分升級無法回退",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

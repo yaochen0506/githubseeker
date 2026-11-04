@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b65f102f9f9c4ec7e405",
+ "repo_id": 1423689866,
+ "full_name": "ly05010419/MacNativeGames",
+ "created_at": "2026-11-05T07:45:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c6a077ecbba62add2b9b492029fc98ca75e804aa205cc02f52f4f8565a3d4d4b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把自己買的 Switch 薩爾達遊戲，不靠模擬器直接在 Mac、iPhone、iPad 上執行",
+  "features": [
+   "遊戲原本的 ARM64 程式碼直接在 Apple 晶片上執行",
+   "把 Switch 的 NVN 繪圖改用 Apple 的 Metal 重建",
+   "用腳本把自己的遊戲檔打包成 Mac App 或 IPA"
+  ],
+  "audience": "擁有 Switch 及正版遊戲、想在 Apple 裝置上玩，而且不怕技術操作的玩家與技術愛好者",
+  "use_cases": [
+   "在 Apple 晶片的 Mac 上玩自己的《王國之淚》，最高可到原生 4K",
+   "在 iPhone 14 以上或 iPad 上玩《王國之淚》或《曠野之息》",
+   "透過 Mac 串流，用 Meta Quest 3 以 VR 方式玩《王國之淚》"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要從自己的 Switch 提取遊戲檔和金鑰，並用命令列建置，作者建議交給 AI 助理代勞",
+  "limitations": "必須擁有正版遊戲與自己的 Switch；建置要 20～40 分鐘；iOS 版需 iOS 26 與 iPhone 14 以上；初次遊玩可能卡頓",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

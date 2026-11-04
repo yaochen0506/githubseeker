@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e17d2a5352d037ce35f4",
+ "repo_id": 1065059442,
+ "full_name": "KeygraphHQ/shannon",
+ "created_at": "2026-11-05T07:47:09+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fbcc4ec8486eb7a937cc13b40b72a705eb05bb2a55d1a023d3bd57148e77b74a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 AI 讀網站原始碼、實際發動攻擊，找出網站與 API 的資安漏洞",
+  "features": [
+   "分析原始碼找攻擊路徑，再實際攻擊驗證漏洞",
+   "只回報有可重現證據的漏洞，產出 PDF 等報告",
+   "可接 GitHub Actions、GitLab CI/CD 自動測試"
+  ],
+  "audience": "有網站原始碼的開發者、小型團隊與資安人員",
+  "use_cases": [
+   "上線前對測試環境的網站做自動化滲透測試",
+   "每次發版或 pull request 時自動檢查注入、XSS 等漏洞",
+   "發現高風險漏洞時讓 CI 流程自動失敗、擋下發版"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列操作，並準備 Docker、Node.js 22+ 與 AI 服務金鑰",
+  "limitations": "只能測自己擁有或取得書面授權的系統，勿用於正式環境；AI 服務的資安防護可能中斷掃描",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

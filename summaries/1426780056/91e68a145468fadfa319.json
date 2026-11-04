@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "91e68a145468fadfa319",
+ "repo_id": 1426780056,
+ "full_name": "pengchujin/aerial-tv",
+ "created_at": "2026-11-05T07:45:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "68d76a20bb8595127e10c1d31877c1abb71f30afbb51b21c447ce271ffe0ae6b",
+ "has_readme": true,
+ "readme_chars": 11309,
+ "content": {
+  "one_liner": "仿 Apple TV 風格的 Android TV 桌面，取代中國品牌電視內建、有廣告的桌面",
+  "features": [
+   "無廣告主畫面，可整理 App、資料夾與 HDMI 訊號源",
+   "Apple TV 航拍影片螢幕保護程式與多種桌布",
+   "用手機掃 QR Code 就能排序、改名、隱藏 App"
+  ],
+  "audience": "使用小米、TCL、創維等中國品牌 Android 電視、盒子或投影機，想要乾淨桌面的人",
+  "use_cases": [
+   "把開機就跳廣告與推薦內容的電視桌面換成只有 App 的畫面",
+   "待機時播放航拍影片，或把手機照片設為桌布",
+   "設定開機直接進入常用 App 或 HDMI 訊號源"
+  ],
+  "barrier": "code",
+  "barrier_note": "多數電視需開啟 ADB 偵錯，並在電腦上用命令列或能執行指令的 AI Agent 安裝",
+  "limitations": "部分機型無法接管主頁鍵或開機會先出現原桌面；不支援 webOS、Tizen、鴻蒙；開機廣告去不掉",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "5a80b54d90098810181e",
+ "repo_id": 1416502082,
+ "full_name": "seedds/nxnative",
+ "created_at": "2026-11-05T07:44:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2636f49f09f5f722792f8d6579334a9d4cf5116bd93550f05423cc5e5ad0e85b",
+ "has_readme": true,
+ "readme_chars": 10665,
+ "content": {
+  "one_liner": "把你自己的 Switch 遊戲檔轉成 App，在 iPhone、iPad 和 Mac 上直接執行",
+  "features": [
+   "把 NSP 遊戲檔與 prod.keys 打包成可側載的 IPA",
+   "不是模擬器，遊戲程式直接在 Apple 晶片上執行",
+   "Switch 畫面改用 Metal 重建，部分遊戲可達 60 fps"
+  ],
+  "audience": "擁有自己 Switch 遊戲檔、想在 Apple 裝置上玩，且熟悉 Mac 命令列與側載的玩家",
+  "use_cases": [
+   "把自己的《薩爾達傳說》等遊戲轉成 IPA，側載到 iPhone 遊玩",
+   "加上 --platform mac-app 參數，產生可在 Mac 上開啟的遊戲 App",
+   "在 Mac 上玩已支援的 Switch 2 遊戲（從 .nup 檔或遊戲傾印檔打包）"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Mac、Xcode 27.2、Homebrew、Python 3.12 並使用終端機；社群另有圖形介面工具",
+  "limitations": "需 iPhone 15 Pro 以上或 M1 iPad；未列出的遊戲可能無法啟動；Switch 2 遊戲只測過 Mac；首次建置約 30–60 分鐘",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

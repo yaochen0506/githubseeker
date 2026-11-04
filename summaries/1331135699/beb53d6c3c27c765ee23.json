@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "beb53d6c3c27c765ee23",
+ "repo_id": 1331135699,
+ "full_name": "guillaumemeyer/watermarks-remover",
+ "created_at": "2026-11-05T07:45:35+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6cb7d2d9180cecfa5b4c6a9f1ddff4945b007eef056de3f9e6ad904e1060d6ca",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "幫你移除自己內容裡的 AI 浮水印與來源標記，支援文字和多種檔案",
+  "features": [
+   "清除文字中隱形 Unicode 字元與特殊空白",
+   "移除圖片、PDF、Office、影音檔的 C2PA 與中繼資料",
+   "可當 Claude Code、Codex、Cursor 的 skill 使用"
+  ],
+  "audience": "使用 Claude、ChatGPT、Gemini 等 AI 工具產出內容，且熟悉開發工具的使用者或開發者",
+  "use_cases": [
+   "清理 AI 協助撰寫的文件或網頁文案中的隱形字元",
+   "移除自己圖片或 PDF 檔中的 C2PA 與 EXIF 資料",
+   "在 Claude Code 寫檔後自動檢查或清除來源標記"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.10 以上，並用命令列啟動本機 HTTP 服務與安裝 skill",
+  "limitations": "只用於自己擁有的內容；hook 無法改寫聊天訊息，聊天文字清理只能盡力而為；PDF 完整清除需安裝 qpdf",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

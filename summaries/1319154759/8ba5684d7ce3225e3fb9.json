@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8ba5684d7ce3225e3fb9",
+ "repo_id": 1319154759,
+ "full_name": "FareedKhan-dev/kimi-k3-in-c",
+ "created_at": "2026-11-05T07:43:10+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f64b40793309ba2992846d9bc8f3ed93c6c56e209c1d2b4885faaf7dc644a56c",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用純 C 語言寫的推論引擎，讓 2.78 兆參數的 Kimi K3 模型只靠一顆 CPU 就能跑",
+  "features": [
+   "不需要 GPU，作者表示 8 GB 記憶體就能執行",
+   "記憶體越大越快，作者表示輸出結果完全相同",
+   "支援文字聊天模式與多輪對話"
+  ],
+  "audience": "對大型語言模型底層技術有興趣的開發者、研究人員，以及想在沒有 GPU 的電腦上跑大模型的人",
+  "use_cases": [
+   "在一般筆電或桌機上以 CPU 執行 Kimi K3 模型產生文字",
+   "研究如何用串流讀取與量化技術降低模型的記憶體需求",
+   "不下載模型也能先編譯並跑測試，確認引擎正確性"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列編譯 C 程式與執行 Python 腳本，並準備約 1.7 TB 硬碟空間",
+  "limitations": "模型檔 1.56 TB，下載要好幾個小時；速度很慢，8 GB 時每個 token 約 26.5 秒；下載不完整會產生錯誤結果",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

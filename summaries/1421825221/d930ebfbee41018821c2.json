@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d930ebfbee41018821c2",
+ "repo_id": 1421825221,
+ "full_name": "deepseek-ai/DeepInfer",
+ "created_at": "2026-11-05T07:45:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "988ab1dcb5f74342ce278a09fb37ebeef2e509876a193cfbd403ec317b59866c",
+ "has_readme": true,
+ "readme_chars": 3364,
+ "content": {
+  "one_liner": "DeepSeek 用在自家大規模服務的 AI 模型推論框架，開源離線推論版本",
+  "features": [
+   "針對 DeepSeek-V4.1-Flash 最佳化的運算核心與平行處理",
+   "用草稿 token 加速生成，支援非同步排程",
+   "支援固定結果的取樣與 JSON、正規表示式等結構化輸出"
+  ],
+  "audience": "有高階 GPU 叢集、要部署 DeepSeek 模型的 AI 工程師與研究人員",
+  "use_cases": [
+   "在 SM100 GPU 或 Ascend 950 NPU 上離線執行 DeepSeek 模型",
+   "產生符合 JSON schema 格式的模型輸出",
+   "可能用來當作自建大規模推論服務的基礎"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Linux、GCC 13 以上、Python 3.12、CUDA 13 或 CANN 9.2，從原始碼編譯",
+  "limitations": "只支援 SM100 GPU 與 Ascend 950；完整服務需要的 KV cache、負載平衡等功能未包含；部分功能只支援 NVIDIA",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

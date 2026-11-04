@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2970c8f1cf646a18c1d7",
+ "repo_id": 1443759946,
+ "full_name": "govijr/terminal-mac",
+ "created_at": "2026-11-05T07:44:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ca05661c8f5aff7b9eda9a327d6f1c13bc46d11727bcad5ecff6953a571ae11a",
+ "has_readme": true,
+ "readme_chars": 11491,
+ "content": {
+  "one_liner": "在 Mac 上開一台獨立的虛擬 Mac，從終端機觀看和操作，也能交給 AI 代理人操控",
+  "features": [
+   "用 Apple 虛擬化技術執行真正的 macOS 虛擬機",
+   "在 Ghostty、Kitty、iTerm2 終端機內顯示並操作桌面",
+   "提供 MCP 工具，讓 AI 代理人截圖、點擊、打字"
+  ],
+  "audience": "使用 Apple silicon Mac、想讓 AI 代理人在隔離環境操作電腦的開發者",
+  "use_cases": [
+   "讓 Claude Code 等 AI 代理人操作虛擬 Mac，不動到自己的桌面",
+   "在終端機裡直接使用另一台獨立的 macOS 桌面",
+   "可能用來測試軟體，不影響主機的檔案與帳號"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 macOS 14 以上的 Apple silicon Mac，用命令列安裝與操作，並在虛擬機內手動完成設定",
+  "limitations": "仍是早期候選版本、未經 Apple 公證；虛擬機會占用主機資源；預設網路沒有隔離，不適合跑惡意程式",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

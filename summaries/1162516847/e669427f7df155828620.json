@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e669427f7df155828620",
+ "repo_id": 1162516847,
+ "full_name": "MakazhanAlpamys/Soup",
+ "created_at": "2026-11-05T07:45:22+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6a68bac34ef1b130ba9e42e29d9c0ca0195c859ba4d7b9a0678c377162cb668d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用一個 YAML 設定檔和一行指令，就能微調大型語言模型的工具",
+  "features": [
+   "一個 YAML 設定檔搞定訓練，自動偵測 GPU 與批次大小",
+   "作者表示分層串流可在 4 GB 筆電 GPU 微調 8B 模型",
+   "提供本機 Web UI，可看訓練指標、探索資料、和模型對話"
+  ],
+  "audience": "想在自己電腦上微調開源大型語言模型的開發者、AI 研究人員與 MLOps 團隊",
+  "use_cases": [
+   "用自己的對話資料，以 LoRA／QLoRA 微調 Llama、Qwen 等模型",
+   "在只有小顯示卡的筆電上訓練 8B 模型（BETA 功能）",
+   "訓練完匯出 GGUF 等格式，可能搭配 Ollama 在本機使用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝 Python 3.11–3.13 套件，建議有 CUDA GPU 或 Apple Silicon",
+  "limitations": "分層串流仍是 BETA；CPU 訓練很慢；7B 模型建議 8 GB 以上 VRAM；v0.75 起未知設定欄位會直接報錯",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

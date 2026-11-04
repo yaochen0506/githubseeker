@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "9942924deaf0c278efb5",
+ "repo_id": 81598961,
+ "full_name": "python/cpython",
+ "created_at": "2026-11-05T07:46:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "284b231077a40b12e2839fea8511471363068952843fe6bf8fecf9fa48f625a1",
+ "has_readme": true,
+ "readme_chars": 7537,
+ "content": {
+  "one_liner": "Python 程式語言的官方原始碼，也就是 CPython 直譯器本身",
+  "features": [
+   "提供 Python 直譯器與標準函式庫的原始碼",
+   "可自行編譯，支援 PGO、LTO 等最佳化選項",
+   "內建完整測試套件，可驗證編譯結果"
+  ],
+  "audience": "想參與 Python 開發、自行編譯 Python 或研究直譯器內部的程式開發者",
+  "use_cases": [
+   "從原始碼編譯並安裝最新開發版 Python",
+   "回報錯誤或貢獻程式碼給 Python 本身",
+   "在同一台電腦並存安裝多個 Python 版本"
+  ],
+  "barrier": "code",
+  "barrier_note": "需使用命令列與 GCC 或 Clang 等編譯工具；一般使用者應改用官方安裝檔",
+  "limitations": "目前是 3.16 alpha 開發版；部分標準函式庫模組不一定能在所有平台編譯或使用，需另裝第三方函式庫",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

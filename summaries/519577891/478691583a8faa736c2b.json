@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "478691583a8faa736c2b",
+ "repo_id": 519577891,
+ "full_name": "upscayl/upscayl",
+ "created_at": "2026-11-05T07:46:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e9065039b28c4f93678539c3f5091594b892481d138a1b273bbabf17bc3c81eb",
+ "has_readme": true,
+ "readme_chars": 5211,
+ "content": {
+  "one_liner": "免費開源的 AI 圖片放大軟體，把低解析度圖片放大並變清晰",
+  "features": [
+   "用 Real-ESRGAN 等 AI 模型放大圖片",
+   "支援批次處理多張圖片",
+   "可加入更多模型，也可轉換自己的模型"
+  ],
+  "audience": "想把舊照片或低解析度圖片放大的一般使用者，也適合設計、攝影愛好者",
+  "use_cases": [
+   "把像素顆粒明顯的小圖放大成高解析度圖片",
+   "一次批次放大一整個資料夾的圖片",
+   "可能用來修復舊照片或網路下載的小圖"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載 Windows、macOS 或 Linux 安裝檔即可使用，但需支援 Vulkan 的顯示卡",
+  "limitations": "需支援 Vulkan 的 GPU，多數內建顯示晶片或只有 CPU 無法使用；無法修復失焦或模糊的照片",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

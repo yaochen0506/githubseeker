@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "cd944a6721f6f1d49dfa",
+ "repo_id": 1343344945,
+ "full_name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+ "created_at": "2026-11-05T07:42:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8f2729af86baf656728dffb41b4abd495c1d9a54f3d3fc7ef6813015a5245eef",
+ "has_readme": true,
+ "readme_chars": 5031,
+ "content": {
+  "one_liner": "把圖片轉成光碟資料，燒錄後讓 CD、DVD 或藍光碟面出現肉眼看得到的圖案",
+  "features": [
+   "支援 CD、DVD 與單層 BD-R 碟面圖像生成",
+   "可匯出 ISO／RAW／WAV+CUE 或直接即時燒錄",
+   "透過碟面照片輔助校準軌距，讓圖案更準"
+  ],
+  "audience": "有燒錄機、想在光碟碟面做出圖案的光碟玩家與 DIY 愛好者",
+  "use_cases": [
+   "把自己的照片或圖案燒在空白 DVD 碟面上做紀念",
+   "製作同時存放檔案、碟面又有圖案的混合光碟",
+   "可能用來替自製音樂 CD 做出特別的碟面造型"
+  ],
+  "barrier": "install",
+  "barrier_note": "Windows 下載 EXE 即可執行，需要燒錄機與空白光碟；Linux／macOS 只有命令列版",
+  "limitations": "即時燒錄為實驗性功能，只能用可報廢的空白碟；中斷或斷電可能讓光碟報廢；不支援雙層藍光；效果依碟片與燒錄機而定",
+  "based_on": [
+   "readme"
+  ]
+ }
+}
