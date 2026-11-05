@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f8fde5f319be1728718d",
+ "repo_id": 1162410458,
+ "full_name": "Thysrael/Horizon",
+ "created_at": "2026-11-06T07:41:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d15abcd00a85bc9d68233ee1a2730ec94e0dd2cb1f8885596a4c99b4798efb64",
+ "has_readme": true,
+ "readme_chars": 11927,
+ "content": {
+  "one_liner": "用 AI 從多個來源收集、篩選新聞，自動產生中英文每日簡報",
+  "features": [
+   "彙整 RSS、Hacker News、Reddit、X 等來源",
+   "依自訂評分規則篩選、去重並加上背景與討論",
+   "透過 Email、Webhook、微信或網頁發送簡報"
+  ],
+  "audience": "想省時間追蹤科技、財經或 AI 資訊，且會操作命令列的使用者",
+  "use_cases": [
+   "每天自動收到整理好的科技新聞摘要",
+   "把簡報推送到飛書、Slack 或 Discord 群組",
+   "用 GitHub Pages 架設每日更新的新聞簡報網站"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Python 或 Docker、用命令列執行，並準備 AI 模型的 API 金鑰",
+  "limitations": "Docker 映像未包含 X 來源所需的瀏覽器套件；尚未上架 PyPI；微信發送有回覆限制",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d79924997353d244234e",
+ "repo_id": 1446565991,
+ "full_name": "dragonwolfshovel/youtube-uploader",
+ "created_at": "2026-11-06T07:42:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "71dcb211b57bfed614f85620f6fe19a78c4c1058055c9fd0e187b72de2a0fdf1",
+ "has_readme": true,
+ "readme_chars": 2931,
+ "content": {
+  "one_liner": "透過官方 YouTube API 批次上傳影片，並設定縮圖與排程發布的工具",
+  "features": [
+   "一次批次上傳多部影片，中斷後可以接續上傳",
+   "編輯標題、說明、標籤，並設定自訂縮圖",
+   "排程發布時間，並追蹤 API 配額用量"
+  ],
+  "audience": "經常上傳大量影片的 YouTube 創作者、影片典藏者，以及想把上傳流程自動化的人",
+  "use_cases": [
+   "一次上傳一整批影片，並統一填好標題、說明和標籤",
+   "預先上傳影片，設定未來某個日期和時間自動公開",
+   "上傳 4K 影片時網路中斷，之後再接續上傳"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 Google 帳號，並自行建立 Google Cloud 專案、啟用 API 和下載憑證檔",
+  "limitations": "受 YouTube API 每日配額限制；大型影片的上傳時間取決於網速和檔案大小。安全性為作者自述，目前未經證實",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

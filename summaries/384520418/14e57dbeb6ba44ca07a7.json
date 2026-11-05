@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "14e57dbeb6ba44ca07a7",
+ "repo_id": 384520418,
+ "full_name": "MaaAssistantArknights/MaaAssistantArknights",
+ "created_at": "2026-11-06T07:43:24+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6511b9dc44505122ac3745638b20b5a66d90924df02954abc0c1f84d8ed82a79",
+ "has_readme": true,
+ "readme_chars": 2716,
+ "content": {
+  "one_liner": "用圖像辨識幫你一鍵自動完成《明日方舟》每日任務的小幫手",
+  "features": [
+   "自動刷關卡、基建換班與公開招募",
+   "自動領日常獎勵、訪問好友、信用購物",
+   "肉鴿全自動遊玩與依 JSON 作業自動戰鬥"
+  ],
+  "audience": "每天要花時間處理《明日方舟》日常任務的玩家，以及想整合自動化的開發者",
+  "use_cases": [
+   "每天一鍵跑完理智作戰、基建排班與公招",
+   "辨識持有幹員與養成材料，匯出到規劃工具",
+   "在無圖形介面的伺服器用 CLI 排程自動執行"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載安裝包並依新手教學設定遊戲連線，不用寫程式",
+  "limitations": "國際服、日服、韓服、繁中服多數功能已支援但未全面測試；僅供學習交流使用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

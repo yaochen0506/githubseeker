@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9215f633f74376c0fcc8",
+ "repo_id": 468957086,
+ "full_name": "blacklanternsecurity/bbot",
+ "created_at": "2026-11-06T07:44:31+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d3e9fcb72dd0cd8d490766bba231ae6fabb6d4f7e9c763fdcf7b4cbb1f5ec8b6",
+ "has_readme": true,
+ "readme_chars": 5192,
+ "content": {
+  "one_liner": "自動又會一層層往下挖的網路掃描工具，用來找子網域、網址、Email 和網站弱點",
+  "features": [
+   "遞迴找子網域，作者表示能多找到 20-50%",
+   "網頁爬蟲、Email 收集、網站弱點掃描",
+   "結果可輸出到 Neo4j、Slack、資料庫等"
+  ],
+  "audience": "資安研究人員、滲透測試人員、漏洞賞金獵人和負責管理企業對外攻擊面的團隊",
+  "use_cases": [
+   "找出一個網域底下所有子網域，盤點公司對外的資產",
+   "參加漏洞賞金計畫時，自動做前期偵察和網站掃描",
+   "收集特定組織公開的 Email 地址，用於 OSINT 調查"
+  ],
+  "barrier": "code",
+  "barrier_note": "要用命令列安裝和操作，也可以用 Docker 或 Python API；部分資料來源需要第三方 API 金鑰",
+  "limitations": "3.0 版的 CLI、預設設定和 Python API 有不相容的變更，從 2.x 升級前要先看遷移指南；掃描速度受 DNS 解析器設定影響",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

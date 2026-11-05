@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7c267ff271866f7b480e",
+ "repo_id": 1199643986,
+ "full_name": "datadrivenconstruction/OpenConstructionERP",
+ "created_at": "2026-11-06T07:43:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "55752305c854b0b42b1e5d3a040b367bec3a3352e48a6b4b61d653baab94b81a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的營建業 ERP，可做工程估價、數量計算、排程與招標管理",
+  "features": [
+   "BOQ 工程數量清單編輯，內建 12 萬筆以上單價資料",
+   "從 PDF、CAD、BIM 圖檔計算數量，可用 AI 協助",
+   "支援 44 種語言與 30 多種地區營建標準"
+  ],
+  "audience": "營造廠、工程估價人員、建築專案管理者，以及想自行架設系統的營建公司",
+  "use_cases": [
+   "為工程案編列預算與估價，加上管理費、利潤與稅金",
+   "從 PDF 圖面或 BIM 模型計算數量，再匯入工程數量清單",
+   "管理分包招標、請款、變更單與專案成本追蹤"
+  ],
+  "barrier": "install",
+  "barrier_note": "可下載桌面版 App 直接執行；也能用 pip 或 Docker 安裝；AI 功能需自備 LLM 服務",
+  "limitations": "README 附有 AI 免責聲明；與商用軟體的比較由作者整理，作者表示價格為概略數字",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

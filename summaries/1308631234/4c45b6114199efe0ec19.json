@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4c45b6114199efe0ec19",
+ "repo_id": 1308631234,
+ "full_name": "tester-army/e2e",
+ "created_at": "2026-11-06T07:43:43+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8a3e748952e61385ce30753ab002e8dadfa02a54e44629e893183b85e69dfcc6",
+ "has_readme": true,
+ "readme_chars": 3264,
+ "content": {
+  "one_liner": "用自然語言描述測試目標，讓 AI 代理操作網頁或手機 App 做自動化測試",
+  "features": [
+   "用自然語言描述目標，由代理自動操作 App",
+   "支援 Chromium、Firefox、WebKit 與 iOS、Android",
+   "記錄代理操作，下次不呼叫模型直接重播"
+  ],
+  "audience": "負責網頁或手機 App 品質的軟體工程師與測試人員",
+  "use_cases": [
+   "在 Next.js、Expo、Flutter 等專案中撰寫端對端測試",
+   "搭配 BrowserStack 等雲端服務在真實手機上測試",
+   "在 pull request 中自動貼出測試結果留言"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會用命令列與 TypeScript，並準備 AI 模型的 API key、訂閱或本機模型",
+  "limitations": "仍在開發中，1.0 前 API 與設定可能變動；CLI 預設傳送匿名使用資料，可關閉",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

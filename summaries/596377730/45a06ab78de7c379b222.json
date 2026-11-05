@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "45a06ab78de7c379b222",
+ "repo_id": 596377730,
+ "full_name": "openobserve/openobserve",
+ "created_at": "2026-11-06T07:44:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ee380a1af1ffa617430a2815463b1e2c157e58a41f577dbb8863c3a8600a57cb",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的系統監控平台，可以集中收集、搜尋與分析日誌、指標和追蹤資料",
+  "features": [
+   "日誌、指標、追蹤、前端使用者監控整合在同一個網頁介面",
+   "儀表板、警報與事件管理，支援 SQL 和 PromQL 查詢",
+   "AI 助理可把自然語言問題轉成查詢與儀表板"
+  ],
+  "audience": "需要監控網站、App 或伺服器運作狀況的工程師、維運團隊與企業 IT 部門",
+  "use_cases": [
+   "集中搜尋多台伺服器的日誌，找出錯誤原因",
+   "監控網站使用者的載入速度、錯誤並重播操作過程",
+   "追蹤 LLM 應用的成本、token 用量與延遲"
+  ],
+  "barrier": "code",
+  "barrier_note": "自架需用 Docker 等工具部署並串接資料來源；也可註冊官方雲端服務",
+  "limitations": "SSO、進階權限控管、敏感資料遮蔽等屬企業版功能；免費額度每日 50 GB，超過需註冊。儲存成本降低 140 倍為作者表示",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

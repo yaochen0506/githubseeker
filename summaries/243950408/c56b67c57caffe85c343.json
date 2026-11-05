@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c56b67c57caffe85c343",
+ "repo_id": 243950408,
+ "full_name": "Anduin2017/HowToCook",
+ "created_at": "2026-11-06T07:43:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "771b3581b3c22964c5ce4a8b3585ccd323d14a68ac1251fd7c74c906660ee7ea",
+ "has_readme": true,
+ "readme_chars": 3954,
+ "content": {
+  "one_liner": "由社群共同整理、寫法清楚精準的中文家常菜食譜大全",
+  "features": [
+   "收錄素菜、葷菜、海鮮、早餐、甜點、飲料等數百道食譜",
+   "提供用刀、蒸煮、炒煎、食品安全等廚房基礎教學",
+   "有網站可直接瀏覽，也能用 Docker 在自己電腦架設"
+  ],
+  "audience": "想在家下廚的新手，尤其喜歡步驟清楚、份量明確的人；也適合想參與貢獻食譜的人",
+  "use_cases": [
+   "照著步驟學做番茄炒蛋、蛋炒飯等家常菜",
+   "不知道今天吃什麼時，翻食譜分類找靈感",
+   "學習汆燙、醃漬、炒糖色等烹飪技巧"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接上專案網站就能看食譜；想自己架站才需要安裝 Docker",
+  "limitations": "內容以簡體中文為主；自行架站的話，預設帳號密碼要記得修改，而且啟動後最多要等 30 分鐘才會建好索引",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

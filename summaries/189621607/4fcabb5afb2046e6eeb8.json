@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4fcabb5afb2046e6eeb8",
+ "repo_id": 189621607,
+ "full_name": "github/docs",
+ "created_at": "2026-11-06T07:44:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a68ef03855cdc77259ad93814e3f3d28d4a2e34bb9b96b31549420a8e9549537",
+ "has_readme": true,
+ "readme_chars": 1724,
+ "content": {
+  "one_liner": "GitHub 官方說明文件網站的開源原始檔，任何人都能幫忙修改內容",
+  "features": [
+   "存放 GitHub 官方文件的 Markdown 內容",
+   "開放公司內外的人提交內容修正",
+   "與 GitHub 內部私有文件庫定期同步"
+  ],
+  "audience": "想改善 GitHub 官方文件的開源貢獻者、GitHub 員工，以及想學習參與開源的人",
+  "use_cases": [
+   "發現 GitHub 文件有錯誤或不清楚時，提交內容修正",
+   "透過修改文件練習 Git 與 pull request 等開源貢獻流程",
+   "GitHub 員工與客戶合作時，在公開文件庫發布內容"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 GitHub 帳號，並會使用 Git 與 pull request 流程才能貢獻",
+  "limitations": "只接受 /content 的 .md 檔與部分 /data 內容的修改；基礎架構、工作流程與建站程式碼不開放外部修改",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

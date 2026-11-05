@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "26d3954ab0501ea9443a",
+ "repo_id": 493376588,
+ "full_name": "cordiverse/cordis",
+ "created_at": "2026-11-06T07:43:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "feb46e439beb4a25c8d5b6f2bdcc31c24a7ecba9fce843724e475eeb5c16e7d1",
+ "has_readme": true,
+ "readme_chars": 329,
+ "content": {
+  "one_liner": "一套用 TypeScript 寫的程式開發框架，主打「時空可組合性」",
+  "features": [
+   "提供「時空可組合性」的元框架設計",
+   "從主題標籤看得出支援外掛（plugin）架構",
+   "附有相關學術論文說明程式設計典範"
+  ],
+  "audience": "使用 TypeScript 或 Node.js 的軟體開發者，以及對程式設計典範有興趣的研究者",
+  "use_cases": [
+   "開發者可能用它打造支援外掛的 Node.js 應用程式",
+   "研究者可以搭配論文了解「時空可組合性」的程式設計典範"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 TypeScript，並熟悉 Node.js 開發環境",
+  "limitations": "專案還在積極開發中，API 尚未穩定，可能隨時變動且不另行通知；官方文件也還在撰寫中",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

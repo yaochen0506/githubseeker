@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9e3be9e84548112b787f",
+ "repo_id": 435427730,
+ "full_name": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
+ "created_at": "2026-11-06T07:44:37+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "047980396fbd2e28208003260de6d1f7b9dfef4dd3f17835429934cd11f4dab0",
+ "has_readme": true,
+ "readme_chars": 5413,
+ "content": {
+  "one_liner": "提供 iOS 上 Shadowrocket 用的分流與去廣告規則檔，每天自動更新",
+  "features": [
+   "多款規則可選：黑名單、白名單、國內外劃分等",
+   "整合 EasyList 等清單，過濾網頁與 App 廣告",
+   "可搭配「捷徑」自動化，每天更新規則"
+  ],
+  "audience": "已在 iPhone 上使用 Shadowrocket App，想設定分流或去廣告的使用者",
+  "use_cases": [
+   "在 Shadowrocket 中只套用去廣告規則，當成 iOS 全域廣告過濾",
+   "海外使用者用「回國規則」連回中國的網路服務",
+   "依網站決定直連或走代理，切換黑白名單使用"
+  ],
+  "barrier": "install",
+  "barrier_note": "需購買安裝 Shadowrocket App 並匯入規則網址，本身不提供代理伺服器",
+  "limitations": "規則只是純文字檔，無法單獨提供翻牆功能；不保證 100% 過濾廣告，影片廣告尤其難擋",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

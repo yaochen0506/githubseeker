@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4fb586a7e21389514235",
+ "repo_id": 1216954187,
+ "full_name": "ConardLi/garden-skills",
+ "created_at": "2026-11-06T07:42:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b1f0cf75ed42be9597244f92cb0abb61f1a479bc3ad50767cae9168a5259fb39",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 Claude Code 等 AI 程式助理用的技能包，可以做網頁、影片、圖片和文章",
+  "features": [
+   "用程式產生動態短片與網頁簡報影片",
+   "協助 AI 做出更有設計感的網頁與圖片",
+   "把各種資料改寫成精美文章、查詢本地知識庫"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex 等 AI 程式助理的開發者與設計工作者",
+  "use_cases": [
+   "把文章或講稿做成 16:9 網頁簡報，再錄成影片",
+   "用 GPT Image 2 產生海報、產品圖或資訊圖表",
+   "把 PDF、網址或筆記整理成好讀的分享文章"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過命令列或外掛安裝到 AI 程式助理中，部分功能需要 API 帳號",
+  "limitations": "README 未明確說明；部分技能需 TTS 或圖片生成 API，網頁瀏覽器驗收只在使用者要求時才會執行",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

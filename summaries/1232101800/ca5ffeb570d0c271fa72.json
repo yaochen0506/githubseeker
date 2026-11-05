@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ca5ffeb570d0c271fa72",
+ "repo_id": 1232101800,
+ "full_name": "jo-duchan/tapflow",
+ "created_at": "2026-11-06T07:43:57+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6eb0764867b018bed349246e68dfbf969e39e6ae3071d605aff8dd348482dcca",
+ "has_readme": true,
+ "readme_chars": 11474,
+ "content": {
+  "one_liner": "把 Mac 上的 iOS 與 Android 模擬器串流到瀏覽器，讓全團隊都能測試 App",
+  "features": [
+   "瀏覽器即時操作模擬器，支援觸控、滑動與縮放",
+   "上傳 App 安裝檔並追蹤測試狀態、錄製測試過程",
+   "團隊角色權限管理，另有實驗性 MCP 伺服器"
+  ],
+  "audience": "行動 App 開發團隊，包括 QA、產品經理、設計師與後端工程師",
+  "use_cases": [
+   "產品經理在瀏覽器比較不同版本 App 的行為",
+   "設計師檢查 App 在不同螢幕尺寸上的版面",
+   "QA 把裝置切成離線，測試 App 斷網時的表現"
+  ],
+  "barrier": "code",
+  "barrier_note": "架設需用命令列，要有 Mac、Xcode 或 Android SDK 與 Node.js 22 以上",
+  "limitations": "代理程式只能在 macOS 執行；仍在 v0.x 開發中；錄影保留約 72 小時；流程執行與 MCP 屬實驗功能",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

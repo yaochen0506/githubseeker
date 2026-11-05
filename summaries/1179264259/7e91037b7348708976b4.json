@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "7e91037b7348708976b4",
+ "repo_id": 1179264259,
+ "full_name": "garrytan/gstack",
+ "created_at": "2026-11-06T07:41:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "135b2e45577ec5aa877c250998d756050fd7b56794f4f69a07e0a77cefc65d42",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把 Claude Code 等 AI 程式助理變成一支虛擬工程團隊的指令工具組",
+  "features": [
+   "用斜線指令扮演 CEO、設計師、工程主管等角色",
+   "審查程式碼找出上線後才會出現的錯誤並修正",
+   "開啟真實瀏覽器做 QA 測試，並自動送出 PR"
+  ],
+  "audience": "會寫程式的創辦人、第一次用 Claude Code 的使用者、技術主管與資深工程師",
+  "use_cases": [
+   "用 /office-hours 描述產品構想，產出設計文件",
+   "用 /review 檢查分支上的程式碼變更並修正明顯錯誤",
+   "用 /qa 在測試網站上重現並修正錯誤"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Claude Code、Git、Bun，並在命令列執行安裝與開發流程",
+  "limitations": "Bun 需 1.3.3 以上；Claude Code 以外的 AI 工具多屬實驗性支援；/cso 需另裝原生工具鏈",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c190c505c86fdbb573e7",
+ "repo_id": 1446569267,
+ "full_name": "AtomIllusionistDwell/watson-username-footprint-finder",
+ "created_at": "2026-11-06T07:42:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4a124720443772eb0747f7a83e0e14754dfd594cf6c670152f5ea5c47931de82",
+ "has_readme": true,
+ "readme_chars": 7257,
+ "content": {
+  "one_liner": "Windows 桌面軟體，輸入暱稱、Email、電話或網站，查詢公開網頁並整理成報告",
+  "features": [
+   "作者表示可查詢 3,100 多個公開網站",
+   "標示「同一人」或「只是同名」並以白話摘要",
+   "一鍵存成 PDF，搜尋紀錄只存在本機"
+  ],
+  "audience": "想確認交易對象、徵才者身分，或想了解自己網路足跡的 Windows 使用者",
+  "use_cases": [
+   "付款前查詢賣家或供應商在網路上的公開資料",
+   "收到可疑徵才訊息時，確認對方帳號背景",
+   "查詢自己的暱稱或 Email，了解自己的數位足跡"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載單一 .exe 檔即可執行，不需帳號；僅支援 Windows",
+  "limitations": "僅支援 Windows；執行檔未簽章會跳出警告；README 顯示程式碼含範例資料，實際查詢功能不明，請謹慎下載",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

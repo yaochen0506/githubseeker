@@ -1,13 +1,19 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-05T07:42:34+08:00",
+ "updated_at": "2026-11-06T07:41:09+08:00",
  "repos": {
   "17578592": {
    "category": "everyday-tools",
    "exclude_reason": null,
    "full_name": "bleachbit/bleachbit",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "18106269": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "lz4/lz4",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "24993138": {
    "category": "dev-tools",
@@ -20,6 +26,12 @@
    "exclude_reason": null,
    "full_name": "mermaid-js/mermaid",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "29290473": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "XX-net/XX-Net",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "42920477": {
    "category": "dev-tools",
@@ -117,6 +129,12 @@
    "full_name": "OpenCTI-Platform/opencti",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "189621607": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "github/docs",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "200722670": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -152,6 +170,12 @@
    "exclude_reason": null,
    "full_name": "ccfos/nightingale",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "263556058": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "521xueweihan/GitHub520",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "274495425": {
    "category": "fun-creative",
@@ -189,6 +213,12 @@
    "full_name": "xiaojieonly/Ehviewer_CN_SXJ",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "312629343": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "shadow1ng/fscan",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "319167362": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -200,6 +230,18 @@
    "exclude_reason": null,
    "full_name": "xfangfang/wiliwili",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "334110599": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "iDvel/rime-ice",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "345557071": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "go-musicfox/go-musicfox",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "347404990": {
    "category": "security-network",
@@ -267,6 +309,12 @@
    "full_name": "paperless-ngx/paperless-ngx",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "468957086": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "blacklanternsecurity/bbot",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "470730648": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -278,6 +326,12 @@
    "exclude_reason": null,
    "full_name": "ghostty-org/ghostty",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "493376588": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "cordiverse/cordis",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "496221318": {
    "category": "everyday-tools",
@@ -369,6 +423,12 @@
    "full_name": "langbot-app/LangBot",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "575401013": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "immersive-translate/immersive-translate",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "575865240": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -441,6 +501,12 @@
    "full_name": "gitroomhq/postiz-app",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "688164459": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "harvard-edge/cs249r_book",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "695864515": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -465,11 +531,29 @@
    "full_name": "ItzCrazyKns/Vane",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "790916393": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "NVIDIA/Model-Optimizer",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "793784055": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "google-research/timesfm",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "812975380": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "agent0ai/agent-zero",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "836976013": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "mihomo-party-org/clash-party",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "872119017": {
    "category": "dev-tools",
@@ -579,6 +663,12 @@
    "full_name": "github/spec-kit",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1044296738": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "microsoft/VibeVoice",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "1048065319": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -608,6 +698,12 @@
    "exclude_reason": null,
    "full_name": "KeygraphHQ/shannon",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1070285775": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "southleft/figma-console-mcp",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "1073224021": {
    "category": "ai-agents",
@@ -644,6 +740,12 @@
    "exclude_reason": null,
    "full_name": "vectorize-io/hindsight",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1096054771": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "awslabs/aidlc-workflows",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "1097346685": {
    "category": "ai-agents",
@@ -687,6 +789,12 @@
    "full_name": "Yeachan-Heo/oh-my-claudecode",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1132001614": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vercel-labs/agent-browser",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "1134543109": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -722,6 +830,12 @@
    "exclude_reason": null,
    "full_name": "mattpocock/skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1151113612": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google-gemini/gemini-skills",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "1152014594": {
    "category": "ai-agents",
@@ -795,6 +909,12 @@
    "full_name": "binance/binance-skills-hub",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1172206206": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "KenKaiii/gg-framework",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "1177402105": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -855,6 +975,12 @@
    "full_name": "calesthio/OpenMontage",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1197652028": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google/skills",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "1198124295": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -902,6 +1028,12 @@
    "exclude_reason": null,
    "full_name": "higgsfield-ai/skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1216954187": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ConardLi/garden-skills",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "1217040185": {
    "category": "ai-agents",
@@ -1047,6 +1179,12 @@
    "full_name": "superdesigndev/treg",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1302612528": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "sandbox-quantum/switch",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
   "1303258850": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1076,6 +1214,12 @@
    "exclude_reason": null,
    "full_name": "AminBlg/SimpleEnglish",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1308631234": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "tester-army/e2e",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   },
   "1309102418": {
    "category": "ai-agents",
@@ -1382,6 +1526,24 @@
    "exclude_reason": null,
    "full_name": "KKKKhazix/agent-autoloop",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "1445802355": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "1446565991": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "dragonwolfshovel/youtube-uploader",
+   "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "1446569267": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "AtomIllusionistDwell/watson-username-footprint-finder",
+   "classified_at": "2026-11-06T07:41:09+08:00"
   }
  }
 }
