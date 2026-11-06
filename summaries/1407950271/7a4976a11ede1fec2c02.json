@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "7a4976a11ede1fec2c02",
+ "repo_id": 1407950271,
+ "full_name": "openai/math",
+ "created_at": "2026-11-07T07:14:37+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fd54f54f85b74f637f18ce068e71e792529856781ae63ffb1ba2da0a19a4be26",
+ "has_readme": true,
+ "readme_chars": 3657,
+ "content": {
+  "one_liner": "公開 OpenAI 內部模型針對數學研究難題產出的論文稿與證明資料",
+  "features": [
+   "收錄 721 篇數學手稿，分成 373 個主題家族",
+   "約 42% 主要結果附有 Lean 形式化證明",
+   "提供部分結果的模型推理過程摘要"
+  ],
+  "audience": "數學研究者、形式化證明社群，以及關心 AI 數學能力的讀者",
+  "use_cases": [
+   "閱讀 PDF 手稿，了解 AI 模型對開放數學問題提出的證明",
+   "用 Lean 檢查已形式化的證明是否成立",
+   "研究者引用個別手稿時，使用目錄內的 BibTeX"
+  ],
+  "barrier": "code",
+  "barrier_note": "讀 PDF 不必安裝工具，但要驗證證明得會用 Lean 與命令列，內容也需要數學專業",
+  "limitations": "並非所有結果都有 Lean 形式化，未形式化的結果可能有錯；作者表示這些是原始研究資料，不是正式論文",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

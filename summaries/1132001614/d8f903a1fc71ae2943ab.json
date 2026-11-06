@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d8f903a1fc71ae2943ab",
+ "repo_id": 1132001614,
+ "full_name": "vercel-labs/agent-browser",
+ "created_at": "2026-11-07T07:13:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8b95c4d0470762177a4e94816e2f0a9513e853cfcf09064c8022a1aa0a7adfa0",
+ "has_readme": true,
+ "readme_chars": 4642,
+ "content": {
+  "one_liner": "讓 AI 助理透過命令列一步步操作瀏覽器、讀取網頁並點擊元素的工具",
+  "features": [
+   "把網頁轉成精簡文字，每個元素附編號供 AI 操作",
+   "支援點擊、填表、截圖、輸出 PDF、錄影等指令",
+   "可當 MCP server，也支援雲端瀏覽器服務"
+  ],
+  "audience": "開發 AI agent 的工程師，或想讓 AI 助理自動操作網頁的技術使用者",
+  "use_cases": [
+   "讓 AI agent 自動開啟網頁、填寫表單並送出",
+   "對網頁截圖或輸出 PDF，並比較頁面前後差異",
+   "可能用於網站測試與除錯，例如查看主控台錯誤與效能指標"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過 Homebrew 或 npx 安裝，並在命令列下指令操作",
+  "limitations": "網頁跳轉或內容變動後需重新取得快照才能使用元素編號；目標被遮擋或隱藏時點擊會失敗",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0b30e3e345976c9a8cf1",
+ "repo_id": 340547520,
+ "full_name": "zed-industries/zed",
+ "created_at": "2026-11-07T07:15:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "79072646fa03009b72cd58c9c53c7146dd0475a36d82384c265a982e61aa0e87",
+ "has_readme": true,
+ "readme_chars": 1936,
+ "content": {
+  "one_liner": "由 Atom 與 Tree-sitter 原班人馬打造、可多人協作的程式碼編輯器",
+  "features": [
+   "作者表示具備高效能的程式碼編輯體驗",
+   "支援多人同時協作編輯（multiplayer）",
+   "支援 macOS、Linux、Windows 三大平台"
+  ],
+  "audience": "需要撰寫或編輯程式碼的軟體開發者、工程師與學習程式的人",
+  "use_cases": [
+   "在電腦上撰寫與編輯程式碼",
+   "與團隊成員多人協作編輯同一份程式碼",
+   "可能用來取代原本使用的其他程式碼編輯器"
+  ],
+  "barrier": "install",
+  "barrier_note": "可直接下載安裝或用套件管理工具安裝，但本身是寫程式用的工具",
+  "limitations": "目前尚未提供網頁版；授權主要為 GPL-3.0-or-later，部分元件為 Apache-2.0",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "64c55ebd4004db8254e0",
+ "repo_id": 10270250,
+ "full_name": "react/react",
+ "created_at": "2026-11-07T07:15:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5ef8ab952a01c20f6c663f5d1d0c7e034e0047a6e48e9c087cd8855e7d8efe18",
+ "has_readme": true,
+ "readme_chars": 3100,
+ "content": {
+  "one_liner": "用 JavaScript 打造網頁與手機 App 操作介面的開發函式庫",
+  "features": [
+   "宣告式寫法，資料變動時自動更新畫面",
+   "以元件為單位組合出複雜介面",
+   "可在伺服器端渲染，也能用於手機 App"
+  ],
+  "audience": "想製作網頁或手機 App 介面的前端工程師與程式開發者",
+  "use_cases": [
+   "為網站建立可互動的使用者介面",
+   "在既有專案中逐步加入 React 開發新功能",
+   "搭配 React Native 開發手機 App"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 JavaScript，並熟悉前端開發工具",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

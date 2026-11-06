@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0e75c2d2fc7e43aac3e5",
+ "repo_id": 876286167,
+ "full_name": "lfnovo/open-notebook",
+ "created_at": "2026-11-07T07:15:10+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "aa1b005ff6c2349289c51a4394d28643ce7319648e8f8a6bf1862efa1fd8f1df",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源、可自架的 Notebook LM 替代品，用 AI 整理資料、對話並產生 Podcast",
+  "features": [
+   "匯入 PDF、影片、音訊、網頁等資料並搜尋",
+   "根據你的資料和 AI 對話，回答附來源引用",
+   "產生 1～4 人對談的 Podcast"
+  ],
+  "audience": "重視隱私、想自己掌控研究資料與 AI 模型選擇的研究者、學生與自學者",
+  "use_cases": [
+   "把多份 PDF 與網頁放進筆記本，請 AI 摘要並附出處回答問題",
+   "將研究資料轉成多人對談的 Podcast 來收聽",
+   "搭配 Ollama 在自己電腦上用本機模型，資料不外流"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Docker、編輯設定檔並用命令列啟動，還要 AI 服務的 API key 或本機模型",
+  "limitations": "預設沒有密碼且對所有網路介面開放，共用網路時要自行限制或設密碼；Anthropic、Groq 沒有 embedding 模型",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

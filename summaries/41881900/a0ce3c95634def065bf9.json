@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a0ce3c95634def065bf9",
+ "repo_id": 41881900,
+ "full_name": "microsoft/vscode",
+ "created_at": "2026-11-07T07:15:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0174855f9abfe5b035da173f97b7401b5df308599f0a8a38171caee70063d69d",
+ "has_readme": true,
+ "readme_chars": 4084,
+ "content": {
+  "one_liner": "微軟開發的免費程式碼編輯器 Visual Studio Code 的開源原始碼",
+  "features": [
+   "程式碼編輯、瀏覽與理解輔助",
+   "輕量除錯功能與豐富的擴充套件機制",
+   "內建多種程式語言的語法與片段支援"
+  ],
+  "audience": "寫程式的開發者，以及想參與 VS Code 開發、回報問題或協助翻譯的人",
+  "use_cases": [
+   "在 Windows、macOS、Linux 上編輯、建置與除錯程式",
+   "回報錯誤、提出功能需求或協助翻譯",
+   "從原始碼自行建置並參與開發"
+  ],
+  "barrier": "code",
+  "barrier_note": "自行建置原始碼需要 Docker 或 Codespaces；一般人可直接下載現成的 VS Code",
+  "limitations": "完整建置需要至少 4 核心、6 GB RAM（建議 8 GB）；正式版 VS Code 含微軟客製內容，採另外的產品授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

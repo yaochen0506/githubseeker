@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "79ee808ca30db086e5d0",
+ "repo_id": 333483116,
+ "full_name": "dgtlmoon/changedetection.io",
+ "created_at": "2026-11-07T07:14:56+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e9adabd3d9524befc08cb558685b8eb0976dc39bda94fea1a0aca9ed6a32d5cb",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "自動監控網頁內容變化，有更新、降價或補貨時通知你",
+  "features": [
+   "透過 Email、Discord、Telegram 等管道發送通知",
+   "追蹤商品價格與補貨，可設定價格條件",
+   "可接 LLM 過濾雜訊並用白話摘要變化"
+  ],
+  "audience": "想追蹤商品價格、政府公告、職缺或網站內容更新的人，以及需要自架監控工具的人",
+  "use_cases": [
+   "追蹤想買的商品降價或重新到貨",
+   "留意政府機關或學校網站的公告更新",
+   "監控公司徵才頁面，有新職缺就收到通知"
+  ],
+  "barrier": "install",
+  "barrier_note": "自架需用 Docker 或 Python pip 安裝；另有付費訂閱版，註冊後用瀏覽器就能使用",
+  "limitations": "視覺選取器與瀏覽器操作步驟需啟用 Playwright；AI 功能要自備 LLM 金鑰或在本機執行模型",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

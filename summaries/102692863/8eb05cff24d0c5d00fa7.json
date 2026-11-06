@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8eb05cff24d0c5d00fa7",
+ "repo_id": 102692863,
+ "full_name": "onnx/onnx",
+ "created_at": "2026-11-07T07:14:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4cfe731ebd6673393fa6e1e20c2fe818d63e479db2c82181fc6a91b49e1e4a9d",
+ "has_readme": true,
+ "readme_chars": 4240,
+ "content": {
+  "one_liner": "一種開放的 AI 模型檔案格式，讓模型能在不同框架和工具之間通用",
+  "features": [
+   "定義 AI 模型通用格式，涵蓋深度學習與傳統機器學習",
+   "內建運算子與標準資料型別的規格定義",
+   "提供形狀推論、圖最佳化與版本轉換工具"
+  ],
+  "audience": "AI 開發者、機器學習工程師，以及需要在不同框架間搬移模型的研究人員",
+  "use_cases": [
+   "把 PyTorch 等框架訓練好的模型轉成通用格式，方便換工具使用",
+   "將研究階段的模型部署到正式環境進行推論",
+   "下載現成的預訓練 ONNX 模型直接取用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 環境，從 PyPI 安裝套件並撰寫程式操作模型",
+  "limitations": "目前主要著重在推論（scoring）所需的功能；abi3 相容套件支援 Python 3.12 以上版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

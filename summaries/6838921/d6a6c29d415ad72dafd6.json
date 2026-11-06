@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d6a6c29d415ad72dafd6",
+ "repo_id": 6838921,
+ "full_name": "prometheus/prometheus",
+ "created_at": "2026-11-07T07:16:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "00f214b07bede5ea59ff722e551a274067b90c0e892f6c25535d15d1aaf3d781",
+ "has_readme": true,
+ "readme_chars": 6264,
+ "content": {
+  "one_liner": "定時收集伺服器與服務的運作數據，存成時間序列資料並在異常時發出警報",
+  "features": [
+   "定時從設定的目標收集指標資料",
+   "用 PromQL 查詢語言分析多維度資料",
+   "符合指定條件時觸發警報，並支援圖表呈現"
+  ],
+  "audience": "負責維運伺服器、雲端服務或系統的工程師與 IT 管理人員",
+  "use_cases": [
+   "監控伺服器與服務的運作狀態與效能指標",
+   "設定條件，在系統出現異常時自動發出警報",
+   "搭配圖表與儀表板查看指標隨時間的變化"
+  ],
+  "barrier": "code",
+  "barrier_note": "需下載執行檔或使用 Docker 架設，並撰寫設定檔與使用命令列",
+  "limitations": "不適合當 Go 函式庫使用，內部 API 可能變動；Remote Write 函式庫屬實驗性質；本機 make docker 建置的映像檔不完整。",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

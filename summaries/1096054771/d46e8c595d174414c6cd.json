@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d46e8c595d174414c6cd",
+ "repo_id": 1096054771,
+ "full_name": "awslabs/aidlc-workflows",
+ "created_at": "2026-11-07T07:14:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "98dc78192334b51cda7c746cbf491f26c1f325c774ff20b3fb659747dc2c227b",
+ "has_readme": true,
+ "readme_chars": 8406,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理照著有步驟、可審核的流程來開發軟體",
+  "features": [
+   "支援 Claude Code、Cursor、Codex CLI 等多種工具",
+   "內建 11 種工作流程，涵蓋新功能、修 bug、資安等",
+   "設有人工核准關卡，並保留完整的稽核紀錄"
+  ],
+  "audience": "已經在用 AI 寫程式助理的軟體開發者與開發團隊",
+  "use_cases": [
+   "用 Claude Code 等工具開發新功能時，照固定流程整理需求、實作與測試",
+   "修 bug 或做概念驗證時，套用對應的工作流程",
+   "團隊需要保留決策與審核紀錄，以便追溯開發過程"
+  ],
+  "barrier": "code",
+  "barrier_note": "要用命令列安裝 aidlc，並搭配 Claude Code、Kiro 等 AI 寫程式工具使用",
+  "limitations": "作者提醒生成式 AI 可能出錯，請先檢查產出內容與費用；作者建議搭配推理能力強的模型",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

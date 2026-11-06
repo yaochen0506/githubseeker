@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "67283f5a2c56803e7dd2",
+ "repo_id": 1433297111,
+ "full_name": "interplains/Zero-Breach-Toolkit",
+ "created_at": "2026-11-07T07:14:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4b4ed42eec9672a9fea1715a2532d160675cad1fef2e3402eacbbfa534195534",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費開源工具，檢查電腦、Android 手機和 iPhone 備份有沒有被植入 Pegasus 等間諜軟體的痕跡",
+  "features": [
+   "比對已公開的 Pegasus、Predator 等間諜軟體痕跡",
+   "提供 Windows、Mac、Linux 免安裝程式，支援 27 種語言",
+   "作者表示只讀取不修改，掃描時不連網"
+  ],
+  "audience": "擔心被監控的記者、社運人士、人權工作者，以及想檢查自己裝置安全的一般使用者",
+  "use_cases": [
+   "懷疑電腦被植入間諜軟體時，跑一次標準檢查（約 15～20 分鐘）",
+   "用 USB 連接 Android 手機，收集資料後進行檢查",
+   "把 iPhone 或 iPad 加密備份到電腦，再檢查這份備份"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載現成程式點兩下就能用；檢查手機要開 USB 偵錯或先做 iPhone 備份",
+  "limitations": "結果正常不代表安全，抓不到未公開的間諜軟體；程式還沒有程式碼簽章，防毒軟體可能誤報",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1c85de0f566efd9b4677",
+ "repo_id": 489384246,
+ "full_name": "antoniaci/blackbird",
+ "created_at": "2026-11-07T07:16:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9639ce0f544a9f73bd1736c417faa59721a06f99170d839f00f73e2515ff3483",
+ "has_readme": true,
+ "readme_chars": 1574,
+ "content": {
+  "one_liner": "輸入使用者名稱或 Email，查出這個人在 600 多個平台上有哪些帳號",
+  "features": [
+   "用使用者名稱或 Email 搜尋 600 多個平台的帳號",
+   "免費 AI 分析，產生使用者的行為與技術側寫",
+   "搜尋結果可匯出成 PDF 或 CSV"
+  ],
+  "audience": "資安研究人員、滲透測試人員，以及做公開來源情報（OSINT）調查的人",
+  "use_cases": [
+   "調查某個使用者名稱在各社群平台上註冊了哪些帳號",
+   "用 Email 反查對應的線上帳號，並匯出成 PDF 報告",
+   "可能用來檢查自己的帳號在網路上曝光的程度"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Python 並在命令列操作，用 AI 功能要先產生 API key",
+  "limitations": "AI 功能每天有使用上限；作者表示只會送出網站名稱，不會分享敏感資料。OTinstaller 是第三方安裝工具，只支援 Linux",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

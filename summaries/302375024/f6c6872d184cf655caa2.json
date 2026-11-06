@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f6c6872d184cf655caa2",
+ "repo_id": 302375024,
+ "full_name": "YSGStudyHards/DotNetGuide",
+ "created_at": "2026-11-07T07:16:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4415593a999c0e2d15c5f68eb45fbb599183b57194bf01cabea1341f8cc17ed5",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "整理 C#/.NET 學習資源、實戰教學與面試題的中文知識庫",
+  "features": [
+   "彙整學習路線、書籍、影片與文章",
+   "收錄常見面試題、面試須知與履歷範本",
+   "推薦開發工具、AI 程式助手與優秀開源專案"
+  ],
+  "audience": "想入門或正在從事 C#/.NET 開發的工程師、準備求職面試的人",
+  "use_cases": [
+   "新手照著學習路線，有系統地自學 C#/.NET",
+   "求職前複習常見的 .NET 面試題",
+   "尋找 Blazor、SQLite 等實戰教學與開源框架"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在 GitHub 網頁上閱讀就行，但內容本身是給寫程式的人看的",
+  "limitations": "作者表示個人能力有限，面試題只整理了常見的知識點；部分內容須透過微信公眾號取得，且以簡體中文撰寫",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

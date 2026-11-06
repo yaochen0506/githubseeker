@@ -1,0 +1,30 @@
+{
+ "schema_version": "1",
+ "cache_key": "eb20745d75a17b1aa4ee",
+ "repo_id": 243787823,
+ "full_name": "ProletRevDicta/Prolet",
+ "created_at": "2026-11-07T07:16:09+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "029f6bd3880248e2edd0a883d6d68853d90509f1f9eef68e10fd0e9a92f1bfc9",
+ "has_readme": false,
+ "readme_chars": 0,
+ "content": {
+  "one_liner": "收集文化大革命（GPCR）相關中文歷史文件的資料庫",
+  "features": [
+   "收錄文化大革命相關的中文歷史文件",
+   "以 HTML 格式整理文件"
+  ],
+  "audience": "對文化大革命歷史有興趣的讀者、研究者或學生",
+  "use_cases": [
+   "可能用來查閱文化大革命時期的中文原始文件",
+   "可能作為歷史研究或課堂報告的參考資料"
+  ],
+  "barrier": "install",
+  "barrier_note": "沒有說明怎麼閱讀，可能要下載 HTML 檔案再用瀏覽器開啟",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description"
+  ]
+ }
+}

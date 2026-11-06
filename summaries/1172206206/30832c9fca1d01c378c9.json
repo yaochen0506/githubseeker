@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "30832c9fca1d01c378c9",
+ "repo_id": 1172206206,
+ "full_name": "KenKaiii/gg-framework",
+ "created_at": "2026-11-07T07:14:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a661aae084cf49f4df8b6d254bd249df90dbc56dc8c026e288871617a6f1a6c6",
+ "has_readme": true,
+ "readme_chars": 4681,
+ "content": {
+  "one_liner": "一款桌面版 AI 寫程式助手，用你已訂閱的 AI 服務幫忙寫程式",
+  "features": [
+   "在本機搜尋真實開源程式碼來輔助寫程式",
+   "一鍵檢查安全性、無障礙、測試並給專案健康分數",
+   "附聊天、目標分派與把點子做成影片的 GG Motion"
+  ],
+  "audience": "想用 Claude、ChatGPT、Gemini 等訂閱來寫程式的開發者與程式初學者",
+  "use_cases": [
+   "讓 AI 代理人完成程式任務，並持續到驗證通過",
+   "上線前一鍵檢查專案的安全性與資料保護",
+   "開發者可用其套件打造自己的 AI 代理人"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載 macOS、Windows 或 Linux 安裝檔，並連結 AI 服務帳號或 API key",
+  "limitations": "作者表示它在 20 款代理人中最快最省，屬作者自測；採 AGPL-3.0 授權，散布修改需公開原始碼",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

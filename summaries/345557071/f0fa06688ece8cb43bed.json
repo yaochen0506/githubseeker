@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f0fa06688ece8cb43bed",
+ "repo_id": 345557071,
+ "full_name": "go-musicfox/go-musicfox",
+ "created_at": "2026-11-07T07:15:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "490c794aef647afd59db685544db0e0345f2ba6c1943009e405e5f579461a7a0",
+ "has_readme": true,
+ "readme_chars": 10088,
+ "content": {
+  "one_liner": "在終端機視窗裡收聽網易雲音樂的命令列播放器",
+  "features": [
+   "支援多種音質、Last.fm 與 UnblockNeteaseMusic",
+   "可透過 DLNA 把音樂投送到電視或音響",
+   "多款主題、macOS 桌面歌詞與滑鼠操作"
+  ],
+  "audience": "習慣使用終端機、有網易雲音樂帳號的電腦使用者",
+  "use_cases": [
+   "在終端機中用鍵盤快捷鍵播放、搜尋與收藏網易雲音樂",
+   "下載正在播放的歌曲與歌詞",
+   "將音樂投送到支援 DLNA 的智慧電視或音響"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝與操作，並編輯 TOML 設定檔；支援 macOS、Linux、Windows",
+  "limitations": "需使用等寬字型；不相容 macOS 原生終端機與 Windows CMD；部分 Linux 需另裝 libFLAC",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

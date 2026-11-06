@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1f9eac5b74f27cb0e812",
+ "repo_id": 162998479,
+ "full_name": "sherlock-project/sherlock",
+ "created_at": "2026-11-07T07:13:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9281dff0ae76f47640ca64edafa7b055850a2b65ec6b5d5d10d0ebbf6fe46838",
+ "has_readme": true,
+ "readme_chars": 1216,
+ "content": {
+  "one_liner": "輸入一個使用者名稱，就能在 400 多個社群網站上搜尋同名帳號",
+  "features": [
+   "在 400 多個社群網站搜尋同一個使用者名稱",
+   "可以一次搜尋多個使用者名稱",
+   "找到的帳號會分別存成對應名稱的文字檔"
+  ],
+  "audience": "做公開來源情報（OSINT）調查、資安測試或數位鑑識的人員",
+  "use_cases": [
+   "資安人員蒐集情報時，查某個使用者名稱在哪些社群網站有帳號",
+   "數位鑑識調查時，可能用來追查同一個人在不同平台的帳號"
+  ],
+  "barrier": "code",
+  "barrier_note": "要用 pipx、pip 或 Docker 安裝，並在命令列操作",
+  "limitations": "第三方維護的 ParrotOS 與 Ubuntu 24.04 套件看起來無法正常使用，建議改用 pipx、pip 或 Docker 安裝",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

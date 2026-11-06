@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "fd3f640b8d22db78ecf7",
+ "repo_id": 1223939135,
+ "full_name": "melgarafael/DeskcommCRM",
+ "created_at": "2026-11-07T07:15:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d48d056187189259eacf9140c2a96311502912df5f820d827a5bfa387a67bb1d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "架在自己伺服器上的開源 CRM，讓 AI 客服在 WhatsApp 上幫你接待客人、篩選潛在客戶、完成銷售",
+  "features": [
+   "AI 代理在 WhatsApp 自動接待與銷售",
+   "收件匣、銷售漏斗與自動化規則",
+   "網頁介面一鍵更新並自動備份"
+  ],
+  "audience": "靠 WhatsApp 做生意的店家、診所、房仲、代理商，以及想自己架設 CRM 的人",
+  "use_cases": [
+   "診所或商店用 AI 代理在 WhatsApp 回覆客人並篩選潛在客戶",
+   "想找 Kommo、Octadesk、Intercom 這類服務的開源替代方案",
+   "把客戶資料放在自己的伺服器上管理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 VPS、網域、Supabase 帳號和 AI API 金鑰，並用 SSH 命令列安裝",
+  "limitations": "建議 4 GB RAM；Supabase 免費方案不會自動備份，運算資源也可能不夠用；移除時 WhatsApp 工作階段會一起刪除",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

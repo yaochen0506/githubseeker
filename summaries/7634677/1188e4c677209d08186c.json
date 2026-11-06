@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1188e4c677209d08186c",
+ "repo_id": 7634677,
+ "full_name": "openssl/openssl",
+ "created_at": "2026-11-07T07:16:43+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "97cbb459e9e7183c06cce39a118654293891f771a71dd5c1473604e782960674",
+ "has_readme": true,
+ "readme_chars": 5858,
+ "content": {
+  "one_liner": "提供網路加密連線（TLS、DTLS、QUIC）與各種加解密功能的開源工具組",
+  "features": [
+   "實作 TLS 1.3、DTLS 1.3 與 QUIC 等安全連線協定",
+   "可單獨使用的通用加密函式庫 libcrypto",
+   "命令列工具可建立金鑰、X.509 憑證與加解密"
+  ],
+  "audience": "軟體開發者、系統管理員、資安人員，以及需要處理憑證或加密的技術人員",
+  "use_cases": [
+   "為網站或伺服器建立 X.509 憑證與憑證簽署要求（CSR）",
+   "用命令列對檔案進行加密、解密或計算訊息摘要",
+   "測試 SSL/TLS 連線或處理 S/MIME 簽章加密郵件"
+  ],
+  "barrier": "code",
+  "barrier_note": "需使用命令列或寫程式呼叫函式庫；官方只提供原始碼，執行檔需由作業系統或第三方取得",
+  "limitations": "官方不提供編譯好的執行檔；部分國家限制加密技術的使用或出口，開發或散布前應尋求法律建議",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

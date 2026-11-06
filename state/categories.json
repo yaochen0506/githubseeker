@@ -1,8 +1,80 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-06T07:41:09+08:00",
+ "updated_at": "2026-11-07T07:12:58+08:00",
  "repos": {
+  "8514": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "rails/rails",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "458058": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "symfony/symfony",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "724712": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "rust-lang/rust",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "858127": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "pandas-dev/pandas",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "908607": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "numpy/numpy",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1362490": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "psf/requests",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "4164482": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "django/django",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "6201092": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "mpv-player/mpv",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "6838921": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "prometheus/prometheus",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "7634677": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "openssl/openssl",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "10270250": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "react/react",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "11225014": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "etcd-io/etcd",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "17578592": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -14,6 +86,12 @@
    "exclude_reason": null,
    "full_name": "lz4/lz4",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "24195339": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "angular/angular",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "24993138": {
    "category": "dev-tools",
@@ -32,6 +110,18 @@
    "exclude_reason": null,
    "full_name": "XX-net/XX-Net",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "33884891": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "apache/airflow",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "41881900": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "microsoft/vscode",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "42920477": {
    "category": "dev-tools",
@@ -75,6 +165,12 @@
    "full_name": "python/cpython",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "90194616": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "pydantic/pydantic",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "100084330": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -87,11 +183,35 @@
    "full_name": "coolsnowwolf/lede",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "102692863": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "onnx/onnx",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "104337773": {
    "category": "learning",
    "exclude_reason": null,
    "full_name": "1c7/chinese-independent-developer",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "106017343": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "tailwindlabs/tailwindcss",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "123303402": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "python-poetry/poetry",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "125266328": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "psf/black",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "126178683": {
    "category": "security-network",
@@ -99,11 +219,35 @@
    "full_name": "halo-dev/halo",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "130578889": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "pymumu/smartdns",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "130884470": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "solidjs/solid",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "136202695": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mlflow/mlflow",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "140516736": {
    "category": "learning",
    "exclude_reason": null,
    "full_name": "OI-wiki/OI-wiki",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "145464445": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "ueberdosis/tiptap",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "145693916": {
    "category": "ai-models",
@@ -128,6 +272,18 @@
    "exclude_reason": null,
    "full_name": "OpenCTI-Platform/opencti",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "162998479": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "sherlock-project/sherlock",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "186024298": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "nushell/nushell",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "189621607": {
    "category": "learning",
@@ -171,6 +327,12 @@
    "full_name": "ccfos/nightingale",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "257485422": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "vitejs/vite",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "263556058": {
    "category": "security-network",
    "exclude_reason": null,
@@ -182,6 +344,18 @@
    "exclude_reason": null,
    "full_name": "remotion-dev/remotion",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "275993885": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "appsmithorg/appsmith",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "283046497": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "airbytehq/airbyte",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "290091948": {
    "category": "learning",
@@ -231,11 +405,23 @@
    "full_name": "xfangfang/wiliwili",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "333483116": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "dgtlmoon/changedetection.io",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "334110599": {
    "category": "everyday-tools",
    "exclude_reason": null,
    "full_name": "iDvel/rime-ice",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "340547520": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "zed-industries/zed",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "345557071": {
    "category": "fun-creative",
@@ -249,11 +435,29 @@
    "full_name": "whyour/qinglong",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "348060227": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "withastro/astro",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "365739812": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "tldraw/tldraw",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "384520418": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "MaaAssistantArknights/MaaAssistantArknights",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "400215964": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "novuhq/novu",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "404414397": {
    "category": "dev-tools",
@@ -284,6 +488,12 @@
    "exclude_reason": null,
    "full_name": "lizhipay/acg-faka",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "433037416": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "yangzongzhuan/RuoYi-Vue3",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "435427730": {
    "category": "security-network",
@@ -327,6 +537,12 @@
    "full_name": "ghostty-org/ghostty",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "489384246": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "antoniaci/blackbird",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "493376588": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -362,6 +578,12 @@
    "exclude_reason": null,
    "full_name": "zhayujie/CowAgent",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "523043277": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "astral-sh/ruff",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "527600676": {
    "category": "fun-creative",
@@ -477,6 +699,12 @@
    "full_name": "langfuse/langfuse",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "643445235": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "lobehub/lobehub",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "645381450": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -500,6 +728,12 @@
    "exclude_reason": null,
    "full_name": "gitroomhq/postiz-app",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "679366051": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "NVIDIA/TensorRT-LLM",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "688164459": {
    "category": "learning",
@@ -590,6 +824,12 @@
    "exclude_reason": null,
    "full_name": "anthropics/claude-code",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "944080744": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "pipeshub-ai/pipeshub-ai",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "953683578": {
    "category": "ai-agents",
@@ -735,6 +975,12 @@
    "full_name": "anthropics/sandbox-runtime",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1080370450": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ParadevAI/Paradev",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1086419061": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -777,6 +1023,12 @@
    "full_name": "HKUDS/DeepTutor",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1125856365": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "can1357/oh-my-pi",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1130564872": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -788,6 +1040,12 @@
    "exclude_reason": null,
    "full_name": "Yeachan-Heo/oh-my-claudecode",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1131202426": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "meta/astryx",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   },
   "1132001614": {
    "category": "ai-agents",
@@ -1161,6 +1419,12 @@
    "full_name": "JustVugg/colibri",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1287460663": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "elder-plinius/T3MP3ST",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1293238217": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1395,6 +1659,12 @@
    "full_name": "pengchujin/aerial-tv",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1428347546": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "l0ng-ai/openidea",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1431545439": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -1491,6 +1761,12 @@
    "full_name": "deepseek-ai/dsh-superagent-prototype",
    "classified_at": "2026-11-04T07:27:20+08:00"
   },
+  "1440927503": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "zortos293/Lichii",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1440956372": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -1533,6 +1809,12 @@
    "full_name": "worldonlyu/Google_AI_Pro_2Year_ZeroCost_Auto",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "1446548114": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "mmdoctor/google-pro-helper",
+   "classified_at": "2026-11-07T07:12:58+08:00"
+  },
   "1446565991": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -1544,6 +1826,12 @@
    "exclude_reason": null,
    "full_name": "AtomIllusionistDwell/watson-username-footprint-finder",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "1448068371": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "JenkinWoo/sheeridVerify",
+   "classified_at": "2026-11-07T07:12:58+08:00"
   }
  }
 }
