@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "fde25077b1e1917b7128",
+ "repo_id": 1446962520,
+ "full_name": "NotRexed/Hookshot",
+ "created_at": "2026-11-08T05:54:46+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "43c1b465714a2cf4523a463e5d8b5b7b6ca42ce492642573790cb3807fb8cd18",
+ "has_readme": true,
+ "readme_chars": 10291,
+ "content": {
+  "one_liner": "把 Switch 2 版《薩爾達傳說 時之笛》轉成 PC 原生程式，不用模擬器",
+  "features": [
+   "用自己的遊戲檔在電腦上重新編譯成 Windows／Linux 程式",
+   "畫面改用 Vulkan 重建，支援補幀與升頻",
+   "遊戲內選單可調解析度、超寬螢幕與 FPS 顯示"
+  ],
+  "audience": "擁有 Switch 2 版《時之笛》、想在 PC 上玩，且願意協助測試的玩家",
+  "use_cases": [
+   "用自己的遊戲檔建置出可在 Windows 執行的遊戲",
+   "在 Linux 或 SteamOS 上透過 AppImage 建置並遊玩",
+   "測試不同顯示卡並回報結果給開發者"
+  ],
+  "barrier": "install",
+  "barrier_note": "需自備特定版本遊戲檔，用 Builder 建置約 40 分鐘，需支援 Vulkan 1.3 的顯示卡",
+  "limitations": "實驗階段，只在一台 NVIDIA 電腦上測過森林區域；不含遊戲檔，只支援單一版本，需 16 GB 記憶體",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

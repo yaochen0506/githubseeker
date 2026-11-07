@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6cf4cb8602b99d303745",
+ "repo_id": 1141782198,
+ "full_name": "jamiepine/voicebox",
+ "created_at": "2026-11-08T05:55:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "625eaa3e5edec968a0e55761d7e06aa3bf3a170db550a2a90d69ef65a13a4f36",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在自己電腦上執行的 AI 語音工作室，可複製聲音、文字轉語音和語音輸入",
+  "features": [
+   "用幾秒錄音複製聲音，支援 8 種 TTS 引擎、23 種語言",
+   "全域快捷鍵語音輸入，以 Whisper 轉成文字",
+   "多軌時間軸編輯器，可製作對話與 Podcast"
+  ],
+  "audience": "想在本機製作配音、Podcast 的創作者，需要語音輸入的使用者，以及開發 AI 代理的工程師",
+  "use_cases": [
+   "用自己或預設的聲音，把文章、腳本轉成長篇語音",
+   "在任何軟體裡按快捷鍵說話，直接輸入文字",
+   "讓 Claude Code 等 AI 工具用複製的聲音唸出通知"
+  ],
+  "barrier": "install",
+  "barrier_note": "macOS、Windows 可下載安裝檔，但需要下載模型；Linux 得自己從原始碼建置",
+  "limitations": "Linux 還沒有現成安裝檔；只有 Chatterbox Turbo 支援 [laugh] 這類情緒標籤；自動貼上功能僅限 macOS",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

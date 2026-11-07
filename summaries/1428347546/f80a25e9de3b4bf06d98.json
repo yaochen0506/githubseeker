@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f80a25e9de3b4bf06d98",
+ "repo_id": 1428347546,
+ "full_name": "l0ng-ai/openidea",
+ "created_at": "2026-11-08T05:56:31+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b2b387662255f44571e86644846ef079f8a87c2202e3874e06c4aa259ceeb02d",
+ "has_readme": true,
+ "readme_chars": 2015,
+ "content": {
+  "one_liner": "用 Rust 重新打造、操作方式仿照 IntelliJ IDEA 的輕量程式開發工具",
+  "features": [
+   "沿用 IntelliJ IDEA 快捷鍵、工具視窗與全域搜尋",
+   "內建編輯器、除錯器、Git、終端機、資料庫與 HTTP 工具",
+   "支援 60 多種程式語言，可裝 WebAssembly 外掛"
+  ],
+  "audience": "習慣 IntelliJ IDEA、想要更輕快開發環境的程式開發者",
+  "use_cases": [
+   "在 macOS、Windows 或 Linux 上開啟與編輯程式專案",
+   "在同一個軟體內除錯、管理 Git、查詢資料庫與測試 HTTP API",
+   "透過外掛新增主題、圖示或語言支援"
+  ],
+  "barrier": "code",
+  "barrier_note": "可下載安裝檔或 Windows 免安裝版，但本身是寫程式用的工具",
+  "limitations": "外掛 API 仍是預覽版；作者表示速度與記憶體優於 IDEA，但 IDEA 對 Python 分析較深入；與 JetBrains 無關",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

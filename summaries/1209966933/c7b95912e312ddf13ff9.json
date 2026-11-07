@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c7b95912e312ddf13ff9",
+ "repo_id": 1209966933,
+ "full_name": "morluto/rea",
+ "created_at": "2026-11-08T05:54:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0e18c9646a32ae9aa25a1d1a44fbb0f4c5afdc29c3b4d48538a53258f1934926",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 代理在沒有原始碼的情況下，拆解分析 App、網站與執行檔的運作方式",
+  "features": [
+   "透過 MCP 讓 Claude Code 等 AI 代理呼叫逆向分析工具",
+   "支援執行檔、Electron、.NET、Android APK、網站等多種目標",
+   "分析在本機執行，結論會附上證據與限制"
+  ],
+  "audience": "資安研究人員、逆向工程師，以及想了解別人 App 功能怎麼做出來的開發者",
+  "use_cases": [
+   "看到某個 App 的功能，請 AI 代理分析它如何運作並在自己的專案做出類似版本",
+   "檢查 Android APK 的權限宣告、簽章與反編譯後的程式碼",
+   "分析 Electron 應用程式的模組、IPC 與相依關係"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Node.js 與 npm 並使用命令列；分析原生執行檔還需 Ghidra、IDA 等工具",
+  "limitations": "需要特定版本的 Node.js；部分分析僅支援 Linux 或需另外安裝工具；作者提醒只從官方來源下載，並保持更新",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

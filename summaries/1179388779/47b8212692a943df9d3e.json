@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "47b8212692a943df9d3e",
+ "repo_id": 1179388779,
+ "full_name": "ethanplusai/sellbird",
+ "created_at": "2026-11-08T05:55:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e5a9a942232b640214c583ac43782bdc967de35a9a86515eea478cc7c1f9feb6",
+ "has_readme": true,
+ "readme_chars": 8007,
+ "content": {
+  "one_liner": "開源業務開發工具，自動找潛在客戶、驗證信箱、寫陌生開發信並處理回信",
+  "features": [
+   "從 OpenStreetMap 或付費來源找目標公司與決策者",
+   "驗證 email 並標記可寄送程度，只寄給可送達的地址",
+   "用 Claude 或 ChatGPT 撰寫並寄送開發信、草擬回覆"
+  ],
+  "audience": "需要寄陌生開發信找客戶的業務、創業者或小公司，且已訂閱 Claude 或 ChatGPT 方案",
+  "use_cases": [
+   "找出沒有線上預約功能的牙醫診所等店家，寄信推銷服務",
+   "只產出已驗證的潛在客戶名單，匯出成 CSV 給其他寄信工具用",
+   "自動讀取回信、處理退訂，並把需要人工判斷的信交給你"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上、命令列操作、Claude Code 或 Codex CLI，以及寄信用的信箱",
+  "limitations": "預設每封信都要你核准才會寄出；建議用另外的寄信網域並先做信箱暖機；官方託管版目前仍在搶先體驗階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

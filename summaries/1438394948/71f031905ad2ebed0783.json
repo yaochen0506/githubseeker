@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "71f031905ad2ebed0783",
+ "repo_id": 1438394948,
+ "full_name": "valentderah/totk-pc-recomp",
+ "created_at": "2026-11-08T05:55:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2e01af7600587c14dd2ec0c64982eced571902f83e0ceaa3c994765b3383812b",
+ "has_readme": true,
+ "readme_chars": 5457,
+ "content": {
+  "one_liner": "把 Switch 遊戲《薩爾達傳說 王國之淚》轉成能在 Windows 和 Linux 原生執行的版本",
+  "features": [
+   "原生程式碼執行而非模擬，支援 Vulkan 繪圖",
+   "自訂解析度、超寬螢幕、HDR10、DLSS 與 FSR",
+   "支援模擬器用的 Mod、材質包與金手指"
+  ],
+  "audience": "擁有正版《王國之淚》且能自行從主機提取遊戲檔案，想在 PC 或 Steam Deck 上遊玩的玩家",
+  "use_cases": [
+   "用自己主機提取的遊戲檔案，在 Windows 電腦上以高解析度遊玩",
+   "在 Steam Deck 或其他掌機上以 16:10 畫面遊玩",
+   "套用 HD 材質包或模擬器用的 Mod 來改變遊戲內容"
+  ],
+  "barrier": "install",
+  "barrier_note": "需自行從主機提取遊戲檔案，再執行安裝程式建置；需支援 Vulkan 1.3 的顯示卡與約 36 GiB 空間",
+  "limitations": "不含遊戲檔案，也不提供取得方法；仍在早期開發，可能有畫面錯誤與當機；建置結果僅限自用不得分享",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

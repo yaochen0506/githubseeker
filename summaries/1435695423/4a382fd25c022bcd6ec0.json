@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4a382fd25c022bcd6ec0",
+ "repo_id": 1435695423,
+ "full_name": "anhao/ai-pose-gallery-zh",
+ "created_at": "2026-11-08T05:56:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3fdab0eca349a6e98079f9cb5e4d50b2846d8c947d0ee820326ab3b4feb88123",
+ "has_readme": true,
+ "readme_chars": 9663,
+ "content": {
+  "one_liner": "把日文 AI 繪圖用的姿勢、服裝、人像參考圖庫翻成中文並合併成一個網站",
+  "features": [
+   "姿勢、服裝、人像三大圖庫，可用中文搜尋與篩選",
+   "挑選人像、服裝、姿勢組合後串接 AI 服務生圖",
+   "提供 ComfyUI 外掛節點，可在畫布內直接選圖"
+  ],
+  "audience": "用 AI 生圖或畫插畫、需要人物動作與穿搭參考的創作者",
+  "use_cases": [
+   "畫插畫時找特定角度的人體姿勢參考圖",
+   "組合人像、服裝、姿勢，交給 Gemini 或 ComfyUI 生成角色圖",
+   "在 ComfyUI 工作流程中把深度圖接到 ControlNet 控制姿勢"
+  ],
+  "barrier": "online",
+  "barrier_note": "有線上展示網頁可直接瀏覽；生圖要自備 AI 服務 API 金鑰，ComfyUI 外掛需另外安裝",
+  "limitations": "含 18+ 內容，預設開啟安全模式；圖片版權屬原作者，禁止轉賣；部分二次元服裝圖片需連線載入",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

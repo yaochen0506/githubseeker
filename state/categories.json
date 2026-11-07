@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-07T07:12:58+08:00",
+ "updated_at": "2026-11-08T05:54:03+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -75,6 +75,12 @@
    "full_name": "etcd-io/etcd",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "13491895": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "EbookFoundation/free-programming-books",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "17578592": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -92,6 +98,12 @@
    "exclude_reason": null,
    "full_name": "angular/angular",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "24594933": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "Unleash/unleash",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "24993138": {
    "category": "dev-tools",
@@ -159,11 +171,23 @@
    "full_name": "AdguardTeam/AdGuardHome",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "62743585": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "spotDL/spotify-downloader",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "81598961": {
    "category": "dev-tools",
    "exclude_reason": null,
    "full_name": "python/cpython",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "83222441": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "donnemartin/system-design-primer",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "90194616": {
    "category": "dev-tools",
@@ -291,6 +315,12 @@
    "full_name": "github/docs",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "197814629": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "actions/checkout",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "200722670": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -399,6 +429,12 @@
    "full_name": "mealie-recipes/mealie",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "326610757": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "RapidAI/RapidOCR",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "330355479": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -416,6 +452,12 @@
    "exclude_reason": null,
    "full_name": "iDvel/rime-ice",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "334448316": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "lxgw/LxgwWenKai",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "340547520": {
    "category": "dev-tools",
@@ -627,6 +669,12 @@
    "full_name": "krahets/hello-algo",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "566931318": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "fanmingming/live",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "568797613": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -753,6 +801,12 @@
    "full_name": "TheNetsky/Microsoft-Rewards-Script",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "741450201": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Marker-Inc-Korea/AutoRAG",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "770153867": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -866,6 +920,12 @@
    "exclude_reason": null,
    "full_name": "Crosstalk-Solutions/project-nomad",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1008177062": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "chaitin/MonkeyCode",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "1008713177": {
    "category": "ai-agents",
@@ -1083,6 +1143,12 @@
    "full_name": "mvanhorn/last30days-skill",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1141782198": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "jamiepine/voicebox",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "1148788086": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1166,6 +1232,12 @@
    "exclude_reason": null,
    "full_name": "binance/binance-skills-hub",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "1171949255": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "elder-plinius/OBLITERATUS",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "1172206206": {
    "category": "ai-agents",
@@ -1286,6 +1358,12 @@
    "exclude_reason": null,
    "full_name": "higgsfield-ai/skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1209966933": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "morluto/rea",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "1216954187": {
    "category": "ai-agents",
@@ -1413,6 +1491,12 @@
    "full_name": "derv82/wifit3",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1285492676": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "mbillow/localthings",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "1286080397": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -1520,6 +1604,18 @@
    "exclude_reason": null,
    "full_name": "FareedKhan-dev/kimi-k3-in-c",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "1323115536": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "dsx-ai-factory/nvke",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "1324949198": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ranxianglei/billion-context",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   },
   "1331135699": {
    "category": "everyday-tools",
@@ -1803,6 +1899,12 @@
    "full_name": "KKKKhazix/agent-autoloop",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1444372497": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "Minireel/HGhub",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "1445802355": {
    "category": "excluded",
    "exclude_reason": "piracy",
@@ -1827,11 +1929,23 @@
    "full_name": "AtomIllusionistDwell/watson-username-footprint-finder",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "1446962520": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "NotRexed/Hookshot",
+   "classified_at": "2026-11-08T05:54:03+08:00"
+  },
   "1448068371": {
    "category": "excluded",
    "exclude_reason": "piracy",
    "full_name": "JenkinWoo/sheeridVerify",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1449614389": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "sentinelsoldierprize/Minecraft-AFK-Bot",
+   "classified_at": "2026-11-08T05:54:03+08:00"
   }
  }
 }

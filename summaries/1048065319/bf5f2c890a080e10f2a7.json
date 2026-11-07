@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "bf5f2c890a080e10f2a7",
+ "repo_id": 1048065319,
+ "full_name": "thedotmack/claude-mem",
+ "created_at": "2026-11-08T05:54:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9fbd3e18ec69b8fd6178b0f4cfa8b891c8a1df7585201996ea52f83805f834b8",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "幫 AI 程式助理記住每次工作的內容，下次開新對話時自動帶入重點",
+  "features": [
+   "自動記錄 AI 助理的工作並用 AI 壓縮成筆記",
+   "新對話開始時自動帶入過去的重點摘要",
+   "可用自然語言搜尋過去的專案紀錄"
+  ],
+  "audience": "經常使用 Claude Code、Codex、Cursor 等 AI 程式助理的開發者",
+  "use_cases": [
+   "讓 AI 助理在新對話中接續上次的開發進度",
+   "查詢過去修過的 bug 或做過的決定",
+   "團隊可選擇用 TeamBrain 共享工作紀錄"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列執行安裝程式，並搭配支援的 AI 程式助理使用",
+  "limitations": "Copilot CLI 等部分工具只能搜尋、不會記錄；匿名使用統計預設開啟；官方 observer 試用後需付費",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

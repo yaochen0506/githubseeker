@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "09c2d624c510ec620872",
+ "repo_id": 1171949255,
+ "full_name": "elder-plinius/OBLITERATUS",
+ "created_at": "2026-11-08T05:55:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9e6583b5ccf5f195ababb32b27b169f15cf6f54cb88ed564765d9576c52f3136",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "找出並移除大型語言模型「拒絕回答」行為的開源工具包",
+  "features": [
+   "分析模型內部哪些層負責拒絕回答",
+   "不重新訓練就移除模型的拒絕機制",
+   "網頁介面可並排比較原模型與修改後模型"
+  ],
+  "audience": "AI 對齊與安全研究者、紅隊測試人員、想在自己硬體上完全掌控模型的使用者",
+  "use_cases": [
+   "研究安全機制在語言模型內部如何運作",
+   "測試模型安全訓練能否抵擋權重層級的修改",
+   "產生不受限制的模型作為安全評測基準"
+  ],
+  "barrier": "online",
+  "barrier_note": "可在 HuggingFace Spaces 網頁直接使用，免費每日額度需 HF Pro；進階功能需 Python",
+  "limitations": "產出的模型已移除安全防護，使用者須自負責任；Spaces 預設開啟遙測，會上傳匿名資料",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

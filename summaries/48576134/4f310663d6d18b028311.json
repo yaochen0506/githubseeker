@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "4f310663d6d18b028311",
+ "repo_id": 48576134,
+ "full_name": "xifangczy/cat-catch",
+ "created_at": "2026-11-08T05:56:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5c60bb8cf7380e6b9a99c92cc704b413c98678e8faaa6d5b588f36516d3511bd",
+ "has_readme": true,
+ "readme_chars": 1225,
+ "content": {
+  "one_liner": "瀏覽器擴充功能，幫你找出並列出目前網頁上的影片等資源",
+  "features": [
+   "篩選並列出目前頁面載入的各種資源",
+   "支援 Chrome、Edge、Firefox 與 Edge Android",
+   "資料在本機處理，作者表示不含追蹤器"
+  ],
+  "audience": "想從網頁找出影片或其他資源檔案的一般瀏覽器使用者",
+  "use_cases": [
+   "下載自己擁有版權或已獲授權的網頁影片",
+   "可能用來找出網頁中 m3u8 串流影片的資源位址"
+  ],
+  "barrier": "online",
+  "barrier_note": "從官方擴充功能商店安裝即可使用；Firefox 版需非中國 IP 才能存取",
+  "limitations": "需 Chromium 93 以上，完整功能需 104 以上；僅限下載有授權內容；網路上有加廣告的仿冒版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

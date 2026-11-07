@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "cb12055f665b8d3e045a",
+ "repo_id": 1438540053,
+ "full_name": "wangzan101/Mika",
+ "created_at": "2026-11-08T05:55:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c096abc1a4ad946d8124e96771eace47b3cd53a874d943e6761a29c9b8e4fd6a",
+ "has_readme": true,
+ "readme_chars": 8418,
+ "content": {
+  "one_liner": "裝在 Android 手機上的 AI 助理，說一句話就幫你操作 App 和網頁完成任務",
+  "features": [
+   "在背景畫面自動點擊、輸入、捲動，不影響你用手機",
+   "看畫面找按鈕，可操作任何 App 與網站",
+   "支援排程提醒、語音輸入與 Linux 沙盒處理檔案"
+  ],
+  "audience": "想讓手機自動處理瑣事的 Android 使用者，需自備 AI 模型 API key 或帳號",
+  "use_cases": [
+   "請它讀完群組聊天紀錄後整理重點",
+   "依條件挑選商品加入購物車，結帳前停下讓你確認",
+   "設定每天早上查天氣，會下雨才通知你"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載 APK 安裝、設定模型 API key 或登入帳號；操作 App 還要配對無線偵錯",
+  "limitations": "操作 App 需 Android 12 以上；付款、密碼畫面需人工接手；自動操作可能違反第三方服務條款",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "88b0887d09cfd88efaec",
+ "repo_id": 13491895,
+ "full_name": "EbookFoundation/free-programming-books",
+ "created_at": "2026-11-08T05:56:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4c101ba7f1381e9a2d2c8e5cc45ef230e5749bf9b120a7a75e75381dcd0f54e3",
+ "has_readme": true,
+ "readme_chars": 4743,
+ "content": {
+  "one_liner": "整理各種免費程式設計電子書與學習資源的多語言清單",
+  "features": [
+   "依程式語言與主題分類的免費程式書清單",
+   "收錄免費線上課程、Podcast 與速查表",
+   "支援中文等數十種語言的資源"
+  ],
+  "audience": "想自學程式設計、找免費教材的初學者、學生與開發者",
+  "use_cases": [
+   "找特定程式語言的免費中文或英文電子書",
+   "尋找免費線上課程或程式練習題",
+   "在瀏覽器裡的線上環境直接試寫程式碼"
+  ],
+  "barrier": "online",
+  "barrier_note": "有網頁版可以直接瀏覽和搜尋，不用安裝任何東西",
+  "limitations": "README 未說明；部分語言的翻譯文件還沒完成",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

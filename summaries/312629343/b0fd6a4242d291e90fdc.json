@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b0fd6a4242d291e90fdc",
+ "repo_id": 312629343,
+ "full_name": "shadow1ng/fscan",
+ "created_at": "2026-11-08T05:57:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4eb30076ad93399ddbe9cc1551349a4d21dd844fe957850ea3ca943e645dc758",
+ "has_readme": true,
+ "readme_chars": 5933,
+ "content": {
+  "one_liner": "一款針對內網的綜合掃描工具，可一鍵自動化偵測漏洞",
+  "features": [
+   "主機發現與連接埠掃描，可辨識服務指紋與 Web 資訊",
+   "對 SSH、RDP、MySQL 等 28 種服務進行弱密碼爆破",
+   "偵測 MS17-010、未授權存取等漏洞並提供 POC 掃描"
+  ],
+  "audience": "取得合法授權的企業資安人員與滲透測試工程師",
+  "use_cases": [
+   "在獲授權的內網中大範圍探測存活主機與開放連接埠",
+   "檢查服務是否存在弱密碼或已知高危漏洞",
+   "作者表示可透過 Go SDK 嵌入資安平台或 Agent 使用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過命令列執行，部分功能要自行用 Go 編譯",
+  "limitations": "作者聲明僅限合法授權的資安用途，使用前須取得授權並符合當地法律，不得掃描未授權目標",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

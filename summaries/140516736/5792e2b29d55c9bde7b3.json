@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5792e2b29d55c9bde7b3",
+ "repo_id": 140516736,
+ "full_name": "OI-wiki/OI-wiki",
+ "created_at": "2026-11-08T05:56:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "499263276da2c341c7cc820042ff6e8bcc7be9e3bebde6e859635a5705fc8e40",
+ "has_readme": true,
+ "readme_chars": 1525,
+ "content": {
+  "one_liner": "免費開放的程式競賽（OI／ICPC）知識百科網站，整理演算法與資料結構",
+  "features": [
+   "整理競賽基礎知識、常見題型與解題思路",
+   "介紹競賽常用工具，持續由社群更新",
+   "可線上閱讀，也能在本機部署或離線使用"
+  ],
+  "audience": "準備資訊奧林匹亞（OI）或 ICPC 等程式競賽的學生、初學者與教練",
+  "use_cases": [
+   "初學者有系統地入門程式競賽",
+   "查詢特定演算法或資料結構的說明",
+   "可能作為競賽訓練或社團教學的參考教材"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接開啟官方網站即可閱讀；本機部署需安裝 Python3 和 uv",
+  "limitations": "作者表示內容仍不完善，知識點覆蓋不全，有些頁面品質較低；內容以簡體中文撰寫",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

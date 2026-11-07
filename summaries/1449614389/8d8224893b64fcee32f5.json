@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8d8224893b64fcee32f5",
+ "repo_id": 1449614389,
+ "full_name": "sentinelsoldierprize/Minecraft-AFK-Bot",
+ "created_at": "2026-11-08T05:54:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b9d550bf5e146db29ac81c4145bf85cd615e3d490c9c07b1ad39cfbab7ff6f78",
+ "has_readme": true,
+ "readme_chars": 3163,
+ "content": {
+  "one_liner": "讓 Minecraft 角色自動做小動作保持在線、不被踢出的掛機機器人",
+  "features": [
+   "定時轉頭、跳躍，避免被判定掛機踢出",
+   "斷線或被踢後自動重新連線",
+   "瀏覽器網頁控制台，可管理多帳號與聊天"
+  ],
+  "audience": "玩 Minecraft Java 版、想讓角色或免費伺服器長時間保持在線的玩家",
+  "use_cases": [
+   "讓免費的 Aternos 伺服器不會因為沒人在線而自動關閉",
+   "在生存伺服器掛機累積遊戲時數",
+   "透過網頁控制台收發遊戲內聊天訊息"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載壓縮檔、執行 exe 並設定 Minecraft 帳號與伺服器位址",
+  "limitations": "作者提醒部分伺服器禁止機器人，可能被封鎖。另 README 要求執行來源不明的 exe 並「注入腳本」，請謹慎",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1cd02e183934fd15ccc7",
+ "repo_id": 1285492676,
+ "full_name": "mbillow/localthings",
+ "created_at": "2026-11-08T05:54:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "713c6ff82c3158a42fac0794b7e0fcb932577227832355a95b597ea4d8022fa0",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在家用網路裡用 Home Assistant 控制 Samsung 家電，不需要雲端帳號",
+  "features": [
+   "支援洗衣機、冰箱、冷氣、烤箱等多種 Samsung 家電",
+   "設定完成後不必連網，作者表示不會傳資料給 Samsung",
+   "輸入 IP 位址就能自動辨識型號並建立控制項"
+  ],
+  "audience": "已在使用 Home Assistant、家裡有 Samsung 連網家電，又想減少依賴雲端的人",
+  "use_cases": [
+   "在 Home Assistant 查看洗衣機、烘衣機的剩餘時間與完成時間",
+   "在本地網路控制冷氣的開關、模式與溫度",
+   "遠端設定烤箱模式、溫度與時間後開始烹調"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要已架好的 Home Assistant，再透過 HACS 安裝並輸入家電的 IP 位址",
+  "limitations": "首次設定要連 Samsung 伺服器一次；部分家電需要額外金鑰或 token；家電仍需留在 SmartThings 註冊",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "61f096531b9b06c1bf83",
+ "repo_id": 1153130349,
+ "full_name": "pingdotgg/t3code",
+ "created_at": "2026-11-08T05:54:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d344f2468d71bf39587f9effa3783def3a7342207a1d2cfe274de824b2642fd4",
+ "has_readme": true,
+ "readme_chars": 3604,
+ "content": {
+  "one_liner": "用手機、網頁或桌面 App 統一操控電腦上的 AI 寫程式代理工具",
+  "features": [
+   "支援 Claude Code、Codex、Cursor 等多種代理",
+   "提供 iOS、Android、網頁與桌面版 App",
+   "可從手機或其他電腦遠端存取"
+  ],
+  "audience": "已在使用 Claude Code、Codex 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "在同一個介面管理多個 AI 代理的開發工作",
+   "出門在外用手機遠端操控家中電腦上的代理",
+   "以 MCP 連接 Claude Code、ChatGPT 等代理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需先安裝並以命令列登入至少一個 AI 代理工具，例如 Codex CLI",
+  "limitations": "作者表示專案非常早期，預期會有 bug；目前大致不接受外部貢獻，僅考慮小修正",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

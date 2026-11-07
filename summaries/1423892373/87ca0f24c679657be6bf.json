@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "87ca0f24c679657be6bf",
+ "repo_id": 1423892373,
+ "full_name": "Zagitta/gpu-unlock",
+ "created_at": "2026-11-08T05:55:27+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4e45a67ae3346bcb1dd076d1f6af86cec2d2f5bf3865dc017305d7fee5ac82f8",
+ "has_readme": true,
+ "readme_chars": 9066,
+ "content": {
+  "one_liner": "在 Linux 開機時解除 GeForce 顯示卡的張量核心限速，加快 AI 運算",
+  "features": [
+   "開機時、NVIDIA 驅動程式載入前解除 FP16/BF16/TF32 限速",
+   "不用修改驅動程式或刷 VBIOS，更新驅動後不用重做",
+   "從睡眠狀態喚醒後會自動重新解鎖"
+  ],
+  "audience": "用 RTX 20/30/40 系列顯示卡在 Linux 上跑 AI 訓練或推論的使用者",
+  "use_cases": [
+   "加快 LLM 提示處理與首個 token 回應，作者表示可提升 25–55%",
+   "加速 BF16 的 LoRA 或完整微調",
+   "在 ComfyUI 等工具加快 SDXL 等圖片生成"
+  ],
+  "barrier": "code",
+  "barrier_note": "只支援 Linux，需要用命令列安裝核心模組並修改開機參數",
+  "limitations": "不支援 RTX 50 與 Windows；RTX 20/40 屬實驗性質；筆電關閉獨顯會失效；量化模型與遊戲沒有加速效果",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

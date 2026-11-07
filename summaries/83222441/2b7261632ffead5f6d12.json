@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2b7261632ffead5f6d12",
+ "repo_id": 83222441,
+ "full_name": "donnemartin/system-design-primer",
+ "created_at": "2026-11-08T05:56:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e253ee1c6d08cc2a455b8655e7dddcef3a44342f7a25fb2cf6da5723ebf5c3a0",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "整理好的大型系統設計學習資料，幫你準備工程師的系統設計面試",
+  "features": [
+   "系統設計主題整理，附各做法的優缺點比較",
+   "常見面試題與範例解答，含討論、程式碼與圖解",
+   "提供 Anki 記憶卡，用間隔重複複習觀念"
+  ],
+  "audience": "準備科技公司技術面試的軟體工程師，以及想學習大型系統架構的開發者",
+  "use_cases": [
+   "依面試準備時間長短，照學習指南安排複習進度",
+   "練習設計短網址、社群動態等題目，再對照範例解答",
+   "通勤時用 Anki 記憶卡複習系統設計觀念"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在網頁上閱讀就行；要用記憶卡得先裝 Anki，但內容需要有程式背景才看得懂",
+  "limitations": "物件導向設計題的部分還在撰寫中，部分內容待修飾；作者說明面試不必學會全部內容",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

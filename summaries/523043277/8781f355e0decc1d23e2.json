@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8781f355e0decc1d23e2",
+ "repo_id": 523043277,
+ "full_name": "astral-sh/ruff",
+ "created_at": "2026-11-08T05:56:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "bfa9b9ac50e1d4eac9a8c219fb23106013922415732c0bdb80de0fd1287a6210",
+ "has_readme": true,
+ "readme_chars": 7919,
+ "content": {
+  "one_liner": "用 Rust 寫成、速度很快的 Python 程式碼檢查與排版工具",
+  "features": [
+   "內建超過 900 條檢查規則，可找出常見錯誤",
+   "自動修正問題，例如移除沒用到的 import",
+   "可取代 Flake8、Black、isort 等多種工具"
+  ],
+  "audience": "寫 Python 的開發者，以及想統一程式碼風格的開發團隊",
+  "use_cases": [
+   "在 VS Code 等編輯器中即時檢查 Python 程式碼",
+   "提交程式碼前用 pre-commit hook 自動檢查與排版",
+   "在 GitHub Action 中自動檢查專案程式碼品質"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過 pip、uv 等工具安裝，並在命令列或編輯器中使用",
+  "limitations": "預覽模式（preview）中的功能還不穩定，正式推出前可能會變動",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

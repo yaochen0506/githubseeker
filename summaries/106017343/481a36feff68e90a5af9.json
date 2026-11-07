@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "481a36feff68e90a5af9",
+ "repo_id": 106017343,
+ "full_name": "tailwindlabs/tailwindcss",
+ "created_at": "2026-11-08T05:56:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6f31aedfdefbe85538e9001cbc571d04a8ede7dd9bb01d47eb4c01d8b8a81f24",
+ "has_readme": true,
+ "readme_chars": 397,
+ "content": {
+  "one_liner": "一套 CSS 框架，用現成的小樣式類別快速做出網頁介面",
+  "features": [
+   "以 utility class 組合出各種網頁樣式",
+   "支援響應式設計，適應不同螢幕尺寸",
+   "可與 PostCSS 搭配使用"
+  ],
+  "audience": "網頁前端工程師、網頁設計師，以及想快速打造自訂介面的開發者",
+  "use_cases": [
+   "開發網站時快速調整按鈕、版面等外觀",
+   "製作在手機與電腦上都好看的響應式網頁",
+   "可能用於快速做出產品原型介面"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 HTML、CSS，並在網頁專案中安裝設定",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
