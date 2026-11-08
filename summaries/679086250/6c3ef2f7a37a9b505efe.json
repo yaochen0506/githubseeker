@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6c3ef2f7a37a9b505efe",
+ "repo_id": 679086250,
+ "full_name": "XiaoYouChR/Ghost-Downloader-3",
+ "created_at": "2026-11-09T06:11:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fd75f4bc656d2735ccbcf35a9080e38d56652ebe54e284bd32595ebd03aca074",
+ "has_readme": true,
+ "readme_chars": 5714,
+ "content": {
+  "one_liner": "一個 App 就能下載網頁檔案、BT、影片串流等多種來源的跨平台下載器",
+  "features": [
+   "支援 HTTP、BT/磁力連結、FTP、M3U8、eD2k 等協定",
+   "可下載 YouTube、Bilibili 影片，可選畫質與字幕",
+   "搭配瀏覽器擴充功能偵測網頁影片並一鍵下載"
+  ],
+  "audience": "常下載大型檔案、影片或 BT 資源，想用一套軟體搞定的一般使用者",
+  "use_cases": [
+   "下載 YouTube 或 Bilibili 影片、播放清單與字幕",
+   "在 Android 上錄製 M3U8 直播並在背景持續下載",
+   "透過鏡像加速下載 GitHub、HuggingFace 上的檔案"
+  ],
+  "barrier": "install",
+  "barrier_note": "需在 Windows、macOS、Linux 或 Android 下載安裝 App，不用寫程式",
+  "limitations": "需 Windows 10+、macOS 13+、Android 9+ 等版本；不支援沒有 AVX 指令集的 CPU；外掛 API 尚未公開",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

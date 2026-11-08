@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "5ddd0346a888f56d32c6",
+ "repo_id": 836976013,
+ "full_name": "mihomo-party-org/clash-party",
+ "created_at": "2026-11-09T06:12:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a7df554ef59f0805ae2ed692fe14350b4138fa91246b905160d5440a191c9887",
+ "has_readme": true,
+ "readme_chars": 598,
+ "content": {
+  "one_liner": "一款 Mihomo（Clash Meta）代理工具的桌面圖形介面軟體",
+  "features": [
+   "內建 Smart 與 Mihomo 核心，作者表示可用 AI 自動選節點",
+   "免服務模式的 Tun，支援覆寫修改設定檔",
+   "WebDAV 一鍵備份還原，整合 Sub-Store 管理訂閱"
+  ],
+  "audience": "已在使用 Clash、Mihomo 等代理工具，想要圖形介面管理設定的使用者",
+  "use_cases": [
+   "用圖形介面管理代理訂閱與節點，不必手動編輯設定檔",
+   "透過 WebDAV 在不同電腦間備份與還原代理設定"
+  ],
+  "barrier": "install",
+  "barrier_note": "需在電腦上安裝桌面軟體，並自行準備代理訂閱與設定",
+  "limitations": "README 未說明限制；安裝方式需參考官方文件，README 內含付費代理服務的推廣內容",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

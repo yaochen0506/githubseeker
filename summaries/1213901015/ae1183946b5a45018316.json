@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "ae1183946b5a45018316",
+ "repo_id": 1213901015,
+ "full_name": "googlecolab/google-colab-cli",
+ "created_at": "2026-11-09T06:10:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d1ac400f57234329088ce6c30df54338d575ccc44eddef18329c155392f44e81",
+ "has_readme": true,
+ "readme_chars": 7881,
+ "content": {
+  "one_liner": "在終端機裡直接操作 Google Colab 雲端運算環境的命令列工具",
+  "features": [
+   "開啟 CPU、GPU 或 TPU 雲端執行環境",
+   "在雲端執行本機 Python 程式或筆記本",
+   "上傳下載檔案、掛載 Google Drive"
+  ],
+  "audience": "熟悉命令列、想用 Colab 雲端 GPU 跑程式的開發者、資料科學家與 AI 代理整合者",
+  "use_cases": [
+   "租用 A100 GPU 執行本機訓練程式，取回模型檔後自動關機",
+   "掛載 Google Drive 執行筆記本，並匯出 Markdown 執行紀錄",
+   "在自動化流程中可能用來批次執行雲端運算工作"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 pip 或 uv 安裝，並在 Linux 或 macOS 終端機操作，需 Google 帳號",
+  "limitations": "僅支援 Linux 與 macOS，不支援 Windows；高記憶體機型需 Colab Pro 或 Pro+",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

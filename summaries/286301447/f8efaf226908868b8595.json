@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f8efaf226908868b8595",
+ "repo_id": 286301447,
+ "full_name": "neuml/txtai",
+ "created_at": "2026-11-09T06:10:46+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "03fdf717f3808925508c1f83ec3c529de538b336932872e2e08dbf05a4674f09",
+ "has_readme": true,
+ "readme_chars": 8946,
+ "content": {
+  "one_liner": "用 Python 打造語意搜尋、RAG 與 AI 代理的整合型 AI 框架",
+  "features": [
+   "結合向量、圖譜與 SQL 的 embeddings 資料庫",
+   "支援摘要、翻譯、語音轉文字等語言模型流程",
+   "可建立自主 AI 代理，提供 Web 與 MCP API"
+  ],
+  "audience": "想開發語意搜尋、RAG 或 AI 代理應用的 Python 開發者與資料工程師",
+  "use_cases": [
+   "建立能理解語意、不只比對關鍵字的搜尋系統",
+   "用自己的資料建立「和資料對話」的 RAG 問答應用",
+   "將音訊轉成文字、翻譯或自動摘要文件"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上，用 pip 或 Docker 安裝，並撰寫程式碼使用",
+  "limitations": "僅支援 Python 3.11 以上，建議使用虛擬環境；部分功能需另外安裝相依套件",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

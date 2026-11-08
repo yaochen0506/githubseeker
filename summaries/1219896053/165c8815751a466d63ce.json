@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "165c8815751a466d63ce",
+ "repo_id": 1219896053,
+ "full_name": "arcsin1/oh-my-ppt",
+ "created_at": "2026-11-09T06:10:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "edd90f327de285a2e59d777f87000f8654fe2c8edd431054b4bb216c57877aaa",
+ "has_readme": true,
+ "readme_chars": 8478,
+ "content": {
+  "one_liner": "輸入主題或上傳文件，讓 AI 幫你做出可編輯的 HTML 簡報",
+  "features": [
+   "AI 自動規劃大綱、配色、排版與配圖",
+   "可匯入舊 PPTX，也能匯出可編輯的 PPTX",
+   "對話式修改、拖拉編輯、動畫與演講稿"
+  ],
+  "audience": "常要做報告、上課、路演或社群圖文，想省下排版時間的上班族、老師與學生",
+  "use_cases": [
+   "上傳 docx 或 md 文件，自動整理成一份簡報",
+   "匯入舊的 PPTX 範本，再用 AI 修改內容",
+   "做成小紅書圖文或匯出 MP4 影片發到社群"
+  ],
+  "barrier": "install",
+  "barrier_note": "要下載桌面 App，並自行填入 AI 模型的 API 設定（或用本機 Ollama）",
+  "limitations": "沒有設定文字模型就不能產生簡報；複雜圖表、表格、動畫的還原還在改進；安裝檔未簽署，系統可能會跳出安全警告",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

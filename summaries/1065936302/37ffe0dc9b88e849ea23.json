@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "37ffe0dc9b88e849ea23",
+ "repo_id": 1065936302,
+ "full_name": "Open-Dev-Society/OpenStock",
+ "created_at": "2026-11-09T06:11:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c11ee213f6e987445e827c6efbb3c8eecb249b24ef6272020cfa4f1ebfbe1424",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費開源的股市看盤網站，可以追蹤股價、設定到價提醒、查公司資料",
+  "features": [
+   "涵蓋美股、加密貨幣、外匯等八個市場的儀表板",
+   "TradingView 線圖，支援畫線與多種技術指標",
+   "自選股清單、到價 Email 提醒與 AI 每週新聞摘要"
+  ],
+  "audience": "想免費看盤、追蹤股票的一般投資人，以及想自己架站的開發者",
+  "use_cases": [
+   "打開官方社群版網站，免費查看美股線圖與公司財務資料",
+   "建立最多 50 檔的自選股清單，追蹤持股價格",
+   "自行架設並開啟即時模式，收到股價突破目標的 Email 提醒"
+  ],
+  "barrier": "online",
+  "barrier_note": "有現成網站可直接註冊使用；自行架設則需 Docker、MongoDB 與 Finnhub 金鑰",
+  "limitations": "不是券商也非投資建議；社群版報價每小時更新、沒有到價提醒；台股等多數市場支援有限或延遲",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

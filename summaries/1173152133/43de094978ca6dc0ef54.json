@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "43de094978ca6dc0ef54",
+ "repo_id": 1173152133,
+ "full_name": "BigBodyCobain/Shadowbroker",
+ "created_at": "2026-11-09T06:12:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a5e9fb99ad52138a2a227cf65cf3b8be91a6b72329a68d8400c742994f37e3ce",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把飛機、船隻、衛星、地震、監視器等公開即時資料整合在一張地圖上的情報平台",
+  "features": [
+   "整合 60 多個公開資料來源、40 多個可切換圖層",
+   "可串接 AI agent 協助搜尋與分析資料",
+   "內建 IP、DNS、WHOIS、制裁名單等查詢工具"
+  ],
+  "audience": "情報分析師、研究人員、無線電玩家，以及想在地圖上看全球公開資訊的人",
+  "use_cases": [
+   "追蹤 Air Force One、富豪私人飛機與軍機的即時位置",
+   "在地圖上觀看各國公開 CCTV 影像與地震、野火動態",
+   "以衛星雷達資料偵測指定地區的地表變化並收到警示"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自行安裝 Docker 並用命令列架設；部分功能需 Shodan 或 NASA Earthdata 帳號",
+  "limitations": "預設後端需約 4GB 記憶體；InfoNet 通訊仍是實驗性測試網，作者表示目前不保證隱私",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

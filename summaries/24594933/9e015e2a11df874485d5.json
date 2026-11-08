@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9e015e2a11df874485d5",
+ "repo_id": 24594933,
+ "full_name": "Unleash/unleash",
+ "created_at": "2026-11-09T06:11:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c9af7675fe7d70aeabfef0afde46aaf66f28901806033aee5c499ec53438c39f",
+ "has_readme": true,
+ "readme_chars": 8444,
+ "content": {
+  "one_liner": "開源的功能開關平台，讓團隊決定新功能何時、對誰開放",
+  "features": [
+   "依使用者或族群逐步開放、隨時關閉新功能",
+   "支援 A/B 測試與灰度發布（canary release）",
+   "提供多種語言 SDK，可串接 Slack 等工具"
+  ],
+  "audience": "軟體開發團隊、DevOps 與平台工程人員，以及管理產品上線流程的人",
+  "use_cases": [
+   "新功能先開放給少數使用者，確認沒問題再全面上線",
+   "功能出問題時用緊急開關（kill switch）立即關閉，不用重新部署",
+   "對不同使用者做 A/B 測試，比較版本成效"
+  ],
+  "barrier": "code",
+  "barrier_note": "自架需要 git 與 Docker，在程式裡使用還要整合 SDK；有線上展示可以先試用",
+  "limitations": "開源版只有 2 個環境；RBAC、SSO 與進階分群等功能需要付費的 Pro 或 Enterprise 方案",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

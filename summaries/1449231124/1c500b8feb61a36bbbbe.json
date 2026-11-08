@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "1c500b8feb61a36bbbbe",
+ "repo_id": 1449231124,
+ "full_name": "tangerineturtle1/NX2navi",
+ "created_at": "2026-11-09T06:10:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d9e70d7a5234172423f9dbb5fac7e8664e546a30932ec773956a66df2e9c5abe",
+ "has_readme": true,
+ "readme_chars": 4819,
+ "content": {
+  "one_liner": "把 Switch 2 版《薩爾達傳說 時之笛》轉成 Windows 原生遊戲執行",
+  "features": [
+   "原生程式碼執行而非模擬器，預設 60 fps",
+   "支援寬螢幕、4K、DLSS／FSR 3.1 與 HDR",
+   "支援鍵鼠與手把、按鍵重設、震動與陀螺儀"
+  ],
+  "audience": "擁有 Switch 2 版《時之笛》並想在 Windows 電腦上以高畫質遊玩的玩家",
+  "use_cases": [
+   "在 PC 上以 4K、超寬螢幕或高幀率遊玩自己的《時之笛》",
+   "用 Xbox 或 Nintendo 手把在電腦上玩並自訂按鍵",
+   "在 HDR 螢幕上以 HDR 畫面遊玩"
+  ],
+  "barrier": "install",
+  "barrier_note": "需自行從主機取出合法遊戲檔，用安裝程式在 Windows 上建置約 10～25 分鐘",
+  "limitations": "不含遊戲檔；仍在早期開發，有畫面錯誤與偶發當機；需支援 Vulkan 1.3 的顯示卡與約 30 GB 空間",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

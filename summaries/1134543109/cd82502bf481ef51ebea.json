@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "cd82502bf481ef51ebea",
+ "repo_id": 1134543109,
+ "full_name": "vercel-labs/skills",
+ "created_at": "2026-11-09T06:10:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "19f2dddaec5fac6fb153c716e24b70c82aecf0c0be9ad9768b73fc61e1379ebf",
+ "has_readme": true,
+ "readme_chars": 3328,
+ "content": {
+  "one_liner": "用命令列幫 AI 寫程式助手安裝、管理可重複使用的「技能」指示",
+  "features": [
+   "搜尋、安裝、更新與移除 agent skills",
+   "支援 Claude Code、Cursor、Codex 等 80 種工具",
+   "建立技能範本，自己撰寫並分享技能"
+  ],
+  "audience": "使用 Claude Code、Cursor 等 AI 寫程式助手的開發者",
+  "use_cases": [
+   "幫專案安裝程式碼審查技能，讓 AI 助手照指示檢查程式碼",
+   "不安裝直接產生某個技能的提示詞，交給 AI 助手使用",
+   "把自己的工作流程寫成 SKILL.md 分享給團隊"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js 22.20 以上，並會在命令列執行 npx 指令",
+  "limitations": "預設會收集匿名使用資料，可用環境變數關閉；experimental_ 開頭的指令隨時可能更改或移除",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

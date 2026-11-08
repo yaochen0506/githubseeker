@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "85c51dbbf2dc9dcb70ad",
+ "repo_id": 1274703665,
+ "full_name": "mantrakp04/ardia",
+ "created_at": "2026-11-09T06:11:07+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ec62acebcb31192f6bc3598f0ff0027754fda13d1b60a0d8278a720dc21e1546",
+ "has_readme": true,
+ "readme_chars": 10016,
+ "content": {
+  "one_liner": "Mac 專用的免費 Chromium 瀏覽器，有類似 Arc 的側邊欄與 Dia 的精緻介面",
+  "features": [
+   "側邊欄分頁、分割畫面與子母畫面影片",
+   "內建 uBlock Origin 擋廣告與追蹤",
+   "相容 Chrome 擴充功能，透過 iCloud 同步"
+  ],
+  "audience": "使用 Apple Silicon Mac、懷念 Arc 或 Dia 操作方式，又重視隱私的瀏覽器使用者",
+  "use_cases": [
+   "從 Arc、Chrome、Safari 搬移書籤、密碼與分頁群組",
+   "用不同設定檔分開工作與私人的登入和擴充功能",
+   "在同一視窗並排開兩到三個網頁對照資料"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載 DMG 拖進應用程式即可，需 macOS 14 以上與 Apple Silicon Mac",
+  "limitations": "不支援 Intel Mac；Passkeys 與 Netflix 等 DRM 只部分支援；翻譯需 macOS 26；沒有 Dia 的 AI 功能",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4103fa399057849acadb",
+ "repo_id": 1301657572,
+ "full_name": "superdesigndev/treg",
+ "created_at": "2026-11-09T06:10:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5f348170b0786e52bdeb9ea12cd757b3cfb3e9a74ff24716b62c57fcd9fab5aa",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 代理用同一組 token 呼叫上千種付費工具 API，按次計費",
+  "features": [
+   "整合 SEO、社群、名單補充、爬蟲、影像生成等工具目錄",
+   "團隊共享 API 金鑰、CLI 與 SKILL.md，金鑰留在伺服器",
+   "可裝成 Claude Code 外掛或 MCP 連接器使用"
+  ],
+  "audience": "使用 AI 代理（如 Claude Code）的開發者、行銷或業務團隊",
+  "use_cases": [
+   "不訂閱 Semrush 等服務，按次查詢反向連結或關鍵字排名",
+   "從 LinkedIn 職缺產生排序好的候選人名單",
+   "團隊成員的代理共用公司 API 金鑰，不用各自持有"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會用命令列或 AI 代理工具，並註冊帳號；也可以自架",
+  "limitations": "使用 treg 金鑰的呼叫要從預付餘額扣款，沒有公開價格的端點會被拒絕；CLI 預設會傳送匿名使用資料，可以關閉",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,2213 @@
+{
+ "schema_version": "1",
+ "score_version": "d1",
+ "edition_id": "2026-11-09",
+ "business_date": "2026-11-09",
+ "generated_at": "2026-11-09T06:09:34+08:00",
+ "run_id": "20261109T060804-42528664816.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "category": "dev-tools",
+   "repo_id": 1131202426,
+   "full_name": "meta/astryx",
+   "html_url": "https://github.com/meta/astryx",
+   "description": "An open source design system that's fully customizable and agent ready",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-01-09T16:20:32Z",
+   "pushed_at": "2026-11-08T22:07:39Z",
+   "stars": 16460,
+   "forks": 1303,
+   "metric_method": "observed",
+   "growth_per_day": 2030.17,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 863
+    },
+    {
+     "source_id": "typescript-daily",
+     "rank": 2,
+     "period": "daily",
+     "period_stars": 863
+    }
+   ],
+   "observed": {
+    "delta": 2052,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:05+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +2,052 星",
+    "也在 TypeScript 日榜第 2 名、全站日榜第 6 名",
+    "再次推薦：每天成長是上次入選（2026-11-08）的 5.3 倍，之後已增加 2,052 星"
+   ],
+   "notes": [],
+   "repeat_of": "2026-11-08",
+   "repeat_reason": "再次推薦：每天成長是上次入選（2026-11-08）的 5.3 倍，之後已增加 2,052 星",
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Meta 開源的 React 設計系統，提供大量現成介面元件，人和 AI 助理都能用來做網頁",
+     "features": [
+      "150 多個無障礙 React 介面元件",
+      "7 套可自訂主題，支援深色模式",
+      "附 CLI 工具，提供文件、範本與元件架構"
+     ],
+     "audience": "用 React 開發網頁的前端工程師、設計師，以及搭配 AI 寫程式助理的開發團隊",
+     "use_cases": [
+      "用現成元件快速做出表格頁、詳細頁、表單精靈等介面",
+      "設計師調整主題，讓產品呈現自家品牌風格",
+      "讓 AI 寫程式助理透過 CLI 查元件文件並產生介面"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會寫 React 程式，並用 npm 等命令列工具安裝套件",
+     "limitations": "目前仍是 Beta 版；需要 React 19 以上；圖表套件還沒有穩定版，實驗性元件沒有發布",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "e717b8179e30f8875b1b",
+    "has_readme": true,
+    "from_cache": true,
+    "attempts": 0,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "category": "ai-agents",
+   "repo_id": 1356159928,
+   "full_name": "Albert-Weasker/niubigeo",
+   "html_url": "https://github.com/Albert-Weasker/niubigeo",
+   "description": "Open-source AI brand visibility and competitor reports. Official website: https://niubigeo.ai/ | Paid services: AI testing by real people and GEO optimization. Pricing: https://niubigeo.ai/pricing",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-09-03T15:55:54Z",
+   "pushed_at": "2026-11-03T03:36:11Z",
+   "stars": 10135,
+   "forks": 816,
+   "metric_method": "trending_daily",
+   "growth_per_day": 1307.0,
+   "score": 100.0,
+   "score_breakdown": {
+    "s_abs": 1.0,
+    "s_rel": 1.0
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 1307
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +1,307 星（TypeScript 日榜第 4 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "開源工具，查看 AI 回答裡怎麼描述你的品牌、提到哪些競爭對手",
+     "features": [
+      "同時比較多個 AI 模型對品牌的描述與競品",
+      "檢視原始回答與引用來源，保留證據",
+      "關鍵字定期監測，並用 Diff View 比較變化"
+     ],
+     "audience": "想了解自家產品在 AI 回答中能見度的產品經營者、行銷人員，需具備自架能力",
+     "use_cases": [
+      "輸入自家網域，看各 AI 模型如何描述產品、提到哪些競品",
+      "不提品牌名稱測試關鍵字，看 AI 會推薦誰",
+      "排程重複測試，追蹤 AI 推薦結果的變化"
+     ],
+     "barrier": "code",
+     "barrier_note": "需自架，安裝 Node.js 22.13+ 或 Docker，並準備 OpenRouter 等模型 API 金鑰",
+     "limitations": "模型與搜尋 API 費用另計；提問內容會送到外部模型 API；v0.3 沒有獨立的競品偵測儀表板",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ec738b03473b5cd42406",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "category": "ai-agents",
+   "repo_id": 1291896819,
+   "full_name": "poco-ai/Agentero",
+   "html_url": "https://github.com/poco-ai/Agentero",
+   "description": "Unified research workspace for humans & agents — PDF Q&A with citations, Vault, writing. 为人与 Agent 协作的科研工作台；补齐 Zotero 时代的人机上下文断点。",
+   "language": "TypeScript",
+   "topics": [
+    "academic",
+    "ai-agents",
+    "citations",
+    "desktop-app",
+    "dsh-plugin",
+    "knowledge-base",
+    "literature-review",
+    "llm",
+    "mcp",
+    "pdf",
+    "rag",
+    "research",
+    "research-assistant",
+    "tauri",
+    "typescript",
+    "writing-assistant"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-07-07T06:55:12Z",
+   "pushed_at": "2026-11-08T15:46:58Z",
+   "stars": 1997,
+   "forks": 128,
+   "metric_method": "trending_daily",
+   "growth_per_day": 175.0,
+   "score": 80.1,
+   "score_breakdown": {
+    "s_abs": 0.7484,
+    "s_rel": 0.9605
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 13,
+     "period": "daily",
+     "period_stars": 175
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +175 星（TypeScript 日榜第 13 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "結合 PDF 閱讀、筆記與 AI Agent 的桌面研究工作台，可管理論文文獻",
+     "features": [
+      "PDF 閱讀批注，並把公式與表格轉成 Markdown",
+      "內建雙向連結筆記與多種翻譯模式",
+      "可匯入 Zotero 書庫，也能透過 MCP 串接 AI"
+     ],
+     "audience": "需要大量閱讀論文、想讓 AI 協助整理文獻的研究人員與研究生",
+     "use_cases": [
+      "邊讀論文邊讓本機 Agent 根據內容回答問題",
+      "把 Zotero 文獻庫整批搬過來，用 Markdown 寫筆記",
+      "訂閱學術 RSS，查看每天推薦的 arXiv 新論文"
+     ],
+     "barrier": "install",
+     "barrier_note": "要下載桌面版安裝；串接 AI Agent 或使用 CLI 需要另外設定",
+     "limitations": "Linux 需要 Ubuntu 22.04 以上版本（依賴 webkit2gtk 4.1）；README 為簡體中文",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "44d5a71bcefe28927e22",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "category": "ai-agents",
+   "repo_id": 1061953414,
+   "full_name": "anthropics/skills",
+   "html_url": "https://github.com/anthropics/skills",
+   "description": "Public repository for Agent Skills",
+   "language": "Python",
+   "topics": [
+    "agent-skills"
+   ],
+   "license_spdx": null,
+   "created_at": "2025-09-22T15:53:31Z",
+   "pushed_at": "2026-11-06T22:32:32Z",
+   "stars": 189536,
+   "forks": 22338,
+   "metric_method": "observed",
+   "growth_per_day": 824.14,
+   "score": 74.0,
+   "score_breakdown": {
+    "s_abs": 0.972,
+    "s_rel": 0.0437
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 793
+    },
+    {
+     "source_id": "all-weekly",
+     "rank": 4,
+     "period": "weekly",
+     "period_stars": 2796
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 3,
+     "period": "daily",
+     "period_stars": 793
+    },
+    {
+     "source_id": "python-weekly",
+     "rank": 2,
+     "period": "weekly",
+     "period_stars": 2796
+    }
+   ],
+   "observed": {
+    "delta": 833,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:05+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +833 星",
+    "也在 Python 日榜第 3 名、全站日榜第 7 名、Python 週榜第 2 名 等 4 個榜單"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Anthropic 公開的 Claude Skills 範例集，教 Claude 用固定流程完成特定任務",
+     "features": [
+      "收錄創意設計、技術開發、企業溝通等範例 Skills",
+      "公開 Word、PDF、PowerPoint、Excel 文件處理 Skills",
+      "提供 Agent Skills 規格說明與 Skill 範本"
+     ],
+     "audience": "使用 Claude 的開發者、想自訂 Claude 工作流程的團隊，以及想了解 Skills 寫法的人",
+     "use_cases": [
+      "在 Claude Code 安裝文件 Skills，請 Claude 擷取 PDF 表單欄位",
+      "參考範本建立符合公司品牌規範的文件產生 Skill",
+      "透過 Claude API 上傳自訂 Skills 給 AI 代理使用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需在 Claude Code 用指令安裝或透過 API 使用；付費版 Claude.ai 已內建這些範例",
+     "limitations": "僅供示範與教學，實際 Claude 行為可能與範例不同，用於重要任務前應自行充分測試",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "c2a49b054e99fb611785",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "category": "dev-tools",
+   "repo_id": 1213901015,
+   "full_name": "googlecolab/google-colab-cli",
+   "html_url": "https://github.com/googlecolab/google-colab-cli",
+   "description": "A CLI for interacting with Google Colab runtimes",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-04-17T22:12:32Z",
+   "pushed_at": "2026-11-06T10:30:44Z",
+   "stars": 2074,
+   "forks": 296,
+   "metric_method": "trending_daily",
+   "growth_per_day": 139.0,
+   "score": 71.6,
+   "score_breakdown": {
+    "s_abs": 0.7153,
+    "s_rel": 0.7183
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 139
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +139 星（Python 日榜第 5 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在終端機裡直接操作 Google Colab 雲端運算環境的命令列工具",
+     "features": [
+      "開啟 CPU、GPU 或 TPU 雲端執行環境",
+      "在雲端執行本機 Python 程式或筆記本",
+      "上傳下載檔案、掛載 Google Drive"
+     ],
+     "audience": "熟悉命令列、想用 Colab 雲端 GPU 跑程式的開發者、資料科學家與 AI 代理整合者",
+     "use_cases": [
+      "租用 A100 GPU 執行本機訓練程式，取回模型檔後自動關機",
+      "掛載 Google Drive 執行筆記本，並匯出 Markdown 執行紀錄",
+      "在自動化流程中可能用來批次執行雲端運算工作"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用 pip 或 uv 安裝，並在 Linux 或 macOS 終端機操作，需 Google 帳號",
+     "limitations": "僅支援 Linux 與 macOS，不支援 Windows；高記憶體機型需 Colab Pro 或 Pro+",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ae1183946b5a45018316",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "category": "learning",
+   "repo_id": 1185590488,
+   "full_name": "rohitg00/ai-engineering-from-scratch",
+   "html_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+   "description": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+   "language": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "ai-engineering",
+    "computer-vision",
+    "course",
+    "deep-learning",
+    "dsh",
+    "from-scratch",
+    "generative-ai",
+    "llm",
+    "machine-learning",
+    "mcp",
+    "python",
+    "rea",
+    "reinforcement-learning",
+    "rust",
+    "transformers",
+    "tutorial",
+    "typescript"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-18T18:38:02Z",
+   "pushed_at": "2026-11-08T17:23:17Z",
+   "stars": 77794,
+   "forks": 13810,
+   "metric_method": "trending_daily",
+   "growth_per_day": 439.0,
+   "score": 67.5,
+   "score_breakdown": {
+    "s_abs": 0.881,
+    "s_rel": 0.0568
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 6,
+     "period": "daily",
+     "period_stars": 439
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +439 星（Python 日榜第 6 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的 AI 工程課程，從零動手實作模型、檢索系統與 AI agent",
+     "features": [
+      "542 堂課、20 個階段，支援多種程式語言",
+      "可在網站閱讀，或讓 coding agent 當 AI 家教",
+      "3 個實作專案，附參考解答與評分工具"
+     ],
+     "audience": "已經會寫程式、想深入了解 AI 運作原理並自己動手實作的學習者",
+     "use_cases": [
+      "從基礎數學、機器學習一路學到 LLM 應用與 agent 開發",
+      "專攻 MCP 或 Agent Skills 等主題的短期學習路線",
+      "用分級測驗找出起點，產生個人化學習計畫"
+     ],
+     "barrier": "code",
+     "barrier_note": "網站可直接閱讀，但實作需會寫程式並使用命令列、Python 等環境",
+     "limitations": "先備條件是會寫程式；完整課程預估約 200～306 小時",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "02edbaa9d35ee5a0188d",
+    "has_readme": true,
+    "from_cache": true,
+    "attempts": 0,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "category": "fun-creative",
+   "repo_id": 1195360525,
+   "full_name": "OpenMontageInc/OpenMontage",
+   "html_url": "https://github.com/OpenMontageInc/OpenMontage",
+   "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "agentic-ai",
+    "ai",
+    "claude",
+    "copilot",
+    "cursor",
+    "elevenlabs",
+    "ffmpeg",
+    "flux",
+    "image-generation",
+    "open-source",
+    "openai",
+    "python",
+    "remotion",
+    "stable-diffusion",
+    "text-to-speech",
+    "text-to-video",
+    "video-generation",
+    "video-production"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2026-03-29T15:23:22Z",
+   "pushed_at": "2026-11-08T03:50:57Z",
+   "stars": 78642,
+   "forks": 10491,
+   "metric_method": "observed",
+   "growth_per_day": 401.54,
+   "score": 66.4,
+   "score_breakdown": {
+    "s_abs": 0.8681,
+    "s_rel": 0.0513
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 406,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:09+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +406 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 程式助理變成影片製作團隊，用文字描述就能做出完整影片",
+     "features": [
+      "自動研究、寫腳本、配音、上字幕與剪輯成片",
+      "可貼上參考影片，分析節奏風格並提出企劃與費用估算",
+      "本機分鏡看板，逐場景確認素材後才算繪輸出"
+     ],
+     "audience": "會使用 Claude Code、Cursor 等 AI 程式助理，想自動製作影片的創作者或開發者",
+     "use_cases": [
+      "參考喜歡的 YouTube Short，改做成其他主題的科普短片",
+      "用免費素材庫的真實影片片段剪成紀錄片風格影片",
+      "用 AI 生成畫面與配音製作動畫短片或產品宣傳影片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝 Python、FFmpeg、Node.js 並用命令列設定，搭配 AI 程式助理使用",
+     "limitations": "不填 API 金鑰也能用免費工具製作；使用付費生成服務需自備金鑰並負擔費用，本機生成影片需要 GPU",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "55096ad50737e460dec5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "category": "fun-creative",
+   "repo_id": 1449231124,
+   "full_name": "tangerineturtle1/NX2navi",
+   "html_url": "https://github.com/tangerineturtle1/NX2navi",
+   "description": null,
+   "language": "C",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-07T10:01:23Z",
+   "pushed_at": "2026-11-08T20:52:18Z",
+   "stars": 1217,
+   "forks": 56,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 608.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 1,217 星，建立以來平均每天 +608 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把 Switch 2 版《薩爾達傳說 時之笛》轉成 Windows 原生遊戲執行",
+     "features": [
+      "原生程式碼執行而非模擬器，預設 60 fps",
+      "支援寬螢幕、4K、DLSS／FSR 3.1 與 HDR",
+      "支援鍵鼠與手把、按鍵重設、震動與陀螺儀"
+     ],
+     "audience": "擁有 Switch 2 版《時之笛》並想在 Windows 電腦上以高畫質遊玩的玩家",
+     "use_cases": [
+      "在 PC 上以 4K、超寬螢幕或高幀率遊玩自己的《時之笛》",
+      "用 Xbox 或 Nintendo 手把在電腦上玩並自訂按鍵",
+      "在 HDR 螢幕上以 HDR 畫面遊玩"
+     ],
+     "barrier": "install",
+     "barrier_note": "需自行從主機取出合法遊戲檔，用安裝程式在 Windows 上建置約 10～25 分鐘",
+     "limitations": "不含遊戲檔；仍在早期開發，有畫面錯誤與偶發當機；需支援 Vulkan 1.3 的顯示卡與約 30 GB 空間",
+     "based_on": [
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1c500b8feb61a36bbbbe",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "category": "security-network",
+   "repo_id": 1449518822,
+   "full_name": "Th0rgal/satmux",
+   "html_url": "https://github.com/Th0rgal/satmux",
+   "description": "Accelerate high-latency GEO inflight Wi-Fi via warm BBR TCP multiplexing + 1-RTT Ground-TLS + zlib (zero dependencies)",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-07T16:09:41Z",
+   "pushed_at": "2026-11-07T16:26:20Z",
+   "stars": 920,
+   "forks": 44,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 460.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 920 星，建立以來平均每天 +460 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 Python 寫的工具，讓飛機上透過同步衛星連線的 Wi-Fi 上網更快、更穩",
+     "features": [
+      "預先建立 12 條 TCP 連線，繞過機上代理與 DNS",
+      "在本機提供 SOCKS5 與 HTTP 代理，減少連線等待",
+      "只用 Python 內建函式庫，不需其他套件"
+     ],
+     "audience": "常搭長途航班、需要在機上用網路工作的工程師，特別是 macOS 使用者",
+     "use_cases": [
+      "在 Inmarsat GX、Viasat 等機上 Wi-Fi 存取 GitHub 或套件庫",
+      "飛行途中下載大型檔案，可同時分段下載",
+      "落地後還原系統代理設定，並刪除臨時 VM"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要使用命令列，並在衛星地面站附近自己架設一台 Linux VM",
+     "limitations": "針對非 Starlink 的同步衛星機上 Wi-Fi；需要自備遠端 VM；系統設定腳本以 macOS 為主",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "67e058d39a6e9d213cb0",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "ai-agents",
+   "repo_id": 1219896053,
+   "full_name": "arcsin1/oh-my-ppt",
+   "html_url": "https://github.com/arcsin1/oh-my-ppt",
+   "description": "Describe what you need — a presentation, lesson, or story — and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.",
+   "language": "TypeScript",
+   "topics": [
+    "ai-agents",
+    "ai-ppt",
+    "ai-ppt-generator",
+    "ai-tool",
+    "aippt",
+    "design-systems",
+    "desktop-app",
+    "html-ppt",
+    "local-fist",
+    "ppt-generator",
+    "pptx-generator"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-04-24T10:29:13Z",
+   "pushed_at": "2026-11-04T04:26:32Z",
+   "stars": 2458,
+   "forks": 241,
+   "metric_method": "trending_daily",
+   "growth_per_day": 91.0,
+   "score": 58.7,
+   "score_breakdown": {
+    "s_abs": 0.6545,
+    "s_rel": 0.3845
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 15,
+     "period": "daily",
+     "period_stars": 91
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +91 星（TypeScript 日榜第 15 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "輸入主題或上傳文件，讓 AI 幫你做出可編輯的 HTML 簡報",
+     "features": [
+      "AI 自動規劃大綱、配色、排版與配圖",
+      "可匯入舊 PPTX，也能匯出可編輯的 PPTX",
+      "對話式修改、拖拉編輯、動畫與演講稿"
+     ],
+     "audience": "常要做報告、上課、路演或社群圖文，想省下排版時間的上班族、老師與學生",
+     "use_cases": [
+      "上傳 docx 或 md 文件，自動整理成一份簡報",
+      "匯入舊的 PPTX 範本，再用 AI 修改內容",
+      "做成小紅書圖文或匯出 MP4 影片發到社群"
+     ],
+     "barrier": "install",
+     "barrier_note": "要下載桌面 App，並自行填入 AI 模型的 API 設定（或用本機 Ollama）",
+     "limitations": "沒有設定文字模型就不能產生簡報；複雜圖表、表格、動畫的還原還在改進；安裝檔未簽署，系統可能會跳出安全警告",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "165c8815751a466d63ce",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "ai-agents",
+   "repo_id": 1134543109,
+   "full_name": "vercel-labs/skills",
+   "html_url": "https://github.com/vercel-labs/skills",
+   "description": "The open agent skills tool - npx skills",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-01-14T21:31:18Z",
+   "pushed_at": "2026-11-06T02:37:48Z",
+   "stars": 38617,
+   "forks": 3365,
+   "metric_method": "observed",
+   "growth_per_day": 122.68,
+   "score": 53.1,
+   "score_breakdown": {
+    "s_abs": 0.6973,
+    "s_rel": 0.0319
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 17,
+     "period": "weekly",
+     "period_stars": 1094
+    }
+   ],
+   "observed": {
+    "delta": 124,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:19+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +124 星",
+    "也在 TypeScript 週榜第 17 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用命令列幫 AI 寫程式助手安裝、管理可重複使用的「技能」指示",
+     "features": [
+      "搜尋、安裝、更新與移除 agent skills",
+      "支援 Claude Code、Cursor、Codex 等 80 種工具",
+      "建立技能範本，自己撰寫並分享技能"
+     ],
+     "audience": "使用 Claude Code、Cursor 等 AI 寫程式助手的開發者",
+     "use_cases": [
+      "幫專案安裝程式碼審查技能，讓 AI 助手照指示檢查程式碼",
+      "不安裝直接產生某個技能的提示詞，交給 AI 助手使用",
+      "把自己的工作流程寫成 SKILL.md 分享給團隊"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Node.js 22.20 以上，並會在命令列執行 npx 指令",
+     "limitations": "預設會收集匿名使用資料，可用環境變數關閉；experimental_ 開頭的指令隨時可能更改或移除",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "cd82502bf481ef51ebea",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "ai-agents",
+   "repo_id": 1301657572,
+   "full_name": "superdesigndev/treg",
+   "html_url": "https://github.com/superdesigndev/treg",
+   "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
+   "language": "Python",
+   "topics": [
+    "agents",
+    "api-keys",
+    "cli",
+    "credentials",
+    "developer-tools",
+    "dsh-plugin",
+    "mcp",
+    "proxy",
+    "python",
+    "registry",
+    "secrets"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2026-07-15T13:38:07Z",
+   "pushed_at": "2026-11-08T21:45:24Z",
+   "stars": 7654,
+   "forks": 685,
+   "metric_method": "observed",
+   "growth_per_day": 92.99,
+   "score": 52.4,
+   "score_breakdown": {
+    "s_abs": 0.6576,
+    "s_rel": 0.123
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 94,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:42+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +94 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 代理用同一組 token 呼叫上千種付費工具 API，按次計費",
+     "features": [
+      "整合 SEO、社群、名單補充、爬蟲、影像生成等工具目錄",
+      "團隊共享 API 金鑰、CLI 與 SKILL.md，金鑰留在伺服器",
+      "可裝成 Claude Code 外掛或 MCP 連接器使用"
+     ],
+     "audience": "使用 AI 代理（如 Claude Code）的開發者、行銷或業務團隊",
+     "use_cases": [
+      "不訂閱 Semrush 等服務，按次查詢反向連結或關鍵字排名",
+      "從 LinkedIn 職缺產生排序好的候選人名單",
+      "團隊成員的代理共用公司 API 金鑰，不用各自持有"
+     ],
+     "barrier": "code",
+     "barrier_note": "需會用命令列或 AI 代理工具，並註冊帳號；也可以自架",
+     "limitations": "使用 treg 金鑰的呼叫要從預付餘額扣款，沒有公開價格的端點會被拒絕；CLI 預設會傳送匿名使用資料，可以關閉",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "4103fa399057849acadb",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "ai-models",
+   "repo_id": 286301447,
+   "full_name": "neuml/txtai",
+   "html_url": "https://github.com/neuml/txtai",
+   "description": "💡 All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
+   "language": "Python",
+   "topics": [
+    "agents",
+    "ai",
+    "ai-agents",
+    "embeddings",
+    "information-retrieval",
+    "language-model",
+    "large-language-models",
+    "llm",
+    "nlp",
+    "python",
+    "rag",
+    "retrieval-augmented-generation",
+    "search",
+    "search-engine",
+    "semantic-search",
+    "sentence-embeddings",
+    "transformers",
+    "txtai",
+    "vector-database",
+    "vector-search"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2020-08-09T19:14:59Z",
+   "pushed_at": "2026-11-06T23:17:03Z",
+   "stars": 13161,
+   "forks": 980,
+   "metric_method": "trending_daily",
+   "growth_per_day": 57.0,
+   "score": 45.2,
+   "score_breakdown": {
+    "s_abs": 0.5877,
+    "s_rel": 0.0435
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 57
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +57 星（Python 日榜第 7 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用 Python 打造語意搜尋、RAG 與 AI 代理的整合型 AI 框架",
+     "features": [
+      "結合向量、圖譜與 SQL 的 embeddings 資料庫",
+      "支援摘要、翻譯、語音轉文字等語言模型流程",
+      "可建立自主 AI 代理，提供 Web 與 MCP API"
+     ],
+     "audience": "想開發語意搜尋、RAG 或 AI 代理應用的 Python 開發者與資料工程師",
+     "use_cases": [
+      "建立能理解語意、不只比對關鍵字的搜尋系統",
+      "用自己的資料建立「和資料對話」的 RAG 問答應用",
+      "將音訊轉成文字、翻譯或自動摘要文件"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Python 3.11 以上，用 pip 或 Docker 安裝，並撰寫程式碼使用",
+     "limitations": "僅支援 Python 3.11 以上，建議使用虛擬環境；部分功能需另外安裝相依套件",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f8efaf226908868b8595",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "ai-models",
+   "repo_id": 400501136,
+   "full_name": "google-deepmind/mujoco",
+   "html_url": "https://github.com/google-deepmind/mujoco",
+   "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+   "language": "C++",
+   "topics": [
+    "mujoco",
+    "physics",
+    "robotics"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2021-08-27T12:25:48Z",
+   "pushed_at": "2026-11-07T17:07:40Z",
+   "stars": 16355,
+   "forks": 1950,
+   "metric_method": "trending_daily",
+   "growth_per_day": 26.0,
+   "score": 36.2,
+   "score_breakdown": {
+    "s_abs": 0.4771,
+    "s_rel": 0.0159
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 8,
+     "period": "daily",
+     "period_stars": 26
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +26 星（全站日榜第 8 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "模擬機器人、人體等關節結構碰撞與運動的通用物理引擎",
+     "features": [
+      "高速模擬多關節物體與環境的接觸互動",
+      "內建桌面與瀏覽器互動式視覺化檢視器",
+      "提供 C API、Python 綁定與 Unity 外掛"
+     ],
+     "audience": "機器人、生物力學、動畫與機器學習領域的研究人員和開發者",
+     "use_cases": [
+      "在瀏覽器中拖放自己的模型，檢視物理模擬效果",
+      "用 Python 訓練機器人行走等控制策略",
+      "研究人體或機器人動作的生物力學模擬"
+     ],
+     "barrier": "code",
+     "barrier_note": "網頁版可直接試玩，但實際應用需用 C 或 Python 寫程式",
+     "limitations": "網頁版跑在 WebAssembly 上，比原生版慢；main 分支可能不穩定；Python 需 3.11 以上；非 Google 官方支援產品",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "66d1987f9d95688d4ed4",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "ai-models",
+   "repo_id": 326610757,
+   "full_name": "RapidAI/RapidOCR",
+   "html_url": "https://github.com/RapidAI/RapidOCR",
+   "description": "📄 Awesome OCR multiple programing languages toolkits based on ONNX Runtime, OpenVINO, MNN, PaddlePaddle, TensorRT and PyTorch.",
+   "language": "Python",
+   "topics": [
+    "chineseocr",
+    "crnn",
+    "dbnet",
+    "easyocr",
+    "mnn",
+    "ocr",
+    "onnxocr",
+    "onnxruntime",
+    "openvino",
+    "paddleocr",
+    "rapidocr",
+    "tensorrt"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2021-01-04T08:02:09Z",
+   "pushed_at": "2026-11-08T03:25:41Z",
+   "stars": 8479,
+   "forks": 769,
+   "metric_method": "observed",
+   "growth_per_day": 1.98,
+   "score": 11.9,
+   "score_breakdown": {
+    "s_abs": 0.158,
+    "s_rel": 0.0023
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 2,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:23+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +2 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的文字辨識（OCR）工具，可離線把圖片中的文字轉成可編輯文字",
+     "features": [
+      "預設支援中文與英文辨識，另有其他語言模型",
+      "支援 ONNX Runtime、OpenVINO 等多種推論引擎",
+      "可離線部署，提供 Python 等多種語言版本"
+     ],
+     "audience": "需要在自己的程式或系統中加入文字辨識功能的開發者",
+     "use_cases": [
+      "在程式中辨識圖片或掃描文件裡的中英文文字",
+      "作為 AI 問答或文件處理系統的 OCR 元件，例如 langchain",
+      "現有模型不夠用時，以自有資料透過 PaddleOCR 微調後再部署"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Python 3.8 以上環境，並會用程式或命令列呼叫；也提供 Docker 環境",
+     "limitations": "模型權重衍生自百度 PaddleOCR，版權屬原作者；完整文件只有中文版；作者表示速度快，但尚未經證實",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f315d2efa58a45fe3001",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "everyday-tools",
+   "repo_id": 1274703665,
+   "full_name": "mantrakp04/ardia",
+   "html_url": "https://github.com/mantrakp04/ardia",
+   "description": "A free Chromium browser for the Mac: Arc's sidebar, Dia's polish. Chat on Discord: discord.gg/TdhuXrbcA6",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2026-06-19T19:56:08Z",
+   "pushed_at": "2026-11-08T21:48:52Z",
+   "stars": 1472,
+   "forks": 154,
+   "metric_method": "trending_daily",
+   "growth_per_day": 85.0,
+   "score": 63.7,
+   "score_breakdown": {
+    "s_abs": 0.6447,
+    "s_rel": 0.6128
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 9,
+     "period": "daily",
+     "period_stars": 85
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +85 星（TypeScript 日榜第 9 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Mac 專用的免費 Chromium 瀏覽器，有類似 Arc 的側邊欄與 Dia 的精緻介面",
+     "features": [
+      "側邊欄分頁、分割畫面與子母畫面影片",
+      "內建 uBlock Origin 擋廣告與追蹤",
+      "相容 Chrome 擴充功能，透過 iCloud 同步"
+     ],
+     "audience": "使用 Apple Silicon Mac、懷念 Arc 或 Dia 操作方式，又重視隱私的瀏覽器使用者",
+     "use_cases": [
+      "從 Arc、Chrome、Safari 搬移書籤、密碼與分頁群組",
+      "用不同設定檔分開工作與私人的登入和擴充功能",
+      "在同一視窗並排開兩到三個網頁對照資料"
+     ],
+     "barrier": "online",
+     "barrier_note": "下載 DMG 拖進應用程式即可，需 macOS 14 以上與 Apple Silicon Mac",
+     "limitations": "不支援 Intel Mac；Passkeys 與 Netflix 等 DRM 只部分支援；翻譯需 macOS 26；沒有 Dia 的 AI 功能",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "85c51dbbf2dc9dcb70ad",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "everyday-tools",
+   "repo_id": 1065936302,
+   "full_name": "Open-Dev-Society/OpenStock",
+   "html_url": "https://github.com/Open-Dev-Society/OpenStock",
+   "description": "OpenStock is an open-source alternative to expensive market platforms. Track real-time prices, set personalized alerts, and explore detailed company insights — built openly, for everyone, forever free.",
+   "language": "TypeScript",
+   "topics": [
+    "coderabbit",
+    "inngest",
+    "nextjs",
+    "shadcn-ui",
+    "stock-market",
+    "tailwindcss"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2025-09-28T18:16:32Z",
+   "pushed_at": "2026-11-04T12:13:42Z",
+   "stars": 21355,
+   "forks": 2656,
+   "metric_method": "trending_daily",
+   "growth_per_day": 90.0,
+   "score": 50.0,
+   "score_breakdown": {
+    "s_abs": 0.6529,
+    "s_rel": 0.0423
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 14,
+     "period": "daily",
+     "period_stars": 90
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +90 星（TypeScript 日榜第 14 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的股市看盤網站，可以追蹤股價、設定到價提醒、查公司資料",
+     "features": [
+      "涵蓋美股、加密貨幣、外匯等八個市場的儀表板",
+      "TradingView 線圖，支援畫線與多種技術指標",
+      "自選股清單、到價 Email 提醒與 AI 每週新聞摘要"
+     ],
+     "audience": "想免費看盤、追蹤股票的一般投資人，以及想自己架站的開發者",
+     "use_cases": [
+      "打開官方社群版網站，免費查看美股線圖與公司財務資料",
+      "建立最多 50 檔的自選股清單，追蹤持股價格",
+      "自行架設並開啟即時模式，收到股價突破目標的 Email 提醒"
+     ],
+     "barrier": "online",
+     "barrier_note": "有現成網站可直接註冊使用；自行架設則需 Docker、MongoDB 與 Finnhub 金鑰",
+     "limitations": "不是券商也非投資建議；社群版報價每小時更新、沒有到價提醒；台股等多數市場支援有限或延遲",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "37ffe0dc9b88e849ea23",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "everyday-tools",
+   "repo_id": 679086250,
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "html_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+   "description": "The only downloader you need. 下载器的集大成者。",
+   "language": "Python",
+   "topics": [
+    "async",
+    "asyncio",
+    "bittorent",
+    "bt",
+    "cross-platform",
+    "download-manager",
+    "downloader",
+    "fluent-design",
+    "ftp",
+    "http3",
+    "magnet",
+    "pyqt",
+    "pyside6",
+    "python",
+    "qt",
+    "quic",
+    "react",
+    "software",
+    "streaming"
+   ],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2023-08-16T04:23:44Z",
+   "pushed_at": "2026-11-08T09:22:31Z",
+   "stars": 10854,
+   "forks": 708,
+   "metric_method": "trending_daily",
+   "growth_per_day": 46.0,
+   "score": 42.9,
+   "score_breakdown": {
+    "s_abs": 0.5573,
+    "s_rel": 0.0426
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 10,
+     "period": "daily",
+     "period_stars": 46
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +46 星（Python 日榜第 10 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "一個 App 就能下載網頁檔案、BT、影片串流等多種來源的跨平台下載器",
+     "features": [
+      "支援 HTTP、BT/磁力連結、FTP、M3U8、eD2k 等協定",
+      "可下載 YouTube、Bilibili 影片，可選畫質與字幕",
+      "搭配瀏覽器擴充功能偵測網頁影片並一鍵下載"
+     ],
+     "audience": "常下載大型檔案、影片或 BT 資源，想用一套軟體搞定的一般使用者",
+     "use_cases": [
+      "下載 YouTube 或 Bilibili 影片、播放清單與字幕",
+      "在 Android 上錄製 M3U8 直播並在背景持續下載",
+      "透過鏡像加速下載 GitHub、HuggingFace 上的檔案"
+     ],
+     "barrier": "install",
+     "barrier_note": "需在 Windows、macOS、Linux 或 Android 下載安裝 App，不用寫程式",
+     "limitations": "需 Windows 10+、macOS 13+、Android 9+ 等版本；不支援沒有 AVX 指令集的 CPU；外掛 API 尚未公開",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "6c3ef2f7a37a9b505efe",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "fun-creative",
+   "repo_id": 330355479,
+   "full_name": "xfangfang/wiliwili",
+   "html_url": "https://github.com/xfangfang/wiliwili",
+   "description": "第三方B站客户端，目前可以运行在PC全平台、PSVita、PS4 、Xbox 和 Nintendo Switch上",
+   "language": "C++",
+   "topics": [
+    "bilibili",
+    "mpv",
+    "nanovg",
+    "nintendo-switch",
+    "nintendo-switch-homebrew",
+    "opencc",
+    "opengl",
+    "ps4",
+    "psv",
+    "xbox"
+   ],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2021-01-17T09:27:58Z",
+   "pushed_at": "2026-10-31T14:00:15Z",
+   "stars": 5676,
+   "forks": 290,
+   "metric_method": "observed",
+   "growth_per_day": 6.92,
+   "score": 22.8,
+   "score_breakdown": {
+    "s_abs": 0.2996,
+    "s_rel": 0.0122
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 7,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:28+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +7 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "4cb7763c393c9f4bb842",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "出現中國大陸用語：「用戶」改為「使用者」"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "dev-tools",
+   "repo_id": 1134411737,
+   "full_name": "vercel-labs/json-render",
+   "html_url": "https://github.com/vercel-labs/json-render",
+   "description": "The Generative UI framework",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-01-14T17:22:39Z",
+   "pushed_at": "2026-11-06T17:27:34Z",
+   "stars": 19451,
+   "forks": 1030,
+   "metric_method": "trending_daily",
+   "growth_per_day": 202.0,
+   "score": 60.3,
+   "score_breakdown": {
+    "s_abs": 0.7691,
+    "s_rel": 0.1049
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 202
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +202 星（TypeScript 日榜第 11 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 AI 依照文字指令，用開發者事先定義好的元件產生使用者介面的框架",
+     "features": [
+      "AI 只能使用你元件目錄中的元件，輸出 JSON 格式固定",
+      "邊接收 AI 回應邊逐步顯示畫面",
+      "支援網頁、手機、PDF、Email、影片等多種輸出"
+     ],
+     "audience": "想在產品中加入 AI 自動產生介面的前端或全端開發者",
+     "use_cases": [
+      "讓 AI 依使用者需求即時產生個人化的儀表板畫面",
+      "從 AI 產生的內容輸出 PDF 文件、Email 或社群分享圖",
+      "在 Slack、Teams、Discord 中顯示 AI 產生的互動卡片"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會 TypeScript 與 React、Vue 等前端框架，並用套件管理工具安裝",
+     "limitations": "部分功能（如 Jev 組合、gsplat.js 示範）仍屬實驗性質，作者建議固定套件版本",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "81b2a1abde203278ef7d",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "dev-tools",
+   "repo_id": 24594933,
+   "full_name": "Unleash/unleash",
+   "html_url": "https://github.com/Unleash/unleash",
+   "description": "Open-source feature management platform",
+   "language": "TypeScript",
+   "topics": [
+    "activation-strategies",
+    "collaboration",
+    "continuous-delivery",
+    "continuous-deployment",
+    "devops",
+    "devtool",
+    "experiments",
+    "feature",
+    "feature-flags",
+    "feature-toggle",
+    "feature-toggles",
+    "feature-toggling",
+    "hacktoberfest",
+    "integration",
+    "platform-engineering",
+    "sdk",
+    "toggles",
+    "unleash",
+    "variants"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2014-09-29T12:50:46Z",
+   "pushed_at": "2026-11-06T15:35:12Z",
+   "stars": 14238,
+   "forks": 931,
+   "metric_method": "observed",
+   "growth_per_day": 66.27,
+   "score": 46.9,
+   "score_breakdown": {
+    "s_abs": 0.6092,
+    "s_rel": 0.0468
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 67,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:16+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +67 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "開源的功能開關平台，讓團隊決定新功能何時、對誰開放",
+     "features": [
+      "依使用者或族群逐步開放、隨時關閉新功能",
+      "支援 A/B 測試與灰度發布（canary release）",
+      "提供多種語言 SDK，可串接 Slack 等工具"
+     ],
+     "audience": "軟體開發團隊、DevOps 與平台工程人員，以及管理產品上線流程的人",
+     "use_cases": [
+      "新功能先開放給少數使用者，確認沒問題再全面上線",
+      "功能出問題時用緊急開關（kill switch）立即關閉，不用重新部署",
+      "對不同使用者做 A/B 測試，比較版本成效"
+     ],
+     "barrier": "code",
+     "barrier_note": "自架需要 git 與 Docker，在程式裡使用還要整合 SDK；有線上展示可以先試用",
+     "limitations": "開源版只有 2 個環境；RBAC、SSO 與進階分群等功能需要付費的 Pro 或 Enterprise 方案",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "9e015e2a11df874485d5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "dev-tools",
+   "repo_id": 724712,
+   "full_name": "rust-lang/rust",
+   "html_url": "https://github.com/rust-lang/rust",
+   "description": "Empowering everyone to build reliable and efficient software.",
+   "language": "Rust",
+   "topics": [
+    "compiler",
+    "language",
+    "rust"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2010-06-16T20:39:03Z",
+   "pushed_at": "2026-11-08T22:03:22Z",
+   "stars": 121647,
+   "forks": 17381,
+   "metric_method": "observed",
+   "growth_per_day": 43.53,
+   "score": 41.3,
+   "score_breakdown": {
+    "s_abs": 0.5495,
+    "s_rel": 0.0036
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 44,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:40+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +44 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Rust 程式語言的官方原始碼，包含編譯器、標準函式庫和文件",
+     "features": [
+      "包含 Rust 編譯器、標準函式庫與說明文件",
+      "作者表示型別系統與所有權模型可確保記憶體安全",
+      "搭配 Cargo、rustfmt、Clippy 等開發工具"
+     ],
+     "audience": "軟體工程師、想學 Rust 的程式設計者，以及想參與 Rust 編譯器開發的貢獻者",
+     "use_cases": [
+      "開發重視效能與記憶體效率的關鍵服務",
+      "撰寫嵌入式裝置程式或與其他程式語言整合",
+      "研究編譯器架構並貢獻程式碼給 Rust 專案"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會寫程式並使用命令列安裝 Rust 工具鏈",
+     "limitations": "README 不建議從原始碼安裝；使用 Rust 與 Cargo 名稱或標誌需遵守商標政策",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "94eb662876d944f7afef",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "learning",
+   "repo_id": 849553306,
+   "full_name": "anthropics/claude-quickstarts",
+   "html_url": "https://github.com/anthropics/claude-quickstarts",
+   "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2024-08-29T19:52:32Z",
+   "pushed_at": "2026-11-06T19:37:57Z",
+   "stars": 19366,
+   "forks": 3278,
+   "metric_method": "trending_daily",
+   "growth_per_day": 28.0,
+   "score": 36.9,
+   "score_breakdown": {
+    "s_abs": 0.4874,
+    "s_rel": 0.0145
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 28
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 2,
+     "period": "daily",
+     "period_stars": 28
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +28 星（全站日榜第 4 名）",
+    "也在 Python 日榜第 2 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "Anthropic 官方範例集，讓開發者快速用 Claude API 做出可部署的 AI 應用",
+     "features": [
+      "提供客服、財務分析、自動寫程式等多種範例專案",
+      "示範讓 Claude 操作電腦桌面與瀏覽器",
+      "示範串接 Slack、Linear、Sentry 等工具的 Agent"
+     ],
+     "audience": "想用 Claude API 開發 AI 應用或 Agent 的軟體開發者",
+     "use_cases": [
+      "用範例打造能查詢知識庫的 AI 客服系統",
+      "建立每個工作日自動整理 Slack 與 GitHub 動態的摘要機器人",
+      "讓 Claude 自動瀏覽網站、填寫表單"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Claude API 金鑰，並會用命令列複製專案、安裝套件、設定環境變數",
+     "limitations": "部分精簡範例作者註明不是正式上線用的程式碼；macOS 電腦操作範例建議在虛擬機中執行",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "aa779cb4dca2f2fc2d12",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "security-network",
+   "repo_id": 1173152133,
+   "full_name": "BigBodyCobain/Shadowbroker",
+   "html_url": "https://github.com/BigBodyCobain/Shadowbroker",
+   "description": "Open-source intelligence for the global theater. Track everything from the corporate/private jets of the wealthy, and spy satellites, to seismic events in one unified interface. Hook an AI agent up to have it parse through data and find previously unseen correlations. The knowledge is available to all but rarely aggregated in the open, until now.",
+   "language": "Python",
+   "topics": [
+    "ads-b",
+    "adsb",
+    "aircraft",
+    "aircraft-tracking",
+    "asdb",
+    "cctv",
+    "cctv-cameras",
+    "cctv-surveillance",
+    "earthquake-visualization",
+    "elonjet",
+    "gis",
+    "osint",
+    "osint-resources",
+    "plane",
+    "satellite-tracking",
+    "sattelite",
+    "sattelite-imagery",
+    "sdr",
+    "surveillance",
+    "tracking"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2026-03-05T03:59:55Z",
+   "pushed_at": "2026-11-06T07:49:01Z",
+   "stars": 11497,
+   "forks": 1832,
+   "metric_method": "trending_daily",
+   "growth_per_day": 21.0,
+   "score": 34.0,
+   "score_breakdown": {
+    "s_abs": 0.4474,
+    "s_rel": 0.0183
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 9,
+     "period": "daily",
+     "period_stars": 21
+    }
+   ],
+   "observed": null,
+   "reasons": [
+    "GitHub Trending 顯示今日 +21 星（Python 日榜第 9 名）"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "把飛機、船隻、衛星、地震、監視器等公開即時資料整合在一張地圖上的情報平台",
+     "features": [
+      "整合 60 多個公開資料來源、40 多個可切換圖層",
+      "可串接 AI agent 協助搜尋與分析資料",
+      "內建 IP、DNS、WHOIS、制裁名單等查詢工具"
+     ],
+     "audience": "情報分析師、研究人員、無線電玩家，以及想在地圖上看全球公開資訊的人",
+     "use_cases": [
+      "追蹤 Air Force One、富豪私人飛機與軍機的即時位置",
+      "在地圖上觀看各國公開 CCTV 影像與地震、野火動態",
+      "以衛星雷達資料偵測指定地區的地表變化並收到警示"
+     ],
+     "barrier": "code",
+     "barrier_note": "需自行安裝 Docker 並用命令列架設；部分功能需 Shodan 或 NASA Earthdata 帳號",
+     "limitations": "預設後端需約 4GB 記憶體；InfoNet 通訊仍是實驗性測試網，作者表示目前不保證隱私",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "43de094978ca6dc0ef54",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "security-network",
+   "repo_id": 263556058,
+   "full_name": "521xueweihan/GitHub520",
+   "html_url": "https://github.com/521xueweihan/GitHub520",
+   "description": ":kissing_heart: 让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。（无需安装）",
+   "language": "Python",
+   "topics": [
+    "dns",
+    "github",
+    "hosts"
+   ],
+   "license_spdx": null,
+   "created_at": "2020-05-13T07:25:21Z",
+   "pushed_at": "2026-11-08T22:08:34Z",
+   "stars": 30171,
+   "forks": 2767,
+   "metric_method": "observed",
+   "growth_per_day": 14.84,
+   "score": 30.1,
+   "score_breakdown": {
+    "s_abs": 0.3999,
+    "s_rel": 0.0049
+   },
+   "trending_hits": [
+    {
+     "source_id": "zh-daily",
+     "rank": 4,
+     "period": "daily",
+     "period_stars": 13
+    }
+   ],
+   "observed": {
+    "delta": 15,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:24+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +15 星",
+    "也在中文專案日榜第 4 名"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "提供自動更新的 hosts 內容，改善 GitHub 連線慢、圖片載不出來的問題",
+     "features": [
+      "定時自動更新最佳 GitHub IP 的 hosts 內容",
+      "支援手動複製、SwitchHosts、AdGuard 匯入",
+      "提供 Linux、macOS、Windows 一行指令更新"
+     ],
+     "audience": "連線 GitHub 時常遇到速度慢或圖片顯示不出來的使用者",
+     "use_cases": [
+      "瀏覽 GitHub 專案頁面時圖片破圖，修改 hosts 後改善顯示",
+      "用 SwitchHosts 設定每小時自動更新 hosts",
+      "在 AdGuard 加入自訂清單，讓多台裝置套用"
+     ],
+     "barrier": "install",
+     "barrier_note": "不需安裝程式，但要用系統管理員權限編輯 hosts 檔，自動更新需命令列",
+     "limitations": "作者表示仍在測試階段，僅在本機測試通過；iPhone 需越獄、Android 需 root；伺服器將於 2026-12-31 到期",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "98ef44e5e815c61f6eed",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "security-network",
+   "repo_id": 836976013,
+   "full_name": "mihomo-party-org/clash-party",
+   "html_url": "https://github.com/mihomo-party-org/clash-party",
+   "description": ":electron: Another Mihomo GUI. ",
+   "language": "TypeScript",
+   "topics": [
+    "clash",
+    "clash-meta",
+    "electron",
+    "mihomo"
+   ],
+   "license_spdx": "GPL-3.0",
+   "created_at": "2024-08-02T00:38:23Z",
+   "pushed_at": "2026-11-08T15:19:03Z",
+   "stars": 27169,
+   "forks": 2131,
+   "metric_method": "observed",
+   "growth_per_day": 10.88,
+   "score": 27.0,
+   "score_breakdown": {
+    "s_abs": 0.3582,
+    "s_rel": 0.004
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 11,
+    "hours": 24.3,
+    "base_at": "2026-11-08T05:53:44+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 24 小時增加 +11 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "一款 Mihomo（Clash Meta）代理工具的桌面圖形介面軟體",
+     "features": [
+      "內建 Smart 與 Mihomo 核心，作者表示可用 AI 自動選節點",
+      "免服務模式的 Tun，支援覆寫修改設定檔",
+      "WebDAV 一鍵備份還原，整合 Sub-Store 管理訂閱"
+     ],
+     "audience": "已在使用 Clash、Mihomo 等代理工具，想要圖形介面管理設定的使用者",
+     "use_cases": [
+      "用圖形介面管理代理訂閱與節點，不必手動編輯設定檔",
+      "透過 WebDAV 在不同電腦間備份與還原代理設定"
+     ],
+     "barrier": "install",
+     "barrier_note": "需在電腦上安裝桌面軟體，並自行準備代理訂閱與設定",
+     "limitations": "README 未說明限制；安裝方式需參考官方文件，README 內含付費代理服務的推廣內容",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "5ddd0346a888f56d32c6",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  6201092,
+  6838921,
+  7634677,
+  10270250,
+  13491895,
+  18106269,
+  41881900,
+  48576134,
+  58028038,
+  62743585,
+  83222441,
+  102692863,
+  106017343,
+  126178683,
+  152870372,
+  162998479,
+  189621607,
+  243787823,
+  243950408,
+  274495425,
+  291485614,
+  312629343,
+  333483116,
+  334448316,
+  340547520,
+  345557071,
+  365739812,
+  384520418,
+  425387994,
+  435427730,
+  468957086,
+  470730648,
+  489384246,
+  493376588,
+  523043277,
+  527600676,
+  566931318,
+  662766482,
+  679366051,
+  688164459,
+  770153867,
+  790916393,
+  793784055,
+  872119017,
+  876286167,
+  1007827531,
+  1020672081,
+  1042367133,
+  1044296738,
+  1048065319,
+  1070285775,
+  1073224795,
+  1078528927,
+  1096054771,
+  1097346685,
+  1124219907,
+  1132001614,
+  1136666433,
+  1141782198,
+  1148788086,
+  1152014594,
+  1153130349,
+  1155965274,
+  1157102282,
+  1171949255,
+  1172206206,
+  1178737655,
+  1179264259,
+  1179388779,
+  1183888342,
+  1197652028,
+  1200597263,
+  1209966933,
+  1216954187,
+  1217040185,
+  1222917575,
+  1222953295,
+  1223939135,
+  1226205410,
+  1273427276,
+  1285492676,
+  1287460663,
+  1296300799,
+  1302612528,
+  1305663861,
+  1308631234,
+  1323115536,
+  1324949198,
+  1331135699,
+  1331261687,
+  1331882604,
+  1332461149,
+  1332781509,
+  1334325657,
+  1421825221,
+  1428347546,
+  1435695423,
+  1438326535,
+  1440927503,
+  1446962520,
+  1449614389
+ ],
+ "suspicious_excluded": [
+  1410124849,
+  1416502082,
+  1423101235,
+  1423892373,
+  1426780056,
+  1431851693,
+  1432967563,
+  1433377156,
+  1437774066,
+  1438394948,
+  1438540053,
+  1438623288,
+  1439372976,
+  1440705679,
+  1440956372,
+  1443759946,
+  1443985070,
+  1446569267
+ ],
+ "content_excluded": [
+  311241324,
+  571581970,
+  1444372497,
+  1445802355,
+  1446548114,
+  1448068371
+ ],
+ "candidate_counts": {
+  "main": 85,
+  "discovery": 2
+ },
+ "classification_stats": {
+  "enabled": true,
+  "reason": null,
+  "known": 324,
+  "classified": 19,
+  "calls": 1,
+  "failed_calls": 0
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 24,
+  "done": 25,
+  "failed": 1,
+  "skipped": 0,
+  "cached": 2,
+  "calls": 25,
+  "input_tokens": 132413,
+  "output_tokens": 13661,
+  "cost_usd": 1.0137
+ }
+}

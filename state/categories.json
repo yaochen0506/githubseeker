@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-08T05:54:03+08:00",
+ "updated_at": "2026-11-09T06:09:34+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -387,6 +387,12 @@
    "full_name": "airbytehq/airbyte",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "286301447": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "neuml/txtai",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "290091948": {
    "category": "learning",
    "exclude_reason": null,
@@ -501,6 +507,12 @@
    "full_name": "novuhq/novu",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "400501136": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "google-deepmind/mujoco",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "404414397": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -560,6 +572,12 @@
    "exclude_reason": null,
    "full_name": "paperless-ngx/paperless-ngx",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "466390618": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "ScottSloan/Bili23-Downloader",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "468957086": {
    "category": "security-network",
@@ -777,6 +795,12 @@
    "full_name": "gitroomhq/postiz-app",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "679086250": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "XiaoYouChR/Ghost-Downloader-3",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "679366051": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -842,6 +866,18 @@
    "exclude_reason": null,
    "full_name": "mihomo-party-org/clash-party",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "849553306": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "anthropics/claude-quickstarts",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
+  "868173144": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "kortix-ai/CompanyOS",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "872119017": {
    "category": "dev-tools",
@@ -933,6 +969,12 @@
    "full_name": "QwenLM/qwen-code",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1010318950": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "SWE-agent/mini-swe-agent",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "1013480284": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -998,6 +1040,12 @@
    "exclude_reason": null,
    "full_name": "KeygraphHQ/shannon",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1065936302": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Open-Dev-Society/OpenStock",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1070285775": {
    "category": "ai-agents",
@@ -1112,6 +1160,12 @@
    "exclude_reason": null,
    "full_name": "vercel-labs/agent-browser",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "1134411737": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "vercel-labs/json-render",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1134543109": {
    "category": "ai-agents",
@@ -1245,6 +1299,12 @@
    "full_name": "KenKaiii/gg-framework",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "1173152133": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "BigBodyCobain/Shadowbroker",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "1177402105": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1292,6 +1352,12 @@
    "exclude_reason": null,
    "full_name": "humanlayer/skills",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "1185590488": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "rohitg00/ai-engineering-from-scratch",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1187630119": {
    "category": "security-network",
@@ -1365,6 +1431,12 @@
    "full_name": "morluto/rea",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "1213901015": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "googlecolab/google-colab-cli",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "1216954187": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1394,6 +1466,18 @@
    "exclude_reason": null,
    "full_name": "Yuan1z0825/nature-skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1219644159": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "bradautomates/claude-video",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
+  "1219896053": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "arcsin1/oh-my-ppt",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1222527844": {
    "category": "ai-models",
@@ -1485,6 +1569,12 @@
    "full_name": "togg53192-cmd/jailbreaks",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1274703665": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "mantrakp04/ardia",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
   "1275465781": {
    "category": "security-network",
    "exclude_reason": null,
@@ -1508,6 +1598,12 @@
    "exclude_reason": null,
    "full_name": "elder-plinius/T3MP3ST",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1291896819": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "poco-ai/Agentero",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1293238217": {
    "category": "ai-agents",
@@ -1688,6 +1784,12 @@
    "exclude_reason": null,
    "full_name": "kajisho5/ffmpeg-skill",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1356159928": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Albert-Weasker/niubigeo",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1407950271": {
    "category": "ai-models",
@@ -1940,6 +2042,18 @@
    "exclude_reason": "piracy",
    "full_name": "JenkinWoo/sheeridVerify",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1449231124": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "tangerineturtle1/NX2navi",
+   "classified_at": "2026-11-09T06:09:34+08:00"
+  },
+  "1449518822": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Th0rgal/satmux",
+   "classified_at": "2026-11-09T06:09:34+08:00"
   },
   "1449614389": {
    "category": "fun-creative",

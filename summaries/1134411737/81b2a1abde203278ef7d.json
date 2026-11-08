@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "81b2a1abde203278ef7d",
+ "repo_id": 1134411737,
+ "full_name": "vercel-labs/json-render",
+ "created_at": "2026-11-09T06:11:40+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "072cb60a96c816398a1f4c3504e03d15b4f68ba60cf4a7d7b6e63505ded14663",
+ "has_readme": true,
+ "readme_chars": 7218,
+ "content": {
+  "one_liner": "讓 AI 依照文字指令，用開發者事先定義好的元件產生使用者介面的框架",
+  "features": [
+   "AI 只能使用你元件目錄中的元件，輸出 JSON 格式固定",
+   "邊接收 AI 回應邊逐步顯示畫面",
+   "支援網頁、手機、PDF、Email、影片等多種輸出"
+  ],
+  "audience": "想在產品中加入 AI 自動產生介面的前端或全端開發者",
+  "use_cases": [
+   "讓 AI 依使用者需求即時產生個人化的儀表板畫面",
+   "從 AI 產生的內容輸出 PDF 文件、Email 或社群分享圖",
+   "在 Slack、Teams、Discord 中顯示 AI 產生的互動卡片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會 TypeScript 與 React、Vue 等前端框架，並用套件管理工具安裝",
+  "limitations": "部分功能（如 Jev 組合、gsplat.js 示範）仍屬實驗性質，作者建議固定套件版本",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

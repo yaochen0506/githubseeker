@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "ec738b03473b5cd42406",
+ "repo_id": 1356159928,
+ "full_name": "Albert-Weasker/niubigeo",
+ "created_at": "2026-11-09T06:09:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fb008ca49f64602aab0f355dc9a8adc26ecb40b443244a1361c836f4bfc85fc7",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源工具，查看 AI 回答裡怎麼描述你的品牌、提到哪些競爭對手",
+  "features": [
+   "同時比較多個 AI 模型對品牌的描述與競品",
+   "檢視原始回答與引用來源，保留證據",
+   "關鍵字定期監測，並用 Diff View 比較變化"
+  ],
+  "audience": "想了解自家產品在 AI 回答中能見度的產品經營者、行銷人員，需具備自架能力",
+  "use_cases": [
+   "輸入自家網域，看各 AI 模型如何描述產品、提到哪些競品",
+   "不提品牌名稱測試關鍵字，看 AI 會推薦誰",
+   "排程重複測試，追蹤 AI 推薦結果的變化"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自架，安裝 Node.js 22.13+ 或 Docker，並準備 OpenRouter 等模型 API 金鑰",
+  "limitations": "模型與搜尋 API 費用另計；提問內容會送到外部模型 API；v0.3 沒有獨立的競品偵測儀表板",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

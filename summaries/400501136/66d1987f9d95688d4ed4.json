@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "66d1987f9d95688d4ed4",
+ "repo_id": 400501136,
+ "full_name": "google-deepmind/mujoco",
+ "created_at": "2026-11-09T06:10:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8191c8f52e3847795aa94d24ce2bb642f7903a6cf29e2937283cf92cec051247",
+ "has_readme": true,
+ "readme_chars": 5760,
+ "content": {
+  "one_liner": "模擬機器人、人體等關節結構碰撞與運動的通用物理引擎",
+  "features": [
+   "高速模擬多關節物體與環境的接觸互動",
+   "內建桌面與瀏覽器互動式視覺化檢視器",
+   "提供 C API、Python 綁定與 Unity 外掛"
+  ],
+  "audience": "機器人、生物力學、動畫與機器學習領域的研究人員和開發者",
+  "use_cases": [
+   "在瀏覽器中拖放自己的模型，檢視物理模擬效果",
+   "用 Python 訓練機器人行走等控制策略",
+   "研究人體或機器人動作的生物力學模擬"
+  ],
+  "barrier": "code",
+  "barrier_note": "網頁版可直接試玩，但實際應用需用 C 或 Python 寫程式",
+  "limitations": "網頁版跑在 WebAssembly 上，比原生版慢；main 分支可能不穩定；Python 需 3.11 以上；非 Google 官方支援產品",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

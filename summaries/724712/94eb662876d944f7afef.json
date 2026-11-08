@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "94eb662876d944f7afef",
+ "repo_id": 724712,
+ "full_name": "rust-lang/rust",
+ "created_at": "2026-11-09T06:11:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "da146498ea021068a668622de76ff3c19f43998ba3a8c0ff3fea560b67c6e296",
+ "has_readme": true,
+ "readme_chars": 1734,
+ "content": {
+  "one_liner": "Rust 程式語言的官方原始碼，包含編譯器、標準函式庫和文件",
+  "features": [
+   "包含 Rust 編譯器、標準函式庫與說明文件",
+   "作者表示型別系統與所有權模型可確保記憶體安全",
+   "搭配 Cargo、rustfmt、Clippy 等開發工具"
+  ],
+  "audience": "軟體工程師、想學 Rust 的程式設計者，以及想參與 Rust 編譯器開發的貢獻者",
+  "use_cases": [
+   "開發重視效能與記憶體效率的關鍵服務",
+   "撰寫嵌入式裝置程式或與其他程式語言整合",
+   "研究編譯器架構並貢獻程式碼給 Rust 專案"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫程式並使用命令列安裝 Rust 工具鏈",
+  "limitations": "README 不建議從原始碼安裝；使用 Rust 與 Cargo 名稱或標誌需遵守商標政策",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
