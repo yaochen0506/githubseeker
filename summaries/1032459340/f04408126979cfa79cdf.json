@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f04408126979cfa79cdf",
+ "repo_id": 1032459340,
+ "full_name": "Fission-AI/OpenSpec",
+ "created_at": "2026-11-10T09:37:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2e69684d482857609d8e2329df6a8cf9a9ac558e843da0fd5fa951fe5fa69179",
+ "has_readme": true,
+ "readme_chars": 6203,
+ "content": {
+  "one_liner": "讓 AI 寫程式前，先和你一起把需求寫成規格文件再動工的工具",
+  "features": [
+   "用 Markdown 寫需求與情境，寫程式前先審核計畫",
+   "每項變更各自有提案、規格、設計與任務資料夾",
+   "透過斜線指令支援 30 多種 AI 程式助理"
+  ],
+  "audience": "使用 AI 程式助理開發軟體的工程師與開發團隊",
+  "use_cases": [
+   "請 AI 實作新功能前，先產生規格讓自己審核",
+   "團隊跨多個 repo 開發同一功能時，共用一份規劃",
+   "還沒想清楚要做什麼時，用 explore 指令和 AI 討論方案"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝 CLI（npm 需 Node.js 22.12.0 以上），並搭配 AI 程式助理",
+  "limitations": "Stores 功能仍在 beta；建議搭配高推理能力模型；預設會蒐集匿名使用統計，可以關閉",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

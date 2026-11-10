@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a3a4cdcb43f074bc7608",
+ "repo_id": 179163124,
+ "full_name": "hummingbot/hummingbot",
+ "created_at": "2026-11-10T09:37:37+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "660c9b195f061257ca32b32a44dde2e28b91cb80cf89fa24a15f946507804938",
+ "has_readme": true,
+ "readme_chars": 10044,
+ "content": {
+  "one_liner": "開源的加密貨幣自動交易機器人框架，可在多家交易所執行交易策略",
+  "features": [
+   "支援 140 多個中心化與去中心化交易場所",
+   "提供造市、套利、網格、DCA 等策略元件",
+   "可用模擬交易測試策略，不需 API 金鑰"
+  ],
+  "audience": "會寫 Python 的量化交易者、加密貨幣演算法交易開發者",
+  "use_cases": [
+   "在 Binance 等交易所執行自動造市策略",
+   "在兩個交易所之間做跨所造市與避險",
+   "用即時行情模擬交易，先測試策略再上線"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Anaconda/Miniconda 或 Docker，並用命令列操作；實盤交易要有交易所 API 金鑰",
+  "limitations": "包含 Gateway 時預設是開發模式（未加密 HTTP），正式環境要另外設定 HTTPS；會匿名收集資料",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

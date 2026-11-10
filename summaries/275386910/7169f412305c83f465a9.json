@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7169f412305c83f465a9",
+ "repo_id": 275386910,
+ "full_name": "soxoj/maigret",
+ "created_at": "2026-11-10T09:38:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2689e224fe9bf842338917ea6dd4afc4548174d12bf220658334c951c99490e2",
+ "has_readme": true,
+ "readme_chars": 8519,
+ "content": {
+  "one_liner": "只要輸入一個使用者名稱，就到數千個網站查出這個人的帳號與公開資料",
+  "features": [
+   "支援約 5,900 個網站，預設檢查流量最高的 500 個",
+   "從個人頁面擷取資訊，並用找到的名稱再遞迴搜尋",
+   "內建網頁介面，可看關聯圖並下載 PDF、HTML 報告"
+  ],
+  "audience": "從事 OSINT 公開情報調查、資安研究或滲透測試的人員與調查記者",
+  "use_cases": [
+   "用一個暱稱找出同一人在其他社群平台的帳號",
+   "產生某帳號的調查報告，彙整公開資訊",
+   "可能用來檢查自己的帳號名稱在網路上曝光的程度"
+  ],
+  "barrier": "code",
+  "barrier_note": "主要用命令列操作，需 Python 3.10 以上；Windows 有現成執行檔",
+  "limitations": "僅限教育與合法用途，使用者須自行遵守 GDPR 等法規；網站檢查會隨時間失效，Cloudflare 繞過功能仍在實驗階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

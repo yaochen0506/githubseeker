@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "3eb9ad11d73b72b7055f",
+ "repo_id": 1450963843,
+ "full_name": "huamidev/GestaltX",
+ "created_at": "2026-11-10T09:36:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "52aed3518bfc7e0ff83d984bbdf7f18555d66864aa7b9028f81597002a3201d7",
+ "has_readme": true,
+ "readme_chars": 5130,
+ "content": {
+  "one_liner": "在 iPhone、iPad 上修改 MobileGestalt 系統設定檔，解鎖或調整裝置功能",
+  "features": [
+   "預設集：動態島、常駐顯示、充電上限、地區碼等",
+   "欄位編輯器可搜尋、新增、修改、刪除設定值",
+   "寫入前自動備份，可逐項還原原始值"
+  ],
+  "audience": "熟悉 iOS 側載與簽署 App、想研究或調整裝置隱藏功能的進階使用者",
+  "use_cases": [
+   "修改地區碼，嘗試在中國大陸機型啟用 Apple Intelligence",
+   "在 iPad 上開啟台前調度或 Apple Pencil 相關設定",
+   "匯入、匯出並編輯本機的 MobileGestalt plist 檔"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自行用含 App Group 的憑證與描述檔簽署安裝，僅支援 iOS 27.x",
+  "limitations": "不支援 iOS 26.x；效果依機型與系統而定；可能造成系統不穩或需重刷，僅供安全研究與教育用途",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

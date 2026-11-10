@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "be3604da8c0670c9592e",
+ "repo_id": 997737944,
+ "full_name": "ruvnet/RuView",
+ "created_at": "2026-11-10T09:36:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fe24e1c4a7674321a1d4aee18233883a3870e47f3ffde21444fc344688b0898a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用一般 WiFi 訊號偵測室內有沒有人、呼吸心跳與動作，不需要攝影機",
+  "features": [
+   "透過 ESP32 感測器偵測有人、人數與跌倒",
+   "非接觸量測呼吸與心跳，可做睡眠監測",
+   "可串接 Home Assistant、Apple Home 等智慧家庭"
+  ],
+  "audience": "智慧家庭玩家、IoT 開發者、研究 WiFi 感測的人，以及想照護長輩又不想裝攝影機的家庭",
+  "use_cases": [
+   "偵測長輩長時間不動或跌倒並發出提醒",
+   "夜間監測睡眠與呼吸狀況",
+   "依房間有沒有人自動開關智慧家電"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要購買 ESP32-S3 等硬體、燒錄韌體，並用命令列或 Docker 架設伺服器",
+  "limitations": "進階功能需要支援 CSI 的硬體；一般筆電只能粗略偵測。作者表示裝置上的姿勢模型仍是初版，生命徵象數值未經驗證",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

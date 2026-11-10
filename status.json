@@ -1,46 +1,46 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-09T06:09:22+08:00",
- "business_date": "2026-11-09",
- "last_run_id": "20261109T060804-42528664816.1",
+ "updated_at": "2026-11-10T09:35:26+08:00",
+ "business_date": "2026-11-10",
+ "last_run_id": "20261110T093402-42736667536.1",
  "last_run_complete": true,
- "last_complete_run_id": "20261109T060804-42528664816.1",
- "last_complete_at": "2026-11-09T06:09:22+08:00",
+ "last_complete_run_id": "20261110T093402-42736667536.1",
+ "last_complete_at": "2026-11-10T09:35:26+08:00",
  "sources": [
   {
    "source_id": "all-daily",
-   "status": "ok",
-   "rows": 9,
-   "error": null
-  },
-  {
-   "source_id": "all-weekly",
-   "status": "ok",
-   "rows": 17,
-   "error": null
-  },
-  {
-   "source_id": "python-daily",
    "status": "ok",
    "rows": 11,
    "error": null
   },
   {
+   "source_id": "all-weekly",
+   "status": "ok",
+   "rows": 14,
+   "error": null
+  },
+  {
+   "source_id": "python-daily",
+   "status": "ok",
+   "rows": 15,
+   "error": null
+  },
+  {
    "source_id": "python-weekly",
    "status": "ok",
-   "rows": 16,
+   "rows": 14,
    "error": null
   },
   {
    "source_id": "typescript-daily",
    "status": "ok",
-   "rows": 16,
+   "rows": 15,
    "error": null
   },
   {
    "source_id": "typescript-weekly",
    "status": "ok",
-   "rows": 18,
+   "rows": 17,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "source_id": "zh-weekly",
    "status": "ok",
-   "rows": 21,
+   "rows": 20,
    "error": null
   },
   {
@@ -69,8 +69,8 @@
   }
  ],
  "counts": {
-  "source_hits": 326,
-  "observations": 225,
+  "source_hits": 324,
+  "observations": 223,
   "unresolved": 1,
   "tracking": 200
  },
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 227,
+   "requests": 225,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4772,
-   "used_by_headers": 228
+   "remaining_last": 4774,
+   "used_by_headers": 226
   }
  }
 }

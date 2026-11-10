@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c788ac4e0ae87520a935",
+ "repo_id": 1251648409,
+ "full_name": "opengeos/GeoLibre",
+ "created_at": "2026-11-10T09:37:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7a95d93dffd8f59246c5dddf882ed1270d7441a6b344292b4411fe158d4b3292",
+ "has_readme": true,
+ "readme_chars": 11954,
+ "content": {
+  "one_liner": "免費開源的地理資訊系統，可在瀏覽器、電腦、手機上看地圖和分析空間資料",
+  "features": [
+   "內建 1,000 多種在瀏覽器執行的地理分析工具",
+   "可切換 MapLibre、Cesium 等四種地圖引擎",
+   "直接讀取 COG、GeoParquet 等雲端格式"
+  ],
+  "audience": "需要看地圖或分析地理資料的研究人員、學生、教師，以及用 Python 或 R 的資料科學家",
+  "use_cases": [
+   "課堂或工作坊中，讓學員打開網頁就能一起操作 GIS",
+   "分析地形、水文或衛星影像，例如繪製洪災範圍",
+   "在 Jupyter 筆記本中搭配 Python 製作互動地圖"
+  ],
+  "barrier": "online",
+  "barrier_note": "打開網頁版或下載桌面、iOS、Android App 即可使用；整合 Python 或 R 才需寫程式",
+  "limitations": "作者表示專案主要由 AI 模型在人類監督下開發，結果雖經測試，仍建議使用者自行核對",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

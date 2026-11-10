@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0ae0624d0d5c11fd84b3",
+ "repo_id": 45363955,
+ "full_name": "lionsoul2014/ip2region",
+ "created_at": "2026-11-10T09:37:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "779b78ba8f15bd807b158f84a2251811e18f8258c85b1462e5bf88c691e308ca",
+ "has_readme": true,
+ "readme_chars": 7844,
+ "content": {
+  "one_liner": "不用連網，就能從 IP 位址查出國家、省份、城市和電信業者的查詢工具",
+  "features": [
+   "內建 IPv4 與 IPv6 資料，可查到城市層級",
+   "提供 Go、Python、Java 等多種語言的查詢程式",
+   "可自訂並管理自己的 IP 定位資料"
+  ],
+  "audience": "需要在網站或系統中依 IP 判斷使用者所在地區的開發者與維運人員",
+  "use_cases": [
+   "在網站後端依訪客 IP 顯示所在城市或電信業者",
+   "分析伺服器紀錄時，可能用來統計訪客的地區分布",
+   "企業加入 GPS、郵遞區號等資料，建立自有 IP 資料庫"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫程式，把查詢函式庫整合進自己的程式或伺服器",
+  "limitations": "內建資料不定期更新，作者建議講求準確度的情況改買商業資料；Python、C# 產生程式不支援 IPv6",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

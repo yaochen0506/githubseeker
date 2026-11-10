@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5a0cd8bc023a14a03412",
+ "repo_id": 1118085970,
+ "full_name": "opensandbox-group/OpenSandbox",
+ "created_at": "2026-11-10T09:36:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4b625966a1641c2926c5b5ad66cbffe97eba06a29b230710f4105b85659529b6",
+ "has_readme": true,
+ "readme_chars": 5642,
+ "content": {
+  "one_liner": "讓 AI agent 在自己架設的隔離沙盒裡執行程式碼、指令與操作瀏覽器",
+  "features": [
+   "提供隔離環境執行程式碼、管理檔案、操作瀏覽器或桌面",
+   "可從本機 Docker 起步，再部署到 Kubernetes",
+   "提供多語言 SDK、osb CLI 與 MCP 串接"
+  ],
+  "audience": "開發 AI agent 應用的工程師，以及需要管理 AI 基礎設施的維運團隊",
+  "use_cases": [
+   "在隔離環境中執行 Claude Code、Codex CLI 等 coding agent",
+   "執行模型產生的程式碼並做資料分析",
+   "為每次 agent 評測建立獨立沙盒"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Docker、Python 3.10 以上，並會使用命令列與 SDK 寫程式",
+  "limitations": "作者表示目前整合版映像檔的簽章與來源證明仍有缺口，正式環境應以 digest 固定映像檔版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

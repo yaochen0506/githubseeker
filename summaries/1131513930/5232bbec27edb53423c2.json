@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5232bbec27edb53423c2",
+ "repo_id": 1131513930,
+ "full_name": "ZhuLinsen/daily_stock_analysis",
+ "created_at": "2026-11-10T09:35:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "59ad022d833bcc93cc9f2c3e99c4bd19dc415b1f7be72de102bfbad1c7da1add",
+ "has_readme": true,
+ "readme_chars": 5067,
+ "content": {
+  "one_liner": "用 AI 大型語言模型每天自動分析自選股，並把決策報告推送到通訊軟體",
+  "features": [
+   "AI 決策報告：評分、趨勢、買賣點位與風險警示",
+   "支援 A 股、港股、美股、日股、韓股、台股與 ETF",
+   "推送到 Telegram、Discord、Slack、Email 等"
+  ],
+  "audience": "想用 AI 輔助追蹤自選股、懂一些 GitHub 或程式操作的投資人與量化研究者",
+  "use_cases": [
+   "每個工作日收盤後自動收到自選股分析報告",
+   "在 Web 介面用內建策略多輪追問個股走勢",
+   "匯入持股清單進行回測與持倉管理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 GitHub 帳號、設定 Secrets 與 AI 模型 API Key，或用 Docker／命令列在本機執行",
+  "limitations": "僅供學習研究，不構成投資建議；預設的免費行情來源可能被限流或改版，穩定性不保證",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

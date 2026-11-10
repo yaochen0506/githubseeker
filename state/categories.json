@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-09T06:09:34+08:00",
+ "updated_at": "2026-11-10T09:35:36+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -303,6 +303,12 @@
    "full_name": "sherlock-project/sherlock",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "179163124": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "hummingbot/hummingbot",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "186024298": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -369,11 +375,23 @@
    "full_name": "521xueweihan/GitHub520",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "264083437": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "qd-today/templates",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "274495425": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "remotion-dev/remotion",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "275386910": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "soxoj/maigret",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "275993885": {
    "category": "dev-tools",
@@ -560,6 +578,12 @@
    "exclude_reason": null,
    "full_name": "RayWangQvQ/BiliBiliToolPro",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "438514144": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "wangrongding/wechat-bot",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "455229168": {
    "category": "security-network",
@@ -861,6 +885,12 @@
    "full_name": "agent0ai/agent-zero",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "826515105": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "CodebuffAI/freebuff",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "836976013": {
    "category": "security-network",
    "exclude_reason": null,
@@ -945,11 +975,23 @@
    "full_name": "ruvnet/ruflo",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "997737944": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ruvnet/RuView",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1006104934": {
    "category": "everyday-tools",
    "exclude_reason": null,
    "full_name": "CodeWithCJ/SparkyFitness",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1006414368": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "OpenCut-app/OpenCut",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "1007827531": {
    "category": "security-network",
@@ -1017,6 +1059,18 @@
    "full_name": "thedotmack/claude-mem",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1056618941": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "homeassistant-ai/ha-mcp",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1057664813": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "OpenBMB/VoxCPM",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1061041576": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -1071,6 +1125,12 @@
    "full_name": "karpathy/nanochat",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1076426995": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "virattt/dexter",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1078528927": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -1107,6 +1167,12 @@
    "full_name": "pbakaus/impeccable",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1100776768": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "anthropics/claude-plugins-official",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1103012935": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1124,6 +1190,18 @@
    "exclude_reason": null,
    "full_name": "expo/skills",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1118085970": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "opensandbox-group/OpenSandbox",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1123956658": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "backnotprop/plannotator",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "1124219907": {
    "category": "learning",
@@ -1154,6 +1232,12 @@
    "exclude_reason": null,
    "full_name": "meta/astryx",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1131513930": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ZhuLinsen/daily_stock_analysis",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "1132001614": {
    "category": "ai-agents",
@@ -1401,6 +1485,12 @@
    "full_name": "MemPalace/mempalace",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1202057891": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "garrytan/gbrain",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1204004374": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1527,6 +1617,12 @@
    "full_name": "jo-duchan/tapflow",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1242967652": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "basketikun/infinite-canvas",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1247294715": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1538,6 +1634,12 @@
    "exclude_reason": null,
    "full_name": "hieunc229/mailflare",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1251648409": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "opengeos/GeoLibre",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   },
   "1267485499": {
    "category": "everyday-tools",
@@ -1941,6 +2043,12 @@
    "full_name": "heydamir/unslop",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1438661890": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "JuneYaooo/rea-video",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
   "1439372976": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -2060,6 +2168,18 @@
    "exclude_reason": null,
    "full_name": "sentinelsoldierprize/Minecraft-AFK-Bot",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "1450012790": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "jhaizhou-ops/S2Arm",
+   "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1450963843": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "huamidev/GestaltX",
+   "classified_at": "2026-11-10T09:35:36+08:00"
   }
  }
 }

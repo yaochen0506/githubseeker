@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0033555221655e1345bf",
+ "repo_id": 348060227,
+ "full_name": "withastro/astro",
+ "created_at": "2026-11-10T09:37:43+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3494fbcd6e9a96719fece380c9ffd2151fba11a2846a7f2646b1019328e530a9",
+ "has_readme": true,
+ "readme_chars": 2029,
+ "content": {
+  "one_liner": "用來打造部落格、文件站這類以內容為主的網站的開發框架",
+  "features": [
+   "可搭配 React、Vue、Svelte 等多種前端元件",
+   "支援 MDX、RSS、網站地圖等內容相關套件",
+   "可部署到 Node、Vercel、Cloudflare、Netlify"
+  ],
+  "audience": "想自己架設部落格、文件或內容型網站的網頁開發者",
+  "use_cases": [
+   "建立個人或團隊的部落格網站",
+   "搭配官方 Starlight 專案製作文件網站",
+   "在瀏覽器中開啟範例專案快速試用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列安裝，並懂網頁開發與 TypeScript 或 JavaScript",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

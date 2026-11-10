@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8d8395c0f9e915f02ab1",
+ "repo_id": 1006414368,
+ "full_name": "OpenCut-app/OpenCut",
+ "created_at": "2026-11-10T09:37:24+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c6aa2710fdb0ba0459b7d67f8aa6a52398c376f517d89fa4829ca9a18c00ca44",
+ "has_readme": true,
+ "readme_chars": 1332,
+ "content": {
+  "one_liner": "免費開源的影片剪輯軟體，定位為 CapCut 的替代品",
+  "features": [
+   "可在網頁、桌面與手機上剪輯影片",
+   "重寫中：規劃外掛、Editor API 與 MCP server",
+   "規劃無介面模式，可自動化與批次輸出"
+  ],
+  "audience": "想找免費 CapCut 替代品的影片創作者，以及關注開源剪輯工具的開發者",
+  "use_cases": [
+   "剪輯社群短影片或個人影片",
+   "開發者可能用 MCP server 讓 AI agent 協助剪輯",
+   "可能用無介面模式批次輸出影片"
+  ],
+  "barrier": "code",
+  "barrier_note": "這個專案是重寫版，要用命令列安裝 proto 才能開發；一般使用者請改用 classic 版",
+  "limitations": "專案正在從頭重寫，現階段建議使用 classic 版；目前不接受外部貢獻",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
