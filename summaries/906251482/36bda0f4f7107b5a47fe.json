@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "36bda0f4f7107b5a47fe",
+ "repo_id": 906251482,
+ "full_name": "ashishpatel26/500-AI-Agents-Projects",
+ "created_at": "2026-11-11T07:28:44+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8cda3bfb7f7f6149a485942d3dd3078b8a15f6a5fe8cc4f11b70836d532dcbfb",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "收集 500 多個 AI 代理人專案與應用案例，依產業和開發框架分類整理",
+  "features": [
+   "依醫療、金融、教育等產業分類的應用案例",
+   "依 LangGraph、CrewAI 等框架整理範例",
+   "提供各框架比較表與選擇建議"
+  ],
+  "audience": "想打造 AI 代理人的開發者、研究人員、評估框架的團隊，以及學習相關架構的學生",
+  "use_cases": [
+   "瀏覽各產業的 AI 代理人應用，了解 AI 能做哪些事",
+   "比較不同框架的特性，挑選適合團隊的開發工具",
+   "下載現成範例程式碼，在自己電腦上執行 AI 代理人"
+  ],
+  "barrier": "code",
+  "barrier_note": "瀏覽清單不需技術，但執行範例需要 Python 環境、命令列與相關設定",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

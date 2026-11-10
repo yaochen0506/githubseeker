@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4edffeab62123f6f6fdf",
+ "repo_id": 1158722119,
+ "full_name": "addyosmani/agent-skills",
+ "created_at": "2026-11-11T07:27:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fd638acdfa89284e4565f3d92a858af270c5ab5aadedea754df14f09c268a0b3",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理照資深工程師的流程與品質標準來開發軟體的技能包",
+  "features": [
+   "25 個技能，涵蓋規格、規劃、實作、測試到上線",
+   "9 個斜線指令，例如 /spec、/build、/ship",
+   "支援 Claude Code、Cursor、Codex 等多種 AI 工具"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex 等 AI 寫程式工具的軟體工程師與開發團隊",
+  "use_cases": [
+   "開發新功能前，先讓 AI 寫好規格、拆解成小任務",
+   "合併程式碼前，讓 AI 依清單做程式碼審查與安全檢查",
+   "上線前，用檢查清單規劃分階段發布與回復步驟"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要已在用 AI 寫程式工具，並會用命令列安裝外掛或複製技能檔案",
+  "limitations": "單獨安裝某個技能時，共用的檢查清單無法使用；斜線指令只適用 Claude Code，Copilot 等工具要直接用技能名稱",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

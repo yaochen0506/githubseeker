@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f87c3342dda856d8404a",
+ "repo_id": 257485422,
+ "full_name": "vitejs/vite",
+ "created_at": "2026-11-11T07:28:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cdce8503b1ee652d86fb590cb42a253d6f80c191b6a9e16b2effa40714f0756a",
+ "has_readme": true,
+ "readme_chars": 1161,
+ "content": {
+  "one_liner": "幫網頁開發者快速啟動開發環境、打包網站程式碼的前端建置工具",
+  "features": [
+   "開發伺服器可快速啟動，修改後畫面即時更新（HMR）",
+   "使用 Rolldown 打包，產出最佳化的正式版靜態檔案",
+   "提供 Plugin API 與 JavaScript API，可擴充"
+  ],
+  "audience": "開發現代網頁的前端工程師與網頁開發者",
+  "use_cases": [
+   "開發網頁時，修改程式碼後立即在瀏覽器看到結果",
+   "把網站程式碼打包成可上線的正式版檔案",
+   "用 create-vite 快速建立新的前端專案"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫網頁程式並使用命令列操作的開發工具",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

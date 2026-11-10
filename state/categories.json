@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-10T09:35:36+08:00",
+ "updated_at": "2026-11-11T07:26:16+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -897,11 +897,23 @@
    "full_name": "mihomo-party-org/clash-party",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "847231566": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "a-ghorbani/pocketpal-ai",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
   "849553306": {
    "category": "learning",
    "exclude_reason": null,
    "full_name": "anthropics/claude-quickstarts",
    "classified_at": "2026-11-09T06:09:34+08:00"
+  },
+  "863835427": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "fosrl/pangolin",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "868173144": {
    "category": "ai-agents",
@@ -926,6 +938,12 @@
    "exclude_reason": null,
    "full_name": "lfnovo/open-notebook",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "906251482": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "ashishpatel26/500-AI-Agents-Projects",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "909213664": {
    "category": "ai-agents",
@@ -1029,11 +1047,23 @@
    "full_name": "Usagi-org/ai-goofish-monitor",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1024661423": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "we-promise/sure",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
   "1027384981": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "langchain-ai/deepagents",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1032420465": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "figma/mcp-server-guide",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "1032459340": {
    "category": "ai-agents",
@@ -1257,6 +1287,12 @@
    "full_name": "vercel-labs/skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1135847870": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google-labs-code/stitch-skills",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
   "1136590548": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1323,6 +1359,12 @@
    "full_name": "cheaper-inference/OmniRoute",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1158722119": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "addyosmani/agent-skills",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
   "1160497244": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -1358,6 +1400,18 @@
    "exclude_reason": null,
    "full_name": "mksglu/context-mode",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1167300963": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Imbad0202/academic-research-skills",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
+  "1168753718": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "every-app/open-seo",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "1170821064": {
    "category": "ai-agents",
@@ -1472,6 +1526,12 @@
    "exclude_reason": null,
    "full_name": "datadrivenconstruction/OpenConstructionERP",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1200534650": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "tokio-rs/topcoat",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "1200597263": {
    "category": "ai-agents",
@@ -1640,6 +1700,12 @@
    "exclude_reason": null,
    "full_name": "opengeos/GeoLibre",
    "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1258301311": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "rlaope/oh-my-hermes",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "1267485499": {
    "category": "everyday-tools",
@@ -1814,6 +1880,12 @@
    "exclude_reason": null,
    "full_name": "ranxianglei/billion-context",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "1330417082": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "WhiteTowerAI/ohmygame",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   },
   "1331135699": {
    "category": "everyday-tools",
@@ -2115,6 +2187,12 @@
    "full_name": "Minireel/HGhub",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "1444573070": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "janestreet/agent_skills",
+   "classified_at": "2026-11-11T07:26:16+08:00"
+  },
   "1445802355": {
    "category": "excluded",
    "exclude_reason": "piracy",
@@ -2180,6 +2258,12 @@
    "exclude_reason": null,
    "full_name": "huamidev/GestaltX",
    "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1452123445": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Kianuni/Erosion-CN",
+   "classified_at": "2026-11-11T07:26:16+08:00"
   }
  }
 }

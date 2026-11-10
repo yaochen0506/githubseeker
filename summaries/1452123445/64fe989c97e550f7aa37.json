@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "64fe989c97e550f7aa37",
+ "repo_id": 1452123445,
+ "full_name": "Kianuni/Erosion-CN",
+ "created_at": "2026-11-11T07:27:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "79ac90ba6200d268bc7acf951c44c61a9aad594a2ba4eddc6647fc03fd668397",
+ "has_readme": true,
+ "readme_chars": 5980,
+ "content": {
+  "one_liner": "以研究為目的的 iOS / iPadOS 系統設定工具箱（簡體中文介面）",
+  "features": [
+   "檢視與比對 MobileGestalt 系統設定值",
+   "寫入前預覽差異，並可備份與還原",
+   "App 存檔備份與快取清理"
+  ],
+  "audience": "研究 iOS 系統的技術人員，以及熟悉側載安裝 App 的進階使用者",
+  "use_cases": [
+   "研究人員檢視裝置的 MobileGestalt 設定值",
+   "備份或還原 App 與遊戲的存檔",
+   "清理 App 的快取，釋放儲存空間"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 SideStore 等自簽工具側載 ipa，並具備 App Group 權限",
+  "limitations": "修改系統設定有風險，請先備份；iOS 26 只有部分支援。作者表示僅供研究，不負擔任何責任",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "fd0b0c75f782b4372ccd",
+ "repo_id": 244694886,
+ "full_name": "ccfos/nightingale",
+ "created_at": "2026-11-11T07:29:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5fe0fecec97c841106bf7dec40c414b093ca5278a93a0e06ae837f265864bc06",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "自架的監控告警平台，整合指標、日誌與資料庫的告警並發送通知",
+  "features": [
+   "串接 Prometheus、Loki、ClickHouse 等資料來源設定告警",
+   "通知送到 Slack、PagerDuty、Email、Telegram 等",
+   "內建 AI agent 與 MCP server 協助查告警"
+  ],
+  "audience": "負責系統維運的 SRE、IT 維運團隊，以及需要集中管理告警的技術團隊",
+  "use_cases": [
+   "把分散在各系統的告警規則集中到同一個介面管理",
+   "主機記憶體過高時自動通知團隊的 Slack 頻道",
+   "用 AI agent 調查告警為何觸發或為何沒送達"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Git 與 Docker Compose 部署，並會寫 PromQL 或 SQL 查詢",
+  "limitations": "不提供值班排班與升級；無規則版本歷史；Prometheus 匯入非完整轉換；AI 需自備模型與費用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

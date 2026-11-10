@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "81e302a4daa826399215",
+ "repo_id": 858127,
+ "full_name": "pandas-dev/pandas",
+ "created_at": "2026-11-11T07:28:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1b4c4fa88964af92ad1d7037fc7f4269a15658cb7b36005393df481ee98eac80",
+ "has_readme": true,
+ "readme_chars": 4799,
+ "content": {
+  "one_liner": "Python 的資料分析套件，用表格方式整理、計算與轉換資料",
+  "features": [
+   "讀寫 CSV、Excel、資料庫與 HDF5 檔案",
+   "分組統計、合併、樞紐分析與處理缺漏資料",
+   "時間序列功能，如日期範圍與移動視窗統計"
+  ],
+  "audience": "會寫 Python 的資料分析師、研究人員、資料科學家與工程師",
+  "use_cases": [
+   "把 Excel 或 CSV 資料讀進來，清理缺漏值後做分組統計",
+   "合併多份資料表並製作樞紐分析表",
+   "分析依日期排列的資料，例如計算移動平均"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python，並透過 PyPI 或 conda-forge 安裝，再寫程式使用",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

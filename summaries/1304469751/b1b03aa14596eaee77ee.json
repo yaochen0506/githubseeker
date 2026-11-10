@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b1b03aa14596eaee77ee",
+ "repo_id": 1304469751,
+ "full_name": "anomalyco/hex",
+ "created_at": "2026-11-11T07:26:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "deaa6556cf8d2afdd16005c2ed4022466d8a586cd4f9ac2248b3bc4141c3c95c",
+ "has_readme": true,
+ "readme_chars": 1311,
+ "content": {
+  "one_liner": "在電腦上按住快速鍵說話，自動轉成文字並貼上的本機語音輸入工具",
+  "features": [
+   "按住快速鍵說話，放開後自動轉成文字",
+   "在本機辨識語音，貼到目前使用的任何 App",
+   "支援 macOS、Windows、Linux"
+  ],
+  "audience": "想用說話取代打字、又重視隱私不想把語音上傳雲端的電腦使用者",
+  "use_cases": [
+   "在任何 App 中用說話輸入文字，取代鍵盤打字",
+   "在意隱私時，於本機進行語音轉文字",
+   "可能用於撰寫長篇文件或訊息以減少打字負擔"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載對應系統的安裝檔即可使用，首次執行需連網下載語音模型",
+  "limitations": "首次執行需下載語音模型；macOS 僅提供 Apple silicon 版本；實驗功能放在 Labs；不接受 pull request",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

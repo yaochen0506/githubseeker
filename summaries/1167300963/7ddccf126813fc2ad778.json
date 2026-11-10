@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7ddccf126813fc2ad778",
+ "repo_id": 1167300963,
+ "full_name": "Imbad0202/academic-research-skills",
+ "created_at": "2026-11-11T07:27:43+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a869296f8dde5ff980067ea6f3bfb12446028805060d85ed1b8679401dcf1d19",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 Claude Code 用的學術研究技能包，協助從找文獻、寫作、審稿、修改到定稿",
+  "features": [
+   "多代理人深度研究與文獻回顧，支援 PRISMA",
+   "論文撰寫，含文風校準與寫作品質檢查",
+   "模擬多角度同儕審查與引用真實性查核"
+  ],
+  "audience": "研究生、學者等需要撰寫學術論文、做文獻回顧或系統性回顧的研究者",
+  "use_cases": [
+   "用蘇格拉底式對話規劃論文章節架構",
+   "針對研究主題產出文獻回顧並查核引用",
+   "投稿前讓 AI 模擬審稿人提出意見並協助修改"
+  ],
+  "barrier": "code",
+  "barrier_note": "主要在 Claude Code 中以指令操作，需 API 金鑰；付費版 claude.ai 可裝外掛，但部分功能無法使用",
+  "limitations": "每個階段都需使用者確認；無法證明資料真實或結果可重現；作者估計完整流程約 US$3–7",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

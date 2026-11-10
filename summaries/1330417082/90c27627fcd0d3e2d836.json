@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "90c27627fcd0d3e2d836",
+ "repo_id": 1330417082,
+ "full_name": "WhiteTowerAI/ohmygame",
+ "created_at": "2026-11-11T07:26:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7047db5e06ca003eda4fe9d978a3ad9a446fe3b0e14a070869c0c1ed348bafd3",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 AI 做遊戲的開源桌面 App，一個人就能企劃、做素材、寫程式、發布遊戲",
+  "features": [
+   "AI agent 寫企劃、寫程式並自己試玩除錯",
+   "畫布集中管理企劃、圖片、影片、3D 與音效",
+   "一鍵發布成網址，可外掛上架其他平台"
+  ],
+  "audience": "想自己做遊戲的獨立創作者、遊戲愛好者，以及已在用 Claude Code、Codex 的開發者",
+  "use_cases": [
+   "描述構想，讓 AI 做出可在瀏覽器玩的 2D 或 3D 網頁遊戲",
+   "製作視覺小說、互動影片等互動故事作品",
+   "搭配 Godot、Unity 外掛開發遊戲並上架 TapTap 等平台"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載安裝 macOS 或 Windows 版，並自備 AI 服務帳號或 API key",
+  "limitations": "仍在 beta 測試階段；Windows 版未簽章可能跳出警告；產生圖片、影片等需另接對應服務；發布需帳號",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

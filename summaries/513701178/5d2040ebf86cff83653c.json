@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5d2040ebf86cff83653c",
+ "repo_id": 513701178,
+ "full_name": "gdy666/lucky",
+ "created_at": "2026-11-11T07:29:10+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7749f2d017beb2d0e252c2f403572b0840e9945b13ef36b8dd3f06e10c3fb61a",
+ "has_readme": true,
+ "readme_chars": 5109,
+ "content": {
+  "one_liner": "家用網路工具箱，用網頁介面管理 DDNS、轉發、憑證與檔案服務",
+  "features": [
+   "DDNS、反向代理、連接埠轉發與 SSL 憑證申請",
+   "STUN、FRP 等內網穿透與 WebDAV、FTP 檔案服務",
+   "Wake-on-LAN 網路喚醒、排程任務與 Docker 管理"
+  ],
+  "audience": "想從外部連回家中 NAS、路由器或伺服器，並熟悉網路設定的進階使用者",
+  "use_cases": [
+   "用 DDNS 和反向代理，從外面連回家裡的 NAS 服務",
+   "把公網 IPv6 流量轉發到內網的 IPv4 裝置",
+   "從遠端用 Wake-on-LAN 喚醒家中電腦"
+  ],
+  "barrier": "install",
+  "barrier_note": "需安裝在路由器、NAS 或電腦上，或用 Docker 部署，並要懂網路設定",
+  "limitations": "公開原始碼只到 1.4.10，之後版本不開源；功能依版本與平台而異；會回傳版本與裝置識別碼；預設帳密須立即修改",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

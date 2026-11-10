@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1b75a0457397924201bb",
+ "repo_id": 1168753718,
+ "full_name": "every-app/open-seo",
+ "created_at": "2026-11-11T07:28:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a9cf9a8158b81e3801d497d0c93c2b133df283fb9e15856f09b49b12a2ba1cf1",
+ "has_readme": true,
+ "readme_chars": 3422,
+ "content": {
+  "one_liner": "開源的 SEO 工具，可替代 Semrush、Ahrefs，按用量付費",
+  "features": [
+   "關鍵字研究、排名追蹤、競爭對手分析與反向連結",
+   "網站健檢（Site Audit）與 AI 能見度分析",
+   "提供 MCP 伺服器與 Agent Skills 給 AI 助理使用"
+  ],
+  "audience": "經營網站的個人、小型團隊與行銷人員，覺得 Semrush、Ahrefs 太貴或太複雜的人",
+  "use_cases": [
+   "研究關鍵字並追蹤自家網站的搜尋排名",
+   "檢查網站 SEO 問題、查看競爭對手與反向連結",
+   "讓 Claude Code 或 ChatGPT 等 AI 助理直接讀取 SEO 資料"
+  ],
+  "barrier": "online",
+  "barrier_note": "官方網站可免費試用，訂閱每月 10 美元；自行架設需要 Docker 或 Cloudflare",
+  "limitations": "需要 DataForSEO API key 才能取得 SEO 資料，並依用量付費；官方代管版每次請求會多收 28% 費用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

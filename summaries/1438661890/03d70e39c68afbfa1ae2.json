@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "03d70e39c68afbfa1ae2",
+ "repo_id": 1438661890,
+ "full_name": "JuneYaooo/rea-video",
+ "created_at": "2026-11-11T07:27:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "861d2b80863bb6fa529ddf63fceb849482074471e4198125b0fc4440eb625a91",
+ "has_readme": true,
+ "readme_chars": 10839,
+ "content": {
+  "one_liner": "逐個鏡頭分析影片是實拍、AI 生成還是程式做的，並告訴你怎麼重做",
+  "features": [
+   "逐鏡頭判斷實拍、AI、3D、程式動畫或螢幕錄影",
+   "分析字幕、剪輯節奏、配音與音樂 BPM",
+   "產出重製計畫與含提示詞的 HTML 報告"
+  ],
+  "audience": "短影音創作者、廣告與行銷人員，以及想研究影片製作手法、會用 AI agent 的人",
+  "use_cases": [
+   "拆解熱門短影音廣告，了解拍攝機位、燈光與剪輯方式",
+   "判斷一支影片哪些片段是 AI 生成，並取得反推的提示詞",
+   "依報告用 Remotion 或影片模型，以自有素材重製類似影片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需透過 Claude Code 等 agent 或命令列使用，並安裝 ffmpeg 與 Python 3.10+",
+  "limitations": "平台下載的壓縮影片僅用工具判斷準確度較低，作者建議搭配視覺模型；文件目前僅中文；不可直接轉載他人素材",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

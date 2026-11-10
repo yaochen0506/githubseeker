@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a418e8b2ca8b0e1f226f",
+ "repo_id": 542386106,
+ "full_name": "HIllya51/LunaTranslator",
+ "created_at": "2026-11-11T07:28:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "884f01e947e1c5b4987fd08839607b4e726f8a2591a0cf1c2e010a25f8429f42",
+ "has_readme": true,
+ "readme_chars": 746,
+ "content": {
+  "one_liner": "即時擷取視覺小說（galgame）遊戲文字並翻譯的軟體",
+  "features": [
+   "用 HOOK 擷取遊戲文字，也支援模擬器遊戲",
+   "內建 OCR，可辨識畫面上任意文字",
+   "支援大型語言模型、離線翻譯等多種翻譯引擎"
+  ],
+  "audience": "想玩日文等外語視覺小說的玩家，以及想透過遊戲學日文的人",
+  "use_cases": [
+   "玩未中文化的日文視覺小說時，即時看到翻譯",
+   "玩 NS、PSP 等模擬器遊戲時讀取並翻譯文字",
+   "搭配假名注音與 Anki 學習日文單字"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載軟體並設定擷取方式與翻譯引擎，語音辨識需 Windows 10/11",
+  "limitations": "內嵌翻譯僅部分遊戲支援；Windows 語音辨識限 Windows 10 與 11",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "0b425497eb3aefee6c24",
+ "repo_id": 1200534650,
+ "full_name": "tokio-rs/topcoat",
+ "created_at": "2026-11-11T07:28:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a8ce6625195172745a36d86de4e5cd32e82b3063d911ec780ffed670dbdf0dee",
+ "has_readme": true,
+ "readme_chars": 6050,
+ "content": {
+  "one_liner": "用 Rust 打造完整網站的全端框架，內建許多常用功能",
+  "features": [
+   "伺服器端產生網頁，也能在瀏覽器即時互動",
+   "附可自行修改的 Tailwind 現成介面元件",
+   "內建路由、Cookie、多語系、寄信等工具"
+  ],
+  "audience": "會寫 Rust、想用單一框架開發完整網站的程式開發者",
+  "use_cases": [
+   "用 Rust 開發可直接查詢資料庫的網站",
+   "製作有搜尋、即時更新畫面的互動網頁",
+   "建立支援多語系與登入功能的網站"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 Rust 程式，並使用命令列工具建立與執行專案",
+  "limitations": "作者表示專案仍在早期實驗階段，之後可能有不相容的大改動；部署說明等功能尚在規劃中",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

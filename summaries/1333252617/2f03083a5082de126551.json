@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "2f03083a5082de126551",
+ "repo_id": 1333252617,
+ "full_name": "CNCKitchen/ScanRuler",
+ "created_at": "2026-11-11T07:28:24+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e70d6fad75b8c62bc8a9ef3cc0b0f7d13f460400a8b572f0239394ed98958095",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在瀏覽器裡把 3D 掃描和 CAD 原圖比對、量尺寸，還能逆向建模成 STEP 實體",
+  "features": [
+   "擬合球、圓柱、平面等並量距離、角度與 GD&T",
+   "以顏色標示掃描與 CAD 的偏差及壁厚",
+   "掃描轉 STEP 實體，並可清理、簡化網格"
+  ],
+  "audience": "需要檢驗 3D 掃描或列印零件尺寸的工程師、3D 列印玩家與逆向工程使用者",
+  "use_cases": [
+   "比對 3D 列印件的掃描檔和 CAD 設計，找出哪裡多料或少料",
+   "用平台掃描器掃平板零件，量尺寸後匯出 DXF",
+   "把損壞零件的掃描檔重建成 STEP，在 CAD 裡修改"
+  ],
+  "barrier": "online",
+  "barrier_note": "打開網頁就能用；要串接 AI 代理才需要 Node.js 22 以上版本",
+  "limitations": "STL 沒有單位，需要自己指定；平台掃描圖要先校正；串接 AI 代理後，資料會傳給模型供應商",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

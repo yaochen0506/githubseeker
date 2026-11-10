@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "103deaac55b7c0a6709d",
+ "repo_id": 741450201,
+ "full_name": "Marker-Inc-Korea/AutoRAG",
+ "created_at": "2026-11-11T07:27:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0afe22e45e7c673d8d8779891795968a0242e88a8d5aff2a82336de3adb55688",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "像私人圖書館員的 AI 助理，幫你搜尋電腦裡的檔案、聊天與郵件並回答問題",
+  "features": [
+   "用問句搜尋檔案、Slack、Telegram、郵件等並附來源",
+   "找出重複或相似版本的檔案並標示最新版",
+   "可依指示整理、重新命名、移動檔案並記錄變更"
+  ],
+  "audience": "檔案、聊天紀錄和郵件很多，想用提問快速找到資料的上班族與知識工作者",
+  "use_cases": [
+   "問「上次提案的預算是多少」，從檔案與郵件中找出答案並附出處",
+   "整理資料夾裡 proposal-final、proposal-v3 等重複版本",
+   "透過 MCP server 把搜尋結果提供給 Claude Code 等 AI 工具"
+  ],
+  "barrier": "install",
+  "barrier_note": "有桌面 App（Dazzi）可用，但需另行取得並設定 AI 模型帳號或 API 金鑰；CLI 需會用命令列",
+  "limitations": "桌面 App 原始碼在另一個儲存庫，採 Fair Source 授權；macOS/Linux 未裝 fsearch-cli 時檔名搜尋會變慢",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
