@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "943ca54a5a58438b5a46",
+ "repo_id": 1077967890,
+ "full_name": "oaustegard/claude-skills",
+ "created_at": "2026-11-13T07:42:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "45b4536573a1ac0ae438bbb15e290bbe272299cc11aae2f992b27ed8fe74ea1e",
+ "has_readme": true,
+ "readme_chars": 1923,
+ "content": {
+  "one_liner": "作者自己整理的一套 Claude 技能（skills），可以裝進 Claude.ai 或 Claude Code 使用",
+  "features": [
+   "以 Claude Code 外掛市集形式發布，可挑選安裝",
+   "提供技能 ZIP 檔，可上傳到 Claude.ai 網頁版",
+   "支援用 ZIP 上傳或 PR 貢獻新技能"
+  ],
+  "audience": "有付費 Claude 帳號、想替 Claude 加裝額外技能的使用者，以及 Claude Code 開發者",
+  "use_cases": [
+   "下載技能 ZIP，上傳到 Claude.ai 的 Skills 設定中使用",
+   "在 Claude Code 加入這個外掛市集，挑選需要的技能安裝",
+   "參考別人的技能結構，可能用來製作自己的技能"
+  ],
+  "barrier": "install",
+  "barrier_note": "Claude.ai 須有 Pro 或 Team 付費帳號並手動上傳 ZIP；用 Claude Code 則要下指令",
+  "limitations": "技能主要是為 Claude.ai 的執行環境設計，作者表示用在 Claude Code 效果可能不同；網頁版需要付費帳號",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

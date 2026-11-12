@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c53eab8a822f3e58d21b",
+ "repo_id": 1305663861,
+ "full_name": "Vincentwei1021/video-shotcraft",
+ "created_at": "2026-11-13T07:42:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "210c26430a819f7b22a2d76e415063326ab9b341b9bd19944410fedaeff733b7",
+ "has_readme": true,
+ "readme_chars": 9060,
+ "content": {
+  "one_liner": "讓 Claude Code 或 Codex 用你的產品截圖自動做出可再編輯的宣傳影片",
+  "features": [
+   "124 張鏡頭配方卡、150 種動態效果可挑選",
+   "自動對拍剪輯並加上音效與背景音樂",
+   "可在瀏覽器編輯器修改，或匯出剪映草稿"
+  ],
+  "audience": "想替產品或開源專案製作宣傳短片、且會使用 Claude Code 或 Codex 的開發者與產品團隊",
+  "use_cases": [
+   "替自家產品或網站製作 1080p 宣傳影片",
+   "為新功能或程式碼庫製作發表影片",
+   "做完後發布到 TikTok、YouTube 等社群平台"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Claude Code 或 Codex、Node.js、ffmpeg 等工具，並會用命令列",
+  "limitations": "主要在 macOS 測試，Linux 需額外設定；Remotion 對公司可能需付費授權；範本截圖需換成自己的",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

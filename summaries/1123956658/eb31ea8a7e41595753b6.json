@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "eb31ea8a7e41595753b6",
+ "repo_id": 1123956658,
+ "full_name": "backnotprop/plannotator",
+ "created_at": "2026-11-13T07:42:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0a9a330330966c3168e68cdcaf848fabd9b83895363a9837fc05e4fdf660869c",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在瀏覽器裡審閱、標註 AI 寫程式助手的計畫與程式碼，一鍵把意見回傳給它",
+  "features": [
+   "標註計畫、規格、Markdown 與 HTML 文件",
+   "審查本機變更或 GitHub、GitLab PR",
+   "Inbox 集中接收多個 AI 助手的提問與訊息"
+  ],
+  "audience": "使用 Claude Code、Codex、Gemini CLI 等 AI 寫程式工具的開發者與技術團隊",
+  "use_cases": [
+   "AI 助手提出開發計畫時，先標註修改意見再讓它動手",
+   "審查 AI 寫完的程式碼差異，留言後送回給 AI 修正",
+   "把計畫分享給同事標註，再匯入意見回傳給 AI"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝，並搭配已安裝的 AI 寫程式工具與 Git 等環境",
+  "limitations": "開啟時會向 GitHub 檢查新版本，目前無法關閉；連結分享功能將逐步停止支援，部分代理工具支援有限",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

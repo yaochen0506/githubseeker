@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ea800ba54a12e454298e",
+ "repo_id": 612230,
+ "full_name": "nvm-sh/nvm",
+ "created_at": "2026-11-13T07:43:56+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "015dc12bcde07309b55b49370794d843d94f499dfc554c622fa07a9adf32f827",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在命令列快速安裝、切換多個 Node.js 版本的管理工具",
+  "features": [
+   "用一行指令安裝指定或最新版本的 Node.js",
+   "在不同 Node.js 版本間切換並設定預設版本",
+   "透過 .nvmrc 檔指定專案使用的版本"
+  ],
+  "audience": "需要在同一台電腦上使用多個 Node.js 版本的開發者",
+  "use_cases": [
+   "同時維護需要不同 Node.js 版本的多個專案",
+   "在 Docker 或 CI/CD 環境中安裝指定版本的 Node.js",
+   "安裝新版本時順便搬移全域套件"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要在終端機執行安裝腳本與指令，適用 macOS、Linux 或 Windows WSL",
+  "limitations": "不支援 Fish shell 與 Homebrew 安裝；Windows 只能透過 WSL 等方式使用；FreeBSD 仍有問題",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

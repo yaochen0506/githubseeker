@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-12T08:47:22+08:00",
+ "updated_at": "2026-11-13T07:41:34+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -14,6 +14,18 @@
    "exclude_reason": null,
    "full_name": "symfony/symfony",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "596892": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "pallets/flask",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
+  "612230": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "nvm-sh/nvm",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "724712": {
    "category": "dev-tools",
@@ -81,11 +93,23 @@
    "full_name": "etcd-io/etcd",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "12888993": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "home-assistant/core",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "13491895": {
    "category": "learning",
    "exclude_reason": null,
    "full_name": "EbookFoundation/free-programming-books",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "15111821": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "grafana/grafana",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "17578592": {
    "category": "everyday-tools",
@@ -123,6 +147,12 @@
    "full_name": "mermaid-js/mermaid",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "27193779": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "nodejs/node",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "29290473": {
    "category": "security-network",
    "exclude_reason": null,
@@ -134,6 +164,12 @@
    "exclude_reason": null,
    "full_name": "apache/airflow",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "35866694": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "RocketChat/Rocket.Chat",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "41881900": {
    "category": "dev-tools",
@@ -183,6 +219,12 @@
    "full_name": "spotDL/spotify-downloader",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "63476337": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "TheAlgorithms/Python",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "63477660": {
    "category": "learning",
    "exclude_reason": null,
@@ -200,6 +242,12 @@
    "exclude_reason": null,
    "full_name": "donnemartin/system-design-primer",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "83821669": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "Qiskit/qiskit",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "90194616": {
    "category": "dev-tools",
@@ -273,6 +321,12 @@
    "full_name": "mlflow/mlflow",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "137078487": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "vuejs/core",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "140516736": {
    "category": "learning",
    "exclude_reason": null,
@@ -297,6 +351,12 @@
    "full_name": "ruanyf/weekly",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "155220641": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "huggingface/transformers",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "157846876": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -308,6 +368,12 @@
    "exclude_reason": null,
    "full_name": "jeecgboot/JeecgBoot",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "160919119": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "fastapi/fastapi",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "162200234": {
    "category": "security-network",
@@ -327,11 +393,23 @@
    "full_name": "hummingbot/hummingbot",
    "classified_at": "2026-11-10T09:35:36+08:00"
   },
+  "180190854": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "appwrite/appwrite",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "186024298": {
    "category": "dev-tools",
    "exclude_reason": null,
    "full_name": "nushell/nushell",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "188584527": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "lonePatient/awesome-pretrained-chinese-nlp-models",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "189621607": {
    "category": "learning",
@@ -345,6 +423,12 @@
    "full_name": "ever-co/ever-gauzy",
    "classified_at": "2026-11-12T08:47:22+08:00"
   },
+  "193215554": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "n8n-io/n8n",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "197814629": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -356,6 +440,12 @@
    "exclude_reason": null,
    "full_name": "NVIDIA-NeMo/Speech",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "214587193": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "supabase/supabase",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "216773481": {
    "category": "learning",
@@ -717,6 +807,12 @@
    "full_name": "fmz200/wool_scripts",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "537603333": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "openai/whisper",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "542386106": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -771,6 +867,12 @@
    "full_name": "aoaostar/legado",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "574012459": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "smallfawn/QLScriptPublic",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "575321313": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -824,6 +926,12 @@
    "exclude_reason": null,
    "full_name": "LibreChat-AI/LibreChat",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "612354784": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "ggml-org/llama.cpp",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "642497346": {
    "category": "ai-models",
@@ -993,6 +1101,12 @@
    "full_name": "browser-use/browser-use",
    "classified_at": "2026-11-12T08:47:22+08:00"
   },
+  "903349957": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "pookjw/HermesEnabler",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "906251482": {
    "category": "learning",
    "exclude_reason": null,
@@ -1149,6 +1263,12 @@
    "full_name": "thedotmack/claude-mem",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1054793726": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ChromeDevTools/chrome-devtools-mcp",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "1056618941": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1232,6 +1352,12 @@
    "exclude_reason": null,
    "full_name": "virattt/dexter",
    "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1077967890": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "oaustegard/claude-skills",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "1078528927": {
    "category": "dev-tools",
@@ -1599,6 +1725,12 @@
    "full_name": "NVIDIA/SkillSpector",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1191052193": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "PurpleDoubleD/locally-uncensored",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "1193909050": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1851,11 +1983,23 @@
    "full_name": "mantrakp04/ardia",
    "classified_at": "2026-11-09T06:09:34+08:00"
   },
+  "1274723381": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "ashhart/TensorFold",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "1275465781": {
    "category": "security-network",
    "exclude_reason": null,
    "full_name": "derv82/wifit3",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1278676884": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "NVIDIA/SkillEvaluator",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "1279659344": {
    "category": "ai-models",
@@ -1989,6 +2133,12 @@
    "full_name": "FareedKhan-dev/kimi-k3-in-c",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1319836220": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "adewaskar/jarvis",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "1323115536": {
    "category": "security-network",
    "exclude_reason": null,
@@ -2055,6 +2205,12 @@
    "full_name": "CopilotKit/OpenBot",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1336998801": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "shanliuling/dsh-image-gen",
+   "classified_at": "2026-11-13T07:41:34+08:00"
+  },
   "1339256252": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2084,6 +2240,12 @@
    "exclude_reason": null,
    "full_name": "Albert-Weasker/niubigeo",
    "classified_at": "2026-11-09T06:09:34+08:00"
+  },
+  "1364527927": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "block/buzz-app",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   },
   "1407950271": {
    "category": "ai-models",
@@ -2396,6 +2558,12 @@
    "exclude_reason": null,
    "full_name": "HybridRobotics/supermimic",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1453517867": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "apex-compute/ANR",
+   "classified_at": "2026-11-13T07:41:34+08:00"
   }
  }
 }

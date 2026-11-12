@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "f9b98f049e97c96cada1",
+ "repo_id": 1364527927,
+ "full_name": "block/buzz-app",
+ "created_at": "2026-11-13T07:42:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "41abe2442e9eea65f83a153b88ff1aaa63add0598b1dc751c0d2a8a0ca41b51b",
+ "has_readme": true,
+ "readme_chars": 5757,
+ "content": {
+  "one_liner": "結合團隊聊天與 AI 助理的桌面 App，可在對話中直接呼叫 AI agent",
+  "features": [
+   "加入社群，使用頻道與私訊聊天",
+   "在自己電腦上執行 Claude、Codex 等 agent",
+   "可透過外掛擴充功能，並附命令列工具"
+  ],
+  "audience": "想在團隊聊天中一起使用 AI 助理的小組或社群成員，以及想自訂外掛的開發者",
+  "use_cases": [
+   "在頻道中 @ 提及 AI agent，請它回答問題",
+   "私訊自己建立的 agent，請它在電腦上處理檔案",
+   "從舊版 Buzz 0.X 轉移身分並重新加入社群"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載安裝 App，並準備 Claude、OpenAI 帳號或模型 API key",
+  "limitations": "仍為預覽版，無穩定版本；更新可能弄壞外掛；Claude、Codex 僅支援 macOS、Linux；私鑰不會自動備份",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

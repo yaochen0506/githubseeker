@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "11a0e5b0352221eded51",
+ "repo_id": 1191052193,
+ "full_name": "PurpleDoubleD/locally-uncensored",
+ "created_at": "2026-11-13T07:41:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "edaf8d67b7d217e9cbab0e99dd5ad450e65f935aab113edca74c43e80a780b3c",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在自己電腦上用 AI 聊天、生成圖片與影片，還能寫程式的桌面 App",
+  "features": [
+   "本機 AI 聊天，可問圖片、讀文件、語音對話",
+   "透過 ComfyUI 生成與編輯圖片、影片、音樂",
+   "寫程式代理會先顯示修改內容再套用"
+  ],
+  "audience": "想在自己電腦上跑 AI、重視隱私，且有足夠顯示卡效能的使用者與開發者",
+  "use_cases": [
+   "不連雲端，在自己電腦上和 AI 聊天、詢問自己的文件",
+   "用文字產生圖片或影片，或去背、修改現有圖片",
+   "匯入 ChatGPT、Claude 或 Gemini 的舊對話繼續使用"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載安裝檔安裝，精靈會協助裝 AI 引擎與 ComfyUI，不需命令列",
+  "limitations": "Windows 安裝檔目前未簽章，可能被防毒誤報；macOS 為 Beta 且不支援 Intel Mac；部分功能只在雲端執行",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

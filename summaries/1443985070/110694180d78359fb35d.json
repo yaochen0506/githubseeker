@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "110694180d78359fb35d",
+ "repo_id": 1443985070,
+ "full_name": "KKKKhazix/agent-autoloop",
+ "created_at": "2026-11-13T07:42:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a9cdc89a34fc2bdda8b048c0ac8030f4039ed2da273ecc6b50f9a922bf329d90",
+ "has_readme": true,
+ "readme_chars": 7836,
+ "content": {
+  "one_liner": "讓 Claude Code 等命令行 Agent 在背景自動接任務，遇到需要決定的事才通知你",
+  "features": [
+   "用規則檔設定定時或事件觸發，派給指定 Agent",
+   "需要拍板時推卡片到飛書、Slack 或桌面通知",
+   "等待回覆時不佔進程、不耗 Token，回覆後接續"
+  ],
+  "audience": "已在使用 Claude Code、Codex 等命令行 Agent，想讓它自動處理例行工作的開發者",
+  "use_cases": [
+   "每天早上自動整理本地筆記與 Git 提交，寫成早報",
+   "定期查看 GitHub 新 Issue，在本地修改程式碼後通知你",
+   "PR 打上標籤後自動審查、等 CI、合併並核對上線版本"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 Node 24 以上、Git 與已登入的命令行 Agent，並用命令列和 JSON 設定規則",
+  "limitations": "部分 Agent 與 Webhook 只在本地模擬驗證過；模型費用算在自己帳號，高頻使用建議用 API Key",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

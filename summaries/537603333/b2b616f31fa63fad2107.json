@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "b2b616f31fa63fad2107",
+ "repo_id": 537603333,
+ "full_name": "openai/whisper",
+ "created_at": "2026-11-13T07:43:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f1645eeaee23e5a07512698665a43537d02e6c43c455d24e90e02c9afb8ccee2",
+ "has_readme": true,
+ "readme_chars": 5757,
+ "content": {
+  "one_liner": "OpenAI 開源的語音辨識模型，能把多種語言的錄音轉成文字",
+  "features": [
+   "多語言語音轉文字",
+   "將非英語語音翻譯成英文",
+   "自動辨識說話的語言"
+  ],
+  "audience": "需要把錄音或影片轉成逐字稿的開發者、研究人員，以及會用命令列的進階使用者",
+  "use_cases": [
+   "把會議或訪談錄音轉成逐字稿",
+   "把外語語音內容翻譯成英文文字",
+   "可能用來替影片製作字幕"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python、PyTorch 與 ffmpeg，並用命令列或 Python 程式執行",
+  "limitations": "準確度依語言差異很大；turbo 模型不支援翻譯；大型模型需約 10 GB 顯示卡記憶體",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

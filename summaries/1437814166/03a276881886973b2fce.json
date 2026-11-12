@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "03a276881886973b2fce",
+ "repo_id": 1437814166,
+ "full_name": "anefzaoui/misterdownloadmanager",
+ "created_at": "2026-11-13T07:42:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f310d708367665d56d7dce77182724c62a2dfc4b8947a03c637c3dca8e1f92b1",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "免費開源的下載管理軟體，介面類似 IDM，可加速下載檔案、影片和 torrent",
+  "features": [
+   "把檔案分段同時下載，斷線或當機後可以接續下載",
+   "搭配瀏覽器擴充功能攔截下載，支援影片和 torrent",
+   "排程夜間下載、限速，支援 86 種語言和深色模式"
+  ],
+  "audience": "常下載大檔案、影片或 torrent，想找免費 IDM 替代品的 Windows 和 Linux 使用者",
+  "use_cases": [
+   "用網頁上的按鈕下載影片、播放清單和字幕",
+   "設定佇列在夜間自動下載，下載完成後關機",
+   "用手機在家裡的網路遠端控制下載"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載安裝檔或免安裝版就能用，再加裝瀏覽器擴充功能，不用寫程式",
+  "limitations": "macOS 版仍在實驗階段，作者還沒實測；Windows 版沒有數位簽章，第一次執行會跳警告；Debrid 功能也還在實驗階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

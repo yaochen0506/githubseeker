@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "e3704505661cadc642ce",
+ "repo_id": 903349957,
+ "full_name": "pookjw/HermesEnabler",
+ "created_at": "2026-11-13T07:41:40+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8dbda6535b4c511b08657b2cf1970f04a42777d385ecbfc67d174d594f579366",
+ "has_readme": true,
+ "readme_chars": 1045,
+ "content": {
+  "one_liner": "讓任何型號的 Apple Watch 都能使用 Hermès 專屬錶面",
+  "features": [
+   "在非 Hermès 版 Apple Watch 開啟 Hermès 錶面",
+   "可備份並還原 MobileGestalt 設定",
+   "可用 Sideloadly 側載或用 Xcode 自行編譯"
+  ],
+  "audience": "想在一般 Apple Watch 上使用 Hermès 錶面，而且懂得側載 App 的使用者",
+  "use_cases": [
+   "在一般版 Apple Watch 上換成 Hermès 錶面",
+   "用自己的 Apple ID 側載安裝，換換手錶的外觀"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要在電腦上用 Sideloadly 側載 IPA，並準備 Apple ID；也可以用 Xcode 自行編譯",
+  "limitations": "只支援 watchOS 27.0 到 27.3 beta 1；刪除 App 前務必先還原 MobileGestalt 備份；作者提醒使用風險自負",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

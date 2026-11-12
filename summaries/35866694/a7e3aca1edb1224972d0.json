@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a7e3aca1edb1224972d0",
+ "repo_id": 35866694,
+ "full_name": "RocketChat/Rocket.Chat",
+ "created_at": "2026-11-13T07:44:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0768eedcb0b3b8bd78992b15057a252fda6a729b2a065b924f8557436b6b3af3",
+ "has_readme": true,
+ "readme_chars": 5256,
+ "content": {
+  "one_liner": "開源的團隊即時通訊平台，類似 Slack，可以架在自己的伺服器上",
+  "features": [
+   "即時訊息、語音通話與跨組織聯邦通訊",
+   "端對端加密、身分管理與權限控管",
+   "可自架、雲端或在離線隔離網路部署"
+  ],
+  "audience": "重視資料保護的企業、政府機關與組織的 IT 管理人員，以及它們的員工",
+  "use_cases": [
+   "公司內部同事之間的即時聊天與協作",
+   "與其他公司、客戶或民眾進行溝通",
+   "在不連網的高安全環境中架設內部通訊系統"
+  ],
+  "barrier": "code",
+  "barrier_note": "自架需用 Docker、Podman 或 Kubernetes；一般成員可直接用網頁或 App 加入",
+  "limitations": "部署前需確認系統需求；免維護的專屬雲端代管屬於付費方案",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

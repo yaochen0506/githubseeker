@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b63a04386aec7ed98381",
+ "repo_id": 1278676884,
+ "full_name": "NVIDIA/SkillEvaluator",
+ "created_at": "2026-11-13T07:41:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "70789e5441bddb11891db3afe9898bf36874ffb21ec2903df122c629263096dd",
+ "has_readme": true,
+ "readme_chars": 6515,
+ "content": {
+  "one_liner": "檢查 AI agent skill 的品質與安全，並比較有無該 skill 時 agent 的表現差異",
+  "features": [
+   "三層評估：品質與安全檢查、內容重複偵測、實際 agent 測試",
+   "整合 SkillSpector、Gitleaks 等工具做安全掃描",
+   "可接入 GitHub 或 GitLab 自動檢查變更的 skill"
+  ],
+  "audience": "撰寫或維護 AI agent skill 的開發者，以及需要審核 skill 品質與安全的團隊",
+  "use_cases": [
+   "發布 skill 前先跑品質檢查，取得分數與問題清單",
+   "在 GitHub 或 GitLab 的 PR 中自動檢查 skill 並產生報告",
+   "實際讓 agent 執行任務，比較加上 skill 前後的結果"
+  ],
+  "barrier": "code",
+  "barrier_note": "需使用命令列與 Git、uv；進階功能需 API key、Docker 等 sandbox 環境",
+  "limitations": "支援等級為實驗性，無 SLA；第三層需 Docker 等 sandbox，使用模型或託管 sandbox 可能產生費用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

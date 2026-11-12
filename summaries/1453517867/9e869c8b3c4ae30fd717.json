@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "9e869c8b3c4ae30fd717",
+ "repo_id": 1453517867,
+ "full_name": "apex-compute/ANR",
+ "created_at": "2026-11-13T07:42:24+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "186316e60c12b427030c5f25bf0116eb3998c27dc06daba4348d48e77fa0b70f",
+ "has_readme": true,
+ "readme_chars": 5271,
+ "content": {
+  "one_liner": "替遊戲加入補幀技術，並可錄製比較不同補幀與放大技術效果",
+  "features": [
+   "ANR FG 補幀功能（Beta），超解析度與光追降噪即將推出",
+   "支援 NVIDIA、AMD、Intel 顯示卡與 Steam Deck",
+   "nr-record 錄製遊戲輸入，比較 DLSS、FSR、XeSS 等效果"
+  ],
+  "audience": "想提升遊戲幀數的 PC 或 Steam Deck 玩家，以及想比較補幀畫質的評測者",
+  "use_cases": [
+   "在支援補幀的遊戲中改用 ANR FG 產生額外畫格",
+   "在 Steam Deck 上透過 Proton 讓遊戲使用補幀",
+   "錄製遊戲畫面輸入，並排比較 ANR FG 與 DLSS-G 的成果"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載套件、對遊戲資料夾執行安裝程式；錄製比較功能需用命令列與 ffmpeg",
+  "limitations": "目前僅補幀為 Beta，原始碼尚未公開；錄製需 D3D12 或 Vulkan 且支援 DLSS 補幀的遊戲，檔案很大",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

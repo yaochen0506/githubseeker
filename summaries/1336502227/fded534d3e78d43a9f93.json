@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "fded534d3e78d43a9f93",
+ "repo_id": 1336502227,
+ "full_name": "CopilotKit/OpenBot",
+ "created_at": "2026-11-13T07:41:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "05fff17e885fd52ea6b5ca458c153a05224da6bf2b78f9bf2e9e13e2aea2eb2f",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 同事各自擁有瀏覽器、檔案和工具，動作前需核准、事後留紀錄的工作空間",
+  "features": [
+   "AI Bot 可操作瀏覽器與工具，送出前等你核准",
+   "可自選 OpenAI、Claude、Gemini 等模型",
+   "支援登入、權限、核准與稽核紀錄管理"
+  ],
+  "audience": "想讓 AI 代理協助工作的個人，以及需要集中管理 AI 代理與權限的企業團隊",
+  "use_cases": [
+   "讓 AI 用瀏覽器查資料並回傳互動式結果",
+   "團隊在 Slack 或 Teams 中與 AI 同事協作",
+   "企業把既有 AI 代理整合到同一個工作空間統一管控"
+  ],
+  "barrier": "install",
+  "barrier_note": "Mac、Windows 有現成安裝檔，不需要終端機；但需要模型 API 金鑰，團隊部署則需 Kubernetes",
+  "limitations": "依賴另行授權的 CopilotKit Intelligence，正式上線需付費授權；評估版設定只限單一使用者，首次下載與授權更新需連網",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
