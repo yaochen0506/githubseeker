@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "291ee051e9de1b5e8a00",
+ "repo_id": 777721566,
+ "full_name": "NapNeko/NapCatQQ",
+ "created_at": "2026-11-12T08:49:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b7a6d9a5a106722036b1657f093b79499e99b73b7bff25bf6b88a05e83c00d83",
+ "has_readme": true,
+ "readme_chars": 1259,
+ "content": {
+  "one_liner": "以新版 QQ（NTQQ）為基礎，讓 QQ 帳號變成聊天機器人的協定端框架",
+  "features": [
+   "實作 OneBot 11 等大部分標準 Bot 介面",
+   "作者表示可在低記憶體系統長時間執行",
+   "提供 WebUI 管理介面"
+  ],
+  "audience": "想架設 QQ 聊天機器人、具備一定程式基礎與解決問題能力的開發者",
+  "use_cases": [
+   "串接 AstrBot 等 LLM Bot 框架，打造 QQ 群組 AI 機器人",
+   "搭配 qq-chat-exporter 匯出 QQ 聊天訊息",
+   "實作 QQ 訊息推送功能"
+  ],
+  "barrier": "code",
+  "barrier_note": "需下載 Release 並依文件設定，再串接 Bot 框架，需要程式基礎",
+  "limitations": "作者表示之後只提供版本更新直到失效，求穩定建議用官方 Bot；社群不解答基礎問題；未經授權禁止基於其程式碼開發",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

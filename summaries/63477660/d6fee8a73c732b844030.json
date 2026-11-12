@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d6fee8a73c732b844030",
+ "repo_id": 63477660,
+ "full_name": "TheAlgorithms/Java",
+ "created_at": "2026-11-12T08:49:46+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "230fff30f8d1b1ca0509d80dadf2c8f39b6ffde093a2d55d2e709b45dae09e6b",
+ "has_readme": true,
+ "readme_chars": 551,
+ "content": {
+  "one_liner": "用 Java 寫成的各種演算法與資料結構範例合集，供學習參考",
+  "features": [
+   "收錄大量用 Java 實作的演算法與資料結構",
+   "涵蓋搜尋、排序等常見演算法",
+   "可透過 Gitpod 線上環境執行與修改程式碼"
+  ],
+  "audience": "學習 Java、演算法或資料結構的學生與程式初學者，以及想參與開源貢獻的開發者",
+  "use_cases": [
+   "學習排序、搜尋等演算法時參考 Java 實作範例",
+   "在 Gitpod 線上環境執行並修改演算法程式碼",
+   "可能用來準備程式考試或面試的演算法練習"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要看得懂 Java 程式碼；可用 Gitpod 線上開發環境，免在本機安裝",
+  "limitations": "作者表示這些實作是為了學習用途，效率可能不如 Java 標準函式庫",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "38cf12556f1897589894",
+ "repo_id": 1087993542,
+ "full_name": "nab138/iloader",
+ "created_at": "2026-11-12T08:49:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8f2f14d882950d41e217d5de63bf398929201a5abb831e551ebf3e1dfcf9b07a",
+ "has_readme": true,
+ "readme_chars": 5031,
+ "content": {
+  "one_liner": "一款桌面軟體，幫你把 SideStore 或其他 App 側載安裝到 iPhone、iPad",
+  "features": [
+   "自動安裝 SideStore，並匯入憑證與配對檔案",
+   "可匯入並安裝任何 IPA 檔",
+   "管理配對檔案，查看與撤銷開發憑證"
+  ],
+  "audience": "想在 iPhone 或 iPad 安裝 App Store 以外 App 的 iOS 使用者",
+  "use_cases": [
+   "把 iPhone 接上電腦，一鍵安裝 SideStore",
+   "安裝自己取得的 IPA 檔到 iOS 裝置",
+   "替 StikDebug、SideStore 等 App 管理配對檔案"
+  ],
+  "barrier": "install",
+  "barrier_note": "需在電腦安裝 usbmuxd（Windows 要裝 iTunes）和本軟體，並登入 Apple ID",
+  "limitations": "作者提醒只能從官方管道下載，其他來源都不要用；專案目前正在全面改版",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5d02356da4c18a8feec8",
+ "repo_id": 1332461149,
+ "full_name": "nightly-labs/openbot",
+ "created_at": "2026-11-12T08:48:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fe40251ddc6d3f52de691402398d33fb4763e1261b05a3b1d13743d85f849b4a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在電腦上同時管理多個 AI 助手，讓它們各自工作、互相協作的桌面 App",
+  "features": [
+   "支援 Codex、Claude、Grok、Gemini 等多種 AI 代理",
+   "每個代理有獨立工作區、任務佇列與對話紀錄",
+   "代理之間可互傳訊息、檔案，並操控內建瀏覽器"
+  ],
+  "audience": "已在使用 Codex、Claude Code 等 AI 程式工具，想同時管理多個 AI 助手的開發者或進階使用者",
+  "use_cases": [
+   "建立多個常駐 AI 助手，分別負責不同任務並排隊執行",
+   "在共享頻道中把任務指派給某個代理，再轉交其他代理",
+   "架在 VPS 或家用伺服器上常駐運作，從桌面或 iPhone App 使用"
+  ],
+  "barrier": "code",
+  "barrier_note": "有 macOS、Windows、Linux 安裝檔，但需各 AI 服務帳號，部分設定要用命令列",
+  "limitations": "代理預設擁有完整權限，可改檔、執行指令、上網且不逐次確認，需自備備份；非離線軟體、非自由軟體",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d5dab3437c87cbb4527b",
+ "repo_id": 162200234,
+ "full_name": "OpenCTI-Platform/opencti",
+ "created_at": "2026-11-12T08:50:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0c369f65da49671f789c88c4fd0b8a7d2407208b5179d24d4b56342f0f9dd939",
+ "has_readme": true,
+ "readme_chars": 4912,
+ "content": {
+  "one_liner": "開源的網路威脅情資平台，幫組織整理、儲存與視覺化資安威脅資訊",
+  "features": [
+   "以 STIX2 標準結構化管理威脅情資與觀測指標",
+   "可串接 MISP、TheHive、MITRE ATT&CK 等工具",
+   "支援 CSV、STIX2 等格式匯入匯出並推論關聯"
+  ],
+  "audience": "企業或組織的資安團隊、威脅情資分析師與資安研究人員",
+  "use_cases": [
+   "資安分析師把報告、MISP 事件中的威脅資訊集中整理並連結來源",
+   "用 MITRE ATT&CK 框架整理攻擊手法與觀測指標",
+   "從既有資料推論新關聯，協助理解威脅全貌"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Docker、手動安裝或 Terraform、Helm 架設伺服器；官方有每晚重置的展示站可試用",
+  "limitations": "仍在大量開發中；部分功能屬需另行授權的 Enterprise 版；平台預設會蒐集匿名使用統計資料",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

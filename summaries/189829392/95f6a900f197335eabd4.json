@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "95f6a900f197335eabd4",
+ "repo_id": 189829392,
+ "full_name": "ever-co/ever-gauzy",
+ "created_at": "2026-11-12T08:49:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fead62d8a77da8af7179f96dbaeba353fc2599c496b1677be098b7183c48f6c2",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的企業管理平台，把 ERP、CRM、人資、招募和專案管理整合在一起",
+  "features": [
+   "員工工時追蹤、活動監控與績效管理",
+   "客戶、銷售流程、報價與發票會計管理",
+   "專案任務、招募面試、庫存與多組織管理"
+  ],
+  "audience": "需要整合人資、財務、客戶與專案管理的中小企業、接案者、代理商與工作室",
+  "use_cases": [
+   "公司用桌面計時 App 記錄員工或外包人員的工作時間",
+   "管理客戶名單、銷售流程並開立發票與估價單",
+   "追蹤應徵者面試進度與新進員工到職流程"
+  ],
+  "barrier": "install",
+  "barrier_note": "可試用線上 Demo 或下載桌面版 App；正式自架需要 Docker 和環境設定",
+  "limitations": "SaaS 版還在 Alpha 測試階段，作者提醒要小心使用；正式部署必須自行設定密鑰與管理員密碼",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

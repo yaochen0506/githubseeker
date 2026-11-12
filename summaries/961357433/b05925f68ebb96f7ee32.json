@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b05925f68ebb96f7ee32",
+ "repo_id": 961357433,
+ "full_name": "LibreSpark/LibreTV",
+ "created_at": "2026-11-12T08:49:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1fd8bf69082a0c77ba1ee76fde596394d6de1b306a92780fed8682add14d7032",
+ "has_readme": true,
+ "readme_chars": 9348,
+ "content": {
+  "one_liner": "可以自己架設的影音網站，一次搜尋多個來源的影片並線上播放",
+  "features": [
+   "多個影片來源同時搜尋，同名影片合併比較",
+   "播放器支援跳過片頭片尾、自動連播、倍速",
+   "支援 IPTV 直播、節目表與頻道收藏"
+  ],
+  "audience": "想自己架設私人影音搜尋與播放網站、懂一些伺服器架設的人",
+  "use_cases": [
+   "架在家用伺服器上，用手機或電腦搜尋並觀看影片",
+   "匯入 M3U 直播清單，在網頁上看 IPTV 頻道",
+   "把整理好的資料來源匯出成清單，分享給別人訂閱"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用 Docker 或 Node 18 以上版本部署，並用命令列設定密碼等環境變數",
+  "limitations": "沒有內建任何影片或頻道來源，要自己新增。公開架設時建議加上 HTTPS，否則密碼會以明文傳送。TVBOX 的 Spider 類來源無法匯入。",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

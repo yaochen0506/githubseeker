@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "906b0cb0fd3094a571c5",
+ "repo_id": 448358672,
+ "full_name": "dmunozv04/iSponsorBlockTV",
+ "created_at": "2026-11-12T08:49:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f796079cd4dcc80d441da61ac06ff51b792df9d5c29a50c62c0d1a8061fc9848",
+ "has_readme": true,
+ "readme_chars": 2107,
+ "content": {
+  "one_liner": "連上電視上的 YouTube App，自動跳過影片中的業配、片頭等片段",
+  "features": [
+   "透過 SponsorBlock API 自動跳過業配與片頭",
+   "廣告自動靜音，並在可跳過時自動按下「略過廣告」",
+   "支援 Apple TV、Samsung、LG、Roku、遊戲機等多種裝置"
+  ],
+  "audience": "常用電視或遊戲機看 YouTube、願意自己架設程式的使用者",
+  "use_cases": [
+   "在客廳電視看 YouTube 時自動略過影片中的業配段落",
+   "在 Chromecast 或 Fire TV 上看廣告時自動靜音並略過",
+   "可能透過 Home Assistant Addon 整合到智慧家庭系統"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在一台能連網的電腦上自行架設執行，安裝步驟要參考 wiki",
+  "limitations": "用 AirPlay 把聲音送到其他喇叭時，廣告靜音無效；Shorts 受 YouTube 限制，未完整支援",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

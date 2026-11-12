@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "4b1219d617117c673ffe",
+ "repo_id": 1444573070,
+ "full_name": "janestreet/agent_skills",
+ "created_at": "2026-11-12T08:48:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "12f16463641f0fa3e423835a52fc6c827d18f1637fdd48d589df8935ecd0d0f2",
+ "has_readme": true,
+ "readme_chars": 750,
+ "content": {
+  "one_liner": "Jane Street 分享的 AI 助理技能集，目前收錄一個蘇格拉底式家教技能",
+  "features": [
+   "每個技能是一份 SKILL.md 指示檔",
+   "socratic-tutor 會把 AI 變成嚴格的私人家教",
+   "包含程度診斷、0～5 級技能地圖與期末評量"
+  ],
+  "audience": "想用 ChatGPT 等聊天機器人自學新主題的人，以及使用 AI 程式助理的開發者",
+  "use_cases": [
+   "請 AI 用一次一題的提問方式教你某個主題",
+   "透過間隔複習與最終評量檢查自己的學習成果",
+   "把技能內容貼進自訂提示，打造自己的 AI 家教"
+  ],
+  "barrier": "online",
+  "barrier_note": "把 SKILL.md 內容貼進一般聊天機器人就能用；放進程式助理則需另外設定",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

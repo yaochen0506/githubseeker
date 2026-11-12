@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-11T07:26:16+08:00",
+ "updated_at": "2026-11-12T08:47:22+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -62,6 +62,12 @@
    "exclude_reason": null,
    "full_name": "openssl/openssl",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "8162715": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "saleor/saleor",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "10270250": {
    "category": "dev-tools",
@@ -177,6 +183,12 @@
    "full_name": "spotDL/spotify-downloader",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "63477660": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "TheAlgorithms/Java",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "81598961": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -291,6 +303,12 @@
    "full_name": "motiondivision/motion",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "159152904": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "jeecgboot/JeecgBoot",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "162200234": {
    "category": "security-network",
    "exclude_reason": null,
@@ -321,6 +339,12 @@
    "full_name": "github/docs",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "189829392": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "ever-co/ever-gauzy",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "197814629": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -332,6 +356,12 @@
    "exclude_reason": null,
    "full_name": "NVIDIA-NeMo/Speech",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "216773481": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "timqian/chinese-independent-blogs",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "220132504": {
    "category": "dev-tools",
@@ -585,6 +615,12 @@
    "full_name": "wangrongding/wechat-bot",
    "classified_at": "2026-11-10T09:35:36+08:00"
   },
+  "448358672": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "dmunozv04/iSponsorBlockTV",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "455229168": {
    "category": "security-network",
    "exclude_reason": null,
@@ -686,6 +722,12 @@
    "exclude_reason": null,
    "full_name": "HIllya51/LunaTranslator",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "543101941": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "dream-num/univer",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "549007739": {
    "category": "everyday-tools",
@@ -861,6 +903,12 @@
    "full_name": "harry0703/MoneyPrinterTurbo",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "777721566": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "NapNeko/NapCatQQ",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "784181462": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -939,6 +987,12 @@
    "full_name": "lfnovo/open-notebook",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "881458615": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "browser-use/browser-use",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "906251482": {
    "category": "learning",
    "exclude_reason": null,
@@ -974,6 +1028,12 @@
    "exclude_reason": null,
    "full_name": "oraios/serena",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "961357433": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "LibreSpark/LibreTV",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "968197216": {
    "category": "ai-agents",
@@ -1131,6 +1191,12 @@
    "full_name": "Open-Dev-Society/OpenStock",
    "classified_at": "2026-11-09T06:09:34+08:00"
   },
+  "1069405200": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "googleads/google-ads-mcp",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "1070285775": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1148,6 +1214,12 @@
    "exclude_reason": null,
    "full_name": "obra/superpowers",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1075381375": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "getpaseo/paseo",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1075431749": {
    "category": "ai-models",
@@ -1184,6 +1256,12 @@
    "exclude_reason": null,
    "full_name": "vectorize-io/hindsight",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1087993542": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "nab138/iloader",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1096054771": {
    "category": "ai-agents",
@@ -1244,6 +1322,12 @@
    "exclude_reason": null,
    "full_name": "can1357/oh-my-pi",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1129492787": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "sgl-project/sglang-omni",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1130564872": {
    "category": "everyday-tools",
@@ -1322,6 +1406,18 @@
    "exclude_reason": null,
    "full_name": "jamiepine/voicebox",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "1143633223": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1144520675": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Alishahryar1/free-claude-code",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1148788086": {
    "category": "ai-agents",
@@ -1502,6 +1598,12 @@
    "exclude_reason": null,
    "full_name": "NVIDIA/SkillSpector",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1193909050": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "herdrdev/herdr",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1195360525": {
    "category": "fun-creative",
@@ -1707,6 +1809,12 @@
    "full_name": "rlaope/oh-my-hermes",
    "classified_at": "2026-11-11T07:26:16+08:00"
   },
+  "1264986626": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "shadcn/improve",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "1267485499": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -1749,6 +1857,12 @@
    "full_name": "derv82/wifit3",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1279659344": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "experientiallabs/experiential",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "1285492676": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1784,6 +1898,12 @@
    "exclude_reason": null,
    "full_name": "jakubkrehel/skills",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1299769220": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "openai/codex-security",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   },
   "1301657572": {
    "category": "ai-agents",
@@ -2085,6 +2205,12 @@
    "full_name": "Djihads80/Eglantine",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1437814166": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "anefzaoui/misterdownloadmanager",
+   "classified_at": "2026-11-12T08:47:22+08:00"
+  },
   "1438018242": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -2264,6 +2390,12 @@
    "exclude_reason": null,
    "full_name": "Kianuni/Erosion-CN",
    "classified_at": "2026-11-11T07:26:16+08:00"
+  },
+  "1452531582": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "HybridRobotics/supermimic",
+   "classified_at": "2026-11-12T08:47:22+08:00"
   }
  }
 }

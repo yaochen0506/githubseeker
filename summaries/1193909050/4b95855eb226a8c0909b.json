@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4b95855eb226a8c0909b",
+ "repo_id": 1193909050,
+ "full_name": "herdrdev/herdr",
+ "created_at": "2026-11-12T08:48:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b11506d12c7311c8b120a50e9c770151d9216135bd47bed32f25f0ce531133f5",
+ "has_readme": true,
+ "readme_chars": 2305,
+ "content": {
+  "one_liner": "在終端機裡同時管理多個 AI 寫程式助理的工作環境",
+  "features": [
+   "關閉視窗或 SSH 斷線後，終端機仍在背景繼續執行",
+   "標示每個窗格是工作中、卡住或閒置",
+   "一個視窗整合本機與多台遠端機器"
+  ],
+  "audience": "同時使用 Claude Code、Codex 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "同時跑多個 AI agent，快速找出等待回答的那一個",
+   "透過 SSH 在遠端機器執行 agent，斷線後重新連回",
+   "讓 agent 透過 CLI 開新窗格並互相下指令"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝與操作，例如 brew 或 PowerShell，並熟悉終端機",
+  "limitations": "伺服器或電腦重新開機後只會還原版面配置並恢復支援的 agent 工作階段，原本的程式不會保留",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

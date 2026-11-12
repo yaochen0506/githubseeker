@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2024890cb85af04c565b",
+ "repo_id": 1183888342,
+ "full_name": "stablyai/orca",
+ "created_at": "2026-11-12T08:47:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4a79c869735745da1cf1378c161e3f177883055f15a38ccaf61e33746f7d5aee",
+ "has_readme": true,
+ "readme_chars": 5103,
+ "content": {
+  "one_liner": "讓你同時指揮多個 AI 寫程式助理（如 Claude Code、Codex）平行工作的桌面與手機 App",
+  "features": [
+   "每個 agent 在獨立 worktree 平行作業，互不干擾",
+   "可檢視程式碼差異、留言回饋，並整合 Git 與 GitHub",
+   "手機 App 配對，agent 需要你時會通知你"
+  ],
+  "audience": "已經在用 Claude Code、Codex 等 AI 寫程式工具的軟體開發者",
+  "use_cases": [
+   "把大任務交給一個 agent，讓它拆分給多個 agent 分頭完成",
+   "離開座位時用手機回覆 agent、讓工作持續進行",
+   "排程自動化，例如每晚更新套件或每週整理問題"
+  ],
+  "barrier": "code",
+  "barrier_note": "App 可直接下載，但需會用 Git 與命令列 AI 寫程式工具，並有自己的訂閱帳號",
+  "limitations": "README 提到會收集匿名使用資料，可選擇關閉；需搭配自己的 agent 訂閱",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

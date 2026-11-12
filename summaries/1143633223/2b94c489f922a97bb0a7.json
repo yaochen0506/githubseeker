@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "2b94c489f922a97bb0a7",
+ "repo_id": 1143633223,
+ "full_name": "GoogleChrome/modern-web-guidance-src",
+ "created_at": "2026-11-12T08:47:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1fd4a5be3a4d2b9c5d11abe1351ec098211118273ac7992b9f6709021500da00",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理學會現代網頁寫法的技能包原始碼",
+  "features": [
+   "提供約 250 項現代網頁功能的寫法指引",
+   "收錄 203 個實際開發情境範例",
+   "附有撰寫、校準與評估指引的工具"
+  ],
+  "audience": "使用 AI 寫程式助理的網頁開發者，以及想參與編寫指引的貢獻者",
+  "use_cases": [
+   "讓 AI 助理改用原生 CSS 版面與動畫，不再套用老舊寫法",
+   "引導 AI 寫出兼顧無障礙與效能的表單和介面元件",
+   "協助使用瀏覽器內建的翻譯、摘要等 AI API"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列執行安裝精靈，並搭配 AI 寫程式助理使用",
+  "limitations": "這是原始碼 repo，主要給維護者與貢獻者使用；作者表示指引內容經過評估，力求節省 token",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "5807ac2039c1de4ba3f9",
+ "repo_id": 1452531582,
+ "full_name": "HybridRobotics/supermimic",
+ "created_at": "2026-11-12T08:48:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "82e485c2cf2182c800c9639a97d71c7b75f8e37bc0f9d6674752936e414b5ff6",
+ "has_readme": true,
+ "readme_chars": 707,
+ "content": {
+  "one_liner": "用一個可微分的世界模型，訓練人形機器人模仿全身動作",
+  "features": [
+   "訓練世界模型與人形機器人控制策略",
+   "提供 G1 機器人的兩種座標表示任務",
+   "可播放已訓練好的模型結果"
+  ],
+  "audience": "研究人形機器人控制、強化學習或世界模型的研究人員與工程師",
+  "use_cases": [
+   "在模擬環境中訓練 G1 人形機器人追蹤全身動作",
+   "比較一般化座標與最大座標兩種表示方式的效果",
+   "播放並檢視訓練完成的動作追蹤模型"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 uv、下載 mjlab 等程式庫，並用命令列執行 Python 訓練",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

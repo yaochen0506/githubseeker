@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "3bc7527872f34677b043",
+ "repo_id": 1129492787,
+ "full_name": "sgl-project/sglang-omni",
+ "created_at": "2026-11-12T08:48:57+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9c6326926db67a4984e016aea7f2d3e7bedf7a029663baa1617efd2f46be24b0",
+ "has_readme": true,
+ "readme_chars": 7312,
+ "content": {
+  "one_liner": "在伺服器上執行語音、TTS、音樂與多模態 AI 模型的服務平台",
+  "features": [
+   "支援語音辨識、語音合成、音樂生成等多種模型",
+   "提供與 OpenAI 相容的 API，可串流輸出",
+   "支援即時全雙工語音對話與語音翻譯"
+  ],
+  "audience": "需要架設語音或多模態 AI 服務的工程師、研究人員與企業技術團隊",
+  "use_cases": [
+   "架設語音助理，串接 ASR、LLM 與 TTS 進行即時對話",
+   "把錄音轉成文字，並標出說話者與時間",
+   "用歌詞和描述產生歌曲，或用文字產生語音"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列安裝 Python 套件，並準備 NVIDIA 或 Intel GPU 等硬體",
+  "limitations": "主要支援 NVIDIA CUDA；Apple Silicon 為實驗性，只支援 Qwen3-ASR；各模型功能不同",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

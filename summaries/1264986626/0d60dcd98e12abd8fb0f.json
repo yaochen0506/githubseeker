@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "0d60dcd98e12abd8fb0f",
+ "repo_id": 1264986626,
+ "full_name": "shadcn/improve",
+ "created_at": "2026-11-12T08:47:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4458372b03edf5538c2f6749708ea9d7c4023c6ad0bf6c1d9206124fdd2b5ea1",
+ "has_readme": true,
+ "readme_chars": 5145,
+ "content": {
+  "one_liner": "讓強大的 AI 模型檢查程式碼並寫出改善計畫，再交給較便宜的模型執行",
+  "features": [
+   "分九大類平行檢查程式碼並附上檔案位置證據",
+   "為每個選定問題寫出可獨立執行的 markdown 計畫",
+   "派較便宜模型在隔離環境執行並審查結果"
+  ],
+  "audience": "使用 AI 程式助理開發軟體、想節省模型費用的工程師與開發團隊",
+  "use_cases": [
+   "在專案中執行 /improve，找出安全性、效能、測試等問題",
+   "發 PR 前用 /improve branch 只檢查分支變更",
+   "把計畫發布成 GitHub issues 交給其他人或 agent 處理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要支援 Agent Skills 格式的 AI agent，並會用命令列與 git",
+  "limitations": "本身不會修改程式碼，只寫計畫到 plans/；合併變更須由使用者自行決定，修訂最多 2 輪",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

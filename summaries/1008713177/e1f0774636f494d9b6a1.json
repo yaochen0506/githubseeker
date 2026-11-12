@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e1f0774636f494d9b6a1",
+ "repo_id": 1008713177,
+ "full_name": "QwenLM/qwen-code",
+ "created_at": "2026-11-12T08:48:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6959fefa8b7a25c127018be46e9b2eab5522e2cc2d337c70628d3357abd65854",
+ "has_readme": true,
+ "readme_chars": 6912,
+ "content": {
+  "one_liner": "在終端機裡執行的開源 AI 寫程式助理，也能在編輯器、桌面 App 和聊天軟體裡用",
+  "features": [
+   "內建 SubAgents、Auto-Memory、MCP 等代理功能",
+   "支援 OpenAI、Anthropic、Gemini、Qwen 與本機模型",
+   "提供終端機、桌面 App、IDE 外掛、Web UI 與 SDK"
+  ],
+  "audience": "想讓 AI 協助寫程式、修 bug、審查程式碼的軟體開發者",
+  "use_cases": [
+   "在專案資料夾裡請 AI 閱讀、修改程式碼和修 bug",
+   "在 CI/CD 或批次工作中用 headless 模式自動執行任務",
+   "透過 Telegram 等聊天軟體下指令給 AI 寫程式"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會用命令列，並準備 Qwen 訂閱帳號或其他模型的 API key",
+  "limitations": "Web UI 與 Daemon 模式還在實驗階段；Daemon 預設不需要驗證，在共用主機上要自行設定 token",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
