@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-13T07:41:34+08:00",
+ "updated_at": "2026-11-14T07:37:32+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -585,6 +585,12 @@
    "full_name": "xfangfang/wiliwili",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "332357698": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "YunaiV/ruoyi-vue-pro",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "333483116": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -633,11 +639,23 @@
    "full_name": "tldraw/tldraw",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "382496361": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "louislam/uptime-kuma",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "384520418": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "MaaAssistantArknights/MaaAssistantArknights",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "390549311": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Moriafly/SaltPlayerSource",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "400215964": {
    "category": "dev-tools",
@@ -831,6 +849,12 @@
    "full_name": "JoeanAmier/TikTokDownloader",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "551376520": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "tw93/Pake",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "558188628": {
    "category": "security-network",
    "exclude_reason": null,
@@ -969,6 +993,12 @@
    "full_name": "gitroomhq/postiz-app",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "676672661": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "langchain-ai/langgraph",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "679086250": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -1095,11 +1125,23 @@
    "full_name": "lfnovo/open-notebook",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "880414192": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "tailscale/tailcat",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "881458615": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "browser-use/browser-use",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "897268988": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "thesysdev/openui",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "903349957": {
    "category": "fun-creative",
@@ -1137,6 +1179,12 @@
    "full_name": "pipeshub-ai/pipeshub-ai",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "944414751": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "ahujasid/mcp-for-blender",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "953683578": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1160,6 +1208,12 @@
    "exclude_reason": null,
    "full_name": "anomalyco/opencode",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "976921297": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "asgeirtj/system_prompts_leaks",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "995029641": {
    "category": "ai-agents",
@@ -1232,6 +1286,12 @@
    "exclude_reason": null,
    "full_name": "langchain-ai/deepagents",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1031059905": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "abhigyanpatwari/GitNexus",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1032420465": {
    "category": "ai-agents",
@@ -1365,6 +1425,12 @@
    "full_name": "max-sixty/worktrunk",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1079356098": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "tradermonty/claude-trading-skills",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1079560616": {
    "category": "security-network",
    "exclude_reason": null,
@@ -1449,11 +1515,23 @@
    "full_name": "can1357/oh-my-pi",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "1128123594": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "volcengine/OpenViking",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1129492787": {
    "category": "ai-models",
    "exclude_reason": null,
    "full_name": "sgl-project/sglang-omni",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1129940957": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "headroomlabs-ai/headroom",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1130564872": {
    "category": "everyday-tools",
@@ -1484,6 +1562,12 @@
    "exclude_reason": null,
    "full_name": "vercel-labs/agent-browser",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "1132063646": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "realiti4/claude-swap",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1134411737": {
    "category": "dev-tools",
@@ -1544,6 +1628,12 @@
    "exclude_reason": null,
    "full_name": "Alishahryar1/free-claude-code",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1146193768": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "callstack/agent-device",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1148788086": {
    "category": "ai-agents",
@@ -1665,6 +1755,12 @@
    "full_name": "BigBodyCobain/Shadowbroker",
    "classified_at": "2026-11-09T06:09:34+08:00"
   },
+  "1174789082": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "block/buzz",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1177402105": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1694,6 +1790,12 @@
    "exclude_reason": null,
    "full_name": "JCodesMore/ai-website-cloner-template",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1181839727": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "AdventDevInc/kudu",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1183888342": {
    "category": "ai-agents",
@@ -1911,6 +2013,18 @@
    "full_name": "jo-duchan/tapflow",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1241960226": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "alibaba/open-code-review",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1242193963": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "Tencent-Hunyuan/Hy-MT2",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1242967652": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1977,6 +2091,12 @@
    "full_name": "togg53192-cmd/jailbreaks",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1273824907": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "lidge-jun/opencodex",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1274703665": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -2006,6 +2126,12 @@
    "exclude_reason": null,
    "full_name": "experientiallabs/experiential",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1284449744": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "avenoxai/avenoxbeyin",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1285492676": {
    "category": "fun-creative",
@@ -2241,11 +2367,29 @@
    "full_name": "Albert-Weasker/niubigeo",
    "classified_at": "2026-11-09T06:09:34+08:00"
   },
+  "1362562155": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Likely7/Veyra-NRVideo",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
   "1364527927": {
    "category": "everyday-tools",
    "exclude_reason": null,
    "full_name": "block/buzz-app",
    "classified_at": "2026-11-13T07:41:34+08:00"
+  },
+  "1368447577": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Jakeschincariol/instagram-agent-skill",
+   "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1368596582": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google/elephant-goldfish-model",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   },
   "1407950271": {
    "category": "ai-models",
@@ -2564,6 +2708,12 @@
    "exclude_reason": null,
    "full_name": "apex-compute/ANR",
    "classified_at": "2026-11-13T07:41:34+08:00"
+  },
+  "1456134750": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "faizfahmi77/ScanDot",
+   "classified_at": "2026-11-14T07:37:32+08:00"
   }
  }
 }

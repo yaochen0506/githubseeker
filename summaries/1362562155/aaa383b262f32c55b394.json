@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "aaa383b262f32c55b394",
+ "repo_id": 1362562155,
+ "full_name": "Likely7/Veyra-NRVideo",
+ "created_at": "2026-11-14T07:37:40+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9b7e07edce0ddecb0fab7ace1c7f04a7a9b9670c713506aac29265daf70f7e51",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "Windows 上的即時影片畫質增強播放器，可提升解析度、降噪和補幀",
+  "features": [
+   "AI 超解析度、降噪、HDR 與補幀即時處理",
+   "支援擷取卡、PS5、Xbox、PC 串流與螢幕擷取",
+   "節點式處理鏈編輯、調色與影片匯出"
+  ],
+  "audience": "有 NVIDIA 或 AMD 顯示卡、想提升影片或遊戲主機畫面畫質的 Windows 使用者",
+  "use_cases": [
+   "用擷取卡接 PS5，即時提升畫面解析度並補幀",
+   "播放本機影片時進行降噪與超解析度處理",
+   "把增強後的影片匯出成 MP4 或 MKV"
+  ],
+  "barrier": "install",
+  "barrier_note": "需 Windows 11、DirectX 12 與 NVIDIA/AMD 顯示卡，下載解壓縮後執行，驅動程式要另外安裝",
+  "limitations": "高解析度、多層降噪和補幀很吃顯示卡與 VRAM；AMD 降噪屬實驗性功能；影片匯出降噪最高只用 1080p 推論",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

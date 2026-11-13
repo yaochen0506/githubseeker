@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e6035a0883993d734c50",
+ "repo_id": 155220641,
+ "full_name": "huggingface/transformers",
+ "created_at": "2026-11-14T07:39:04+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1413d0f85a9422fdc2924e5bc7cd207d20f3399878ba8007ace2d6b7d428bea7",
+ "has_readme": true,
+ "readme_chars": 6527,
+ "content": {
+  "one_liner": "讓開發者用 Python 下載和使用各種現成 AI 模型的工具庫",
+  "features": [
+   "支援文字、影像、語音、影片與多模態模型",
+   "Pipeline API 用幾行程式碼就能做推論",
+   "可訓練、微調模型，並與多種框架相容"
+  ],
+  "audience": "AI 研究人員、機器學習工程師、開發者與學生",
+  "use_cases": [
+   "用 Llama、Qwen 等模型生成文字或聊天",
+   "用 Whisper 等模型把語音轉成文字",
+   "做圖片分類、物件偵測或文件問答"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上和 PyTorch 2.6 以上，並且要會寫 Python",
+  "limitations": "不是通用的神經網路積木工具箱；訓練 API 針對內建 PyTorch 模型最佳化，從原始碼安裝的最新版可能不穩定",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "eaa388562d5a9ebe87e6",
+ "repo_id": 216773481,
+ "full_name": "timqian/chinese-independent-blogs",
+ "created_at": "2026-11-14T07:40:09+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "baa3f353b84c795129e8abb904df309e05000dada67ae81299a210b439e81c59",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "整理中文獨立部落格的清單，附上 RSS 訂閱來源和主題標籤",
+  "features": [
+   "收錄大量中文獨立部落格，附 RSS 與標籤",
+   "依最近一篇文章的發布時間排序，每天自動更新",
+   "自動把疑似失效的部落格移到另一區"
+  ],
+  "audience": "喜歡用 RSS 閱讀、想找中文獨立部落格的讀者，以及想讓更多人看到自己部落格的作者",
+  "use_cases": [
+   "照技術、生活、投資等標籤找到有興趣的部落格",
+   "把喜歡的部落格 RSS 加進閱讀器訂閱",
+   "部落格作者提交自己的網站，增加被看見的機會"
+  ],
+  "barrier": "online",
+  "barrier_note": "瀏覽清單打開網頁就行；想提交自己的部落格要會用 GitHub 發 PR",
+  "limitations": "RSS 失效或網域失效持續 1 天，或其他錯誤持續 7 天，部落格會被移到疑似失效區",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "84dcf227d1a954cee531",
+ "repo_id": 1241960226,
+ "full_name": "alibaba/open-code-review",
+ "created_at": "2026-11-14T07:38:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "02421ccac45ab399d04e224c62fea6fe25467b15bf4bc1bc195a475db4f78323",
+ "has_readme": true,
+ "readme_chars": 7973,
+ "content": {
+  "one_liner": "用 AI 自動檢查程式碼變更、逐行留下審查意見的命令列工具",
+  "features": [
+   "讀取 Git 變更，由 AI 產生精準到行的審查意見",
+   "內建多語言規則，檢查 SQL injection、XSS 等問題",
+   "可整合 Claude Code、Cursor 與 CI/CD 流程"
+  ],
+  "audience": "軟體工程師、開發團隊，以及需要做程式碼審查或稽核的技術主管",
+  "use_cases": [
+   "提交 Pull Request 前，用 AI 先檢查程式碼有沒有缺陷",
+   "在 GitHub Actions、GitLab CI 中自動審查程式碼變更",
+   "用 ocr scan 稽核不熟悉的程式碼庫"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列、Git 2.41 以上，並設定 LLM 的 API key 或改用代理模式",
+  "limitations": "作者表示 Recall 比通用 agent 低，是為了減少誤報而刻意取捨；需先設定 LLM 才能審查",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

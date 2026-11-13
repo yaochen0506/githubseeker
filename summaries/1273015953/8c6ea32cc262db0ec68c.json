@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8c6ea32cc262db0ec68c",
+ "repo_id": 1273015953,
+ "full_name": "shy3130/tick-stock-panel",
+ "created_at": "2026-11-14T07:39:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "876f541918e70061865d647506718058a9ddfb1f6e9b02fec52816c877540768",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "架在自己電腦上的中國 A 股量化工作台，可自訂策略、回測、監控並搭配 AI 分析",
+  "features": [
+   "自訂策略與因子，作者表示可毫秒級掃描全 A 股",
+   "考慮 T+1、費用、滑點的回測與因子挖掘",
+   "盤中異動監控、語音播報與飛書推送"
+  ],
+  "audience": "研究中國 A 股量化交易、想自己架設工具的個人投資研究者與開發者",
+  "use_cases": [
+   "建立選股策略並用歷史資料回測驗證",
+   "設定監控規則，盤中出現異動時收到提醒",
+   "用 AI 對話助手查詢個股、大盤資料或盤後複盤"
+  ],
+  "barrier": "code",
+  "barrier_note": "主要用 Docker 指令部署，也有桌面版；需設定資料來源，AI 功能需另備 API Key",
+  "limitations": "作者表示僅供學習研究，不是投資或看盤軟體，不提供 AI 薦股；AI 助手需支援工具呼叫的 OpenAI 相容介面",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

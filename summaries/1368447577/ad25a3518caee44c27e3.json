@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "ad25a3518caee44c27e3",
+ "repo_id": 1368447577,
+ "full_name": "Jakeschincariol/instagram-agent-skill",
+ "created_at": "2026-11-14T07:38:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ce0c89777a8db9fce2f33cc6b1ccf36bd3de881b2f0d68f3ca39f21c3731d3ef",
+ "has_readme": true,
+ "readme_chars": 10978,
+ "content": {
+  "one_liner": "13 個 Claude 技能，協助經營 Instagram 帳號，從寫 Reels 腳本、文案到規劃發文都能幫忙",
+  "features": [
+   "用 26 種開場公式寫 Reels 腳本，並替開場打分數",
+   "文案檢查，預覽動態中顯示的前 125 個字元",
+   "去除 AI 文字痕跡，例如隱形字元與套話"
+  ],
+  "audience": "經營 Instagram 的創作者、小品牌或行銷人員，且會使用 Claude 或 Claude Code",
+  "use_cases": [
+   "把一個點子變成有分鏡時間軸的 Reels 腳本",
+   "研究同領域表現特別好的 Reels，整理成參考清單",
+   "替個人檔案打分數，並規劃一週的發文內容"
+  ],
+  "barrier": "code",
+  "barrier_note": "完整功能需 Claude Code 與命令列；只貼 SKILL.md 到 Claude 對話可用部分功能",
+  "limitations": "不會自動發文，須自行貼上發布；作者表示開場評分能挑出差的開場，但無法預測爆紅；偵測檢查只是本機推估",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

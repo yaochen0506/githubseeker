@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "97ff9ccb2b60a07e1176",
+ "repo_id": 1456134750,
+ "full_name": "faizfahmi77/ScanDot",
+ "created_at": "2026-11-14T07:38:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b1c309ccaa808fbc28acf8580af7d3c6171e6cf1f99357c689b853261bbcf4a7",
+ "has_readme": true,
+ "readme_chars": 2573,
+ "content": {
+  "one_liner": "用 Android 手機掃描物體、產生並檢視 3D 點雲的實驗性 App",
+  "features": [
+   "利用 ARCore 追蹤與深度估計擷取 3D 點雲",
+   "掃描結果存在手機，可旋轉、平移、縮放檢視",
+   "另附電腦端影片轉 3D 的 COLMAP 處理流程"
+  ],
+  "audience": "對 3D 掃描有興趣、手機支援 ARCore Depth 的嘗鮮者，以及研究攝影測量的開發者",
+  "use_cases": [
+   "用手機繞著物體慢慢移動，掃出點雲並儲存回看",
+   "在電腦上把影片拆成畫格，用 COLMAP 做稀疏或密集重建",
+   "可能用來體驗或學習手機 3D 掃描的基本原理"
+  ],
+  "barrier": "install",
+  "barrier_note": "需自行下載預覽版 APK 安裝，手機要支援 ARCore Depth；電腦端流程需會用命令列",
+  "limitations": "早期原型，結果可能有缺口、飄移與雜訊，不是有材質的模型或經驗證的測量；反光、透明物體難掃，移除 App 會刪除掃描",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

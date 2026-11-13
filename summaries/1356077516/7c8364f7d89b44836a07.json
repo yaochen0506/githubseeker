@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7c8364f7d89b44836a07",
+ "repo_id": 1356077516,
+ "full_name": "kajisho5/ffmpeg-skill",
+ "created_at": "2026-11-14T07:37:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "273073de2c3a5e3a7160e5c1c8aa54fcbfa91c22e37abca703057efbb452a6be",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 Claude Code、Cursor 等 AI 助理在本機用 FFmpeg 剪輯影片",
+  "features": [
+   "42 個工具：剪接、去靜音、字幕、調整比例",
+   "一鍵輸出 TikTok、Reels 等平台規格",
+   "提供 MCP server，不需雲端與 API key"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex 等 AI 程式助理，想在本機處理影片的開發者與創作者",
+  "use_cases": [
+   "請 AI 把訪談影片剪成 60 秒直式 Reels 短片",
+   "替影片加上卡拉 OK 式逐字字幕並調整音量",
+   "同一支影片一次輸出多個社群平台的版本"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 ffmpeg、Python 3，並搭配 AI 程式助理或命令列操作",
+  "limitations": "語音轉字幕需另外安裝 whisper 等語音引擎；部分 ffmpeg 版本缺少濾鏡時，有些工具無法使用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

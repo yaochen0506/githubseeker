@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ae971081759dfbc0c562",
+ "repo_id": 382496361,
+ "full_name": "louislam/uptime-kuma",
+ "created_at": "2026-11-14T07:40:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c5ed8f7d6bd591f9a1aafbfa841fbbee0e6e2d650695e0be941cfdf9fc5055e5",
+ "has_readme": true,
+ "readme_chars": 4117,
+ "content": {
+  "one_liner": "架在自己主機上的監控工具，隨時檢查網站和服務有沒有正常運作",
+  "features": [
+   "監控 HTTP(s)、Ping、DNS、Docker 容器等多種服務",
+   "透過 Telegram、Discord、Email 等 90 多種管道通知",
+   "可建立多個狀態頁面，並支援 2FA 與 Proxy"
+  ],
+  "audience": "想自己掌握網站或伺服器運作狀態的站長、IT 管理者與自架服務愛好者",
+  "use_cases": [
+   "網站當機時，自動透過 Telegram 或 Email 通知自己",
+   "建立公開狀態頁面，讓使用者查看服務是否正常",
+   "查看網站憑證資訊與 Ping 回應時間圖表"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用 Docker 或 Node.js 20.4 以上版本，透過命令列在主機上安裝",
+  "limitations": "不支援 NFS 等網路檔案系統，也不支援 FreeBSD、Replit、Heroku；README 提醒搜尋結果第一名的網站並非官方網站",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

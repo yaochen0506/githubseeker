@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1d3a0694b26e8bc1d648",
+ "repo_id": 1031059905,
+ "full_name": "abhigyanpatwari/GitNexus",
+ "created_at": "2026-11-14T07:39:51+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7453b2db70d0dd8951e8089252e81fefa6d71305fd6bc8a4b5eec66f4cafdf1c",
+ "has_readme": true,
+ "readme_chars": 5740,
+ "content": {
+  "one_liner": "把程式碼專案整理成關係圖，讓 AI 寫程式助手看懂程式結構",
+  "features": [
+   "分析函式呼叫、相依關係與執行流程",
+   "評估修改程式碼可能影響的範圍",
+   "透過 MCP、CLI 或網頁圖形介面使用"
+  ],
+  "audience": "使用 Claude Code、Cursor 等 AI 寫程式工具的軟體開發者",
+  "use_cases": [
+   "詢問 AI 助手「哪些地方呼叫了這個函式」",
+   "修改程式碼或審查 Git diff 前，先檢查會影響哪些部分",
+   "在網頁上以圖形瀏覽程式碼結構，並用 AI 對話提問"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Node.js 22.18 以上版本，並使用命令列操作",
+  "limitations": "授權為非商業使用，商業使用需另外取得授權；各程式語言的支援程度不同，Windsurf 需要手動設定",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

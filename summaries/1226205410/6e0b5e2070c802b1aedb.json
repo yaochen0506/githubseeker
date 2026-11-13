@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6e0b5e2070c802b1aedb",
+ "repo_id": 1226205410,
+ "full_name": "Renhuai123/ziwei-doushu",
+ "created_at": "2026-11-14T07:39:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e8c7c0c85b49d4569de87008653e10e4bfd301eb31a82f5aab0b259218f55247",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "依照倪海廈《天紀》體系排紫微斗數命盤的開源程式與解讀資料庫",
+  "features": [
+   "完整排盤演算法，支援真太陽時與四化飛星",
+   "1100 多行格局知識庫與古籍原文資料",
+   "開放 67.5 萬張命盤的 13 維解讀資料集"
+  ],
+  "audience": "想自己架設紫微斗數排盤工具的開發者、命理研究者，以及需要命理資料訓練 AI 的人",
+  "use_cases": [
+   "在自己的網站或 App 加入紫微斗數排盤功能",
+   "用解讀資料集微調 AI 模型或當作 RAG 檢索來源",
+   "研究倪海廈《天紀》紫微斗數原話與古籍內容"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js 環境並用命令列下載、執行；AI 解讀介面要自己實作",
+  "limitations": "開源版不含 AI 解讀後端；作者表示六親判斷僅供參考；倪師原話不能商用；資料集與新版引擎可能有差異",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

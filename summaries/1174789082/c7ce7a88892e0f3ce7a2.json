@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "c7ce7a88892e0f3ce7a2",
+ "repo_id": 1174789082,
+ "full_name": "block/buzz",
+ "created_at": "2026-11-14T07:39:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5b40834b827e230820f129a29be12699ff24bb133bc0f0848d4ce6d6b39fc38e",
+ "has_readme": true,
+ "readme_chars": 10726,
+ "content": {
+  "one_liner": "可以自己架設的團隊工作空間，讓人和 AI 代理在同樣的頻道裡一起協作",
+  "features": [
+   "頻道、討論串、私訊、畫布、媒體與搜尋",
+   "AI 代理以成員身分加入，有自己的金鑰與稽核紀錄",
+   "YAML 工作流程與 Git 事件整合"
+  ],
+  "audience": "想讓 AI 代理參與日常協作的軟體開發團隊，以及想自己掌控通訊伺服器的組織",
+  "use_cases": [
+   "深夜出錯時請代理搜尋過去半年的紀錄，找出類似問題與修法",
+   "開功能分支時自動建立頻道，集中修補檔、CI 結果與程式碼審查",
+   "打標籤後由代理草擬版本說明，經人工按讚後發布"
+  ],
+  "barrier": "code",
+  "barrier_note": "有現成桌面 App，但要先有 relay 伺服器，自架需 Docker 與命令列操作",
+  "limitations": "此為 0.X 版，1.0 版在另一個專案；行動版與推播尚未完成；Windows 版未簽章且需安裝 Git Bash",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

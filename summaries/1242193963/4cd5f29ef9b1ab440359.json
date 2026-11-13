@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "4cd5f29ef9b1ab440359",
+ "repo_id": 1242193963,
+ "full_name": "Tencent-Hunyuan/Hy-MT2",
+ "created_at": "2026-11-14T07:38:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "166fc3f05fbe6e81826d9ee77fba1bde5e34627b4af36c8c2c785c9d60960eff",
+ "has_readme": true,
+ "readme_chars": 8842,
+ "content": {
+  "one_liner": "騰訊混元推出的多語言翻譯 AI 模型，支援 33 種語言互譯",
+  "features": [
+   "提供 1.8B、7B、30B-A3B 三種大小的模型",
+   "可依術語、風格、個人偏好等指令翻譯",
+   "1.8B 壓縮版僅約 440 MB，可在裝置上執行"
+  ],
+  "audience": "需要自行部署翻譯模型的開發者、AI 研究人員，以及要做在地化翻譯的技術團隊",
+  "use_cases": [
+   "翻譯 JSON 等結構化資料，同時保留程式碼標籤與變數",
+   "指定專有名詞的譯法，讓譯文用詞一致",
+   "可能用於影片字幕翻譯或手機等裝置上的離線翻譯"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會用命令列與 Python，透過 transformers、vLLM 或 llama.cpp 等工具部署模型",
+  "limitations": "上下文長度上限 8192；模型沒有預設 system prompt；GGUF 版需要特定的 llama.cpp 核心支援；效能優勢為作者自述",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

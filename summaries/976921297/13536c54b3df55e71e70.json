@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "13536c54b3df55e71e70",
+ "repo_id": 976921297,
+ "full_name": "asgeirtj/system_prompts_leaks",
+ "created_at": "2026-11-14T07:40:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2dc703522955e477792b52facd014afc81d8b9588d27fd5b4eb518dc79980d93",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "收集 ChatGPT、Claude、Gemini 等熱門 AI 聊天機器人外流的隱藏系統提示詞",
+  "features": [
+   "依廠商與模型版本整理的系統提示詞全文",
+   "涵蓋 Claude Code、Codex、Cursor 等 30 多種產品",
+   "作者表示每天更新，收錄 2025 年 5 月以來各版本"
+  ],
+  "audience": "對 AI 聊天機器人運作規則好奇的人、研究 AI 的記者與學者、想學提示詞寫法的使用者",
+  "use_cases": [
+   "查看 ChatGPT 或 Claude 在對話前被設定了哪些隱藏規則",
+   "比較不同版本或不同廠商 AI 的系統提示詞差異",
+   "可能用來參考學習撰寫提示詞（prompt engineering）的技巧"
+  ],
+  "barrier": "online",
+  "barrier_note": "內容是文字檔，直接在 GitHub 網頁上瀏覽閱讀即可，不需安裝",
+  "limitations": "內容為外流資料，非官方公開；作者歡迎有不同結果的人提出修正，代表內容可能因取得方式而有差異",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
