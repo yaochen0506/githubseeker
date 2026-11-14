@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "766f6b26fa02b61224b1",
+ "repo_id": 1085043404,
+ "full_name": "pnnbao97/VieNeu-TTS",
+ "created_at": "2026-11-15T06:30:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e24e21243b72e7ebbe984b9b431ff91b3ea61eb3b6fecd201e2eef379dfdf51b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把越南語文字轉成語音的開源工具，可以用短音檔複製聲音，在電腦上就能執行",
+  "features": [
+   "內建 25 種越南北、中、南部口音的預設聲音",
+   "用 3～8 秒音檔即時複製聲音，會自動降噪",
+   "支援即時串流、多人對話模式與 48 kHz 音質"
+  ],
+  "audience": "需要越南語配音或語音功能的開發者，以及想自行架設越南語 TTS 服務的團隊",
+  "use_cases": [
+   "把越南語文章轉成有聲書或 Podcast 對話音檔",
+   "替語音助理或客服機器人接上相容 OpenAI 的越南語語音 API",
+   "用 LoRA 微調，訓練自己的聲音或朗讀風格"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用 uv、Python 或 Docker 安裝；Windows 有官方安裝程式，有 NVIDIA GPU 會更快",
+  "limitations": "效能數據是作者自己公布的。最新的 v4 不開源，只能透過官方 API 使用。舊 CPU 跑 int8 可能產生雜音。Nano 版音質較差，情緒標記仍在實驗階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

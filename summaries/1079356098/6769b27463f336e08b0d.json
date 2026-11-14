@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6769b27463f336e08b0d",
+ "repo_id": 1079356098,
+ "full_name": "tradermonty/claude-trading-skills",
+ "created_at": "2026-11-15T06:28:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5088b0be2314e6c80fc2c94345e3ae69f617ff8587830683b8111ec2a3e8b5c6",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 Claude 用的投資交易技能包，幫你檢視市場、控管風險、寫交易日誌",
+  "features": [
+   "市場廣度與趨勢分析，協助判斷目前適合加碼或保守",
+   "選股篩選、部位大小計算與交易前紀律檢查",
+   "交易日誌與事後檢討，搭配回測研究策略"
+  ],
+  "audience": "時間有限、以 ETF 與股息股長期投資為主，並想有紀律地做波段交易的個人投資者",
+  "use_cases": [
+   "每天花 15 分鐘檢查美股市場狀況與風險",
+   "每週檢視長期投資組合與股息股表現",
+   "記錄每筆已平倉交易，每月檢討並調整交易規則"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 Claude 帳號並上傳技能檔；部分功能需 FMP、Alpaca 等 API 或使用 Claude Code",
+  "limitations": "僅供教育與研究，不是投資建議或訊號服務，不會自動下單；部分技能需付費資料 API，主要針對美股",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

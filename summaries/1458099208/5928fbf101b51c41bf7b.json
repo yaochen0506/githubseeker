@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5928fbf101b51c41bf7b",
+ "repo_id": 1458099208,
+ "full_name": "WarriorRemember/IPTV_Player_2.0",
+ "created_at": "2026-11-15T06:30:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f7cd886c900a5926bed4c1ff1e540aea0a7d65da0f711483705a0edc153fc6f4",
+ "has_readme": true,
+ "readme_chars": 5776,
+ "content": {
+  "one_liner": "用來收看網路電視（IPTV）直播頻道的播放軟體",
+  "features": [
+   "支援 M3U 播放清單、EPG 節目表與社群頻道清單",
+   "作者表示可播放 4K 畫質，並有 Turbo Stream 減少緩衝",
+   "支援 Windows、macOS、Linux，描述另提到 Android"
+  ],
+  "audience": "想在電腦或電視盒上收看網路電視直播頻道的一般使用者",
+  "use_cases": [
+   "匯入 M3U 播放清單，收看新聞、體育、電影等直播頻道",
+   "搭配 EPG 節目表查看頻道的節目時間",
+   "可能用在電視盒上，把網路頻道放到電視上看"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載壓縮檔、解壓縮後執行；作者表示不用建立帳號",
+  "limitations": "4K 建議至少 25 Mbps 網速。README 的軟體名稱與專案名稱不一致，內容偏向宣傳，下載執行檔前請多加留意",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

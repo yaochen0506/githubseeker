@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "12b5d122a36e57b88afb",
+ "repo_id": 1458091050,
+ "full_name": "Topkiflare74/ai--manus2.0",
+ "created_at": "2026-11-15T06:29:37+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3224e3514d95741dfd0886aa50550e0d7572d89047f8f67d0f3a29dd0f657ccb",
+ "has_readme": true,
+ "readme_chars": 6929,
+ "content": {
+  "one_liner": "讓 AI 代理自己執行程式碼、操作瀏覽器，幫你完成多步驟任務",
+  "features": [
+   "AI 代理自己撰寫並執行程式碼來完成任務",
+   "控制瀏覽器瀏覽網頁、填表單、蒐集資料",
+   "可設定哪些任務自動處理、哪些需要確認"
+  ],
+  "audience": "想把重複的網頁操作或小型雜事交給 AI 處理的學生、遠距工作者與一般使用者",
+  "use_cases": [
+   "蒐集多個網頁的資料，整理成小型報告摘要",
+   "定期檢查網站是否有更新資訊",
+   "自動填寫重複性的網頁表單"
+  ],
+  "barrier": "code",
+  "barrier_note": "README 沒有具體安裝步驟或下載方式，實際使用方法不明，需自行研究",
+  "limitations": "README 寫建議 8 GB 記憶體，完整控制瀏覽器需要較高權限；內容多為宣傳文字，缺少實際安裝說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

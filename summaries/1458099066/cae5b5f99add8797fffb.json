@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "cae5b5f99add8797fffb",
+ "repo_id": 1458099066,
+ "full_name": "TurquoiseDetective/IPTV_Player_2.0",
+ "created_at": "2026-11-15T06:31:13+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f9e833aea933e5038a18b15b56742e0ea1ca0be88e0f0c7078a952f216fc630d",
+ "has_readme": true,
+ "readme_chars": 5776,
+ "content": {
+  "one_liner": "一款 IPTV 播放軟體，用來收看網路電視直播頻道",
+  "features": [
+   "支援 M3U 播放清單、EPG 節目表與社群頻道清單",
+   "作者表示可收看數千個頻道並支援 4K 畫質",
+   "設定中有「Turbo Stream」模式，作者表示可減少緩衝"
+  ],
+  "audience": "想用電腦收看網路電視直播頻道的一般使用者",
+  "use_cases": [
+   "在電腦上載入 M3U 播放清單收看直播頻道",
+   "搭配 EPG 查看頻道節目表"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載壓縮檔、解壓縮後執行，支援 Windows 10、macOS 11、Ubuntu 20.04 以上",
+  "limitations": "作者建議 4K 需至少 25 Mbps 網速；README 軟體名稱為 MegaCubo Free，與專案描述及支援平台不一致，下載前請自行確認來源",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

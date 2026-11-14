@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f10e09c3b751c4950014",
+ "repo_id": 77276660,
+ "full_name": "SigmaHQ/sigma",
+ "created_at": "2026-11-15T06:32:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "217c5d87990476ad54215369ce36f491f8204622d847ef93ce590edbc536d135",
+ "has_readme": true,
+ "readme_chars": 8646,
+ "content": {
+  "one_liner": "收錄 3000 多條資安偵測規則的開放資料庫，用來從系統紀錄檔找出可疑活動",
+  "features": [
+   "提供通用偵測、威脅獵捕、新興威脅、合規等多類規則",
+   "規則不綁定特定廠商，可轉換給各種 SIEM 使用",
+   "規則由專業偵測工程師社群審查並定期更新"
+  ],
+  "audience": "資安分析師、偵測工程師、威脅獵捕人員與企業資安防禦團隊",
+  "use_cases": [
+   "把 Sigma 規則轉換成 Splunk 或 Elasticsearch 查詢，監控系統紀錄",
+   "針對特定 APT 攻擊或零時差漏洞，快速取得偵測規則",
+   "依 CIS、NIST、ISO 27001 等框架檢查合規問題"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 SIEM 系統與資安背景，轉換規則要用命令列工具或網頁轉換器",
+  "limitations": "規則採用 Detection Rule License (DRL) 1.1 授權；可能出現誤判，README 建議用 issue 回報",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

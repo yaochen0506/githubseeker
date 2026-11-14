@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a25f35117f6efcad5e08",
+ "repo_id": 1458091291,
+ "full_name": "tornadonovicewhirl40/IPTV_Player_2.0",
+ "created_at": "2026-11-15T06:31:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6a59d5a959993e20c1a3d2870bc3ea6202a55c4d9becb6b8358fd70cf920d4e3",
+ "has_readme": true,
+ "readme_chars": 5776,
+ "content": {
+  "one_liner": "在電腦上收看網路電視直播頻道的 IPTV 播放軟體",
+  "features": [
+   "支援 M3U 播放清單、EPG 節目表與社群清單",
+   "作者表示可收看上千個免費頻道並支援 4K",
+   "提供 Turbo Stream 設定，作者表示可減少緩衝"
+  ],
+  "audience": "想在電腦或電視盒上收看網路電視直播頻道的一般使用者",
+  "use_cases": [
+   "在電腦上收看新聞、體育、電影等直播頻道",
+   "匯入 M3U 播放清單整理自己的頻道",
+   "可能用於在電視盒上收看 IPTV 節目"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載壓縮檔並解壓縮後執行，支援 Windows、macOS、Linux",
+  "limitations": "README 名稱 MegaCubo Free 與專案名稱不一致，免費頻道與效能皆為作者自述；4K 建議至少 25 Mbps 網路",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

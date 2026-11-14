@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "a9c3de457c3c6943d474",
+ "repo_id": 529623205,
+ "full_name": "fmz200/wool_scripts",
+ "created_at": "2026-11-15T06:31:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2da9fdeba31a0e632d8de700518a0c588f8d013963d3c6525cd1b3e5da14cc78",
+ "has_readme": true,
+ "readme_chars": 4811,
+ "content": {
+  "one_liner": "收集 iOS 代理工具 Loon、Quantumult X 等軟體的設定檔與去廣告規則",
+  "features": [
+   "提供 Loon、Quantumult X 的懶人設定檔與插件",
+   "去廣告規則合集，作者表示支援約 538 款 App",
+   "提供取得 cookie 的腳本、AI 分流與屏蔽蘋果更新規則"
+  ],
+  "audience": "已在 iPhone 上使用 Loon、Surge、Quantumult X、ShadowRocket 等代理工具的使用者",
+  "use_cases": [
+   "在 Loon 或 Quantumult X 匯入規則，過濾微博等 App 的廣告",
+   "設定屏蔽 iOS 系統更新的規則",
+   "透過分流規則設定 AI 服務或抖音的連線路線"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要先購買並設定 iOS 代理 App，並了解 MITM、重寫等設定",
+  "limitations": "部分規則可能失效；抖音、銀行類等 App 無法完全去廣告；懶人設定會覆蓋原有設定；後果由使用者自負",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

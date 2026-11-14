@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "2bb2731d96dab9d67431",
+ "repo_id": 1458092120,
+ "full_name": "trackersnailgrip/GitHub-Copilot-app",
+ "created_at": "2026-11-15T06:30:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6c65102c199d33eadb9dcf7670105257a31e64c115268a2d1fa8f9b37fb0f029",
+ "has_readme": true,
+ "readme_chars": 3853,
+ "content": {
+  "one_liner": "讓 AI 助理 Copilot 在桌面上幫你處理 GitHub 專案開發工作的 App",
+  "features": [
+   "同時啟動多個 AI 代理，各自在隔離環境工作",
+   "Canvases 介面可檢視、修改代理的計畫與進度",
+   "整合議題與 PR，並可排程自動化任務"
+  ],
+  "audience": "使用 GitHub 管理程式專案、想讓 AI 協助開發的軟體工程師",
+  "use_cases": [
+   "讓 Copilot 調查 bug 或實作議題中的需求",
+   "根據程式碼審查意見自動修改並推進合併",
+   "把重複的提示與流程設成排程背景任務"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Git 與桌面 App，並有 Copilot 方案或自備模型 API 金鑰，操作對象是程式專案",
+  "limitations": "使用 Copilot 帳號時可能收集使用資料與對話資料；除錯日誌可能含敏感資訊",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}
