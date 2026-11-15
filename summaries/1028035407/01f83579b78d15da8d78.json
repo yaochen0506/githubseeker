@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "01f83579b78d15da8d78",
+ "repo_id": 1028035407,
+ "full_name": "FujiwaraChoki/supoclip",
+ "created_at": "2026-11-16T06:54:22+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f417f6258fcbaf73d1e2310209dea9a2345cc128b2025178bda050356b050876",
+ "has_readme": true,
+ "readme_chars": 5382,
+ "content": {
+  "one_liner": "用 AI 把長影片自動剪成直式短影音的開源工具",
+  "features": [
+   "AI 從逐字稿挑出 3～7 段精華並評分爆紅潛力",
+   "臉部偵測自動裁成 9:16，加上逐字同步字幕",
+   "內建剪輯器，可直接發布到 YouTube、TikTok、IG"
+  ],
+  "audience": "Podcast 主持人、直播主、講者與想把長影片轉成短影音的創作者",
+  "use_cases": [
+   "把 Podcast 或訪談影片剪成 TikTok、Reels、Shorts 短片",
+   "從 Twitch 或 Kick 直播回放挑出精彩片段",
+   "開發者透過 API 或 MCP 讓 Claude 等工具呼叫剪片功能"
+  ],
+  "barrier": "online",
+  "barrier_note": "可直接用官方網頁版或 iOS App；自架需 Docker、AssemblyAI 與 LLM API 金鑰",
+  "limitations": "不支援直播中的串流；自架首次啟動需數分鐘，B-roll 等選用功能需另外設定",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

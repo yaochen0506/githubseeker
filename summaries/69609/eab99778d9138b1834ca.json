@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "eab99778d9138b1834ca",
+ "repo_id": 69609,
+ "full_name": "internetarchive/openlibrary",
+ "created_at": "2026-11-16T06:54:51+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1b2b6d00860a3318f03a4f2c5cc1d6bd0c9f825bd7610f28b0a722f027ec6d99",
+ "has_readme": true,
+ "readme_chars": 676,
+ "content": {
+  "one_liner": "開放、人人可編輯的圖書目錄，目標是替每本出版過的書做一個網頁",
+  "features": [
+   "開放的線上圖書館目錄",
+   "使用者可以編輯書目資料",
+   "目標是替每本出版過的書建立專屬網頁"
+  ],
+  "audience": "想參與開發 Open Library 的 Python 開發者，以及想當志工的愛書人",
+  "use_cases": [
+   "開發者架設開發環境，替 Open Library 貢獻程式碼",
+   "非開發者以志工身分參與非開發類工作",
+   "可能用來查詢或補充書籍的目錄資料"
+  ],
+  "barrier": "code",
+  "barrier_note": "這個專案是網站的原始碼，要參與開發得先架設開發環境、會寫 Python",
+  "limitations": "作者要求貢獻前先詳讀 Contributing 指南，遵守社群規範；原始碼採用 AGPL-3.0 授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

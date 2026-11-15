@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "379861893fec4935f84f",
+ "repo_id": 549007739,
+ "full_name": "JoeanAmier/TikTokDownloader",
+ "created_at": "2026-11-16T06:54:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3431d969fb25972ae5f6ca84d4b11b6b1c51454c26f2f6e465c38f4c1f184c24",
+ "has_readme": true,
+ "readme_chars": 8080,
+ "content": {
+  "one_liner": "下載抖音和 TikTok 影片、圖集，並收集作品與帳號資料的工具",
+  "features": [
+   "下載抖音 / TikTok 影片、圖集與帳號作品",
+   "收集作品、留言、搜尋與熱榜資料，存成 CSV/XLSX",
+   "取得直播串流位址，可搭配 ffmpeg 錄直播"
+  ],
+  "audience": "想批次保存抖音或 TikTok 作品的人，以及需要收集社群平台資料的研究或分析人員",
+  "use_cases": [
+   "貼上作品連結，批次下載抖音影片到電腦",
+   "下載某個帳號發布或收藏的全部作品，並跳過已下載的檔案",
+   "把作品按讚、收藏等統計資料匯出成 Excel 表格"
+  ],
+  "barrier": "code",
+  "barrier_note": "有 Windows/Mac 現成程式，但要在終端機操作並自行取得、設定 Cookie",
+  "limitations": "加密參數演算法不再維護，平台更新後部分功能可能失效；Web UI 暫停；不支援付費作品",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

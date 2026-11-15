@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a160d1525b93c91feeac",
+ "repo_id": 722184017,
+ "full_name": "assistant-ui/assistant-ui",
+ "created_at": "2026-11-16T06:54:35+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "614fdd36d0f8dda1bf2faf52c4257a5b984301c559f4fe46684da0fa8532a996",
+ "has_readme": true,
+ "readme_chars": 2887,
+ "content": {
+  "one_liner": "幫開發者在 React 網站裡快速做出類似 ChatGPT 的 AI 聊天介面的元件庫",
+  "features": [
+   "提供可自由組合的聊天介面元件，可自訂樣式",
+   "內建串流回覆、附件、Markdown、語音輸入等功能",
+   "可接 Vercel AI SDK、LangGraph 等多種後端"
+  ],
+  "audience": "想在自家網站或產品加入 AI 聊天功能的 React／TypeScript 前端開發者",
+  "use_cases": [
+   "在現有 React 網站加入 AI 客服或助理聊天視窗",
+   "用 CLI 快速建立一個有聊天介面的 Next.js 應用程式",
+   "把 AI 工具呼叫結果顯示成互動元件，並讓使用者確認操作"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會 React／TypeScript 開發，並使用命令列安裝套件與串接 AI 後端",
+  "limitations": "README 未說明明確限制；對話紀錄保存與分析等託管功能需另外使用 Assistant Cloud",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

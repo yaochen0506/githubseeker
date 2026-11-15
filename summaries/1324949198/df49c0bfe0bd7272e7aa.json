@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "df49c0bfe0bd7272e7aa",
+ "repo_id": 1324949198,
+ "full_name": "ranxianglei/billion-context",
+ "created_at": "2026-11-16T06:53:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b850b7233531122b16a721ece2f87b3d5a49fcead8c368ec2a08f21a6c02861e",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "替 AI 寫程式助理壓縮對話內容，讓單一對話可以持續好幾天甚至一個月",
+  "features": [
+   "由模型自己決定何時把舊對話壓縮成摘要",
+   "可隨時解壓縮還原細節，也能搜尋已壓縮內容",
+   "支援 Claude、Codex、Gemini CLI 等多種工具"
+  ],
+  "audience": "長時間使用 AI 程式助理（如 Claude Code、opencode）的開發者",
+  "use_cases": [
+   "長時間的程式開發對話，避免超過模型的上下文長度",
+   "作者表示可減少約 5 倍 token 用量，降低 API 費用",
+   "在只有 100K 上下文的小模型上跑長任務"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js、npm 與命令列操作，並搭配支援的 AI 程式助理工具",
+  "limitations": "原生外掛和舊版獨立擴充不能同時啟用，否則會重複壓縮；部分工具只能透過 launcher 或憑證攔截使用",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

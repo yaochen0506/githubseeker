@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "4f052b630f2059829761",
+ "repo_id": 1172273835,
+ "full_name": "SnailSploit/Claude-Red",
+ "created_at": "2026-11-16T06:53:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "669fe6b34eacc4f608126e5ddb776db2f7cc8ef4112d2285ec5ca67b6f655331",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "一套給 Claude 用的攻擊性資安技能知識庫",
+  "features": [
+   "把各類資安攻擊手法整理成 SKILL.md 檔案供 Claude 載入",
+   "涵蓋 Web、無線、雲端、AD 等多種攻擊面向",
+   "依對話內容自動載入對應技能，不佔用額外脈絡"
+  ],
+  "audience": "紅隊演練人員、資安研究者、漏洞獎勵獵人與 CTF 參賽者",
+  "use_cases": [
+   "經授權的紅隊演練與攻擊面向探索",
+   "漏洞獎勵計畫的初步分析與資安研究",
+   "CTF 競賽準備與資安人員教育訓練"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 Claude 環境，並將 SKILL.md 檔案安裝或貼入使用",
+  "limitations": "作者表示這些技能用於經授權的紅隊演練等合法用途；其餘注意事項 README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

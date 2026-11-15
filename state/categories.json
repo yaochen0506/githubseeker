@@ -1,13 +1,19 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-15T06:28:35+08:00",
+ "updated_at": "2026-11-16T06:51:53+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
    "exclude_reason": null,
    "full_name": "rails/rails",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "69609": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "internetarchive/openlibrary",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "458058": {
    "category": "dev-tools",
@@ -501,6 +507,12 @@
    "full_name": "vitejs/vite",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "259479668": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "glKarin/com.n0n3m4.diii4a",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "263556058": {
    "category": "security-network",
    "exclude_reason": null,
@@ -512,6 +524,12 @@
    "exclude_reason": null,
    "full_name": "qd-today/templates",
    "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "265122478": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ManimCommunity/manim",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "274495425": {
    "category": "fun-creative",
@@ -699,6 +717,18 @@
    "full_name": "notionnext-org/NotionNext",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "416151847": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "yaklang/yakit",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "419712974": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Paving-Base/APK-Installer",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "425387994": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -807,6 +837,12 @@
    "full_name": "cxasm/notepad--",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "512334495": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "firerpa/lamda",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "513701178": {
    "category": "security-network",
    "exclude_reason": null,
@@ -848,6 +884,12 @@
    "exclude_reason": null,
    "full_name": "openai/whisper",
    "classified_at": "2026-11-13T07:41:34+08:00"
+  },
+  "538180525": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "ggml-org/ggml",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "542386106": {
    "category": "everyday-tools",
@@ -1059,6 +1101,18 @@
    "full_name": "TheNetsky/Microsoft-Rewards-Script",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "722184017": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "assistant-ui/assistant-ui",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "725205304": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "unslothai/unsloth",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "727109010": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -1082,6 +1136,12 @@
    "exclude_reason": null,
    "full_name": "harry0703/MoneyPrinterTurbo",
    "classified_at": "2026-11-05T07:42:34+08:00"
+  },
+  "771350543": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Canner/WrenAI",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "777721566": {
    "category": "dev-tools",
@@ -1112,6 +1172,12 @@
    "exclude_reason": null,
    "full_name": "CherryHQ/cherry-studio",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "806879762": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "nolly-studio/cult-ui",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "812975380": {
    "category": "ai-agents",
@@ -1184,6 +1250,12 @@
    "exclude_reason": null,
    "full_name": "browser-use/browser-use",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "896296825": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "PrefectHQ/fastmcp",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "896924279": {
    "category": "fun-creative",
@@ -1280,6 +1352,12 @@
    "exclude_reason": null,
    "full_name": "ag-ui-protocol/ag-ui",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "981108483": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "fqscfqj/Y2A-Auto",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "995029641": {
    "category": "ai-agents",
@@ -1484,6 +1562,12 @@
    "exclude_reason": null,
    "full_name": "virattt/dexter",
    "classified_at": "2026-11-10T09:35:36+08:00"
+  },
+  "1076571787": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "huytieu/COG-second-brain",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "1077967890": {
    "category": "ai-agents",
@@ -1839,6 +1923,12 @@
    "full_name": "KenKaiii/gg-framework",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "1172273835": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "SnailSploit/Claude-Red",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "1173152133": {
    "category": "security-network",
    "exclude_reason": null,
@@ -1952,6 +2042,12 @@
    "exclude_reason": null,
    "full_name": "mvschwarz/openrig",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1198306812": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "HKUDS/Vibe-Trading",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "1199643986": {
    "category": "everyday-tools",
@@ -2247,6 +2343,12 @@
    "full_name": "mbillow/localthings",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "1285974683": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "HKUDS/AutoSwarm",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "1286080397": {
    "category": "ai-models",
    "exclude_reason": null,
@@ -2474,6 +2576,12 @@
    "exclude_reason": null,
    "full_name": "totec448-spec/chat-on-steroids",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "1342935078": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "bojieli/ai-infra-book",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "1342943152": {
    "category": "fun-creative",
@@ -2841,11 +2949,23 @@
    "full_name": "apex-compute/ANR",
    "classified_at": "2026-11-13T07:41:34+08:00"
   },
+  "1455006582": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "deepseek-ai/chat-demo",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
   "1456134750": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "faizfahmi77/ScanDot",
    "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1457270665": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "duwqijlk/muse-protocol",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   },
   "1458091044": {
    "category": "ai-agents",
@@ -2936,6 +3056,66 @@
    "exclude_reason": null,
    "full_name": "WattBeetleLearn/IPTV_Player_2.0",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "1459018145": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "TurtleReside/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018149": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "VisionWormStudio/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018150": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Violetnyudress/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018153": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "TypeTyrantScheme/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018157": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "TrooperFilter/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018163": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Visionbeyondtrack/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459018207": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "VortexHostFeel/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459019228": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Watchlespeed/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459019231": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "WerewolfEmuHub/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459019240": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "weldbladesmithwharf/Gemini-Config-Checker-",
+   "classified_at": "2026-11-16T06:51:53+08:00"
   }
  }
 }

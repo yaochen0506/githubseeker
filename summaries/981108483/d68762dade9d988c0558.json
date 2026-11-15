@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d68762dade9d988c0558",
+ "repo_id": 981108483,
+ "full_name": "fqscfqj/Y2A-Auto",
+ "created_at": "2026-11-16T06:54:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "62f5c58af88b77d0e9c1cd5a894ec5b8dc2f83c666046103ad8eda37aaff0117",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把 YouTube 影片自動下載、加字幕翻譯後上傳到 AcFun 與 bilibili 的工具",
+  "features": [
+   "下載、語音辨識、字幕翻譯到上傳全自動",
+   "Web 管理後台，可人工審核與強制上傳",
+   "定時監控 YouTube 頻道或關鍵字並推播通知"
+  ],
+  "audience": "想把 YouTube 影片轉載到 AcFun 或 bilibili、且會架設伺服器的影片搬運者",
+  "use_cases": [
+   "追蹤特定 YouTube 頻道，新影片自動翻譯字幕後上傳到 bilibili",
+   "用 AI 自動產生中文標題、簡介與標籤再投稿",
+   "透過 Telegram 機器人傳送 YouTube 連結提交上傳任務"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Docker 或 Python 3.11+ 部署，並準備各平台 Cookie 與 API 金鑰",
+  "limitations": "必須準備 YouTube、AcFun、bilibili 登入 Cookie；FFmpeg 需 5.1 以上；公共 Telegram 機器人不保證能用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "f1d087dee74daeb96e03",
+ "repo_id": 1459018145,
+ "full_name": "TurtleReside/Gemini-Config-Checker-",
+ "created_at": "2026-11-16T06:53:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2bf7d7a767607ae983ec605a5d62f0b933509295b4ac3fd215286c7693fc4254",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "逐一測試代理設定，找出能正常進入 Google AI Studio 和 Gemini 的那幾組",
+  "features": [
+   "用已登入 Google 的瀏覽器實際檢查有沒有被擋地區",
+   "簡易模式測自己的設定，進階模式把免費設定串在基礎設定後面",
+   "內建 anti-DPI 設定，可匯出連結、base64 或 Xray 設定"
+  ],
+  "audience": "手上有 vless、vmess 等代理設定，因為所在地區被擋而需要使用 Gemini 的人",
+  "use_cases": [
+   "一次檢查手上一堆代理設定，看哪些能進 AI Studio 和 Gemini",
+   "Cloudflare 設定連得上但被 Google 擋，改找其他可用的出口",
+   "正式使用某個設定前，先確認它能不能用"
+  ],
+  "barrier": "install",
+  "barrier_note": "要下載桌面 App 或 APK，地區檢查需要 Chrome、Edge 或 Brave，另外要有 Google 帳號",
+  "limitations": "早期預覽版，目前只在 Windows 實測過；Android 只能測連線，不能檢查地區；檢測結果只是當下的抽樣，不保證一直有效",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

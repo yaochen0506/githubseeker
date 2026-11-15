@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1e95dc33e2977353996b",
+ "repo_id": 1342935078,
+ "full_name": "bojieli/ai-infra-book",
+ "created_at": "2026-11-16T06:54:44+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8934a1eb28c9e15c2b8be906283eeed728cab7834e66bc6f7c91372f65382355",
+ "has_readme": true,
+ "readme_chars": 5274,
+ "content": {
+  "one_liner": "一本免費公開的書，用估算與計算說明 AI 大型語言模型背後的系統怎麼設計",
+  "features": [
+   "十二章正文，有 PDF、EPUB 和線上閱讀版",
+   "有社群翻譯的繁體中文、英文、俄文版",
+   "附計算工具與實驗，可以重算書中的數字"
+  ],
+  "audience": "想了解模型為什麼慢、怎麼省成本的工程師、研究人員與學生，需要一些 Python 和數學基礎",
+  "use_cases": [
+   "下載繁體中文 PDF 或 EPUB，在手機或電子書閱讀器上閱讀",
+   "做推理服務的人可以讀第 8、9 章，學習怎麼降低延遲和成本",
+   "用配套工具換成自己的模型和硬體，估算需要多少資源"
+  ],
+  "barrier": "online",
+  "barrier_note": "線上閱讀或下載 PDF 就能看；要跑計算工具或實驗，需要 Python，部分實驗還需要 GPU",
+  "limitations": "書稿還是初稿，正在修訂；繁體版是社群翻譯，數字以原版為準；完整實驗資料約 20 GB",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

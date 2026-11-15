@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d8da17ec19398bf57456",
+ "repo_id": 1459018150,
+ "full_name": "Violetnyudress/Gemini-Config-Checker-",
+ "created_at": "2026-11-16T06:55:07+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9d6e85cc0b59f7c4b5bc8bf712a40633781ba86ecedca95c410f262b545667dd",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "逐一測試代理設定檔，找出哪些能正常連上 Google AI Studio 和 Gemini",
+  "features": [
+   "用已登入 Google 的瀏覽器實際檢查有沒有地區封鎖",
+   "簡易模式測自己的設定檔，進階模式串接免費設定檔",
+   "內建可調整的 anti-DPI 設定，可匯出 Xray 設定"
+  ],
+  "audience": "所在地區無法使用 Gemini 或 AI Studio、已經在用 v2ray 類代理設定檔的使用者",
+  "use_cases": [
+   "從手上一堆代理設定檔中，找出能進入 AI Studio 和 Gemini 的那幾個",
+   "Cloudflare 設定檔連得上但被 Google 擋，改串接免費設定檔換出口",
+   "在受網路過濾的環境（例如伊朗）搭配 anti-DPI 設定連線"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載桌面 App 即可，但需要 Chrome／Edge／Brave、Google 帳號，以及對代理設定檔有基本了解",
+  "limitations": "0.1.0 早期版本，目前只在 Windows 實測；Android 版無法檢查地區；檢測結果只是當下狀況，不代表一定有效；建議使用副帳號",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

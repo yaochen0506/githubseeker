@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8316d51941e3b3c3514d",
+ "repo_id": 1153130349,
+ "full_name": "pingdotgg/t3code",
+ "created_at": "2026-11-16T06:52:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f71eb3d4f7297dbc14f31fb98dd2e1a7b572c121720dfc0aa496f6f4eebc86ca",
+ "has_readme": true,
+ "readme_chars": 3376,
+ "content": {
+  "one_liner": "把 Claude Code、Codex 等 AI 寫程式助手集中在同一個介面操作，手機也能遠端控制",
+  "features": [
+   "一個介面操作多種 AI 寫程式助手，可中途換模型",
+   "桌面、網頁、iOS 與 Android 同步顯示對話",
+   "內建 Git，一鍵提交、推送並開 pull request"
+  ],
+  "audience": "已在使用 Claude Code、Codex 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "在電腦上讓 AI 助手開始任務，離開座位後用手機核准下一步",
+   "讓 Claude 把任務交給 Codex 接手處理",
+   "在另一台機器上執行 AI 助手，透過區域網路或 Tailscale 遠端連線"
+  ],
+  "barrier": "code",
+  "barrier_note": "需先安裝並用命令列登入至少一個 AI 寫程式助手，並使用自己已有的訂閱",
+  "limitations": "不提供 AI 額度，必須用自己的訂閱；作者表示審查人力有限，新功能需先經討論核准",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6b124cae94a9ead7503a",
+ "repo_id": 1459018149,
+ "full_name": "VisionWormStudio/Gemini-Config-Checker-",
+ "created_at": "2026-11-16T06:54:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e214063d48b915c26de363e088686ab4fa30014fa7f0b2e0aca794700b4e3956",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "批次測試代理設定，找出哪些能正常進入 Google AI Studio 和 Gemini",
+  "features": [
+   "用已登入 Google 的瀏覽器實測地區是否被封鎖",
+   "Simple 與 Advanced 模式，可串接基礎設定測免費設定",
+   "內建可調整的 Anti-DPI 參數，可匯出 Xray 設定"
+  ],
+  "audience": "因所在地區限制，需要透過代理（如 vless、vmess）使用 Gemini 或 AI Studio 的使用者",
+  "use_cases": [
+   "檢查手上一堆代理設定中，哪些能用 Gemini 而不被擋",
+   "Cloudflare 設定連得上但出口被 Google 封鎖時，串接免費設定找其他出口",
+   "在受網路過濾的地區，搭配 Anti-DPI 設定測試連線"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載桌面 App 或 Android APK，並安裝 Chrome、Edge 或 Brave，還需要懂代理設定",
+  "limitations": "0.1.0 早期版本，只在 Windows 實測過；Android 版無法檢查地區；測試結果只是當下的樣本，不保證之後一樣；網頁版沒有登入驗證",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "41ad890c9cf7da2b7ddc",
+ "repo_id": 538180525,
+ "full_name": "ggml-org/ggml",
+ "created_at": "2026-11-16T06:53:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "098e349bca7524f361e9f0aab81c3fa67c72362720752359a5edc84796f31753",
+ "has_readme": true,
+ "readme_chars": 976,
+ "content": {
+  "one_liner": "用 C/C++ 寫的機器學習張量運算函式庫，讓 AI 模型能在各種裝置上執行",
+  "features": [
+   "純 C/C++ 實作，不依賴其他套件",
+   "支援 CPU、GPU、NPU 與瀏覽器等多種硬體",
+   "支援 2～8 位元量化，縮小模型體積"
+  ],
+  "audience": "想在本機或各種硬體上執行 AI 模型的軟體開發者與研究人員",
+  "use_cases": [
+   "開發者用它打造在本機執行 AI 模型的程式",
+   "把模型量化成較小的格式，在一般電腦或 ARM 裝置上執行",
+   "可能用在瀏覽器（WebAssembly）裡執行機器學習運算"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要從原始碼編譯，並會寫 C/C++ 程式才能使用",
+  "limitations": "README 未說明使用限制；核心函式庫的修改建議改到 llama.cpp 專案提交 PR",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

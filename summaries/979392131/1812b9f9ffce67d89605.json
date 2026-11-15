@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1812b9f9ffce67d89605",
+ "repo_id": 979392131,
+ "full_name": "ag-ui-protocol/ag-ui",
+ "created_at": "2026-11-16T06:52:21+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "90566ff4859ce1a635d2a0c7359da61d5c6b05385203d773089648ee7f57c3fe",
+ "has_readme": true,
+ "readme_chars": 6416,
+ "content": {
+  "one_liner": "一套開放的通訊規範，讓 AI 代理程式能接進網頁或 App 的使用者介面",
+  "features": [
+   "約 16 種標準事件，支援即時串流聊天",
+   "代理程式與前端雙向同步狀態",
+   "支援生成式介面與人機協作流程"
+  ],
+  "audience": "想把 AI 代理程式放進自家網頁或 App 的前端與後端開發者",
+  "use_cases": [
+   "在網站裡加入能即時串流回覆的 AI 助理聊天介面",
+   "把 LangChain、CrewAI 等框架做的代理程式接到前端畫面",
+   "讓代理程式在執行中請使用者確認或補充資訊"
+  ],
+  "barrier": "code",
+  "barrier_note": "這是給開發者用的協定與 SDK，需要會寫程式、會用命令列建立專案",
+  "limitations": "部分整合仍在開發中，例如 AWS Bedrock Agents、OpenAI Agents SDK",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
