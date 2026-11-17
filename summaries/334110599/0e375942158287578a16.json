@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0e375942158287578a16",
+ "repo_id": 334110599,
+ "full_name": "iDvel/rime-ice",
+ "created_at": "2026-11-17T09:56:02+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f725c5111c60cf8870aa3968f7dc28facea3ddcb1f4c2af2aa9146e9f3f0a67f",
+ "has_readme": true,
+ "readme_chars": 5981,
+ "content": {
+  "one_liner": "給 Rime 輸入法用的簡體中文拼音設定檔，附帶長期維護的詞庫",
+  "features": [
+   "支援全拼與小鶴、自然碼等多種雙拼方案",
+   "長期校對的百萬中英詞庫與 Emoji",
+   "拆字反查、日期農曆、計算器、繁簡轉換"
+  ],
+  "audience": "使用 Rime 輸入法、需要打簡體中文拼音，並重視離線與隱私的使用者",
+  "use_cases": [
+   "在 Windows、macOS 或 Linux 上完全離線打簡體中文",
+   "用拼音部件反查打出不認得的生僻字",
+   "輸入 rq 或 nl 快速取得當前日期或農曆"
+  ],
+  "barrier": "install",
+  "barrier_note": "需先安裝 Rime 輸入法，再把設定檔複製到使用者資料夾並重新部署",
+  "limitations": "以簡體為主，預設繁體是香港繁體；Linux 需安裝 librime-lua；缺字型會顯示方塊",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

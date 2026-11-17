@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "7b6649405fb3aa9ace00",
+ "repo_id": 1440927503,
+ "full_name": "zortos293/Lichii",
+ "created_at": "2026-11-17T09:55:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a430a27e326f4930bef83fa102fb5bec3e0344ffecac5a866275edd46769d668",
+ "has_readme": true,
+ "readme_chars": 5375,
+ "content": {
+  "one_liner": "在電腦上模擬 Nintendo Switch 與 Switch 2 遊戲主機的實驗性開源軟體",
+  "features": [
+   "在電腦上執行 Switch 與 Switch 2 遊戲",
+   "可匯入 Eden 等其他模擬器的存檔與設定",
+   "可自願送出遊戲相容性回報"
+  ],
+  "audience": "想在 Windows、Linux 或 macOS 電腦上玩 Switch 遊戲、願意嘗試實驗性軟體的玩家",
+  "use_cases": [
+   "在電腦上玩自己合法取得的 Switch 2 遊戲",
+   "從 Eden 模擬器搬移存檔與設定到 Lichii",
+   "回報遊戲相容性，供社群參考"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載並解壓縮執行檔，還要自行準備合法取得的遊戲、金鑰與韌體",
+  "limitations": "非常實驗性，可能有畫面錯誤、卡頓或當機；不附遊戲、金鑰與韌體；只能從官方 releases 頁面下載，其他網站可能含惡意程式",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

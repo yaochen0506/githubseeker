@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-16T06:51:53+08:00",
+ "updated_at": "2026-11-17T09:54:24+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -243,11 +243,23 @@
    "full_name": "TheAlgorithms/Java",
    "classified_at": "2026-11-12T08:47:22+08:00"
   },
+  "74293321": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "sveltejs/svelte",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "77276660": {
    "category": "security-network",
    "exclude_reason": null,
    "full_name": "SigmaHQ/sigma",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "80945428": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "nestjs/nest",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "81598961": {
    "category": "dev-tools",
@@ -674,6 +686,12 @@
    "exclude_reason": null,
    "full_name": "tldraw/tldraw",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "378069880": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "hanxinhao000/ZeroTermux",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "382496361": {
    "category": "security-network",
@@ -1335,6 +1353,12 @@
    "full_name": "google-gemini/gemini-cli",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "968905557": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "getarcaneapp/arcane",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "975734319": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1454,6 +1478,12 @@
    "exclude_reason": null,
    "full_name": "Fission-AI/OpenSpec",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1040940947": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "isair/jarvis",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "1042367133": {
    "category": "ai-agents",
@@ -1760,6 +1790,12 @@
    "exclude_reason": null,
    "full_name": "blader/humanizer",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1136797988": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "bkerler/mtkclient",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "1140828898": {
    "category": "ai-agents",
@@ -2199,6 +2235,12 @@
    "full_name": "Renhuai123/ziwei-doushu",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1226691771": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "google-research/paper-orchestra",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "1226971975": {
    "category": "security-network",
    "exclude_reason": null,
@@ -2373,6 +2415,12 @@
    "full_name": "JetBrains/thinkrail",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1293290940": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "s0ld13rr/pentestcode",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "1296300799": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2457,6 +2505,12 @@
    "full_name": "spotify/portal-ai-plugins",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1310427454": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "DeanChensj/jiangshan-map",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "1314510108": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2474,6 +2528,12 @@
    "exclude_reason": null,
    "full_name": "microsoft/skill-recorder",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1318197751": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vstorm-co/agenticos",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "1319154759": {
    "category": "ai-models",
@@ -2823,6 +2883,12 @@
    "full_name": "storytold/craft-anything",
    "classified_at": "2026-11-04T07:27:20+08:00"
   },
+  "1440971520": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "Lee-xeo/Claude-Cage",
+   "classified_at": "2026-11-17T09:54:24+08:00"
+  },
   "1441272552": {
    "category": "security-network",
    "exclude_reason": null,
@@ -2840,6 +2906,12 @@
    "exclude_reason": null,
    "full_name": "AssassinCreator/steam-stash-value-report-card",
    "classified_at": "2026-11-04T07:27:20+08:00"
+  },
+  "1443186633": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "libracoder/kiri",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "1443759946": {
    "category": "fun-creative",
@@ -2954,6 +3026,12 @@
    "exclude_reason": null,
    "full_name": "deepseek-ai/chat-demo",
    "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1455416555": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "hitkeeen/blender-ai-mcp-addon",
+   "classified_at": "2026-11-17T09:54:24+08:00"
   },
   "1456134750": {
    "category": "fun-creative",

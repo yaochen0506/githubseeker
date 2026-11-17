@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "2371e3ee6f163b644a89",
+ "repo_id": 1219644159,
+ "full_name": "bradautomates/claude-video",
+ "created_at": "2026-11-17T09:55:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "eec73beb66092fa6214cb8ecd50fd87288bf987ddb04ee117b36defc595f0252",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 Claude 等 AI 助理「看」影片：把影片轉成附時間點的畫面截圖與逐字稿",
+  "features": [
+   "支援網址或本機影片，擷取附時間點的畫面",
+   "優先讀取原生字幕，也能用 WhisperX 等轉錄語音",
+   "可選用 Gemini 引擎直接分析整部影片"
+  ],
+  "audience": "使用 Claude Code、Codex 或其他 AI 程式助理，想讓 AI 理解影片內容的人",
+  "use_cases": [
+   "請 AI 針對一段短影片產生附時間點的畫面摘要",
+   "取得公開影片網址的逐字稿細節",
+   "可能用於分析沒有字幕的影片語音內容"
+  ],
+  "barrier": "code",
+  "barrier_note": "需使用 Claude Code 或 Codex，並安裝 Python 3.10+、FFmpeg、yt-dlp 等工具",
+  "limitations": "不支援 Claude Chat 與 Cowork；Gemini 引擎會把影片上傳到 Google；只支援最新版 yt-dlp",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

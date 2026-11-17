@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "77e67cdbefb397c1f9ee",
+ "repo_id": 265122478,
+ "full_name": "ManimCommunity/manim",
+ "created_at": "2026-11-17T09:56:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ab77271f397a8be196e4a7f49590015658f38ff84ef7e935af1957fadff771a9",
+ "has_readme": true,
+ "readme_chars": 4885,
+ "content": {
+  "one_liner": "用 Python 程式碼製作精準數學解說動畫的社群版動畫引擎",
+  "features": [
+   "用程式碼產生精準的數學動畫影片",
+   "支援在 Jupyter 筆記本中使用 %%manim 指令",
+   "提供 Docker 映像檔與線上 Jupyter 試用環境"
+  ],
+  "audience": "想製作數學或科學解說影片、會寫 Python 的教師、學生與創作者",
+  "use_cases": [
+   "製作類似 3Blue1Brown 風格的數學解說影片",
+   "在 Jupyter 筆記本中邊寫程式邊預覽動畫",
+   "可能用於課堂教材或研究成果的視覺化呈現"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 Python，並在終端機執行指令來產生影片",
+  "limitations": "需先安裝相依套件；安裝說明不可與 3b1b/manim 版本混用；專案正進行大規模重構，暫不接受新功能貢獻",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

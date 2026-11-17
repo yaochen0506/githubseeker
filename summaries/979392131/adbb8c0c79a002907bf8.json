@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "adbb8c0c79a002907bf8",
+ "repo_id": 979392131,
+ "full_name": "ag-ui-protocol/ag-ui",
+ "created_at": "2026-11-17T09:54:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1997295e2a81a7d17ebc94cdfa1d56c51027b8feb653b1dba123e120866d13d3",
+ "has_readme": true,
+ "readme_chars": 7236,
+ "content": {
+  "one_liner": "一套開放協定，讓 AI 代理程式能接上網頁、手機 App 等使用者介面",
+  "features": [
+   "用統一的事件串流連接代理程式與前端介面",
+   "支援串流聊天、共享狀態、人工審核等功能",
+   "提供 TypeScript、Python、.NET SDK"
+  ],
+  "audience": "開發 AI 代理程式或要把 AI 助理放進網頁、App 的工程師",
+  "use_cases": [
+   "把用 LangChain、CrewAI 等框架做的代理程式接到網頁介面",
+   "讓同一個代理程式同時用在網頁、終端機或 Slack",
+   "在代理程式執行中讓使用者核准、修改或拒絕動作"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫程式，並安裝 Node.js 20+ 或 Python 3.9+；範本需 OpenAI 金鑰",
+  "limitations": "CLI 產生的範本會呼叫 OpenAI，需要先設定 API 金鑰",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

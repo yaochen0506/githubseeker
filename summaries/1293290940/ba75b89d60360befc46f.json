@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ba75b89d60360befc46f",
+ "repo_id": 1293290940,
+ "full_name": "s0ld13rr/pentestcode",
+ "created_at": "2026-11-17T09:57:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "76e8815d8da77a2b609b9ec80a11593693663de394d657ad1d7cf2a5e498e088",
+ "has_readme": true,
+ "readme_chars": 8361,
+ "content": {
+  "one_liner": "在終端機裡自動執行滲透測試的多代理 AI 工具",
+  "features": [
+   "13 個分工 AI 代理分頭並行執行偵察、列舉與攻擊等任務",
+   "共享一份結構化「交戰狀態」記錄主機、漏洞、憑證與攻擊路徑",
+   "內建 18 種工具，可解析 nmap、Nuclei 等輸出並產生報告"
+  ],
+  "audience": "需進行授權滲透測試、打 CTF 或做漏洞研究的資安人員",
+  "use_cases": [
+   "對已授權的目標進行從偵察到報告的完整滲透測試",
+   "參加 CTF 競賽時追蹤旗標與協調多目標",
+   "Bug bounty 的 Web、API 測試與偵察自動化"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在終端機操作，並設定 Anthropic、OpenAI 等 LLM 供應商金鑰",
+  "limitations": "目前為 Beta 版，作者表示實戰與 CTF 可用但仍有瑕疵；僅限授權測試，不當使用可能違法",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
