@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1f7bfe35f8aa02033ace",
+ "repo_id": 1136590548,
+ "full_name": "affaan-m/ECC",
+ "created_at": "2026-11-18T09:00:23+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4048c8de297b0aba37dec926ba7af0a3b193b3c1edf441f0f3c8cecb24c759db",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "替 Claude Code 等 AI 寫程式助手加上規劃、測試、記憶與安全掃描的外掛工具組",
+  "features": [
+   "內含 72 個 agents 與 327 個 skills",
+   "提供 hooks、記憶與持續學習功能",
+   "AgentShield 掃描提示詞、權限與密鑰"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "讓 AI 助手先規劃再寫程式，並用測試驗證修改",
+   "掃描 MCP 設定、權限與密鑰等安全風險",
+   "把常用的工作流程存成可重複使用的 skills"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js 18 以上、Git 與 Claude Code，並在命令列執行安裝",
+  "limitations": "目前搭配 Claude Code 效果最好，其他工具的功能有限制；不要重複安裝；只能從官方管道安裝，以免裝到惡意軟體",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

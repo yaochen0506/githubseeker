@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a00eb85f9d86a5d8f973",
+ "repo_id": 1459971684,
+ "full_name": "erkamyaman/rust-anything",
+ "created_at": "2026-11-18T09:01:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "083ccafa9b6cfc3957927590b3d0fd1043c83f2fcea25dc7b5ca6cb218a53535",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "協助把既有程式一塊一塊改寫成 Rust，每一步都和原版行為比對",
+  "features": [
+   "記錄原程式行為，逐一比對 Rust 版結果",
+   "分析效能熱點並規劃改寫順序",
+   "提供 MCP 伺服器與技能給 AI 程式助理"
+  ],
+  "audience": "想把 TypeScript、Python、Go 等專案改寫成 Rust 或加速的開發者",
+  "use_cases": [
+   "讓 Claude Code 等 AI 助理把整個 CLI 改寫成 Rust",
+   "找出程式裡慢的迴圈，只把那段移到 Rust 加速",
+   "改寫前後比較速度，判斷是否上線新版"
+  ],
+  "barrier": "code",
+  "barrier_note": "需使用命令列與程式開發環境，Rust 程式碼由你或 AI 助理撰寫",
+  "limitations": "只能抓出錄製案例涵蓋的差異；本身不翻譯程式碼；PHP、C# 仍屬預覽；小函式逐次呼叫 Rust 可能更慢",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

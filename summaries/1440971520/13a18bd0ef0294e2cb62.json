@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "13a18bd0ef0294e2cb62",
+ "repo_id": 1440971520,
+ "full_name": "Lee-xeo/Claude-Cage",
+ "created_at": "2026-11-18T09:03:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6211369e06c874ddb9310aa27608ed25d962e5d429310cc0de7c379cdaf52efb",
+ "has_readme": true,
+ "readme_chars": 4436,
+ "content": {
+  "one_liner": "專門給 Claude 用的桌面虛擬機，把網路、時區、語言跟主機隔開來管理",
+  "features": [
+   "內建代理管理，所有流量都走代理，不會直接連線",
+   "整合終端、瀏覽器、編輯器與 Claude Desktop",
+   "支援多個 Claude Code 帳號、手機接續與 VPS 部署"
+  ],
+  "audience": "需要透過代理使用 Claude、Claude Code 的開發者，特別是想把環境跟主機隔開的人",
+  "use_cases": [
+   "在隔離的虛擬機裡用 Claude Code 開發本機專案",
+   "用手機接續電腦上的 Claude Code 對話與工具審批",
+   "透過 SSH 把工作環境部署到自己的 Linux VPS"
+  ],
+  "barrier": "install",
+  "barrier_note": "要下載安裝桌面程式，自己準備代理節點跟 Claude 帳號，操作上還會用到終端機",
+  "limitations": "共享專案的修改會直接改到本機檔案；不支援 Intel Mac 和 ARM64 Windows/Linux；作者表示無法保證帳號不會被限制",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "65a17e332c6d60d39709",
+ "repo_id": 1460469810,
+ "full_name": "krisgfx9/Wireless-Device-Battery-Monitor",
+ "created_at": "2026-11-18T09:01:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "143cf703ce1c911740755753d08a70e81fe28bc6a56181b70395353057d71c76",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在 Windows 工作列上顯示無線滑鼠、耳機、鍵盤和手把的電量",
+  "features": [
+   "工作列顯示電量，低電量變紅、充電顯示閃電",
+   "不用開原廠軟體，直接讀取裝置電量",
+   "支援 Logitech、Razer、Xbox 等多家品牌與藍牙裝置"
+  ],
+  "audience": "使用 Windows 10/11、有無線滑鼠、耳機、鍵盤或遊戲手把的玩家與一般使用者",
+  "use_cases": [
+   "玩全螢幕遊戲時，從工作列隨時看耳機和滑鼠剩多少電",
+   "電量降到 15% 時收到低電量通知，提早充電",
+   "不想常駐 G HUB、Synapse 等原廠軟體也能看電量"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載 WirelessBattery-Setup 安裝檔執行即可，不需要系統管理員權限",
+  "limitations": "僅支援 Windows 10/11；部分型號未測試；ATK 耳機需關閉 ATK 官方軟體；不支援的裝置需用 --dump 回報",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

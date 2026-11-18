@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f6b2a078774a6592de25",
+ "repo_id": 1423101235,
+ "full_name": "Gathin23/cleanyourtv",
+ "created_at": "2026-11-18T09:00:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2e8a2a6475322703516d042e7f007a4acf199108a1c877f9e5966f84a7ec3a40",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "透過 Wi-Fi 清掉 Android／Google TV 的預裝軟體，換上 Apple TV 風格主畫面",
+  "features": [
+   "停用廠商的追蹤、廣告與預裝軟體，不解除安裝",
+   "安裝仿 Apple TV 風格的簡潔主畫面 launcher",
+   "一行指令就能還原，也支援佈景主題切換"
+  ],
+  "audience": "家裡有 Android TV 或 Google TV，想要去除廣告和追蹤、會用 AI 程式助理或命令列的人",
+  "use_cases": [
+   "讓 AI 程式助理約 15 分鐘幫電視備份、清理並換上新主畫面",
+   "關閉 Sony、TCL、小米等電視的推薦內容列與資料回傳",
+   "韌體更新後檢查被恢復的軟體並重新停用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需與電視同一 Wi-Fi，裝 Python 3、JDK、Android SDK，並用命令列或 AI 助理",
+  "limitations": "Fire TV 只能清理、不能換主畫面；部分中國市場 TCL 不能裝 launcher；Samsung、LG、Roku 等不支援",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "23d34093fee56977234c",
+ "repo_id": 1460417668,
+ "full_name": "sybil-solutions/inference-optimisation-skill",
+ "created_at": "2026-11-18T09:01:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "20271811469db0704cb7f745c773df2f297aa371b8bc8bc646b9d40f763356ae",
+ "has_readme": true,
+ "readme_chars": 6306,
+ "content": {
+  "one_liner": "讓 AI 助理一步步調校本機 LLM 伺服器，提升回應與生成速度的技能包",
+  "features": [
+   "先算出硬體理論速度上限，再逐項調整並測量",
+   "內建測速腳本，可測解碼、預填、首字延遲與記憶體",
+   "記錄成敗結果，並以長上下文穩定性測試把關"
+  ],
+  "audience": "在自己電腦或伺服器上跑大型語言模型、想讓速度更快的開發者與技術玩家",
+  "use_cases": [
+   "請 Claude Code 在記憶體上限內調校本機模型的解碼與預填速度",
+   "估算某個模型在自己機器上理論最快能跑多少 tok/s",
+   "用測速腳本比較 vLLM、SGLang 等引擎設定的效能差異"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要已架好的本機 LLM 伺服器、Claude Code 等 agent，並會用命令列與 Python",
+  "limitations": "作者表示測量誤差約 ±5～10%，需交錯對照並取中位數；速度上限受硬體限制，成果數據為作者自述",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

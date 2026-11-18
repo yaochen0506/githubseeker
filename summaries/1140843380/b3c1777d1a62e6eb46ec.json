@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b3c1777d1a62e6eb46ec",
+ "repo_id": 1140843380,
+ "full_name": "mvanhorn/last30days-skill",
+ "created_at": "2026-11-18T09:00:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "05aa73c3c72bd524120012b9bac7b68b85a2d3505073f63f10c77584fbabbf64",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 助理到 Reddit、X、YouTube 等平台搜尋近 30 天的討論，整理成一份重點摘要",
+  "features": [
+   "同時搜尋 Reddit、X、YouTube、Polymarket 等多個來源",
+   "依按讚數、投票數、預測市場賠率等互動資料排序",
+   "探索模式可找出正在快速竄紅的話題"
+  ],
+  "audience": "會使用 Claude Code 等 AI 程式助理，想快速掌握人物、公司或話題近期動態的人",
+  "use_cases": [
+   "開會或業務拜訪前，先了解對方近 30 天在社群上的動態",
+   "比較幾款工具在社群上的評價與 GitHub 星數",
+   "出遊前查看景點近期的社群討論，例如設施關閉或排隊時間"
+  ],
+  "barrier": "code",
+  "barrier_note": "要在 Claude Code、Codex 等 AI 工具裡用命令安裝；部分來源需要另外申請 API 金鑰或登入帳號",
+  "limitations": "能用哪些來源取決於帳號憑證、有沒有裝相關工具，以及使用者是否開啟；部分來源像 Amazon 會用掉付費額度",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b06d737566b00513e923",
+ "repo_id": 1288067014,
+ "full_name": "3441293738/creatorhub",
+ "created_at": "2026-11-18T09:02:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9ea7cdcdcde3bc341f68ff4e8515c3c86f9b7bd8bddebea83f389776734d02e1",
+ "has_readme": true,
+ "readme_chars": 1605,
+ "content": {
+  "one_liner": "在自己電腦上用一個網頁面板，管理抖音、小紅書、快手、視訊號、TikTok 的內容",
+  "features": [
+   "監控作品與留言，批次採集內容",
+   "下載影片素材，發布作品",
+   "管理多平台帳號與私訊互動"
+  ],
+  "audience": "經營抖音、小紅書、TikTok 等多個平台帳號的創作者或社群小編",
+  "use_cases": [
+   "用關鍵字採集小紅書筆記或 TikTok 影片",
+   "監控抖音作品的留言與彈幕",
+   "把下載的素材發布到其他平台"
+  ],
+  "barrier": "install",
+  "barrier_note": "Windows 10/11 可下載安裝檔直接使用；macOS、Linux 需要 Python 3.10+ 從原始碼執行",
+  "limitations": "視訊號只能處理自己帳號的內容；TikTok 只支援單支影片發布，不支援圖文和直播；使用時須遵守平台規則與版權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

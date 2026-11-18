@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "078dadb1ea7e79a52b2c",
+ "repo_id": 834369920,
+ "full_name": "jingyaogong/minimind",
+ "created_at": "2026-11-18T09:01:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "325fe2dd092822697254a0892fd18a8df9e8c148ef472e4309d5d0cbc3595d04",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "教你從零開始，用個人 GPU 訓練一個約 64M 參數的迷你語言模型",
+  "features": [
+   "提供預訓練、微調、LoRA、強化學習等完整訓練流程",
+   "核心演算法用 PyTorch 原生實作，方便逐行理解",
+   "開源訓練資料集，並附聊天網頁介面與 API 服務端"
+  ],
+  "audience": "想從底層了解大型語言模型如何訓練的學生、研究者與開發者",
+  "use_cases": [
+   "當作 LLM 入門教材，親手跑一次從預訓練到對話模型的流程",
+   "用自己的資料微調出特定領域的小模型，例如醫療範例",
+   "將訓練好的模型接到 Open-WebUI 等聊天介面測試"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python、PyTorch 與命令列操作，訓練建議使用 NVIDIA GPU",
+  "limitations": "作者表示 2 小時是單張 3090 跑完 SFT 一輪的耗時；沒有 CUDA 也能用 CPU 或 MPS，但速度差很多；MoE 訓練較慢",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

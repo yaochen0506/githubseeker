@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "0a0c3bc762735b95b735",
+ "repo_id": 1450963843,
+ "full_name": "huamidev/GestaltX",
+ "created_at": "2026-11-18T09:02:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "cdcb95195c72f1339419426d6fb31971aaced406a6ea29a1a196ae613ed5132a",
+ "has_readme": true,
+ "readme_chars": 8046,
+ "content": {
+  "one_liner": "讓 iPhone、iPad 使用者修改系統 MobileGestalt 設定的 iOS 27 App",
+  "features": [
+   "修改地區碼、嘗試開啟 Apple Intelligence 等預設選項",
+   "手動編輯欄位，並可匯入或匯出 plist 檔",
+   "寫入前會自動備份，也能還原各項修改"
+  ],
+  "audience": "熟悉 iOS 側載與系統調整、願意自行承擔風險的 iPhone 與 iPad 進階使用者",
+  "use_cases": [
+   "修改地區碼，嘗試在中國大陸機型上開啟 Apple Intelligence",
+   "開啟動態島、Always-On Display 等顯示相關功能旗標",
+   "硬體偽裝造成 Face ID 或聽寫故障時，用備份還原"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要下載 IPA，再用 SideStore 或 AltStore 等工具簽署並側載到 iOS 27 裝置",
+  "limitations": "只支援 iOS／iPadOS 27.x；修改後可能讓系統不穩定，甚至需要重新還原裝置；實際效果依機型與系統而定",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

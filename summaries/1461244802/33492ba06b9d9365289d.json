@@ -1,0 +1,31 @@
+{
+ "schema_version": "1",
+ "cache_key": "33492ba06b9d9365289d",
+ "repo_id": 1461244802,
+ "full_name": "gylive/google-ultra",
+ "created_at": "2026-11-18T09:00:56+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "bb085b7c5a28c69de9d488296366b3e898bd20d61555fded57cd5ea7bd2e631b",
+ "has_readme": true,
+ "readme_chars": 3877,
+ "content": {
+  "one_liner": "作者表示能叫出 Google One AI Ultra 隱藏的 12 個月免費試用方案並開通",
+  "features": [
+   "簡易版：單一網頁檔，登入、綁卡後點一下即可",
+   "腳本版：用 root 手機與 Frida 查詢方案並自動開通",
+   "自動檢查結帳金額，不符資格時不會按訂閱"
+  ],
+  "audience": "想試用 Google AI Ultra，且能承擔帳號風險的進階使用者或安全研究者",
+  "use_cases": [
+   "用自己的 Google 帳號申請 Ultra 20TB 方案的 12 個月 0 元試用",
+   "研究 Google Play 結帳流程在手機端的行為"
+  ],
+  "barrier": "install",
+  "barrier_note": "簡易版用瀏覽器開網頁檔並綁信用卡；腳本版需要 root 手機、adb、Python 3.9 與命令列",
+  "limitations": "可能違反 Google 服務條款導致帳號被封；每個帳號大多只有一次機會；到期前沒取消會被收每月 US$99.99；30TB 方案多半不符資格",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

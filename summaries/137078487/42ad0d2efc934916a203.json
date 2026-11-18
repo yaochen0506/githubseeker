@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "42ad0d2efc934916a203",
+ "repo_id": 137078487,
+ "full_name": "vuejs/core",
+ "created_at": "2026-11-18T09:03:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3768e3987abd77c7e808715aada3c6342a995dc584cc1fbb9e6628203df935f0",
+ "has_readme": true,
+ "readme_chars": 1271,
+ "content": {
+  "one_liner": "Vue.js 的核心程式碼，一套用來製作網頁使用者介面的 JavaScript 框架",
+  "features": [
+   "用來建立網頁上的使用者介面",
+   "可以逐步導入，不必一次全部改用",
+   "以 TypeScript 撰寫，採 MIT 授權開源"
+  ],
+  "audience": "網頁前端工程師與想學習製作網頁介面的開發者",
+  "use_cases": [
+   "開發網站或網頁應用程式的操作介面",
+   "在既有網頁中逐步加入互動功能"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 JavaScript 並熟悉網頁開發，詳細用法要看官方文件",
+  "limitations": "這個 repo 的 issue 只收錯誤回報與功能建議，使用問題請到官方論壇或社群聊天室詢問",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "a73e591ec2bb90ca93a6",
+ "repo_id": 152870372,
+ "full_name": "ruanyf/weekly",
+ "created_at": "2026-11-18T09:03:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ebdebc4ab75d0d1c01aad21b5615a4ab0ccab3b5acf6a940433b4e9d6d020140",
+ "has_readme": true,
+ "readme_chars": 10055,
+ "content": {
+  "one_liner": "每週五出刊的中文科技週刊，整理每週值得分享的科技內容",
+  "features": [
+   "每週五發布一期，從 2018 年累積至今已超過 400 期",
+   "每期有主題文章，內容涵蓋 AI、軟體、產業與社會",
+   "討論區設有免費的程式設計師徵才專區「誰在招人」"
+  ],
+  "audience": "對科技趨勢、AI 與軟體產業有興趣的讀者，以及在找工作或想徵才的程式設計師",
+  "use_cases": [
+   "每週閱讀一期，掌握科技與 AI 的最新話題",
+   "依年份與月份翻閱過去的期數，找有興趣的主題",
+   "透過「誰在招人」免費刊登或查看工作、實習職缺"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在網頁上閱讀就好；想投稿要用 GitHub 帳號提交 issue",
+  "limitations": "README 未說明；內容用簡體中文撰寫",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

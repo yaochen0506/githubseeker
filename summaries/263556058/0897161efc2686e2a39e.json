@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0897161efc2686e2a39e",
+ "repo_id": 263556058,
+ "full_name": "521xueweihan/GitHub520",
+ "created_at": "2026-11-18T09:03:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3142c272d01fdd240b844058326f7fe9394e05583fedfdb4ef6f412719329c33",
+ "has_readme": true,
+ "readme_chars": 2543,
+ "content": {
+  "one_liner": "提供定時更新的 hosts 內容，改善 GitHub 載入慢、圖片顯示不出來的問題",
+  "features": [
+   "提供會自動定時更新的 GitHub hosts 內容",
+   "支援手動貼上、SwitchHosts 或 AdGuard 自動更新",
+   "提供各系統的一行指令，可排程定時執行"
+  ],
+  "audience": "常用 GitHub 但遇到網頁載入慢或圖片破圖的使用者",
+  "use_cases": [
+   "瀏覽 GitHub 專案時圖片顯示不出來，修改 hosts 後改善",
+   "用 SwitchHosts 設定每小時自動更新 hosts",
+   "在 AdGuard 加入自訂清單，讓多台裝置自動套用"
+  ],
+  "barrier": "install",
+  "barrier_note": "不用安裝程式，但要用管理員權限修改系統 hosts 檔，手機需 root 或越獄",
+  "limitations": "作者表示仍在測試階段，只在作者電腦上測試通過；iPhone 需越獄、Android 需 root；伺服器將於 2026-12-31 到期",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

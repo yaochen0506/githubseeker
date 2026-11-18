@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "cc16190d7cfe91bab592",
+ "repo_id": 1354310030,
+ "full_name": "lnkiai/m3e-canvas",
+ "created_at": "2026-11-18T09:02:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3132d9a5eb68a6ff2daf509abde9fe6888f1d664c567a88bee35dd09535c3d33",
+ "has_readme": true,
+ "readme_chars": 7169,
+ "content": {
+  "one_liner": "在瀏覽器裡拖拉畫出 App 畫面，再轉成給 AI 寫程式工具用的提示詞",
+  "features": [
+   "用 Material 3 Expressive 元件拖拉排版手機與桌面畫面",
+   "連結畫面並預覽點擊、滑動與轉場流程",
+   "一鍵產生中英日韓提示詞，可分享連結"
+  ],
+  "audience": "想做 App 但不熟設計工具的人、產品企劃，以及使用 Claude Code、Cursor 等 AI 工具的開發者",
+  "use_cases": [
+   "先畫出 App 草圖與操作流程，再把提示詞貼給 Cursor 或 Claude Code 產生 App",
+   "調整色彩、字型、圓角等主題，快速試出 Material 3 風格",
+   "把設計存成 PNG 或分享連結給團隊討論"
+  ],
+  "barrier": "online",
+  "barrier_note": "作者表示完全在瀏覽器執行，不需帳號或安裝；AI 輔助功能需自備 API 金鑰",
+  "limitations": "完整編輯器需用桌面瀏覽器，手機版只有單一固定畫面和簡化編輯；產生 App 仍要另外使用 AI 寫程式工具",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

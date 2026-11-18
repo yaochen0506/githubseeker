@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-17T09:54:24+08:00",
+ "updated_at": "2026-11-18T09:00:03+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -1149,6 +1149,12 @@
    "full_name": "Marker-Inc-Korea/AutoRAG",
    "classified_at": "2026-11-08T05:54:03+08:00"
   },
+  "753589979": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "karakeep-app/karakeep",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "770153867": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1209,11 +1215,23 @@
    "full_name": "CodebuffAI/freebuff",
    "classified_at": "2026-11-10T09:35:36+08:00"
   },
+  "834369920": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "jingyaogong/minimind",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "836976013": {
    "category": "security-network",
    "exclude_reason": null,
    "full_name": "mihomo-party-org/clash-party",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "839037098": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "mastra-ai/mastra",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "847231566": {
    "category": "ai-models",
@@ -1389,6 +1407,12 @@
    "full_name": "ruvnet/ruflo",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "997220241": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "HKUDS/RAG-Anything",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "997737944": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1479,6 +1503,12 @@
    "full_name": "Fission-AI/OpenSpec",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1032808806": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "usestrix/strix",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "1040940947": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1502,6 +1532,12 @@
    "exclude_reason": null,
    "full_name": "thedotmack/claude-mem",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1053292493": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "dograh-hq/dograh",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "1054793726": {
    "category": "ai-agents",
@@ -1604,6 +1640,12 @@
    "exclude_reason": null,
    "full_name": "oaustegard/claude-skills",
    "classified_at": "2026-11-13T07:41:34+08:00"
+  },
+  "1078079172": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "ComposioHQ/awesome-claude-skills",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "1078528927": {
    "category": "dev-tools",
@@ -1796,6 +1838,12 @@
    "exclude_reason": null,
    "full_name": "bkerler/mtkclient",
    "classified_at": "2026-11-17T09:54:24+08:00"
+  },
+  "1140229822": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "cursor/plugins",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "1140828898": {
    "category": "ai-agents",
@@ -2229,6 +2277,12 @@
    "full_name": "Orkas-AI/Orkas",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1226123343": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "virgiliojr94/book-to-skill",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "1226205410": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -2402,6 +2456,12 @@
    "exclude_reason": null,
    "full_name": "elder-plinius/T3MP3ST",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1288067014": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "3441293738/creatorhub",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "1291896819": {
    "category": "ai-agents",
@@ -2655,6 +2715,12 @@
    "full_name": "JiaFeiMiao-K-Cat/DiscImageStudio",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1354310030": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "lnkiai/m3e-canvas",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
   "1356077516": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2834,6 +2900,12 @@
    "exclude_reason": null,
    "full_name": "valentderah/totk-pc-recomp",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1438478196": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "RoutineMiku/apkstart",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   },
   "1438540053": {
    "category": "ai-agents",
@@ -3194,6 +3266,30 @@
    "exclude_reason": null,
    "full_name": "weldbladesmithwharf/Gemini-Config-Checker-",
    "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1459971684": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "erkamyaman/rust-anything",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
+  "1460417668": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "sybil-solutions/inference-optimisation-skill",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
+  "1460469810": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "krisgfx9/Wireless-Device-Battery-Monitor",
+   "classified_at": "2026-11-18T09:00:03+08:00"
+  },
+  "1461244802": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "gylive/google-ultra",
+   "classified_at": "2026-11-18T09:00:03+08:00"
   }
  }
 }

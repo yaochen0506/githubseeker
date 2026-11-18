@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7ce94ca2a7d38df281dc",
+ "repo_id": 24195339,
+ "full_name": "angular/angular",
+ "created_at": "2026-11-18T09:03:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0f26ae736e60111e0688628248fcf790c5e957c82983833cdd5abf930b5da4a0",
+ "has_readme": true,
+ "readme_chars": 2251,
+ "content": {
+  "one_liner": "Google 推出的網頁開發平台，用 TypeScript 打造手機與桌面網頁應用程式",
+  "features": [
+   "以元件與範本建構網頁介面",
+   "支援伺服器端渲染、延遲載入與動畫",
+   "提供 Angular CLI 與 Material 等工具"
+  ],
+  "audience": "會寫 TypeScript 或 JavaScript 的網頁前端工程師與開發團隊",
+  "use_cases": [
+   "開發可在手機與桌面瀏覽器使用的網頁應用程式",
+   "建立含表單與多頁面的大型網站",
+   "可能用於製作 PWA 漸進式網頁應用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Node.js 與 npm，並用命令列操作 Angular CLI、撰寫程式",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

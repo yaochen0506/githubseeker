@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "499f03420da695d0e726",
+ "repo_id": 1450012790,
+ "full_name": "jhaizhou-ops/S2Arm",
+ "created_at": "2026-11-18T09:02:46+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "25ae755fb1778ef0444fd3843b5805586edf51802bf28952c6c702ef965919fe",
+ "has_readme": true,
+ "readme_chars": 10202,
+ "content": {
+  "one_liner": "把你自己擁有的 Switch 遊戲轉成原生程式，在 iPhone、iPad 和 Mac 上玩",
+  "features": [
+   "建置時把遊戲程式碼改寫成 ARM64，畫面直接交給 Metal 處理",
+   "所有遊戲都收在同一個 App 裡，只佔一個簽署名額",
+   "提供 Mac 與 Windows 圖形化啟動器，也能讓 AI 助理代為操作"
+  ],
+  "audience": "擁有 Switch 遊戲檔和金鑰，想在 Apple 裝置上玩這些遊戲的玩家",
+  "use_cases": [
+   "把自己合法取得的 Switch 遊戲匯入後，安裝到 iPhone 或 iPad 上玩",
+   "在 Apple silicon 的 Mac 上直接建置並遊玩遊戲",
+   "遊戲出現畫面或卡頓問題時，請 AI 助理收集診斷資料並嘗試修正"
+  ],
+  "barrier": "install",
+  "barrier_note": "需安裝 Mac 或 Windows 啟動器；Mac 建置 iPhone 版需 Xcode 與 Apple ID",
+  "limitations": "遊戲和金鑰要自備；不支援 32 位元遊戲和需要 36 位元位址空間的遊戲；Beta 版的存檔不會自動轉移，更新前請先備份",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
