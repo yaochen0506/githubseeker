@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "13e51e276317ec09c870",
+ "repo_id": 1140229822,
+ "full_name": "cursor/plugins",
+ "created_at": "2026-11-19T08:26:50+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "17d0b2cfc61c5e9f18d690dbfe28e283eb1928b3f6f87eba8b6b708159b360ea",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "Cursor 官方外掛合集，讓 AI 編輯器串接 Gmail、Google 文件、CRM 等常用服務",
+  "features": [
+   "收錄數十個官方外掛，每個都有自己的設定檔",
+   "串接 Gmail、Google 日曆、Salesforce 等服務",
+   "提供程式碼審查、平行 AI 代理等開發工具"
+  ],
+  "audience": "使用 Cursor 編輯器的開發者，以及想讓 AI 幫忙處理信件、文件、業務資料的使用者",
+  "use_cases": [
+   "在 Cursor 裡讓 AI 搜尋、閱讀和草擬 Gmail 信件",
+   "讓 AI 查詢 Google Analytics 報表或 Salesforce 紀錄",
+   "用 Create Plugin 外掛建立並驗證新的外掛"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要安裝 Cursor 編輯器，串接服務時可能需要該服務的帳號",
+  "limitations": "README 未說明；部分外掛標示為 Beta 版，例如 Salesforce Headless 360",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

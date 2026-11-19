@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-18T09:00:03+08:00",
+ "updated_at": "2026-11-19T08:26:04+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -14,6 +14,12 @@
    "exclude_reason": null,
    "full_name": "internetarchive/openlibrary",
    "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "167174": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "jquery/jquery",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "458058": {
    "category": "dev-tools",
@@ -56,6 +62,12 @@
    "exclude_reason": null,
    "full_name": "psf/requests",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "3638964": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "ansible/ansible",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "4164482": {
    "category": "dev-tools",
@@ -129,6 +141,12 @@
    "full_name": "lz4/lz4",
    "classified_at": "2026-11-06T07:41:09+08:00"
   },
+  "19745004": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "odoo/odoo",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "24195339": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -177,6 +195,12 @@
    "full_name": "RocketChat/Rocket.Chat",
    "classified_at": "2026-11-13T07:41:34+08:00"
   },
+  "40081991": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "digoal/blog",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "41881900": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -206,6 +230,12 @@
    "exclude_reason": null,
    "full_name": "xifangczy/cat-catch",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "54173593": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "storybookjs/storybook",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "54346799": {
    "category": "learning",
@@ -380,6 +410,12 @@
    "exclude_reason": null,
    "full_name": "ruanyf/weekly",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "153097643": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "openvinotoolkit/openvino",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "155220641": {
    "category": "ai-models",
@@ -608,6 +644,12 @@
    "exclude_reason": null,
    "full_name": "shadow1ng/fscan",
    "classified_at": "2026-11-06T07:41:09+08:00"
+  },
+  "313549939": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "knownsec/404StarLink",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "319167362": {
    "category": "everyday-tools",
@@ -1119,6 +1161,12 @@
    "full_name": "TheNetsky/Microsoft-Rewards-Script",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "699532645": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "astral-sh/uv",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "722184017": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -1293,6 +1341,12 @@
    "full_name": "PrefectHQ/fastmcp",
    "classified_at": "2026-11-16T06:51:53+08:00"
   },
+  "896335270": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "punkpeye/awesome-mcp-servers",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "896924279": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1317,11 +1371,23 @@
    "full_name": "ashishpatel26/500-AI-Agents-Projects",
    "classified_at": "2026-11-11T07:26:16+08:00"
   },
+  "907125224": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Viren070/AIOStreams",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "909213664": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "TauricResearch/TradingAgents",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "924058625": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "vllm-project/vllm-ascend",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "931888694": {
    "category": "everyday-tools",
@@ -1532,6 +1598,12 @@
    "exclude_reason": null,
    "full_name": "thedotmack/claude-mem",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "1053118194": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "bojieli/ai-agent-book",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "1053292493": {
    "category": "ai-agents",
@@ -1839,6 +1911,12 @@
    "full_name": "bkerler/mtkclient",
    "classified_at": "2026-11-17T09:54:24+08:00"
   },
+  "1137078255": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "colbymchenry/codegraph",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "1140229822": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1856,6 +1934,12 @@
    "exclude_reason": null,
    "full_name": "mvanhorn/last30days-skill",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1141663444": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "esengine/estella",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "1141782198": {
    "category": "ai-models",
@@ -2024,6 +2108,12 @@
    "exclude_reason": null,
    "full_name": "block/buzz",
    "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1176011916": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "HKUDS/CLI-Anything",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "1177402105": {
    "category": "fun-creative",
@@ -2349,6 +2439,12 @@
    "full_name": "opengeos/GeoLibre",
    "classified_at": "2026-11-10T09:35:36+08:00"
   },
+  "1255092568": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Dodaios/Dodaios",
+   "classified_at": "2026-11-19T08:26:04+08:00"
+  },
   "1258301311": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2372,6 +2468,12 @@
    "exclude_reason": null,
    "full_name": "eneskirca/nodeterm",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1271113810": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "vercel/eve",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "1273015953": {
    "category": "everyday-tools",
@@ -3098,6 +3200,12 @@
    "exclude_reason": null,
    "full_name": "deepseek-ai/chat-demo",
    "classified_at": "2026-11-16T06:51:53+08:00"
+  },
+  "1455374283": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Noniv/abyssal-garden",
+   "classified_at": "2026-11-19T08:26:04+08:00"
   },
   "1455416555": {
    "category": "ai-agents",

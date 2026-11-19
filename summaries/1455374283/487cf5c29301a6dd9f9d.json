@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "487cf5c29301a6dd9f9d",
+ "repo_id": 1455374283,
+ "full_name": "Noniv/abyssal-garden",
+ "created_at": "2026-11-19T08:27:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a444860314cbd22efb993b010d322864c336ecceb98511140f5ee870fc2ee575",
+ "has_readme": true,
+ "readme_chars": 5928,
+ "content": {
+  "one_liner": "在瀏覽器裡就能自由潛游的夢幻海底世界，全部由程式碼即時生成",
+  "features": [
+   "搖曳的海帶森林、光束、沉船與魟魚等海底景觀",
+   "用鍵盤滑鼠或觸控螢幕自由游動探索",
+   "即時合成的環境音效，可切換高中低畫質"
+  ],
+  "audience": "想放鬆欣賞海底風景的一般人，以及對 WebGPU 繪圖技術有興趣的開發者",
+  "use_cases": [
+   "下載單一 HTML 檔，在電腦上離線潛游欣賞海底景色",
+   "按數字鍵 1 到 6 快速跳到不同景點觀賞",
+   "會寫程式的人可修改原始碼，調整水色、光線或游泳速度"
+  ],
+  "barrier": "online",
+  "barrier_note": "下載 index.html 後，用支援 WebGPU 的 Chrome 或 Edge 開啟即可",
+  "limitations": "需支援 WebGPU 的瀏覽器，建議桌機 Chrome 或 Edge；觸控支援仍屬實驗性，低階手機畫面較不流暢",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

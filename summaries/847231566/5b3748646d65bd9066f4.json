@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "5b3748646d65bd9066f4",
+ "repo_id": 847231566,
+ "full_name": "a-ghorbani/pocketpal-ai",
+ "created_at": "2026-11-19T08:27:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "07fd90b1ee65c056e049e912db21d9321c7fcf68c822f32c724e6c00ca618099",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在手機上離線執行 AI 語言模型的聊天 App，對話資料留在手機裡",
+  "features": [
+   "離線執行 Gemma、Qwen、Llama 等 GGUF 模型聊天",
+   "語音輸入與語音朗讀，都在手機上處理",
+   "自訂 AI 角色（Pals），可呼叫計算機等工具"
+  ],
+  "audience": "重視隱私、想在手機上離線使用 AI 助理的一般使用者，以及想測試手機 AI 效能的人",
+  "use_cases": [
+   "搭飛機或在山上沒有網路時，用手機跟 AI 聊天",
+   "不想讓對話內容上傳雲端，在手機上私下詢問 AI",
+   "測試自己手機跑 AI 模型的速度與記憶體用量"
+  ],
+  "barrier": "online",
+  "barrier_note": "從 App Store 或 Google Play 下載 App，再下載模型即可使用，不需帳號",
+  "limitations": "模型須挑選適合手機記憶體與儲存空間的版本；免持語音對話與本機 API 伺服器在商店版需一次性購買 Plus",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

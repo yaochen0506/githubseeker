@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2bdb744f5b042af1227b",
+ "repo_id": 1438478196,
+ "full_name": "RoutineMiku/apkstart",
+ "created_at": "2026-11-19T08:26:56+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "295daf3f7d3ddfda127f398d15bd35107018e3f8933ba41079df8ae8649745a2",
+ "has_readme": true,
+ "readme_chars": 10278,
+ "content": {
+  "one_liner": "在 Windows 上點兩下 APK 就能安裝，讓 Android App 像一般軟體用獨立視窗執行",
+  "features": [
+   "點兩下 APK 自動安裝並建立桌面與開始功能表捷徑",
+   "每個 App 用獨立視窗執行，可全螢幕或自由縮放",
+   "電腦與 Android 之間的共用資料夾會雙向同步"
+  ],
+  "audience": "想在 Windows 電腦上使用手機 App、又不想操作模擬器介面的一般使用者",
+  "use_cases": [
+   "在電腦上用獨立視窗看短劇類 App 的影片",
+   "把 Android App 存下的檔案直接在 Windows 資料夾裡取用",
+   "從開始功能表搜尋 App 名稱，像一般軟體一樣開啟"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載安裝包或便攜版即可，建議開啟硬體加速，有時需要管理員權限或重新開機",
+  "limitations": "作者表示仍是早期版本、還不太好用；完整版約 1.3 GB，預熱常駐約 1 GB 記憶體；部分 App 有反模擬偵測可能無法執行",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

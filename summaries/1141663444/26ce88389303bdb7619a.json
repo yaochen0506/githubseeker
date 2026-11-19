@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "26ce88389303bdb7619a",
+ "repo_id": 1141663444,
+ "full_name": "esengine/estella",
+ "created_at": "2026-11-19T08:26:10+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "05e3413302465dbbd7e3f82d66584efc77da95d0e1dbb5ebdcce1ac340b7cbc9",
+ "has_readme": true,
+ "readme_chars": 7865,
+ "content": {
+  "one_liner": "可讓 AI 助理直接操作編輯器來做遊戲的 2D/3D 遊戲引擎",
+  "features": [
+   "編輯器內建 MCP，AI 可用 167 個工具做遊戲",
+   "AI 可產生圖片、音效、音樂與 3D 模型",
+   "一個專案匯出到網頁、小遊戲、桌面與手機"
+  ],
+  "audience": "遊戲開發者、想用 AI 助理協助做遊戲的人，以及要做小遊戲或試玩廣告的團隊",
+  "use_cases": [
+   "連接 Claude Code 或 Cursor，讓 AI 在編輯器裡建立場景並試玩",
+   "把同一款遊戲發佈到微信等小遊戲平台與 Android / iOS",
+   "製作可上架各大廣告網路的單一檔案試玩廣告"
+  ],
+  "barrier": "code",
+  "barrier_note": "編輯器可在 Windows 或 macOS 下載，但遊戲邏輯要用 TypeScript 撰寫",
+  "limitations": "編輯器免費但不開源；不接受 pull request；使用 Spine 整合需自行取得 Spine 授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

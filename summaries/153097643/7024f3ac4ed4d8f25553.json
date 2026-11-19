@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7024f3ac4ed4d8f25553",
+ "repo_id": 153097643,
+ "full_name": "openvinotoolkit/openvino",
+ "created_at": "2026-11-19T08:27:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "de304ad17f8e63bb20b3152925f1449473028b20d9f59678bb420de7b78da86f",
+ "has_readme": true,
+ "readme_chars": 5996,
+ "content": {
+  "one_liner": "開源工具套件，把 AI 模型最佳化後部署到各種硬體上更快地執行",
+  "features": [
+   "支援 PyTorch、TensorFlow、ONNX 等框架的模型",
+   "可在 CPU、Intel GPU 與 NPU 上執行推論",
+   "提供 C++、Python、C、NodeJS 等 API"
+  ],
+  "audience": "需要部署 AI 模型的開發者、AI 工程師與研究人員，特別是使用 Intel 硬體者",
+  "use_cases": [
+   "在本機電腦執行 LLM 聊天機器人",
+   "最佳化 YOLO 物件偵測模型，提升影像辨識速度",
+   "用 Whisper 模型做語音辨識，或執行文字生成圖片"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列安裝，並以 Python 或 C++ 等程式語言撰寫程式碼呼叫",
+  "limitations": "預設會收集軟體效能與使用資料（含 Google Analytics 4），可用指令關閉；GPU、NPU 支援以 Intel 硬體為主",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

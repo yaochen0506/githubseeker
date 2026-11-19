@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "3c8447a90954a3fe17c3",
+ "repo_id": 1179388779,
+ "full_name": "ethanplusai/sellbird",
+ "created_at": "2026-11-19T08:26:38+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "76513b552637585d90b810127cb427d3d97a647daf4727ed0928c02313e5753a",
+ "has_readme": true,
+ "readme_chars": 8154,
+ "content": {
+  "one_liner": "用 Claude 或 ChatGPT 方案，自動找潛在客戶、寫開發信並寄出的開源工具",
+  "features": [
+   "找出目標公司與決策者，並驗證 Email 地址",
+   "依蒐集到的資料撰寫個人化開發信並寄出",
+   "讀取回信、草擬回覆，並立即處理退訂要求"
+  ],
+  "audience": "需要用 Email 開發新客戶的業務、創業者或小公司，且已有 Claude 或 ChatGPT 付費方案",
+  "use_cases": [
+   "找出符合條件的店家或公司，寄送個人化的開發信",
+   "只產出驗證過 Email 的潛在客戶名單，匯出成 CSV 檔",
+   "自動整理客戶回信，並草擬回覆內容"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上、命令列、Claude Code 或 Codex CLI，以及寄信用的信箱",
+  "limitations": "預設每封信都要先經使用者核准才會寄出；新信箱需要先暖機；付費資料來源要另外收費；官方代管版仍在搶先體驗階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

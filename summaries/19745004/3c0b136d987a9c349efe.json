@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "3c0b136d987a9c349efe",
+ "repo_id": 19745004,
+ "full_name": "odoo/odoo",
+ "created_at": "2026-11-19T08:28:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3c9dc1b545bf2b50217449bd1ce21af95351a0cdf0b5a2cf96fea4e2d2ec7783",
+ "has_readme": true,
+ "readme_chars": 838,
+ "content": {
+  "one_liner": "一套開源的網頁版企業管理軟體，涵蓋客戶管理、電商、會計等功能",
+  "features": [
+   "包含 CRM、架站、電商、倉儲、會計、POS 等應用",
+   "各 App 可單獨使用，也能整合成完整 ERP",
+   "以網頁為基礎，開源可自行架設"
+  ],
+  "audience": "需要管理銷售、庫存、帳務、人資等營運流程的中小企業與其 IT 人員",
+  "use_cases": [
+   "用 CRM 管理客戶與業務機會",
+   "架設網站與網路商店並管理倉儲庫存",
+   "處理開立帳單、會計與門市 POS 收銀"
+  ],
+  "barrier": "code",
+  "barrier_note": "需依官方文件自行在伺服器安裝設定，通常需要命令列操作能力",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

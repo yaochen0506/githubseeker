@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ee58e60019d7e7b4a4e7",
+ "repo_id": 1458091062,
+ "full_name": "toppatronweave/ai--manus2.0",
+ "created_at": "2026-11-19T08:27:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9982d1e381add87c3a43fd34bcbc97f3756646fcbca3a6581259617ee6a31466",
+ "has_readme": true,
+ "readme_chars": 6929,
+ "content": {
+  "one_liner": "一個 AI 代理程式，作者表示能自己執行程式碼、操作瀏覽器來完成任務",
+  "features": [
+   "作者表示可自動撰寫並執行程式碼",
+   "可操作瀏覽器：開網頁、填表單、蒐集資料",
+   "在沙盒環境中執行各種工具與操作"
+  ],
+  "audience": "作者表示適合學生、遠端工作者與處理小型專案的人，用於居家、學習與輕度工作",
+  "use_cases": [
+   "蒐集參考資料、整理研究筆記",
+   "從多個網頁蒐集資訊，整理成小型報告",
+   "可能用來自動填寫重複性的網頁表單"
+  ],
+  "barrier": "code",
+  "barrier_note": "README 沒有具體安裝方式或下載說明，實際門檻不明，保守判定需要技術能力",
+  "limitations": "README 沒有安裝指令、程式碼結構或要用哪個 AI 模型的說明，內容多為宣傳文字；完整操作瀏覽器需要較高權限",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "de09129f1c53931c994b",
+ "repo_id": 3638964,
+ "full_name": "ansible/ansible",
+ "created_at": "2026-11-19T08:29:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1e2872470df5ce72c63f038df7cbbb5b16a0e8680151d382a0edb589db9ea7ab",
+ "has_readme": true,
+ "readme_chars": 3728,
+ "content": {
+  "one_liner": "用接近白話英文的設定檔，自動部署與管理大量伺服器的 IT 自動化工具",
+  "features": [
+   "設定管理、應用程式部署與雲端資源建置",
+   "透過 SSH 操作，遠端機器不用另外安裝代理程式",
+   "可同時平行管理多台機器，支援網路自動化"
+  ],
+  "audience": "系統管理員、DevOps 工程師與需要管理多台伺服器或網路設備的 IT 人員",
+  "use_cases": [
+   "一次對多台伺服器部署應用程式或更新設定",
+   "搭配負載平衡器做不停機的輪流更新",
+   "自動化網路設備設定與雲端資源管理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 pip 或套件管理工具安裝，並透過命令列與撰寫設定檔操作",
+  "limitations": "devel 開發分支雖然大致穩定，但比較容易遇到不相容的變更",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "eb6a90baa37a6f650598",
+ "repo_id": 907125224,
+ "full_name": "Viren070/AIOStreams",
+ "created_at": "2026-11-19T08:28:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e5f64b01c6739104de5ce1e903c7ae12d4c8f0365ad294669b32561406821af3",
+ "has_readme": true,
+ "readme_chars": 11299,
+ "content": {
+  "one_liner": "把 Stremio 外掛、debrid 服務和 Usenet 來源整合成一份清單的影音工具",
+  "features": [
+   "依解析度、語言、大小等規則過濾、排序並去除重複",
+   "支援 80 多個社群外掛與多種 debrid、Usenet 服務",
+   "提供網頁、桌面、Android 與電視用的播放 App"
+  ],
+  "audience": "使用 Stremio 或 Jellyfin 看影片、已有 debrid 或 Usenet 帳號，想統一管理來源的使用者",
+  "use_cases": [
+   "用一個外掛取代 Stremio 裡多個外掛，統一顯示片源",
+   "在電視或手機 App 播放 debrid 片源，並看 IPTV 直播",
+   "自架後讓 Sonarr、Radarr 透過內建 Usenet 引擎串流"
+  ],
+  "barrier": "install",
+  "barrier_note": "可用免費公開服務在網頁設定，但需懂 Stremio 與 debrid 帳號；自架需 Docker 等環境",
+  "limitations": "搜尋 torrent 的內建外掛需 debrid 服務；Usenet 引擎等功能僅限自架；作者聲明不提供內容，使用者須自行遵守法律",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

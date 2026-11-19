@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b14966e6a846eff329f3",
+ "repo_id": 512334495,
+ "full_name": "firerpa/lamda",
+ "created_at": "2026-11-19T08:29:27+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e131ebc59edf75f8a2fd8d2a6ea9aeb85fafe1e581eedf51a9dfb94037410d71",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在 Android 手機上執行的全方位控制平台，可遠端操作、自動化、抓封包與逆向分析",
+  "features": [
+   "瀏覽器遠端桌面，支援 WebRTC/H.264 與多人同時連線",
+   "UI、OCR 與圖像比對自動化，另有一鍵 MITM 抓包",
+   "內建 Frida、代理與 VPN、MCP Server 與 AI Agent"
+  ],
+  "audience": "Android 自動化測試工程師、行動 App 資安與逆向分析人員、管理大量手機或雲手機的團隊",
+  "use_cases": [
+   "用瀏覽器遠端查看並操作手機，多人協作除錯或展示",
+   "批次管理多台手機或模擬器，長時間無人值守執行自動化任務",
+   "透過 MCP 讓 Claude、Cursor 等 AI 工具用自然語言操作手機"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在 Android 裝置部署服務（root 或 Shizuku），並在電腦端用 Python 撰寫程式",
+  "limitations": "部分功能有 Android 版本限制，如即時音訊需 Android 10 以上；部分網路服務為付費訂閱",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

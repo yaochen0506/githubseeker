@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "70f81635b5c9110054ab",
+ "repo_id": 924058625,
+ "full_name": "vllm-project/vllm-ascend",
+ "created_at": "2026-11-19T08:27:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6f2bb3c22ef1dd174b31bf132176b046a11dbfac4d3c5b5e198ea33cf96a562b",
+ "has_readme": true,
+ "readme_chars": 5844,
+ "content": {
+  "one_liner": "讓大型語言模型推論引擎 vLLM 能在華為 Ascend NPU 晶片上執行的外掛",
+  "features": [
+   "讓 vLLM 在華為 Ascend NPU 上運作",
+   "支援 Transformer、MoE、Embedding 及多模態模型",
+   "支援大規模 Expert Parallelism 部署"
+  ],
+  "audience": "使用華為 Ascend 硬體部署 AI 模型的工程師、MLOps 團隊與開發者",
+  "use_cases": [
+   "在 Ascend NPU 伺服器上部署開源大型語言模型提供服務",
+   "搭配 LLaMA-Factory、verl 等工具進行微調、評估與強化學習",
+   "在 Ascend 上執行 MoE 或多模態模型推論"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Ascend 硬體、Linux、Python 3.12、CANN 與 PyTorch 等環境，並使用命令列操作",
+  "limitations": "僅支援特定 Atlas 系列等 Ascend 硬體與 Linux，需搭配指定版本的 Python、CANN、PyTorch 及相同版本的 vLLM",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
