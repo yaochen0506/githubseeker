@@ -28,6 +28,23 @@
   {% endif %}
 </section>
 
+<section class="today" aria-labelledby="h-today">
+  <h2 id="h-today">{% if is_home %}今日清單{% else %}當日清單{% endif %}</h2>
+  <p class="hint">共 {{ edition.picks|length }} 個，其中 {{ edition.repeat_count }} 個以前入選過（標示「第 N 次」）。點名稱看完整介紹。</p>
+  {% for g in edition.today_list %}
+  <h3 class="today-group"><a href="#{{ g.anchor }}">{{ g.name }}</a></h3>
+  <ol class="today-list">
+    {% for p in g.picks %}
+    <li>
+      <a href="#repo-{{ p.repo_id }}">{{ p.full_name }}</a>
+      <span class="tag tag-{{ p.repeat_kind }}">{{ p.repeat_label }}</span>
+      <span class="today-line">{{ p.one_liner }}</span>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endfor %}
+</section>
+
 <section aria-labelledby="h-main">
   <h2 id="h-main">主榜</h2>
   <p class="hint">依每天新增星數排序（優先用本站實際觀測的數字），<a href="{{ root }}about/#how">選法說明</a>。</p>

@@ -29,6 +29,7 @@
     --chip: #232a32;
   }
   .barrier-online { background: #173a22; color: #9fe0b2; }
+  .tag-first { background: #173a22; color: #9fe0b2; }
   .barrier-install { background: #3a2f10; color: #f3d68a; }
   .barrier-code { background: #3d1d18; color: #f4ada3; }
 }
@@ -83,6 +84,24 @@ h2 { margin: 28px 0 4px; font-size: 1.25rem; }
 .cat-section { margin-top: 24px; scroll-margin-top: 12px; }
 .cat-title { margin: 0 0 2px; font-size: 1.1rem; }
 .cat-tag { flex: none; padding: 0 8px; border-radius: 999px; background: var(--chip); color: var(--muted); font-size: 0.75rem; font-weight: 600; }
+.tag { flex: none; padding: 0 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+.tag-first { background: #dff3e4; color: #1a6b34; }
+.tag-repeat { background: var(--chip); color: var(--muted); }
+.tag-burst { background: var(--warn-bg); color: var(--warn-text); }
+.today { margin-top: 8px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.today h2 { margin-top: 0; }
+.today-group { margin: 14px 0 4px; font-size: 1rem; }
+.today-list { margin: 0; padding-left: 1.4em; }
+.today-list li { margin: 4px 0; }
+.today-list a { font-weight: 600; }
+.today-line { display: block; color: var(--muted); font-size: 0.9rem; }
+.dir-search { width: 100%; margin: 8px 0 4px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); font-size: 1rem; }
+.dir-group { margin-top: 24px; }
+.dir-list { list-style: none; margin: 0; padding: 0; }
+.dir-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.dir-list a.name { font-weight: 600; }
+.dir-meta { color: var(--muted); font-size: 0.85rem; }
+.dir-dates a { margin-right: 6px; font-size: 0.85rem; }
 .repeat { flex: none; padding: 0 8px; border-radius: 999px; background: var(--warn-bg); color: var(--warn-text); font-size: 0.75rem; font-weight: 600; }
 .one-liner { margin: 0 0 10px; font-size: 1.05rem; font-weight: 600; }
 .reasons { margin: 0 0 8px; padding-left: 1.2em; color: var(--muted); font-size: 0.95rem; }

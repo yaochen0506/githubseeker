@@ -437,7 +437,8 @@ def main(argv=None):
             print("還沒有任何精選，不建立版本發布")
             _set_output(tag="")
             return 0
-        title, body = site.release_notes(editions[-1], load_toml("site.toml"), load_toml("categories.toml"))
+        title, body = site.release_notes(editions[-1], load_toml("site.toml"), load_toml("categories.toml"),
+                                         site.appearances(editions))
         Path(args.out_file).write_text(body, encoding="utf-8")
         print(body)
         _set_output(tag=f"edition-{editions[-1]['edition_id']}", title=title)
@@ -495,7 +496,12 @@ def _edition(args):
     def classifier(run):
         eligible = [o for o in run["observations"]
                     if rank.eligible(o, date.fromisoformat(run["business_date"]), score_cfg)]
-        categories, info = classify.classify(eligible, args.data_dir, out_dir, cat_cfg, summary_cfg)
+        # 以前入選過、但還沒分類的專案（例如分類榜上線前的精選）一併補分類，專案名錄才能歸類
+        known = {o["repo_id"] for o in eligible}
+        past = {p["repo_id"]: p for e in store.load_editions(args.data_dir) for p in e["picks"]
+                if p["repo_id"] not in known}
+        categories, info = classify.classify(eligible + list(past.values()), args.data_dir, out_dir, cat_cfg,
+                                             summary_cfg)
         class_stats.update(info)
         return categories
 

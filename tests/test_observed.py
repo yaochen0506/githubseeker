@@ -142,7 +142,7 @@ def test_edition_from_data_branch_uses_history_and_is_reproducible(tmp_path):
     now = lambda: store.datetime.fromisoformat("2026-11-03T06:30:00+08:00")  # noqa: E731
     first = pipeline.maybe_build_edition(data, tmp_path / "a", "2026-11-03", None, trig, SCORE, BOARDS, now=now)
     again = pipeline.maybe_build_edition(data, tmp_path / "b", "2026-11-03", None, trig, SCORE, BOARDS, now=now)
-    assert first == again and first["score_version"] == "d1"
+    assert first == again and first["score_version"] == SCORE["score_version"]
     p = first["picks"][0]
     assert p["metric_method"] == "observed" and p["observed"]["delta"] == 800
     assert p["reasons"] == ["實際觀測：過去 24 小時增加 +800 星", "也在全站日榜第 1 名"]

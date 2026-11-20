@@ -74,7 +74,7 @@ def test_cooldown_excludes_recent_picks_only():
     hits = [hit("all-daily", i, i, 100) for i in (1, 2, 3)]
     picked = lambda rid: {"repo_id": rid, "growth_per_day": 100.0, "metric_method": "trending_daily", "stars": 1000}  # noqa: E731
     past = [{"business_date": "2026-10-23", "edition_id": "2026-10-23", "picks": [picked(1)]},   # 3 天前：排除
-            {"business_date": "2026-10-18", "edition_id": "2026-10-18", "picks": [picked(2)]}]   # 8 天前：可再入選
+            {"business_date": "2026-09-25", "edition_id": "2026-09-25", "picks": [picked(2)]}]   # 31 天前：可再入選
     main, _, excluded, _ = rank.select(run(observations, hits), past, SCORE)
     assert [c["obs"]["repo_id"] for c in main] == [2, 3] and excluded == [1]
 

@@ -43,11 +43,46 @@ def _category_names(cat_cfg):
     return {c["id"]: c["name"] for c in (cat_cfg or {}).get("categories", [])}
 
 
-def _pick_view(pick, names):
+def appearances(editions):
+    """每個專案入選過的日期，由舊到新：repo_id → [edition_id, ...]。"""
+    seen = {}
+    for edition in editions:
+        for pick in edition["picks"]:
+            dates = seen.setdefault(pick["repo_id"], [])
+            if edition["edition_id"] not in dates:
+                dates.append(edition["edition_id"])
+    return seen
+
+
+def _short(edition_id):
+    return edition_id[5:].replace("-", "/")
+
+
+def repeat_info(pick, edition_id, seen):
+    """這一天之前入選過幾次。從歷史精選推算，不改動已發布的精選。"""
+    before = [d for d in seen.get(pick["repo_id"], []) if d < edition_id]
+    if not before:
+        return {"repeat_kind": "first", "repeat_label": "首次", "times": 1}
+    last = _short(before[-1])
+    if pick.get("repeat_of"):
+        return {"repeat_kind": "burst", "repeat_label": f"成長爆發，第 {len(before) + 1} 次（上次 {last}）",
+                "times": len(before) + 1}
+    return {"repeat_kind": "repeat", "repeat_label": f"第 {len(before) + 1} 次入選（上次 {last}）",
+            "times": len(before) + 1}
+
+
+def _one_liner(pick):
+    summary = pick.get("summary") or {}
+    return summary["content"]["one_liner"] if summary.get("status") == "done" else pick["reasons"][0]
+
+
+def _pick_view(pick, names, edition_id, seen):
     """把精選整理成範本好用的形式（換算都在這裡做，範本不寫邏輯）。用日期而不是「幾天前」，歷史頁才不會過期。"""
     created, pushed = to_date(pick["created_at"]), to_date(pick["pushed_at"])
     return {
         **pick,
+        **repeat_info(pick, edition_id, seen),
+        "one_liner": _one_liner(pick),
         "category_name": names.get(pick.get("category")),
         "created_date": created.isoformat() if created else None,
         "pushed_date": pushed.isoformat() if pushed else None,
@@ -59,17 +94,23 @@ def _pick_view(pick, names):
     }
 
 
-def _edition_view(edition, boards, cat_cfg):
+def _edition_view(edition, boards, cat_cfg, seen):
     names = _category_names(cat_cfg)
-    picks = [_pick_view(p, names) for p in edition["picks"]]
+    picks = [_pick_view(p, names, edition["edition_id"], seen) for p in edition["picks"]]
     categories = [{**c, "picks": [p for p in picks if p["slot"] == "category" and p["category"] == c["id"]]}
                   for c in (cat_cfg or {}).get("categories", [])]
+    main = [p for p in picks if p["slot"] == "main"]
+    discovery = [p for p in picks if p["slot"] == "discovery"]
+    groups = [("主榜", "h-main", main), ("新發現", "h-discovery", discovery)]
+    groups += [(c["name"], f"cat-{c['id']}", c["picks"]) for c in categories]
     return {
         **edition,
         "generated_text": _taipei_text(edition["generated_at"]),
-        "main": [p for p in picks if p["slot"] == "main"],
-        "discovery": [p for p in picks if p["slot"] == "discovery"],
+        "main": main,
+        "discovery": discovery,
         "categories": [c for c in categories if c["picks"]],
+        "today_list": [{"name": n, "anchor": a, "picks": ps} for n, a, ps in groups if ps],
+        "repeat_count": sum(p["repeat_kind"] != "first" for p in picks),
         "failed_boards": [boards.get(s, s) for s in edition["coverage"]["sources_failed"]],
         "summaries_enabled": (edition.get("summary_stats") or {}).get("enabled", False),
         "summary_failed_count": sum(p["summary_failed"] for p in picks),
@@ -86,6 +127,7 @@ def _label(pick, names):
 
 
 def build_feed(editions, site_cfg, cat_cfg=None):
+    seen = appearances(editions)
     """RSS 2.0。識別碼與發布時間都來自已提交的精選，重新部署也不會改變。"""
     base = site_cfg["base_url"]
     rss = ET.Element("rss", {"version": "2.0"})
@@ -105,7 +147,9 @@ def build_feed(editions, site_cfg, cat_cfg=None):
             pub = format_datetime(datetime.fromisoformat(edition["generated_at"]))
             for pick in edition["picks"]:
                 item = ET.SubElement(channel, "item")
-                ET.SubElement(item, "title").text = f"{_label(pick, names)}{pick['full_name']}：{pick['reasons'][0]}"
+                info = repeat_info(pick, edition["edition_id"], seen)
+                tag = "" if info["repeat_kind"] == "first" else f"（{info['repeat_label']}）"
+                ET.SubElement(item, "title").text = f"{_label(pick, names)}{pick['full_name']}{tag}：{pick['reasons'][0]}"
                 ET.SubElement(item, "link").text = f"{base}{edition_url_path(edition['edition_id'])}#repo-{pick['repo_id']}"
                 ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = f"radar:{edition['edition_id']}:{pick['repo_id']}"
                 ET.SubElement(item, "pubDate").text = pub
@@ -126,7 +170,7 @@ def build_feed(editions, site_cfg, cat_cfg=None):
 def build_sitemap(editions, site_cfg):
     base = site_cfg["base_url"]
     urlset = ET.Element("urlset", {"xmlns": "http://www.sitemaps.org/schemas/sitemap/0.9"})
-    entries = [("", None), ("about/", None), ("archive/", None)]
+    entries = [("", None), ("about/", None), ("archive/", None), ("directory/", None)]
     entries += [(edition_url_path(e["edition_id"]), e["business_date"]) for e in editions]
     for path, lastmod in entries:
         url = ET.SubElement(urlset, "url")
@@ -141,7 +185,7 @@ def _md(text):
     return re.sub(r"([\\`*_{}\[\]()<>#+!|~])", r"\\\1", text)
 
 
-def release_notes(edition, site_cfg, cat_cfg=None):
+def release_notes(edition, site_cfg, cat_cfg=None, seen=None):
     """每日精選的版本發布內容（GitHub 會把它寄給關注儲存庫的人）。回傳 (標題, Markdown 內文)。"""
     page = site_cfg["base_url"] + edition_url_path(edition["edition_id"])
     lines = [f"**{edition['edition_id']} GitHub 熱門專案精選**｜[在網站上看完整精選]({page})", ""]
@@ -157,14 +201,46 @@ def release_notes(edition, site_cfg, cat_cfg=None):
             continue
         lines += [f"### {heading}", ""]
         for p in picks:
-            summary = p.get("summary") or {}
-            text = summary["content"]["one_liner"] if summary.get("status") == "done" else p["reasons"][0]
-            lines.append(f"{p['position']}. **[{p['full_name']}]({p['html_url']})**：{_md(text)}")
+            label = repeat_info(p, edition["edition_id"], seen or {})["repeat_label"]
+            lines.append(f"{p['position']}. **[{p['full_name']}]({p['html_url']})**（{label}）：{_md(_one_liner(p))}")
         lines.append("")
     if not edition["picks"]:
         lines += ["這一天沒有符合條件的專案。", ""]
     lines.append("入選只代表近期熱門，不代表安全或推薦安裝。")
     return f"{edition['edition_id']} 精選", "\n".join(lines) + "\n"
+
+
+def build_directory(editions, cat_cfg, category_state, base_url):
+    """所有入選過的專案，每個只列一次，依分類分組。不收錄的專案不列。"""
+    names = _category_names(cat_cfg)
+    entries = {}
+    for edition in editions:
+        for pick in edition["picks"]:
+            e = entries.setdefault(pick["repo_id"], {"repo_id": pick["repo_id"], "dates": []})
+            summary = pick.get("summary") or {}
+            if summary.get("status") == "done" or "one_liner" not in e:
+                e["one_liner"] = _one_liner(pick)
+                e["barrier"] = (summary.get("content") or {}).get("barrier")
+                e["barrier_label"] = BARRIER_LABELS.get(e["barrier"], "")
+            e.update(full_name=pick["full_name"], html_url=pick["html_url"], description=pick["description"])
+            if pick.get("category"):
+                e["category"] = pick["category"]
+            e["dates"].append({"date": edition["edition_id"],
+                               "url": base_url + edition_url_path(edition["edition_id"]) + f"#repo-{pick['repo_id']}"})
+    groups = {cid: [] for cid in list(names) + [None]}
+    for e in entries.values():
+        cat = e.get("category") or (category_state.get(str(e["repo_id"])) or {}).get("category")
+        if cat == "excluded":
+            continue
+        e.update(category=cat if cat in names else None, times=len(e["dates"]),
+                 first=e["dates"][0]["date"], last=e["dates"][-1]["date"])
+        groups[e["category"]].append(e)
+    result = []
+    for cid, items in groups.items():
+        items.sort(key=lambda e: (e["last"], e["times"], e["full_name"].lower()), reverse=True)
+        if items:
+            result.append({"id": cid or "uncategorized", "name": names.get(cid, "未分類"), "entries": items})
+    return result
 
 
 def site_marker(editions, code_version):
@@ -181,13 +257,18 @@ def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version, cat_cfg=Non
         raise ValueError(f"輸出目錄不是空的：{out}")
     editions = store.load_editions(data_dir)
     boards = site_cfg["boards"]
-    views = [_edition_view(e, boards, cat_cfg) for e in editions]
+    seen = appearances(editions)
+    views = [_edition_view(e, boards, cat_cfg, seen) for e in editions]
+    category_state = (store.read_json(Path(data_dir) / "state" / "categories.json") or {}).get("repos", {})
+    directory = build_directory(editions, cat_cfg, category_state, site_cfg["base_url"])
     latest = views[-1] if views else None
     env = _env()
 
     pages = [("index.html", "edition.html", {"edition": latest, "is_home": True}),
              ("archive/index.html", "archive.html", {"editions": list(reversed(views))}),
-             ("about/index.html", "about.html", {})]
+             ("about/index.html", "about.html", {}),
+             ("directory/index.html", "directory.html",
+              {"groups": directory, "total": sum(len(g["entries"]) for g in directory)})]
     pages += [(v["url_path"] + "index.html", "edition.html", {"edition": v, "is_home": False}) for v in views]
 
     for rel, template, ctx in pages:
@@ -209,6 +290,7 @@ def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version, cat_cfg=Non
                                     encoding="utf-8")
     for edition in editions:
         store.write_json(out / "data" / "editions" / f"{edition['edition_id']}.json", edition)
+    store.write_json(out / "data" / "directory.json", directory)
     if editions:
         store.write_json(out / "data" / "latest.json", editions[-1])
     status = store.read_json(Path(data_dir) / "status.json")

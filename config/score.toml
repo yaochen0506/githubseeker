@@ -1,5 +1,5 @@
 # 每日精選的選法（稽核報告 §5）。修改任何數值都要同步更新 score_version；舊的精選不會重算。
-score_version = "d1"
+score_version = "d2"
 
 # 資格：最近幾天內有更新程式
 active_within_days = 90
@@ -31,8 +31,8 @@ observed_max_hours = 96
 suspicious_growth_multiple = 3
 suspicious_min_runs = 3
 
-# 過去幾天入選過的專案不再入選
-cooldown_days = 7
+# 過去幾天入選過的專案不再入選（原本 7 天；實測重複大多發生在第 8 天，改為 30 天）
+cooldown_days = 30
 # 例外（再次推薦）：同一類數字、這次每天成長是上次的幾倍以上、上次入選後又增加幾星以上
 repeat_growth_multiple = 2
 repeat_min_new_stars = 100
