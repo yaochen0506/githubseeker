@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d380f94121bd242090a4",
+ "repo_id": 1463149139,
+ "full_name": "Bodila51/gtavi-claudecode",
+ "created_at": "2026-11-20T08:40:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "97fb7ef14e859ad84ba2cb565e678648e0d4c4869bd63e03dc897081f35b8542",
+ "has_readme": true,
+ "readme_chars": 4410,
+ "content": {
+  "one_liner": "Claude Code 外掛，把 GTA 6 直播和熱門影片剪成可以發布的直式短影片",
+  "features": [
+   "找出熱門影片、直播和精彩片段",
+   "自動剪成 9:16 短片，加上逐字字幕和開頭鉤子",
+   "查詢依觀看數付費的剪輯活動"
+  ],
+  "audience": "想經營 GTA 6 短影片帳號，或接剪輯活動賺觀看分潤的創作者",
+  "use_cases": [
+   "接下依每 1,000 次觀看付費的剪輯活動，剪指定實況主的片段",
+   "經營不露臉的 GTA 6 粉絲專頁，每天發布短影片",
+   "把同一支短片翻譯成 5 種語言的字幕版本"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Claude Code、Python 3.10 以上，還要安裝 ffmpeg 等命令列工具",
+  "limitations": "非官方專案；不保證收入；不會自動上傳；只用 CPU 轉錄會比較慢",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

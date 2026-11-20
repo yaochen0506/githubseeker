@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "e8d99ac1048726548c61",
+ "repo_id": 1144520675,
+ "full_name": "Alishahryar1/free-claude-code",
+ "created_at": "2026-11-20T08:41:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "fe2011c9dc858ac188a1ba8012fd944a0ed03857a943b828c0d1a71628a2796d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 Claude Code 等 AI 寫程式工具改接其他模型供應商，搭配免費額度使用",
+  "features": [
+   "支援 12 種 AI 寫程式工具，可接 61 家模型供應商",
+   "可從終端機、IDE、手機或瀏覽器使用",
+   "自動重試與切換備用模型，作者稱可省 token"
+  ],
+  "audience": "已經在用 Claude Code、Codex 等 AI 寫程式工具，想降低費用或改用其他模型的開發者",
+  "use_cases": [
+   "把 Claude Code 改接 NVIDIA NIM 等供應商的免費模型",
+   "透過 Discord 或 Telegram 用手機、語音訊息操作 AI 寫程式工具",
+   "某家供應商故障時，自動改用備用模型繼續工作"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列安裝，再到各供應商申請 API key，並會操作寫程式工具",
+  "limitations": "免費額度與限制由各供應商決定，隨時可能變動；請求失敗時可能用到多家供應商的額度；與 Anthropic 無關",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

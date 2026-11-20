@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "410e70c6d6edbeab7102",
+ "repo_id": 1464126198,
+ "full_name": "MSNightmare/FastUnlock",
+ "created_at": "2026-11-20T08:43:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "84461c9a6c4ba134bb0aca254765ce591c164b7710d78e8746fddff38fe207ce",
+ "has_readme": true,
+ "readme_chars": 3147,
+ "content": {
+  "one_liner": "展示 Windows 鎖定畫面可被繞過的安全漏洞程式",
+  "features": [
+   "公開一個作者宣稱的 Windows 鎖定畫面繞過漏洞",
+   "說明如何透過 Narrator 朗讀程式取得系統存取",
+   "作者表示可繞過 BitLocker 加密"
+  ],
+  "audience": "資安研究人員、Windows 系統管理者與關注系統安全的技術人員",
+  "use_cases": [
+   "資安人員研究 Windows 鎖定畫面的安全風險",
+   "系統管理者了解漏洞以提早防範"
+  ],
+  "barrier": "install",
+  "barrier_note": "需實際接觸目標電腦，且機器需有一個帳號連結線上帳號",
+  "limitations": "作者表示需實體接觸電腦，且尚未修補；僅在 Windows 11 測試，Windows 10 是否適用未確認。",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1a3aa5daf7290e22e460",
+ "repo_id": 1464271688,
+ "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
+ "created_at": "2026-11-20T08:40:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "19658063a9c5ff6ecc5431d330eafdded6bc8f6403139ead5b1755528a33ae2b",
+ "has_readme": true,
+ "readme_chars": 6426,
+ "content": {
+  "one_liner": "在 Blender 裡用聊天方式叫 AI 幫你檢視場景、建物件、上材質",
+  "features": [
+   "視覺化聊天工作區，可看視窗截圖與任務看板",
+   "支援 OpenAI、Claude、Gemini、Ollama 等模型",
+   "內建 MCP 伺服器與 21 種場景工具"
+  ],
+  "audience": "想加快製作速度的 3D 美術、要自動化重複工作的技術美術，以及想把 AI 接上 Blender 的開發者",
+  "use_cases": [
+   "用一句話請 AI 建立有底座、相機和燈光的商品展示場景",
+   "把選取的物件複製成整齊排列的一排",
+   "搜尋 Poly Haven 等素材並在確認後匯入場景"
+  ],
+  "barrier": "install",
+  "barrier_note": "需安裝 Blender 4.2 以上並從磁碟安裝外掛，還要設定 AI 服務的金鑰或 Ollama",
+  "limitations": "發行版只支援 Windows x64；Python 檢查不是安全沙箱；聊天紀錄只保留在當次工作階段",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

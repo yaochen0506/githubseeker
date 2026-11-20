@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a597addcec317def07da",
+ "repo_id": 1015815983,
+ "full_name": "zhouxiaoka/autoclip",
+ "created_at": "2026-11-20T08:42:31+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2c4a3f6932d6a622dca86bdeb93140dddfc89b7405a96e0e814d7874966c642b",
+ "has_readme": true,
+ "readme_chars": 7297,
+ "content": {
+  "one_liner": "貼上影片連結，AI 自動把長影片剪成多支短影片並附上字幕與文案",
+  "features": [
+   "依各平台畫面比例與長度自動剪出多支短片",
+   "自動產生字幕、封面、標題與發布文案",
+   "剪輯與算圖在自己電腦上完成，畫面會跟著說話的人"
+  ],
+  "audience": "想把 Podcast、訪談、課程長影片改成短影音的創作者與小編",
+  "use_cases": [
+   "把一集兩小時的 Podcast 剪成多支抖音或 TikTok 短片",
+   "把英文訪談剪成附中文字幕的小紅書短影片",
+   "把課程或口說內容剪成 YouTube Shorts 並附發布文案"
+  ],
+  "barrier": "install",
+  "barrier_note": "需安裝桌面版（Apple Silicon Mac 或 Windows），並設定 AI 模型 API Key",
+  "limitations": "雲端模型與轉寫要自己付費；Intel Mac 與 Linux 沒有桌面版；主要針對訪談、Podcast 類素材驗證過；介面以簡體中文為主",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

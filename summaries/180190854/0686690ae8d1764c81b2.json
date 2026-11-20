@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0686690ae8d1764c81b2",
+ "repo_id": 180190854,
+ "full_name": "appwrite/appwrite",
+ "created_at": "2026-11-20T08:42:44+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3011ca79e8aa74f28c0b64adb8cf356a83d3963dbc9c71fa13534ad06eb79886",
+ "has_readme": true,
+ "readme_chars": 8978,
+ "content": {
+  "one_liner": "開源的 App 後端平台，登入、資料庫、檔案儲存等功能一次備齊",
+  "features": [
+   "提供使用者登入、資料庫、檔案儲存與推播通知",
+   "內建 MCP，可讓 AI 寫程式助理直接操作專案",
+   "可使用官方雲端服務，也能用 Docker 自架"
+  ],
+  "audience": "開發網頁或手機 App 的工程師，以及搭配 AI 寫程式助理的開發者",
+  "use_cases": [
+   "幫手機或網頁 App 快速加入會員登入與資料庫",
+   "讓 Cursor、Claude Code 等 AI 助理直接查詢或修改專案",
+   "在自己的伺服器上架設後端，自己掌控資料"
+  ],
+  "barrier": "code",
+  "barrier_note": "雲端版有免費方案，但實際使用仍需寫程式串接 SDK；自架需 Docker 與命令列",
+  "limitations": "自架前需先安裝 Docker；Docker 版本太舊可能裝不起來；非 Linux 主機啟動可能要等幾分鐘",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

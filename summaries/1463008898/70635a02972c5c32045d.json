@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "70635a02972c5c32045d",
+ "repo_id": 1463008898,
+ "full_name": "sourmitocand1987/VividFrame-GPU",
+ "created_at": "2026-11-20T08:40:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7ebcc47fced52a9e203f0a83644b57a4214352367a8b54ccff6261f111b14ad6",
+ "has_readme": true,
+ "readme_chars": 7164,
+ "content": {
+  "one_liner": "Windows 影片播放器，可以邊播放邊用 GPU 即時提升畫質",
+  "features": [
+   "AI 超解析度即時放大，支援 DLSS/XeSS/FSR",
+   "最多四層降噪、SDR 轉 HDR 與補幀",
+   "支援 PS5、PC 串流、擷取卡與螢幕來源"
+  ],
+  "audience": "想讓舊影片或遊戲主機畫面更清晰的 Windows 玩家與影音愛好者",
+  "use_cases": [
+   "播放舊的 1080p 影片時即時銳利化，再匯出成 MP4/MKV",
+   "用擷取卡或 PS5 Remote Play 加強主機遊戲畫面",
+   "連線 Sunshine 主機串流 PC 遊戲並錄下處理後畫面"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 Windows 11 x64、DirectX 12，下載 NVIDIA 或 AMD 版壓縮檔解壓後執行",
+  "limitations": "特效全開會大幅增加 GPU 與顯示記憶體負擔；Xbox 串流仍屬實驗性；Node 模式不支援匯出；需另外安裝驅動程式",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

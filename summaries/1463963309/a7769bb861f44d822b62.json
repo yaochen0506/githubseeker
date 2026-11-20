@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a7769bb861f44d822b62",
+ "repo_id": 1463963309,
+ "full_name": "iamajmeena/neonclipping",
+ "created_at": "2026-11-20T08:42:16+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f3a6c09d8fbae1646578bca50b60e9e8617f4d58e219361ae22f3a9eb0248996",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "貼上影片連結，自動剪出附字幕的直式 9:16 短影片",
+  "features": [
+   "自動挑出精彩片段，並產生標題與開場鉤子",
+   "多種字幕樣式與版面，支援 Hinglish 字幕",
+   "直播進行中依聊天室熱度自動剪輯"
+  ],
+  "audience": "想把 YouTube、Twitch 長影片或直播剪成短影片的創作者與剪輯者",
+  "use_cases": [
+   "把長時間直播回放剪成多支附字幕的 Shorts",
+   "直播時依聊天室反應自動剪出精彩片段",
+   "追蹤指定實況主，開播後自動錄影並剪輯"
+  ],
+  "barrier": "install",
+  "barrier_note": "Windows 有一鍵安裝檔；需 Python、FFmpeg，建議搭配 Ollama 與 NVIDIA 顯示卡",
+  "limitations": "精彩片段是用經驗法則加小型本機 LLM 挑選；Mac 安裝程式尚未實測；自動錄影需保持程式開啟",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

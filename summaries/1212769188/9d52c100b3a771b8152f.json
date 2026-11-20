@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9d52c100b3a771b8152f",
+ "repo_id": 1212769188,
+ "full_name": "cathrynlavery/diagram-design",
+ "created_at": "2026-11-20T08:41:21+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1e1547df43878d1b6069cd052e1d2277e6522c4743a155626fcd23659fa42505",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI 程式助理用白話指令畫出風格一致、可直接開啟的 HTML 圖表",
+  "features": [
+   "支援 51 種圖表，如架構圖、流程圖、甘特圖",
+   "可套用自家網站的配色與字型",
+   "可重繪 Mermaid、draw.io 等既有圖表"
+  ],
+  "audience": "使用 Claude Code、Cursor、Codex 等 AI 助理，需要發表用精美圖表的寫作者與開發者",
+  "use_cases": [
+   "用一句話請 AI 畫出 App 的架構圖",
+   "製作依影響與成本排列專案的四象限圖",
+   "替部落格文章產生符合品牌風格的插圖"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在 AI 程式助理中用命令列安裝 skill，例如透過 npx",
+  "limitations": "品質取決於使用的模型，同樣指令排版可能不同；輸出不是可編輯原始格式，常改的文件仍建議用 Mermaid",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

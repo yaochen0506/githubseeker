@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-19T08:26:04+08:00",
+ "updated_at": "2026-11-20T08:39:54+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -195,6 +195,12 @@
    "full_name": "RocketChat/Rocket.Chat",
    "classified_at": "2026-11-13T07:41:34+08:00"
   },
+  "37912398": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "nginx/nginx",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "40081991": {
    "category": "learning",
    "exclude_reason": null,
@@ -224,6 +230,12 @@
    "exclude_reason": null,
    "full_name": "lionsoul2014/ip2region",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "48030204": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "visgl/deck.gl",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "48576134": {
    "category": "everyday-tools",
@@ -272,6 +284,12 @@
    "exclude_reason": null,
    "full_name": "TheAlgorithms/Java",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "73561650": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "jaywcjlove/linux-command",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "74293321": {
    "category": "dev-tools",
@@ -531,6 +549,12 @@
    "full_name": "jeecgboot/jimureport",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "235901813": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "PostHog/posthog",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "243787823": {
    "category": "learning",
    "exclude_reason": null,
@@ -723,6 +747,12 @@
    "full_name": "withastro/astro",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "356633717": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "rebase-network/who-is-hiring",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "365739812": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -776,6 +806,12 @@
    "exclude_reason": null,
    "full_name": "notionnext-org/NotionNext",
    "classified_at": "2026-11-04T07:26:38+08:00"
+  },
+  "414027423": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "xushengfeng/eSearch",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "416151847": {
    "category": "security-network",
@@ -915,6 +951,12 @@
    "full_name": "upscayl/upscayl",
    "classified_at": "2026-11-04T07:26:38+08:00"
   },
+  "519859998": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "toeverything/AFFiNE",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "522158088": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1022,6 +1064,12 @@
    "exclude_reason": "piracy",
    "full_name": "aoaostar/legado",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "572984571": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "twentyhq/twenty",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "574012459": {
    "category": "everyday-tools",
@@ -1143,6 +1191,12 @@
    "full_name": "NVIDIA/TensorRT-LLM",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "684776900": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "bendlang/bend",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "688164459": {
    "category": "learning",
    "exclude_reason": null,
@@ -1191,11 +1245,23 @@
    "full_name": "microsoft/PyRIT",
    "classified_at": "2026-11-15T06:28:35+08:00"
   },
+  "730932260": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "pytorch/torchtitan",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "741450201": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "Marker-Inc-Korea/AutoRAG",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "742244656": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "agentscope-ai/agentscope",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "753589979": {
    "category": "everyday-tools",
@@ -1226,6 +1292,12 @@
    "exclude_reason": null,
    "full_name": "ItzCrazyKns/Vane",
    "classified_at": "2026-11-04T07:26:50+08:00"
+  },
+  "787076358": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "firecrawl/firecrawl",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "790916393": {
    "category": "ai-models",
@@ -1334,6 +1406,12 @@
    "exclude_reason": null,
    "full_name": "browser-use/browser-use",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "888092115": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "microsoft/markitdown",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "896296825": {
    "category": "ai-agents",
@@ -1527,6 +1605,12 @@
    "full_name": "davila7/claude-code-templates",
    "classified_at": "2026-11-05T07:42:34+08:00"
   },
+  "1015815983": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "zhouxiaoka/autoclip",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1020672081": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -1539,6 +1623,12 @@
    "full_name": "we-promise/sure",
    "classified_at": "2026-11-11T07:26:16+08:00"
   },
+  "1025856648": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "wshobson/agents",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1027384981": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1550,6 +1640,12 @@
    "exclude_reason": null,
    "full_name": "FujiwaraChoki/supoclip",
    "classified_at": "2026-11-15T06:28:35+08:00"
+  },
+  "1028432181": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "awslabs/cli-agent-orchestrator",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1031059905": {
    "category": "dev-tools",
@@ -1574,6 +1670,12 @@
    "exclude_reason": null,
    "full_name": "usestrix/strix",
    "classified_at": "2026-11-18T09:00:03+08:00"
+  },
+  "1035029907": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "earendil-works/pi",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1040940947": {
    "category": "ai-agents",
@@ -1797,6 +1899,12 @@
    "full_name": "expo/skills",
    "classified_at": "2026-11-04T07:26:50+08:00"
   },
+  "1112365301": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "tobi/qmd",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1118085970": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -1874,6 +1982,12 @@
    "exclude_reason": null,
    "full_name": "realiti4/claude-swap",
    "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1133141258": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Tracer-Cloud/opensre",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1134411737": {
    "category": "dev-tools",
@@ -2283,11 +2397,23 @@
    "full_name": "higgsfield-ai/skills",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1207222725": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "google-labs-code/design.md",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1209966933": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "morluto/rea",
    "classified_at": "2026-11-08T05:54:03+08:00"
+  },
+  "1212769188": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "cathrynlavery/diagram-design",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1213901015": {
    "category": "dev-tools",
@@ -2451,6 +2577,12 @@
    "full_name": "rlaope/oh-my-hermes",
    "classified_at": "2026-11-11T07:26:16+08:00"
   },
+  "1261204838": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "mjmirza/app-store-compliance",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1264986626": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2529,6 +2661,12 @@
    "full_name": "experientiallabs/experiential",
    "classified_at": "2026-11-12T08:47:22+08:00"
   },
+  "1281033762": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "tianma-if/edgeever",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1284449744": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2594,6 +2732,12 @@
    "exclude_reason": null,
    "full_name": "openai/codex-security",
    "classified_at": "2026-11-12T08:47:22+08:00"
+  },
+  "1300991151": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "croffasia/itsaplan",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1301657572": {
    "category": "ai-agents",
@@ -2727,6 +2871,12 @@
    "full_name": "LodyAI/Lody",
    "classified_at": "2026-11-15T06:28:35+08:00"
   },
+  "1327214801": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "phone-harness/phone-harness",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
   "1330417082": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -2858,6 +3008,12 @@
    "exclude_reason": null,
    "full_name": "google/elephant-goldfish-model",
    "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "1368913638": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "FlashML-org/FreeVideo",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   },
   "1407950271": {
    "category": "ai-models",
@@ -3398,6 +3554,42 @@
    "exclude_reason": null,
    "full_name": "gylive/google-ultra",
    "classified_at": "2026-11-18T09:00:03+08:00"
+  },
+  "1462995598": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "bothaggsigym1988/frameglide",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1463008898": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "sourmitocand1987/VividFrame-GPU",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1463149139": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Bodila51/gtavi-claudecode",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1463963309": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "iamajmeena/neonclipping",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1464126198": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "MSNightmare/FastUnlock",
+   "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1464271688": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
+   "classified_at": "2026-11-20T08:39:54+08:00"
   }
  }
 }

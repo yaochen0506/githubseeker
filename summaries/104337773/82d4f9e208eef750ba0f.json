@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "82d4f9e208eef750ba0f",
+ "repo_id": 104337773,
+ "full_name": "1c7/chinese-independent-developer",
+ "created_at": "2026-11-20T08:42:57+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "62cef42a1c80626f467b6f4fc8d0e7bb0abc3d0a4e34d2eaf214c698d7692d26",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "收集中國獨立開發者做的網站與 App 的清單，看看大家在做什麼",
+  "features": [
+   "依日期整理收錄的網站與 App，附一句話介紹",
+   "標示開發中、已上線、已關閉三種狀態",
+   "另有程式設計師、遊戲與歷年收錄子版面"
+  ],
+  "audience": "想找實用小工具的一般人、好奇別人在做什麼副業專案的開發者",
+  "use_cases": [
+   "瀏覽清單，找到打開就能用的 AI 影片、修圖、學習等工具",
+   "開發者透過 Pull Request 或 Issue 提交自己的作品",
+   "可能用來觀察獨立開發者常做的產品類型"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接在 GitHub 頁面閱讀清單即可；主版面收錄的產品多半打開就能用",
+  "limitations": "主版面只收網站或 App，不收開發者工具與論壇型網站；部分專案可能已關閉或缺乏維護",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "32be6f48c59db3afbb9f",
+ "repo_id": 1462995598,
+ "full_name": "bothaggsigym1988/frameglide",
+ "created_at": "2026-11-20T08:42:09+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "13cf3778b9f81425b84c632bcfd6d1279842b59e8a3dc187a0df13d0d75718ef",
+ "has_readme": true,
+ "readme_chars": 8671,
+ "content": {
+  "one_liner": "把主機串流到 Windows 電腦，用 AI 補幀讓 30 fps 遊戲變成 60～120 fps",
+  "features": [
+   "用開源 RIFE 模型在幀與幀之間即時補 1～3 張畫面",
+   "用 FSR 1 或 RTX VSR 把 1080p 畫面放大銳化",
+   "即時重播存成 MP4，並內建 14 種畫面風格"
+  ],
+  "audience": "有 PS5 和 Windows 電腦、想讓 30 fps 遊戲在高更新率螢幕上更順暢的玩家",
+  "use_cases": [
+   "在家用 PS5 Remote Play 串流，讓畫質模式遊戲以 60～120 fps 遊玩",
+   "透過擷取卡或 Xbox App 視窗補幀（實驗性功能）",
+   "錄下最近 30 秒到 5 分鐘的遊戲片段，或補幀前後對照影片"
+  ],
+  "barrier": "install",
+  "barrier_note": "需在 Windows 執行安裝程式，具備獨立顯示卡，PS5 需開啟 Remote Play 並登入 PSN",
+  "limitations": "約增加 20～36 毫秒延遲，不適合競技對戰；AMD/Intel 顯卡與擷取卡為實驗性；安裝程式未簽章",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

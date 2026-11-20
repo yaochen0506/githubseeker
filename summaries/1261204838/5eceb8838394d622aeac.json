@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5eceb8838394d622aeac",
+ "repo_id": 1261204838,
+ "full_name": "mjmirza/app-store-compliance",
+ "created_at": "2026-11-20T08:40:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "79c9ddcf5ab846457a3b7a0adc7c108cd169267df971e53c0e4aa2588401c8df",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "幫 App 上架前先檢查，避開 App Store 和 Google Play 常見的退件原因",
+  "features": [
+   "整理 117 種退件情況，並附上對應的修正方法",
+   "掃描 App 專案，檢查隱私清單和資料安全性申報",
+   "可裝進 Claude Code 等 AI 工具，送審前自動擋下"
+  ],
+  "audience": "準備把 iOS 或 Android App 送審上架的開發者，也有給不寫程式的人看的檢查清單",
+  "use_cases": [
+   "送審前掃描 App 專案，先找出可能被退件的高風險問題",
+   "App 被退件後，照著申訴指南找出原因並修正",
+   "不寫程式的人照著白話檢查清單，一步步完成送審"
+  ],
+  "barrier": "code",
+  "barrier_note": "掃描要用命令列，並需要 git 和 bash；檢查清單則可以直接在網頁上閱讀",
+  "limitations": "App Store Connect 裡的審核備註、申報的資料用途等項目，工具沒辦法自己確認，只會提醒你手動核對",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

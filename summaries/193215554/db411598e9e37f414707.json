@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "db411598e9e37f414707",
+ "repo_id": 193215554,
+ "full_name": "n8n-io/n8n",
+ "created_at": "2026-11-20T08:41:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0b49947e66b84cfefdeca8b159e8c246731ca95c50bfd4534b804e8a394812dc",
+ "has_readme": true,
+ "readme_chars": 2930,
+ "content": {
+  "one_liner": "用拖拉畫布串接各種服務與 AI，打造自動化工作流程的平台",
+  "features": [
+   "視覺化畫布建流程，也能加入 JavaScript、Python",
+   "支援 1500+ 整合與 9,000+ 流程範本",
+   "可接 OpenAI、Anthropic 等模型建 AI 代理"
+  ],
+  "audience": "想把重複性工作自動化、或想用 AI 代理處理業務的個人、團隊與企業",
+  "use_cases": [
+   "把公司現有的系統與 AI 模型串接，自動處理多步驟工作",
+   "設計需要人工審核步驟的 AI 工作流程",
+   "套用現成範本，可能用來快速串接常用網路服務"
+  ],
+  "barrier": "install",
+  "barrier_note": "自架需安裝 Docker 並執行指令；也有雲端版可選",
+  "limitations": "採 fair-code 授權（Sustainable Use License），並非一般開源授權；部分進階功能需企業授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

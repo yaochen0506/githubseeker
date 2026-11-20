@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "1e001c502473287c1110",
+ "repo_id": 730932260,
+ "full_name": "pytorch/torchtitan",
+ "created_at": "2026-11-20T08:41:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "41f64aea8db58ca636da98d2875903c075dee59617c0bf9322ae5c323a1b6f0b",
+ "has_readme": true,
+ "readme_chars": 8636,
+ "content": {
+  "one_liner": "用 PyTorch 在大量 GPU 上訓練生成式 AI 模型的平台",
+  "features": [
+   "可組合多種平行運算方式，不必改寫模型",
+   "從預訓練、微調到強化學習都在同一套程式碼",
+   "支援 Llama、Qwen、DeepSeek、FLUX 等模型"
+  ],
+  "audience": "研究或訓練大型 AI 模型的工程師與研究人員，需熟悉 PyTorch 與 GPU 叢集",
+  "use_cases": [
+   "在多台 GPU 機器上預訓練大型語言模型",
+   "用聊天資料集對模型做 SFT 或 LoRA 微調",
+   "用 GRPO 等方法對模型做強化學習訓練"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 Python 3.11 以上、PyTorch nightly 與 GPU，並用命令列與 Python 設定訓練",
+  "limitations": "仍在積極開發中，最新功能需搭配 PyTorch nightly；Llama 權重需在 Hugging Face 申請存取",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

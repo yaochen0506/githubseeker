@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5abb47a4716f75cec905",
+ "repo_id": 73561650,
+ "full_name": "jaywcjlove/linux-command",
+ "created_at": "2026-11-20T08:43:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a6bfbb54f792a977bf955a44aee59e78b9fc885ab4f233657cde4c427edef5a6",
+ "has_readme": true,
+ "readme_chars": 8651,
+ "content": {
+  "one_liner": "收錄 600 多個 Linux 指令說明，可在網頁上搜尋查詢的速查手冊",
+  "features": [
+   "收錄 600 多個 Linux 指令的說明與用法",
+   "提供網頁版搜尋，也有 Chrome 擴充功能等版本",
+   "可用 Docker、Vercel 等方式自行架站"
+  ],
+  "audience": "正在學習 Linux 的初學者，以及需要快速查指令用法的工程師或系統管理員",
+  "use_cases": [
+   "忘記某個 Linux 指令怎麼用時，打開網頁版快速搜尋",
+   "學習 Linux 時依分類瀏覽檔案管理、網路等指令",
+   "在自己的伺服器架設一份指令查詢網站"
+  ],
+  "barrier": "online",
+  "barrier_note": "直接打開網頁版或安裝 Chrome 擴充功能即可查詢；自行架站需要 Docker 等技術",
+  "limitations": "作者表示內容來自網路與網友補充，無法完全保證正確；內容以簡體中文為主",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

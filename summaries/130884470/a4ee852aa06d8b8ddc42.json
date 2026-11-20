@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a4ee852aa06d8b8ddc42",
+ "repo_id": 130884470,
+ "full_name": "solidjs/solid",
+ "created_at": "2026-11-20T08:42:38+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "795bc9a940dd0e1de5967d725d8416de303cdc37e716054c84c89be6600fd979",
+ "has_readme": true,
+ "readme_chars": 6491,
+ "content": {
+  "one_liner": "用來製作網頁使用者介面的 JavaScript 函式庫，只更新有變動的部分",
+  "features": [
+   "不用 Virtual DOM，直接精準更新真實網頁元素",
+   "內建狀態管理與非同步資料處理",
+   "支援伺服器端渲染（SSR）與串流輸出"
+  ],
+  "audience": "會寫 JavaScript 或 TypeScript 的前端工程師，想找 React 以外框架的網頁開發者",
+  "use_cases": [
+   "開發互動性高、需要快速反應的網頁應用程式",
+   "在現有 Vite 專案中加入 Solid 製作介面元件",
+   "可能用來製作 Web Components 或非網頁平台的自訂介面"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 JavaScript／JSX，並使用 npm 等命令列工具建立專案",
+  "limitations": "只支援近 2 年的新版主流瀏覽器，不支援 IE；2.0 的 API 與 1.x 不同，舊版要看遷移指南",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

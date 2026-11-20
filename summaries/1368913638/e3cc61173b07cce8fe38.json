@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e3cc61173b07cce8fe38",
+ "repo_id": 1368913638,
+ "full_name": "FlashML-org/FreeVideo",
+ "created_at": "2026-11-20T08:41:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ed4497fc846d82079d79e5e1ff8a782425b7f7b9406ee6c8322b06e6fd1ddb60",
+ "has_readme": true,
+ "readme_chars": 7222,
+ "content": {
+  "one_liner": "讓你用家裡現有的電腦，在本機以 MiniMax H3 模型生成 AI 影片",
+  "features": [
+   "作者表示最低 8 GB VRAM、16 GB RAM 即可執行",
+   "支援文字、首尾畫格、圖片、影片與聲音參考",
+   "Windows、Mac、Linux 一鍵安裝啟動器"
+  ],
+  "audience": "想在自己電腦上免費生成 AI 影片或圖片、有獨立顯示卡或 Apple silicon Mac 的創作者",
+  "use_cases": [
+   "輸入文字描述，在本機生成短片或超過一分鐘的影片",
+   "先看半解析度預覽，只完成喜歡的影片並在時間軸剪輯",
+   "讓 Claude Code 等 AI agent 自動產生影片"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載啟動器安裝 ComfyUI 與模型，並要有足夠的顯示卡記憶體",
+  "limitations": "Mac 版仍是預覽版且未經 Apple 公證；模型權重受 MiniMax H3 社群授權的地區與用途限制",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
