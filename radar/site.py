@@ -94,7 +94,35 @@ def _pick_view(pick, names, edition_id, seen):
     }
 
 
-def _edition_view(edition, boards, cat_cfg, seen):
+def watch_list(edition, data_dir):
+    """「觀察中」清單：成長很快、卻從沒上過 Trending 而先不推薦的專案。
+
+    2026-11-21 起的精選存了細節；更早的精選只有編號，從當天那份 run 補名稱、說明與星數。
+    """
+    details = edition.get("suspicious_details")
+    if details is None:
+        ids = edition.get("suspicious_excluded") or []
+        runs = store.load_runs(data_dir, edition["business_date"]) if ids else []
+        run = next((r for r in runs if r["run_id"] == edition["run_id"]), None)
+        obs = {o["repo_id"]: o for o in (run or {}).get("observations", [])}
+        details = sorted(({"full_name": obs[i]["full_name"], "description": obs[i]["description"],
+                           "stars": obs[i]["stars"], "created_at": obs[i].get("created_at")}
+                          for i in ids if i in obs), key=lambda d: -d["stars"])
+    items = []
+    for d in details:
+        growth, floor = d.get("growth_per_day"), d.get("trending_floor")
+        if growth and floor:
+            reason = (f"每天約 +{growth:,.0f} 星，是當天上 Trending 最低門檻（+{floor:,}）的 {growth / floor:.0f} 倍；"
+                      f"本站追蹤 {d['times_seen']} 次都沒在 Trending 看到它")
+        else:
+            reason = "成長速度遠超過上 Trending 的門檻，本站多次追蹤都沒在 Trending 看到它"
+        items.append({"full_name": d["full_name"], "html_url": f"https://github.com/{d['full_name']}",
+                      "description": d["description"], "stars": d["stars"],
+                      "created": (d.get("created_at") or "")[:10], "reason": reason})
+    return items
+
+
+def _edition_view(edition, boards, cat_cfg, seen, watch=None):
     names = _category_names(cat_cfg)
     picks = [_pick_view(p, names, edition["edition_id"], seen) for p in edition["picks"]]
     categories = [{**c, "picks": [p for p in picks if p["slot"] == "category" and p["category"] == c["id"]]}
@@ -115,6 +143,7 @@ def _edition_view(edition, boards, cat_cfg, seen):
         "summaries_enabled": (edition.get("summary_stats") or {}).get("enabled", False),
         "summary_failed_count": sum(p["summary_failed"] for p in picks),
         "url_path": edition_url_path(edition["edition_id"]),
+        "watch": watch or [],
     }
 
 
@@ -258,7 +287,7 @@ def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version, cat_cfg=Non
     editions = store.load_editions(data_dir)
     boards = site_cfg["boards"]
     seen = appearances(editions)
-    views = [_edition_view(e, boards, cat_cfg, seen) for e in editions]
+    views = [_edition_view(e, boards, cat_cfg, seen, watch_list(e, data_dir)) for e in editions]
     category_state = (store.read_json(Path(data_dir) / "state" / "categories.json") or {}).get("repos", {})
     directory = build_directory(editions, cat_cfg, category_state, site_cfg["base_url"])
     latest = views[-1] if views else None

@@ -81,6 +81,23 @@
 </section>
 {% endif %}
 
+{% if edition.watch %}
+<details class="watch" id="watch">
+  <summary>觀察中：{{ edition.watch|length }} 個專案成長很快、卻從沒上過 Trending，先不推薦</summary>
+  <p class="hint">這類專案可能被刷星，也可能只是 GitHub Trending 沒有列出它。本站無法判斷真假，所以不放進精選，只列在這裡讓你自己判斷。列在這裡不代表有問題，也不代表推薦，<a href="{{ root }}about/#categories">說明</a>。</p>
+  <ul class="watch-list">
+    {% for w in edition.watch %}
+    <li>
+      <a href="{{ w.html_url }}" rel="noopener">{{ w.full_name }}</a>
+      <span class="watch-meta">★ {{ w.stars|num }}{% if w.created %}｜建立於 {{ w.created }}{% endif %}</span>
+      <div class="watch-reason">{{ w.reason }}</div>
+      {% if w.description %}<div class="watch-desc">{{ w.description }}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}
+
 <p class="more"><a href="{{ root }}archive/">看所有歷史精選 →</a></p>
 {% endif %}
 {% endblock %}

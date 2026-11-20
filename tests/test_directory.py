@@ -88,5 +88,32 @@ def test_site_shows_today_list_tags_and_directory(tmp_path):
     assert {g["id"] for g in data_json} >= {"everyday-tools", "fun-creative"}
     assert "directory/" in (out / "sitemap.xml").read_text(encoding="utf-8")
 
+    assert 'id="watch"' not in home  # 沒有被擋的專案就不顯示「觀察中」
+
     titles = [i.find("title").text for i in ET.fromstring((out / "feed.xml").read_bytes()).iter("item")]
     assert any("（第 2 次入選（上次 11/12））" in t for t in titles)
+
+
+def test_watch_list_uses_stored_details_or_falls_back_to_run(tmp_path):
+    data = tmp_path / "data"
+    new = {**edition("2026-11-21", pick(1, one_liner="記帳 App")), "suspicious_excluded": [7],
+           "suspicious_details": [{"repo_id": 7, "full_name": "x/fast", "description": "<b>刷星？</b>", "stars": 9000,
+                                   "created_at": "2026-11-01T00:00:00Z", "growth_per_day": 1200.0,
+                                   "trending_floor": 100, "times_seen": 4}]}
+    assert not [e for e in store.schema_errors(new, "edition") if list(e.path)[:1] == ["suspicious_details"]]
+    old = {**edition("2026-11-20", pick(2)), "run_id": "r20", "suspicious_excluded": [8]}
+    store.write_json(data / store.run_path("2026-11-20", "r20"),
+                     {"run_id": "r20", "observations": [{"repo_id": 8, "full_name": "y/old", "description": None,
+                                                          "stars": 500, "created_at": None}]})
+    assert site.watch_list(new, data)[0]["reason"].startswith("每天約 +1,200 星，是當天上 Trending 最低門檻（+100）的 12 倍")
+    assert [w["full_name"] for w in site.watch_list(old, data)] == ["y/old"]
+
+    for e in (old, new):
+        store.write_json(data / store.edition_path(e["edition_id"]), e)
+    out = tmp_path / "site"
+    site.build_site(data, out, SITE, SCORE, "v1", CATS)
+    home = (out / "index.html").read_text(encoding="utf-8")
+    watch = home[home.index('id="watch"'):]
+    assert "觀察中：1 個專案" in watch and 'href="https://github.com/x/fast"' in watch
+    assert "&lt;b&gt;刷星？&lt;/b&gt;" in watch and "<b>刷星" not in watch  # 外部文字要跳脫
+    assert "y/old" in (out / "archive" / "2026" / "11" / "20" / "index.html").read_text(encoding="utf-8")

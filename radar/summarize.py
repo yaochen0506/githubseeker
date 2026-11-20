@@ -80,7 +80,10 @@ def check(content, cfg):
     simplified = sorted({c for c in joined if c in cfg["simplified_chars"]})
     if simplified:
         issues.append(f"出現簡體字：{''.join(simplified[:10])}，請改用台灣繁體中文")
-    terms = [f"「{t}」改為「{tw}」" for t, tw in cfg["mainland_terms"].items() if t in joined]
+    term_text = joined
+    for phrase in cfg.get("allowed_phrases", []):
+        term_text = term_text.replace(phrase, "")
+    terms = [f"「{t}」改為「{tw}」" for t, tw in cfg["mainland_terms"].items() if t in term_text]
     if terms:
         issues.append("出現中國大陸用語：" + "、".join(terms[:5]))
     return issues

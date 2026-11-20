@@ -318,7 +318,8 @@ def build_edition(run, past_editions, score_cfg, boards, status, generated_at, h
                      "sources_failed": [s["source_id"] for s in run["sources"] if s["status"] != "ok"]},
         "picks": picks,
         "cooldown_excluded": excluded,
-        "suspicious_excluded": suspicious,
+        "suspicious_excluded": sorted(s["repo_id"] for s in suspicious),
+        "suspicious_details": suspicious,
         "content_excluded": blocked,
         "candidate_counts": {"main": len(main_pool), "discovery": len(discovery_pool)},
     }

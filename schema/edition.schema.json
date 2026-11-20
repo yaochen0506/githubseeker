@@ -180,6 +180,26 @@
       },
       "description": "D 階段：成長遠超過上 Trending 門檻、卻從沒上過 Trending 而先不推薦的專案（選填）"
     },
+    "suspicious_details": {
+      "type": "array",
+      "description": "F 階段：上面那些專案的細節，網站「觀察中」清單用（選填；2026-11-21 起的精選才有）",
+      "items": {
+        "type": "object",
+        "required": ["repo_id", "full_name", "description", "stars", "created_at", "growth_per_day",
+                     "trending_floor", "times_seen"],
+        "additionalProperties": false,
+        "properties": {
+          "repo_id": {"type": "integer"},
+          "full_name": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+          "description": {"type": ["string", "null"]},
+          "stars": {"type": "integer", "minimum": 0},
+          "created_at": {"type": ["string", "null"]},
+          "growth_per_day": {"type": "number"},
+          "trending_floor": {"type": "integer", "minimum": 0},
+          "times_seen": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
     "content_excluded": {
       "type": "array",
       "items": {

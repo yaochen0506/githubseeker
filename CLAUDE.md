@@ -1,10 +1,10 @@
 # githubseeker 專案說明（給 Claude）
 
-繁體中文 GitHub 熱門專案雷達。依 A～F 階段開發，目前完成 A 階段（每日收集）、B 階段（每日精選、網站、RSS）、C 階段（繁中摘要）、D 階段（觀測成長）、E1（分類榜單）與 E2（今日清單、重複標示、專案名錄）。網站：https://yaochen0506.github.io/githubseeker/
+繁體中文 GitHub 熱門專案雷達。依 A～F 階段開發，目前完成 A 階段（每日收集）、B 階段（每日精選、網站、RSS）、C 階段（繁中摘要）、D 階段（觀測成長）、E1（分類榜單）、E2（今日清單、重複標示、專案名錄）與 F（檢討：放行「用戶端」、疑似異常改列「觀察中」清單）。網站：https://yaochen0506.github.io/githubseeker/
 
 ## 設計依據
 
-- 本機 `docs/`（已加入 .gitignore，不在公開儲存庫）：`plan-v0.1-codex.md` 計畫書、`radar-audit-claude-v1.md` 稽核報告、`plan-review-local-v1.md` 開工前檢討、`phase-b-plan.md`、`phase-c-plan.md`、`phase-d-plan.md`、`phase-e1-category-plan.md`、`phase-e2-plan.md` 各階段計畫。新階段開工前先讀這些文件，尤其是稽核報告 §4、§5、§7。
+- 本機 `docs/`（已加入 .gitignore，不在公開儲存庫）：`plan-v0.1-codex.md` 計畫書、`radar-audit-claude-v1.md` 稽核報告、`plan-review-local-v1.md` 開工前檢討、`phase-b-plan.md`、`phase-c-plan.md`、`phase-d-plan.md`、`phase-e1-category-plan.md`、`phase-e2-plan.md` 各階段計畫、`f-review-2026-11-20.md` 檢討報告。新階段開工前先讀這些文件，尤其是稽核報告 §4、§5、§7。
 
 ## 不可違反的原則
 

@@ -85,6 +85,10 @@ def test_clean_readme_strips_code_images_html_and_urls():
 def test_check_finds_urls_simplified_and_mainland_terms():
     assert summarize.check(GOOD, CFG) == []
     assert summarize.check({**GOOD, "one_liner": "支援 Claude.ai 與 Character.ai 的工具"}, CFG) == []
+    # 「用戶端」是台灣對 client 的正式譯名，不算大陸用語；單獨的「用戶」仍要擋
+    assert summarize.check({**GOOD, "one_liner": "讓 MCP 用戶端連到瀏覽器的工具"}, CFG) == []
+    assert any("「用戶」改為「使用者」" in i
+               for i in summarize.check({**GOOD, "one_liner": "用戶端與用戶都能用的工具"}, CFG))
     bad = {**GOOD, "one_liner": "这个工具支持視頻轉檔，詳見 https://x.io", "features": ["x" * 41]}
     issues = summarize.check(bad, CFG)
     assert any("網址" in i for i in issues)

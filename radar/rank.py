@@ -141,13 +141,13 @@ def trending_floor(run):
 
 
 def candidates(run, past_editions, cfg, history=None, seen=None, categories=None):
-    """所有候選，已排序。回傳 (主榜池, 新發現池, 冷卻排除, 疑似異常排除, 不收錄)。"""
+    """所有候選，已排序。回傳 (主榜池, 新發現池, 冷卻排除, 疑似異常排除（含細節）, 不收錄)。"""
     business_date = date.fromisoformat(run["business_date"])
     hits_by_repo = trending_hits_by_repo(run)
     recent = last_picks(past_editions, business_date, cfg["cooldown_days"])
     history, seen, categories = history or {}, seen or {}, categories or {}
     floor = trending_floor(run)
-    main, discovery, excluded, suspicious, blocked = [], [], set(), set(), set()
+    main, discovery, excluded, suspicious, blocked = [], [], set(), [], set()
 
     for obs in run["observations"]:
         if not eligible(obs, business_date, cfg):
@@ -163,7 +163,11 @@ def candidates(run, past_editions, cfg, history=None, seen=None, categories=None
         times_seen, times_trending = seen.get(repo_id, (0, 0))
         if (observed and not hits and floor and times_seen >= cfg["suspicious_min_runs"] and times_trending == 0
                 and observed["growth"] > cfg["suspicious_growth_multiple"] * floor):
-            suspicious.add(repo_id)
+            # 留下細節，網站的「觀察中」清單用得到
+            suspicious.append({"repo_id": repo_id, "full_name": obs["full_name"], "description": obs["description"],
+                               "stars": obs["stars"], "created_at": obs.get("created_at"),
+                               "growth_per_day": round(observed["growth"], 1), "trending_floor": floor,
+                               "times_seen": times_seen})
             continue
         created = to_date(obs.get("created_at"))
         age = max((business_date - created).days, 1) if created else None
@@ -204,7 +208,8 @@ def candidates(run, past_editions, cfg, history=None, seen=None, categories=None
     # 同分時，每天新增星數多的優先，再看 Trending 名次
     main.sort(key=lambda c: (-c["score"], -c["growth_per_day"], best_rank(c["trending_hits"]), c["obs"]["repo_id"]))
     discovery.sort(key=lambda c: (-c["growth_per_day"], c["obs"]["repo_id"]))
-    return main, discovery, sorted(excluded), sorted(suspicious), sorted(blocked)
+    suspicious.sort(key=lambda s: (-s["growth_per_day"], s["repo_id"]))
+    return main, discovery, sorted(excluded), suspicious, sorted(blocked)
 
 
 def select(run, past_editions, cfg, history=None, seen=None, categories=None):

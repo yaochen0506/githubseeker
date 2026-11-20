@@ -95,7 +95,9 @@ def test_fast_growing_repo_never_on_trending_is_held_back():
     history = grew((1, 8000), (9, 2900))         # 專案 1 一天 +2000，超過門檻 3 倍
     never = {1: (3, 0)}
     _, _, _, suspicious, _ = rank.candidates(run(observations, hits), [], SCORE, history, never)
-    assert suspicious == [1]
+    assert [s["repo_id"] for s in suspicious] == [1]
+    assert suspicious[0]["trending_floor"] == 100 and suspicious[0]["times_seen"] == 3
+    assert suspicious[0]["growth_per_day"] > 300
     # 曾經上過 Trending、或追蹤次數不夠、或今天抓不到門檻：都不算可疑
     assert rank.candidates(run(observations, hits), [], SCORE, history, {1: (3, 1)})[3] == []
     assert rank.candidates(run(observations, hits), [], SCORE, history, {1: (2, 0)})[3] == []
