@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "3acfc64bd93793efdbf3",
+ "repo_id": 1466075841,
+ "full_name": "sybil-solutions/skill-distill",
+ "created_at": "2026-11-22T07:22:41+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5a52733033ecc414d57d4d29a188d1d4d209071ae9a05769395ca5708450fa36",
+ "has_readme": true,
+ "readme_chars": 3459,
+ "content": {
+  "one_liner": "把 Claude Code 或 Codex 做得好的工作過程，整理成開源模型也能照著做的技能說明",
+  "features": [
+   "讀取工作紀錄，自動寫出給開源模型用的技能",
+   "在 tmux 讓開源模型重做，並和原本成果比對",
+   "找出第一個出錯的地方修正技能，每版測三次"
+  ],
+  "audience": "使用 Claude Code、Codex 等 AI 程式助理，想改用開源模型完成同樣工作的開發者",
+  "use_cases": [
+   "把一次成功的工作過程，教給在自己伺服器上跑的 DeepSeek 等開源模型",
+   "做網頁應用時，用無頭瀏覽器截圖比對開源模型和原本的成果",
+   "可能用來降低重複性工作改用付費前沿模型的需求"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 tmux、git、Python 3.10 以上，並自行安裝與設定學生端 AI 工具和模型",
+  "limitations": "只有 omp 測試過；pi、opencode 尚未測試，opencode 紀錄還不能解析；Claude Code 接開源模型需要相容的伺服器",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

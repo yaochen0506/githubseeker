@@ -1,11 +1,11 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-21T08:01:03+08:00",
- "business_date": "2026-11-21",
- "last_run_id": "20261121T075948-44840741567.1",
+ "updated_at": "2026-11-22T07:20:49+08:00",
+ "business_date": "2026-11-22",
+ "last_run_id": "20261122T071936-44961205533.1",
  "last_run_complete": true,
- "last_complete_run_id": "20261121T075948-44840741567.1",
- "last_complete_at": "2026-11-21T08:01:03+08:00",
+ "last_complete_run_id": "20261122T071936-44961205533.1",
+ "last_complete_at": "2026-11-22T07:20:49+08:00",
  "sources": [
   {
    "source_id": "all-daily",
@@ -22,7 +22,7 @@
   {
    "source_id": "python-daily",
    "status": "ok",
-   "rows": 23,
+   "rows": 22,
    "error": null
   },
   {
@@ -69,10 +69,10 @@
   }
  ],
  "counts": {
-  "source_hits": 342,
-  "observations": 198,
-  "unresolved": 3,
-  "tracking": 198
+  "source_hits": 341,
+  "observations": 203,
+  "unresolved": 0,
+  "tracking": 200
  },
  "api_usage": {
   "search": {
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 201,
+   "requests": 203,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4799,
-   "used_by_headers": 201
+   "remaining_last": 4797,
+   "used_by_headers": 203
   }
  }
 }

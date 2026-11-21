@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "0de98d9514f54317085f",
+ "repo_id": 1010318950,
+ "full_name": "SWE-agent/mini-swe-agent",
+ "created_at": "2026-11-22T07:21:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0e9ea6826a0fa83ff4c39a7e25e39eb85e92f02d161da45200d936934365ab3c",
+ "has_readme": true,
+ "readme_chars": 5544,
+ "content": {
+  "one_liner": "約 100 行 Python 寫成的精簡 AI 代理，能修 GitHub issue 或在命令列幫忙",
+  "features": [
+   "只用 bash 執行動作，可搭配幾乎任何語言模型",
+   "支援本機、Docker、Podman 等多種執行環境",
+   "提供命令列工具、批次執行與執行紀錄瀏覽器"
+  ],
+  "audience": "軟體開發者、AI 代理研究人員，以及做模型微調或評測的團隊",
+  "use_cases": [
+   "在命令列讓 AI 協助處理程式碼問題或 GitHub issue",
+   "在 SWE-bench 等評測上測試不同語言模型的表現",
+   "作為微調或強化學習研究的簡單基準代理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python 套件、使用命令列，並準備語言模型的 API 金鑰",
+  "limitations": "目前為 v2，舊版使用者需參考遷移指南；作者表示 SWE-bench verified 分數超過 74%",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

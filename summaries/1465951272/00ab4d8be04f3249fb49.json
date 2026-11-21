@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "00ab4d8be04f3249fb49",
+ "repo_id": 1465951272,
+ "full_name": "hatsunemiku-ai/google-one-tools",
+ "created_at": "2026-11-22T07:22:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "47b1c1d974cda1ff08741290381974fb944c4451e98fe50962b918f17b16f35c",
+ "has_readme": true,
+ "readme_chars": 3705,
+ "content": {
+  "one_liner": "在 MuMu 模擬器裡查 Google One 帳號能用的訂閱方案，也能叫出付款畫面",
+  "features": [
+   "掃描帳號可用的所有 Google One 訂閱方案與免費試用",
+   "叫出任一方案的 Play 付款畫面，不會自動訂閱",
+   "整理多個地區的價格對照清單"
+  ],
+  "audience": "熟悉 Android 模擬器、Frida 與命令列，想研究 Google One 方案與試用資格的技術使用者",
+  "use_cases": [
+   "查詢自己的帳號有哪些 Google One 免費試用或折扣方案",
+   "比較不同地區 Google One 方案的價格",
+   "直接叫出特定方案的付款畫面再決定要不要訂閱"
+  ],
+  "barrier": "code",
+  "barrier_note": "需 Python 3.9+、frida 16.x 與已 root 的 MuMu 模擬器，用命令列操作",
+  "limitations": "frida 17.x 不能用；叫出付款畫面就可能用掉試用資格；試用結束會自動續費；開著 VPN 可能導致結帳失敗",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

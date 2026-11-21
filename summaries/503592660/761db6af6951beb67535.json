@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "761db6af6951beb67535",
+ "repo_id": 503592660,
+ "full_name": "cxasm/notepad--",
+ "created_at": "2026-11-22T07:23:37+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9f78b0eacd7c21010b169fa6411c12ce42b72bdeb9ea670000eae9e0d1a41d11",
+ "has_readme": true,
+ "readme_chars": 735,
+ "content": {
+  "one_liner": "一款輕量級文字編輯器，可在 Windows、Linux、Mac 上使用",
+  "features": [
+   "跨平台支援 Windows、Linux、macOS",
+   "支援中國 UOS 等多種 Linux 系統",
+   "輕量級的文字編輯功能"
+  ],
+  "audience": "需要在 Linux 或 Mac 上使用類似 Notepad 編輯器的使用者",
+  "use_cases": [
+   "在 Linux 或 Mac 電腦上編輯純文字檔案",
+   "在 UOS 系統上當作日常文字編輯器",
+   "可能用來在不同作業系統間統一使用同一款編輯器"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要下載安裝程式並安裝到電腦上，不用寫程式",
+  "limitations": "作者表示在中國常無法連上 GitHub，此處的版本可能不會即時更新，主要更新在 Gitee",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "10025f5276502599811b",
+ "repo_id": 1025856648,
+ "full_name": "wshobson/agents",
+ "created_at": "2026-11-22T07:21:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b923ed564203ddc59d6b530e16a8fae2fb166aeea6fcc41507c7a2efa439d868",
+ "has_readme": true,
+ "readme_chars": 7760,
+ "content": {
+  "one_liner": "給 Claude Code、Cursor 等 AI 寫程式工具用的外掛、代理與技能合集",
+  "features": [
+   "共 93 個外掛、199 個代理、185 個技能",
+   "寫一次 Markdown，自動轉成各工具的格式",
+   "附結構驗證與實驗性的品質評估工具"
+  ],
+  "audience": "使用 Claude Code、Codex CLI、Cursor 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "在 Claude Code 安裝 Python 開發外掛，協助建立專案架構",
+   "用安全掃描外掛做程式碼安全審查與套件依賴檢查",
+   "只安裝單一技能到自己慣用的 AI 寫程式工具"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會用命令列與 AI 寫程式工具，部分安裝方式要先裝 Python 3.12、uv 或 Node.js",
+  "limitations": "各工具支援的元件不同；LLM 評分功能屬實驗性質，呼叫模型可能產生 API 費用；Pi 需要另外安裝擴充套件",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

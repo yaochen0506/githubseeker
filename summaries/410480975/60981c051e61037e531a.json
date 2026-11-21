@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "60981c051e61037e531a",
+ "repo_id": 410480975,
+ "full_name": "notionnext-org/NotionNext",
+ "created_at": "2026-11-22T07:23:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "18b89cb71fed43f0e92760b69b03ecff2285bb07ad4afabe9756e17991ab812d",
+ "has_readme": true,
+ "readme_chars": 3062,
+ "content": {
+  "one_liner": "把 Notion 裡的內容直接發布成部落格、作品集或官網等獨立網站",
+  "features": [
+   "繼續在 Notion 管理文章、分類、標籤與選單",
+   "內建 26 個主題，涵蓋部落格、文件、相簿等",
+   "支援獨立網域、SEO、RSS、留言與搜尋"
+  ],
+  "audience": "習慣用 Notion 寫作的內容創作者、設計師、攝影師、課程作者與需要官網的小團隊",
+  "use_cases": [
+   "用 Notion 寫文章，架設個人部落格",
+   "為設計或攝影作品建立作品集網站",
+   "替開源專案或課程建立知識庫、文件站"
+  ],
+  "barrier": "install",
+  "barrier_note": "需有 GitHub 與 Vercel 帳號，Fork 專案並設定環境變數；本機開發需 Node 22",
+  "limitations": "Node 20 已無法安裝目前的相依套件，部署平台需設為 Node 22；僅限個人學習與合法網站使用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

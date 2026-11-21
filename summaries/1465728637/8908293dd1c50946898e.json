@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8908293dd1c50946898e",
+ "repo_id": 1465728637,
+ "full_name": "R0Y00/Xbox2Windows",
+ "created_at": "2026-11-22T07:23:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "79b4a3ee19e7c293481a2d999c7da04cedbe01fc812b391ad1f39cce6d6549f6",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "研究把 Xbox Series X|S 遊戲程式靜態轉譯成可在 Windows 電腦上執行的實驗專案",
+  "features": [
+   "將 x64 機器碼經 C++ 轉譯成 Windows 執行檔與 DLL",
+   "把主機的像素著色器轉成 HLSL 與桌機 DXIL",
+   "提供現成的 GPU 檢測包，測試 D3D12 與光線追蹤"
+  ],
+  "audience": "對遊戲主機逆向工程、模擬器或圖形程式有興趣的開發者與研究者",
+  "use_cases": [
+   "下載 GPU 檢測包，在自己的顯示卡上跑測試並回報結果",
+   "從原始碼建置，研究著色器轉譯與 BC7 材質還原",
+   "參與 CPU 轉譯、腳本狀態重播等開放議題的研究"
+  ],
+  "barrier": "code",
+  "barrier_note": "GPU 檢測需在 PowerShell 執行；其他測試要從原始碼建置",
+  "limitations": "仍屬研究階段，遊戲本身的 CPU 程式執行、完整遊戲啟動與畫面更新率都還沒驗證",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

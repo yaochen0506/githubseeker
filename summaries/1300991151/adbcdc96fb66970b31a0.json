@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "adbcdc96fb66970b31a0",
+ "repo_id": 1300991151,
+ "full_name": "croffasia/itsaplan",
+ "created_at": "2026-11-22T07:21:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "91a2da77f61e5b56bedd84e8507523032fa5d1e173fc6c77d10b0274eb3c79af",
+ "has_readme": true,
+ "readme_chars": 8620,
+ "content": {
+  "one_liner": "可以架在自己伺服器上的專案管理工具，讓 AI 代理像同事一樣接手任務",
+  "features": [
+   "看板、表格、時間軸、行事曆等多種檢視",
+   "AI 代理成為專案成員，可被指派或排程",
+   "支援從 Linear、Trello、Plane 匯入"
+  ],
+  "audience": "想自行架設專案管理系統、並讓 AI 代理協助工作的團隊與公司",
+  "use_cases": [
+   "團隊用看板與週期規劃軟體開發或行銷工作",
+   "把任務指派給 AI 代理處理，再由人或其他代理檢查",
+   "從 Linear 或 Trello 搬家到自有伺服器"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自行部署，例如用 Railway 或 Docker 與 Bun，且需有自己的網域",
+  "limitations": "部分功能（代理工作流程、稽核紀錄、多工作區等）需付費 Pro 版，每年 240 美元；Railway 部署需自有網域",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

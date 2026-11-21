@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f17833120bb4e9a8e597",
+ "repo_id": 1013480284,
+ "full_name": "davila7/claude-code-templates",
+ "created_at": "2026-11-22T07:21:51+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5e4ef1494d662fb497ad07d3ba6046279b50866745d039d3a202a25d934a3caf",
+ "has_readme": true,
+ "readme_chars": 5533,
+ "content": {
+  "one_liner": "收錄上千個 Claude Code 擴充元件的開放目錄，一行指令就能安裝",
+  "features": [
+   "超過 1,980 個 skills、agents、指令、MCP 等元件",
+   "CLI 自動放置檔案並合併既有設定，不覆蓋",
+   "內建本機使用分析、對話瀏覽與健康檢查工具"
+  ],
+  "audience": "使用 Claude Code 的開發者，想快速替它加上現成功能、整合外部服務或調整設定的人",
+  "use_cases": [
+   "替 Claude Code 安裝程式碼審查、安全稽核等專門 agent",
+   "串接 GitHub、PostgreSQL、Stripe 等外部服務的 MCP",
+   "在本機瀏覽、搜尋過去和 Claude Code 的對話紀錄"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要已安裝 Claude Code，並會在命令列用 npx 執行指令",
+  "limitations": "1.31.0 版移除多個舊參數；儀表板只在本機 127.0.0.1 運作；Sandboxes 只供參考",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

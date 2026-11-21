@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "a380c4a18b8c884bca93",
+ "repo_id": 1306128367,
+ "full_name": "andrewyng/openworker",
+ "created_at": "2026-11-22T07:21:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a9b81f874ae48639c98d46468887ec4dd53a4852a92d1985e0ed1f973108ccd3",
+ "has_readme": true,
+ "readme_chars": 10234,
+ "content": {
+  "one_liner": "在自己電腦上執行的 AI 工作助理 App，幫你做研究、寫文件、審查程式碼",
+  "features": [
+   "把筆記與檔案整理成簡報、文件、試算表或報告",
+   "串接 GitHub、Slack、Email、行事曆，可透過 MCP 擴充",
+   "動作預設需你核准，並記錄所有操作，可選用沙盒隔離"
+  ],
+  "audience": "想用 AI 協助日常文書、研究與排程工作的上班族，以及想打造 AI 代理程式的開發者",
+  "use_cases": [
+   "讀取一個資料夾的會議紀錄，整理出含決議與待辦事項的一頁摘要",
+   "在 Slack 標記 @OpenWorker 交辦任務，結果回覆到討論串",
+   "排程每天的晨間簡報或每週報告自動產出"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載 macOS 或 Windows App，並自備 AI 模型金鑰或在本機安裝 Ollama",
+  "limitations": "目前為公開測試版；Windows 版尚未程式碼簽章，SmartScreen 會跳出警告；審查模型的判斷不保證正確",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a5de76d0d504939a2488",
+ "repo_id": 1028432181,
+ "full_name": "awslabs/cli-agent-orchestrator",
+ "created_at": "2026-11-22T07:22:58+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "88db3f7aa80477f4dc86c51e2bac0c4e5917cd2e309a83f08e1e3e0c3880c366",
+ "has_readme": true,
+ "readme_chars": 5547,
+ "content": {
+  "one_liner": "讓多個 AI 寫程式命令列工具分工合作，由一個主管代理分派任務",
+  "features": [
+   "在獨立 tmux 工作階段中啟動多個 AI 程式工具",
+   "主管代理可平行或依序分派工作給專門代理",
+   "提供 Web UI、MCP 伺服器與排程工作流程"
+  ],
+  "audience": "已在使用 Claude Code、Kiro、Codex 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "讓多個 AI 代理同時處理同一個專案的不同任務",
+   "建立排程執行或多步驟的自動化開發流程",
+   "在 Amazon EKS 上部署主管與工作代理群組"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python 3.11、tmux、uv，並在命令列操作至少一種已登入的 AI CLI",
+  "limitations": "Agent Plugins 功能預設關閉，需設定環境變數才能啟用；須事先完成各 AI CLI 的安裝與登入",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

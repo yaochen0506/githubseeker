@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "2e41f45dbb87204e7459",
+ "repo_id": 414027423,
+ "full_name": "xushengfeng/eSearch",
+ "created_at": "2026-11-22T07:23:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b988830672ee1713bab8fd3cbd0382f3599141a58c7942df2b398b015528e0c4",
+ "has_readme": true,
+ "readme_chars": 3396,
+ "content": {
+  "one_liner": "結合截圖、離線 OCR 文字辨識、搜尋、翻譯與錄影的桌面工具",
+  "features": [
+   "截圖編輯、滾動截圖與圖片貼在螢幕上",
+   "內建離線 OCR，支援多語言與直排文字",
+   "翻譯、螢幕翻譯、以圖搜圖與錄影"
+  ],
+  "audience": "常需要截圖、擷取圖片文字或翻譯畫面內容的 Windows、Linux、macOS 使用者",
+  "use_cases": [
+   "框選畫面中的文字後按 Enter，直接轉成可編輯文字",
+   "看影片或玩遊戲時定時翻譯螢幕上的外語",
+   "錄製操作畫面並匯出成 GIF 或 MP4"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載對應系統的安裝檔安裝即可，預設快捷鍵 Alt + C；部分系統需額外裝相依套件",
+  "limitations": "不支援 Win7、Win8；安裝檔較大；Gnome 需裝 appindicator 外掛；mac 可能提示檔案已損毀",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

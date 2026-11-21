@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "57e2a8677036257f18cb",
+ "repo_id": 1466325515,
+ "full_name": "omonkeyz/xbox-emulator",
+ "created_at": "2026-11-22T07:22:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "219a9bdc0c9897ad790322c264857335a804a0e46dfbe04a34801987987e7db8",
+ "has_readme": true,
+ "readme_chars": 4389,
+ "content": {
+  "one_liner": "讓 Xbox Series X|S 遊戲在 Windows 電腦上執行的開發中模擬器",
+  "features": [
+   "重新實作主機的 Direct3D 12 與系統函式庫",
+   "把 RDNA2 預編譯著色器轉譯到 PC 上執行",
+   "自動產生各函式庫與函式的支援進度表"
+  ],
+  "audience": "對遊戲主機模擬技術有興趣、會用 Rust 且想參與開發的程式設計師",
+  "use_cases": [
+   "追蹤 Xbox 遊戲在 PC 上執行的開發進度",
+   "補齊進度表上標示缺少的主機函式庫函式並提交貢獻",
+   "研究 Xbox 遊戲檔的著色器與系統函式結構"
+  ],
+  "barrier": "code",
+  "barrier_note": "需自行編譯 Rust 程式碼，並自備合法取得且已解密的遊戲傾印檔",
+  "limitations": "目前沒有遊戲能玩；Fortnite 只能進到大廳，3D 畫面有錯、沒有音效和輸入；不含遊戲檔，也不做解密",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

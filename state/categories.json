@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-20T08:39:54+08:00",
+ "updated_at": "2026-11-22T07:21:05+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -969,6 +969,12 @@
    "full_name": "astral-sh/ruff",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "523325759": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "hmjz100/LinkSwift",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "527600676": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -1905,6 +1911,12 @@
    "full_name": "tobi/qmd",
    "classified_at": "2026-11-20T08:39:54+08:00"
   },
+  "1113573066": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "hugohe3/ppt-master",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1118085970": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2156,6 +2168,12 @@
    "exclude_reason": null,
    "full_name": "mksglu/context-mode",
    "classified_at": "2026-11-04T07:27:02+08:00"
+  },
+  "1165277268": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "Panniantong/Agent-Reach",
+   "classified_at": "2026-11-22T07:21:05+08:00"
   },
   "1166506614": {
    "category": "ai-agents",
@@ -2613,6 +2631,12 @@
    "full_name": "shy3130/tick-stock-panel",
    "classified_at": "2026-11-04T07:27:02+08:00"
   },
+  "1273138090": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "baidu/Unlimited-OCR",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1273427276": {
    "category": "security-network",
    "exclude_reason": null,
@@ -2829,6 +2853,18 @@
    "full_name": "ErTasselli/OpenTerminal",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1315788496": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "elayadesign/ai-design-skills",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1315850547": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "pollen-robotics/microduck",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1316443307": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -2918,6 +2954,12 @@
    "exclude_reason": null,
    "full_name": "CNCKitchen/ScanRuler",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1333652151": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "PC2005-cloud/dsh-pet",
+   "classified_at": "2026-11-22T07:21:05+08:00"
   },
   "1334325657": {
    "category": "ai-agents",
@@ -3093,6 +3135,12 @@
    "full_name": "JustAResearcher/gpu-unlock-ada",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1431830406": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "t3dotgg/tstack",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1431851693": {
    "category": "everyday-tools",
    "exclude_reason": null,
@@ -3123,11 +3171,23 @@
    "full_name": "unclebob/ub-mode",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1433904617": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "andyhuo520/digital-human-koubo",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1435695423": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "anhao/ai-pose-gallery-zh",
    "classified_at": "2026-11-04T07:27:17+08:00"
+  },
+  "1436598075": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "smithjohn78390/tongjiang-lab",
+   "classified_at": "2026-11-22T07:21:05+08:00"
   },
   "1437774066": {
    "category": "fun-creative",
@@ -3471,6 +3531,12 @@
    "full_name": "WattBeetleLearn/IPTV_Player_2.0",
    "classified_at": "2026-11-15T06:28:35+08:00"
   },
+  "1458720005": {
+   "category": "security-network",
+   "exclude_reason": null,
+   "full_name": "Hut-hzf/ung220z-tool",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
   "1459018145": {
    "category": "security-network",
    "exclude_reason": null,
@@ -3590,6 +3656,36 @@
    "exclude_reason": null,
    "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
    "classified_at": "2026-11-20T08:39:54+08:00"
+  },
+  "1465728637": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "R0Y00/Xbox2Windows",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1465855400": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ItsNotRexed/Leonida",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1465951272": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "hatsunemiku-ai/google-one-tools",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1466075841": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "sybil-solutions/skill-distill",
+   "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1466325515": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "omonkeyz/xbox-emulator",
+   "classified_at": "2026-11-22T07:21:05+08:00"
   }
  }
 }
