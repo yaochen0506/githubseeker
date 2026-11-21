@@ -277,7 +277,10 @@ def site_marker(editions, code_version):
     latest = editions[-1] if editions else None
     return {"edition_id": latest["edition_id"] if latest else None,
             "generated_at": latest["generated_at"] if latest else None,
-            "code_version": code_version}
+            "code_version": code_version,
+            # 補寫摘要後精選日期不變，靠這個數字發現網站需要重新部署
+            "summaries_done": sum((p.get("summary") or {}).get("status") == "done"
+                                  for e in editions for p in e["picks"])}
 
 
 def build_site(data_dir, out_dir, site_cfg, score_cfg, code_version, cat_cfg=None):
@@ -339,4 +342,4 @@ def live_marker(session, base_url):
 
 
 def needs_deploy(live, expected):
-    return live is None or any(live.get(k) != expected[k] for k in ("edition_id", "code_version"))
+    return live is None or any(live.get(k) != expected[k] for k in ("edition_id", "code_version", "summaries_done"))

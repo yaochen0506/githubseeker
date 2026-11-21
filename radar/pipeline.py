@@ -325,6 +325,30 @@ def build_edition(run, past_editions, score_cfg, boards, status, generated_at, h
     }
 
 
+def backfill_summaries(data_dir, out_dir, business_date, summarize_fn, now=store.now_taipei):
+    """已發布精選裡摘要失敗的專案再補寫一次（例如當時碰到訂閱用量上限）。
+
+    入選名單、順序和已成功的摘要都不動，只補 summary 欄位。至少補成功一篇才寫出新版本。
+    回傳 (新版精選或 None, 這次的摘要統計)。
+    """
+    path = Path(data_dir) / store.edition_path(business_date)
+    edition = store.read_json(path) if path.exists() else None
+    if not edition or not any((p.get("summary") or {}).get("status") == "failed" for p in edition["picks"]):
+        return None, {}
+
+    def done():
+        return sum((p.get("summary") or {}).get("status") == "done" for p in edition["picks"])
+
+    before = done()
+    stats = summarize_fn(edition)
+    if done() == before:
+        return None, stats
+    edition["summary_backfilled_at"] = store.iso(now())
+    store.validate(edition, "edition")
+    store.write_json(Path(out_dir) / store.edition_path(business_date), edition)
+    return edition, stats
+
+
 def meets_minimum(run, score_cfg):
     """降級版的最低門檻：至少 1 頁 Trending 成功，或 Search 成功且候選夠多。"""
     if any(s["kind"] == "trending" and s["status"] == "ok" for s in run["sources"]):
@@ -510,9 +534,11 @@ def _edition(args):
         edition["classification_stats"] = class_stats
         stats.update(summarize.summarize_edition(edition, api, args.data_dir, out_dir, summary_cfg))
 
-    edition = maybe_build_edition(args.data_dir, out_dir, business_date, store.load_runs(out_dir, business_date),
-                                  trigger, score_cfg, load_toml("site.toml")["boards"],
-                                  summarizer=summarizer, classifier=classifier, cat_cfg=cat_cfg)
+    manual_fill = os.environ.get("RADAR_BACKFILL_DATE")
+    # 手動指定補寫日期時只補摘要，不產生新精選（手動執行會被當成當天最後機會而發布降級版）
+    edition = None if manual_fill else maybe_build_edition(
+        args.data_dir, out_dir, business_date, store.load_runs(out_dir, business_date), trigger, score_cfg,
+        load_toml("site.toml")["boards"], summarizer=summarizer, classifier=classifier, cat_cfg=cat_cfg)
     if edition is None:
         print("這次沒有產生新的精選（今天已有精選，或資料還不完整、等下一次觸發）")
     else:
@@ -526,12 +552,30 @@ def _edition(args):
             if pick["summary"]["status"] == "failed":
                 print(f"::warning::{pick['full_name']} 摘要失敗：{pick['summary']['error']}")
 
+    # 補寫摘要：自動模式補今天的精選（之前的觸發碰到用量上限等）；手動執行可指定日期
+    backfill_date = manual_fill or business_date
+    date.fromisoformat(backfill_date)  # 格式不對就直接報錯
+    backfilled = None
+    if edition is None or backfill_date != business_date:
+        backfilled, fill_stats = backfill_summaries(
+            args.data_dir, out_dir, backfill_date,
+            lambda e: summarize.summarize_edition(e, api, args.data_dir, out_dir, summary_cfg, only_failed=True))
+        if fill_stats:
+            print(f"補寫 {backfill_date} 的摘要：{fill_stats}")
+        elif edition is None:
+            print(f"{backfill_date} 的精選沒有需要補寫的摘要")
+        if backfilled:
+            print(f"{backfill_date} 補寫後：{backfilled['summary_stats']}")
+
     alert = bool(stats) and summarize.needs_alert(stats, summary_cfg)
     if alert:
         print(f"::warning::摘要成功率過低：{stats}")
     files = [p.relative_to(out_dir).as_posix() for p in out_dir.rglob("*") if p.is_file()] if out_dir.exists() else []
     parts = [f"run {Path(f).stem}" for f in files if f.startswith("runs/")]
-    parts += [f"edition {business_date}" for f in files if f.startswith("editions/")]
+    for f in files:
+        if f.startswith("editions/"):
+            day = f[len("editions/"):-len(".json")].replace("/", "-")
+            parts.append(f"edition {day}" + (" (summary backfill)" if backfilled and day == backfill_date else ""))
     if "state/categories.json" in files:
         parts.append(f"{class_stats.get('classified', 0)} categorized")
     if any(f.startswith("summaries/") for f in files):
@@ -552,7 +596,7 @@ def _summary_test():
     readme = "Install with pip install csv2xlsx, then run csv2xlsx input.csv to create input.xlsx."
     content, info, error = summarize.ClaudeCodeRunner(cfg)(summarize.build_document(sample, readme))
     if error:
-        hint = f"；{summarize.AUTH_MESSAGE}" if summarize.AUTH_ERROR_RE.search(error) else ""
+        hint = f"；{summarize.fatal_error(error)}" if summarize.fatal_error(error) else ""
         print(f"::error::摘要測試失敗（模型 {cfg['model']}）：{error}{hint}")
         return 1
     issues = summarize.check(content, cfg)

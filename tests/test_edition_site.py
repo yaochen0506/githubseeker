@@ -85,7 +85,8 @@ def test_site_escapes_and_links_work_under_subpath(tmp_path):
 
     assert json.loads((out / "data/latest.json").read_text(encoding="utf-8"))["picks"][0]["description"] == NASTY
     assert json.loads((out / "edition.json").read_text(encoding="utf-8")) == {
-        "edition_id": "2026-10-26", "generated_at": ed["generated_at"], "code_version": "abc123"}
+        "edition_id": "2026-10-26", "generated_at": ed["generated_at"], "code_version": "abc123",
+        "summaries_done": 0}
     locs = [e.text for e in ET.fromstring((out / "sitemap.xml").read_bytes()).iter("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
     assert "https://yaochen0506.github.io/githubseeker/archive/2026/10/26/" in locs
 
@@ -116,10 +117,12 @@ def test_empty_site_still_builds(tmp_path):
 
 
 def test_needs_deploy_compares_edition_and_code():
-    expected = {"edition_id": "2026-10-26", "generated_at": "x", "code_version": "v2"}
+    expected = {"edition_id": "2026-10-26", "generated_at": "x", "code_version": "v2", "summaries_done": 5}
     assert site.needs_deploy(None, expected)
-    assert site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v1"}, expected)
-    assert not site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v2"}, expected)
+    assert site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v1", "summaries_done": 5}, expected)
+    assert not site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v2", "summaries_done": 5}, expected)
+    # 補寫摘要後日期不變，但成功篇數變了，也要重新部署
+    assert site.needs_deploy({"edition_id": "2026-10-26", "code_version": "v2", "summaries_done": 3}, expected)
 
 
 def test_release_notes_list_picks_and_escape_markdown():

@@ -79,8 +79,8 @@ def classify(observations, data_dir, out_dir, cat_cfg, summary_cfg, runner=None,
         result, _, error = runner(build_document(batch), None)
         if error:
             stats["failed_calls"] += 1
-            if summarize.AUTH_ERROR_RE.search(error):
-                stats["reason"] = summarize.AUTH_MESSAGE
+            if summarize.fatal_error(error):
+                stats["reason"] = summarize.fatal_error(error)
                 break
             continue
         wanted = {o["repo_id"]: o for o in batch}

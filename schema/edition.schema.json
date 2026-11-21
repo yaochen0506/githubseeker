@@ -180,6 +180,11 @@
       },
       "description": "D 階段：成長遠超過上 Trending 門檻、卻從沒上過 Trending 而先不推薦的專案（選填）"
     },
+    "summary_backfilled_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "摘要事後補寫的時間（選填）：入選名單不變，只補當時失敗的摘要"
+    },
     "suspicious_details": {
       "type": "array",
       "description": "F 階段：上面那些專案的細節，網站「觀察中」清單用（選填；2026-11-21 起的精選才有）",

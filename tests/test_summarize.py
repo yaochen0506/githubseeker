@@ -148,6 +148,64 @@ def test_invalid_token_stops_immediately(tmp_path):
     store.validate(ed, "edition")
 
 
+
+def test_usage_limit_stops_immediately(tmp_path):
+    ed = edition(pick(1), pick(2), pick(3))
+    runner = FakeRunner("success：You've hit your session limit · resets 1:30am (UTC)")
+    stats, _ = run(tmp_path, ed, {"o/r1": "a", "o/r2": "b", "o/r3": "c"}, runner)
+    assert len(runner.calls) == 1  # 用量已滿，後面的專案不再呼叫
+    assert all("用量已達上限" in p["summary"]["error"] for p in ed["picks"])
+    assert "resets 1:30am" in ed["picks"][0]["summary"]["error"]
+    assert stats["calls"] == 1 and stats["reason"] == summarize.LIMIT_MESSAGE
+    assert summarize.fatal_error("Claude AI usage limit reached|1763700000") == summarize.LIMIT_MESSAGE
+    assert summarize.fatal_error("格式不符") is None
+
+
+def _published(tmp_path):
+    """已發布的精選：專案 1 摘要成功，專案 2、3 因為用量上限失敗。"""
+    data = tmp_path / "data"
+    ed = edition(pick(1), pick(2), pick(3))
+    run(tmp_path, ed, {"o/r1": "a"}, FakeRunner(GOOD), cfg={**CFG, "max_calls_per_run": 1}, data_dir=data)
+    store.write_json(data / store.edition_path("2026-10-27"), ed)
+    return data, ed
+
+
+def test_backfill_retries_only_failed_summaries(tmp_path):
+    data, published = _published(tmp_path)
+    first = published["picks"][0]["summary"]
+    out = tmp_path / "fill"
+    runner = FakeRunner(GOOD)
+    api = FakeApi({"o/r1": "a", "o/r2": "b", "o/r3": "c"})
+    filled, stats = pipeline.backfill_summaries(
+        data, out, "2026-10-27",
+        lambda e: summarize.summarize_edition(e, api, data, out, CFG, runner=runner, only_failed=True))
+    assert len(runner.calls) == 2  # 只重試失敗的 2 個
+    assert stats["done"] == 2 and stats["attempted"] == 2
+    assert [p["repo_id"] for p in filled["picks"]] == [1, 2, 3]  # 入選名單與順序不變
+    assert filled["picks"][0]["summary"] == first  # 已成功的不動
+    assert all(p["summary"]["status"] == "done" for p in filled["picks"])
+    assert filled["summary_stats"]["done"] == 3 and filled["summary_stats"]["failed"] == 0
+    assert filled["summary_stats"]["calls"] == 3  # 前後兩次累計
+    assert "summary_backfilled_at" in filled
+    written = store.read_json(out / store.edition_path("2026-10-27"))
+    assert written == filled
+    store.validate(written, "edition")
+
+
+def test_backfill_writes_nothing_when_still_failing_or_nothing_to_do(tmp_path):
+    data, _ = _published(tmp_path)
+    out = tmp_path / "fill"
+    limit = FakeRunner("success：You've hit your session limit · resets 1:30am (UTC)")
+    api = FakeApi({"o/r2": "b", "o/r3": "c"})
+    filled, stats = pipeline.backfill_summaries(
+        data, out, "2026-10-27",
+        lambda e: summarize.summarize_edition(e, api, data, out, CFG, runner=limit, only_failed=True))
+    assert filled is None and stats["failed"] == 2 and len(limit.calls) == 1
+    assert not (out / store.edition_path("2026-10-27")).exists()
+    # 沒有精選、或沒有失敗的摘要：不呼叫
+    assert pipeline.backfill_summaries(data, out, "2026-10-28", None) == (None, {})
+
+
 def test_budget_limits_calls(tmp_path):
     cfg = {**CFG, "max_calls_per_run": 1}
     ed = edition(pick(1), pick(2))

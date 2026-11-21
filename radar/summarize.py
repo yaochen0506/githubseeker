@@ -24,6 +24,18 @@ PROMPT_PATH = ROOT / "config" / "summary_prompt.md"
 URL_RE = re.compile(r"https?://|www\.", re.I)
 AUTH_ERROR_RE = re.compile(r"401|403|authenticat|bearer token|oauth|not logged in|login expired", re.I)
 AUTH_MESSAGE = "Claude 權杖無效或已過期，請重新執行 claude setup-token 並更新 GitHub Secret"
+# 訂閱用量上限，例如「You've hit your session limit · resets 1:30am (UTC)」
+LIMIT_ERROR_RE = re.compile(r"usage limit|hit your [\w -]{0,30}limit|limit reached", re.I)
+LIMIT_MESSAGE = "Claude 訂閱用量已達上限，之後的觸發會自動補寫摘要"
+
+
+def fatal_error(error):
+    """權杖失效或用量已滿：再試也沒用，這次執行後面的呼叫全部跳過。回傳說明；不是這兩種就回傳 None。"""
+    if LIMIT_ERROR_RE.search(error or ""):
+        return LIMIT_MESSAGE
+    if AUTH_ERROR_RE.search(error or ""):
+        return AUTH_MESSAGE
+    return None
 BARRIER_LABELS = {"online": "免安裝（線上可用）", "install": "需要下載安裝", "code": "需要寫程式"}
 
 
@@ -156,8 +168,13 @@ def cache_path(repo_id, key):
     return Path("summaries") / str(repo_id) / f"{key}.json"
 
 
-def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=time.monotonic, now=store.now_taipei):
-    """替精選裡的每個專案加上 summary 欄位，並在精選加上 summary_stats。直接修改傳入的 edition。"""
+def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=time.monotonic, now=store.now_taipei,
+                      only_failed=False):
+    """替精選裡的每個專案加上 summary 欄位，並在精選加上 summary_stats。直接修改傳入的 edition。
+
+    only_failed：補寫模式，只重試摘要失敗的專案，其他專案的摘要不動；summary_stats 累計前後兩次，
+    回傳值則是這一次的統計。
+    """
     stats = {"enabled": True, "reason": None, "model": cfg["model"], "attempted": 0, "done": 0, "failed": 0,
              "skipped": 0, "cached": 0, "calls": 0, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
     if runner is None:
@@ -171,8 +188,10 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
         runner = ClaudeCodeRunner(cfg)
 
     deadline = clock() + cfg["total_timeout_seconds"]
-    auth_failed = False
+    stop_reason = None
     for pick in edition["picks"]:
+        if only_failed and (pick.get("summary") or {}).get("status") != "failed":
+            continue
         raw = fetch_readme(api, pick["full_name"])
         readme = clean_readme(raw, cfg["readme_max_chars"]) if raw else ""
         if not readme and not pick["description"]:
@@ -194,9 +213,9 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
 
         stats["attempted"] += 1
         content, feedback, error, attempts = None, None, None, 0
-        if auth_failed:
-            # 權杖已被拒絕，後面的專案不必再試
-            pick["summary"] = _record("failed", cfg, key, has_readme=bool(readme), error=AUTH_MESSAGE)
+        if stop_reason:
+            # 權杖被拒或用量已滿，後面的專案不必再試
+            pick["summary"] = _record("failed", cfg, key, has_readme=bool(readme), error=stop_reason)
             stats["failed"] += 1
             continue
         for _ in range(cfg["max_attempts_per_repo"]):
@@ -210,8 +229,9 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
             stats["output_tokens"] += info.get("output_tokens", 0)
             stats["cost_usd"] = round(stats["cost_usd"] + info.get("cost_usd", 0), 6)
             if error:
-                if AUTH_ERROR_RE.search(error):
-                    auth_failed, error = True, f"{AUTH_MESSAGE}（{error[:120]}）"
+                stop_reason = fatal_error(error)
+                if stop_reason:
+                    error = f"{stop_reason}（{error[:120]}）"
                     break
                 feedback = None
                 continue
@@ -235,9 +255,18 @@ def summarize_edition(edition, api, data_dir, out_dir, cfg, runner=None, clock=t
         pick["summary"] = _record("done", cfg, key, has_readme=bool(readme), content=content, attempts=attempts)
         stats["done"] += 1
 
-    if auth_failed:
-        stats["reason"] = AUTH_MESSAGE
-    edition["summary_stats"] = stats
+    if stop_reason:
+        stats["reason"] = stop_reason
+    if only_failed:
+        old = edition.get("summary_stats") or {}
+        merged = {**stats, "cost_usd": round(old.get("cost_usd", 0) + stats["cost_usd"], 6)}
+        for k in ("attempted", "cached", "calls", "input_tokens", "output_tokens"):
+            merged[k] = old.get(k, 0) + stats[k]
+        for k in ("done", "failed", "skipped"):
+            merged[k] = sum((p.get("summary") or {}).get("status") == k for p in edition["picks"])
+        edition["summary_stats"] = merged
+    else:
+        edition["summary_stats"] = stats
     return stats
 
 

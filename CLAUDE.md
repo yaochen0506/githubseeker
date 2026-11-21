@@ -11,6 +11,7 @@
 - 日期一律用台北時間（`store.TAIPEI`，固定 +08:00）。
 - 缺值存 `null`，真的是 0 才存 `0`；Trending 回 200 但列數太少視為來源失敗。
 - `runs/` 只新增、不修改；資料分支 `radar-data` 是唯一事實來源。
+- 精選的入選名單發布後不改；唯一例外是補寫當時失敗的摘要（`backfill_summaries`，只動 summary 欄位並記 `summary_backfilled_at`）。
 - 來源故障時不注入 mock／測試資料。
 - 抓網頁時用設定檔中如實的 User-Agent，不偽裝瀏覽器。
 - 處理外部資料的 job 只給 `contents: read`；寫入資料分支的 job 先跑 `python -m radar validate`。

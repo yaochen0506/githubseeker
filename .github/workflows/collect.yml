@@ -1,7 +1,7 @@
 name: 每日收集與發布
 
 # 排程器實測常延遲 3.5～9 小時，所以一天設 3 個觸發；
-# 當天已有完整紀錄與精選時，後面的觸發只做部署檢查（冪等）。
+# 當天已有完整紀錄與精選時，後面的觸發只補寫失敗的摘要（例如碰到訂閱用量上限）並做部署檢查。
 on:
   schedule:
     - cron: "17 2 * * *"
@@ -24,6 +24,10 @@ on:
         description: "只測試摘要與分類能不能用（不收集、不改資料）"
         type: boolean
         default: false
+      backfill_date:
+        description: "只補寫這一天精選裡失敗的摘要（YYYY-MM-DD；不收集、不產生新精選，入選名單不變）"
+        type: string
+        default: ""
   # 網站程式或範本有改動時，只重新部署，不收集
   push:
     branches: [main]
@@ -78,6 +82,7 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: 收集
+        if: ${{ !inputs.backfill_date }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RADAR_SCHEDULE: ${{ github.event.schedule }}
@@ -93,6 +98,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RADAR_SCHEDULE: ${{ github.event.schedule }}
+          RADAR_BACKFILL_DATE: ${{ inputs.backfill_date }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           DISABLE_AUTOUPDATER: "1"
           CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
