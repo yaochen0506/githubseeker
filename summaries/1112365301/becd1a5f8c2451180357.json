@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "becd1a5f8c2451180357",
+ "repo_id": 1112365301,
+ "full_name": "tobi/qmd",
+ "created_at": "2026-11-22T00:52:32+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "67938367fcd6dd5f36da042e8ec3def7de4719683611a7cd30085d7fc63e7fc1",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在自己電腦上搜尋筆記、會議紀錄和文件的命令列搜尋引擎",
+  "features": [
+   "結合關鍵字搜尋、語意搜尋與 LLM 重新排序",
+   "所有模型都在本機執行，首次使用時自動下載",
+   "提供 MCP 伺服器，可接 Claude 等 AI 助理"
+  ],
+  "audience": "有大量 Markdown 筆記或文件的開發者，以及想讓 AI 助理查詢個人資料的進階使用者",
+  "use_cases": [
+   "用自然語言搜尋自己的 Markdown 筆記與會議逐字稿",
+   "讓 Claude Desktop 或 Claude Code 透過 MCP 查詢個人知識庫",
+   "在自己的 Node.js 或 Bun 程式中當作搜尋函式庫使用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Node.js 22 以上與 Bun，並使用命令列操作",
+  "limitations": "預設嵌入模型以英文為主，中文建議換 Qwen3 模型；模型約需 2GB；HTTP 端點沒有身分驗證",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

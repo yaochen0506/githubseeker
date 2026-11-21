@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "0eb4511658c2fe649014",
+ "repo_id": 310659501,
+ "full_name": "qjfoidnh/BaiduPCS-Go",
+ "created_at": "2026-11-22T00:52:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "adf1bc43b8f0afa2f82c0f8aa3ab9c44c813d45d0595e667ae27c497da7c54df",
+ "has_readme": true,
+ "readme_chars": 11366,
+ "content": {
+  "one_liner": "用類似 Linux 指令的方式操作百度網盤的命令列軟體，可轉存別人分享的連結",
+  "features": [
+   "下載網盤檔案，支援斷點續傳與多檔下載",
+   "上傳本機檔案，單檔最大支援 128G",
+   "轉存他人分享連結，支援密碼與離線下載"
+  ],
+  "audience": "有百度網盤帳號、熟悉命令列操作，想批次管理或下載網盤檔案的使用者",
+  "use_cases": [
+   "在電腦上用指令批次下載百度網盤裡的整個資料夾",
+   "把別人分享的百度網盤連結（含提取碼）轉存到自己的網盤",
+   "新增磁力連結或 http 網址的離線下載任務到網盤"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在終端機輸入指令操作，並準備百度帳號 Cookies 或 BDUSS 登入",
+  "limitations": "不提供超出官方的下載加速；一般使用者調高並行數容易被限速；上傳不支援斷點續傳；秒傳功能已失效",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

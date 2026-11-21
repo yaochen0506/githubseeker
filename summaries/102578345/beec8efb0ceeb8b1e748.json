@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "beec8efb0ceeb8b1e748",
+ "repo_id": 102578345,
+ "full_name": "coolsnowwolf/lede",
+ "created_at": "2026-11-22T00:53:38+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "1ac493125302dd8386e413443e4176a0ed85146c3d69362f78ad8e25d5fa4809",
+ "has_readme": true,
+ "readme_chars": 4250,
+ "content": {
+  "one_liner": "Lean 維護的 LEDE／OpenWrt 路由器韌體原始碼，可以自己編譯軟路由韌體",
+  "features": [
+   "提供可編譯 OpenWrt 路由器韌體的完整原始碼與套件",
+   "支援 Linux、WSL 與 macOS 原生編譯",
+   "新增龍芯 loongarch64 與飛騰 D2000 架構支援"
+  ],
+  "audience": "想自己編譯路由器或軟路由韌體、熟悉 Linux 命令列的玩家與開發者",
+  "use_cases": [
+   "為家用路由器或軟路由編譯客製化 OpenWrt 韌體",
+   "依需求挑選要放進韌體的套件，例如 DDNS、UPnP",
+   "為 8 MiB 小容量設備裁減功能後產生韌體"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Linux（建議 Debian／Ubuntu）或 macOS 環境，用命令列安裝依賴並編譯",
+  "limitations": "不可用 root 編譯；macOS 需區分大小寫磁碟且建議 100 GB 空間；ROM 4 MiB 以下設備不支援",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

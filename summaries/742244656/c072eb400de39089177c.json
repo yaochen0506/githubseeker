@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c072eb400de39089177c",
+ "repo_id": 742244656,
+ "full_name": "agentscope-ai/agentscope",
+ "created_at": "2026-11-22T00:52:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0571191f5728f7793e4804a6214e1d2f5fcf14466654b5d451e952f3b9e41ac5",
+ "has_readme": true,
+ "readme_chars": 5731,
+ "content": {
+  "one_liner": "用 Python 打造並執行 AI 代理人（agent）的開發框架，附後端服務與網頁介面",
+  "features": [
+   "支援多家模型與 MCP 工具，可組合 ReAct 代理人",
+   "多代理人團隊分工、任務規劃與即時語音對話",
+   "內建 FastAPI 後端、Web UI，可串接 Discord 等平台"
+  ],
+  "audience": "想開發 AI 代理人應用或聊天機器人的 Python 開發者與研究人員",
+  "use_cases": [
+   "建立能呼叫工具、寫程式碼的 AI 助理",
+   "讓主代理人分派任務給多個成員代理人協作完成",
+   "把代理人接到飛書或 Discord，做成聊天機器人"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 3.11 以上、會用命令列寫程式，並準備模型服務的 API 金鑰",
+  "limitations": "需 Python 3.11 以上；即時語音對話、SOP 等功能仍標示為實驗性",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

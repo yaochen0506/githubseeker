@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "f9f549e95e7f4e037edb",
+ "repo_id": 1458720005,
+ "full_name": "Hut-hzf/ung220z-tool",
+ "created_at": "2026-11-22T00:52:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8e21e419dde4edbbcd8d038c6a675ac7eaed925733b9f654580abf449fda91c6",
+ "has_readme": true,
+ "readme_chars": 1139,
+ "content": {
+  "one_liner": "抓取 UNG220Z 中國移動光貓管理密碼的工具",
+  "features": [
+   "透過 Telnet 讀取設備設定庫，取出當下有效的全部憑據",
+   "可用互動問答或命令列參數指定光貓位址與帳密",
+   "自動嘗試開啟 Telnet，並輸出憑據彙總表與記錄檔"
+  ],
+  "audience": "擁有 UNG220Z 光貓、想找回自己管理密碼的使用者",
+  "use_cases": [
+   "找回自己忘記的光貓管理密碼",
+   "遷移寬頻設定時取出原有憑據",
+   "對自有設備做安全自查"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Python 3.8+ 執行命令列工具，設備須已開啟 Telnet",
+  "limitations": "作者表示僅限用於自己的設備，未經授權對他人設備使用屬違法行為，作者不承擔責任；部分機型 Telnet 口令與 Web 不同",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

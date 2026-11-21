@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "1ec859f825bf14ddaa26",
+ "repo_id": 356633717,
+ "full_name": "rebase-network/who-is-hiring",
+ "created_at": "2026-11-22T00:53:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ff3dc5cfc3e915b2412d36d5ff924a98ca42b13f88f71c8646948449ca5c7753",
+ "has_readme": true,
+ "readme_chars": 5323,
+ "content": {
+  "one_liner": "Rebase 社群維護的免費徵才看板，集中刊登區塊鏈與其他產業的職缺",
+  "features": [
+   "企業開 GitHub issue 寫職缺說明就能免費刊登",
+   "職缺會在 Rebase 社群所有媒體上發布",
+   "列出歷來職缺，很多是遠端工作"
+  ],
+  "audience": "想找區塊鏈、Web3 或遠端工作的求職者，以及想免費招人的企業與團隊",
+  "use_cases": [
+   "求職者瀏覽交易所、DeFi、遊戲公司的工程師與營運職缺",
+   "企業開 issue 免費刊登職缺，觸及 Rebase 社群讀者",
+   "找有標示薪資範圍的遠端工作機會"
+  ],
+  "barrier": "online",
+  "barrier_note": "求職者用網頁瀏覽就行；企業要刊登職缺，需要有 GitHub 帳號才能開 issue",
+  "limitations": "職缺由徵才方自己發布，Rebase 不保證內容合法或真實，請自行小心辨別；內容大多是簡體中文",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

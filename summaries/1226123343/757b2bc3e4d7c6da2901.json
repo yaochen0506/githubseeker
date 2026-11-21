@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "757b2bc3e4d7c6da2901",
+ "repo_id": 1226123343,
+ "full_name": "virgiliojr94/book-to-skill",
+ "created_at": "2026-11-22T00:51:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0efc513839d74006dea66562da3d6bb199ea577a3b806e7e8460f926c5e34297",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把技術書 PDF 或文件資料夾轉成 AI 助理可隨時查閱的 skill",
+  "features": [
+   "把書拆成章節檔、名詞表、模式與速查表",
+   "支援 PDF、EPUB、DOCX、HTML 等多種格式",
+   "可透過 MCP 依書名或 ISBN 搜尋並轉換"
+  ],
+  "audience": "使用 Claude Code、Codex、Copilot CLI 等 AI 程式助理的工程師與自學者",
+  "use_cases": [
+   "工作中直接問 AI 某本技術書某章的內容",
+   "把公司內部文件資料夾整合成一個 skill 邊寫程式邊查",
+   "把論文和筆記合併成研究知識庫，之後再補新資料"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Python 與 PDF 解析工具，並在 AI 程式助理裡用指令操作",
+  "limitations": "掃描版 PDF 要先自行做 OCR；使用者要自行負責著作權，產生的 skill 不應公開散布",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

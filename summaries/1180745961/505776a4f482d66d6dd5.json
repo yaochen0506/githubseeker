@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "505776a4f482d66d6dd5",
+ "repo_id": 1180745961,
+ "full_name": "JCodesMore/ai-website-cloner-template",
+ "created_at": "2026-11-22T00:52:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e13e01909574e52cbdd654e9f1f01b152c4f40a375e874cdf5216d2e3e55a286",
+ "has_readme": true,
+ "readme_chars": 3900,
+ "content": {
+  "one_liner": "給 AI 寫程式助手一個網址，就能把網站重建成 Next.js 專案",
+  "features": [
+   "一個指令讓 AI 代理人複製指定網站",
+   "擷取網頁素材、字型，並建出可編輯的元件",
+   "比對原站與複製結果的截圖並修正差異"
+  ],
+  "audience": "會使用 Claude Code、Codex、Cursor 等 AI 寫程式工具的開發者或網站擁有者",
+  "use_cases": [
+   "把自己在 WordPress 或 Webflow 上的網站搬到 Next.js",
+   "網站還在線上但原始程式碼遺失時，把程式碼找回來",
+   "研究正式網站的版面、動畫與響應式設計怎麼做"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Node.js 24 以上版本、AI 寫程式代理人，也要會用命令列",
+  "limitations": "不得用於釣魚、冒充或違法用途；Logo 與文案歸原作者所有；部分網站禁止擷取，使用前請先確認",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

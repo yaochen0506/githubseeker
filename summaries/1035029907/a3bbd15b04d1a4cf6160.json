@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "a3bbd15b04d1a4cf6160",
+ "repo_id": 1035029907,
+ "full_name": "earendil-works/pi",
+ "created_at": "2026-11-22T00:51:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c542007be11161460fa799d879c454d1a096cb198903dd7691738b701456c57e",
+ "has_readme": true,
+ "readme_chars": 7525,
+ "content": {
+  "one_liner": "在終端機裡執行的 AI 程式設計助理，可以自由擴充和自訂",
+  "features": [
+   "整合 OpenAI、Anthropic、Google 等多家 LLM 的 API",
+   "可用擴充功能、技能、提示範本、主題來自訂",
+   "支援互動模式、JSON 輸出、RPC 與 TypeScript SDK"
+  ],
+  "audience": "想自訂 AI 程式設計助理的開發者，以及要打造 AI agent 應用的工程師",
+  "use_cases": [
+   "在專案資料夾啟動 Pi，請 AI 幫忙完成寫程式的任務",
+   "用 TypeScript SDK 開發自己的 AI agent 應用",
+   "把擴充功能打包成 Pi 套件，透過 npm 或 git 分享"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要在命令列安裝，要有 Node.js 22.19 以上版本，還要準備 AI 服務的訂閱或 API key",
+  "limitations": "沒有內建權限控管，預設用啟動者的權限執行，需要隔離的話要自己用容器或沙箱；沒有子代理和規劃模式",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

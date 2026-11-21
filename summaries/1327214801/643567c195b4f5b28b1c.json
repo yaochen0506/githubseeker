@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "643567c195b4f5b28b1c",
+ "repo_id": 1327214801,
+ "full_name": "phone-harness/phone-harness",
+ "created_at": "2026-11-22T00:51:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "7903624ccf7c2438ececcbed0b8de6095e2f349b4703cb8ffa7e3d062d74a3c5",
+ "has_readme": true,
+ "readme_chars": 4154,
+ "content": {
+  "one_liner": "讓 Claude Code、Codex 等 AI agent 直接操作你的真實手機",
+  "features": [
+   "AI 可在手機上滑動、點擊、打字與讀取畫面",
+   "支援 iPhone（透過 Mac 鏡像）與 Android（adb）",
+   "提供雲端代管的 iPhone 與 Android 手機"
+  ],
+  "audience": "使用 AI coding agent、想讓 AI 幫忙自動操作手機 App 的開發者與進階使用者",
+  "use_cases": [
+   "請 AI 在手機上叫車，例如示範中用 Waymo 叫車到咖啡店",
+   "讓 AI 自動操作手機 App 完成重複性任務",
+   "可能用於在雲端手機上測試 App"
+  ],
+  "barrier": "code",
+  "barrier_note": "需搭配 AI agent 與命令列；iPhone 要 macOS 15+，Android 要 adb 與 USB 偵錯",
+  "limitations": "OCR 看不到圖示；不支援多點觸控、相機與 Face ID；DRM 影片會黑畫面；雲端 iPhone 需付費預約",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

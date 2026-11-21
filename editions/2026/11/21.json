@@ -87,15 +87,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "CI 建置失敗時，自動查出原因並推送修正讓你審核的命令列 AI 代理",
+     "features": [
+      "讀取失敗的 CI 紀錄，分辨是 CI 環境還是程式碼造成的問題",
+      "自動修正並推送到 PR 分支，或建議下一步處理方式",
+      "串接 Slack、Datadog、Grafana 等 60 多種工具"
+     ],
+     "audience": "軟體工程師、DevOps 與 SRE 團隊，特別是常被 CI 失敗困擾的開發團隊",
+     "use_cases": [
+      "CI 建置變紅時，讓代理分析紀錄、找出根本原因並提出修正",
+      "分析專案的 CI 失敗率與因不穩定 CI 損失的工時",
+      "事故發生時用白話描述問題，並把摘要發送到 Slack 或 PagerDuty"
+     ],
+     "barrier": "code",
+     "barrier_note": "需在終端機安裝並登入帳號，搭配 Git 專案與 LLM 模型使用",
+     "limitations": "目前為 Public Alpha，功能尚未完全穩定，API 與整合可能變動；產品分析與錯誤回報預設開啟，需自行關閉",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "ea2b9e60701ac4d8dc67",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -148,15 +169,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "讓 Claude Code、Codex 等 AI agent 直接操作你的真實手機",
+     "features": [
+      "AI 可在手機上滑動、點擊、打字與讀取畫面",
+      "支援 iPhone（透過 Mac 鏡像）與 Android（adb）",
+      "提供雲端代管的 iPhone 與 Android 手機"
+     ],
+     "audience": "使用 AI coding agent、想讓 AI 幫忙自動操作手機 App 的開發者與進階使用者",
+     "use_cases": [
+      "請 AI 在手機上叫車，例如示範中用 Waymo 叫車到咖啡店",
+      "讓 AI 自動操作手機 App 完成重複性任務",
+      "可能用於在雲端手機上測試 App"
+     ],
+     "barrier": "code",
+     "barrier_note": "需搭配 AI agent 與命令列；iPhone 要 macOS 15+，Android 要 adb 與 USB 偵錯",
+     "limitations": "OCR 看不到圖示；不支援多點觸控、相機與 Face ID；DRM 影片會黑畫面；雲端 iPhone 需付費預約",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "643567c195b4f5b28b1c",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -218,15 +260,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "NGINX 官方開源版本，用來架設網站伺服器、反向代理與負載平衡",
+     "features": [
+      "網頁伺服器，支援 HTTPS、HTTP/2、HTTP/3",
+      "反向代理、負載平衡與 API Gateway",
+      "內容快取與流量限制（Rate limiting）"
+     ],
+     "audience": "架設與維運網站、伺服器的系統管理員與開發者",
+     "use_cases": [
+      "架設網站並啟用 TLS 加密連線",
+      "把流量分散到多台後端伺服器做負載平衡",
+      "當作內容傳遞網路的邊緣快取伺服器"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要用命令列安裝套件，並編輯文字設定檔；自行編譯需要 C 編譯器",
+     "limitations": "Windows 版仍在概念驗證階段，只適合開發與測試；可用的設定指令取決於有編入哪些模組",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "ad9a2fdb3c8db4d815da",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -272,15 +335,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "開源的 AI 寫程式助手，能幫你分析、修改專案程式碼",
+     "features": [
+      "內建 build 與 plan 兩種 agent，按 Tab 切換",
+      "plan 模式唯讀，執行指令前會先詢問",
+      "提供 macOS、Windows、Linux 桌面版（BETA）"
+     ],
+     "audience": "想用 AI 協助寫程式、理解程式碼的軟體開發者",
+     "use_cases": [
+      "用 plan 模式探索不熟悉的程式碼庫",
+      "規劃程式修改後，再讓 build 模式實際動手開發",
+      "用 @general 處理複雜搜尋與多步驟任務"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝工具，並具備寫程式與使用命令列的能力",
+     "limitations": "桌面版仍為 BETA；安裝前需移除 0.1.x 以前的舊版本",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "3e338784ecd339482862",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -326,15 +409,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "在終端機裡執行的 AI 程式設計助理，可以自由擴充和自訂",
+     "features": [
+      "整合 OpenAI、Anthropic、Google 等多家 LLM 的 API",
+      "可用擴充功能、技能、提示範本、主題來自訂",
+      "支援互動模式、JSON 輸出、RPC 與 TypeScript SDK"
+     ],
+     "audience": "想自訂 AI 程式設計助理的開發者，以及要打造 AI agent 應用的工程師",
+     "use_cases": [
+      "在專案資料夾啟動 Pi，請 AI 幫忙完成寫程式的任務",
+      "用 TypeScript SDK 開發自己的 AI agent 應用",
+      "把擴充功能打包成 Pi 套件，透過 npm 或 git 分享"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要在命令列安裝，要有 Node.js 22.19 以上版本，還要準備 AI 服務的訂閱或 API key",
+     "limitations": "沒有內建權限控管，預設用啟動者的權限執行，需要隔離的話要自己用容器或沙箱；沒有子代理和規劃模式",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "a3bbd15b04d1a4cf6160",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -380,15 +483,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "先替程式碼建立知識圖譜，讓 AI 寫程式助理更快找到需要的程式碼",
+     "features": [
+      "預先建立符號、呼叫關係與相依性的程式碼圖譜",
+      "檔案變動時自動同步更新索引",
+      "透過 MCP 串接 Claude Code、Cursor 等多種 AI 助理"
+     ],
+     "audience": "使用 Claude Code、Cursor、Codex 等 AI 程式助理的軟體開發者",
+     "use_cases": [
+      "讓 AI 助理回答大型專案的架構問題，減少逐一讀檔",
+      "修改程式前查看變更可能影響的範圍",
+      "作者表示可降低 AI 助理的 token 用量與費用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用命令列安裝 CLI，並在每個專案執行初始化指令",
+     "limitations": "作者表示長時間對話中會在 context window 留下較多內容，視窗小時需預留空間",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "f7f76d5e619fb6cc87e6",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -441,15 +564,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "把技術書 PDF 或文件資料夾轉成 AI 助理可隨時查閱的 skill",
+     "features": [
+      "把書拆成章節檔、名詞表、模式與速查表",
+      "支援 PDF、EPUB、DOCX、HTML 等多種格式",
+      "可透過 MCP 依書名或 ISBN 搜尋並轉換"
+     ],
+     "audience": "使用 Claude Code、Codex、Copilot CLI 等 AI 程式助理的工程師與自學者",
+     "use_cases": [
+      "工作中直接問 AI 某本技術書某章的內容",
+      "把公司內部文件資料夾整合成一個 skill 邊寫程式邊查",
+      "把論文和筆記合併成研究知識庫，之後再補新資料"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要安裝 Python 與 PDF 解析工具，並在 AI 程式助理裡用指令操作",
+     "limitations": "掃描版 PDF 要先自行做 OCR；使用者要自行負責著作權，產生的 skill 不應公開散布",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "757b2bc3e4d7c6da2901",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -482,15 +626,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "抓取 UNG220Z 中國移動光貓管理密碼的工具",
+     "features": [
+      "透過 Telnet 讀取設備設定庫，取出當下有效的全部憑據",
+      "可用互動問答或命令列參數指定光貓位址與帳密",
+      "自動嘗試開啟 Telnet，並輸出憑據彙總表與記錄檔"
+     ],
+     "audience": "擁有 UNG220Z 光貓、想找回自己管理密碼的使用者",
+     "use_cases": [
+      "找回自己忘記的光貓管理密碼",
+      "遷移寬頻設定時取出原有憑據",
+      "對自有設備做安全自查"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用 Python 3.8+ 執行命令列工具，設備須已開啟 Telnet",
+     "limitations": "作者表示僅限用於自己的設備，未經授權對他人設備使用屬違法行為，作者不承擔責任；部分機型 Telnet 口令與 Web 不同",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "f9f549e95e7f4e037edb",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -549,15 +713,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "用 Python 打造並執行 AI 代理人（agent）的開發框架，附後端服務與網頁介面",
+     "features": [
+      "支援多家模型與 MCP 工具，可組合 ReAct 代理人",
+      "多代理人團隊分工、任務規劃與即時語音對話",
+      "內建 FastAPI 後端、Web UI，可串接 Discord 等平台"
+     ],
+     "audience": "想開發 AI 代理人應用或聊天機器人的 Python 開發者與研究人員",
+     "use_cases": [
+      "建立能呼叫工具、寫程式碼的 AI 助理",
+      "讓主代理人分派任務給多個成員代理人協作完成",
+      "把代理人接到飛書或 Discord，做成聊天機器人"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Python 3.11 以上、會用命令列寫程式，並準備模型服務的 API 金鑰",
+     "limitations": "需 Python 3.11 以上；即時語音對話、SOP 等功能仍標示為實驗性",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "c072eb400de39089177c",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -614,15 +799,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "把 AI 聊天機器人接上 QQ、Telegram、Discord 等通訊軟體的開源平台",
+     "features": [
+      "支援 QQ、Telegram、Slack、LINE 等多種通訊平台",
+      "可串接 OpenAI、Gemini、DeepSeek 等多家模型",
+      "提供 WebUI 管理介面與上千個可一鍵安裝的外掛"
+     ],
+     "audience": "想在通訊軟體裡架設 AI 聊天機器人的個人、開發者與團隊",
+     "use_cases": [
+      "在 Telegram 或 Discord 群組架設 AI 聊天陪伴機器人",
+      "建立接上企業知識庫的智慧客服",
+      "用 Agent 與 MCP 打造自動化助理"
+     ],
+     "barrier": "install",
+     "barrier_note": "有桌面 App 可下載；接通訊平台需設定模型 API，伺服器部署需 uv 或 Docker",
+     "limitations": "macOS 第一次執行可能要等 10～20 秒；桌面 App 不建議用在伺服器；WhatsApp 支援尚未推出",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "939b04dda0ce45a7d7d6",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -681,15 +887,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "給 AI 寫程式助手一個網址，就能把網站重建成 Next.js 專案",
+     "features": [
+      "一個指令讓 AI 代理人複製指定網站",
+      "擷取網頁素材、字型，並建出可編輯的元件",
+      "比對原站與複製結果的截圖並修正差異"
+     ],
+     "audience": "會使用 Claude Code、Codex、Cursor 等 AI 寫程式工具的開發者或網站擁有者",
+     "use_cases": [
+      "把自己在 WordPress 或 Webflow 上的網站搬到 Next.js",
+      "網站還在線上但原始程式碼遺失時，把程式碼找回來",
+      "研究正式網站的版面、動畫與響應式設計怎麼做"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Node.js 24 以上版本、AI 寫程式代理人，也要會用命令列",
+     "limitations": "不得用於釣魚、冒充或違法用途；Logo 與文案歸原作者所有；部分網站禁止擷取，使用前請先確認",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "505776a4f482d66d6dd5",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -735,15 +962,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "在自己電腦上搜尋筆記、會議紀錄和文件的命令列搜尋引擎",
+     "features": [
+      "結合關鍵字搜尋、語意搜尋與 LLM 重新排序",
+      "所有模型都在本機執行，首次使用時自動下載",
+      "提供 MCP 伺服器，可接 Claude 等 AI 助理"
+     ],
+     "audience": "有大量 Markdown 筆記或文件的開發者，以及想讓 AI 助理查詢個人資料的進階使用者",
+     "use_cases": [
+      "用自然語言搜尋自己的 Markdown 筆記與會議逐字稿",
+      "讓 Claude Desktop 或 Claude Code 透過 MCP 查詢個人知識庫",
+      "在自己的 Node.js 或 Bun 程式中當作搜尋函式庫使用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需安裝 Node.js 22 以上與 Bun，並使用命令列操作",
+     "limitations": "預設嵌入模型以英文為主，中文建議換 Qwen3 模型；模型約需 2GB；HTTP 端點沒有身分驗證",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "becd1a5f8c2451180357",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -810,15 +1057,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "開源筆記軟體，可替代 Evernote、Obsidian，支援多裝置即時同步與 AI 功能",
+     "features": [
+      "三欄式介面，可切換所見即所得與 Markdown",
+      "AI 產生表格、心智圖、流程圖與資訊圖表",
+      "網頁剪藏擴充功能，支援 20 多個平台"
+     ],
+     "audience": "想自己掌握筆記資料、需要跨裝置同步，或想讓 AI Agent 讀寫筆記的人",
+     "use_cases": [
+      "從 Evernote、Obsidian、Notion 等一鍵搬移筆記",
+      "把網頁文章或 YouTube 等平台內容剪存成筆記",
+      "把整本筆記發布成獨立的知識庫網站分享"
+     ],
+     "barrier": "install",
+     "barrier_note": "需自行部署到 Cloudflare 或用 Docker 架設，再搭配各平台 App 使用",
+     "limitations": "公開展示站每天重設，不要存私人資料；iOS App 需使用中國大陸以外的 Apple ID；作者表示 Cloudflare 免費額度約可存 15 萬則短筆記",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
-    "cache_key": "9f5e183cca421c116897",
+    "cache_key": "90c4ff330aad6a5d7a30",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -866,15 +1134,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "用類似 Linux 指令的方式操作百度網盤的命令列軟體，可轉存別人分享的連結",
+     "features": [
+      "下載網盤檔案，支援斷點續傳與多檔下載",
+      "上傳本機檔案，單檔最大支援 128G",
+      "轉存他人分享連結，支援密碼與離線下載"
+     ],
+     "audience": "有百度網盤帳號、熟悉命令列操作，想批次管理或下載網盤檔案的使用者",
+     "use_cases": [
+      "在電腦上用指令批次下載百度網盤裡的整個資料夾",
+      "把別人分享的百度網盤連結（含提取碼）轉存到自己的網盤",
+      "新增磁力連結或 http 網址的離線下載任務到網盤"
+     ],
+     "barrier": "code",
+     "barrier_note": "需在終端機輸入指令操作，並準備百度帳號 Cookies 或 BDUSS 登入",
+     "limitations": "不提供超出官方的下載加速；一般使用者調高並行數容易被限速；上傳不支援斷點續傳；秒傳功能已失效",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "0eb4511658c2fe649014",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -920,15 +1208,35 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "一種文件格式，把網站或 App 的視覺風格整理成 AI 寫程式助手讀得懂的說明檔",
+     "features": [
+      "用 YAML 記錄顏色、字型、間距等設計數值",
+      "用文字說明設計理由與套用方式",
+      "命令列工具可檢查格式、對比度與版本差異"
+     ],
+     "audience": "讓 AI 協助寫介面的設計師與前端工程師，以及維護設計系統的團隊",
+     "use_cases": [
+      "讓 AI 寫程式助手依照品牌的配色與字型產生介面",
+      "檢查設計檔的顏色對比是否符合 WCAG 無障礙標準",
+      "把設計數值匯出成 Tailwind 或 DTCG 格式給開發使用"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要會用 npm 與命令列，並能撰寫 YAML 與 Markdown 檔案",
+     "limitations": "規格版本目前標示為 alpha，內容可能還會調整",
+     "based_on": [
+      "description",
+      "readme"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "1e5001ef8a31964a8ce4",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -992,15 +1300,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "一站式產品分析平台，收集使用者行為、錯誤與工作階段錄影，協助改善產品",
+     "features": [
+      "產品與網站流量分析，可用圖表或 SQL 查詢",
+      "工作階段錄影重播、熱點圖與錯誤追蹤",
+      "功能旗標、A/B 實驗、問卷與 AI 查詢資料"
+     ],
+     "audience": "經營網站或 App 的開發團隊、產品經理與新創公司",
+     "use_cases": [
+      "觀看真實使用者的操作錄影，找出網站或 App 的問題",
+      "先讓部分使用者試用新功能，並用實驗比較成效",
+      "用 AI 詢問產品資料，自動產生分析圖表與 SQL"
+     ],
+     "barrier": "code",
+     "barrier_note": "可註冊雲端版免費使用，但要在自家網站或 App 安裝 SDK 或程式碼片段",
+     "limitations": "自架版需 Docker 與約 4GB 記憶體，約可應付每月 10 萬筆事件，官方不提供支援；雲端版超過免費額度後依用量收費",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "fbc37b27215f8ddd4018",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -1067,15 +1396,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "用 Python 程式碼設計、排程並監控各種自動化工作流程的平台",
+     "features": [
+      "用程式碼定義工作流程（Dag）與任務的先後順序",
+      "排程器依照順序，把任務分派到多台機器執行",
+      "提供網頁介面，可以看流程圖、執行進度和排查問題"
+     ],
+     "audience": "資料工程師、資料科學家、機器學習工程師，以及需要管理自動化資料流程的開發團隊",
+     "use_cases": [
+      "定期跑資料處理流程（ETL／ELT），把資料搬進資料倉儲",
+      "安排機器學習模型的訓練、重新訓練、評估與部署",
+      "串接 AI 流程的各個步驟，例如資料準備、呼叫模型與評估"
+     ],
+     "barrier": "code",
+     "barrier_note": "要會寫 Python，並用 pip、uv 或 Docker 架設，正式環境需要 Linux",
+     "limitations": "適合結構固定的流程，不是串流方案；正式環境只支援 Linux，SQLite 不能用在正式環境；任務之間不適合傳送大量資料",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "a546b0b78bf221f39a07",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -1127,15 +1477,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "Rebase 社群維護的免費徵才看板，集中刊登區塊鏈與其他產業的職缺",
+     "features": [
+      "企業開 GitHub issue 寫職缺說明就能免費刊登",
+      "職缺會在 Rebase 社群所有媒體上發布",
+      "列出歷來職缺，很多是遠端工作"
+     ],
+     "audience": "想找區塊鏈、Web3 或遠端工作的求職者，以及想免費招人的企業與團隊",
+     "use_cases": [
+      "求職者瀏覽交易所、DeFi、遊戲公司的工程師與營運職缺",
+      "企業開 issue 免費刊登職缺，觸及 Rebase 社群讀者",
+      "找有標示薪資範圍的遠端工作機會"
+     ],
+     "barrier": "online",
+     "barrier_note": "求職者用網頁瀏覽就行；企業要刊登職缺，需要有 GitHub 帳號才能開 issue",
+     "limitations": "職缺由徵才方自己發布，Rebase 不保證內容合法或真實，請自行小心辨別；內容大多是簡體中文",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "1ec859f825bf14ddaa26",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -1187,15 +1558,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "德哥 digoal 的個人技術部落格，收錄大量 PostgreSQL 等資料庫文章與課程",
+     "features": [
+      "PostgreSQL、Greenplum 教學影片與系列課程",
+      "資料庫選型、維運、效能優化等分類文章",
+      "AI、金融投資、讀書筆記等雜談文章"
+     ],
+     "audience": "資料庫管理員（DBA）、架構師、後端開發者，以及對 AI 和金融話題有興趣的讀者",
+     "use_cases": [
+      "學習 PostgreSQL 管理、開發與效能優化",
+      "評估企業資料庫選型或從 Oracle 遷移到 PostgreSQL",
+      "閱讀向量資料庫、DuckDB 等原始碼入門系列文章"
+     ],
+     "barrier": "online",
+     "barrier_note": "直接在 GitHub 網頁閱讀文章即可；文章內的實作練習多半需要技術背景",
+     "limitations": "內容以簡體中文撰寫；作者表示大部分文章還沒歸類，部分文章仍未完成",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "b0dfd0bd86ae36191990",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -1240,15 +1632,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "知道创宇 404 實驗室整理推薦優質資安開源工具的清單計畫",
+     "features": [
+      "收錄並分類資安開源專案，如資訊收集、漏洞探測",
+      "持續追蹤收錄專案的版本更新與動態",
+      "開源作者可提交 issue 申請加入並獲得支援"
+     ],
+     "audience": "資安研究人員、滲透測試人員、企業資安團隊，以及資安開源工具作者",
+     "use_cases": [
+      "依分類尋找適合的資安工具，例如內網掃描或資訊收集",
+      "追蹤熱門資安工具的最新版本更新",
+      "資安開源作者申請加入以獲得技術支援與曝光"
+     ],
+     "barrier": "online",
+     "barrier_note": "清單本身打開網頁即可瀏覽；但收錄的工具多半需要會用命令列與具備資安知識",
+     "limitations": "README 未說明；收錄工具多為滲透測試用途，社群交流主要透過微信",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "39aa73b766692333db59",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 2,
-    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+    "attempts": 1,
+    "error": null
    }
   },
   {
@@ -1295,15 +1708,36 @@
    "repeat_of": null,
    "repeat_reason": null,
    "summary": {
-    "status": "failed",
-    "content": null,
+    "status": "done",
+    "content": {
+     "one_liner": "Lean 維護的 LEDE／OpenWrt 路由器韌體原始碼，可以自己編譯軟路由韌體",
+     "features": [
+      "提供可編譯 OpenWrt 路由器韌體的完整原始碼與套件",
+      "支援 Linux、WSL 與 macOS 原生編譯",
+      "新增龍芯 loongarch64 與飛騰 D2000 架構支援"
+     ],
+     "audience": "想自己編譯路由器或軟路由韌體、熟悉 Linux 命令列的玩家與開發者",
+     "use_cases": [
+      "為家用路由器或軟路由編譯客製化 OpenWrt 韌體",
+      "依需求挑選要放進韌體的套件，例如 DDNS、UPnP",
+      "為 8 MiB 小容量設備裁減功能後產生韌體"
+     ],
+     "barrier": "code",
+     "barrier_note": "需要 Linux（建議 Debian／Ubuntu）或 macOS 環境，用命令列安裝依賴並編譯",
+     "limitations": "不可用 root 編譯；macOS 需區分大小寫磁碟且建議 100 GB 空間；ROM 4 MiB 以下設備不支援",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
     "model": "claude-opus-5-5",
     "prompt_version": "c1",
     "cache_key": "beec8efb0ceeb8b1e748",
     "has_readme": true,
     "from_cache": false,
-    "attempts": 0,
-    "error": "超過預算（呼叫次數或時間上限）"
+    "attempts": 1,
+    "error": null
    }
   }
  ],
@@ -1510,14 +1944,15 @@
   "enabled": true,
   "reason": null,
   "model": "claude-opus-5-5",
-  "attempted": 21,
-  "done": 0,
-  "failed": 21,
+  "attempted": 42,
+  "done": 21,
+  "failed": 0,
   "skipped": 0,
   "cached": 0,
-  "calls": 40,
-  "input_tokens": 0,
-  "output_tokens": 0,
-  "cost_usd": 0.0
- }
+  "calls": 61,
+  "input_tokens": 129992,
+  "output_tokens": 11360,
+  "cost_usd": 0.988824
+ },
+ "summary_backfilled_at": "2026-11-22T00:53:38+08:00"
 }
