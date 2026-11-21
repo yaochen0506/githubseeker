@@ -1,0 +1,1523 @@
+{
+ "schema_version": "1",
+ "score_version": "d2",
+ "edition_id": "2026-11-21",
+ "business_date": "2026-11-21",
+ "generated_at": "2026-11-21T08:01:13+08:00",
+ "run_id": "20261121T075948-44840741567.1",
+ "status": "normal",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "category": "ai-agents",
+   "repo_id": 1133141258,
+   "full_name": "Tracer-Cloud/opensre",
+   "html_url": "https://github.com/Tracer-Cloud/opensre",
+   "description": "The open-source agent for CI/CD reliability.",
+   "language": "Python",
+   "topics": [
+    "alerting",
+    "ci-cd",
+    "cli",
+    "datadog",
+    "devops",
+    "gitlab-ci",
+    "grafana",
+    "incident-management",
+    "llm",
+    "observability",
+    "ollama",
+    "remediation",
+    "root-cause-analysis",
+    "site-reliability-engineering",
+    "slack"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-01-13T00:04:47Z",
+   "pushed_at": "2026-11-20T00:57:26Z",
+   "stars": 13593,
+   "forks": 1926,
+   "metric_method": "observed",
+   "growth_per_day": 485.94,
+   "score": 76.4,
+   "score_breakdown": {
+    "s_abs": 0.8957,
+    "s_rel": 0.3707
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 13,
+     "period": "daily",
+     "period_stars": 465
+    },
+    {
+     "source_id": "python-daily",
+     "rank": 5,
+     "period": "daily",
+     "period_stars": 465
+    }
+   ],
+   "observed": {
+    "delta": 473,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:40+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +473 星",
+    "也在 Python 日榜第 5 名、全站日榜第 13 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ea2b9e60701ac4d8dc67",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "category": "ai-agents",
+   "repo_id": 1327214801,
+   "full_name": "phone-harness/phone-harness",
+   "html_url": "https://github.com/phone-harness/phone-harness",
+   "description": "let your agent control your phone",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "automation",
+    "developer-tools",
+    "mobile-ai",
+    "mobile-development"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-08-07T22:28:53Z",
+   "pushed_at": "2026-11-20T05:09:53Z",
+   "stars": 5373,
+   "forks": 558,
+   "metric_method": "observed",
+   "growth_per_day": 212.66,
+   "score": 68.5,
+   "score_breakdown": {
+    "s_abs": 0.7765,
+    "s_rel": 0.4121
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 20,
+     "period": "daily",
+     "period_stars": 206
+    }
+   ],
+   "observed": {
+    "delta": 207,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:46+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +207 星",
+    "也在 Python 日榜第 20 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "643567c195b4f5b28b1c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "category": "security-network",
+   "repo_id": 37912398,
+   "full_name": "nginx/nginx",
+   "html_url": "https://github.com/nginx/nginx",
+   "description": "The official NGINX Open Source repository.",
+   "language": "C",
+   "topics": [
+    "content-cache",
+    "http",
+    "http2",
+    "http3",
+    "https",
+    "load-balancer",
+    "mail-proxy-server",
+    "nginx",
+    "quic",
+    "reverse-proxy",
+    "security",
+    "tcp-proxy-server",
+    "tls",
+    "udp-proxy-server",
+    "web-server"
+   ],
+   "license_spdx": "BSD-2-Clause",
+   "created_at": "2015-06-23T10:26:27Z",
+   "pushed_at": "2026-11-18T16:40:14Z",
+   "stars": 32559,
+   "forks": 8390,
+   "metric_method": "observed",
+   "growth_per_day": 236.29,
+   "score": 61.2,
+   "score_breakdown": {
+    "s_abs": 0.7916,
+    "s_rel": 0.0731
+   },
+   "trending_hits": [
+    {
+     "source_id": "all-daily",
+     "rank": 7,
+     "period": "daily",
+     "period_stars": 246
+    }
+   ],
+   "observed": {
+    "delta": 230,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:38+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +230 星",
+    "也在全站日榜第 7 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ad9a2fdb3c8db4d815da",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "category": "ai-agents",
+   "repo_id": 975734319,
+   "full_name": "anomalyco/opencode",
+   "html_url": "https://github.com/anomalyco/opencode",
+   "description": "The open source coding agent.",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2025-04-30T20:08:00Z",
+   "pushed_at": "2026-11-20T23:59:15Z",
+   "stars": 228251,
+   "forks": 30999,
+   "metric_method": "observed",
+   "growth_per_day": 210.6,
+   "score": 58.4,
+   "score_breakdown": {
+    "s_abs": 0.7751,
+    "s_rel": 0.0092
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 16,
+     "period": "daily",
+     "period_stars": 247
+    }
+   ],
+   "observed": {
+    "delta": 205,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:52+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +205 星",
+    "也在 TypeScript 日榜第 16 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "3e338784ecd339482862",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 5,
+   "category": "ai-agents",
+   "repo_id": 1035029907,
+   "full_name": "earendil-works/pi",
+   "html_url": "https://github.com/earendil-works/pi",
+   "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2025-08-09T14:03:50Z",
+   "pushed_at": "2026-11-20T23:55:21Z",
+   "stars": 123070,
+   "forks": 15872,
+   "metric_method": "observed",
+   "growth_per_day": 137.66,
+   "score": 53.8,
+   "score_breakdown": {
+    "s_abs": 0.7139,
+    "s_rel": 0.0112
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 17,
+     "period": "daily",
+     "period_stars": 165
+    }
+   ],
+   "observed": {
+    "delta": 134,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:52+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +134 星",
+    "也在 TypeScript 日榜第 17 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "a3bbd15b04d1a4cf6160",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 6,
+   "category": "ai-agents",
+   "repo_id": 1137078255,
+   "full_name": "colbymchenry/codegraph",
+   "html_url": "https://github.com/colbymchenry/codegraph",
+   "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-01-18T21:45:37Z",
+   "pushed_at": "2026-11-20T23:39:45Z",
+   "stars": 78248,
+   "forks": 5212,
+   "metric_method": "observed",
+   "growth_per_day": 121.23,
+   "score": 52.6,
+   "score_breakdown": {
+    "s_abs": 0.6956,
+    "s_rel": 0.0155
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 11,
+     "period": "daily",
+     "period_stars": 151
+    }
+   ],
+   "observed": {
+    "delta": 118,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:51+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +118 星",
+    "也在 TypeScript 日榜第 11 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f7f76d5e619fb6cc87e6",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "main",
+   "position": 7,
+   "category": "ai-agents",
+   "repo_id": 1226123343,
+   "full_name": "virgiliojr94/book-to-skill",
+   "html_url": "https://github.com/virgiliojr94/book-to-skill",
+   "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+   "language": "Python",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "book-to-skill",
+    "context-engineering",
+    "document-processing",
+    "edtech",
+    "knowledge-base",
+    "knowledge-management",
+    "llm",
+    "pdf-to-markdown",
+    "rag",
+    "self-study",
+    "study-tools"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-05-01T02:09:39Z",
+   "pushed_at": "2026-11-19T21:48:14Z",
+   "stars": 38576,
+   "forks": 4108,
+   "metric_method": "observed",
+   "growth_per_day": 81.16,
+   "score": 48.4,
+   "score_breakdown": {
+    "s_abs": 0.6381,
+    "s_rel": 0.0211
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 79,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:22+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +79 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "757b2bc3e4d7c6da2901",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "category": null,
+   "repo_id": 1458720005,
+   "full_name": "Hut-hzf/ung220z-tool",
+   "html_url": "https://github.com/Hut-hzf/ung220z-tool",
+   "description": "ung220z-tool 是一个针对 UNG220Z（九联/Unionman 中国移动光猫）的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+   "language": "Python",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-15T11:16:46Z",
+   "pushed_at": "2026-11-15T11:17:27Z",
+   "stars": 1995,
+   "forks": 454,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 332.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 6 天，已有 1,995 星，建立以來平均每天 +332 星"
+   ],
+   "notes": [
+    "建立僅 6 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f9f549e95e7f4e037edb",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "ai-agents",
+   "repo_id": 742244656,
+   "full_name": "agentscope-ai/agentscope",
+   "html_url": "https://github.com/agentscope-ai/agentscope",
+   "description": "Build and run agents you can see, understand and trust.",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "chatbot",
+    "large-language-models",
+    "llm",
+    "llm-agent",
+    "mcp",
+    "multi-agent",
+    "multi-modal",
+    "react-agent",
+    "realtime-agent",
+    "voice-agent",
+    "voice-assistant"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2024-01-12T03:41:59Z",
+   "pushed_at": "2026-11-20T08:23:27Z",
+   "stars": 36383,
+   "forks": 3893,
+   "metric_method": "observed",
+   "growth_per_day": 77.05,
+   "score": 47.8,
+   "score_breakdown": {
+    "s_abs": 0.6307,
+    "s_rel": 0.0212
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 22,
+     "period": "daily",
+     "period_stars": 75
+    }
+   ],
+   "observed": {
+    "delta": 75,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:47+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +75 星",
+    "也在 Python 日榜第 22 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "c072eb400de39089177c",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "ai-agents",
+   "repo_id": 575865240,
+   "full_name": "AstrBotDevs/AstrBot",
+   "html_url": "https://github.com/AstrBotDevs/AstrBot",
+   "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+   "language": "Python",
+   "topics": [
+    "agent",
+    "ai",
+    "astrbot",
+    "chatbot",
+    "chatgpt",
+    "discord",
+    "docker",
+    "gemini",
+    "gpt",
+    "llama",
+    "llm",
+    "mcp",
+    "openai",
+    "python",
+    "qq",
+    "qqbot",
+    "telegram"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2022-12-08T13:27:46Z",
+   "pushed_at": "2026-11-19T22:21:22Z",
+   "stars": 47268,
+   "forks": 3639,
+   "metric_method": "observed",
+   "growth_per_day": 60.61,
+   "score": 45.1,
+   "score_breakdown": {
+    "s_abs": 0.5965,
+    "s_rel": 0.0128
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 59,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:20+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +59 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "939b04dda0ce45a7d7d6",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "ai-agents",
+   "repo_id": 1180745961,
+   "full_name": "JCodesMore/ai-website-cloner-template",
+   "html_url": "https://github.com/JCodesMore/ai-website-cloner-template",
+   "description": "Clone any website with one command using AI coding agents",
+   "language": "TypeScript",
+   "topics": [
+    "ai",
+    "ai-agents",
+    "ai-tools",
+    "automation",
+    "boilerplate",
+    "claude",
+    "claude-code",
+    "clone",
+    "developer-tools",
+    "nextjs",
+    "react",
+    "reverse-engineering",
+    "shadcn-ui",
+    "skills",
+    "tailwindcss",
+    "template",
+    "typescript",
+    "web-scraping",
+    "website-clone"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-03-13T11:14:39Z",
+   "pushed_at": "2026-11-10T05:35:56Z",
+   "stars": 39560,
+   "forks": 5893,
+   "metric_method": "observed",
+   "growth_per_day": 48.29,
+   "score": 42.6,
+   "score_breakdown": {
+    "s_abs": 0.5642,
+    "s_rel": 0.0122
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 47,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:10+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +47 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "505776a4f482d66d6dd5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "everyday-tools",
+   "repo_id": 1112365301,
+   "full_name": "tobi/qmd",
+   "html_url": "https://github.com/tobi/qmd",
+   "description": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "MIT",
+   "created_at": "2025-12-08T14:22:57Z",
+   "pushed_at": "2026-11-20T21:34:04Z",
+   "stars": 31300,
+   "forks": 1975,
+   "metric_method": "observed",
+   "growth_per_day": 41.09,
+   "score": 40.9,
+   "score_breakdown": {
+    "s_abs": 0.5413,
+    "s_rel": 0.0131
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 17,
+     "period": "weekly",
+     "period_stars": 202
+    }
+   ],
+   "observed": {
+    "delta": 40,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:54+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +40 星",
+    "也在 TypeScript 週榜第 17 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "becd1a5f8c2451180357",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "everyday-tools",
+   "repo_id": 1281033762,
+   "full_name": "tianma-if/edgeever",
+   "html_url": "https://github.com/tianma-if/edgeever",
+   "description": "AI-native note-taking app & Evernote/Obsidian alternative. Instant all-platform sync, rich notes (tables, mind maps, diagrams, posters), web clipper & MCP. 100% free on Cloudflare or Docker.",
+   "language": "TypeScript",
+   "topics": [
+    "ai-agent",
+    "cloudflare",
+    "cloudflare-workers",
+    "diagrams",
+    "docker",
+    "evernote",
+    "evernote-alternative",
+    "knowledge-base",
+    "markdown",
+    "mcp",
+    "mindmap",
+    "note-taking",
+    "obsidian",
+    "obsidian-alternative",
+    "offline-first",
+    "pkm",
+    "second-brain",
+    "self-hosted",
+    "sqlite",
+    "web-clipper"
+   ],
+   "license_spdx": "AGPL-3.0",
+   "created_at": "2026-06-26T06:59:58Z",
+   "pushed_at": "2026-11-20T11:56:29Z",
+   "stars": 3460,
+   "forks": 1797,
+   "metric_method": "observed",
+   "growth_per_day": 21.57,
+   "score": 35.4,
+   "score_breakdown": {
+    "s_abs": 0.4511,
+    "s_rel": 0.0627
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-daily",
+     "rank": 8,
+     "period": "daily",
+     "period_stars": 28
+    }
+   ],
+   "observed": {
+    "delta": 21,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:50+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +21 星",
+    "也在 TypeScript 日榜第 8 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "9f5e183cca421c116897",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "everyday-tools",
+   "repo_id": 310659501,
+   "full_name": "qjfoidnh/BaiduPCS-Go",
+   "html_url": "https://github.com/qjfoidnh/BaiduPCS-Go",
+   "description": "iikira/BaiduPCS-Go原版基础上集成了分享链接/秒传链接转存功能",
+   "language": "Go",
+   "topics": [
+    "baidupcs"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2020-11-06T17:12:41Z",
+   "pushed_at": "2026-09-09T03:45:02Z",
+   "stars": 5987,
+   "forks": 726,
+   "metric_method": "observed",
+   "growth_per_day": 8.22,
+   "score": 24.5,
+   "score_breakdown": {
+    "s_abs": 0.3215,
+    "s_rel": 0.0137
+   },
+   "trending_hits": [
+    {
+     "source_id": "zh-weekly",
+     "rank": 16,
+     "period": "weekly",
+     "period_stars": 64
+    }
+   ],
+   "observed": {
+    "delta": 8,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:02+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +8 星",
+    "也在中文專案週榜第 16 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "0eb4511658c2fe649014",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "dev-tools",
+   "repo_id": 1207222725,
+   "full_name": "google-labs-code/design.md",
+   "html_url": "https://github.com/google-labs-code/design.md",
+   "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+   "language": "TypeScript",
+   "topics": [],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2026-04-10T17:54:59Z",
+   "pushed_at": "2026-11-18T02:55:33Z",
+   "stars": 28987,
+   "forks": 2324,
+   "metric_method": "observed",
+   "growth_per_day": 19.52,
+   "score": 33.0,
+   "score_breakdown": {
+    "s_abs": 0.4373,
+    "s_rel": 0.0067
+   },
+   "trending_hits": [
+    {
+     "source_id": "typescript-weekly",
+     "rank": 16,
+     "period": "weekly",
+     "period_stars": 143
+    }
+   ],
+   "observed": {
+    "delta": 19,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:54+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +19 星",
+    "也在 TypeScript 週榜第 16 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1e5001ef8a31964a8ce4",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "dev-tools",
+   "repo_id": 235901813,
+   "full_name": "PostHog/posthog",
+   "html_url": "https://github.com/PostHog/posthog",
+   "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+   "language": "Python",
+   "topics": [
+    "ab-testing",
+    "ai-analytics",
+    "analytics",
+    "cdp",
+    "data-warehouse",
+    "experiments",
+    "feature-flags",
+    "javascript",
+    "product-analytics",
+    "python",
+    "react",
+    "session-replay",
+    "surveys",
+    "typescript",
+    "web-analytics"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2020-01-23T22:46:58Z",
+   "pushed_at": "2026-11-21T00:00:28Z",
+   "stars": 40992,
+   "forks": 3716,
+   "metric_method": "observed",
+   "growth_per_day": 17.46,
+   "score": 31.8,
+   "score_breakdown": {
+    "s_abs": 0.4221,
+    "s_rel": 0.0043
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-weekly",
+     "rank": 14,
+     "period": "weekly",
+     "period_stars": 227
+    }
+   ],
+   "observed": {
+    "delta": 17,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:49+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +17 星",
+    "也在 Python 週榜第 14 名"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "fbc37b27215f8ddd4018",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "dev-tools",
+   "repo_id": 33884891,
+   "full_name": "apache/airflow",
+   "html_url": "https://github.com/apache/airflow",
+   "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+   "language": "Python",
+   "topics": [
+    "airflow",
+    "apache",
+    "apache-airflow",
+    "automation",
+    "dag",
+    "data-engineering",
+    "data-integration",
+    "data-orchestrator",
+    "data-pipelines",
+    "data-science",
+    "elt",
+    "etl",
+    "machine-learning",
+    "mlops",
+    "orchestration",
+    "python",
+    "scheduler",
+    "workflow",
+    "workflow-engine",
+    "workflow-orchestration"
+   ],
+   "license_spdx": "Apache-2.0",
+   "created_at": "2015-04-13T18:04:58Z",
+   "pushed_at": "2026-11-20T21:57:39Z",
+   "stars": 47579,
+   "forks": 18381,
+   "metric_method": "observed",
+   "growth_per_day": 17.46,
+   "score": 31.7,
+   "score_breakdown": {
+    "s_abs": 0.4221,
+    "s_rel": 0.0037
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-daily",
+     "rank": 10,
+     "period": "daily",
+     "period_stars": 28
+    }
+   ],
+   "observed": {
+    "delta": 17,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:44+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +17 星",
+    "也在 Python 日榜第 10 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "a546b0b78bf221f39a07",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "learning",
+   "repo_id": 356633717,
+   "full_name": "rebase-network/who-is-hiring",
+   "html_url": "https://github.com/rebase-network/who-is-hiring",
+   "description": "这个仓库是由 Rebase 社区创建的，为区块链行业以及其他各行各业的企业和团队提供招聘信息披露机会，所有招聘信息都将在 Rebase 社区的所有媒体上进行发表。这都是免费的！ ",
+   "language": "HTML",
+   "topics": [
+    "blockchain",
+    "remote-jobs",
+    "remote-work",
+    "remote-working",
+    "remotely-work"
+   ],
+   "license_spdx": "CC0-1.0",
+   "created_at": "2021-04-10T16:14:54Z",
+   "pushed_at": "2026-11-20T15:46:44Z",
+   "stars": 1885,
+   "forks": 85,
+   "metric_method": "observed",
+   "growth_per_day": 6.16,
+   "score": 22.2,
+   "score_breakdown": {
+    "s_abs": 0.285,
+    "s_rel": 0.0328
+   },
+   "trending_hits": [
+    {
+     "source_id": "zh-daily",
+     "rank": 13,
+     "period": "daily",
+     "period_stars": 8
+    }
+   ],
+   "observed": {
+    "delta": 6,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:38:58+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +6 星",
+    "也在中文專案日榜第 13 名"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "1ec859f825bf14ddaa26",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 2,
+   "category": "learning",
+   "repo_id": 40081991,
+   "full_name": "digoal/blog",
+   "html_url": "https://github.com/digoal/blog",
+   "description": "AI,Opensource,Database,Business,Finance,Minds. git clone --depth 1 https://github.com/digoal/blog",
+   "language": "HTML",
+   "topics": [
+    "database",
+    "enterprisedb",
+    "gpdb",
+    "greenplum",
+    "hawq",
+    "mongodb",
+    "mysql",
+    "oracle",
+    "pg",
+    "pgsql",
+    "postgres",
+    "postgresql"
+   ],
+   "license_spdx": "GPL-2.0",
+   "created_at": "2015-08-02T14:32:09Z",
+   "pushed_at": "2026-11-20T23:27:11Z",
+   "stars": 8616,
+   "forks": 1924,
+   "metric_method": "observed",
+   "growth_per_day": 0.0,
+   "score": 0.0,
+   "score_breakdown": {
+    "s_abs": 0.0,
+    "s_rel": 0.0
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 0,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:12+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +0 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "b0dfd0bd86ae36191990",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 3,
+   "category": "learning",
+   "repo_id": 313549939,
+   "full_name": "knownsec/404StarLink",
+   "html_url": "https://github.com/knownsec/404StarLink",
+   "description": "404StarLink - 推荐优质、有意义、有趣、坚持维护的安全开源项目",
+   "language": null,
+   "topics": [
+    "opensource",
+    "security",
+    "tools"
+   ],
+   "license_spdx": null,
+   "created_at": "2020-11-17T08:10:18Z",
+   "pushed_at": "2026-10-21T10:17:56Z",
+   "stars": 11554,
+   "forks": 983,
+   "metric_method": "observed",
+   "growth_per_day": 0.0,
+   "score": 0.0,
+   "score_breakdown": {
+    "s_abs": 0.0,
+    "s_rel": 0.0
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": -5,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:11+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時減少 5 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [
+    "未標示授權：使用、修改或轉載前，請先確認作者是否允許"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "39aa73b766692333db59",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 2,
+    "error": "success：You've hit your session limit · resets 1:30am (UTC)"
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "security-network",
+   "repo_id": 102578345,
+   "full_name": "coolsnowwolf/lede",
+   "html_url": "https://github.com/coolsnowwolf/lede",
+   "description": "Lean's LEDE source",
+   "language": "C",
+   "topics": [
+    "lede",
+    "lua",
+    "openwrt-feed",
+    "openwrt-package",
+    "openwrt-zh-cn"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2017-09-06T07:39:03Z",
+   "pushed_at": "2026-11-20T09:06:59Z",
+   "stars": 31624,
+   "forks": 19025,
+   "metric_method": "observed",
+   "growth_per_day": 0.0,
+   "score": 0.0,
+   "score_breakdown": {
+    "s_abs": 0.0,
+    "s_rel": 0.0
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": -1,
+    "hours": 23.4,
+    "base_at": "2026-11-20T08:39:24+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時減少 1 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "failed",
+    "content": null,
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "beec8efb0ceeb8b1e748",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 0,
+    "error": "超過預算（呼叫次數或時間上限）"
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  167174,
+  612230,
+  3638964,
+  12888993,
+  19745004,
+  24195339,
+  48576134,
+  58028038,
+  73561650,
+  74293321,
+  80945428,
+  104337773,
+  126178683,
+  130578889,
+  130884470,
+  140516736,
+  152870372,
+  153097643,
+  155220641,
+  159152904,
+  180190854,
+  193215554,
+  216773481,
+  243950408,
+  263556058,
+  275386910,
+  291485614,
+  326610757,
+  330355479,
+  332357698,
+  334110599,
+  334448316,
+  384520418,
+  466390618,
+  512334495,
+  519859998,
+  527600676,
+  529623205,
+  537603333,
+  542386106,
+  543101941,
+  549007739,
+  558188628,
+  561730219,
+  566931318,
+  572984571,
+  575401013,
+  643445235,
+  679086250,
+  684776900,
+  699532645,
+  730753909,
+  730932260,
+  753589979,
+  787076358,
+  834369920,
+  847231566,
+  888092115,
+  896335270,
+  903349957,
+  907125224,
+  924058625,
+  968905557,
+  979392131,
+  997220241,
+  1008713177,
+  1015815983,
+  1024661423,
+  1028035407,
+  1032459340,
+  1032808806,
+  1042367133,
+  1053118194,
+  1054793726,
+  1056618941,
+  1061041576,
+  1061953414,
+  1073224795,
+  1078079172,
+  1079356098,
+  1123956658,
+  1131202426,
+  1131513930,
+  1132001614,
+  1135847870,
+  1136590548,
+  1136666433,
+  1140229822,
+  1140843380,
+  1141663444,
+  1143633223,
+  1153130349,
+  1167300963,
+  1176011916,
+  1179388779,
+  1183888342,
+  1187630119,
+  1200597263,
+  1212769188,
+  1226691771,
+  1229774092,
+  1241960226,
+  1249703818,
+  1261204838,
+  1278676884,
+  1288067014,
+  1299769220,
+  1301657572,
+  1305663861,
+  1310427454,
+  1318197751,
+  1331261687,
+  1332461149,
+  1332781509,
+  1336502227,
+  1354310030,
+  1356077516,
+  1368913638,
+  1426780056,
+  1437814166,
+  1438394948,
+  1438478196,
+  1438540053,
+  1438623288,
+  1438661890,
+  1439372976,
+  1440705679,
+  1440927503,
+  1440971520,
+  1443186633,
+  1443985070,
+  1444573070,
+  1449231124,
+  1450963843,
+  1453517867,
+  1455006582,
+  1455374283,
+  1457270665,
+  1460417668,
+  1460469810,
+  1461244802,
+  1463963309,
+  1464126198,
+  1464271688
+ ],
+ "suspicious_excluded": [
+  1432967563,
+  1440956372,
+  1459971684
+ ],
+ "suspicious_details": [
+  {
+   "repo_id": 1459971684,
+   "full_name": "erkamyaman/rust-anything",
+   "description": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+   "stars": 6627,
+   "created_at": "2026-11-16T12:10:36Z",
+   "growth_per_day": 1487.6,
+   "trending_floor": 219,
+   "times_seen": 3
+  },
+  {
+   "repo_id": 1440956372,
+   "full_name": "storytold/craft-anything",
+   "description": "Craft Anything: understand how any software works, and craft your own.",
+   "stars": 39500,
+   "created_at": "2026-10-31T14:50:00Z",
+   "growth_per_day": 1047.9,
+   "trending_floor": 219,
+   "times_seen": 5
+  },
+  {
+   "repo_id": 1432967563,
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+   "stars": 28997,
+   "created_at": "2026-10-25T08:09:52Z",
+   "growth_per_day": 834.2,
+   "trending_floor": 219,
+   "times_seen": 5
+  }
+ ],
+ "content_excluded": [
+  571581970,
+  1444372497
+ ],
+ "candidate_counts": {
+  "main": 41,
+  "discovery": 1
+ },
+ "classification_stats": {
+  "enabled": true,
+  "reason": null,
+  "known": 598,
+  "classified": 0,
+  "calls": 1,
+  "failed_calls": 1
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 21,
+  "done": 0,
+  "failed": 21,
+  "skipped": 0,
+  "cached": 0,
+  "calls": 40,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0
+ }
+}
