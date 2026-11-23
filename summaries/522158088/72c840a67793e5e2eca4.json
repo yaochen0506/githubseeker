@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "72c840a67793e5e2eca4",
+ "repo_id": 522158088,
+ "full_name": "zhayujie/CowAgent",
+ "created_at": "2026-11-23T18:45:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "eccd83e29ed20eb84dfc850f06c485882c2acdb1d19393022a63641fc24eb62a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的個人 AI 助理，會規劃任務、使用工具，並靠長期記憶慢慢認識你",
+  "features": [
+   "自動拆解複雜任務，搭配工具、技能與 MCP 逐步完成",
+   "三層長期記憶與自動整理的個人知識庫",
+   "支援 Claude、GPT 等多種模型與多個通訊平台"
+  ],
+  "audience": "想擁有 24 小時個人 AI 助理，並願意自行設定模型與通訊平台的使用者",
+  "use_cases": [
+   "在 Telegram、Slack 或微信等平台跟 AI 助理對話並交辦任務",
+   "讓 AI 從對話中整理知識，建立可瀏覽的個人知識庫",
+   "設定排程任務，讓助理定時執行工作"
+  ],
+  "barrier": "install",
+  "barrier_note": "可下載 macOS / Windows 桌面版或用雲端主控台，但需設定模型 API 金鑰",
+  "limitations": "部署到伺服器時需自行開放連接埠並設定網頁主控台密碼，以保護存取安全",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

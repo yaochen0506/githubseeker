@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "52052a5185417aec6b8a",
+ "repo_id": 1466635339,
+ "full_name": "EL4CTEO/fast-anything",
+ "created_at": "2026-11-23T18:45:09+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a91f6bb88f999cc77fcb4003cea5170a6e523b3e97d664409775466011da5708",
+ "has_readme": true,
+ "readme_chars": 5818,
+ "content": {
+  "one_liner": "找出程式裡最慢的幾個函式，交給 AI 改寫成 Rust 並驗證結果一致",
+  "features": [
+   "分析程式執行時間，找出最耗時的函式",
+   "讓 Claude、Codex 等 AI 把函式改寫成 Rust",
+   "用真實呼叫紀錄比對結果，一致才啟用"
+  ],
+  "audience": "想讓 Python、Node、Ruby 等程式跑更快，但不想整個重寫的軟體開發者",
+  "use_cases": [
+   "加速 Python 或 TypeScript 程式中最慢的資料處理函式",
+   "作者表示，名單模糊比對去重的範例最快加速 116 倍",
+   "搭配 Claude Code 外掛或 MCP 伺服器，讓 AI 代理自動完成改寫"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會用命令列，並安裝 Rust 工具鏈與對應語言的執行環境",
+  "limitations": "只能改寫頂層、結果固定且輸入為一般資料的函式；呼叫成本高於節省時間的改寫不會啟用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-22T07:21:05+08:00",
+ "updated_at": "2026-11-23T18:44:45+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -3375,6 +3375,12 @@
    "full_name": "Th0rgal/satmux",
    "classified_at": "2026-11-09T06:09:34+08:00"
   },
+  "1449548089": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ersinkoc/phonebox",
+   "classified_at": "2026-11-23T18:44:45+08:00"
+  },
   "1449614389": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -3686,6 +3692,18 @@
    "exclude_reason": null,
    "full_name": "omonkeyz/xbox-emulator",
    "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1466635339": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "EL4CTEO/fast-anything",
+   "classified_at": "2026-11-23T18:44:45+08:00"
+  },
+  "1467519193": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "os6/nospeaker",
+   "classified_at": "2026-11-23T18:44:45+08:00"
   }
  }
 }

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "14de098b3325dbe826cb",
+ "repo_id": 1467519193,
+ "full_name": "os6/nospeaker",
+ "created_at": "2026-11-23T18:45:15+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "dcf0da79b7f7b2803a69c01e17dab044933a467b4677a04e0a9f00fc8c9c0450",
+ "has_readme": true,
+ "readme_chars": 3774,
+ "content": {
+  "one_liner": "讓 MacBook 觸控板的震動馬達發出聲音，會說話、唱歌",
+  "features": [
+   "用觸控板震動馬達發聲，不用喇叭",
+   "把 macOS 內建語音轉成觸控板播放的人聲",
+   "可當成手指下的樂器來彈奏"
+  ],
+  "audience": "有 Force Touch 觸控板 Mac、對硬體趣味實驗好奇的使用者",
+  "use_cases": [
+   "Mac 靜音時，看觸控板說話、唱歌約一分半的展示",
+   "把觸控板當樂器，用手指彈出音符",
+   "可能用來向朋友展示觸覺回饋硬體的特殊玩法"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在「終端機」輸入指令執行；macOS 12 以上並需 Force Touch 觸控板",
+  "limitations": "聲音小且像機器人；使用未公開的私有框架，macOS 更新可能失效；尚未在 Intel Mac、Magic Trackpad 上測試",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
