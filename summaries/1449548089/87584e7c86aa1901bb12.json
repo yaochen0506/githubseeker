@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "87584e7c86aa1901bb12",
+ "repo_id": 1449548089,
+ "full_name": "ersinkoc/phonebox",
+ "created_at": "2026-11-24T20:28:57+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6054bcfb81175ae71679b15c2c8beb2a3214bbad27d9d13d7db0877e57875183",
+ "has_readme": true,
+ "readme_chars": 11045,
+ "content": {
+  "one_liner": "把舊 Android 手機變成電腦旁的桌面資訊面板與觸控控制台",
+  "features": [
+   "顯示 CPU、GPU、記憶體等電腦狀態與 AI 程式工具額度",
+   "觸控快捷鍵、巨集、音量、媒體與 OBS 控制",
+   "瀏覽器視覺化編輯器，提供 132 個小工具與 30 個範本"
+  ],
+  "audience": "有閒置 Android 手機、想監看電腦狀態或使用 Claude Code、Codex 等 AI 工具的電腦使用者",
+  "use_cases": [
+   "在手機上即時查看電腦效能與網路狀態",
+   "查看 AI 程式工具額度，並在手機上允許或拒絕權限請求",
+   "當作類似 Stream Deck 的觸控面板，控制音樂、音量與快捷鍵"
+  ],
+  "barrier": "code",
+  "barrier_note": "需在 PowerShell 或終端機貼上安裝指令，手機需 Android 5 以上，USB 連線需開啟偵錯",
+  "limitations": "沒有 iOS 版，App 不在商店上架；Windows 版尚未簽章，可能被防毒軟體警告；部分功能依硬體與平台而定",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

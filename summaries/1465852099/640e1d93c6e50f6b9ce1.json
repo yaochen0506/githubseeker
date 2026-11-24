@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "640e1d93c6e50f6b9ce1",
+ "repo_id": 1465852099,
+ "full_name": "ivall/xcl",
+ "created_at": "2026-11-24T20:28:17+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "8e6467fac7c51914023f58dd9885774ae023588c48573a94b81878796e0c3dd4",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓你在 Windows 電腦上執行自己擁有的 Xbox Series 遊戲的相容層",
+  "features": [
+   "遊戲程式碼直接在 PC 上執行，不用模擬 CPU",
+   "自行重寫主機系統函式庫，例如 kernelx 與 XGameRuntime",
+   "把主機的 RDNA2 著色器轉成 PC 用的 DXIL"
+  ],
+  "audience": "擁有 Xbox Series 遊戲檔案、熟悉 Windows 開發工具的玩家與技術愛好者",
+  "use_cases": [
+   "在 PC 上玩已解包的 Minecraft Preview 或 Unicorn Overlord",
+   "用搖桿或鍵盤滑鼠操作主機遊戲",
+   "用內建工具檢查或反組譯主機遊戲的著色器"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用 Rust 與 Windows SDK 自行編譯，顯示卡要支援 SM 6.6",
+  "limitations": "只支援自己擁有且已解包的遊戲，不提供解密或破解 DRM；沒有 mesh shader 的 GPU 無法正常繪製，NVIDIA 可能較慢",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

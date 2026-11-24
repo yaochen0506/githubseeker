@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a6f583c657c29f226795",
+ "repo_id": 375741607,
+ "full_name": "wanglin2/mind-map",
+ "created_at": "2026-11-24T20:28:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "db5fa920aa6be42ec86323377358a92177e71f990e53b0d6130a1de5e3deb63d",
+ "has_readme": true,
+ "readme_chars": 1238,
+ "content": {
+  "one_liner": "可以在網頁或電腦上畫心智圖的工具，另外提供開發用的 JavaScript 函式庫",
+  "features": [
+   "支援心智圖、組織圖、時間軸、魚骨圖等多種結構",
+   "可匯入 XMind、Markdown，也能匯出 PNG、PDF 等格式",
+   "客戶端內建上百種主題，可離線使用、資料存在本機"
+  ],
+  "audience": "需要整理想法、做筆記或規劃專案的一般使用者，以及想開發心智圖產品的工程師",
+  "use_cases": [
+   "用線上版或客戶端整理會議重點、讀書筆記",
+   "把 XMind 檔匯入後改用其他格式匯出",
+   "工程師用這個函式庫開發自己的網頁心智圖產品"
+  ],
+  "barrier": "online",
+  "barrier_note": "有線上版可以直接使用，也可以下載 Windows、Mac、Linux 客戶端；要自架或二次開發才需要寫程式",
+  "limitations": "開源的函式庫和網頁版目前很少維護；客戶端沒有開源；macOS 可能出現「不受信任」的錯誤，要執行指令才能開啟",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

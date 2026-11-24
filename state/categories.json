@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-23T18:44:45+08:00",
+ "updated_at": "2026-11-24T20:27:44+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -759,6 +759,12 @@
    "full_name": "tldraw/tldraw",
    "classified_at": "2026-11-07T07:12:58+08:00"
   },
+  "375741607": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "wanglin2/mind-map",
+   "classified_at": "2026-11-24T20:27:44+08:00"
+  },
   "378069880": {
    "category": "dev-tools",
    "exclude_reason": null,
@@ -1496,6 +1502,12 @@
    "exclude_reason": null,
    "full_name": "ahujasid/mcp-for-blender",
    "classified_at": "2026-11-14T07:37:32+08:00"
+  },
+  "950355259": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "samuelgursky/davinci-resolve-mcp",
+   "classified_at": "2026-11-24T20:27:44+08:00"
   },
   "953683578": {
    "category": "ai-agents",
@@ -3663,11 +3675,23 @@
    "full_name": "bookwjitchieni1986/blender-ai-mcp-addon",
    "classified_at": "2026-11-20T08:39:54+08:00"
   },
+  "1465281397": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "AFK-surf/xnulinux",
+   "classified_at": "2026-11-24T20:27:44+08:00"
+  },
   "1465728637": {
    "category": "dev-tools",
    "exclude_reason": null,
    "full_name": "R0Y00/Xbox2Windows",
    "classified_at": "2026-11-22T07:21:05+08:00"
+  },
+  "1465852099": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "ivall/xcl",
+   "classified_at": "2026-11-24T20:27:44+08:00"
   },
   "1465855400": {
    "category": "fun-creative",
@@ -3699,11 +3723,29 @@
    "full_name": "EL4CTEO/fast-anything",
    "classified_at": "2026-11-23T18:44:45+08:00"
   },
+  "1467035512": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "4lwayz/portwatch-vi",
+   "classified_at": "2026-11-24T20:27:44+08:00"
+  },
   "1467519193": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "os6/nospeaker",
    "classified_at": "2026-11-23T18:44:45+08:00"
+  },
+  "1469344551": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "Marvisak/VIctory",
+   "classified_at": "2026-11-24T20:27:44+08:00"
+  },
+  "1469441675": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "ubiquitarianism/leonida",
+   "classified_at": "2026-11-24T20:27:44+08:00"
   }
  }
 }

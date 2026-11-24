@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "45da2d6688a06ed0bf3e",
+ "repo_id": 1467035512,
+ "full_name": "4lwayz/portwatch-vi",
+ "created_at": "2026-11-24T20:28:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5635b186dca4c6d49c1620d21dba35332c85523a8bc92104cde454d8749d21eb",
+ "has_readme": true,
+ "readme_chars": 8248,
+ "content": {
+  "one_liner": "追蹤社群把外流的 GTA VI 移植、模擬到 PC 進度的靜態網站",
+  "features": [
+   "用統一進度條與排行榜呈現各移植專案進展",
+   "每 3 小時自動搜尋新專案並過濾垃圾與假下載",
+   "可選用 Claude 評分專案並撰寫新聞"
+  ],
+  "audience": "關心 GTA VI 能否在 PC 上執行的玩家，以及想自架追蹤網站的開發者",
+  "use_cases": [
+   "瀏覽網站了解哪個社群移植專案最接近在 PC 上執行",
+   "查看假下載警告，避免遇到詐騙安裝檔",
+   "開發者可能用 GitHub Pages 自架類似的追蹤網站"
+  ],
+  "barrier": "code",
+  "barrier_note": "自架需要 GitHub 帳號、設定 Actions，也可以選擇設定 API 金鑰；本機測試需要 Node 20 以上",
+  "limitations": "非官方的粉絲專案，不提供遊戲檔案；分數是編輯估計值，作者自稱的進度會標示為未經證實；Reddit、X 需要金鑰",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}
