@@ -1,8 +1,8 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-24T11:59:20+08:00",
+ "updated_at": "2026-11-24T14:09:18+08:00",
  "business_date": "2026-11-24",
- "last_run_id": "20261124T115802-45323056719.1",
+ "last_run_id": "20261124T140752-45338134258.1",
  "last_run_complete": false,
  "last_complete_run_id": "20261122T071936-44961205533.1",
  "last_complete_at": "2026-11-22T07:20:49+08:00",
@@ -22,7 +22,7 @@
   {
    "source_id": "python-daily",
    "status": "ok",
-   "rows": 24,
+   "rows": 23,
    "error": null
   },
   {
@@ -69,9 +69,9 @@
   }
  ],
  "counts": {
-  "source_hits": 344,
+  "source_hits": 343,
   "observations": 200,
-  "unresolved": 4,
+  "unresolved": 2,
   "tracking": 200
  },
  "api_usage": {
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 204,
+   "requests": 202,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4796,
-   "used_by_headers": 204
+   "remaining_last": 4798,
+   "used_by_headers": 202
   }
  }
 }

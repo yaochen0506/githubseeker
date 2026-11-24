@@ -1,10 +1,22 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-24T11:59:20+08:00",
+ "updated_at": "2026-11-24T14:09:18+08:00",
  "repos": [
+  {
+   "repo_id": 1469441675,
+   "full_name": "ubiquitarianism/leonida",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
   {
    "repo_id": 1469344551,
    "full_name": "Marvisak/VIctory",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24"
+  },
+  {
+   "repo_id": 1467035512,
+   "full_name": "4lwayz/portwatch-vi",
    "first_seen": "2026-11-24",
    "last_seen": "2026-11-24"
   },
@@ -1187,18 +1199,6 @@
   {
    "repo_id": 1053292493,
    "full_name": "dograh-hq/dograh",
-   "first_seen": "2026-11-18",
-   "last_seen": "2026-11-18"
-  },
-  {
-   "repo_id": 1032808806,
-   "full_name": "usestrix/strix",
-   "first_seen": "2026-11-18",
-   "last_seen": "2026-11-18"
-  },
-  {
-   "repo_id": 997220241,
-   "full_name": "HKUDS/RAG-Anything",
    "first_seen": "2026-11-18",
    "last_seen": "2026-11-18"
   }
