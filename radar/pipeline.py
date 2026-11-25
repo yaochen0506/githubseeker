@@ -216,7 +216,8 @@ def collect(config, config_sha, data_dir, out_dir, api, session, started, trigge
     seen = collector.run(business_date, tracking)
 
     blocking = {"rate_limited", "budget_exhausted", "error"}
-    complete = (all(s["status"] == "ok" for s in collector.sources)
+    optional = {p["id"] for p in config["trending"] if p.get("optional")}
+    complete = (all(s["status"] == "ok" for s in collector.sources if s["source_id"] not in optional)
                 and not any(u["reason"] in blocking for u in collector.unresolved))
     run_id = f"{started:%Y%m%dT%H%M%S}-{run_suffix}"
     finished = now()

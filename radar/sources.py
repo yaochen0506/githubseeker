@@ -129,6 +129,15 @@ def _retry_after(resp):
     return int(value) if value.isdigit() else None
 
 
+def _is_blocked(resp):
+    """403 的回應內容是 {"message": "Repository access blocked", "block": {...}}，代表專案被封鎖。"""
+    try:
+        body = resp.json()
+    except ValueError:
+        return False
+    return isinstance(body, dict) and "block" in body
+
+
 # ---------- GitHub REST API ----------
 
 class GitHubApi:
@@ -175,6 +184,9 @@ class GitHubApi:
                     raise RateLimited(f"http_{resp.status_code}, wait {wait:.0f}s")
                 self.sleep(wait)
                 continue
+            if resp.status_code == 403 and _is_blocked(resp):
+                # 專案被 GitHub 封鎖（例如違反服務條款）：和已刪除一樣跳過，不算這次收集失敗
+                raise NotFound("http_403_blocked")
             if resp.status_code >= 500 and attempt < 2:
                 self.sleep(2 ** attempt)
                 continue

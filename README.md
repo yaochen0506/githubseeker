@@ -25,7 +25,7 @@ GitHub Actions 每天在台北時間 02:17、06:17、10:17 各觸發一次（Git
 
 每次收集：
 
-1. 抓 GitHub Trending 8 頁：全站、Python、TypeScript、中文專案 × 日榜、週榜。
+1. 抓 GitHub Trending 20 頁：全站、Python、TypeScript、中文專案 × 日榜、週榜（必抓）；JavaScript、Go、Rust、Jupyter Notebook、C++、Java × 日榜、週榜（選用，失敗只跳過）。被 GitHub 封鎖的專案和已刪除的一樣跳過。
 2. 用 GitHub Search API 找最近 30 天、7 天新建立的熱門專案。
 3. 用 GitHub API 補齊每個專案的最新資料，並持續觀測「追蹤名單」上專案的星數。
 4. 收集完整後，請 Claude 把候選分成 7 類，並挑出每日精選與分類榜；每天新增星數優先用本站實際觀測的數字（和 12～96 小時前的紀錄比較）。再請 Claude 依專案的 README 寫繁體中文摘要（一句話、主要功能、適合誰、用途、使用門檻、限制）：主榜最多 7 個、新發現最多 3 個，30 天內入選過的不重複（成長爆發例外）（選法見 `config/score.toml` 與網站的說明頁）。

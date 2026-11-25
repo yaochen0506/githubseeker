@@ -1,5 +1,5 @@
 from radar import sources
-from radar.sources import GitHubApi, RateLimited
+from radar.sources import ApiError, GitHubApi, NotFound, RateLimited
 
 from conftest import DAILY_URL, FakeResponse, FakeSession, api, page_html, repo_json, row_html
 
@@ -68,3 +68,23 @@ def test_usage_report_uses_remaining_header_difference():
     gh.get("/repositories/2")
     assert gh.usage_report()["core"] == {"requests": 2, "limit": 1000, "remaining_first": 990,
                                          "remaining_last": 985, "used_by_headers": 6}
+
+
+def test_blocked_repo_counts_as_gone_but_other_403_is_an_error():
+    blocked = {"message": "Repository access blocked", "block": {"reason": "tos", "html_url": "https://github.com/tos"}}
+    session = FakeSession({api("/repositories/1"): FakeResponse(403, blocked, headers={"x-ratelimit-remaining": "52"}),
+                           api("/repositories/2"): FakeResponse(403, {"message": "Forbidden"},
+                                                                headers={"x-ratelimit-remaining": "52"})})
+    gh = GitHubApi(session, sleep=lambda s: None)
+    try:
+        gh.get("/repositories/1")
+    except NotFound as exc:
+        assert str(exc) == "http_403_blocked"  # 被封鎖：和已刪除一樣跳過，不讓整次收集變成不完整
+    else:
+        raise AssertionError("應該丟出 NotFound")
+    try:
+        gh.get("/repositories/2")
+    except ApiError:
+        pass  # 其他 403 原因不明，仍然當成錯誤
+    else:
+        raise AssertionError("應該丟出 ApiError")

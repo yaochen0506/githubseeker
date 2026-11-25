@@ -8,11 +8,11 @@ min_rows = 5
 # 兩次抓取 Trending 頁面之間的間隔秒數
 page_delay_seconds = 2
 # 每次執行最多呼叫幾次 GitHub REST API（GITHUB_TOKEN 上限是每小時 1,000 次）
-max_rest_requests = 450
+max_rest_requests = 700
 # 遇到限流時最多等幾秒；超過就放棄剩下的請求，留給下一次觸發
 max_rate_wait_seconds = 90
 
-# 每天抓 8 頁：全站、Python、TypeScript、中文專案 × 日榜、週榜
+# 必抓 8 頁：全站、Python、TypeScript、中文專案 × 日榜、週榜（失敗就算這次收集不完整）
 [[trending]]
 id = "all-daily"
 path = "/trending"
@@ -54,6 +54,81 @@ id = "zh-weekly"
 path = "/trending"
 period = "weekly"
 spoken_language = "zh"
+
+# 2026-11-25 加入：30 天冷卻後候選不夠，多抓 6 種語言 × 日榜、週榜。
+# optional＝這頁失敗（例如當天列數太少）只記錄、跳過，不讓整次收集變成不完整
+
+[[trending]]
+id = "javascript-daily"
+path = "/trending/javascript"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "javascript-weekly"
+path = "/trending/javascript"
+period = "weekly"
+optional = true
+
+[[trending]]
+id = "go-daily"
+path = "/trending/go"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "go-weekly"
+path = "/trending/go"
+period = "weekly"
+optional = true
+
+[[trending]]
+id = "rust-daily"
+path = "/trending/rust"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "rust-weekly"
+path = "/trending/rust"
+period = "weekly"
+optional = true
+
+[[trending]]
+id = "jupyter-daily"
+path = "/trending/jupyter-notebook"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "jupyter-weekly"
+path = "/trending/jupyter-notebook"
+period = "weekly"
+optional = true
+
+[[trending]]
+id = "cpp-daily"
+path = "/trending/c++"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "cpp-weekly"
+path = "/trending/c++"
+period = "weekly"
+optional = true
+
+[[trending]]
+id = "java-daily"
+path = "/trending/java"
+period = "daily"
+optional = true
+
+[[trending]]
+id = "java-weekly"
+path = "/trending/java"
+period = "weekly"
+optional = true
 
 # Search 只取第 1 頁、每頁 100 筆（稽核報告 §5.5）
 [[search]]

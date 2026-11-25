@@ -184,3 +184,28 @@ def test_tracking_drops_stale_and_caps_size():
                for i, d in [(1, "2026-10-01"), (2, "2026-10-20"), (3, "2026-10-25")]]
     kept = store.update_tracking(entries, [(4, "o/r4")], set(), "2026-10-26", max_size=2, max_age_days=14)
     assert [e["repo_id"] for e in kept] == [4, 3]
+
+
+def test_optional_page_failure_and_blocked_repo_keep_run_complete(tmp_path, started):
+    rust = "https://github.com/trending/rust?since=daily"
+    cfg = config(trending=[{"id": "all-daily", "path": "/trending", "period": "daily"},
+                           {"id": "rust-daily", "path": "/trending/rust", "period": "daily", "optional": True}])
+    blocked = {"message": "Repository access blocked", "block": {"reason": "tos"}}
+    routes = {
+        DAILY_URL: FakeResponse(200, text=page_html(row_html("a/one", 1))),
+        rust: FakeResponse(200, text="<html>no rows today</html>"),  # 選用頁失敗
+        SEARCH_URL: FakeResponse(200, search_json()),
+        api("/repositories/1"): FakeResponse(200, repo_json(1, "a/one")),
+        api("/repositories/7"): FakeResponse(403, blocked),  # 被 GitHub 封鎖的專案
+    }
+    doc, out_dir, _ = run(tmp_path, routes, started, cfg=cfg,
+                          data_files={"state/tracking.json": tracking_doc((7, "x/blocked"))})
+    assert [s["status"] for s in doc["sources"] if s["source_id"] == "rust-daily"] == ["failed"]
+    assert doc["unresolved"] == [{"repo_id": 7, "full_name": "x/blocked", "reason": "not_found",
+                                  "detail": "http_403_blocked"}]
+    assert doc["complete"] is True
+    # 必抓的頁失敗，仍然算不完整
+    routes[DAILY_URL] = FakeResponse(503)
+    (tmp_path / "again").mkdir()
+    doc, _, _ = run(tmp_path / "again", routes, started, cfg=cfg)
+    assert doc["complete"] is False

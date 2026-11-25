@@ -10,7 +10,7 @@
 <section class="prose" id="how">
   <h2>每天怎麼選</h2>
   <ol>
-    <li><strong>收集</strong>：每天抓 GitHub Trending 的 8 個榜單（全站、Python、TypeScript、中文專案，各有日榜與週榜），再用 GitHub API 搜尋最近 30 天、7 天內新建立的熱門專案。</li>
+    <li><strong>收集</strong>：每天抓 GitHub Trending 的 20 個榜單（全站、Python、TypeScript、中文專案、JavaScript、Go、Rust、Jupyter Notebook、C++、Java，各有日榜與週榜），再用 GitHub API 搜尋最近 30 天、7 天內新建立的熱門專案。</li>
     <li><strong>資格</strong>：最近 {{ score.active_within_days }} 天內有更新、沒有封存、不是 fork 的專案才列入。</li>
     <li><strong>每天新增星數</strong>：本站每天記錄約 200 個專案的星數。和 {{ score.observed_min_hours }}～{{ score.observed_max_hours }} 小時前的紀錄比較，就能算出<strong>實際觀測</strong>到的每天新增星數；第一次出現、還沒有紀錄可比的專案，才改用 GitHub Trending 顯示的「今日 +N 星」（只上週榜就用「本週 +N 星 ÷ 7」）。</li>
     <li><strong>主榜（最多 {{ score.max_main }} 個）</strong>：分數由每天新增星數多寡（占 75%）和相對成長幅度（占 25%）組成，大專案和小專案都有機會。今天沒上 Trending、但實際觀測仍在成長的專案也會入選。</li>
