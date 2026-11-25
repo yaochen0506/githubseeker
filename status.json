@@ -1,8 +1,8 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-24T20:27:35+08:00",
- "business_date": "2026-11-24",
- "last_run_id": "20261124T202602-45393425670.1",
+ "updated_at": "2026-11-25T10:32:26+08:00",
+ "business_date": "2026-11-25",
+ "last_run_id": "20261125T103102-45533484446.1",
  "last_run_complete": false,
  "last_complete_run_id": "20261122T071936-44961205533.1",
  "last_complete_at": "2026-11-22T07:20:49+08:00",
@@ -70,7 +70,7 @@
  ],
  "counts": {
   "source_hits": 343,
-  "observations": 198,
+  "observations": 200,
   "unresolved": 2,
   "tracking": 200
  },
@@ -83,11 +83,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 200,
+   "requests": 202,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4800,
-   "used_by_headers": 200
+   "remaining_last": 4798,
+   "used_by_headers": 202
   }
  }
 }
