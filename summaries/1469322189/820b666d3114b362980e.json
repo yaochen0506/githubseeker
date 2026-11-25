@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "820b666d3114b362980e",
+ "repo_id": 1469322189,
+ "full_name": "rowanbyte3329/stardew-valley-mod-manager",
+ "created_at": "2026-11-25T19:17:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0ca6db73faf6717abc7dbd7db16920d43cac5682d142f434a8ae28acd050fa60",
+ "has_readme": true,
+ "readme_chars": 6989,
+ "content": {
+  "one_liner": "免費的 Windows 桌面軟體，用圖形介面管理《Stardew Valley》模組",
+  "features": [
+   "透過 SMAPI 啟用、停用、整理模組",
+   "檢查已安裝模組是否有更新",
+   "為不同存檔或多人連線建立模組設定檔"
+  ],
+  "audience": "玩《Stardew Valley》並想安裝或管理大量模組的 Windows 玩家，新手或老手都適用",
+  "use_cases": [
+   "替不同農場存檔切換各自的模組組合",
+   "和朋友多人連線前，切換到共用的模組設定",
+   "定期檢查模組更新，不用手動整理資料夾"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載壓縮檔、解壓後執行 exe 就能用，不需要命令列；須先裝好遊戲與 SMAPI",
+  "limitations": "僅支援 Windows；只做更新檢查，不會自動更新所有模組；模組相容性取決於模組本身與 SMAPI 版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f7f8b942744eac117057",
+ "repo_id": 1469329665,
+ "full_name": "Indigo-0167/universal-game-mod-manager",
+ "created_at": "2026-11-25T19:16:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9be45961da62102a0a806b23e93ef2d6d3b718d7a1ae1aef1613ab06cf1e199c",
+ "has_readme": true,
+ "readme_chars": 8600,
+ "content": {
+  "one_liner": "免費的 Windows 遊戲模組管理軟體，可找出並管理 Unity、Unreal 通用模組",
+  "features": [
+   "自動偵測 Steam、GOG、Epic、itch.io、Xbox 遊戲",
+   "辨識遊戲使用 Unity 或 Unreal Engine",
+   "一鍵檢查並更新已安裝的模組"
+  ],
+  "audience": "常裝模組的 PC 玩家、VR 愛好者，以及 Unity、Unreal 模組社群成員",
+  "use_cases": [
+   "幫多款同引擎遊戲安裝同一套通用模組",
+   "替相容的 PC 遊戲安裝通用 VR 模組",
+   "集中查看與更新各遊戲已安裝的模組"
+  ],
+  "barrier": "install",
+  "barrier_note": "需在 Windows 下載壓縮檔並解壓縮後執行，不用命令列",
+  "limitations": "不是每個模組都適用每款遊戲；部分遊戲需手動加入；Xbox 不支援偵測已擁有遊戲；安裝前建議備份",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

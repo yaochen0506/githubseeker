@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b656576ee1699d40b517",
+ "repo_id": 1469338376,
+ "full_name": "Umbra9179/clipboard-history-manager-windows",
+ "created_at": "2026-11-25T19:17:01+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5c9785a9b425901ec11a2593695874be5c29a96ec16188c69d79db3f93f561dd",
+ "has_readme": true,
+ "readme_chars": 9069,
+ "content": {
+  "one_liner": "免費開源的 Windows 剪貼簿管理工具，可搜尋、編輯與備份複製過的內容",
+  "features": [
+   "保存文字、圖片、連結、檔案等剪貼簿歷史並可搜尋",
+   "可編輯內容、加標籤分組，並篩選來源應用程式",
+   "支援拖放、視窗釘選與剪貼簿資料備份"
+  ],
+  "audience": "常常複製貼上資料的 Windows 10／11 使用者，例如文書工作者、研究者",
+  "use_cases": [
+   "整理研究時蒐集的多筆連結，之後再搜尋取用",
+   "在不同文件之間搬移資料，不怕前一筆複製內容被覆蓋",
+   "用標籤把常用的文字片段分成工作與個人兩類"
+  ],
+  "barrier": "online",
+  "barrier_note": "從 Releases 下載 zip 解壓縮後，雙擊 exe 即可執行，不需命令列",
+  "limitations": "僅支援 Windows 10／11；部分操作可能需系統管理員權限，拖放受權限限制；歷史可能含敏感資料需小心",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

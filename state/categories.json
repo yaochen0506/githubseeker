@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-24T20:27:44+08:00",
+ "updated_at": "2026-11-25T19:16:20+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -3735,6 +3735,42 @@
    "full_name": "os6/nospeaker",
    "classified_at": "2026-11-23T18:44:45+08:00"
   },
+  "1469322189": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "rowanbyte3329/stardew-valley-mod-manager",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1469329665": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "Indigo-0167/universal-game-mod-manager",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1469330932": {
+   "category": "excluded",
+   "exclude_reason": "cheat",
+   "full_name": "solv4626/steam-achievement-manager-windows",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1469332110": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "kai415-debug/ffmpeg-video-audio-converter",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1469337059": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "zero5122/offline-file-converter-windows",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1469338376": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Umbra9179/clipboard-history-manager-windows",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
   "1469344551": {
    "category": "excluded",
    "exclude_reason": "piracy",
@@ -3746,6 +3782,24 @@
    "exclude_reason": "piracy",
    "full_name": "ubiquitarianism/leonida",
    "classified_at": "2026-11-24T20:27:44+08:00"
+  },
+  "1469549145": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "ProjectLeonidaL/leonida",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1470579726": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "fxceless/victory-fork",
+   "classified_at": "2026-11-25T19:16:20+08:00"
+  },
+  "1471056687": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "Zettrox/ztrx",
+   "classified_at": "2026-11-25T19:16:20+08:00"
   }
  }
 }

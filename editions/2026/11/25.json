@@ -1,0 +1,1067 @@
+{
+ "schema_version": "1",
+ "score_version": "d2",
+ "edition_id": "2026-11-25",
+ "business_date": "2026-11-25",
+ "generated_at": "2026-11-25T19:16:20+08:00",
+ "run_id": "20261125T191433-45602557303.1",
+ "status": "degraded",
+ "coverage": {
+  "sources_ok": [
+   "all-daily",
+   "all-weekly",
+   "python-daily",
+   "python-weekly",
+   "typescript-daily",
+   "typescript-weekly",
+   "zh-daily",
+   "zh-weekly",
+   "new-30d",
+   "new-7d"
+  ],
+  "sources_failed": []
+ },
+ "picks": [
+  {
+   "slot": "main",
+   "position": 1,
+   "category": "everyday-tools",
+   "repo_id": 243950408,
+   "full_name": "Anduin2017/HowToCook",
+   "html_url": "https://github.com/Anduin2017/HowToCook",
+   "description": "Programmer's guide about how to cook at home.",
+   "language": null,
+   "topics": [
+    "chinese",
+    "cookbook",
+    "cooking",
+    "dishes",
+    "recipes"
+   ],
+   "license_spdx": "Unlicense",
+   "created_at": "2020-02-29T10:43:49Z",
+   "pushed_at": "2026-11-17T15:15:21Z",
+   "stars": 104287,
+   "forks": 11239,
+   "metric_method": "observed",
+   "growth_per_day": 50.5,
+   "score": 42.9,
+   "score_breakdown": {
+    "s_abs": 0.5705,
+    "s_rel": 0.0048
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 48,
+    "hours": 22.8,
+    "base_at": "2026-11-24T20:27:33+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +48 星",
+    "今天不在 GitHub Trending 榜上，但持續成長",
+    "再次推薦：每天成長是上次入選（2026-11-16）的 2.1 倍，之後已增加 323 星"
+   ],
+   "notes": [],
+   "repeat_of": "2026-11-16",
+   "repeat_reason": "再次推薦：每天成長是上次入選（2026-11-16）的 2.1 倍，之後已增加 323 星",
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "用寫程式般清楚精準的方式，整理家常菜做法的開源中文食譜",
+     "features": [
+      "收錄素菜、葷菜、水產、早餐、甜品、飲料等數百道食譜",
+      "提供廚房準備、用刀、蒸煮炒等基礎烹飪教學",
+      "有網站可瀏覽，也能用 Docker 在自己電腦架設"
+     ],
+     "audience": "想在家自己煮飯的新手，特別是喜歡步驟明確、份量清楚的人，以及看得懂簡體中文的讀者",
+     "use_cases": [
+      "照著食譜一步步做出番茄炒蛋、宮保雞丁等家常菜",
+      "不知道今天吃什麼時，參考食譜清單或相關的決策工具",
+      "學習焯水、油溫判斷、炒糖色等進階烹飪技巧"
+     ],
+     "barrier": "online",
+     "barrier_note": "直接上官方網站就能看食譜；要自己架設才需要安裝 Docker",
+     "limitations": "內容為簡體中文；自行用 Docker 架設時有預設帳號密碼，啟動後最多約 30 分鐘才會完成索引",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "6c507acfdef15bc8348d",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 2,
+   "category": "ai-agents",
+   "repo_id": 950355259,
+   "full_name": "samuelgursky/davinci-resolve-mcp",
+   "html_url": "https://github.com/samuelgursky/davinci-resolve-mcp",
+   "description": "MCP server integration for DaVinci Resolve Studio",
+   "language": "Python",
+   "topics": [
+    "blackmagic",
+    "blackmagic-design",
+    "blackmagicdesign",
+    "davinci-resolve",
+    "davinciresolve",
+    "mcp",
+    "mcp-server"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2025-03-18T03:11:04Z",
+   "pushed_at": "2026-11-25T00:41:49Z",
+   "stars": 4365,
+   "forks": 496,
+   "metric_method": "observed",
+   "growth_per_day": 34.72,
+   "score": 40.8,
+   "score_breakdown": {
+    "s_abs": 0.5176,
+    "s_rel": 0.0802
+   },
+   "trending_hits": [],
+   "observed": {
+    "delta": 33,
+    "hours": 22.8,
+    "base_at": "2026-11-24T20:27:14+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +33 星",
+    "今天不在 GitHub Trending 榜上，但持續成長"
+   ],
+   "notes": [],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "讓 Claude 等 AI 助理透過官方腳本 API 操控 DaVinci Resolve 剪輯軟體",
+     "features": [
+      "支援剪輯、調色、算圖設定、Fusion、Fairlight 等操作",
+      "附本機瀏覽器控制面板，可檢視狀態與分析素材",
+      "進階伺服器可在不開 Resolve 時讀寫專案檔"
+     ],
+     "audience": "使用 DaVinci Resolve 的剪輯師、調色師與後製人員，且熟悉 AI 助理與命令列操作者",
+     "use_cases": [
+      "用自然語言請 AI 助理整理媒體池、加標記或設定算圖",
+      "讓 AI 協助調色比對與檢查畫面是否符合播出規範",
+      "在未開啟 Resolve 的情況下修改專案或調色檔"
+     ],
+     "barrier": "code",
+     "barrier_note": "需用命令列安裝 Python／Node 環境，並設定 MCP 用戶端與 Resolve 偏好設定",
+     "limitations": "主要支援 Studio 版；免費版僅能透過 21.0.x 的內建腳本橋接，21.1 起不適用，且官方可能封鎖",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "8a5699da3b82e00badc5",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 3,
+   "category": "dev-tools",
+   "repo_id": 235901813,
+   "full_name": "PostHog/posthog",
+   "html_url": "https://github.com/PostHog/posthog",
+   "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+   "language": "Python",
+   "topics": [
+    "ab-testing",
+    "ai-analytics",
+    "analytics",
+    "cdp",
+    "data-warehouse",
+    "experiments",
+    "feature-flags",
+    "javascript",
+    "product-analytics",
+    "python",
+    "react",
+    "session-replay",
+    "surveys",
+    "typescript",
+    "web-analytics"
+   ],
+   "license_spdx": "NOASSERTION",
+   "created_at": "2020-01-23T22:46:58Z",
+   "pushed_at": "2026-11-25T11:15:03Z",
+   "stars": 41104,
+   "forks": 3726,
+   "metric_method": "observed",
+   "growth_per_day": 35.78,
+   "score": 39.4,
+   "score_breakdown": {
+    "s_abs": 0.5218,
+    "s_rel": 0.0087
+   },
+   "trending_hits": [
+    {
+     "source_id": "python-weekly",
+     "rank": 14,
+     "period": "weekly",
+     "period_stars": 264
+    }
+   ],
+   "observed": {
+    "delta": 34,
+    "hours": 22.8,
+    "base_at": "2026-11-24T20:26:50+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +34 星",
+    "也在 Python 週榜第 14 名",
+    "再次推薦：每天成長是上次入選（2026-11-21）的 2.0 倍，之後已增加 112 星"
+   ],
+   "notes": [
+    "授權類型無法自動判別，使用前請到專案頁確認"
+   ],
+   "repeat_of": "2026-11-21",
+   "repeat_reason": "再次推薦：每天成長是上次入選（2026-11-21）的 2.0 倍，之後已增加 112 星",
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "一站式產品分析平台，收集使用者行為、錯誤與工作階段錄影，協助改善產品",
+     "features": [
+      "產品與網站流量分析，可用圖表或 SQL 查詢",
+      "工作階段錄影重播、熱點圖與錯誤追蹤",
+      "功能旗標、A/B 實驗、問卷與 AI 查詢資料"
+     ],
+     "audience": "經營網站或 App 的開發團隊、產品經理與新創公司",
+     "use_cases": [
+      "觀看真實使用者的操作錄影，找出網站或 App 的問題",
+      "先讓部分使用者試用新功能，並用實驗比較成效",
+      "用 AI 詢問產品資料，自動產生分析圖表與 SQL"
+     ],
+     "barrier": "code",
+     "barrier_note": "可註冊雲端版免費使用，但要在自家網站或 App 安裝 SDK 或程式碼片段",
+     "limitations": "自架版需 Docker 與約 4GB 記憶體，約可應付每月 10 萬筆事件，官方不提供支援；雲端版超過免費額度後依用量收費",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "fbc37b27215f8ddd4018",
+    "has_readme": true,
+    "from_cache": true,
+    "attempts": 0,
+    "error": null
+   }
+  },
+  {
+   "slot": "main",
+   "position": 4,
+   "category": "learning",
+   "repo_id": 216773481,
+   "full_name": "timqian/chinese-independent-blogs",
+   "html_url": "https://github.com/timqian/chinese-independent-blogs",
+   "description": "中文独立博客列表",
+   "language": "JavaScript",
+   "topics": [
+    "blog",
+    "china",
+    "rss"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2019-10-22T09:22:45Z",
+   "pushed_at": "2026-11-25T09:11:51Z",
+   "stars": 24588,
+   "forks": 2796,
+   "metric_method": "observed",
+   "growth_per_day": 15.78,
+   "score": 30.8,
+   "score_breakdown": {
+    "s_abs": 0.4082,
+    "s_rel": 0.0064
+   },
+   "trending_hits": [
+    {
+     "source_id": "zh-weekly",
+     "rank": 19,
+     "period": "weekly",
+     "period_stars": 78
+    }
+   ],
+   "observed": {
+    "delta": 15,
+    "hours": 22.8,
+    "base_at": "2026-11-24T20:27:06+08:00"
+   },
+   "reasons": [
+    "實際觀測：過去 23 小時增加 +15 星",
+    "也在中文專案週榜第 19 名",
+    "再次推薦：每天成長是上次入選（2026-11-14）的 2.6 倍，之後已增加 126 星"
+   ],
+   "notes": [],
+   "repeat_of": "2026-11-14",
+   "repeat_reason": "再次推薦：每天成長是上次入選（2026-11-14）的 2.6 倍，之後已增加 126 星",
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "收集中文獨立部落格的清單，附上每個部落格的 RSS 與主題標籤",
+     "features": [
+      "列出大量中文獨立部落格的名稱、RSS 與標籤",
+      "依最近一篇文章的發布時間排序，每天自動更新",
+      "RSS 長期出錯的部落格會移到「疑似失效」區"
+     ],
+     "audience": "喜歡閱讀中文個人部落格、使用 RSS 閱讀器的讀者，以及想讓更多人看到的獨立部落客",
+     "use_cases": [
+      "依標籤找技術、生活、投資等主題的中文部落格來追蹤",
+      "把感興趣部落格的 RSS 加進自己的 RSS 閱讀器",
+      "部落客把自己的部落格加進清單，讓更多讀者發現"
+     ],
+     "barrier": "online",
+     "barrier_note": "直接瀏覽清單就能用；想提交部落格的話，需要會用 GitHub 編輯 CSV 檔並送出 PR",
+     "limitations": "清單每天才同步一次；收錄的內容以簡體中文為主，部落格品質由各作者自行負責",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "5178675e95b1b4062faa",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 1,
+   "category": "fun-creative",
+   "repo_id": 1469329665,
+   "full_name": "Indigo-0167/universal-game-mod-manager",
+   "html_url": "https://github.com/Indigo-0167/universal-game-mod-manager",
+   "description": "Free Windows game mod manager to discover, install, update and manage universal Unity and Unreal Engine mods.",
+   "language": "Rust",
+   "topics": [
+    "automation",
+    "desktop",
+    "epic-games",
+    "game-development",
+    "game-engine",
+    "game-mods",
+    "game-tools",
+    "gaming",
+    "gog",
+    "itch",
+    "mod-manager",
+    "modding",
+    "open-source",
+    "pc-gaming",
+    "rust",
+    "steam",
+    "tauri",
+    "unity",
+    "unreal",
+    "windows"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-23T21:30:10Z",
+   "pushed_at": "2026-11-23T21:30:46Z",
+   "stars": 1297,
+   "forks": 0,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 648.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 1,297 星，建立以來平均每天 +648 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費的 Windows 遊戲模組管理軟體，可找出並管理 Unity、Unreal 通用模組",
+     "features": [
+      "自動偵測 Steam、GOG、Epic、itch.io、Xbox 遊戲",
+      "辨識遊戲使用 Unity 或 Unreal Engine",
+      "一鍵檢查並更新已安裝的模組"
+     ],
+     "audience": "常裝模組的 PC 玩家、VR 愛好者，以及 Unity、Unreal 模組社群成員",
+     "use_cases": [
+      "幫多款同引擎遊戲安裝同一套通用模組",
+      "替相容的 PC 遊戲安裝通用 VR 模組",
+      "集中查看與更新各遊戲已安裝的模組"
+     ],
+     "barrier": "install",
+     "barrier_note": "需在 Windows 下載壓縮檔並解壓縮後執行，不用命令列",
+     "limitations": "不是每個模組都適用每款遊戲；部分遊戲需手動加入；Xbox 不支援偵測已擁有遊戲；安裝前建議備份",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "f7f8b942744eac117057",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 2,
+   "category": "everyday-tools",
+   "repo_id": 1469338376,
+   "full_name": "Umbra9179/clipboard-history-manager-windows",
+   "html_url": "https://github.com/Umbra9179/clipboard-history-manager-windows",
+   "description": "Free open-source Windows clipboard manager with searchable history, image previews, tags, editing and backup.",
+   "language": "C#",
+   "topics": [
+    "clipboard",
+    "clipboard-history",
+    "clipboard-manager",
+    "desktop-app",
+    "desktop-application",
+    "dotnet",
+    "fluent",
+    "open-source",
+    "productivity",
+    "utility",
+    "windows",
+    "windows-10",
+    "windows-11",
+    "windows-app-sdk",
+    "windows-application",
+    "winui"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-23T21:40:15Z",
+   "pushed_at": "2026-11-23T21:40:42Z",
+   "stars": 1265,
+   "forks": 0,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 632.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 1,265 星，建立以來平均每天 +632 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費開源的 Windows 剪貼簿管理工具，可搜尋、編輯與備份複製過的內容",
+     "features": [
+      "保存文字、圖片、連結、檔案等剪貼簿歷史並可搜尋",
+      "可編輯內容、加標籤分組，並篩選來源應用程式",
+      "支援拖放、視窗釘選與剪貼簿資料備份"
+     ],
+     "audience": "常常複製貼上資料的 Windows 10／11 使用者，例如文書工作者、研究者",
+     "use_cases": [
+      "整理研究時蒐集的多筆連結，之後再搜尋取用",
+      "在不同文件之間搬移資料，不怕前一筆複製內容被覆蓋",
+      "用標籤把常用的文字片段分成工作與個人兩類"
+     ],
+     "barrier": "online",
+     "barrier_note": "從 Releases 下載 zip 解壓縮後，雙擊 exe 即可執行，不需命令列",
+     "limitations": "僅支援 Windows 10／11；部分操作可能需系統管理員權限，拖放受權限限制；歷史可能含敏感資料需小心",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "b656576ee1699d40b517",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "discovery",
+   "position": 3,
+   "category": "everyday-tools",
+   "repo_id": 1469337059,
+   "full_name": "zero5122/offline-file-converter-windows",
+   "html_url": "https://github.com/zero5122/offline-file-converter-windows",
+   "description": "Free offline file converter for Windows – convert PDF, documents, images, audio and video privately.",
+   "language": "Python",
+   "topics": [
+    "audio-converter",
+    "batch-conversion",
+    "conversion",
+    "convert",
+    "converter",
+    "desktop-app",
+    "document-conversion",
+    "file-conversion",
+    "file-converter",
+    "file-converter-pro",
+    "image-converter",
+    "offline",
+    "open-source",
+    "pdf",
+    "pdf-converter",
+    "pyside6",
+    "python",
+    "qt",
+    "video-converter",
+    "windows"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-23T21:38:47Z",
+   "pushed_at": "2026-11-23T21:39:16Z",
+   "stars": 1059,
+   "forks": 1,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 529.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 1,059 星，建立以來平均每天 +530 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "在 Windows 電腦上離線轉換 PDF、文件、圖片、音訊和影片格式的免費軟體",
+     "features": [
+      "支援文件、PDF、圖片、音訊、影片格式轉換",
+      "可一次選多個檔案批次轉換",
+      "檔案全在本機處理，不用上傳到雲端"
+     ],
+     "audience": "使用 Windows 10／11、想轉換檔案格式又不想把私人檔案上傳到網站的一般使用者",
+     "use_cases": [
+      "轉換機密文件或 PDF，不用上傳到線上轉檔網站",
+      "一次把多張照片轉成其他圖片格式",
+      "在本機轉換大型影片或音樂檔的格式"
+     ],
+     "barrier": "online",
+     "barrier_note": "從 Releases 下載 zip 解壓縮後點兩下 exe 就能用，不必另裝 Python",
+     "limitations": "只支援 64 位元 Windows 10／11；可用格式取決於內建轉換引擎；exe 需與 libvlc.dll 放同一資料夾",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "ca8419573daa4bfd5f0f",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "everyday-tools",
+   "repo_id": 1469332110,
+   "full_name": "kai415-debug/ffmpeg-video-audio-converter",
+   "html_url": "https://github.com/kai415-debug/ffmpeg-video-audio-converter",
+   "description": "Free Windows FFmpeg GUI for video and audio conversion, batch transcoding, and multimedia format encoding.",
+   "language": "C++",
+   "topics": [
+    "audio",
+    "audio-converter",
+    "conversion",
+    "converter-encoding",
+    "cpp",
+    "desktop",
+    "ffmpeg",
+    "ffmpeg-wrapper",
+    "gui",
+    "media-converter",
+    "media-processing",
+    "multimedia",
+    "open-source",
+    "qml",
+    "qt5",
+    "transcoding",
+    "video",
+    "video-converter",
+    "video-encoding",
+    "windows"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-23T21:32:56Z",
+   "pushed_at": "2026-11-23T21:33:23Z",
+   "stars": 1024,
+   "forks": 0,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 512.0,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 1,024 星，建立以來平均每天 +512 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費的 Windows 影片與音訊轉檔軟體，用圖形介面操作 FFmpeg",
+     "features": [
+      "影片與音訊格式互轉，可調整編碼設定",
+      "批次排程，一次轉換多個檔案",
+      "內建轉檔預設組合，也可自訂 FFmpeg 參數"
+     ],
+     "audience": "想轉換影音格式但不想打指令的 Windows 使用者，從新手到進階使用者都適用",
+     "use_cases": [
+      "把影片轉成特定裝置或播放器能播放的格式",
+      "批次轉換整批音樂檔案的格式",
+      "調整畫質、編碼器等參數重新編碼影片"
+     ],
+     "barrier": "install",
+     "barrier_note": "下載壓縮檔解壓後執行 exe；README 提到要有 FFmpeg，可能需要另外設定",
+     "limitations": "只支援 Windows；可用格式取決於 FFmpeg 版本；exe 要和 libvlc.dll 放在同一個資料夾",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "9298abc23c8a150e8e13",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  },
+  {
+   "slot": "category",
+   "position": 1,
+   "category": "fun-creative",
+   "repo_id": 1469322189,
+   "full_name": "rowanbyte3329/stardew-valley-mod-manager",
+   "html_url": "https://github.com/rowanbyte3329/stardew-valley-mod-manager",
+   "description": "Free open-source Stardew Valley mod manager for Windows with SMAPI support, mod updates, and custom mod profiles.",
+   "language": "C#",
+   "topics": [
+    "avaloniaui",
+    "cross-platform",
+    "csharp",
+    "desktop",
+    "dotnet",
+    "game-modding",
+    "game-mods",
+    "gaming",
+    "mod-management",
+    "modmanager",
+    "open-source",
+    "productivity",
+    "stardew-valley",
+    "stardew-valley-mods",
+    "windows"
+   ],
+   "license_spdx": "MIT",
+   "created_at": "2026-11-23T21:21:35Z",
+   "pushed_at": "2026-11-23T21:22:01Z",
+   "stars": 871,
+   "forks": 0,
+   "metric_method": "lifetime_avg",
+   "growth_per_day": 435.5,
+   "score": null,
+   "score_breakdown": null,
+   "trending_hits": [],
+   "observed": null,
+   "reasons": [
+    "建立 2 天，已有 871 星，建立以來平均每天 +436 星"
+   ],
+   "notes": [
+    "建立僅 2 天的新專案，功能與安全性還沒經過時間考驗"
+   ],
+   "repeat_of": null,
+   "repeat_reason": null,
+   "summary": {
+    "status": "done",
+    "content": {
+     "one_liner": "免費的 Windows 桌面軟體，用圖形介面管理《Stardew Valley》模組",
+     "features": [
+      "透過 SMAPI 啟用、停用、整理模組",
+      "檢查已安裝模組是否有更新",
+      "為不同存檔或多人連線建立模組設定檔"
+     ],
+     "audience": "玩《Stardew Valley》並想安裝或管理大量模組的 Windows 玩家，新手或老手都適用",
+     "use_cases": [
+      "替不同農場存檔切換各自的模組組合",
+      "和朋友多人連線前，切換到共用的模組設定",
+      "定期檢查模組更新，不用手動整理資料夾"
+     ],
+     "barrier": "install",
+     "barrier_note": "下載壓縮檔、解壓後執行 exe 就能用，不需要命令列；須先裝好遊戲與 SMAPI",
+     "limitations": "僅支援 Windows；只做更新檢查，不會自動更新所有模組；模組相容性取決於模組本身與 SMAPI 版本",
+     "based_on": [
+      "description",
+      "readme",
+      "topics"
+     ]
+    },
+    "model": "claude-opus-5-5",
+    "prompt_version": "c1",
+    "cache_key": "820b666d3114b362980e",
+    "has_readme": true,
+    "from_cache": false,
+    "attempts": 1,
+    "error": null
+   }
+  }
+ ],
+ "cooldown_excluded": [
+  167174,
+  612230,
+  3638964,
+  12888993,
+  19745004,
+  24195339,
+  33884891,
+  37912398,
+  40081991,
+  48030204,
+  48576134,
+  54173593,
+  58028038,
+  73561650,
+  74293321,
+  80945428,
+  104337773,
+  126178683,
+  130578889,
+  130884470,
+  140516736,
+  152870372,
+  153097643,
+  155220641,
+  159152904,
+  180190854,
+  193215554,
+  263556058,
+  275386910,
+  291485614,
+  310659501,
+  313549939,
+  330355479,
+  332357698,
+  334110599,
+  334448316,
+  356633717,
+  375741607,
+  384520418,
+  410480975,
+  414027423,
+  466390618,
+  503592660,
+  512334495,
+  519859998,
+  522158088,
+  527600676,
+  529623205,
+  537603333,
+  542386106,
+  543101941,
+  549007739,
+  558188628,
+  559577341,
+  561730219,
+  566931318,
+  572984571,
+  575321313,
+  575401013,
+  575865240,
+  643445235,
+  679086250,
+  684776900,
+  699532645,
+  730753909,
+  730932260,
+  742244656,
+  787076358,
+  834369920,
+  839037098,
+  888092115,
+  896335270,
+  903349957,
+  907125224,
+  924058625,
+  968905557,
+  975734319,
+  979392131,
+  1008713177,
+  1010318950,
+  1013480284,
+  1015815983,
+  1024661423,
+  1025856648,
+  1028035407,
+  1028432181,
+  1032459340,
+  1035029907,
+  1042367133,
+  1053118194,
+  1054793726,
+  1056618941,
+  1061041576,
+  1061953414,
+  1063641074,
+  1073224795,
+  1078079172,
+  1079356098,
+  1112365301,
+  1123956658,
+  1131202426,
+  1131513930,
+  1132001614,
+  1133141258,
+  1135847870,
+  1136666433,
+  1137078255,
+  1140229822,
+  1140843380,
+  1141663444,
+  1143633223,
+  1167300963,
+  1176011916,
+  1179388779,
+  1180745961,
+  1187630119,
+  1207222725,
+  1212769188,
+  1226691771,
+  1229774092,
+  1241960226,
+  1249703818,
+  1255092568,
+  1261204838,
+  1271113810,
+  1274703665,
+  1278676884,
+  1281033762,
+  1299769220,
+  1300991151,
+  1301657572,
+  1305663861,
+  1306128367,
+  1310427454,
+  1327214801,
+  1331261687,
+  1332781509,
+  1336502227,
+  1354310030,
+  1356077516,
+  1368913638,
+  1426780056,
+  1437814166,
+  1438394948,
+  1438478196,
+  1438540053,
+  1438623288,
+  1438661890,
+  1439372976,
+  1440705679,
+  1440927503,
+  1440971520,
+  1443186633,
+  1443985070,
+  1444573070,
+  1449231124,
+  1450963843,
+  1453517867,
+  1455006582,
+  1455374283,
+  1459971684,
+  1460417668,
+  1463963309,
+  1464126198,
+  1465728637,
+  1466075841,
+  1466325515,
+  1466635339,
+  1467519193
+ ],
+ "suspicious_excluded": [
+  1136590548,
+  1153130349,
+  1432967563,
+  1440956372,
+  1449548089,
+  1458720005,
+  1465281397,
+  1465852099,
+  1467035512
+ ],
+ "suspicious_details": [
+  {
+   "repo_id": 1153130349,
+   "full_name": "pingdotgg/t3code",
+   "description": "The best way to control Claude Code, Codex and more from any computer or phone",
+   "stars": 78651,
+   "created_at": "2026-02-08T23:46:22Z",
+   "growth_per_day": 2321.1,
+   "trending_floor": 158,
+   "times_seen": 11
+  },
+  {
+   "repo_id": 1465852099,
+   "full_name": "xcl-dev/xcl",
+   "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+   "stars": 8090,
+   "created_at": "2026-11-20T20:03:21Z",
+   "growth_per_day": 1741.4,
+   "trending_floor": 158,
+   "times_seen": 5
+  },
+  {
+   "repo_id": 1467035512,
+   "full_name": "4lwayz/portwatch-vi",
+   "description": "Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts, updated daily.",
+   "stars": 3259,
+   "created_at": "2026-11-21T23:16:41Z",
+   "growth_per_day": 1655.2,
+   "trending_floor": 158,
+   "times_seen": 4
+  },
+  {
+   "repo_id": 1465281397,
+   "full_name": "AFK-surf/xnulinux",
+   "description": "XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+   "stars": 3704,
+   "created_at": "2026-11-20T10:18:31Z",
+   "growth_per_day": 881.8,
+   "trending_floor": 158,
+   "times_seen": 5
+  },
+  {
+   "repo_id": 1440956372,
+   "full_name": "storytold/craft-anything",
+   "description": "Craft Anything: understand how any software works, and craft your own.",
+   "stars": 43185,
+   "created_at": "2026-10-31T14:50:00Z",
+   "growth_per_day": 676.6,
+   "trending_floor": 158,
+   "times_seen": 11
+  },
+  {
+   "repo_id": 1458720005,
+   "full_name": "Hut-hzf/ung220z-tool",
+   "description": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+   "stars": 4688,
+   "created_at": "2026-11-15T11:16:46Z",
+   "growth_per_day": 607.1,
+   "trending_floor": 158,
+   "times_seen": 10
+  },
+  {
+   "repo_id": 1136590548,
+   "full_name": "affaan-m/ECC",
+   "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+   "stars": 310438,
+   "created_at": "2026-01-18T00:51:51Z",
+   "growth_per_day": 590.3,
+   "trending_floor": 158,
+   "times_seen": 11
+  },
+  {
+   "repo_id": 1449548089,
+   "full_name": "ersinkoc/phonebox",
+   "description": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 124 widgets and 30 templates for system stats, AI coding, media and automation, in 13 languages. USB or paired Wi-Fi. No cloud required.",
+   "stars": 6218,
+   "created_at": "2026-11-07T16:45:16Z",
+   "growth_per_day": 570.3,
+   "trending_floor": 158,
+   "times_seen": 6
+  },
+  {
+   "repo_id": 1432967563,
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+   "stars": 31664,
+   "created_at": "2026-10-25T08:09:52Z",
+   "growth_per_day": 548.1,
+   "trending_floor": 158,
+   "times_seen": 11
+  }
+ ],
+ "content_excluded": [
+  571581970,
+  1444372497,
+  1469330932,
+  1469344551,
+  1469441675,
+  1469549145,
+  1470579726,
+  1471056687
+ ],
+ "candidate_counts": {
+  "main": 4,
+  "discovery": 5
+ },
+ "classification_stats": {
+  "enabled": true,
+  "reason": null,
+  "known": 624,
+  "classified": 9,
+  "calls": 1,
+  "failed_calls": 0
+ },
+ "summary_stats": {
+  "enabled": true,
+  "reason": null,
+  "model": "claude-opus-5-5",
+  "attempted": 8,
+  "done": 9,
+  "failed": 0,
+  "skipped": 0,
+  "cached": 1,
+  "calls": 8,
+  "input_tokens": 52316,
+  "output_tokens": 4502,
+  "cost_usd": 0.415572
+ }
+}
