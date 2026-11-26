@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c60336775184211bb25d",
+ "repo_id": 1135212071,
+ "full_name": "coreyhaines31/marketingskills",
+ "created_at": "2026-11-26T09:51:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ba3b71909907c2b2ca1db0adc97d87590263a8a0cbcc883134c0afea7f51c42e",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "一組行銷技能檔，讓 Claude Code 等 AI 代理幫你做 SEO、文案與轉換優化",
+  "features": [
+   "提供 50 多個行銷技能，涵蓋廣告、SEO、Email、定價等",
+   "以 product-marketing 為基礎，各技能共用產品背景資料",
+   "支援 Claude Code、Codex、Cursor、Windsurf 等代理"
+  ],
+  "audience": "懂一些技術的行銷人員、新創創辦人，以及想用 AI 代理處理行銷工作的人",
+  "use_cases": [
+   "請 AI 代理診斷著陸頁為何轉換率低，並提出修改建議",
+   "撰寫或改寫首頁、定價頁文案與冷開發 Email",
+   "規劃 SEO、AI 搜尋曝光與產品上市計畫"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列以 npx 安裝，或在 Claude Code 等 AI 代理中操作",
+  "limitations": "在代理工作階段內執行安裝可能只裝到 Claude Code 不讀取的目錄；/plugin 指令只能在互動式 Claude Code CLI 中使用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

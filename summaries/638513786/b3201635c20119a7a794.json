@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b3201635c20119a7a794",
+ "repo_id": 638513786,
+ "full_name": "Anil-matcha/Open-Generative-AI",
+ "created_at": "2026-11-26T09:52:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "27a0f9a957ee401932c2700126a6f8aba07e8c26e1073a94f8c7824d5df69723",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的 AI 圖片與影片生成工作室，可以用多種模型產生圖片、影片和對嘴動畫",
+  "features": [
+   "用文字或圖片生成圖片與影片，支援 Flux、Kling、Sora 等模型",
+   "對嘴工作室：讓人像照片配合音訊開口說話",
+   "桌面版可在本機執行部分圖片與影片模型"
+  ],
+  "audience": "想用 AI 製作圖片、影片的創作者，以及想自行架設或客製 AI 生成工具的開發者",
+  "use_cases": [
+   "輸入文字描述，產生插圖或寫實風格的圖片",
+   "把靜態照片轉成短影片，或讓人像配合語音對嘴",
+   "可能用於行銷素材或短片的快速製作"
+  ],
+  "barrier": "online",
+  "barrier_note": "可以直接用線上版（需要註冊帳號），或下載 macOS、Windows 桌面 App",
+  "limitations": "App 沒有簽章，安裝時會被系統擋下，需要手動允許；在本機跑影片模型需要 NVIDIA 或 AMD 顯示卡，並自行安裝 Wan2GP",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

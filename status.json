@@ -1,11 +1,11 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-25T19:16:09+08:00",
- "business_date": "2026-11-25",
- "last_run_id": "20261125T191433-45602557303.1",
- "last_run_complete": false,
- "last_complete_run_id": "20261122T071936-44961205533.1",
- "last_complete_at": "2026-11-22T07:20:49+08:00",
+ "updated_at": "2026-11-26T09:49:48+08:00",
+ "business_date": "2026-11-26",
+ "last_run_id": "20261126T094710-45738064832.1",
+ "last_run_complete": true,
+ "last_complete_run_id": "20261126T094710-45738064832.1",
+ "last_complete_at": "2026-11-26T09:49:48+08:00",
  "sources": [
   {
    "source_id": "all-daily",
@@ -16,13 +16,13 @@
   {
    "source_id": "all-weekly",
    "status": "ok",
-   "rows": 13,
+   "rows": 14,
    "error": null
   },
   {
    "source_id": "python-daily",
    "status": "ok",
-   "rows": 23,
+   "rows": 24,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "source_id": "typescript-weekly",
    "status": "ok",
-   "rows": 18,
+   "rows": 19,
    "error": null
   },
   {
@@ -53,6 +53,78 @@
    "source_id": "zh-weekly",
    "status": "ok",
    "rows": 22,
+   "error": null
+  },
+  {
+   "source_id": "javascript-daily",
+   "status": "ok",
+   "rows": 11,
+   "error": null
+  },
+  {
+   "source_id": "javascript-weekly",
+   "status": "ok",
+   "rows": 11,
+   "error": null
+  },
+  {
+   "source_id": "go-daily",
+   "status": "ok",
+   "rows": 12,
+   "error": null
+  },
+  {
+   "source_id": "go-weekly",
+   "status": "ok",
+   "rows": 14,
+   "error": null
+  },
+  {
+   "source_id": "rust-daily",
+   "status": "ok",
+   "rows": 14,
+   "error": null
+  },
+  {
+   "source_id": "rust-weekly",
+   "status": "ok",
+   "rows": 7,
+   "error": null
+  },
+  {
+   "source_id": "jupyter-daily",
+   "status": "ok",
+   "rows": 20,
+   "error": null
+  },
+  {
+   "source_id": "jupyter-weekly",
+   "status": "ok",
+   "rows": 21,
+   "error": null
+  },
+  {
+   "source_id": "cpp-daily",
+   "status": "ok",
+   "rows": 12,
+   "error": null
+  },
+  {
+   "source_id": "cpp-weekly",
+   "status": "ok",
+   "rows": 21,
+   "error": null
+  },
+  {
+   "source_id": "java-daily",
+   "status": "ok",
+   "rows": 18,
+   "error": null
+  },
+  {
+   "source_id": "java-weekly",
+   "status": "ok",
+   "rows": 18,
    "error": null
   },
   {
@@ -69,9 +141,9 @@
   }
  ],
  "counts": {
-  "source_hits": 345,
-  "observations": 201,
-  "unresolved": 2,
+  "source_hits": 527,
+  "observations": 347,
+  "unresolved": 4,
   "tracking": 200
  },
  "api_usage": {
@@ -83,11 +155,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 203,
+   "requests": 351,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4797,
-   "used_by_headers": 203
+   "remaining_last": 4649,
+   "used_by_headers": 351
   }
  }
 }

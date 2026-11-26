@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "6ab1af1dc553d4dc6d2b",
+ "repo_id": 678973052,
+ "full_name": "anthropics/claude-cookbooks",
+ "created_at": "2026-11-26T09:53:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5c4be202610ec2f5b1a039281f2e668fe3757d2173263d2056a88ec870b4dc4f",
+ "has_readme": true,
+ "readme_chars": 3414,
+ "content": {
+  "one_liner": "Anthropic 官方整理的 Claude 程式範例集，教開發者怎麼用 Claude 做出各種應用",
+  "features": [
+   "提供可直接複製使用的 Python 程式碼片段",
+   "涵蓋分類、摘要、RAG、工具使用等技巧",
+   "示範圖片辨識、PDF 處理、成本與延遲最佳化"
+  ],
+  "audience": "想用 Claude API 開發應用程式的開發者，或想學習 AI 應用技巧的工程師",
+  "use_cases": [
+   "參考範例打造客服機器人或串接 SQL 查詢",
+   "讓 Claude 讀圖表、擷取表單內容或處理 PDF",
+   "建立內容審核過濾器或自動評估 prompt"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫程式（主要是 Python），並申請 Claude API 金鑰",
+  "limitations": "需要 Claude API 金鑰；README 提到部分 AWS 範例可能要修改才能在 Claude 上順利運作",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

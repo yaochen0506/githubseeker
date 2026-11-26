@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "74514bc48236f4f615b7",
+ "repo_id": 1472396996,
+ "full_name": "avatarmanz/VIctory-7900XTX",
+ "created_at": "2026-11-26T09:51:32+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "31ad64d6b4a55cf6c1dbcc4c4f48ce833ed470ab42a918236c6b8dadba79ca90",
+ "has_readme": true,
+ "readme_chars": 4601,
+ "content": {
+  "one_liner": "讓 Xbox Series 遊戲在 Windows 上執行的相容層，專為 AMD RX 7900 XTX 調整速度",
+  "features": [
+   "把圖形指令交給多個執行緒處理，提升畫面速度",
+   "材質改用獨立佇列上傳，作者表示解決了定期當機",
+   "可錄製與重播畫面，比對每個步驟的耗時"
+  ],
+  "audience": "擁有 AMD RX 7900 XTX 顯示卡、熟悉編譯與除錯的進階玩家或開發者",
+  "use_cases": [
+   "用自己擁有的遊戲檔案，在 Windows 電腦上執行 Xbox Series 遊戲",
+   "研究 AMD RDNA 3 顯示卡上相容層的效能瓶頸"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Rust、MSVC 建置工具，用命令列編譯，並自備遊戲檔案",
+  "limitations": "只在一台電腦測試；多數場景遠低於 30 fps，建議 64 GB RAM，有閃爍、材質延遲等問題；不含遊戲檔案",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

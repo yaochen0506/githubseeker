@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8cc8cebea45f7c5ec696",
+ "repo_id": 1224172037,
+ "full_name": "t8y2/dbx",
+ "created_at": "2026-11-26T09:53:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3b4274a8f8f837f76513b8b2817f8e309eebc74947cb5cce5dd9ae3d6da8082d",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "輕量的跨平台資料庫管理軟體，支援 MySQL、Redis 等 100 多種資料庫",
+  "features": [
+   "用一般文字描述需求，由 AI 產生並檢查 SQL",
+   "瀏覽、編輯、匯入匯出資料表，支援 CSV、Excel",
+   "提供 MCP Server，讓 AI 工具查詢資料庫"
+  ],
+  "audience": "需要管理多種資料庫的工程師、資料分析人員與維運團隊",
+  "use_cases": [
+   "在同一個軟體裡連線並查詢 MySQL、PostgreSQL、MongoDB 等資料庫",
+   "拖曳 CSV 或 Parquet 檔案即時預覽內容",
+   "用 Docker 架設網頁版，讓團隊共用資料庫連線"
+  ],
+  "barrier": "code",
+  "barrier_note": "可下載桌面版安裝，但操作資料庫需要懂 SQL 與資料庫連線設定",
+  "limitations": "MCP Server 要另外安裝；Docker 版需備份加密金鑰與 dbx.db，資料卷外洩時金鑰無法保護",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

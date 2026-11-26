@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9ca2a118792165a39476",
+ "repo_id": 1387586059,
+ "full_name": "n8n-io/nod",
+ "created_at": "2026-11-26T09:50:52+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3550d24a33eacb18a01e6bafd0dd867a710fd23d4efdd6799139541d8c874635",
+ "has_readme": true,
+ "readme_chars": 5858,
+ "content": {
+  "one_liner": "在你自己的電腦上執行的開源 AI 個人助理，會操作真實網站幫你跑腿",
+  "features": [
+   "串接 Gmail、Calendar、Slack、Notion 和網頁處理事務",
+   "記住你的偏好與做事步驟，記憶可檢視和刪除",
+   "重要動作會先詢問，密碼由 Vault 私下填入"
+  ],
+  "audience": "想把催帳款、準備會議、取消試用等雜事交給 AI，又在意資料留在自己電腦上的人",
+  "use_cases": [
+   "每天早上讀信件和行事曆，替每場通話寫一頁簡報",
+   "依你的報價表草擬回信，經你同意才寄出",
+   "定期檢查網頁，有變動才通知你"
+  ],
+  "barrier": "install",
+  "barrier_note": "安裝桌面 App，再連接 ChatGPT Plus/Pro 帳號或 AI 金鑰，作者表示約十分鐘",
+  "limitations": "研究預覽版，可能出錯；電腦關機時排程不會執行；Windows、Linux 版仍是預覽；預設會分享使用資料",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

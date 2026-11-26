@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "617b8c53a3ddaf8974bf",
+ "repo_id": 669879380,
+ "full_name": "rasbt/LLMs-from-scratch",
+ "created_at": "2026-11-26T09:53:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f5650bdff7502f3ac685ba05f93dd6fca2207d7eb491196f994223894f8b0b3a",
+ "has_readme": true,
+ "readme_chars": 10504,
+ "content": {
+  "one_liner": "一步步教你用 PyTorch 從零打造類似 ChatGPT 的大型語言模型",
+  "features": [
+   "書籍官方程式碼，從文字處理講到 GPT 模型實作",
+   "涵蓋預訓練、分類微調與指令微調",
+   "附習題解答與多種模型架構的補充教材"
+  ],
+  "audience": "有扎實 Python 基礎、想深入了解 LLM 內部運作的學習者與工程師",
+  "use_cases": [
+   "搭配書籍或影片課程，邊讀邊跑程式碼學習 LLM 原理",
+   "在一般筆電上訓練一個教學用的小型 GPT 模型",
+   "微調模型做垃圾訊息分類或依指令回答"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要安裝 Python 與 PyTorch 環境，並具備扎實的 Python 程式能力",
+  "limitations": "模型主要供教學用途；主章節程式碼須與紙本書一致，不接受擴充內容的貢獻",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

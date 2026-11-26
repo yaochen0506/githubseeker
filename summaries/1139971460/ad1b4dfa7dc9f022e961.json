@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ad1b4dfa7dc9f022e961",
+ "repo_id": 1139971460,
+ "full_name": "rtk-ai/rtk",
+ "created_at": "2026-11-26T09:51:46+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3e6b3eb04abfe2b8531a8dfb8d92687907fc828d78364d21ec7f5abbc9b6a8fc",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "先壓縮開發指令的輸出再交給 AI 寫程式助理讀，幫你省下 token 費用",
+  "features": [
+   "自動精簡 git、測試、建置等 100 多種指令輸出",
+   "用 rtk gain 查看在本機省下多少 token",
+   "可加裝 pipeline，把大型檔案交給較便宜的模型處理"
+  ],
+  "audience": "使用 Claude Code、Cursor、Copilot 等 AI 寫程式工具的開發者與團隊",
+  "use_cases": [
+   "讓 AI 助理執行測試時只讀到失敗項目，減少讀取量",
+   "在 Claude Code 中降低每次對話的輸入 token 量",
+   "團隊可能透過 RTK Pro 統一管理 AI 費用與權限"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列安裝（Homebrew、winget 或安裝腳本），再接上 AI 寫程式工具",
+  "limitations": "作者表示指令輸出最多可減少 90%，但省下的總費用沒那麼多；pipeline 會把內容送給模型，安裝前要先看過；部分元件採 BUSL-1.1 授權",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

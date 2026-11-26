@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "cca7752c16e70c7d4d48",
+ "repo_id": 1322250666,
+ "full_name": "boykopovar/AnyPS5",
+ "created_at": "2026-11-26T09:51:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "4cf973fb6e1a3d331c3335f6e66821434f6269cad289ccc40e6e0bf61d0daf60",
+ "has_readme": true,
+ "readme_chars": 2231,
+ "content": {
+  "one_liner": "把 PS5 執行檔自動轉換成能在 Linux 和 Windows 上執行的工具",
+  "features": [
+   "重新連結器把執行檔轉成目標系統的原生格式",
+   "提供 PS5 系統 prx 函式庫的替代實作，不靠模擬器",
+   "著色器重新編譯成 SPIR-V，支援 SDL 手把與鍵鼠設定"
+  ],
+  "audience": "對遊戲移植、相容性研究或遊戲保存有興趣的開發者與技術玩家",
+  "use_cases": [
+   "把合法取得的 PS5 遊戲執行檔轉換成能在 Linux 或 Windows 上執行的版本",
+   "用手把或自訂的鍵盤滑鼠設定遊玩轉換後的遊戲",
+   "研究 PS5 系統函式庫與程式相容性"
+  ],
+  "barrier": "code",
+  "barrier_note": "雖然有網頁轉換器，但完整使用需要自行編譯 C++ 專案並操作命令列",
+  "limitations": "系統函式庫只實作了部分已知函式，遇到不支援的狀況程式會直接中止；不附任何遊戲或金鑰，使用者須自行守法",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8cbf35a26198b9d0d9c0",
+ "repo_id": 25135037,
+ "full_name": "deskflow/deskflow",
+ "created_at": "2026-11-26T09:52:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "96a8bc868e771bd76d72c491dbab992a9aa41142c9c295f1e7e5d82b9b53187c",
+ "has_readme": true,
+ "readme_chars": 5943,
+ "content": {
+  "one_liner": "用一組鍵盤滑鼠，同時操控身邊好幾台電腦的免費開源軟體",
+  "features": [
+   "用一台電腦的鍵盤、滑鼠或觸控板控制其他電腦",
+   "支援多台電腦之間共用剪貼簿",
+   "預設啟用 TLS 加密，支援 Linux 的 Wayland"
+  ],
+  "audience": "桌上同時擺著多台電腦（Windows、macOS、Linux 混用）、想省掉切換鍵盤滑鼠麻煩的人",
+  "use_cases": [
+   "桌機和筆電並排，用同一組鍵盤滑鼠在兩台之間移動操作",
+   "在一台電腦複製文字，貼到另一台電腦",
+   "與 Synergy 1、Input Leap、Barrier 的電腦互相連線"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載安裝套件並設定；Windows 要裝 VC++ 執行環境，macOS 要開輔助使用權限",
+  "limitations": "macOS 版未經公證會被標示為已損毀；Wayland 部分功能可能無法使用；不相容 Synergy 3",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6f1e6b177eace51782db",
+ "repo_id": 504530845,
+ "full_name": "Aizistral-Studios/No-Chat-Reports",
+ "created_at": "2026-11-26T09:52:54+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0e673a167da5022a0d7913e05e191559df23499ce4d2b5a8cc3b4e612b277dbc",
+ "has_readme": true,
+ "readme_chars": 4952,
+ "content": {
+  "one_liner": "Minecraft 模組，移除聊天訊息的加密簽章，並停用玩家聊天檢舉功能",
+  "features": [
+   "移除 1.19 起聊天訊息附帶的加密簽章",
+   "停用玩家聊天檢舉，並停用遙測（Telemetry）",
+   "可裝在玩家端、伺服器端或兩邊都裝"
+  ],
+  "audience": "不想讓聊天訊息跟 Microsoft 帳號綁在一起的 Minecraft 玩家與伺服器管理者",
+  "use_cases": [
+   "玩家在自己的遊戲裝上，讓送出的訊息不能被拿來檢舉",
+   "伺服器管理者裝在伺服器上，讓所有加入的玩家都無法被聊天檢舉",
+   "伺服器可以設定成要求玩家也必須安裝此模組才能加入"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要先安裝 Fabric 或 Forge 模組載入器，再放進對應版本的模組檔",
+  "limitations": "只裝在玩家端時，如果伺服器強制要求簽章，1.19.1～1.19.2 會進不了伺服器，1.19.3 以上則不能用聊天相關指令；作者表示同名插件都不是他做的",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

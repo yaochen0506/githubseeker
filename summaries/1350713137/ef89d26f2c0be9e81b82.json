@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "ef89d26f2c0be9e81b82",
+ "repo_id": 1350713137,
+ "full_name": "crmne/zapfast",
+ "created_at": "2026-11-26T09:52:25+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f8264f7a33a971f458ee9bfcdc6f233876dc8a502e0e58868c047d8f62ff0250",
+ "has_readme": true,
+ "readme_chars": 4593,
+ "content": {
+  "one_liner": "用 Rust 寫的輕量 WhatsApp 桌面軟體，支援 Linux、macOS、Windows",
+  "features": [
+   "收發文字、圖片、檔案、貼圖、投票與語音訊息",
+   "聊天紀錄加密存在本機，可匯出成文字或 ZIP",
+   "可連結多個 WhatsApp 號碼並在同一視窗切換"
+  ],
+  "audience": "想在電腦上用 WhatsApp、希望軟體比 WhatsApp Web 更省資源的使用者",
+  "use_cases": [
+   "在電腦上用鍵盤快速回覆 WhatsApp 訊息",
+   "把本機存下的聊天紀錄連同附件匯出備份",
+   "同時管理工作與私人兩個 WhatsApp 號碼"
+  ],
+  "barrier": "install",
+  "barrier_note": "需下載安裝桌面版，再用手機 WhatsApp 掃 QR code 連結",
+  "limitations": "非官方軟體，使用可能違反 WhatsApp 服務條款，帳號有被停權的風險；作者表示的效能數據為其 Linux 實測",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "df9d3a88683ffc8f786a",
+ "repo_id": 1363199101,
+ "full_name": "ViceVerse-cz/Serein",
+ "created_at": "2026-11-26T09:52:18+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c7108480fd9f0baa48a5cc8394d586dc1d257c65af7deec13873df74043e7280",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Rust 寫成的輕量非官方 Discord 桌面版用戶端",
+  "features": [
+   "支援語音通話、視訊與螢幕分享",
+   "伺服器管理、論壇頻道與討論串",
+   "GIF、表情符號、多檔上傳與佈景主題"
+  ],
+  "audience": "覺得官方 Discord 太吃記憶體、想用更輕量桌面用戶端的 Discord 使用者",
+  "use_cases": [
+   "在效能較弱的電腦上聊天，並加入語音頻道",
+   "邊開語音邊分享螢幕，作者表示比官方版省記憶體和 CPU",
+   "管理自己的 Discord 伺服器角色、邀請與成員"
+  ],
+  "barrier": "install",
+  "barrier_note": "Windows、macOS、Linux 都有現成安裝檔可以下載，需要 Discord 帳號",
+  "limitations": "非官方軟體，使用一般帳號可能違反 Discord 服務條款，帳號有被停權的風險；macOS 只支援 Apple Silicon",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

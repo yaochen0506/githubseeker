@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "d9c385841353554b9781",
+ "repo_id": 1376380844,
+ "full_name": "incoai/splash",
+ "created_at": "2026-11-26T09:52:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0ded74507da1f02fbc42bdc4764933dcbf1a66bd1c6b188ad385ea255b99d565",
+ "has_readme": true,
+ "readme_chars": 7348,
+ "content": {
+  "one_liner": "在 Apple 晶片 Mac 上本機執行大型語言模型的推論引擎",
+  "features": [
+   "相容 OpenAI 與 Anthropic API，支援工具呼叫與圖片",
+   "結合 DFlash2 推測解碼與 Metal 加速",
+   "自動規劃記憶體，內建聊天網頁"
+  ],
+  "audience": "擁有 M3 以上 Mac、想在本機跑 AI 模型或 coding agent 的開發者",
+  "use_cases": [
+   "在自己的 Mac 上執行 Qwen 等模型，搭配 coding agent 寫程式",
+   "讓現有 OpenAI 或 Anthropic 相容應用改連本機模型",
+   "透過內建聊天網頁與本機模型對話"
+  ],
+  "barrier": "code",
+  "barrier_note": "有桌面 App，但需 M3 以上 Mac 與 macOS 26.4 以上；進階用法要用命令列與 Homebrew",
+  "limitations": "需 M3 以上與 macOS 26.4 以上；不支援全 BF16/F16 模型；模型要占用硬碟空間；預設沒有驗證機制",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

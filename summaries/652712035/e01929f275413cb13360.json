@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "e01929f275413cb13360",
+ "repo_id": 652712035,
+ "full_name": "lyogavin/airllm",
+ "created_at": "2026-11-26T09:52:05+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e8aef5c260a37457c409cecbc982b3c57cec48716d1bf1ea9cc21bff1955f9e0",
+ "has_readme": true,
+ "readme_chars": 11652,
+ "content": {
+  "one_liner": "讓超大型 AI 語言模型也能在只有 4GB 顯示記憶體的顯示卡上執行",
+  "features": [
+   "每次只把模型的一層載入 GPU，大幅降低顯示記憶體需求",
+   "支援 Llama、Qwen、DeepSeek 等多種開源模型",
+   "可用小顯示卡微調大型模型，並可選擇壓縮來加速"
+  ],
+  "audience": "想在自己電腦上跑大型開源語言模型、但顯示卡規格有限的開發者與研究人員",
+  "use_cases": [
+   "用一般遊戲顯示卡在本機執行 70B 等級的語言模型",
+   "在小顯示記憶體的 GPU 上用自己的資料微調大型模型",
+   "在 Apple silicon 的 Mac 上執行 Llama 類模型"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Python 環境，用 pip 安裝並撰寫程式碼呼叫，部分模型需要 Hugging Face token",
+  "limitations": "切分模型很佔硬碟空間；每產生一個字都要從硬碟讀取各層，回覆可能很慢；macOS 只支援 Apple silicon 與 Llama 類模型",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

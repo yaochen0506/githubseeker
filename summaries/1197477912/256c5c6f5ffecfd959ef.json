@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "256c5c6f5ffecfd959ef",
+ "repo_id": 1197477912,
+ "full_name": "hypery11/flipper-tesla-fsd",
+ "created_at": "2026-11-26T09:53:08+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5273f48d9eae3a47851ceaf86d4054dabde7f52fdd814945196833cfff72c0a4",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 Flipper Zero 或 ESP32 改裝 Tesla 的 CAN bus 工具箱",
+  "features": [
+   "解除 FSD 地區限制、恢復被禁車輛的紅綠燈停止牌控制",
+   "方向盤 nag 提示抑制，模擬真人握持力道",
+   "即時 BMS 電池儀表板與車輛診斷讀取"
+  ],
+  "audience": "擁有 Tesla 並想自行研究 CAN bus、動手改裝的進階玩家",
+  "use_cases": [
+   "在有 FSD 方案的車上解除 FSD 地區限制",
+   "查看電池電壓、電流、SoC 等即時資訊",
+   "錄製 CAN 訊框做研究或自訂測試"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 Flipper Zero 或 ESP32 硬體，並透過 OBD-II 或 X179 接頭接到車上",
+  "limitations": "FSD 功能須有有效 FSD 方案。作者表示部分功能為實驗性、未經實車驗證，且無法解除伺服器端封禁。",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "55f922dfb352f976cba7",
+ "repo_id": 1238047523,
+ "full_name": "agent-substrate/substrate",
+ "created_at": "2026-11-26T09:51:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "58c0205b56e0b56ebb83164ac77c7446424dd24c48f8042f29276b0ea6b1e94f",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "在 Kubernetes 上用隔離沙箱安全執行大量 AI agent 的底層執行環境",
+  "features": [
+   "每個 agent 都跑在 gVisor 或 microVM 沙箱裡，彼此隔離",
+   "閒置的 agent 會存成快照移出記憶體，有需求時再還原",
+   "憑證不放進沙箱，由對外閘道代為注入，網路預設全部封鎖"
+  ],
+  "audience": "要大規模部署 AI agent 的平台工程師、Kubernetes 維運人員與資安團隊",
+  "use_cases": [
+   "在有限的機器上同時跑很多個 Claude Code 等寫程式用的 agent",
+   "把 MCP server 或 LangChain agent 放進沙箱，控管它們能連到哪些外部網路",
+   "讓不受信任的程式碼在隔離環境裡執行，並保留跨工作階段的檔案狀態"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Go、kubectl、Docker 和 Kubernetes 叢集，也要會用命令列",
+  "limitations": "只支援最新與前一版的 Kubernetes；不支援一般 Linux 容器；跑大量沙箱時要調整主機核心參數",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

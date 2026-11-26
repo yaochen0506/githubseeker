@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "893140336aec45259f77",
+ "repo_id": 1266797999,
+ "full_name": "DietrichGebert/ponytail",
+ "created_at": "2026-11-26T09:50:45+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "454d750eb616850a7b0582e51916af150bef697c3b42b6d856032f566afa73c1",
+ "has_readme": true,
+ "readme_chars": 7482,
+ "content": {
+  "one_liner": "讓 AI 寫程式助理只寫必要的程式碼，能用現成的就不另外寫",
+  "features": [
+   "先讀懂現有程式碼，盡量重用，少寫新程式碼",
+   "審查與全專案檢查，找出錯誤與安全問題",
+   "Claude Code 顯示任務花費與測試結果"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor 等 AI 寫程式工具的開發者",
+  "use_cases": [
+   "叫 AI 加功能時，避免它裝多餘套件或寫出冗長程式碼",
+   "改完程式後，請 AI 檢查錯誤、安全性和缺少的測試",
+   "檢查整個專案，列出應該優先修正的問題"
+  ],
+  "barrier": "code",
+  "barrier_note": "要會用 Claude Code、Codex 等 AI 寫程式工具，並透過命令列或設定檔安裝",
+  "limitations": "狀態列需要 Claude Code 2.1.290 以上，VS Code 聊天面板與雲端工作階段不會顯示；部分工具只能套用規則，沒有指令可用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
