@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9d31e66f25a95a0e13e8",
+ "repo_id": 531380835,
+ "full_name": "k2-fsa/sherpa-onnx",
+ "created_at": "2026-11-27T09:49:00+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "0289e2e2a8f98fcab9b46e9750f589efc59cca73725d2cba94a7a1785aed826a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "不用連網就能在本機做語音轉文字、文字轉語音等多種語音處理的工具組",
+  "features": [
+   "離線語音辨識與文字轉語音，支援即時串流辨識",
+   "語者分離、語者辨識、語言辨識與關鍵字偵測",
+   "語音增強、人聲與伴奏分離、自動加標點"
+  ],
+  "audience": "想離線處理語音的開發者，也適合想試用語音辨識、語音合成或產生字幕的一般使用者",
+  "use_cases": [
+   "用現成的 Android App 離線把說話即時轉成文字",
+   "用網頁試用版或 Lazarus 應用程式替影片產生字幕",
+   "開發者在 Raspberry Pi 等裝置上加入語音功能"
+  ],
+  "barrier": "code",
+  "barrier_note": "有網頁試用版和現成 App 可用，但完整功能要寫程式整合，支援 12 種程式語言",
+  "limitations": "README 提到 iOS 版的 Flutter App 需要自行從原始碼編譯，沒有現成的版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

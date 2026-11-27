@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9dfb8dc4e14027db80ed",
+ "repo_id": 1104583075,
+ "full_name": "MorpheApp/morphe-patches",
+ "created_at": "2026-11-27T09:49:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "f210ffb37fc5565e532cb248e59fd456c81b16693574266c386e62b23a75e512",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "一組修改 Android 版 YouTube 與 YouTube Music 的補丁，可以加入新功能、隱藏廣告",
+  "features": [
+   "隱藏廣告、Premium 推廣與影片廣告",
+   "YouTube Music 歌曲下載、背景播放與歌詞",
+   "SponsorBlock、Return YouTube Dislike 等擴充"
+  ],
+  "audience": "想自訂 Android 版 YouTube 或 YouTube Music 使用體驗，而且懂得自己修改 App 的使用者",
+  "use_cases": [
+   "聽 YouTube Music 時隱藏廣告並在背景播放",
+   "在 Android Auto 上瀏覽 YouTube Music 的首頁與媒體庫",
+   "看 YouTube 影片時用 SponsorBlock 跳過不想看的片段"
+  ],
+  "barrier": "code",
+  "barrier_note": "要用修補工具把補丁套進特定版本的 App，README 沒寫安裝步驟",
+  "limitations": "只支援特定 App 版本；部分功能要 Android 12 或更新版本；Network proxy 在某些裝置可能造成連線問題",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

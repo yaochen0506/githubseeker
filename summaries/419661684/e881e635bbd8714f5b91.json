@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "e881e635bbd8714f5b91",
+ "repo_id": 419661684,
+ "full_name": "DataTalksClub/data-engineering-zoomcamp",
+ "created_at": "2026-11-27T09:50:29+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e10fc0da8df578f3e792890416179bbf266aaf8110baa6250919a06d0b3000e6",
+ "has_readme": true,
+ "readme_chars": 7213,
+ "content": {
+  "one_liner": "免費 9 週的資料工程線上課程，從零打造完整的資料處理流程",
+  "features": [
+   "預錄影片搭配模組化教材與作業",
+   "實作 Docker、Kestra、dbt、Spark、Kafka 等工具",
+   "期末專題與同儕互評，梯次學員可拿證書"
+  ],
+  "audience": "想學資料管線的開發者、資料分析師與資料科學家，需具備基本程式與 SQL 能力",
+  "use_cases": [
+   "自學資料工程基礎，按自己的進度看影片做作業",
+   "參加梯次課程，在期限內完成作業與期末專題取得證書",
+   "完成專題作為求職作品集"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會基本寫程式與 SQL，並在電腦上安裝 Docker 等工具，也會用到 GCP 雲端服務",
+  "limitations": "課程全為預錄、沒有直播；自學模式的作業不計分，也拿不到證書，證書只發給在梯次中完成期末專題的學員",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

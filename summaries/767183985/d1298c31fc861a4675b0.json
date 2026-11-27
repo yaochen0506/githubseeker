@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d1298c31fc861a4675b0",
+ "repo_id": 767183985,
+ "full_name": "azahar-emu/azahar",
+ "created_at": "2026-11-27T09:49:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "723ae4e3e08980a85f671802194fbbc7d03e6ccce92364c42cfeb99f6ab1feeb",
+ "has_readme": true,
+ "readme_chars": 4717,
+ "content": {
+  "one_liner": "免費開源的 Nintendo 3DS 模擬器，可在電腦和手機上玩 3DS 遊戲",
+  "features": [
+   "支援更高解析度、現代控制器與即時存檔",
+   "支援 Windows、macOS、Linux 與 Android",
+   "延續 Citra，可供 homebrew 除錯與研究保存"
+  ],
+  "audience": "擁有 3DS 遊戲、想在電腦或手機上玩的玩家，以及 homebrew 開發者",
+  "use_cases": [
+   "在電腦上用更高解析度和手把玩自己的 3DS 遊戲",
+   "在 Android 手機上透過 Google Play 安裝後玩 3DS 遊戲",
+   "homebrew 開發者用來除錯自製 3DS 程式"
+  ],
+  "barrier": "online",
+  "barrier_note": "可下載現成安裝檔或從 Google Play 安裝，不用寫程式；遊戲需自備",
+  "limitations": "與 Nintendo 無關；Linux 的 Wayland 版可能有問題；APK 安裝不會自動更新；目前不接受新增翻譯語言",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

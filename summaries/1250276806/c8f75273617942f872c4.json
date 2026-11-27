@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c8f75273617942f872c4",
+ "repo_id": 1250276806,
+ "full_name": "michael-denyer/pstack-claude",
+ "created_at": "2026-11-27T09:48:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b5cfbedfbd69b6d592df72c4c4730bd0127ca49a805d9cdf4b36cc0719d219ab",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "把 Cursor 的 pstack 技能組移植到 Claude Code、Codex 等多種 AI 程式助理",
+  "features": [
+   "poteto-mode 依任務自動挑選合適的工作流程",
+   "支援 Claude Code、Codex、Copilot、Pi 等多種工具",
+   "open-pstack 安裝程式自動偵測並安裝"
+  ],
+  "audience": "使用 Claude Code、Codex、GitHub Copilot 等 AI 程式助理的軟體開發者",
+  "use_cases": [
+   "修 bug 時讓 AI 重現錯誤、調查原因、修正後再驗證",
+   "規劃功能、重構、效能調校或維護 PR",
+   "用形式化驗證檢查並行錯誤等測試難以發現的問題"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列，安裝 Node 20 以上或 Homebrew，並已使用支援的 AI 程式助理",
+  "limitations": "各工具版本需求不同；部分工具沒有自動分派功能；Copilot CLI 1.0.92 的 -p 模式會找不到技能；不支援 OpenCode 1",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

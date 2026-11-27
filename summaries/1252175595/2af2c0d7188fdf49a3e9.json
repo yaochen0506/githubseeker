@@ -1,0 +1,32 @@
+{
+ "schema_version": "1",
+ "cache_key": "2af2c0d7188fdf49a3e9",
+ "repo_id": 1252175595,
+ "full_name": "dariulone/cyberpunk-vr-port",
+ "created_at": "2026-11-27T09:49:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "b84b9b0a2fb78ee158768f9f0de6fe1e706710022bebe31eefe470e864c7d269",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 PC 版 Cyberpunk 2077 變成可以用 VR 頭戴裝置全身沉浸遊玩的模組",
+  "features": [
+   "引擎直接算出雙眼畫面，支援 6DoF 頭部追蹤",
+   "用控制器實際瞄準、手動換彈匣、揮刀與抓東西",
+   "手握方向盤開車，支援 19 款頭戴裝置"
+  ],
+  "audience": "有 PC 版 Cyberpunk 2077 和 VR 頭戴裝置，想用 VR 玩這款遊戲的玩家",
+  "use_cases": [
+   "戴上 Quest、Pico 等頭戴裝置，用 VR 體驗 Cyberpunk 2077",
+   "用雙手實際持槍射擊、換彈匣和近戰揮砍",
+   "在遊戲裡抓住方向盤開車，同時另一手開槍"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要 PC 版遊戲 2.5 版與 OpenXR 執行環境（如 SteamVR），把檔案解壓到遊戲資料夾即可",
+  "limitations": "實驗性社群模組，與 CD PROJEKT RED 無關，使用風險自負，請備份存檔；首次啟動後需重開遊戲",
+  "based_on": [
+   "readme"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "c893672aa274c5318e69",
+ "repo_id": 1126947080,
+ "full_name": "obsidianmd/obsidian-skills",
+ "created_at": "2026-11-27T09:47:28+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2ba3a36080a9475ae577c3e3c0808b4b4e9e6ab24398f4b0d78267af6fb28024",
+ "has_readme": true,
+ "readme_chars": 3425,
+ "content": {
+  "one_liner": "一組技能包，教 AI 助理正確讀寫與操作 Obsidian 筆記和相關檔案格式",
+  "features": [
+   "編輯 Obsidian 筆記、Bases 與 Canvas 檔案",
+   "透過 CLI 或 Headless 操作、同步筆記庫",
+   "擷取網頁內容轉成乾淨 Markdown"
+  ],
+  "audience": "使用 Obsidian 做筆記，同時也用 Claude、ChatGPT、Cursor 等 AI 助理的人",
+  "use_cases": [
+   "請 AI 助理直接在 Obsidian 筆記庫裡新增或修改含雙向連結的筆記",
+   "讓 AI 建立 Canvas 白板或 Bases 資料檢視",
+   "把網頁文章整理成 Markdown 存進筆記庫"
+  ],
+  "barrier": "install",
+  "barrier_note": "Claude、ChatGPT 等可以從外掛目錄直接加入；其他 AI 助理就要用命令列安裝",
+  "limitations": "在 Muse 裡用不了 obsidian-cli 技能，而且用 Headless 時，筆記庫會同步到 Meta 的雲端",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

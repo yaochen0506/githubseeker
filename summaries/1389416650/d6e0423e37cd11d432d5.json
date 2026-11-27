@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "d6e0423e37cd11d432d5",
+ "repo_id": 1389416650,
+ "full_name": "egoist/mygo",
+ "created_at": "2026-11-27T09:47:48+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "38906839c0e1000539fada1dfdf2a1a5964fde796c345fc1a7cbc634945f94c7",
+ "has_readme": true,
+ "readme_chars": 2329,
+ "content": {
+  "one_liner": "讓開發者用 Go 語言做出桌面 App，介面可用原生 UI 或網頁",
+  "features": [
+   "介面可用系統內建網頁元件或 GPU 繪製的原生 UI",
+   "同一個 App 也能在 iOS 與 Android 上執行",
+   "內建打包、程式碼簽署與自動更新功能"
+  ],
+  "audience": "會寫 Go 的程式開發者，想做跨平台桌面或手機 App 的人",
+  "use_cases": [
+   "用 Go 搭配網頁前端，開發 macOS、Windows、Linux 桌面 App",
+   "只用 Go 寫出原生介面的小工具，作者表示占用記憶體少",
+   "把做好的 App 打包成安裝檔，並上架 App Store 與 Google Play"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫 Go，並安裝 Go 1.27.3 以上版本；網頁前端還要另外裝 Bun",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

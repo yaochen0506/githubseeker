@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "a0a7c9020e6b7a11472a",
+ "repo_id": 81227005,
+ "full_name": "facebookresearch/faiss",
+ "created_at": "2026-11-27T09:49:06+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e69ac51da15999bb1bd665edf43575cea7d6b74404eb20493ad4bb1d0ddb0beb",
+ "has_readme": true,
+ "readme_chars": 4609,
+ "content": {
+  "one_liner": "Meta 開發的函式庫，能在大量向量資料中快速找出相似項目並分群",
+  "features": [
+   "支援 L2 距離、內積與餘弦相似度搜尋",
+   "壓縮向量技術，單台伺服器可處理數十億筆",
+   "部分演算法支援 GPU 加速，可用多張 GPU"
+  ],
+  "audience": "需要處理大量向量資料的工程師、資料科學家與 AI 研究人員",
+  "use_cases": [
+   "在大量向量資料中找出與查詢最相似的項目",
+   "對高維向量做 k-means 分群",
+   "重現作者研究論文中的大規模相似度搜尋實驗"
+  ],
+  "barrier": "code",
+  "barrier_note": "需會用 Python 或 C++ 寫程式，可透過 Anaconda 安裝，GPU 版需 CUDA 或 ROCm",
+  "limitations": "只使用壓縮表示的方法會降低搜尋精確度；不同索引在速度、品質與記憶體之間需要取捨",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

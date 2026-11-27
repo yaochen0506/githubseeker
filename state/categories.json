@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-26T09:50:23+08:00",
+ "updated_at": "2026-11-27T09:47:07+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -2469,6 +2469,12 @@
    "full_name": "lbjlaq/Antigravity-Manager",
    "classified_at": "2026-11-26T09:50:16+08:00"
   },
+  "1104583075": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "MorpheApp/morphe-patches",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
   "1105953775": {
    "category": "fun-creative",
    "exclude_reason": null,
@@ -2528,6 +2534,12 @@
    "exclude_reason": null,
    "full_name": "can1357/oh-my-pi",
    "classified_at": "2026-11-07T07:12:58+08:00"
+  },
+  "1126947080": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "obsidianmd/obsidian-skills",
+   "classified_at": "2026-11-27T09:47:07+08:00"
   },
   "1128123594": {
    "category": "ai-agents",
@@ -3789,11 +3801,23 @@
    "full_name": "ed-donner/undercover",
    "classified_at": "2026-11-26T09:50:23+08:00"
   },
+  "1383717729": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "misakano7545/workbuddy2api-panel",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
   "1387586059": {
    "category": "ai-agents",
    "exclude_reason": null,
    "full_name": "n8n-io/nod",
    "classified_at": "2026-11-26T09:50:23+08:00"
+  },
+  "1389416650": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "egoist/mygo",
+   "classified_at": "2026-11-27T09:47:07+08:00"
   },
   "1407950271": {
    "category": "ai-models",
@@ -4527,17 +4551,47 @@
    "full_name": "Zettrox/ztrx",
    "classified_at": "2026-11-25T19:16:20+08:00"
   },
+  "1471422729": {
+   "category": "ai-models",
+   "exclude_reason": null,
+   "full_name": "alesha-pro/llm.asm",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
   "1471562910": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "Belobug/VIctory-Belobug-AMD",
    "classified_at": "2026-11-26T09:50:23+08:00"
   },
+  "1471624301": {
+   "category": "ai-agents",
+   "exclude_reason": null,
+   "full_name": "nexu-io/opengame",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
+  "1472124387": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Reukix/Reloc",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
+  "1472319077": {
+   "category": "learning",
+   "exclude_reason": null,
+   "full_name": "lsernau/grh-lean",
+   "classified_at": "2026-11-27T09:47:07+08:00"
+  },
   "1472396996": {
    "category": "fun-creative",
    "exclude_reason": null,
    "full_name": "avatarmanz/VIctory-7900XTX",
    "classified_at": "2026-11-26T09:50:23+08:00"
+  },
+  "1472898329": {
+   "category": "excluded",
+   "exclude_reason": "piracy",
+   "full_name": "DoubleGhosty/cool_fox",
+   "classified_at": "2026-11-27T09:47:07+08:00"
   }
  }
 }

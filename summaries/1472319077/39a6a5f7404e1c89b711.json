@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "39a6a5f7404e1c89b711",
+ "repo_id": 1472319077,
+ "full_name": "lsernau/grh-lean",
+ "created_at": "2026-11-27T09:48:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "913d6f4669e491f68e46bdd017ec5f48b6540eeb77ca18be880473d1daae338f",
+ "has_readme": true,
+ "readme_chars": 1236,
+ "content": {
+  "one_liner": "用 Lean 4 寫成、可由電腦驗證的廣義黎曼猜想（GRH）證明",
+  "features": [
+   "用 Lean 4 證明 RH 與 Dirichlet L 函數的 GRH",
+   "提供約 30 萬行易讀版與約 7.6 萬行精簡版",
+   "附腳本可列出證明用到的公理"
+  ],
+  "audience": "數學研究者、形式化證明與 Lean 4 使用者",
+  "use_cases": [
+   "在自己的電腦上編譯並用機器檢查這份證明",
+   "從易讀版的導覽文件開始研讀證明結構",
+   "確認證明只用到 propext 等三個標準公理"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Lean v4.35.0 與指定版本 Mathlib，用命令列編譯",
+  "limitations": "作者表示只通過機器檢查，還沒有數學家完整讀過，也沒有附論文；不再維護；編譯約需 1～2 小時、24 GB 記憶體",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

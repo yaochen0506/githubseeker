@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "851ec7732fc1e307b0fa",
+ "repo_id": 1338532566,
+ "full_name": "babygoton/WorkDaddy",
+ "created_at": "2026-11-27T09:47:42+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "a1034092a7639dfc197aa5b4300c02a7706eb8d91c02ddb2785570f8dc30e712",
+ "has_readme": true,
+ "readme_chars": 9518,
+ "content": {
+  "one_liner": "替 WorkBuddy、CodeBuddy 桌面版加上多帳號切換、免打擾、主題等增強功能",
+  "features": [
+   "多帳號獨立備份，點一下就切換，支援加密匯出匯入",
+   "權限彈窗免打擾、異常中斷自動續接，適合長任務",
+   "跨帳號會話遷移、暫存提示詞、毛玻璃等多種主題"
+  ],
+  "audience": "經常使用 WorkBuddy 或 CodeBuddy 桌面版、有多個帳號或要跑長時間 AI 任務的人",
+  "use_cases": [
+   "在多個帳號間快速切換，積分不足時改用其他帳號繼續工作",
+   "睡前開啟免打擾與防休眠，讓 AI 無人看管跑完長任務",
+   "換電腦時把全部帳號加密匯出，再到新電腦匯入"
+  ],
+  "barrier": "install",
+  "barrier_note": "需先安裝並登入官方客戶端，再下載安裝包；macOS 建議另裝 Node.js 22.13 以上",
+  "limitations": "非官方工具，與官方無隶屬關係；CodeBuddy 僅支援 Electron 視窗；錯誤診斷預設開啟；匯出檔含登入 token 需妥善保管",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

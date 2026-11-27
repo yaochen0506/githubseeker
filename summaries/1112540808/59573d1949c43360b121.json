@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "59573d1949c43360b121",
+ "repo_id": 1112540808,
+ "full_name": "vercel-labs/agent-skills",
+ "created_at": "2026-11-27T09:47:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "afa691f855ed13aa093a61bb2ad9996d15807beb3736319562c7a314d8d9b80a",
+ "has_readme": true,
+ "readme_chars": 6864,
+ "content": {
+  "one_liner": "Vercel 官方整理的 AI 程式助理技能包，教 AI 寫網頁、檢查和部署網站",
+  "features": [
+   "React、Next.js、React Native 效能與寫法規則",
+   "檢查網頁介面無障礙、UX 與文件寫作風格",
+   "分析 Vercel 專案成本效能並協助部署"
+  ],
+  "audience": "使用 AI 程式助理開發網頁或 App 的工程師，特別是用 React、Next.js 或 Vercel 的人",
+  "use_cases": [
+   "請 AI 檢查網站介面的無障礙與使用體驗問題",
+   "找出 Vercel 專案中又慢又花錢的頁面，產出排序報告",
+   "請 AI 把寫好的網站部署到 Vercel 並取得連結"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用 AI 程式助理和命令列安裝，部分技能需要 Vercel 帳號",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

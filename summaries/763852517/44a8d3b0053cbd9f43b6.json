@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "44a8d3b0053cbd9f43b6",
+ "repo_id": 763852517,
+ "full_name": "Autumn-27/ScopeSentry",
+ "created_at": "2026-11-27T09:50:36+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ac11e3438b1d4d367fe2dad39cebb7c7cc9ca59e38d74241e68a4a33623de789",
+ "has_readme": true,
+ "readme_chars": 2582,
+ "content": {
+  "one_liner": "整合子網域列舉、連接埠掃描、弱點掃描等功能的分散式資安資產偵察平台",
+  "features": [
+   "子網域列舉、子網域接管偵測與連接埠掃描",
+   "弱點、目錄掃描與敏感資訊外洩偵測",
+   "多節點分散掃描並可用外掛擴充工具"
+  ],
+  "audience": "資安研究人員、漏洞賞金獵人與負責管理對外資產的資安團隊",
+  "use_cases": [
+   "盤點網域底下的子網域、連接埠與服務等資產",
+   "新弱點出現時，快速檢查關注的資產是否有相關元件",
+   "監控網頁變化，並透過 Webhook 接收通知"
+  ],
+  "barrier": "code",
+  "barrier_note": "需用命令列以 Docker 架設 MongoDB、Redis、伺服器與掃描節點等容器",
+  "limitations": "採 AGPL-3.0 加額外條款：企業與營利單位須另外取得商業授權；弱密碼破解功能尚未完成",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "b19aeefa27921849f148",
+ "repo_id": 3351871,
+ "full_name": "qbittorrent/qBittorrent",
+ "created_at": "2026-11-27T09:49:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5608b3502f45b22c7311508e7bb9631026110680ee8754716f166c2035d64914",
+ "has_readme": true,
+ "readme_chars": 1341,
+ "content": {
+  "one_liner": "一套免費開源的 BitTorrent 下載軟體，可以用來下載和分享 torrent 檔案",
+  "features": [
+   "用 C++ / Qt 開發，採用 libtorrent 函式庫",
+   "支援 Unicode，作者表示速度快、運作穩定",
+   "利用 DB-IP 資料庫顯示連線對象所在的國家"
+  ],
+  "audience": "需要下載或分享 torrent 檔案，想找其他 BitTorrent 軟體替代品的使用者",
+  "use_cases": [
+   "透過 torrent 檔案下載大型檔案",
+   "查看下載時連線對象來自哪些國家",
+   "用 PGP 簽章確認下載的安裝檔是官方版本"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要在電腦上安裝軟體，安裝方式請看專案的 INSTALL 檔案",
+  "limitations": "README 未說明",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

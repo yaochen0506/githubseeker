@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7a41071fb4767629347a",
+ "repo_id": 1301657572,
+ "full_name": "superdesigndev/treg",
+ "created_at": "2026-11-27T09:47:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "26aadfbc643563217695f6002b010e0c8aad47c668430de00152bd93496a762c",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 AI agent 用一個 token 呼叫上千種付費工具 API，按次計費",
+  "features": [
+   "整合 SEO、社群、名單補充、爬蟲、影像生成等工具目錄",
+   "按次計費，不必向各供應商註冊或訂閱",
+   "團隊共享自己的金鑰、CLI 與 skill，金鑰不離開伺服器"
+  ],
+  "audience": "使用 Claude Code 等 AI agent 的開發者、行銷或業務團隊，以及想集中管理 API 金鑰的團隊",
+  "use_cases": [
+   "讓 agent 查詢反向連結、關鍵字排名等 SEO 資料",
+   "用 recruit skill 從 LinkedIn 職缺產生候選人排名清單",
+   "製作 AI UGC 影片或追蹤各社群平台最新話題"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要使用命令列或 AI agent，並註冊帳號、預付餘額；也可自行架設",
+  "limitations": "餘額不足會拒絕呼叫；沒有公開價格的端點不提供服務；伺服器端執行 CLI 已全面停用",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

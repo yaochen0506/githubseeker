@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "52ebfb51cd58b89f34d3",
+ "repo_id": 1074561042,
+ "full_name": "gastownhall/beads",
+ "created_at": "2026-11-27T09:48:40+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "465b34b35c1b513d3aafab5ee4b822c8a164ce0e9f4f983bac0441ddb6aa8c52",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "給 AI 寫程式助理用的任務追蹤工具，幫它記住長期工作進度",
+  "features": [
+   "以相依關係圖管理任務，自動列出可開始的工作",
+   "長期記憶：儲存專案心得，之後自動提供給 AI",
+   "用 Dolt 資料庫做版本控制與跨機器同步"
+  ],
+  "audience": "使用 Claude Code、Codex、Cursor 等 AI 寫程式助理的開發者",
+  "use_cases": [
+   "讓 AI 助理處理長期、多步驟的開發任務而不遺失脈絡",
+   "多個 AI agent 或多個分支同時工作時分配與認領任務",
+   "在共用專案中以 stealth 模式私下追蹤自己的任務"
+  ],
+  "barrier": "code",
+  "barrier_note": "命令列工具，需安裝並在終端機操作，搭配 AI 寫程式助理使用",
+  "limitations": "HTTP 後端為實驗功能，部分操作不支援；升級跨資料庫結構變更時需依步驟遷移；下載後應自行驗證檢查碼",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

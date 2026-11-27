@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a4e252b6959b38ed24f8",
+ "repo_id": 1471624301,
+ "full_name": "nexu-io/opengame",
+ "created_at": "2026-11-27T09:48:14+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "897c45f47ea1a6a1d11ef170b82fa5bb7ebe81a5fff42057bdaff947bc7f10e4",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓 Claude Code、Codex 等 AI 寫程式助手變成遊戲工作室，用一句話做出 3D 或小遊戲",
+  "features": [
+   "內建 25 款可玩遊戲範本，可一鍵 Remix 或換風格",
+   "串接圖片、音樂、語音模型生成遊戲素材",
+   "自動測試，可匯出 9:16 試玩廣告與發布小遊戲"
+  ],
+  "audience": "會使用 AI 寫程式助手的獨立遊戲開發者、想快速做小遊戲或試玩廣告的創作者",
+  "use_cases": [
+   "從內建範本改出自己品牌或角色的小遊戲",
+   "用一段提示詞讓 AI 助手產生可玩的 3D 賽車或射擊遊戲",
+   "製作微信小遊戲、TikTok、抖音用的直式遊戲或試玩廣告"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Git、Git LFS、Node.js 22.18 以上，並使用命令列與本機 AI 助手",
+  "limitations": "範本素材在第一次遊玩或 Remix 時才下載；使用外部生成模型需自備 API 金鑰",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

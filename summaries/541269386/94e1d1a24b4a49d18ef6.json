@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "94e1d1a24b4a49d18ef6",
+ "repo_id": 541269386,
+ "full_name": "ggml-org/whisper.cpp",
+ "created_at": "2026-11-27T09:48:53+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "808fea75805d2b8bae37538f8c1372ea7bf7a85dbd61246538a8133502fbe57b",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 C/C++ 重寫 OpenAI 的 Whisper 語音辨識模型，在自己的裝置上把語音轉成文字",
+  "features": [
+   "不需外部依賴的輕量 C/C++ 實作，可離線執行",
+   "支援 Apple Silicon、NVIDIA、AMD 等多種硬體加速",
+   "支援模型量化，可降低記憶體與硬碟用量"
+  ],
+  "audience": "想在本機離線做語音轉文字的開發者，或想把語音辨識整合進 App 的工程師",
+  "use_cases": [
+   "在電腦上把錄音檔轉成逐字稿",
+   "在 iPhone 等行動裝置上離線執行語音辨識",
+   "自製離線語音助理應用程式"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列下載原始碼、編譯並下載模型，也可以改用 Docker 執行",
+  "limitations": "whisper-cli 範例目前只支援 16-bit WAV 檔；大型模型約需 3.9 GB 記憶體；Core ML、OpenVINO 第一次執行會比較慢",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

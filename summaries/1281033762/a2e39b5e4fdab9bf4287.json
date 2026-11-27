@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "a2e39b5e4fdab9bf4287",
+ "repo_id": 1281033762,
+ "full_name": "tianma-if/edgeever",
+ "created_at": "2026-11-27T09:47:35+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "194bd4f908f3ab9bcd8d43e37321474cd92699fd042718f12377b146d0c914e9",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "開源的 AI 筆記軟體，可取代 Evernote、Obsidian，支援全平台即時同步",
+  "features": [
+   "三欄式介面，支援表格、心智圖、圖表與海報筆記",
+   "瀏覽器剪藏擴充功能，可擷取 20 多個平台內容",
+   "內建 AI 助理與 MCP，可自備 API 金鑰"
+  ],
+  "audience": "想自己掌控資料、找 Evernote 或 Obsidian 替代品的筆記使用者",
+  "use_cases": [
+   "把 Evernote、Notion、Obsidian 的筆記一鍵搬過來",
+   "剪存網頁文章、YouTube 等內容到自己的筆記庫",
+   "把筆記本發布成網站，或分享有密碼的單篇筆記"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要自行部署到 Cloudflare 或用 Docker 架設，要有 GitHub、Cloudflare 帳號",
+  "limitations": "公開展示站每天重置，不要存放私人內容；iOS App 需要非中國大陸的 Apple ID",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
