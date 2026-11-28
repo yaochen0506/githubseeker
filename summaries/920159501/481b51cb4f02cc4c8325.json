@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "481b51cb4f02cc4c8325",
+ "repo_id": 920159501,
+ "full_name": "kagent-dev/kagent",
+ "created_at": "2026-11-28T09:32:20+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6a4f409c0a0cd109bb9b68773a62b634fe3171b12630e52241ee20dbafb257a6",
+ "has_readme": true,
+ "readme_chars": 4591,
+ "content": {
+  "one_liner": "在 Kubernetes 上建立、部署和管理 AI 代理的開源框架",
+  "features": [
+   "用 YAML 定義代理，透過 kubectl 與 GitOps 管理",
+   "支援 OpenAI、Anthropic、Ollama 等多種 LLM",
+   "內建 Kubernetes、Helm 等 MCP 工具與網頁介面"
+  ],
+  "audience": "熟悉 Kubernetes 的 DevOps 工程師、平台維運人員與 AI 應用開發者",
+  "use_cases": [
+   "在 Kubernetes 叢集中部署 AI 代理，協助操作 Helm、Argo 等工具",
+   "結合 Prometheus、Grafana 工具，可能用於協助排查系統問題",
+   "透過 OpenTelemetry 追蹤代理與工具的執行過程"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Kubernetes 叢集、命令列操作能力，以及 LLM 服務的 API 金鑰",
+  "limitations": "README 表示專案仍在積極開發中；各 LLM 供應商的支援程度依所選的執行環境（Harness）而定",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

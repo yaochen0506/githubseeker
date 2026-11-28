@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "946fd7e5b66ea4888ad4",
+ "repo_id": 810861466,
+ "full_name": "0xPlaygrounds/rig",
+ "created_at": "2026-11-28T09:32:34+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "252160ec239e05460273f3d9605c645fb551c4194cd63a27e842c7df94079bd6",
+ "has_readme": true,
+ "readme_chars": 3118,
+ "content": {
+  "one_liner": "用 Rust 打造大型語言模型應用的函式庫，另附終端機寫程式 AI 助理",
+  "features": [
+   "用同一套介面串接 20 多家模型服務與十多種向量資料庫",
+   "支援具備工具的 agent、串流輸出，也支援 MCP 工具",
+   "內建終端機寫程式助理 rig，可用外掛擴充"
+  ],
+  "audience": "會寫 Rust、想開發 AI 應用或在終端機使用 AI 寫程式助理的開發者",
+  "use_cases": [
+   "在 Rust 程式中串接 OpenAI 等模型，建立能呼叫工具的 AI agent",
+   "在終端機請 AI 助理修正失敗的測試等程式問題",
+   "搭配 LanceDB、Qdrant 等向量資料庫做文件檢索應用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Rust 1.97.1 以上、會用命令列，並準備模型服務的 API key",
+  "limitations": "尚未到 1.0 版，改版會破壞 API；寫程式助理只支援 Linux 與 macOS，第一次啟動要花幾分鐘建置",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

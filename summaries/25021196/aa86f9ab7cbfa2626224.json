@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "aa86f9ab7cbfa2626224",
+ "repo_id": 25021196,
+ "full_name": "MewX/light-novel-library_Wenku8_Android",
+ "created_at": "2026-11-28T09:31:19+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c794722fd7ae63396d37dfe44d881482b050eb2c8dc8a5c1a41ea56e0aa6000a",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "輕小說文庫 Wenku8 的非官方 Android 閱讀 App，免費又不營利",
+  "features": [
+   "六種翻頁模式，含日式直排與墨水螢幕模式",
+   "離線快取小說，可匯出備份，並支援 1.x 資料遷移",
+   "插圖畫集瀏覽、繁簡轉換與 TTS 朗讀"
+  ],
+  "audience": "在 Android 手機、平板或電子紙閱讀器上看輕小說文庫作品的讀者",
+  "use_cases": [
+   "在手機上瀏覽最新更新與排行榜，把作品加入書架",
+   "先離線下載小說，再到沒有網路的地方閱讀",
+   "在文石 BOOX 等電子紙閱讀器上用高對比模式看書"
+  ],
+  "barrier": "online",
+  "barrier_note": "從 Google Play 下載 App 就能使用，部分功能需要文庫帳號",
+  "limitations": "網站 API 因遭濫用，現在改走作者自架的 Cloudflare 中繼；自行編譯時拿不到私有 API 模組",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

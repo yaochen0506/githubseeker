@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "8a3c8e35a6a860c67214",
+ "repo_id": 1207219415,
+ "full_name": "ModernRelay/omnigraph",
+ "created_at": "2026-11-28T09:31:43+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e03fdb63b87b85392bab3ec74dcce753b0edf18634ec8464492d69c77d86a223",
+ "has_readme": true,
+ "readme_chars": 8378,
+ "content": {
+  "one_liner": "把資料存在 S3 等物件儲存上的圖形資料庫，讓多個 AI 代理共用知識",
+  "features": [
+   "支援圖形、向量與全文搜尋的混合查詢",
+   "像 Git 一樣開分支、合併、回溯歷史版本",
+   "用 schema 定義資料型別，並以 Cedar 管控權限"
+  ],
+  "audience": "開發 AI 代理系統的工程師、需要管理知識圖譜的資料或研發團隊",
+  "use_cases": [
+   "把公司內部知識整合成一張圖，讓各 AI 代理查詢",
+   "替每個代理或任務開分支，保存可審核的長期記憶",
+   "記錄研發實驗資料並做版本管理，供訓練與評估使用"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要用命令列安裝 CLI 與伺服器，並撰寫設定檔與查詢；另有 Studio 桌面 App 可瀏覽",
+  "limitations": "Cloud 版仍在私人預覽；Azure 為預覽支援；客戶端與伺服器的 HTTP 合約版本必須一致",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

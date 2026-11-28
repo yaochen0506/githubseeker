@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "916a15f6637e1171226d",
+ "repo_id": 1069235905,
+ "full_name": "NVIDIA-NeMo/Nemotron",
+ "created_at": "2026-11-28T09:32:47+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "6d71b3cd3cf64fada43370e5d00c78b20eaaf6f246779bef5e506872fe07cafd",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "NVIDIA Nemotron 系列 AI 模型的官方資源庫，提供訓練、部署與應用範例",
+  "features": [
+   "從原始資料到模型的完整訓練流程範本",
+   "教你部署與使用模型的 Jupyter 筆記本教學",
+   "RAG、AI 代理等端到端應用範例"
+  ],
+  "audience": "想訓練、微調或部署 Nemotron 模型的 AI 工程師與研究人員",
+  "use_cases": [
+   "用自己的資料微調 Nemotron 模型，例如做專業領域的檢索模型",
+   "參考範例打造 RAG 或會使用工具的 AI 代理應用",
+   "研究 Nemotron 模型是如何從預訓練、SFT 到強化學習一步步訓練出來的"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會 Python、命令列，大型模型訓練還需要 NVIDIA GPU 甚至資料中心等級的硬體",
+  "limitations": "訓練範本只用公開的訓練資料，作者表示結果會和技術報告的數據不同；Claude Code 外掛必須從專案根目錄執行",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

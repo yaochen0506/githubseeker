@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "f8f820f27931c63a6c9a",
+ "repo_id": 1474599413,
+ "full_name": "mist-8659/windows-mouse-keyboard-sharing-kvm",
+ "created_at": "2026-11-28T09:33:03+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "5d5a96a119abe6a85fbb680f32cd25031c57e6cb5502755a5956a422205ea297",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "讓一組鍵盤滑鼠透過區域網路同時操控多台電腦的免費開源軟體",
+  "features": [
+   "滑鼠移到螢幕邊緣就切換到另一台電腦",
+   "鍵盤輸入自動跟著滑鼠所在的電腦",
+   "在多台電腦之間共享複製的文字"
+  ],
+  "audience": "桌上同時有多台電腦的人，例如同時用個人電腦和公司筆電的遠端工作者、IT 人員與創作者",
+  "use_cases": [
+   "用一組鍵盤滑鼠同時操作家裡的桌機和公司筆電",
+   "在 Windows、macOS、Linux 電腦之間來回操作，不用買實體 KVM 切換器",
+   "把一台電腦上複製的文字直接貼到另一台電腦"
+  ],
+  "barrier": "install",
+  "barrier_note": "每台電腦都要下載安裝，並設定伺服器 IP、螢幕名稱和防火牆，不用寫程式",
+  "limitations": "每台電腦都要安裝，需要區域網路連線；剪貼簿功能依系統而定，Linux Wayland 有限制；Scroll Lock 可能干擾切換",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

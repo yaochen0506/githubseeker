@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "928076aaf6dc0731ef79",
+ "repo_id": 1315384578,
+ "full_name": "HaD0Yun/CozyClay",
+ "created_at": "2026-11-28T09:31:11+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "60fc99ccd3adb7ffc7db5fcb21885f84136eff8b2d76bf4296377a98b6ac8baf",
+ "has_readme": true,
+ "readme_chars": 5339,
+ "content": {
+  "one_liner": "在瀏覽器裡先用 3D 排好場景、角色動作和運鏡，再交給 AI 影片模型生成影片",
+  "features": [
+   "用簡單幾何體搭場景、放燈光與方塊人角色",
+   "在 Agent 面板用文字描述動作，自動產生角色動態",
+   "時間軸排鏡頭、畫軌道運鏡，匯出首尾影格與參考影片"
+  ],
+  "audience": "想用 AI 生成影片的創作者、導演、分鏡或動畫工作者，以及想先規劃鏡頭再花錢生成的人",
+  "use_cases": [
+   "拍 AI 影片前先排好角色站位與運鏡，減少重複生成的花費",
+   "製作灰模預覽與分鏡表，匯出 mp4 或剪輯清單",
+   "透過 MCP 讓 Claude 等 AI 助理直接操作場景"
+  ],
+  "barrier": "online",
+  "barrier_note": "可在瀏覽器試用；本機安裝需 Node.js 22.19 以上與 Chromium 瀏覽器並用命令列",
+  "limitations": "AI 動作功能需在 Agent 面板登入 ChatGPT 或提供 API 金鑰；預設有匿名使用統計，可關閉；Windows 不支援一鍵更新",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

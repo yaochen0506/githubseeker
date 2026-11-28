@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "c69e9ed8a25ecf58671d",
+ "repo_id": 1185964118,
+ "full_name": "zazencodes/zazencodes-season-3",
+ "created_at": "2026-11-28T09:34:12+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "89f89d58e4afd35c871fb9a94dba0994288689c3f9ecb0125b007516b8d32cd9",
+ "has_readme": true,
+ "readme_chars": 2940,
+ "content": {
+  "one_liner": "ZazenCodes YouTube 第三季教學影片的範例程式碼合集",
+  "features": [
+   "依影片分類整理的範例程式碼資料夾",
+   "涵蓋 AI Agent、Claude Code、MCP 等主題",
+   "含本機執行 LLM 與部署 AI 應用的範例"
+  ],
+  "audience": "想跟著影片學習 AI Agent 與程式開發的開發者或學習者",
+  "use_cases": [
+   "邊看 YouTube 教學影片邊對照程式碼實作",
+   "參考範例學習用 Claude Code 打造開發工具",
+   "學習在 MacBook 上用 Ollama 在本機執行 Gemma 4"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要會寫程式，並能操作 Python、Jupyter Notebook 等開發環境",
+  "limitations": "README 未說明；部分影片（如 9Router 那集）目前沒有對應的程式碼資料夾",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

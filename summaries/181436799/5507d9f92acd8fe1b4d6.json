@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "5507d9f92acd8fe1b4d6",
+ "repo_id": 181436799,
+ "full_name": "alibaba/MNN",
+ "created_at": "2026-11-28T09:32:54+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "d43a009320202aca844d209685905b452c4311f538a49b84c1cfa9f1dbf02c7e",
+ "has_readme": true,
+ "readme_chars": 9891,
+ "content": {
+  "one_liner": "阿里巴巴開發的輕量 AI 引擎，讓大型語言模型等 AI 模型直接在手機或裝置上執行",
+  "features": [
+   "支援 TensorFlow、ONNX 等模型轉換與壓縮",
+   "支援手機 CPU、GPU 與 NPU 加速運算",
+   "提供 MNN Chat 等可在手機離線使用的 App"
+  ],
+  "audience": "想把 AI 模型放進手機、電腦或 IoT 裝置的開發者與機器學習工程師",
+  "use_cases": [
+   "在手機上離線執行 Qwen、DeepSeek 等大型語言模型",
+   "在裝置本機執行 Stable Diffusion 產生圖片",
+   "在 App 中加入以圖搜尋、影像處理等 AI 功能"
+  ],
+  "barrier": "code",
+  "barrier_note": "引擎本身需要會 C++ 或 Python 開發，一般人可另外下載作者提供的 App 試用",
+  "limitations": "部分硬體與精度組合不支援或有 bug；精簡建置會限制模型輸入尺寸；社群討論以中文為主",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

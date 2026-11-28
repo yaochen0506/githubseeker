@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "7ab26430fc4a28895a0f",
+ "repo_id": 11457947,
+ "full_name": "DependencyTrack/dependency-track",
+ "created_at": "2026-11-28T09:34:49+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "3d6ebf950cc5e461d0c52a535f07c5440ef553c9efa077043031d36d77240b03",
+ "has_readme": true,
+ "readme_chars": 1236,
+ "content": {
+  "one_liner": "利用軟體物料清單 (SBOM) 分析元件，幫組織找出並降低軟體供應鏈風險的平台",
+  "features": [
+   "以 SBOM 為基礎分析軟體使用的元件",
+   "找出軟體供應鏈中的風險與弱點",
+   "可用 Docker Compose 在本機快速架設"
+  ],
+  "audience": "負責資訊安全、軟體開發或 DevSecOps 的企業團隊與資安人員",
+  "use_cases": [
+   "上傳軟體的 SBOM，檢查使用的元件是否有已知弱點",
+   "組織持續追蹤與降低軟體供應鏈風險",
+   "可能整合進開發流程，自動化資安檢查"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要自行用 Docker Compose 或 Helm 架設伺服器，並熟悉命令列操作",
+  "limitations": "v4 已進入維護模式，預計 2026 年 12 月終止支援；從 v4 升級到 v5 需參考遷移指南",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

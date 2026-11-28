@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "34b975e909c16daec63f",
+ "repo_id": 183483988,
+ "full_name": "ruffle-rs/ruffle",
+ "created_at": "2026-11-28T09:33:33+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "2d506b12379636b4e2bf42cc4370b531592f272279db5d68be7bb29ad9543670",
+ "has_readme": true,
+ "readme_chars": 4702,
+ "content": {
+  "one_liner": "用 Rust 寫的 Flash Player 模擬器，讓舊的 Flash 內容能在電腦和網頁上播放",
+  "features": [
+   "支援 ActionScript 1、2、3 的 Flash 內容",
+   "提供桌面版、網頁版、瀏覽器擴充功能與 Android 版",
+   "附帶批次解析 SWF 與匯出 PNG 截圖的工具"
+  ],
+  "audience": "想重溫舊 Flash 遊戲或動畫的一般使用者、網站管理者，以及保存數位內容的人",
+  "use_cases": [
+   "在網頁示範頁面選擇 SWF 檔案，直接播放舊 Flash 遊戲或動畫",
+   "在電腦上安裝桌面版，開啟手邊收藏的 SWF 檔案",
+   "把 SWF 檔案的畫面匯出成 PNG 截圖"
+  ],
+  "barrier": "online",
+  "barrier_note": "打開網頁示範頁面即可載入 SWF；也有現成的 nightly 版本可下載，自行編譯才需要 Rust 和 Java",
+  "limitations": "作者表示對 ActionScript 支援已相當不錯，但仍未完成；匯出工具目前需要硬體加速",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

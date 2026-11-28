@@ -1,0 +1,33 @@
+{
+ "schema_version": "1",
+ "cache_key": "dcf38bda1d20728f38a8",
+ "repo_id": 1360910719,
+ "full_name": "intrinsic-ai/intrinsic-core",
+ "created_at": "2026-11-28T09:33:39+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "9307923e70362af944e47d82ac9c05bfca9613798724283e1142029b287585a9",
+ "has_readme": true,
+ "readme_chars": 6262,
+ "content": {
+  "one_liner": "給工業機器人用的開源本機執行環境、SDK 與即時控制框架",
+  "features": [
+   "內建抓取規劃、AI 視覺辨識與數位分身",
+   "硬體抽象層，換機械手臂或夾爪不必重寫驅動",
+   "可與 ROS 2 互通，並附機台上下料參考範本"
+  ],
+  "audience": "開發工業機器人應用的工程師、機器人研究人員與自動化系統整合商",
+  "use_cases": [
+   "打造工廠機台上下料的機器人應用",
+   "讓機器人用相機辨識並抓取未固定位置的 3D 零件",
+   "先在模擬環境中開發，再部署到實體機器人"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要 Ubuntu 24.04 等系統、ROS 2，並會用 C++ 與 Bazel 開發",
+  "limitations": "只支援特定 Ubuntu 版本與 ROS 2 Lyrical Luth；作者說明這不是 Google 官方支援的產品",
+  "based_on": [
+   "description",
+   "readme"
+  ]
+ }
+}

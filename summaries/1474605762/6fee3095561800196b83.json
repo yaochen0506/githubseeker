@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "6fee3095561800196b83",
+ "repo_id": 1474605762,
+ "full_name": "leaf7684/windows-modern-media-player",
+ "created_at": "2026-11-28T09:33:26+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "ffb845e10c5a4a98dd6e440db3aa88d319fb8b701627a874dbe90abd6a2ddeaf",
+ "has_readme": true,
+ "readme_chars": 9755,
+ "content": {
+  "one_liner": "免費開源的 Windows 影音播放器，以 VLC 技術播放影片和音樂",
+  "features": [
+   "支援 MP4、MKV、FLAC 等多種影音格式與字幕",
+   "子母畫面浮動播放，也能投放到 Chromecast",
+   "可播放區域網路上的媒體，並能擷取影片畫面"
+  ],
+  "audience": "使用 Windows 10 或 11，想要免費、介面簡潔的影音播放器的一般使用者",
+  "use_cases": [
+   "在電腦上看下載的電影並載入字幕",
+   "一邊工作一邊用子母畫面看影片",
+   "播放家中其他裝置上的影片，或投放到電視上的 Chromecast"
+  ],
+  "barrier": "online",
+  "barrier_note": "從 Releases 頁面下載壓縮檔，解壓縮後點兩下 exe 檔就能用，不用寫程式",
+  "limitations": "實際支援的格式依裝置與設定而定；網路播放受網路設定影響；exe 檔要和 libvlc.dll 放在同一個資料夾",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 {
  "schema_version": "1",
  "prompt_version": "e1",
- "updated_at": "2026-11-27T09:47:07+08:00",
+ "updated_at": "2026-11-28T09:30:56+08:00",
  "repos": {
   "8514": {
    "category": "dev-tools",
@@ -3555,6 +3555,12 @@
    "full_name": "ErTasselli/OpenTerminal",
    "classified_at": "2026-11-04T07:27:17+08:00"
   },
+  "1315384578": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "HaD0Yun/CozyClay",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
   "1315788496": {
    "category": "ai-agents",
    "exclude_reason": null,
@@ -4587,11 +4593,71 @@
    "full_name": "avatarmanz/VIctory-7900XTX",
    "classified_at": "2026-11-26T09:50:23+08:00"
   },
+  "1472451283": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "trustno1-coder/VIctory-NVIDIA",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
   "1472898329": {
    "category": "excluded",
    "exclude_reason": "piracy",
    "full_name": "DoubleGhosty/cool_fox",
    "classified_at": "2026-11-27T09:47:07+08:00"
+  },
+  "1473688485": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Pixel679-cmyk/windows-titlebar-blur-customizer",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474584825": {
+   "category": "dev-tools",
+   "exclude_reason": null,
+   "full_name": "flint63-code/gitdesk-windows",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474586742": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "hollow-445/windows-keyboard-manager",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474588528": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Red2076-arch/waifu2x-image-upscaler-windows",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474591563": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "Riven-639/windows-dwm-blur-glass-customizer",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474593596": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "riveran0226/windows-explorer-blur-mica",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474599413": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "mist-8659/windows-mouse-keyboard-sharing-kvm",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474605762": {
+   "category": "fun-creative",
+   "exclude_reason": null,
+   "full_name": "leaf7684/windows-modern-media-player",
+   "classified_at": "2026-11-28T09:30:56+08:00"
+  },
+  "1474611005": {
+   "category": "everyday-tools",
+   "exclude_reason": null,
+   "full_name": "nocta1554/windows-video-downloader-gui",
+   "classified_at": "2026-11-28T09:30:56+08:00"
   }
  }
 }

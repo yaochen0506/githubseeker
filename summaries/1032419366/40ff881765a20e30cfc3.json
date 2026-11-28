@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "40ff881765a20e30cfc3",
+ "repo_id": 1032419366,
+ "full_name": "gepa-ai/gepa",
+ "created_at": "2026-11-28T09:32:27+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c87d72f250a774996e0ec3598c8a3b6d8002ca33b5ec68e5a3f86530671376a1",
+ "has_readme": true,
+ "readme_chars": 12000,
+ "content": {
+  "one_liner": "用 AI 反覆檢討、改良提示詞、程式碼等文字內容，讓 AI 系統的表現更好",
+  "features": [
+   "讓 LLM 閱讀執行紀錄，找出失敗原因並提出修正",
+   "以演化搜尋保留在不同任務表現好的版本",
+   "支援 DSPy、LangChain、MCP、RAG 等轉接器"
+  ],
+  "audience": "開發 AI 應用、LLM 代理程式的工程師與研究人員",
+  "use_cases": [
+   "自動改良解數學題用的系統提示詞，提升答對率",
+   "最佳化 DSPy 或 LangChain 流程中的提示詞",
+   "讓 Claude Code 等程式代理透過 Agent Skill 執行最佳化"
+  ],
+  "barrier": "code",
+  "barrier_note": "需安裝 Python 套件並撰寫評估程式，也需要可呼叫的 LLM",
+  "limitations": "部分選用套件（如 gepa[full]、gepa[confidence]）暫時只支援 Python 3.10–3.14；作者自述的成效數據未經獨立證實",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

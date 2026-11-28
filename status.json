@@ -1,11 +1,11 @@
 {
  "schema_version": "1",
- "updated_at": "2026-11-27T09:46:55+08:00",
- "business_date": "2026-11-27",
- "last_run_id": "20261127T094447-45924303922.1",
+ "updated_at": "2026-11-28T09:30:46+08:00",
+ "business_date": "2026-11-28",
+ "last_run_id": "20261128T092816-46093248405.1",
  "last_run_complete": true,
- "last_complete_run_id": "20261127T094447-45924303922.1",
- "last_complete_at": "2026-11-27T09:46:55+08:00",
+ "last_complete_run_id": "20261128T092816-46093248405.1",
+ "last_complete_at": "2026-11-28T09:30:46+08:00",
  "sources": [
   {
    "source_id": "all-daily",
@@ -22,7 +22,7 @@
   {
    "source_id": "python-daily",
    "status": "ok",
-   "rows": 24,
+   "rows": 23,
    "error": null
   },
   {
@@ -46,19 +46,19 @@
   {
    "source_id": "zh-daily",
    "status": "ok",
-   "rows": 22,
+   "rows": 21,
    "error": null
   },
   {
    "source_id": "zh-weekly",
    "status": "ok",
-   "rows": 23,
+   "rows": 22,
    "error": null
   },
   {
    "source_id": "javascript-daily",
    "status": "ok",
-   "rows": 10,
+   "rows": 11,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "source_id": "jupyter-weekly",
    "status": "ok",
-   "rows": 20,
+   "rows": 21,
    "error": null
   },
   {
@@ -124,7 +124,7 @@
   {
    "source_id": "java-weekly",
    "status": "ok",
-   "rows": 19,
+   "rows": 18,
    "error": null
   },
   {
@@ -141,9 +141,9 @@
   }
  ],
  "counts": {
-  "source_hits": 531,
-  "observations": 297,
-  "unresolved": 0,
+  "source_hits": 529,
+  "observations": 300,
+  "unresolved": 2,
   "tracking": 200
  },
  "api_usage": {
@@ -155,11 +155,11 @@
    "used_by_headers": 2
   },
   "core": {
-   "requests": 297,
+   "requests": 302,
    "limit": 5000,
    "remaining_first": 4999,
-   "remaining_last": 4703,
-   "used_by_headers": 297
+   "remaining_last": 4698,
+   "used_by_headers": 302
   }
  }
 }

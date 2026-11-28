@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "40dd935373824e471f85",
+ "repo_id": 1474588528,
+ "full_name": "Red2076-arch/waifu2x-image-upscaler-windows",
+ "created_at": "2026-11-28T09:33:10+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "e972c29a2b246fae1211cd3537315972b9ed8e9fa26d25061783dafba3ca1d71",
+ "has_readme": true,
+ "readme_chars": 11097,
+ "content": {
+  "one_liner": "Windows 免費軟體，用 AI 放大圖片並去除雜訊",
+  "features": [
+   "AI 放大圖片 2x、4x 等倍率",
+   "可調整等級的 AI 去雜訊",
+   "批次處理整個資料夾的圖片"
+  ],
+  "audience": "想放大動漫插圖、漫畫、數位繪圖或照片的 Windows 使用者",
+  "use_cases": [
+   "把低解析度的動漫截圖或插圖放大",
+   "去除壓縮圖片的雜訊與瑕疵",
+   "用相同設定一次處理一整批圖片"
+  ],
+  "barrier": "install",
+  "barrier_note": "下載壓縮檔解壓後執行，顯示卡需支援 Vulkan 並更新驅動程式",
+  "limitations": "GPU 加速要看 Vulkan 相容性與驅動程式；圖片太大可能讓顯示卡記憶體不足，要調小 tile size",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

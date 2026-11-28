@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "439408f75a35405d55f8",
+ "repo_id": 1473688485,
+ "full_name": "Pixel679-cmyk/windows-titlebar-blur-customizer",
+ "created_at": "2026-11-28T09:32:07+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "acc0f2982e3a47c3248249bd206b24ee074c268ab2d15c649ba800e0ee0b43b0",
+ "has_readme": true,
+ "readme_chars": 8526,
+ "content": {
+  "one_liner": "替 Windows 10、11 視窗標題列加上 Aero、Acrylic、Mica 等透明模糊效果",
+  "features": [
+   "提供 Aero、Acrylic、Mica 等多種標題列材質效果",
+   "可調整模糊強度、透明度、混合色與文字顏色",
+   "淺色、深色模式可以分開設定外觀"
+  ],
+  "audience": "想美化 Windows 桌面、懷念經典 Aero 玻璃風格或喜歡 Windows 11 Mica 質感的使用者",
+  "use_cases": [
+   "重現 Windows 7 時代的 Aero 透明玻璃標題列",
+   "搭配 Windows 11 Mica 質感，讓桌面風格更一致",
+   "依照桌布調整標題列顏色，打造極簡深色主題"
+  ],
+  "barrier": "online",
+  "barrier_note": "從 Releases 頁面下載壓縮檔，解壓縮後雙擊 exe 就能執行，不需要帳號",
+  "limitations": "需 Windows 10 2004 以上；部分效果依 Windows 版本與應用程式而定，Mica 限 Windows 11，Insider 版可能不相容",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

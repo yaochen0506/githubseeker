@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "cdd32979793eb0c424e3",
+ "repo_id": 1134144797,
+ "full_name": "runkids/skillshare",
+ "created_at": "2026-11-28T09:31:30+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "aee4ef69dafb7ade6416d3b6adf02c76f8a765934be2486344f1a3a0ee7909c8",
+ "has_readme": true,
+ "readme_chars": 6933,
+ "content": {
+  "one_liner": "把 AI 程式工具的技能、代理、MCP 設定集中管理，一鍵同步到各工具",
+  "features": [
+   "一次編輯，同步到 Claude Code、Codex、Pi 等工具",
+   "安裝技能前先做內建安全掃描",
+   "提供桌面 App 與網頁儀表板視覺化管理"
+  ],
+  "audience": "同時使用多種 AI 程式工具的開發者，以及想共用 AI 設定的開發團隊",
+  "use_cases": [
+   "換用不同 AI 工具時，保留原本的技能設定",
+   "用 Git 管理設定，在新電腦上快速還原",
+   "把團隊共用的 code review 清單放進專案，讓新成員直接安裝"
+  ],
+  "barrier": "code",
+  "barrier_note": "有桌面 App，但管理對象是 AI 程式工具，主要操作仍需命令列與 Git 基礎",
+  "limitations": "桌面 App 的 macOS 版只支援 Apple Silicon；Windows 檔案 symlink 需開啟開發者模式，否則改用複製",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "9b1c46e739fe416d2c1b",
+ "repo_id": 16752620,
+ "full_name": "gogs/gogs",
+ "created_at": "2026-11-28T09:34:55+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "44af1ed249b1c8699e35cb07930d6f45e76bde48fae2bbf9be26a7d1c16c7ea1",
+ "has_readme": true,
+ "readme_chars": 3543,
+ "content": {
+  "one_liner": "讓你在自己的伺服器上架設類似 GitHub 的 Git 程式碼託管服務",
+  "features": [
+   "程式碼託管，支援 SSH、HTTP(S) 與 LFS",
+   "Issues、Pull requests、Wiki 等協作功能",
+   "單一執行檔或 Docker 部署，支援多種資料庫"
+  ],
+  "audience": "想自行管理程式碼、不依賴外部平台的開發團隊、公司 IT 人員或個人開發者",
+  "use_cases": [
+   "團隊在自家伺服器或 Raspberry Pi 上架設私有程式碼庫",
+   "從其他程式碼平台遷移或鏡像專案到自己的主機",
+   "透過 Webhooks 將程式碼動態通知到 Slack、Discord"
+  ],
+  "barrier": "code",
+  "barrier_note": "需要自備伺服器，並用命令列或 Docker 安裝、設定資料庫",
+  "limitations": "部分功能如 Actions、OAuth 2.0、Kubernetes 仍在開發中；API 為實驗性質；瀏覽器需 Chrome 111 等較新版本",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "schema_version": "1",
+ "cache_key": "260fb826d14a8304ae69",
+ "repo_id": 320785435,
+ "full_name": "LSPosed/LSPosed",
+ "created_at": "2026-11-28T09:33:59+08:00",
+ "model": "claude-opus-5-5",
+ "prompt_version": "c1",
+ "input_sha256": "c4aeefbcd768226d6ad0ac6264069c48899860861a90cacc93962fcb8e1d6007",
+ "has_readme": true,
+ "readme_chars": 2728,
+ "content": {
+  "one_liner": "讓已 root 的 Android 手機能用 Xposed 模組修改系統與 App 行為的框架",
+  "features": [
+   "不修改 APK，在記憶體中改變系統與 App 行為",
+   "與原版 Xposed 模組 API 相容",
+   "內建管理器與模組倉庫，可下載模組"
+  ],
+  "audience": "已將 Android 手機 root 並使用 Magisk 的進階使用者，以及 Xposed 模組開發者",
+  "use_cases": [
+   "安裝 Xposed 模組來自訂系統或 App 的功能",
+   "同時套用多個模組修改同一個 App",
+   "開發者撰寫並測試 Xposed 模組"
+  ],
+  "barrier": "install",
+  "barrier_note": "需要已 root 的手機並安裝 Magisk v24 以上，再透過 Magisk 刷入模組",
+  "limitations": "僅支援 Android 8.1～14；Riru 版本需 Riru v26.1.7 以上；只接受最新 debug 版的錯誤回報",
+  "based_on": [
+   "description",
+   "readme",
+   "topics"
+  ]
+ }
+}
